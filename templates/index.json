@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner": {
@@ -29,33 +38,32 @@
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
         "image_behavior": "none",
+        "desktop_content_position": "bottom-center",
         "desktop_content_alignment": "center",
+        "show_text_box": false,
         "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
         "show_text_below": false
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
+        "collection": "all",
+        "products_to_show": 8,
         "title": "Featured products",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
+        "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -63,13 +71,57 @@
         "show_rating": false,
         "quick_add": "none",
         "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 44,
         "padding_bottom": 36
+      }
+    },
+    "dual_service_hero_pyHdH3": {
+      "type": "dual-service-hero",
+      "name": "Dual Service Hero",
+      "settings": {
+        "left_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_00_15_46_cleanup.png",
+        "left_hover_image": "shopify://shop_images/mage_29._Juli_2025_00_15_46.png",
+        "left_title": "Gebäude Service",
+        "left_subtitle": "LOOKING FOR",
+        "left_show_button": true,
+        "left_button_text": "Zum Gebäudeservice",
+        "left_button_link": "",
+        "left_button_bg_color": "#007bff",
+        "left_button_text_color": "#ffffff",
+        "left_button_border_color": "#007bff",
+        "left_button_hover_bg_color": "#0056b3",
+        "left_button_hover_text_color": "#ffffff",
+        "left_button_hover_border_color": "#0056b3",
+        "right_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
+        "right_hover_image": "shopify://shop_images/Image_29._Juli_2025_20_41_34_cleanup.png",
+        "right_title": "Industrie Service",
+        "right_subtitle": "LOOKING FOR",
+        "right_show_button": true,
+        "right_button_text": "Zum Industrieseservice",
+        "right_button_link": "",
+        "right_button_bg_color": "#28a745",
+        "right_button_text_color": "#ffffff",
+        "right_button_border_color": "#28a745",
+        "right_button_hover_bg_color": "#1e7e34",
+        "right_button_hover_text_color": "#ffffff",
+        "right_button_hover_border_color": "#1e7e34",
+        "dual_hero_title_size": 32,
+        "dual_hero_title_color": "#ffffff",
+        "dual_hero_title_weight": "700",
+        "dual_hero_subtitle_size": 16,
+        "dual_hero_subtitle_color": "#ffffff",
+        "dual_hero_subtitle_weight": "400",
+        "left_content_x": 0,
+        "left_content_y": 0,
+        "right_content_x": 0,
+        "right_content_y": 0
       }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "dual_service_hero_pyHdH3"
   ]
 }
