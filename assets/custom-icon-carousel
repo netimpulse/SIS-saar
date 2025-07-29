@@ -1,0 +1,143 @@
+/* Custom Icon Carousel Styles - V5 (Correct Shape & Double Size) */
+.custom-icon-carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 80px;
+  margin: 40px 0;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  /* Add padding to ensure shadows and shapes aren't cut off */
+  padding: 10px 0 40px 0;
+  transition: transform 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.carousel-slide {
+  flex: 0 0 33.333%; /* 3 items on desktop */
+  min-width: 0;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.slide-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  /* Jitter fix: Border is always present, just transparent */
+  border: 2px solid transparent; 
+  transform: scale(0.8);
+  opacity: 0.5;
+  transition: transform 0.4s, opacity 0.4s;
+  height: 100%;
+}
+
+.slide-icon img,
+.slide-icon .icon-placeholder {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.slide-title p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* --- Active (Centered) Slide Styling --- */
+.carousel-slide.is-selected .slide-link {
+  transform: scale(1);
+  opacity: 1;
+  border-color: var(--border-color-active, #E0E0E0);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+  /* The magic happens here! We shape the element itself. */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+}
+
+/* We create the colored background shape behind the active slide */
+.carousel-slide.is-selected::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--pointer-color, #FF6600);
+  /* The background gets the same pointed shape */
+  clip-path: polygon(6% 83%, 94% 83%, 94% 83%, 50% 100%, 6% 83%);
+}
+
+
+/* --- Arrows --- */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  color: var(--arrow-color, #FF6600);
+}
+
+.carousel-arrow:disabled {
+  opacity: 0.2;
+}
+
+.carousel-arrow svg {
+  width: 60px;
+  height: 60px;
+}
+
+.carousel-arrow--prev {
+  left: 0;
+}
+.carousel-arrow--next {
+  right: 0;
+}
+
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 990px) {
+  .carousel-slide {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 749px) {
+  .carousel-slide {
+    flex-basis: 80%;
+  }
+  .carousel-arrow {
+    display: none;
+  }
+  .carousel-viewport {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .carousel-viewport::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel-track {
+    transition: none;
+  }
+}
