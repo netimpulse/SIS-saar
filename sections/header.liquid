@@ -98,6 +98,21 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+.header-wrapper { position: relative; }
+
+  .header__heading-logo {
+    position: absolute;
+    left: {{ section.settings.logo_x }}%;
+    top:  {{ section.settings.logo_y }}%;
+    transform: translate(-50%, -50%);
+  }
+
+  .header__inline-menu {
+    position: absolute;
+    left: {{ section.settings.menu_x }}%;
+    top:  {{ section.settings.menu_y }}%;
+    transform: translate(-50%, -50%);
+  }
 {%- endstyle -%}
 
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
