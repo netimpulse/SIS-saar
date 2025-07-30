@@ -1,6 +1,6 @@
 /* Custom Icon Carousel Styles - V5 (Correct Shape & Double Size) */
 
-custom-icon-carousel-section {
+.custom-icon-carousel-section {
   background: var(--wrapper-bg, #fff;)
 }
 .custom-icon-carousel-wrapper {
