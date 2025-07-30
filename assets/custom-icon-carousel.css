@@ -2,6 +2,7 @@
 
 .custom-icon-carousel-section {
   background-color: var(--section-color, #fff) !important;
+  overflow: hidden;
 }
 .custom-icon-carousel-wrapper {
   display: flex;
