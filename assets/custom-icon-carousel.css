@@ -6,6 +6,7 @@
   position: relative;
   padding: 0 80px;
   margin: 40px 0;
+  background: var(--wrapper-bg, #fff;)
 }
 
 .carousel-viewport {
