@@ -1,7 +1,7 @@
 /* Custom Icon Carousel Styles - V5 (Correct Shape & Double Size) */
 
 .custom-icon-carousel-section {
-  background-color: var(--wrapper-bg, #fff);
+  background-color: var(--wrapper-bg, #fff) !important;
 }
 .custom-icon-carousel-wrapper {
   display: flex;
