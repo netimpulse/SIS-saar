@@ -50,9 +50,64 @@
         "right_content_x": 0,
         "right_content_y": 0
       }
+    },
+    "custom_icon_carousel_6KXbGD": {
+      "type": "custom-icon-carousel",
+      "blocks": {
+        "icon_block_j6rPPB": {
+          "type": "icon_block",
+          "settings": {
+            "title": "Your Title",
+            "link": ""
+          }
+        },
+        "icon_block_t9iqft": {
+          "type": "icon_block",
+          "settings": {
+            "icon_image": "shopify://shop_images/ChatGPT_Image_30._Juli_2025__14_05_42-removebg-preview.png",
+            "title": "Wartung und Instandhaltung",
+            "link": ""
+          }
+        },
+        "icon_block_GUTNzK": {
+          "type": "icon_block",
+          "settings": {
+            "title": "Your Title",
+            "link": ""
+          }
+        },
+        "icon_block_mimDVr": {
+          "type": "icon_block",
+          "settings": {
+            "title": "Your Title",
+            "link": ""
+          }
+        },
+        "icon_block_qgCMK9": {
+          "type": "icon_block",
+          "settings": {
+            "title": "Your Title",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_block_j6rPPB",
+        "icon_block_t9iqft",
+        "icon_block_GUTNzK",
+        "icon_block_mimDVr",
+        "icon_block_qgCMK9"
+      ],
+      "name": "Icon Carousel",
+      "settings": {
+        "arrow_color": "#28a745",
+        "pointer_color": "#28a745",
+        "border_color": "#28a745"
+      }
     }
   },
   "order": [
-    "dual_service_hero_pyHdH3"
+    "dual_service_hero_pyHdH3",
+    "custom_icon_carousel_6KXbGD"
   ]
 }
