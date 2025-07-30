@@ -10,6 +10,7 @@
     --pointer-color: {{ section.settings.pointer_color }};
     --arrow-color: {{ section.settings.arrow_color }};
     --border-color-active: {{ section.settings.border_color }};
+    --wrapper-bg: {{ sections.settings.wrapper_bg_color }};
   }
 {%- endstyle -%}
 
@@ -90,7 +91,13 @@
       "id": "border_color",
       "label": "Active Border Color",
       "default": "#E0E0E0"
-    }
+    },
+    {"type": "color",
+  "id": "wrapper_bg_color",
+  "label": "Wrapper Background Color",
+  "default": "#F9F9F9"
+     }
+     
   ],
   "blocks": [
     {
