@@ -1,4 +1,8 @@
 /* Custom Icon Carousel Styles - V5 (Correct Shape & Double Size) */
+
+.custom-icon-carousel-wrapper{
+  background: var(--wrapper-bg, #fff;)
+}
 .custom-icon-carousel-wrapper {
   display: flex;
   align-items: center;
@@ -6,7 +10,6 @@
   position: relative;
   padding: 0 80px;
   margin: 40px 0;
-  background: var(--wrapper-bg, #fff;)
 }
 
 .carousel-viewport {
