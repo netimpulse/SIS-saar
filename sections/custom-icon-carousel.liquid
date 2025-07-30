@@ -12,7 +12,8 @@
     --border-color-active: {{ section.settings.border_color }};
     --wrapper-bg: {{ section.settings.wrapper_bg_color }};
   }
-  .section-{{ section.id }} { background: {{ section.settings.section_bg_color }}; }
+  .section-{{ section.id }} .custom-icon-carousel-section { 
+    background: {{ section.settings.section_bg_color }}; }
 {%- endstyle -%}
 
 <div class="section-{{ section.id }} custom-icon-carousel-section"
