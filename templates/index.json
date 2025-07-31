@@ -105,9 +105,12 @@
         "heading_font_size": 29,
         "heading_color": "#333333",
         "arrow_color": "#28a745",
+        "block_height": 260,
         "pointer_color": "#28a745",
         "border_color": "#cccccc",
-        "section_bg_color": "#f3f3f3"
+        "section_bg_color": "#f3f3f3",
+        "tile_width": 180,
+        "tile_height": 160
       }
     }
   },
