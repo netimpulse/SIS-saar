@@ -1,0 +1,44 @@
+.kundenbewertung-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.review-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: center;
+  flex: 1 1 300px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person-image {
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.star-rating {
+  color: #ffc107;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.person-name {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.review-text p {
+  margin: 0;
+  line-height: 1.6;
+}
