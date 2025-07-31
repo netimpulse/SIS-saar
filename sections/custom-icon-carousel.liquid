@@ -1,33 +1,45 @@
 {% comment %}
   ** Custom Icon Carousel Section **
-  - V5: Correct pointed shape with clip-path, double size, 3-item view.
+  - V6: Scaled down by 30%, added editable heading.
 {% endcomment %}
 
 {{ 'custom-icon-carousel.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+  .section-{{ section.id }} .custom-icon-carousel-heading {
+    color: {{ section.settings.heading_color }};
+    font-size: {{ section.settings.heading_font_size }}px;
+    font-family: {{ section.settings.heading_font.family }}, {{ section.settings.heading_font.fallback_families }};
+    font-style: {{ section.settings.heading_font.style }};
+    font-weight: {{ section.settings.heading_font.weight }};
+  }
+
   .section-{{ section.id }} .custom-icon-carousel-wrapper {
     --pointer-color: {{ section.settings.pointer_color }};
     --arrow-color: {{ section.settings.arrow_color }};
     --border-color-active: {{ section.settings.border_color }};
-    --wrapper-bg: {{ section.settings.wrapper_bg_color }};
   }
-  .section-{{ section.id }}.custom-icon-carousel-section { 
+
+  .section-{{ section.id }}.custom-icon-carousel-section {
     --section-color:{{ section.settings.section_bg_color }};
   }
- 
 {%- endstyle -%}
 
 <div class="section-{{ section.id }} custom-icon-carousel-section"
      data-section-id="{{ section.id }}">
   <div class="page-width">
+
+    {%- if section.settings.heading != blank -%}
+      <h2 class="custom-icon-carousel-heading">{{ section.settings.heading | escape }}</h2>
+    {%- endif -%}
+
     <div class="custom-icon-carousel-wrapper">
       {%- if section.blocks.size > 1 -%}
         <button type="button" class="carousel-arrow carousel-arrow--prev" aria-label="Previous slide">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
         </button>
       {%- endif -%}
-      
+
       <div class="carousel-viewport">
         <div class="carousel-track">
           {%- for block in section.blocks -%}
@@ -35,14 +47,14 @@
               <a href="{{ block.settings.link | default: '#' }}" class="slide-link">
                 <div class="slide-icon">
                   {%- if block.settings.icon_image != blank -%}
-                    <img src="{{ block.settings.icon_image | image_url: width: 180 }}"
+                    <img src="{{ block.settings.icon_image | image_url: width: 126 }}"
                          alt="{{ block.settings.icon_image.alt | escape }}"
                          loading="lazy"
-                         width="90"
-                         height="90">
+                         width="63"
+                         height="63">
                   {%- else -%}
                     <div class="icon-placeholder">
-                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
                     </div>
                   {%- endif -%}
                 </div>
@@ -66,7 +78,6 @@
 
 <script src="{{ 'custom-icon-carousel.js' | asset_url }}" defer="defer"></script>
 
-
 {% schema %}
 {
   "name": "Icon Carousel",
@@ -76,7 +87,39 @@
   "settings": [
     {
       "type": "header",
-      "content": "Color Settings"
+      "content": "Heading Settings"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Icon Carousel"
+    },
+    {
+      "type": "font_picker",
+      "id": "heading_font",
+      "label": "Heading Font",
+      "default": "sans-serif"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size",
+      "min": 16,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Heading Font Size",
+      "default": 32
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#333333"
+    },
+    {
+      "type": "header",
+      "content": "Carousel Color Settings"
     },
     {
       "type": "color",
@@ -96,12 +139,12 @@
       "label": "Active Border Color",
       "default": "#E0E0E0"
     },
-    {"type": "color",
-  "id": "section_bg_color",
-  "label": "Section Background Color",
-  "default": "#F9F9F9"
-     }
-     
+    {
+      "type": "color",
+      "id": "section_bg_color",
+      "label": "Section Background Color",
+      "default": "#FFFFFF"
+    }
   ],
   "blocks": [
     {
@@ -131,7 +174,6 @@
     {
       "name": "Icon Carousel",
       "blocks": [
-        { "type": "icon_block" },
         { "type": "icon_block" },
         { "type": "icon_block" },
         { "type": "icon_block" },
