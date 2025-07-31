@@ -102,7 +102,7 @@
       "settings": {
         "arrow_color": "#28a745",
         "pointer_color": "#28a745",
-        "border_color": "#28a745",
+        "border_color": "#cccccc",
         "section_bg_color": "#f3f3f3"
       }
     }
