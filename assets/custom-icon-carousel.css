@@ -1,4 +1,4 @@
-/* Custom Icon Carousel Styles - V7 (Taller Shape & Adjusted Pointer) */
+/* Custom Icon Carousel Styles - V8 (Elongated Shape) */
 
 .custom-icon-carousel-section {
   background-color: var(--section-color, #fff) !important;
@@ -36,9 +36,10 @@
 }
 
 .carousel-slide {
-  flex: 0 0 33.333%; /* 3 items on desktop */
+  /* UPDATED: 25% width to show 4 items on desktop, making them narrower */
+  flex: 0 0 25%;
   min-width: 0;
-  padding: 7px 14px;
+  padding: 7px 10px; /* Adjusted horizontal padding */
   box-sizing: border-box;
   position: relative;
 }
@@ -49,10 +50,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  /* UPDATED: Center content vertically within the new height */
+  justify-content: center;
+  gap: 15px;
   text-align: center;
-  /* UPDATED: Asymmetrical padding for a taller/narrower shape */
-  padding: 40px 20px;
+  padding: 20px; /* Symmetrical padding */
   background-color: #fff;
   border-radius: 12px;
   border: 2px solid transparent;
@@ -60,6 +62,8 @@
   opacity: 0.5;
   transition: transform 0.4s, opacity 0.4s;
   height: 100%;
+  /* UPDATED: Set a minimum height to make tiles taller */
+  min-height: 270px;
 }
 
 .slide-icon img,
@@ -86,7 +90,7 @@
   opacity: 1;
   border-color: var(--border-color-active, #E0E0E0);
   box-shadow: 0 6px 20px rgba(0,0,0,0.07);
-  /* UPDATED: Deeper V-cut to match the taller shape */
+  /* The percentage-based clip-path adapts to the new shape */
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
 }
 
@@ -99,7 +103,7 @@
   height: 100%;
   z-index: -1;
   background-color: var(--pointer-color, #FF6600);
-  /* UPDATED: Narrower and correctly positioned pointer */
+  /* The percentage-based clip-path adapts to the new shape */
   clip-path: polygon(35% 90%, 65% 90%, 50% 100%);
 }
 
@@ -136,12 +140,14 @@
 
 /* --- Responsive Adjustments --- */
 @media (max-width: 990px) {
+  /* Shows 2 items on tablet */
   .carousel-slide {
     flex-basis: 50%;
   }
 }
 
 @media (max-width: 749px) {
+  /* Scrolls on mobile */
   .carousel-slide {
     flex-basis: 80%;
   }
