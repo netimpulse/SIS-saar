@@ -22,6 +22,7 @@
 
   .section-{{ section.id }}.custom-icon-carousel-section {
     --section-color:{{ section.settings.section_bg_color }};
+    height: {{ section.settings.block_height }}px;
   }
 {%- endstyle -%}
 
@@ -127,6 +128,17 @@
       "label": "Arrow Color",
       "default": "#FF6600"
     },
+    {
+      "type": "range",
+      "id": "block_height",
+      "label": "Section Height",
+      "min": 200,
+      "max": 1000,
+      "step": 20,
+      "unit": "px",
+      "default": 600
+    },
+
     {
       "type": "color",
       "id": "pointer_color",
