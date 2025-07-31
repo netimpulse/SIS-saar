@@ -1,0 +1,190 @@
+{{ 'section-kundenbewertung.css' | asset_url | stylesheet_tag }}
+
+{% comment %} Dynamische Stile für den gesamten Abschnitt {% endcomment %}
+<style>
+  #shopify-section-{{ section.id }} .kundenbewertung-section {
+    background-color: {{ section.settings.section_bg_color }};
+  }
+
+  #shopify-section-{{ section.id }} .section-heading {
+    font-size: {{ section.settings.heading_font_size }}px;
+    font-family: {{ section.settings.heading_font.family }}, {{ section.settings.heading_font.fallback_families }};
+    font-weight: {{ section.settings.heading_font.weight }};
+    color: {{ section.settings.heading_color }};
+  }
+
+  #shopify-section-{{ section.id }} .card-text-font {
+    font-size: {{ section.settings.text_font_size }}px;
+    font-family: {{ section.settings.text_font.family }}, {{ section.settings.text_font.fallback_families }};
+    font-weight: {{ section.settings.text_font.weight }};
+    color: {{ section.settings.text_color }};
+  }
+
+  #shopify-section-{{ section.id }} .card-name-font {
+    font-size: {{ section.settings.name_font_size }}px;
+    font-family: {{ section.settings.name_font.family }}, {{ section.settings.name_font.fallback_families }};
+    font-weight: {{ section.settings.name_font.weight }};
+    color: {{ section.settings.name_color }};
+  }
+
+  #shopify-section-{{ section.id }} .kundenbewertung-grid {
+    --grid-columns-desktop: {{ section.settings.columns_desktop }};
+    --grid-columns-tablet: {{ section.settings.columns_tablet }};
+  }
+</style>
+
+<div class="kundenbewertung-section">
+  <div class="page-width">
+    {% if section.settings.heading != blank %}
+      <h2 class="section-heading">{{ section.settings.heading | escape }}</h2>
+    {% endif %}
+
+    <div class="kundenbewertung-grid">
+      {%- for block in section.blocks -%}
+        {%- render 'kundenbewertung-card', block: block -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Kundenbewertungen",
+  "tag": "section",
+  "class": "testimonial-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Abschnitts-Einstellungen"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Überschrift",
+      "default": "Das sagen unsere Kunden"
+    },
+    {
+      "type": "color",
+      "id": "section_bg_color",
+      "label": "Hintergrundfarbe (ganzer Abschnitt)",
+      "default": "#f9f9f9"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Anzahl Spalten (Desktop)",
+      "default": 2
+    },
+    {
+      "type": "select",
+      "id": "columns_tablet",
+      "label": "Anzahl Spalten (Tablet)",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "header",
+      "content": "Schriftarten & Farben"
+    },
+    {
+      "type": "font_picker", "id": "heading_font", "label": "Schriftart (Überschrift)", "default": "sans-serif"
+    },
+    {
+      "type": "range", "id": "heading_font_size", "min": 20, "max": 50, "step": 1, "unit": "px", "label": "Schriftgröße (Überschrift)", "default": 32
+    },
+    {
+      "type": "color", "id": "heading_color", "label": "Farbe (Überschrift)", "default": "#333333"
+    },
+    {
+      "type": "font_picker", "id": "text_font", "label": "Schriftart (Bewertungstext)", "default": "sans-serif"
+    },
+    {
+      "type": "range", "id": "text_font_size", "min": 12, "max": 24, "step": 1, "unit": "px", "label": "Schriftgröße (Bewertungstext)", "default": 16
+    },
+    {
+      "type": "color", "id": "text_color", "label": "Farbe (Bewertungstext)", "default": "#555555"
+    },
+    {
+      "type": "font_picker", "id": "name_font", "label": "Schriftart (Name)", "default": "sans-serif"
+    },
+    {
+      "type": "range", "id": "name_font_size", "min": 12, "max": 24, "step": 1, "unit": "px", "label": "Schriftgröße (Name)", "default": 15
+    },
+    {
+      "type": "color", "id": "name_color", "label": "Farbe (Name)", "default": "#333333"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Bewertung",
+      "settings": [
+        {
+          "type": "range",
+          "id": "rating",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "label": "Sternebewertung",
+          "default": 5
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Bewertungstext",
+          "default": "<p>Klicken Sie auf Bearbeiten, um diesen Text zu ändern. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+        },
+        {
+          "type": "image_picker",
+          "id": "author_image",
+          "label": "Bild der Person"
+        },
+        {
+          "type": "text",
+          "id": "author_name",
+          "label": "Name der Person",
+          "default": "Gerald Clark"
+        },
+        {
+          "type": "range",
+          "id": "image_size",
+          "min": 40,
+          "max": 100,
+          "step": 5,
+          "unit": "px",
+          "label": "Größe des Bildes",
+          "default": 60
+        },
+        {
+          "type": "color",
+          "id": "card_bg_color",
+          "label": "Hintergrundfarbe (Karte)",
+          "default": "#FFFFFF"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kundenbewertungen",
+      "blocks": [
+        { "type": "review" },
+        { "type": "review" }
+      ]
+    }
+  ]
+}
+{% endschema %}
