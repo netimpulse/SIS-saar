@@ -1,89 +1,159 @@
-class CustomIconCarousel {
-  constructor(sectionElement) {
-    this.section = sectionElement;
-    this.viewport = this.section.querySelector('.carousel-viewport');
-    this.track = this.section.querySelector('.carousel-track');
-    this.slides = Array.from(this.track.children);
-    this.prevButton = this.section.querySelector('.carousel-arrow--prev');
-    this.nextButton = this.section.querySelector('.carousel-arrow--next');
-    
-    if (this.slides.length === 0) return;
-    
-    // Start with the middle item (index 1) for the 3-item view
-    this.currentIndex = 1;
-    if (this.slides.length < 3) this.currentIndex = 0;
+/* Custom Icon Carousel Styles - V6 (Scaled Down & Heading) */
 
-    // Adjust for mobile
-    if (window.innerWidth <= 749) this.currentIndex = 0;
+.custom-icon-carousel-section {
+  background-color: var(--section-color, #fff) !important;
+  overflow: hidden;
+}
 
-    this.init();
-  }
+.custom-icon-carousel-heading {
+  font-family: var(--heading-font-family);
+  font-style: var(--heading-font-style);
+  font-weight: var(--heading-font-weight);
+  font-size: var(--heading-font-size, 32px);
+  color: var(--heading-color, #333);
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-  init() {
-    this.bindEvents();
-    requestAnimationFrame(() => this.update());
-  }
+.custom-icon-carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0;
+  margin: 28px 0;
+}
 
-  bindEvents() {
-    if (this.prevButton) {
-      this.prevButton.addEventListener('click', () => this.moveTo(this.currentIndex - 1));
-    }
-    if (this.nextButton) {
-      this.nextButton.addEventListener('click', () => this.moveTo(this.currentIndex + 1));
-    }
-    
-    let resizeTimer;
-    window.addEventListener('resize', () => {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(() => this.update(), 150);
-    });
-  }
+.carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+}
 
-  moveTo(newIndex) {
-    if (newIndex < 0 || newIndex >= this.slides.length) return;
-    this.currentIndex = newIndex;
-    this.update();
-  }
+.carousel-track {
+  display: flex;
+  padding: 7px 0 28px 0; /* Scaled down */
+  transition: transform 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
 
-  update() {
-    if (!this.slides[0]) return; // Exit if no slides
-    const slideWidth = this.slides[0].offsetWidth;
-    
-    const offset = (this.viewport.offsetWidth / 2) - (slideWidth / 2);
-    const newTransform = -(this.currentIndex * slideWidth) + offset;
-    
-    this.track.style.transform = `translateX(${newTransform}px)`;
+.carousel-slide {
+  flex: 0 0 33.333%; /* 3 items on desktop */
+  min-width: 0;
+  padding: 7px 14px; /* Scaled down */
+  box-sizing: border-box;
+  position: relative;
+}
 
-    this.slides.forEach((slide, index) => {
-      if (index === this.currentIndex) {
-        slide.classList.add('is-selected');
-        slide.setAttribute('aria-current', 'true');
-      } else {
-        slide.classList.remove('is-selected');
-        slide.removeAttribute('aria-current');
-      }
-    });
+.slide-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px; /* Scaled down */
+  text-align: center;
+  padding: 28px; /* Scaled down */
+  background-color: #fff;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  transform: scale(0.8);
+  opacity: 0.5;
+  transition: transform 0.4s, opacity 0.4s;
+  height: 100%;
+}
 
-    if (this.prevButton && this.nextButton) {
-      this.prevButton.disabled = this.currentIndex === 0;
-      this.nextButton.disabled = this.currentIndex === this.slides.length - 1;
-    }
+.slide-icon img,
+.slide-icon .icon-placeholder {
+  width: 63px; /* Scaled down */
+  height: 63px; /* Scaled down */
+  object-fit: contain;
+}
+.slide-icon .icon-placeholder svg {
+    width: 100%;
+    height: 100%;
+    color: #cccccc;
+}
+
+.slide-title p {
+  margin: 0;
+  font-size: 17px; /* Scaled down */
+  font-weight: 500;
+}
+
+/* --- Active (Centered) Slide Styling --- */
+.carousel-slide.is-selected .slide-link {
+  transform: scale(1);
+  opacity: 1;
+  border-color: var(--border-color-active, #E0E0E0);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.07); /* Scaled down shadow */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+}
+
+.carousel-slide.is-selected::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--pointer-color, #FF6600);
+  clip-path: polygon(6% 83%, 94% 83%, 94% 83%, 50% 100%, 6% 83%);
+}
+
+
+/* --- Arrows --- */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  color: var(--arrow-color, #FF6600);
+}
+
+.carousel-arrow:disabled {
+  opacity: 0.2;
+}
+
+.carousel-arrow svg {
+  width: 42px; /* Scaled down */
+  height: 42px; /* Scaled down */
+}
+
+.carousel-arrow--prev {
+  left: 0;
+}
+.carousel-arrow--next {
+  right: 0;
+}
+
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 990px) {
+  .carousel-slide {
+    flex-basis: 50%;
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const carouselSections = document.querySelectorAll('.custom-icon-carousel-section');
-  carouselSections.forEach(section => {
-    if (section.closest('.shopify-app-block')) return;
-    new CustomIconCarousel(section);
-  });
-});
-
-if (window.Shopify && window.Shopify.designMode) {
-  document.addEventListener('shopify:section:load', (event) => {
-    const section = event.target.querySelector('.custom-icon-carousel-section');
-    if (section) {
-      new CustomIconCarousel(section);
-    }
-  });
+@media (max-width: 749px) {
+  .carousel-slide {
+    flex-basis: 80%;
+  }
+  .carousel-arrow {
+    display: none;
+  }
+  .carousel-viewport {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .carousel-viewport::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel-track {
+    transition: none;
+  }
 }
