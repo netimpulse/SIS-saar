@@ -54,7 +54,7 @@
 
 .iwf-feature-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* <<< HIER IST DIE ÄNDERUNG: von flex-start zu center */
   gap: 20px;
 }
 
