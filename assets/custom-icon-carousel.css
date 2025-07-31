@@ -1,4 +1,4 @@
-/* Custom Icon Carousel Styles - V6 (Scaled Down & Heading) */
+/* Custom Icon Carousel Styles - V7 (Taller Shape & Adjusted Pointer) */
 
 .custom-icon-carousel-section {
   background-color: var(--section-color, #fff) !important;
@@ -31,14 +31,14 @@
 
 .carousel-track {
   display: flex;
-  padding: 7px 0 28px 0; /* Scaled down */
+  padding: 7px 0 28px 0;
   transition: transform 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
 .carousel-slide {
   flex: 0 0 33.333%; /* 3 items on desktop */
   min-width: 0;
-  padding: 7px 14px; /* Scaled down */
+  padding: 7px 14px;
   box-sizing: border-box;
   position: relative;
 }
@@ -49,9 +49,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px; /* Scaled down */
+  gap: 14px;
   text-align: center;
-  padding: 28px; /* Scaled down */
+  /* UPDATED: Asymmetrical padding for a taller/narrower shape */
+  padding: 40px 20px;
   background-color: #fff;
   border-radius: 12px;
   border: 2px solid transparent;
@@ -63,8 +64,8 @@
 
 .slide-icon img,
 .slide-icon .icon-placeholder {
-  width: 63px; /* Scaled down */
-  height: 63px; /* Scaled down */
+  width: 63px;
+  height: 63px;
   object-fit: contain;
 }
 .slide-icon .icon-placeholder svg {
@@ -75,7 +76,7 @@
 
 .slide-title p {
   margin: 0;
-  font-size: 17px; /* Scaled down */
+  font-size: 17px;
   font-weight: 500;
 }
 
@@ -84,8 +85,9 @@
   transform: scale(1);
   opacity: 1;
   border-color: var(--border-color-active, #E0E0E0);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.07); /* Scaled down shadow */
-  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+  /* UPDATED: Deeper V-cut to match the taller shape */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
 }
 
 .carousel-slide.is-selected::before {
@@ -97,7 +99,8 @@
   height: 100%;
   z-index: -1;
   background-color: var(--pointer-color, #FF6600);
-  clip-path: polygon(6% 83%, 94% 83%, 94% 83%, 50% 100%, 6% 83%);
+  /* UPDATED: Narrower and correctly positioned pointer */
+  clip-path: polygon(35% 90%, 65% 90%, 50% 100%);
 }
 
 
@@ -119,8 +122,8 @@
 }
 
 .carousel-arrow svg {
-  width: 42px; /* Scaled down */
-  height: 42px; /* Scaled down */
+  width: 42px;
+  height: 42px;
 }
 
 .carousel-arrow--prev {
