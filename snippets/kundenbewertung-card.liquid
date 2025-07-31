@@ -16,7 +16,7 @@
 >
   <div class="card-stars" role="img" aria-label="{{ 'accessibility.star_reviews' | t: rating_value: block.settings.rating, rating_max: 5 }}">
     {%- for i in (1..block.settings.rating) -%}
-      {%- render 'icon-star' -%}
+      {%- render 'icon-star.svg' -%}
     {%- endfor -%}
   </div>
 
