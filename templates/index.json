@@ -100,10 +100,10 @@
       ],
       "name": "Icon Carousel",
       "settings": {
-        "heading": "Icon Carousel",
+        "heading": "Industrieservice Leistungen",
         "heading_font": "sans-serif",
         "heading_font_size": 29,
-        "heading_color": "#333333",
+        "heading_color": "#334fb4",
         "arrow_color": "#28a745",
         "block_height": 260,
         "pointer_color": "#28a745",
