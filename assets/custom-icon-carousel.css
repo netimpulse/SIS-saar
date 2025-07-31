@@ -1,16 +1,27 @@
-/* Custom Icon Carousel Styles - V5 (Correct Shape & Double Size) */
+/* Custom Icon Carousel Styles - V6 (Scaled Down & Heading) */
 
 .custom-icon-carousel-section {
   background-color: var(--section-color, #fff) !important;
   overflow: hidden;
 }
+
+.custom-icon-carousel-heading {
+  font-family: var(--heading-font-family);
+  font-style: var(--heading-font-style);
+  font-weight: var(--heading-font-weight);
+  font-size: var(--heading-font-size, 32px);
+  color: var(--heading-color, #333);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .custom-icon-carousel-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 0 0px;
-  margin: 40px 0;
+  padding: 0;
+  margin: 28px 0;
 }
 
 .carousel-viewport {
@@ -20,15 +31,14 @@
 
 .carousel-track {
   display: flex;
-  /* Add padding to ensure shadows and shapes aren't cut off */
-  padding: 10px 0 40px 0;
+  padding: 7px 0 28px 0; /* Scaled down */
   transition: transform 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
 .carousel-slide {
   flex: 0 0 33.333%; /* 3 items on desktop */
   min-width: 0;
-  padding: 10px 20px;
+  padding: 7px 14px; /* Scaled down */
   box-sizing: border-box;
   position: relative;
 }
@@ -39,13 +49,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 14px; /* Scaled down */
   text-align: center;
-  padding: 40px;
+  padding: 28px; /* Scaled down */
   background-color: #fff;
   border-radius: 12px;
-  /* Jitter fix: Border is always present, just transparent */
-  border: 2px solid transparent; 
+  border: 2px solid transparent;
   transform: scale(0.8);
   opacity: 0.5;
   transition: transform 0.4s, opacity 0.4s;
@@ -54,14 +63,19 @@
 
 .slide-icon img,
 .slide-icon .icon-placeholder {
-  width: 90px;
-  height: 90px;
+  width: 63px; /* Scaled down */
+  height: 63px; /* Scaled down */
   object-fit: contain;
+}
+.slide-icon .icon-placeholder svg {
+    width: 100%;
+    height: 100%;
+    color: #cccccc;
 }
 
 .slide-title p {
   margin: 0;
-  font-size: 24px;
+  font-size: 17px; /* Scaled down */
   font-weight: 500;
 }
 
@@ -70,12 +84,10 @@
   transform: scale(1);
   opacity: 1;
   border-color: var(--border-color-active, #E0E0E0);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.07);
-  /* The magic happens here! We shape the element itself. */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.07); /* Scaled down shadow */
   clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
 }
 
-/* We create the colored background shape behind the active slide */
 .carousel-slide.is-selected::before {
   content: '';
   position: absolute;
@@ -85,7 +97,6 @@
   height: 100%;
   z-index: -1;
   background-color: var(--pointer-color, #FF6600);
-  /* The background gets the same pointed shape */
   clip-path: polygon(6% 83%, 94% 83%, 94% 83%, 50% 100%, 6% 83%);
 }
 
@@ -108,8 +119,8 @@
 }
 
 .carousel-arrow svg {
-  width: 60px;
-  height: 60px;
+  width: 42px; /* Scaled down */
+  height: 42px; /* Scaled down */
 }
 
 .carousel-arrow--prev {
