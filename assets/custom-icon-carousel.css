@@ -1,4 +1,4 @@
-/* Custom Icon Carousel Styles - V8 (Elongated Shape) */
+/* Custom Icon Carousel Styles - V9 (Narrower Portrait Shape) */
 
 .custom-icon-carousel-section {
   background-color: var(--section-color, #fff) !important;
@@ -31,15 +31,15 @@
 
 .carousel-track {
   display: flex;
-  padding: 7px 0 28px 0;
+  padding: 5px 0 25px 0; /* Reduced padding */
   transition: transform 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
 .carousel-slide {
-  /* UPDATED: 25% width to show 4 items on desktop, making them narrower */
-  flex: 0 0 25%;
+  /* UPDATED: 20% width to show 5 items on desktop, making them much narrower */
+  flex: 0 0 20%;
   min-width: 0;
-  padding: 7px 10px; /* Adjusted horizontal padding */
+  padding: 5px 8px; /* UPDATED: Reduced spacing between tiles */
   box-sizing: border-box;
   position: relative;
 }
@@ -50,11 +50,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* UPDATED: Center content vertically within the new height */
   justify-content: center;
   gap: 15px;
   text-align: center;
-  padding: 20px; /* Symmetrical padding */
+  padding: 15px; /* Reduced padding */
   background-color: #fff;
   border-radius: 12px;
   border: 2px solid transparent;
@@ -62,14 +61,14 @@
   opacity: 0.5;
   transition: transform 0.4s, opacity 0.4s;
   height: 100%;
-  /* UPDATED: Set a minimum height to make tiles taller */
-  min-height: 270px;
+  /* UPDATED: Reduced height for a smaller overall tile */
+  min-height: 240px;
 }
 
 .slide-icon img,
 .slide-icon .icon-placeholder {
-  width: 63px;
-  height: 63px;
+  width: 60px; /* Slightly smaller icon */
+  height: 60px;
   object-fit: contain;
 }
 .slide-icon .icon-placeholder svg {
@@ -80,7 +79,7 @@
 
 .slide-title p {
   margin: 0;
-  font-size: 17px;
+  font-size: 16px; /* Slightly smaller font */
   font-weight: 500;
 }
 
@@ -89,8 +88,7 @@
   transform: scale(1);
   opacity: 1;
   border-color: var(--border-color-active, #E0E0E0);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.07);
-  /* The percentage-based clip-path adapts to the new shape */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.06); /* Adjusted shadow */
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
 }
 
@@ -103,7 +101,6 @@
   height: 100%;
   z-index: -1;
   background-color: var(--pointer-color, #FF6600);
-  /* The percentage-based clip-path adapts to the new shape */
   clip-path: polygon(35% 90%, 65% 90%, 50% 100%);
 }
 
@@ -140,16 +137,16 @@
 
 /* --- Responsive Adjustments --- */
 @media (max-width: 990px) {
-  /* Shows 2 items on tablet */
+  /* Shows 3 items on tablet now */
   .carousel-slide {
-    flex-basis: 50%;
+    flex-basis: 33.333%;
   }
 }
 
 @media (max-width: 749px) {
   /* Scrolls on mobile */
   .carousel-slide {
-    flex-basis: 80%;
+    flex-basis: 60%; /* Adjusted for better view */
   }
   .carousel-arrow {
     display: none;
