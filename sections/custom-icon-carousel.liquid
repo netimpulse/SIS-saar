@@ -18,6 +18,8 @@
     --pointer-color: {{ section.settings.pointer_color }};
     --arrow-color: {{ section.settings.arrow_color }};
     --border-color-active: {{ section.settings.border_color }};
+    --tile-width:  {{ section.settings.tile_width }}px;
+    --tile-height: {{ section.settings.tile_height }}px;
   }
 
   .section-{{ section.id }}.custom-icon-carousel-section {
@@ -156,7 +158,32 @@
       "id": "section_bg_color",
       "label": "Section Background Color",
       "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "Tile Size"
+    },
+    {
+     "type": "range",
+     "id": "tile_width",
+     "label": "Tile Width",
+     "min": 120,
+     "max": 400,
+     "step": 10,
+     "unit": "px",
+     "default": 160
+    },
+    {
+     "type": "range",
+     "id": "tile_height",
+     "label": "Tile Height",
+     "min": 120,
+     "max": 400,
+     "step": 10,
+     "unit": "px",
+     "default": 160
     }
+
   ],
   "blocks": [
     {
