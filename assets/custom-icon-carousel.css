@@ -1,4 +1,4 @@
-/* Custom Icon Carousel Styles - V10 (Compact & Shorter) */
+/* Custom Icon Carousel Styles - V11 (Final Compact Version) */
 
 .custom-icon-carousel-section {
   background-color: var(--section-color, #fff) !important;
@@ -21,8 +21,8 @@
   justify-content: center;
   position: relative;
   padding: 0;
-  /* UPDATED: Reduced vertical margin to shrink the block */
-  margin: 20px 0;
+  /* UPDATED: Minimal vertical margin to shrink the entire block */
+  margin: 10px 0;
 }
 
 .carousel-viewport {
@@ -51,10 +51,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* UPDATED: Reduced gap between icon and title */
-  gap: 12px;
+  gap: 10px; /* Reduced gap */
   text-align: center;
-  padding: 15px;
+  padding: 10px; /* Reduced padding */
   background-color: #fff;
   border-radius: 12px;
   border: 2px solid transparent;
@@ -63,14 +62,14 @@
   transition: transform 0.4s, opacity 0.4s;
   height: 100%;
   /* UPDATED: Significantly reduced height */
-  min-height: 200px;
+  min-height: 160px;
 }
 
 .slide-icon img,
 .slide-icon .icon-placeholder {
   /* UPDATED: Smaller icon size */
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
 }
 .slide-icon .icon-placeholder svg {
@@ -81,8 +80,8 @@
 
 .slide-title p {
   margin: 0;
-  /* UPDATED: Smaller font size */
-  font-size: 15px;
+  /* UPDATED: Final smaller font size */
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -91,7 +90,7 @@
   transform: scale(1);
   opacity: 1;
   border-color: var(--border-color-active, #E0E0E0);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06); /* Adjusted shadow */
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
 }
 
@@ -126,8 +125,9 @@
 }
 
 .carousel-arrow svg {
-  width: 42px;
-  height: 42px;
+  /* UPDATED: Smaller arrows to match */
+  width: 36px;
+  height: 36px;
 }
 
 .carousel-arrow--prev {
