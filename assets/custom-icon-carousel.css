@@ -1,4 +1,4 @@
-/* Custom Icon Carousel Styles - V9 (Narrower Portrait Shape) */
+/* Custom Icon Carousel Styles - V10 (Compact & Shorter) */
 
 .custom-icon-carousel-section {
   background-color: var(--section-color, #fff) !important;
@@ -21,7 +21,8 @@
   justify-content: center;
   position: relative;
   padding: 0;
-  margin: 28px 0;
+  /* UPDATED: Reduced vertical margin to shrink the block */
+  margin: 20px 0;
 }
 
 .carousel-viewport {
@@ -31,15 +32,14 @@
 
 .carousel-track {
   display: flex;
-  padding: 5px 0 25px 0; /* Reduced padding */
+  padding: 5px 0 25px 0;
   transition: transform 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
 .carousel-slide {
-  /* UPDATED: 20% width to show 5 items on desktop, making them much narrower */
   flex: 0 0 20%;
   min-width: 0;
-  padding: 5px 8px; /* UPDATED: Reduced spacing between tiles */
+  padding: 5px 8px;
   box-sizing: border-box;
   position: relative;
 }
@@ -51,9 +51,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  /* UPDATED: Reduced gap between icon and title */
+  gap: 12px;
   text-align: center;
-  padding: 15px; /* Reduced padding */
+  padding: 15px;
   background-color: #fff;
   border-radius: 12px;
   border: 2px solid transparent;
@@ -61,14 +62,15 @@
   opacity: 0.5;
   transition: transform 0.4s, opacity 0.4s;
   height: 100%;
-  /* UPDATED: Reduced height for a smaller overall tile */
-  min-height: 240px;
+  /* UPDATED: Significantly reduced height */
+  min-height: 200px;
 }
 
 .slide-icon img,
 .slide-icon .icon-placeholder {
-  width: 60px; /* Slightly smaller icon */
-  height: 60px;
+  /* UPDATED: Smaller icon size */
+  width: 50px;
+  height: 50px;
   object-fit: contain;
 }
 .slide-icon .icon-placeholder svg {
@@ -79,7 +81,8 @@
 
 .slide-title p {
   margin: 0;
-  font-size: 16px; /* Slightly smaller font */
+  /* UPDATED: Smaller font size */
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -88,7 +91,7 @@
   transform: scale(1);
   opacity: 1;
   border-color: var(--border-color-active, #E0E0E0);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.06); /* Adjusted shadow */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.06);
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
 }
 
@@ -137,16 +140,14 @@
 
 /* --- Responsive Adjustments --- */
 @media (max-width: 990px) {
-  /* Shows 3 items on tablet now */
   .carousel-slide {
     flex-basis: 33.333%;
   }
 }
 
 @media (max-width: 749px) {
-  /* Scrolls on mobile */
   .carousel-slide {
-    flex-basis: 60%; /* Adjusted for better view */
+    flex-basis: 60%;
   }
   .carousel-arrow {
     display: none;
