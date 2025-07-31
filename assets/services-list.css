@@ -1,45 +1,29 @@
-/* Layout-Hülle */
-.service-wrapper {
-  max-width: 90rem;       /* 1440 px */
-  margin: 0 auto;
-  padding: 4rem 1rem;
-}
-
-@media (min-width: 1024px) {
-  .service-wrapper { padding: 5rem 1rem; }
-}
-
-/* Suchleiste (lokal & Header) */
-.service-search-input {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  border: 1px solid #dcdcdc;
-  border-radius: 0.375rem;
-  font-size: 1rem;
-}
-
-/* Grid-Layout des Blocks */
-.service-block {
+/* ---------- Layout ---------- */
+.service-item {
   display: grid;
   gap: 2.5rem;
-  margin-bottom: 4rem;
+  margin: 0 auto 4rem;
+  max-width: 90rem;          /* 1440 px */
+  padding: 0 1rem;
+  align-items: center;
 }
 
 @media (min-width: 1024px) {
-  .service-block {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
-    margin-bottom: 6rem;
-  }
+  .service-item           { grid-template-columns: repeat(2, 1fr); gap: 4rem; margin-bottom: 6rem; }
+  .service-item--img-right .service-item__image   { order: 2; }
 }
 
-/* Bild */
-.service-image img {
+/* ---------- Bild ---------- */
+.service-item__image img {
   width: 100%;
   height: auto;
+  display: block;
   border-radius: 0.5rem;
-  box-shadow: 0 16px 32px rgba(0,0,0,.05);
+  /* leichter „Schatten + Abstand“ wie im Screenshot */
+  box-shadow: 0 18px 36px rgba(0,0,0,.08);
+  transform: translateY(6px);
 }
 
-/* Reset-Button-Utility aus Dawn */
-button[type="reset"].hidden { display:none; }
+/* ---------- Text ---------- */
+.service-item__heading { margin: 0 0 1rem; line-height: 1.25; }
+.service-item__text    { line-height: 1.6; }
