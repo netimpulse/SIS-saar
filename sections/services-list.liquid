@@ -1,126 +1,77 @@
 {% comment %}
-Services-Seite: alle Leistungen als Blöcke.
-– Suchfeld oben auf der Seite (lokal)
-– JSON + datalist für Autocomplete & Header-Suche
+Ein einzelner Leistungs-Block:
+• Bild links / rechts
+• Überschrift + Text (Farben, Größen, Gewicht anpassbar)
+• frei wählbare Anchor-ID für Sprungmarken/Suche
 {% endcomment %}
 
-<section class="service-wrapper">
+{%- assign anchor_id = section.settings.anchor
+      | default: section.settings.heading | handleize -%}
 
-  <!-- Lokales Suchfeld -->
-  <div class="service-search-bar">
-    <input id="service-search-local"
-           class="service-search-input"
-           type="search"
-           placeholder="Leistung suchen …"
-           list="services-datalist">
+<article id="{{ anchor_id }}"
+         class="service-item {% if section.settings.image_position == 'right' %}service-item--img-right{% endif %}">
+
+  <!-- Bild -->
+  {% if section.settings.image != blank %}
+    <div class="service-item__image">
+      {{ section.settings.image
+         | image_url: width: 1200
+         | image_tag: loading: 'lazy', alt: section.settings.heading }}
+    </div>
+  {% endif %}
+
+  <!-- Text -->
+  <div class="service-item__content">
+    <h2 class="service-item__heading"
+        style="
+          color: {{ section.settings.heading_color }};
+          font-size: {{ section.settings.heading_size }}px;
+          {% if section.settings.heading_weight == 'bold' %}font-weight:700;{% endif %}
+        ">
+      {{ section.settings.heading }}
+    </h2>
+
+    <div class="service-item__text"
+         style="
+           color: {{ section.settings.body_color }};
+           font-size: {{ section.settings.body_size }}px;
+         ">
+      {{ section.settings.body }}
+    </div>
   </div>
-
-  <!-- datalist für Autocomplete -->
-  <datalist id="services-datalist">
-    {%- for block in section.blocks -%}
-      <option value="{{ block.settings.heading | escape }}"></option>
-    {%- endfor -%}
-  </datalist>
-
-  <!-- JSON für Header-Suche -->
-  <script id="services-json" type="application/json">
-    [
-      {%- for block in section.blocks -%}
-        {
-          "title": {{ block.settings.heading | json }},
-          "anchor": {{ block.settings.anchor | default: block.settings.heading | handleize | json }}
-        }{% unless forloop.last %},{% endunless %}
-      {%- endfor -%}
-    ]
-  </script>
-
-  <!-- Leistungs-Blöcke -->
-  {%- for block in section.blocks -%}
-    {%- assign a = block.settings.anchor | default: block.settings.heading | handleize -%}
-
-    <article id="{{ a }}"
-             class="service-block"
-             {{ block.shopify_attributes }}>
-
-      {% if block.settings.image != blank %}
-        <div class="service-image">
-          {{ block.settings.image
-             | image_url: width: 1200
-             | image_tag: loading: 'lazy' }}
-        </div>
-      {% endif %}
-
-      <div class="service-content">
-        <h2 class="service-heading"
-            style="
-              color: {{ block.settings.heading_color }};
-              font-size: {{ block.settings.heading_size }}px;
-              {% if block.settings.heading_weight == 'bold' %}font-weight:700;{% endif %}
-            ">
-          {{ block.settings.heading }}
-        </h2>
-
-        <div class="service-text"
-             style="color: {{ block.settings.body_color }};
-                    font-size: {{ block.settings.body_size }}px;">
-          {{ block.settings.body }}
-        </div>
-      </div>
-    </article>
-  {%- endfor -%}
-</section>
-
-<!-- JS: Scroll-Logik im lokalen Suchfeld -->
-<script>
-(() => {
-  const input = document.getElementById('service-search-local');
-  if (!input) return;
-
-  const services = JSON.parse(
-    document.getElementById('services-json').textContent
-  );
-
-  input.addEventListener('change', e => {
-    const term  = e.target.value.toLowerCase();
-    const hit   = services.find(s => s.title.toLowerCase() === term);
-    if (!hit) return;
-
-    document.getElementById(hit.anchor)
-            ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
-})();
-</script>
+</article>
 
 {% schema %}
 {
-  "name": "Services-Liste",
+  "name": "Service-Block",
   "tag": "section",
-  "class": "services-list",
-  "max_blocks": 100,
-  "blocks": [
-    {
-      "type": "service",
-      "name": "Leistung",
-      "settings": [
-        { "id": "heading",        "type": "text",       "label": "Überschrift",    "default": "Neue Leistung" },
-        { "id": "body",           "type": "richtext",   "label": "Beschreibung" },
-        { "id": "image",          "type": "image_picker","label": "Bild" },
+  "class": "service-item-wrapper",
+  "settings": [
+    { "id": "image",          "type": "image_picker", "label": "Bild" },
 
-        { "type": "header",       "content": "Darstellung" },
+    { "id": "image_position", "type": "select", "label": "Bildposition",
+      "options": [
+        { "value": "left",  "label": "Links" },
+        { "value": "right", "label": "Rechts" }
+      ], "default": "left" },
 
-        { "id": "anchor",         "type": "text",       "label": "Anchor-ID (optional)",
-          "info": "Leer lassen, um sie automatisch aus der Überschrift zu erzeugen." },
+    { "type": "header",       "content": "Text" },
 
-        { "id": "heading_color",  "type": "color",      "label": "Farbe Überschrift", "default": "#1a1a1a" },
-        { "id": "heading_size",   "type": "range",      "label": "Größe Überschrift", "min":18,"max":60,"step":1,"default":28 },
-        { "id": "heading_weight", "type": "select",     "label": "Schriftgewicht Überschrift",
-          "options":[{"value":"normal","label":"Normal"},{"value":"bold","label":"Fett"}],"default":"bold" },
+    { "id": "heading",        "type": "text",      "label": "Überschrift",    "default": "Deine Leistung" },
+    { "id": "heading_color",  "type": "color",     "label": "Farbe Überschrift", "default": "#1a1a1a" },
+    { "id": "heading_size",   "type": "range",     "label": "Größe Überschrift (px)",
+      "min": 18, "max": 60, "step": 1, "default": 32 },
+    { "id": "heading_weight", "type": "select",    "label": "Schriftgewicht",
+      "options":[{"value":"normal","label":"Normal"},{"value":"bold","label":"Fett"}], "default":"bold" },
 
-        { "id": "body_color",     "type": "color",      "label": "Farbe Text",        "default": "#666666" },
-        { "id": "body_size",      "type": "range",      "label": "Größe Text",        "min":12,"max":30,"step":1,"default":18 }
-      ]
-    }
-  ],
-  "presets":[{ "name":"Services-Liste"}]
+    { "id": "body",           "type": "richtext",  "label": "Beschreibung" },
+    { "id": "body_color",     "type": "color",     "label": "Farbe Text", "default": "#666666" },
+    { "id": "body_size",      "type": "range",     "label": "Größe Text (px)",
+      "min": 12, "max": 30, "step": 1, "default": 18 },
+
+    { "type": "header",       "content": "Anchor" },
+    { "id": "anchor",         "type": "text",      "label": "Anchor-ID (optional)",
+      "info": "Leer lassen, um sie automatisch aus der Überschrift zu bilden." }
+  ]
 }
 {% endschema %}
