@@ -37,7 +37,7 @@
 }
 
 .carousel-slide {
-  flex: 0 0 20%;
+  flex: 0 0 var(--tile-width, 20%);
   min-width: 0;
   padding: 5px 8px;
   box-sizing: border-box;
@@ -62,7 +62,7 @@
   transition: transform 0.4s, opacity 0.4s;
   height: 100%;
   /* UPDATED: Significantly reduced height */
-  min-height: 160px;
+  +  min-height: var(--tile-height, 160px);
 }
 
 .slide-icon img,
