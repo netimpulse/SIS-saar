@@ -1,30 +1,28 @@
 {% comment %}
-Eine einzige Section, die beliebig viele „Leistung“-Blöcke zulässt.
-Jeder Block enthält Bild, Überschrift, Fließtext & frei wählbares Anchor-ID-Feld.
-Die Section erzeugt automatisch:
-  • <datalist>  → Autocomplete-Vorschläge
-  • <script id="services-json">  → JSON für die Header-Suche
+Services-Seite: alle Leistungen als Blöcke.
+– Suchfeld oben auf der Seite (lokal)
+– JSON + datalist für Autocomplete & Header-Suche
 {% endcomment %}
 
-<section class="service-wrapper mx-auto max-w-6xl px-4 py-12 lg:py-20">
+<section class="service-wrapper">
 
-  <!-- ----------  Suchleiste für die Services‐Seite selbst  ---------- -->
-  <div class="mb-10">
+  <!-- Lokales Suchfeld -->
+  <div class="service-search-bar">
     <input id="service-search-local"
+           class="service-search-input"
            type="search"
            placeholder="Leistung suchen …"
-           list="services-datalist"
-           class="w-full border rounded px-4 py-3 text-base" />
+           list="services-datalist">
   </div>
 
-  <!-- ----------  Datensätze für Autocomplete  ---------- -->
+  <!-- datalist für Autocomplete -->
   <datalist id="services-datalist">
     {%- for block in section.blocks -%}
       <option value="{{ block.settings.heading | escape }}"></option>
     {%- endfor -%}
   </datalist>
 
-  <!-- ----------  JSON → wird von der Header-Suche ausgelesen  ---------- -->
+  <!-- JSON für Header-Suche -->
   <script id="services-json" type="application/json">
     [
       {%- for block in section.blocks -%}
@@ -36,36 +34,33 @@ Die Section erzeugt automatisch:
     ]
   </script>
 
-  <!-- ----------  Ausgabe aller Leistungs-Blöcke  ---------- -->
+  <!-- Leistungs-Blöcke -->
   {%- for block in section.blocks -%}
     {%- assign a = block.settings.anchor | default: block.settings.heading | handleize -%}
 
-    <article
-      id="{{ a }}"
-      class="service-block grid lg:grid-cols-2 gap-10 lg:gap-16 mb-16 lg:mb-24"
-      {{ block.shopify_attributes }}>
+    <article id="{{ a }}"
+             class="service-block"
+             {{ block.shopify_attributes }}>
 
-      <!-- Bild -->
-      {%- if block.settings.image != blank -%}
-        <div>
+      {% if block.settings.image != blank %}
+        <div class="service-image">
           {{ block.settings.image
-            | image_url: width: 1200
-            | image_tag: loading: 'lazy', class: 'w-full rounded shadow-lg' }}
+             | image_url: width: 1200
+             | image_tag: loading: 'lazy' }}
         </div>
-      {%- endif -%}
+      {% endif %}
 
-      <!-- Text -->
-      <div class="flex flex-col justify-center">
-        <h2 style="
+      <div class="service-content">
+        <h2 class="service-heading"
+            style="
               color: {{ block.settings.heading_color }};
               font-size: {{ block.settings.heading_size }}px;
-              {{ block.settings.heading_weight == 'bold' ? 'font-weight:700;' : '' }}
-            "
-            class="mb-4">
+              {% if block.settings.heading_weight == 'bold' %}font-weight:700;{% endif %}
+            ">
           {{ block.settings.heading }}
         </h2>
 
-        <div class="rte"
+        <div class="service-text"
              style="color: {{ block.settings.body_color }};
                     font-size: {{ block.settings.body_size }}px;">
           {{ block.settings.body }}
@@ -75,25 +70,25 @@ Die Section erzeugt automatisch:
   {%- endfor -%}
 </section>
 
-<!-- ----------  JS → Suchfeld scrollt zur passenden Sektion  ---------- -->
+<!-- JS: Scroll-Logik im lokalen Suchfeld -->
 <script>
-  (() => {
-    const input  = document.getElementById('service-search-local');
-    if (!input) return;
+(() => {
+  const input = document.getElementById('service-search-local');
+  if (!input) return;
 
-    const services = JSON.parse(
-      document.getElementById('services-json').textContent
-    );
+  const services = JSON.parse(
+    document.getElementById('services-json').textContent
+  );
 
-    input.addEventListener('change', e => {
-      const term  = e.target.value.toLowerCase();
-      const match = services.find(s => s.title.toLowerCase() === term);
-      if (!match) return;
+  input.addEventListener('change', e => {
+    const term  = e.target.value.toLowerCase();
+    const hit   = services.find(s => s.title.toLowerCase() === term);
+    if (!hit) return;
 
-      const target = document.getElementById(match.anchor);
-      target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  })();
+    document.getElementById(hit.anchor)
+            ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+})();
 </script>
 
 {% schema %}
@@ -107,27 +102,25 @@ Die Section erzeugt automatisch:
       "type": "service",
       "name": "Leistung",
       "settings": [
-        { "id": "heading",  "type": "text",      "label": "Überschrift",    "default": "Neue Leistung" },
-        { "id": "body",     "type": "richtext",  "label": "Beschreibung" },
-        { "id": "image",    "type": "image_picker", "label": "Bild" },
+        { "id": "heading",        "type": "text",       "label": "Überschrift",    "default": "Neue Leistung" },
+        { "id": "body",           "type": "richtext",   "label": "Beschreibung" },
+        { "id": "image",          "type": "image_picker","label": "Bild" },
 
-        { "type": "header", "content": "Darstellung" },
+        { "type": "header",       "content": "Darstellung" },
 
-        { "id": "anchor",   "type": "text",      "label": "Anchor-ID (optional)",
-          "info": "Wird für die Suche & URL-Sprungmarke verwendet. Leer = wird automatisch aus der Überschrift gebildet." },
+        { "id": "anchor",         "type": "text",       "label": "Anchor-ID (optional)",
+          "info": "Leer lassen, um sie automatisch aus der Überschrift zu erzeugen." },
 
-        { "id": "heading_color", "type": "color", "label": "Farbe – Überschrift",  "default": "#111111" },
-        { "id": "heading_size",  "type": "range", "label": "Größe – Überschrift", "min": 18, "max": 60, "step": 1, "default": 28 },
-        { "id": "heading_weight","type": "select","label": "Schriftstil Überschrift",
-          "options":[{"value":"normal","label":"Normal"},{"value":"bold","label":"Fett"}], "default":"bold" },
+        { "id": "heading_color",  "type": "color",      "label": "Farbe Überschrift", "default": "#1a1a1a" },
+        { "id": "heading_size",   "type": "range",      "label": "Größe Überschrift", "min":18,"max":60,"step":1,"default":28 },
+        { "id": "heading_weight", "type": "select",     "label": "Schriftgewicht Überschrift",
+          "options":[{"value":"normal","label":"Normal"},{"value":"bold","label":"Fett"}],"default":"bold" },
 
-        { "id": "body_color",    "type": "color", "label": "Farbe – Text",  "default": "#666666" },
-        { "id": "body_size",     "type": "range", "label": "Größe – Text", "min": 12, "max": 30, "step": 1, "default": 18 }
+        { "id": "body_color",     "type": "color",      "label": "Farbe Text",        "default": "#666666" },
+        { "id": "body_size",      "type": "range",      "label": "Größe Text",        "min":12,"max":30,"step":1,"default":18 }
       ]
     }
   ],
-  "presets": [
-    { "name": "Services-Liste" }
-  ]
+  "presets":[{ "name":"Services-Liste"}]
 }
 {% endschema %}
