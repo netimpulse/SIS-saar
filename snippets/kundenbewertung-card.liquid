@@ -1,0 +1,43 @@
+{% comment %}
+  Dieses Snippet rendert eine einzelne Bewertungskarte.
+  Erwartete Variablen:
+  - block: Der Block aus der Section-Schleife.
+{% endcomment %}
+
+{% liquid
+  assign author_image_size = block.settings.image_size | append: 'px'
+  assign card_bg_color = block.settings.card_bg_color
+%}
+
+<div
+  class="kundenbewertung-card"
+  style="background-color: {{ card_bg_color }};"
+  {{ block.shopify_attributes }}
+>
+  <div class="card-stars" role="img" aria-label="{{ 'accessibility.star_reviews' | t: rating_value: block.settings.rating, rating_max: 5 }}">
+    {%- for i in (1..block.settings.rating) -%}
+      {%- render 'icon-star' -%}
+    {%- endfor -%}
+  </div>
+
+  <div class="card-text card-text-font">
+    {{ block.settings.text }}
+  </div>
+
+  <div class="card-author">
+    <div class="author-image-wrapper" style="width: {{ author_image_size }}; height: {{ author_image_size }};">
+      {%- if block.settings.author_image != blank -%}
+        <img
+          src="{{ block.settings.author_image | image_url: width: 200, height: 200, crop: 'center' }}"
+          alt="{{ block.settings.author_image.alt | default: block.settings.author_name | escape }}"
+          loading="lazy"
+          width="100"
+          height="100"
+        >
+      {%- else -%}
+        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+    </div>
+    <div class="author-name card-name-font">{{ block.settings.author_name | escape }}</div>
+  </div>
+</div>
