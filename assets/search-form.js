@@ -2,24 +2,24 @@ class SearchForm extends HTMLElement {
   constructor() {
     super();
 
-    /* ---------- Standard-Suche  ---------- */
+    /* Elemente */
     this.input       = this.querySelector('input[type="search"]');
     this.resetButton = this.querySelector('button[type="reset"]');
 
     if (this.input) {
-      // Ereignisse für Reset-Button & Tippen
+      /* Reset & Tippen (bestehende Dawn-Logik) */
       this.input.form.addEventListener('reset', this.onFormReset.bind(this));
       this.input.addEventListener(
         'input',
-        debounce((event) => this.onChange(event), 300).bind(this)
+        debounce((e) => this.onChange(e), 300).bind(this)
       );
 
-      /* ---------- NEU: Leistungs-Suche ---------- */
+      /* NEU: Submit abfangen → Leistungs-Suche */
       this.input.form.addEventListener('submit', this.onSubmit.bind(this));
     }
   }
 
-  /* ----- sicht-/unsichtbar schalten des Reset-Buttons ----- */
+  /* ---------------- Standard-Dawn ---------------- */
   toggleResetButton() {
     const hidden = this.resetButton.classList.contains('hidden');
     if (this.input.value.length > 0 && hidden) {
@@ -29,17 +29,13 @@ class SearchForm extends HTMLElement {
     }
   }
 
-  onChange() {
-    this.toggleResetButton();
-  }
+  onChange() { this.toggleResetButton(); }
 
-  /* ----- Standard-Verhalten für „Alle löschen“ ----- */
   shouldResetForm() {
     return !document.querySelector('[aria-selected="true"] a');
   }
 
   onFormReset(event) {
-    // verhindert, dass Shopify den zuletzt gesuchten Begriff wiedereinsetzt
     event.preventDefault();
     if (this.shouldResetForm()) {
       this.input.value = '';
@@ -48,47 +44,35 @@ class SearchForm extends HTMLElement {
     }
   }
 
-  /* ==========================================================
-     NEU: Prüfen, ob der Suchbegriff eine Leistung ist
-     ========================================================== */
+  /* ---------------- NEU: Leistungs-Suche ---------------- */
   onSubmit(event) {
     const query = this.input.value.trim();
-    if (!query) return;                    // leer ⇒ normale Suche
+    if (!query) return;                                // leer → Standard-Suche
 
-    /* 1) JSON-Liste aller Leistungen holen (kommt aus der Services-Section) */
     const jsonTag = document.getElementById('services-json');
-    if (!jsonTag) return;                  // Section noch nicht gerendert
+    if (!jsonTag) return;                              // Section nicht im DOM
 
     let services = [];
-    try {
-      services = JSON.parse(jsonTag.textContent);
-    } catch (e) {
-      return;                              // JSON ungültig ⇒ normale Suche
-    }
+    try   { services = JSON.parse(jsonTag.textContent); }
+    catch { return; }
 
-    /* 2) Match finden (Groß-/Kleinschreibung egal) */
     const match = services.find(
       (s) => s.title.toLowerCase() === query.toLowerCase()
     );
-    if (!match) return;                    // kein Treffer ⇒ normale Suche
+    if (!match) return;                                // kein Treffer → Standard
 
-    /* 3) Treffer ist eine Leistung → Standard-Suche stoppen */
+    /* Treffer: Formular-Submit stoppen */
     event.preventDefault();
 
-    /* 4) Entweder scrollen (wenn wir schon auf der Seite sind)
-          oder mit Hash-Anchor weiterleiten                             */
-    const pagePath = '/pages/unsere-leistungen';   // ggf. anpassen
+    const pagePath = '/pages/unsere-leistungen';        // ggf. anpassen
     if (window.location.pathname.startsWith(pagePath)) {
-      // bereits auf der Seite
-      document
-        .getElementById(match.anchor)
-        ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      document.getElementById(match.anchor)
+              ?.scrollIntoView({ behavior:'smooth', block:'start' });
     } else {
-      // andere Seite → Redirect inkl. Hash
       window.location.href = `${pagePath}#${match.anchor}`;
     }
   }
 }
 
+/* Dawn-Custom-Element */
 customElements.define('search-form', SearchForm);
-
