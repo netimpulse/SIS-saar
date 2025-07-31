@@ -72,21 +72,21 @@
         "icon_block_GUTNzK": {
           "type": "icon_block",
           "settings": {
-            "title": "Your Title",
+            "title": "Reinigung",
             "link": ""
           }
         },
         "icon_block_mimDVr": {
           "type": "icon_block",
           "settings": {
-            "title": "Your Title",
+            "title": "Montage, Demontage & Maschinenumzüge",
             "link": ""
           }
         },
         "icon_block_qgCMK9": {
           "type": "icon_block",
           "settings": {
-            "title": "Your Title",
+            "title": "Raumlufttechnik & Küchenabluft",
             "link": ""
           }
         }
@@ -100,6 +100,10 @@
       ],
       "name": "Icon Carousel",
       "settings": {
+        "heading": "Icon Carousel",
+        "heading_font": "sans-serif",
+        "heading_font_size": 29,
+        "heading_color": "#333333",
         "arrow_color": "#28a745",
         "pointer_color": "#28a745",
         "border_color": "#cccccc",
