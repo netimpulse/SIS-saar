@@ -9,8 +9,8 @@ class CustomIconCarousel {
     
     if (this.slides.length === 0) return;
     
-    // UPDATED: Start with the middle item (index 1) for the 3-item view
-    this.currentIndex = 1; 
+    // Start with the middle item (index 1) for the 3-item view
+    this.currentIndex = 1;
     if (this.slides.length < 3) this.currentIndex = 0;
 
     // Adjust for mobile
@@ -46,6 +46,7 @@ class CustomIconCarousel {
   }
 
   update() {
+    if (!this.slides[0]) return; // Exit if no slides
     const slideWidth = this.slides[0].offsetWidth;
     
     const offset = (this.viewport.offsetWidth / 2) - (slideWidth / 2);
