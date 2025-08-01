@@ -55,8 +55,9 @@
       "type": "text-mit-bild",
       "name": "Text mit Bild",
       "settings": {
+        "image": "shopify://shop_images/shutterstock_370492946.jpg",
         "image_position": "right",
-        "image_shadow_strength": 20,
+        "image_shadow_strength": 23,
         "heading": "Über uns",
         "heading_font": "sans-serif",
         "heading_font_size": 42,
@@ -173,7 +174,7 @@
       ],
       "name": "Bild mit Stichpunkten",
       "settings": {
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_00_15_46_cleanup.png",
         "heading_font": "sans-serif",
         "heading_font_size": 20,
@@ -189,7 +190,7 @@
         "review_FJeXGD": {
           "type": "review",
           "settings": {
-            "person_image": "shopify://shop_images/michi.jpg",
+            "person_image": "shopify://shop_images/luca.jpg",
             "image_size": 80,
             "person_name": "Max Mustermann",
             "name_font": "helvetica_n4",
@@ -198,6 +199,20 @@
             "text_font": "helvetica_n4",
             "text_font_size": 16,
             "star_rating": 1
+          }
+        },
+        "review_9YC7yy": {
+          "type": "review",
+          "settings": {
+            "person_image": "shopify://shop_images/WhatsApp_Image_2025-02-03_at_15.31.49.jpg",
+            "image_size": 80,
+            "person_name": "Max Mustermann",
+            "name_font": "helvetica_n4",
+            "name_font_size": 18,
+            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
+            "text_font": "helvetica_n4",
+            "text_font_size": 16,
+            "star_rating": 5
           }
         },
         "review_cUnGwJ": {
@@ -229,6 +244,7 @@
       },
       "block_order": [
         "review_FJeXGD",
+        "review_9YC7yy",
         "review_cUnGwJ",
         "review_QThjeR"
       ],
