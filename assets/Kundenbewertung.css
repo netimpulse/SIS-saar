@@ -1,10 +1,18 @@
-.kundenbewertung-container {
+.kundenbewertung-karussell {
+  position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 50px; /* Platz für die Pfeile */
+}
+
+.karussell-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.kundenbewertung-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  transition: transform 0.5s ease-in-out;
   gap: 30px;
 }
 
@@ -14,17 +22,17 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 25px;
   text-align: center;
-  flex: 1 1 300px;
-  max-width: 350px;
+  flex: 0 0 calc(33.333% - 20px); /* 3 Kacheln mit Lücke */
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
-.person-image {
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
+.review-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .star-rating {
@@ -41,4 +49,32 @@
 .review-text p {
   margin: 0;
   line-height: 1.6;
+}
+
+.person-image {
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px; /* Abstand nach oben zum Text */
+}
+
+.karussell-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
 }
