@@ -51,6 +51,26 @@
         "right_content_y": 0
       }
     },
+    "text_mit_bild_dCQRLd": {
+      "type": "text-mit-bild",
+      "name": "Text mit Bild",
+      "settings": {
+        "image_position": "right",
+        "image_shadow_strength": 20,
+        "heading": "Über uns",
+        "heading_font": "sans-serif",
+        "heading_font_size": 42,
+        "heading_color": "#1f1f1f",
+        "subheading": "Wer wir sind und was uns auszeichnet",
+        "subheading_font": "sans-serif",
+        "subheading_font_size": 18,
+        "subheading_color": "#555555",
+        "text": "<p>Beschreiben Sie hier Ihr Unternehmen, Ihre Produkte oder Dienstleistungen. Dieser Text ist vollständig anpassbar und unterstützt auch Formatierungen wie <strong>fett</strong> oder <em>kursiv</em>.</p>",
+        "text_font": "sans-serif",
+        "text_font_size": 16,
+        "text_color": "#333333"
+      }
+    },
     "custom_icon_carousel_6KXbGD": {
       "type": "custom-icon-carousel",
       "blocks": {
@@ -105,12 +125,62 @@
         "heading_font_size": 29,
         "heading_color": "#334fb4",
         "arrow_color": "#28a745",
-        "block_height": 260,
+        "block_height": 320,
         "pointer_color": "#28a745",
         "border_color": "#cccccc",
         "section_bg_color": "#f3f3f3",
-        "tile_width": 180,
-        "tile_height": 160
+        "tile_width": 200,
+        "tile_height": 200
+      }
+    },
+    "image_with_features_nTxeBj": {
+      "type": "image-with-features",
+      "blocks": {
+        "feature_Ljt6zC": {
+          "type": "feature",
+          "settings": {
+            "heading": "Effizienz",
+            "text": "schnelle und sorgfältige Reinigung"
+          }
+        },
+        "feature_ken4BK": {
+          "type": "feature",
+          "settings": {
+            "heading": "Diskretion",
+            "text": "sensible Bereiche sind bei uns sicher"
+          }
+        },
+        "feature_zRPJN9": {
+          "type": "feature",
+          "settings": {
+            "heading": "Professionalität",
+            "text": "im Umgang mit Ihnen und Ihren Kunden"
+          }
+        },
+        "feature_6HyQF7": {
+          "type": "feature",
+          "settings": {
+            "heading": "Sicherheit",
+            "text": "die Einhaltung von Vorschriften und Richtlinien sind selbstverständlich"
+          }
+        }
+      },
+      "block_order": [
+        "feature_Ljt6zC",
+        "feature_ken4BK",
+        "feature_zRPJN9",
+        "feature_6HyQF7"
+      ],
+      "name": "Bild mit Stichpunkten",
+      "settings": {
+        "background_color": "#FFFFFF",
+        "image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_00_15_46_cleanup.png",
+        "heading_font": "sans-serif",
+        "heading_font_size": 20,
+        "heading_color": "#333333",
+        "text_font": "sans-serif",
+        "text_font_size": 16,
+        "text_color": "#555555"
       }
     },
     "kundenbewertung_tzkjqA": {
@@ -171,7 +241,9 @@
   },
   "order": [
     "dual_service_hero_pyHdH3",
+    "text_mit_bild_dCQRLd",
     "custom_icon_carousel_6KXbGD",
+    "image_with_features_nTxeBj",
     "kundenbewertung_tzkjqA"
   ]
 }
