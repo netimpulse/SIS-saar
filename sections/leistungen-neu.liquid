@@ -1,7 +1,7 @@
 {% comment %}
   ** Leistungen Neu Sektion **
-  - FINALE VERSION 2.0
-  - Regler für proportionale Skalierung der Gesamtgröße
+  - FINALE VERSION 3.0
+  - Separate Checkboxen für Fett/Kursiv hinzugefügt
 {% endcomment %}
 
 {{ 'leistungen-neu.css' | asset_url | stylesheet_tag }}
@@ -13,7 +13,6 @@
     padding-bottom: {{ section.settings.padding_bottom }}px;
   }
   
-  /* NEU: Skaliert den gesamten Block proportional */
   .section-{{ section.id }} .leistungen-neu-wrapper {
     transform: scale({{ section.settings.section_scale | divided_by: 100.0 }});
     transform-origin: top center;
@@ -27,8 +26,9 @@
     color: {{ section.settings.heading_color }};
     font-size: {{ section.settings.heading_font_size }}px;
     font-family: {{ section.settings.heading_font.family }}, {{ section.settings.heading_font.fallback_families }};
-    font-style: {{ section.settings.heading_font.style }};
-    font-weight: {{ section.settings.heading_font.weight }};
+    /* NEU: Steuerung über Checkboxen */
+    font-weight: {% if section.settings.heading_bold %}bold{% else %}normal{% endif %};
+    font-style: {% if section.settings.heading_italic %}italic{% else %}normal{% endif %};
   }
   .section-{{ section.id }} .carousel-arrow {
     color: {{ section.settings.arrow_color }};
@@ -46,23 +46,26 @@
       font-size: {{ block.settings.title_font_size }}px;
       color: {{ block.settings.title_color }};
       font-family: {{ block.settings.title_font.family }}, {{ block.settings.title_font.fallback_families }};
-      font-style: {{ block.settings.title_font.style }};
-      font-weight: {{ block.settings.title_font.weight }};
+      /* NEU: Steuerung über Checkboxen */
+      font-weight: {% if block.settings.title_bold %}bold{% else %}normal{% endif %};
+      font-style: {% if block.settings.title_italic %}italic{% else %}normal{% endif %};
     }
     .section-{{ section.id }} .service-item-{{ block.id }} .service-item__subtitle {
       font-size: {{ block.settings.subtitle_font_size }}px;
       color: {{ block.settings.subtitle_color }};
       font-family: {{ block.settings.subtitle_font.family }}, {{ block.settings.subtitle_font.fallback_families }};
-      font-style: {{ block.settings.subtitle_font.style }};
-      font-weight: {{ block.settings.subtitle_font.weight }};
+      /* NEU: Steuerung über Checkboxen */
+      font-weight: {% if block.settings.subtitle_bold %}bold{% else %}normal{% endif %};
+      font-style: {% if block.settings.subtitle_italic %}italic{% else %}normal{% endif %};
     }
     .section-{{ section.id }} .service-item-{{ block.id }} .service-item__text,
     .section-{{ section.id }} .service-item-{{ block.id }} .service-item__text p {
       font-size: {{ block.settings.text_font_size }}px;
       color: {{ block.settings.text_color }};
       font-family: {{ block.settings.text_font.family }}, {{ block.settings.text_font.fallback_families }};
-      font-style: {{ block.settings.text_font.style }};
-      font-weight: {{ block.settings.text_font.weight }};
+      /* NEU: Steuerung über Checkboxen */
+      font-weight: {% if block.settings.text_bold %}bold{% else %}normal{% endif %};
+      font-style: {% if block.settings.text_italic %}italic{% else %}normal{% endif %};
     }
   {% endfor %}
 {%- endstyle -%}
@@ -149,8 +152,19 @@
       "type": "font_picker",
       "id": "heading_font",
       "label": "Schriftart der Überschrift",
-      "info": "Hier kannst du auch Fett (Bold) oder Kursiv (Italic) auswählen.",
       "default": "sans-serif"
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_bold",
+      "label": "Fett",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_italic",
+      "label": "Kursiv",
+      "default": false
     },
     {
       "type": "range",
@@ -262,7 +276,13 @@
           "type": "header", "content": "Text-Styling: Titel"
         },
         {
-          "type": "font_picker", "id": "title_font", "label": "Schriftart", "info": "Hier kannst du auch Fett (Bold) oder Kursiv (Italic) auswählen.", "default": "sans-serif"
+          "type": "font_picker", "id": "title_font", "label": "Schriftart", "default": "sans-serif"
+        },
+        {
+          "type": "checkbox", "id": "title_bold", "label": "Fett", "default": true
+        },
+        {
+          "type": "checkbox", "id": "title_italic", "label": "Kursiv", "default": false
         },
         {
           "type": "range", "id": "title_font_size", "min": 12, "max": 40, "step": 1, "unit": "px", "label": "Schriftgröße", "default": 20
@@ -274,7 +294,13 @@
           "type": "header", "content": "Text-Styling: Untertitel"
         },
         {
-          "type": "font_picker", "id": "subtitle_font", "label": "Schriftart", "info": "Hier kannst du auch Fett (Bold) oder Kursiv (Italic) auswählen.", "default": "sans-serif"
+          "type": "font_picker", "id": "subtitle_font", "label": "Schriftart", "default": "sans-serif"
+        },
+        {
+          "type": "checkbox", "id": "subtitle_bold", "label": "Fett", "default": false
+        },
+        {
+          "type": "checkbox", "id": "subtitle_italic", "label": "Kursiv", "default": false
         },
         {
           "type": "range", "id": "subtitle_font_size", "min": 10, "max": 30, "step": 1, "unit": "px", "label": "Schriftgröße", "default": 16
@@ -286,7 +312,13 @@
           "type": "header", "content": "Text-Styling: Beschreibung"
         },
         {
-          "type": "font_picker", "id": "text_font", "label": "Schriftart", "info": "Hier kannst du auch Fett (Bold) oder Kursiv (Italic) auswählen.", "default": "sans-serif"
+          "type": "font_picker", "id": "text_font", "label": "Schriftart", "default": "sans-serif"
+        },
+        {
+          "type": "checkbox", "id": "text_bold", "label": "Fett", "default": false
+        },
+        {
+          "type": "checkbox", "id": "text_italic", "label": "Kursiv", "default": false
         },
         {
           "type": "range", "id": "text_font_size", "min": 10, "max": 24, "step": 1, "unit": "px", "label": "Schriftgröße", "default": 14
