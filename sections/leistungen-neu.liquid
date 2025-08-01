@@ -1,8 +1,7 @@
 {% comment %}
   ** Leistungen Neu Sektion **
-  - FINALE VERSION
-  - Regler für Gesamtbreite, Abstand, Bildrand
-  - Font-Picker für Fett/Kursiv
+  - FINALE VERSION 2.0
+  - Regler für proportionale Skalierung der Gesamtgröße
 {% endcomment %}
 
 {{ 'leistungen-neu.css' | asset_url | stylesheet_tag }}
@@ -14,13 +13,12 @@
     padding-bottom: {{ section.settings.padding_bottom }}px;
   }
   
-  /* NEU: Steuert die Breite des GESAMTEN Blocks */
+  /* NEU: Skaliert den gesamten Block proportional */
   .section-{{ section.id }} .leistungen-neu-wrapper {
-    max-width: {{ section.settings.section_width }}px;
-    margin: 0 auto;
+    transform: scale({{ section.settings.section_scale | divided_by: 100.0 }});
+    transform-origin: top center;
   }
 
-  /* NEU: Regler für den Abstand zwischen den Elementen */
   .section-{{ section.id }} .carousel-slide {
     padding: 0 {{ section.settings.item_spacing | divided_by: 2.0 }}px;
   }
@@ -29,7 +27,6 @@
     color: {{ section.settings.heading_color }};
     font-size: {{ section.settings.heading_font_size }}px;
     font-family: {{ section.settings.heading_font.family }}, {{ section.settings.heading_font.fallback_families }};
-    /* Diese Zeilen wenden Fett/Kursiv aus dem Font-Picker an */
     font-style: {{ section.settings.heading_font.style }};
     font-weight: {{ section.settings.heading_font.weight }};
   }
@@ -43,14 +40,12 @@
   {% for block in section.blocks %}
     .section-{{ section.id }} .service-item-{{ block.id }} .service-item__image-wrapper {
       --image-diameter: {{ block.settings.image_diameter }}px;
-      /* NEU: Einstellungen für den Bildrand */
       border: {{ block.settings.image_border_width }}px solid {{ block.settings.image_border_color }};
     }
     .section-{{ section.id }} .service-item-{{ block.id }} .service-item__title {
       font-size: {{ block.settings.title_font_size }}px;
       color: {{ block.settings.title_color }};
       font-family: {{ block.settings.title_font.family }}, {{ block.settings.title_font.fallback_families }};
-      /* Diese Zeilen wenden Fett/Kursiv aus dem Font-Picker an */
       font-style: {{ block.settings.title_font.style }};
       font-weight: {{ block.settings.title_font.weight }};
     }
@@ -58,7 +53,6 @@
       font-size: {{ block.settings.subtitle_font_size }}px;
       color: {{ block.settings.subtitle_color }};
       font-family: {{ block.settings.subtitle_font.family }}, {{ block.settings.subtitle_font.fallback_families }};
-      /* Diese Zeilen wenden Fett/Kursiv aus dem Font-Picker an */
       font-style: {{ block.settings.subtitle_font.style }};
       font-weight: {{ block.settings.subtitle_font.weight }};
     }
@@ -67,7 +61,6 @@
       font-size: {{ block.settings.text_font_size }}px;
       color: {{ block.settings.text_color }};
       font-family: {{ block.settings.text_font.family }}, {{ block.settings.text_font.fallback_families }};
-      /* Diese Zeilen wenden Fett/Kursiv aus dem Font-Picker an */
       font-style: {{ block.settings.text_font.style }};
       font-weight: {{ block.settings.text_font.weight }};
     }
@@ -174,14 +167,14 @@
     },
     {
       "type": "header",
-      "content": "Abstände & Farben"
+      "content": "Abstände & Größe"
     },
     {
       "type": "range",
-      "id": "section_width",
-      "min": 800, "max": 2400, "step": 20, "unit": "px",
-      "label": "Gesamtbreite der Sektion",
-      "default": 1200
+      "id": "section_scale",
+      "min": 50, "max": 100, "step": 5, "unit": "%",
+      "label": "Gesamte Größe (Skalierung)",
+      "default": 100
     },
     {
       "type": "range",
