@@ -10,13 +10,21 @@
 {%- style -%}
   .section-{{ section.id }}.leistungen-neu-section {
     background-color: {{ section.settings.section_bg_color }};
-    /* NEU: Padding-Regler für die Höhe des Blocks */
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
   }
-  .section-{{ section.id }} .leistungen-neu-container {
-    max-width: 100%; /* Container füllt nun die Sektion */
+  
+  /* NEU: Regler für die Breite des Inhaltsblocks */
+  .section-{{ section.id }} .page-width {
+    max-width: {{ section.settings.section_content_width }}px;
+    margin: 0 auto;
   }
+
+  /* NEU: Regler für den Abstand zwischen den Elementen */
+  .section-{{ section.id }} .carousel-slide {
+    padding: 0 {{ section.settings.item_spacing | divided_by: 2.0 }}px;
+  }
+
   .section-{{ section.id }} .leistungen-neu-heading {
     color: {{ section.settings.heading_color }};
     font-size: {{ section.settings.heading_font_size }}px;
@@ -160,6 +168,20 @@
     {
       "type": "header",
       "content": "Abstände & Farben"
+    },
+    {
+      "type": "range",
+      "id": "section_content_width",
+      "min": 800, "max": 1600, "step": 20, "unit": "px",
+      "label": "Breite des Inhaltsblocks",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "item_spacing",
+      "min": 0, "max": 80, "step": 2, "unit": "px",
+      "label": "Abstand zwischen den Elementen",
+      "default": 30
     },
     {
       "type": "range",
