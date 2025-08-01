@@ -101,7 +101,7 @@
             "image_diameter": 150,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
+            "text": "<p>Listenpunkt 1<br/>Listenpunkt 2</p>",
             "title_font": "sans-serif",
             "title_font_size": 20,
             "title_color": "#000000",
@@ -166,6 +166,42 @@
             "text_font_size": 14,
             "text_color": "#333333"
           }
+        },
+        "service_block_LUtiYU": {
+          "type": "service_block",
+          "settings": {
+            "image_diameter": 150,
+            "title": "Industrieservice",
+            "subtitle": "Gebäudeservice",
+            "text": "<p>Listenpunkt 1<br/>Listenpunkt 2</p>",
+            "title_font": "sans-serif",
+            "title_font_size": 20,
+            "title_color": "#000000",
+            "subtitle_font": "sans-serif",
+            "subtitle_font_size": 16,
+            "subtitle_color": "#555555",
+            "text_font": "sans-serif",
+            "text_font_size": 14,
+            "text_color": "#333333"
+          }
+        },
+        "service_block_hRMEPg": {
+          "type": "service_block",
+          "settings": {
+            "image_diameter": 150,
+            "title": "Industrieser",
+            "subtitle": "Gebäudeservice",
+            "text": "<p>Listenpunkt 1<br/>Listenpunkt 2</p>",
+            "title_font": "sans-serif",
+            "title_font_size": 20,
+            "title_color": "#000000",
+            "subtitle_font": "sans-serif",
+            "subtitle_font_size": 16,
+            "subtitle_color": "#555555",
+            "text_font": "sans-serif",
+            "text_font_size": 14,
+            "text_color": "#333333"
+          }
         }
       },
       "block_order": [
@@ -173,7 +209,9 @@
         "service_block_NC6PbW",
         "service_block_MCpCCy",
         "service_block_gr4GLq",
-        "service_block_DDUGnc"
+        "service_block_DDUGnc",
+        "service_block_LUtiYU",
+        "service_block_hRMEPg"
       ],
       "name": "Leistungen Neu",
       "settings": {
@@ -182,9 +220,9 @@
         "heading_font_size": 42,
         "heading_color": "#333333",
         "section_width": 95,
-        "section_bg_color": "#FFFFFF",
+        "section_bg_color": "#ffffff",
         "arrow_color": "#111111",
-        "line_color": "#DDDDDD"
+        "line_color": "#dddddd"
       }
     },
     "custom_icon_carousel_6KXbGD": {
