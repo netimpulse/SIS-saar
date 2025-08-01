@@ -1,99 +1,182 @@
-.kundenbewertung-karussell {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 60px; /* Mehr Platz für die Pfeile */
-}
-
-.karussell-viewport {
-  overflow: hidden;
-  width: 100%;
-}
-
-.kundenbewertung-container {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  gap: 30px; /* Lücke zwischen den Karten */
-}
-
-.review-card {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 25px;
+/* --- Grundlegende Sektions-Styles --- */
+.leistungen-neu-heading {
   text-align: center;
-  /* Sorgt dafür, dass 3 Karten sichtbar sind und berücksichtigt den 'gap' */
-  flex: 0 0 calc(33.333% - 20px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
-.review-content {
+.carousel-wrapper {
+  position: relative;
+  /* Das Padding wird nun von .page-width gesteuert, nicht mehr hier */
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  /* Wichtig: Kein Wrap, damit die Slides in einer Reihe bleiben */
+  flex-wrap: nowrap;
+}
+
+.carousel-slide {
+  flex-shrink: 0;
+  width: 25%; /* 4 sichtbare Elemente standardmäßig auf Desktop */
+  box-sizing: border-box;
+  padding: 0 15px; /* Abstand zwischen den Elementen */
+}
+
+/* --- Pfeile --- */
+.carousel-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  height: 48px;
+  width: 48px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.carousel-arrow:hover {
+  background: #fff;
+  transform: scale(1.1);
+}
+
+.carousel-arrow svg {
+  width: 28px;
+  height: 28px;
+}
+
+.carousel-arrow--prev {
+  left: -24px; /* Pfeile leicht außerhalb positionieren */
+}
+
+.carousel-arrow--next {
+  right: -24px;
+}
+
+/* --- Das eigentliche Leistungs-Item --- */
+.service-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2; /* Über der Linie */
+}
+
+.service-item__timeline {
+  margin-bottom: 25px;
+}
+
+.service-item__timeline-connector {
+  content: '';
+  position: absolute;
+  top: calc(var(--image-diameter, 150px) / 2);
+  left: 0;
+  right: 0;
+  height: 2px;
+  z-index: 1; /* Hinter den Bildern */
+  transform: translateY(-50%);
+  margin: 0 auto;
+  width: 95%;
+}
+
+.service-item__image-wrapper {
+  --image-diameter: 150px; /* Default-Wert, wird von Liquid überschrieben */
+  width: var(--image-diameter);
+  height: var(--image-diameter);
+  position: relative;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 5px; /* Abstand zur Linie */
+  background: var(--section-bg-color, #fff); /* Gleiche Farbe wie Sektionshintergrund */
+}
+
+.service-item__main-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.service-item__main-image.placeholder,
+.service-item__main-image.placeholder svg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+
+
+.service-item__number-icon {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 30%;
+  height: 30%;
+  min-width: 30px;
+  min-height: 30px;
+  object-fit: contain;
+}
+
+.service-item__content {
   flex-grow: 1;
 }
 
-.star-rating {
-  color: #ffc107;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.person-name {
-  margin: 0 0 10px 0;
+.service-item__title {
+  margin: 0 0 8px 0;
   font-weight: bold;
 }
 
-.review-text p {
+.service-item__subtitle {
+  margin: 0 0 15px 0;
+  font-weight: normal;
+}
+
+.service-item__text p {
   margin: 0;
   line-height: 1.6;
 }
 
-.person-image {
-  border-radius: 50%;
-  object-fit: cover;
-  margin-top: 20px; /* Abstand nach oben zum Text */
+/* --- Responsive Anpassungen --- */
+@media (max-width: 1200px) {
+  .carousel-slide {
+    width: 33.333%; /* 3 sichtbare Elemente */
+  }
 }
 
-/* === ANPASSUNG START: Schlichtes Pfeil-Design === */
-
-.karussell-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) scale(1);
-  
-  /* Hintergrund und Rahmen wurden entfernt */
-  background-color: transparent;
-  border: none;
-
-  /* Pfeil-Farbe, -Größe und -Dicke angepasst */
-  color: #555;
-  font-size: 45px;
-  font-weight: 300;
-  
-  padding: 0 10px;
-  cursor: pointer;
-  z-index: 10;
-  
-  /* Sanfter Übergang für den Hover-Effekt */
-  transition: all 0.2s ease-in-out;
+@media (max-width: 990px) {
+  .carousel-slide {
+    width: 50%; /* 2 sichtbare Elemente */
+  }
 }
 
-.karussell-button:hover {
-  color: #000;
-  transform: translateY(-50%) scale(1.1);
-}
-
-/* === ANPASSUNG ENDE === */
-
-.prev-button {
-  left: 10px;
-}
-
-.next-button {
-  right: 10px;
+@media (max-width: 749px) {
+  .carousel-slide {
+    width: 85%; /* Fast 1 Element sichtbar */
+    scroll-snap-align: center; /* Sorgt für schönes Einrasten beim Scrollen */
+  }
+  .carousel-viewport {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* Aktiviert Snap-Scrolling auf Touch-Geräten */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .carousel-viewport::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+   .carousel-track {
+    transition: none;
+  }
+  .carousel-arrow {
+    display: none; /* Pfeile auf Mobile ausblenden */
+  }
 }
