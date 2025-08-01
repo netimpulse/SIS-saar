@@ -1,12 +1,20 @@
-{{ 'Kundenbewertung.css' | asset_url | stylesheet_tag }}
+{{ 'kundenbewertung.css' | asset_url | stylesheet_tag }}
 
 <div class="kundenbewertung-section" style="background-color: {{ section.settings.background_color }}; padding: {{ section.settings.section_padding }}px 0;">
-  <div class="kundenbewertung-container">
-    {% for block in section.blocks %}
-      {% render 'Kundenbewertung-snippet', block: block %}
-    {% endfor %}
+  <div class="kundenbewertung-karussell">
+    <button class="karussell-button prev-button">❮</button>
+    <div class="karussell-viewport">
+      <div class="kundenbewertung-container">
+        {% for block in section.blocks %}
+          {% render 'kundenbewertung-snippet', block: block %}
+        {% endfor %}
+      </div>
+    </div>
+    <button class="karussell-button next-button">❯</button>
   </div>
 </div>
+
+<script src="{{ 'kundenbewertung-karussell.js' | asset_url }}" defer="defer"></script>
 
 {% schema %}
 {
@@ -109,15 +117,11 @@
     {
       "name": "Kundenbewertung",
       "blocks": [
-        {
-          "type": "review"
-        },
-        {
-          "type": "review"
-        },
-        {
-          "type": "review"
-        }
+        { "type": "review" },
+        { "type": "review" },
+        { "type": "review" },
+        { "type": "review" },
+        { "type": "review" }
       ]
     }
   ]
