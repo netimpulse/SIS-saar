@@ -1,32 +1,60 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const container = document.querySelector('.kundenbewertung-container');
-  const prevButton = document.querySelector('.prev-button');
-  const nextButton = document.querySelector('.next-button');
+document.addEventListener('DOMContentLoaded', function () {
+  const carousel = document.querySelector('.kundenbewertung-karussell');
+  if (!carousel) return;
 
-  if (!container || !prevButton || !nextButton) return;
+  const container = carousel.querySelector('.kundenbewertung-container');
+  const prevButton = carousel.querySelector('.prev-button');
+  const nextButton = carousel.querySelector('.next-button');
+
+  if (!container || !prevButton || !nextButton) {
+    return;
+  }
 
   const items = Array.from(container.children);
   const itemsCount = items.length;
+
+  // Karussell nur initialisieren, wenn es mehr Karten als sichtbar gibt
   if (itemsCount <= 3) {
-      prevButton.style.display = 'none';
-      nextButton.style.display = 'none';
-      return;
+    prevButton.style.display = 'none';
+    nextButton.style.display = 'none';
+    return;
   }
-  
-  // Klonen der Elemente für den unendlichen Effekt
+
+  // Verbessert: Liest den Abstand dynamisch aus dem CSS
+  const gap = parseFloat(getComputedStyle(container).gap) || 30;
+
+  // Klone die Elemente für den "unendlichen" Effekt
   items.forEach(item => {
     const clone = item.cloneNode(true);
+    clone.setAttribute('aria-hidden', 'true'); // Wichtig für Barrierefreiheit
     container.appendChild(clone);
   });
-  
+
   let currentIndex = 0;
   let isTransitioning = false;
 
-  function updateCarousel() {
-    const itemWidth = items[0].getBoundingClientRect().width + 30; // 30px ist der gap
+  function moveCarousel(instant = false) {
+    const itemWidth = items[0].offsetWidth + gap;
     const offset = -currentIndex * itemWidth;
-    container.style.transition = 'transform 0.5s ease-in-out';
+    
+    container.style.transition = instant ? 'none' : 'transform 0.5s ease-in-out';
     container.style.transform = `translateX(${offset}px)`;
+  }
+
+  function handleTransitionEnd() {
+    isTransitioning = false;
+
+    // Wenn am Ende der geklonten Liste, springe ohne Animation zum Anfang
+    if (currentIndex >= itemsCount) {
+      currentIndex = 0;
+      moveCarousel(true);
+    }
+
+    // Wenn vor dem Anfang der Liste, springe ohne Animation zum Ende
+    if (currentIndex < 0) {
+      currentIndex = itemsCount - 1;
+      moveCarousel(true);
+    }
   }
 
   function shiftItems(direction) {
@@ -34,24 +62,10 @@ document.addEventListener('DOMContentLoaded', function() {
     isTransitioning = true;
     
     currentIndex += direction;
-    updateCarousel();
-
-    container.addEventListener('transitionend', () => {
-      isTransitioning = false;
-      if (currentIndex >= itemsCount) {
-        currentIndex = 0;
-        container.style.transition = 'none';
-        container.style.transform = `translateX(0px)`;
-      } else if (currentIndex < 0) {
-        currentIndex = itemsCount - 1;
-        const itemWidth = items[0].getBoundingClientRect().width + 30;
-        const offset = -currentIndex * itemWidth;
-        container.style.transition = 'none';
-        container.style.transform = `translateX(${offset}px)`;
-      }
-    }, { once: true });
+    moveCarousel();
   }
 
+  container.addEventListener('transitionend', handleTransitionEnd);
   nextButton.addEventListener('click', () => shiftItems(1));
   prevButton.addEventListener('click', () => shiftItems(-1));
 });
