@@ -112,10 +112,66 @@
         "tile_width": 180,
         "tile_height": 160
       }
+    },
+    "kundenbewertung_tzkjqA": {
+      "type": "Kundenbewertung",
+      "blocks": {
+        "review_FJeXGD": {
+          "type": "review",
+          "settings": {
+            "person_image": "shopify://shop_images/michi.jpg",
+            "image_size": 80,
+            "person_name": "Max Mustermann",
+            "name_font": "helvetica_n4",
+            "name_font_size": 18,
+            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
+            "text_font": "helvetica_n4",
+            "text_font_size": 16,
+            "star_rating": 1
+          }
+        },
+        "review_cUnGwJ": {
+          "type": "review",
+          "settings": {
+            "image_size": 80,
+            "person_name": "Max Mustermann",
+            "name_font": "helvetica_n4",
+            "name_font_size": 18,
+            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
+            "text_font": "helvetica_n4",
+            "text_font_size": 16,
+            "star_rating": 5
+          }
+        },
+        "review_QThjeR": {
+          "type": "review",
+          "settings": {
+            "image_size": 80,
+            "person_name": "Max Mustermann",
+            "name_font": "helvetica_n4",
+            "name_font_size": 18,
+            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
+            "text_font": "helvetica_n4",
+            "text_font_size": 16,
+            "star_rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "review_FJeXGD",
+        "review_cUnGwJ",
+        "review_QThjeR"
+      ],
+      "name": "Kundenbewertung",
+      "settings": {
+        "background_color": "#f9f9f9",
+        "section_padding": 50
+      }
     }
   },
   "order": [
     "dual_service_hero_pyHdH3",
-    "custom_icon_carousel_6KXbGD"
+    "custom_icon_carousel_6KXbGD",
+    "kundenbewertung_tzkjqA"
   ]
 }
