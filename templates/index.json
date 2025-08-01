@@ -81,16 +81,24 @@
             "main_image": "shopify://shop_images/shutterstock_370492946.jpg",
             "number_icon": "shopify://shop_images/ChatGPT_Image_31._Juli_2025_18_20_03.png",
             "image_diameter": 150,
+            "image_border_color": "#28a745",
+            "image_border_width": 4,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
             "text": "<p>Listenpunkt 1<br/>Listenpunkt 2</p>",
             "title_font": "sans-serif",
+            "title_bold": true,
+            "title_italic": false,
             "title_font_size": 20,
             "title_color": "#000000",
             "subtitle_font": "sans-serif",
+            "subtitle_bold": false,
+            "subtitle_italic": false,
             "subtitle_font_size": 16,
             "subtitle_color": "#555555",
             "text_font": "sans-serif",
+            "text_bold": false,
+            "text_italic": false,
             "text_font_size": 14,
             "text_color": "#333333"
           }
@@ -99,16 +107,24 @@
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
+            "image_border_color": "#28a745",
+            "image_border_width": 4,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
             "text": "<p>Listenpunkt 1<br/>Listenpunkt 2</p>",
             "title_font": "sans-serif",
+            "title_bold": true,
+            "title_italic": false,
             "title_font_size": 20,
             "title_color": "#000000",
             "subtitle_font": "sans-serif",
+            "subtitle_bold": false,
+            "subtitle_italic": false,
             "subtitle_font_size": 16,
             "subtitle_color": "#555555",
             "text_font": "sans-serif",
+            "text_bold": false,
+            "text_italic": false,
             "text_font_size": 14,
             "text_color": "#333333"
           }
@@ -117,16 +133,24 @@
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
+            "image_border_color": "#28a745",
+            "image_border_width": 4,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
+            "text": "<p>Listenpunkt 1<br/>Listenpunkt 2</p>",
             "title_font": "sans-serif",
+            "title_bold": true,
+            "title_italic": false,
             "title_font_size": 20,
             "title_color": "#000000",
             "subtitle_font": "sans-serif",
+            "subtitle_bold": false,
+            "subtitle_italic": false,
             "subtitle_font_size": 16,
             "subtitle_color": "#555555",
             "text_font": "sans-serif",
+            "text_bold": false,
+            "text_italic": false,
             "text_font_size": 14,
             "text_color": "#333333"
           }
@@ -135,16 +159,24 @@
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
+            "image_border_color": "#28a745",
+            "image_border_width": 4,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
+            "text": "<p>Listenpunkt 1<br/>Listenpunkt 2</p>",
             "title_font": "sans-serif",
+            "title_bold": true,
+            "title_italic": false,
             "title_font_size": 20,
             "title_color": "#000000",
             "subtitle_font": "sans-serif",
+            "subtitle_bold": false,
+            "subtitle_italic": false,
             "subtitle_font_size": 16,
             "subtitle_color": "#555555",
             "text_font": "sans-serif",
+            "text_bold": false,
+            "text_italic": false,
             "text_font_size": 14,
             "text_color": "#333333"
           }
@@ -153,16 +185,24 @@
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
+            "image_border_color": "#e0e0e0",
+            "image_border_width": 4,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
             "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
             "title_font": "sans-serif",
+            "title_bold": true,
+            "title_italic": false,
             "title_font_size": 20,
             "title_color": "#000000",
             "subtitle_font": "sans-serif",
+            "subtitle_bold": false,
+            "subtitle_italic": false,
             "subtitle_font_size": 16,
             "subtitle_color": "#555555",
             "text_font": "sans-serif",
+            "text_bold": false,
+            "text_italic": false,
             "text_font_size": 14,
             "text_color": "#333333"
           }
@@ -171,16 +211,24 @@
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
+            "image_border_color": "#e0e0e0",
+            "image_border_width": 4,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
             "text": "<p>Listenpunkt 1<br/>Listenpunkt 2</p>",
             "title_font": "sans-serif",
+            "title_bold": true,
+            "title_italic": false,
             "title_font_size": 20,
             "title_color": "#000000",
             "subtitle_font": "sans-serif",
+            "subtitle_bold": false,
+            "subtitle_italic": false,
             "subtitle_font_size": 16,
             "subtitle_color": "#555555",
             "text_font": "sans-serif",
+            "text_bold": false,
+            "text_italic": false,
             "text_font_size": 14,
             "text_color": "#333333"
           }
@@ -189,16 +237,24 @@
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
+            "image_border_color": "#e0e0e0",
+            "image_border_width": 4,
             "title": "Industrieser",
             "subtitle": "Gebäudeservice",
             "text": "<p>Listenpunkt 1<br/>Listenpunkt 2</p>",
             "title_font": "sans-serif",
+            "title_bold": true,
+            "title_italic": false,
             "title_font_size": 20,
             "title_color": "#000000",
             "subtitle_font": "sans-serif",
+            "subtitle_bold": false,
+            "subtitle_italic": false,
             "subtitle_font_size": 16,
             "subtitle_color": "#555555",
             "text_font": "sans-serif",
+            "text_bold": false,
+            "text_italic": false,
             "text_font_size": 14,
             "text_color": "#333333"
           }
@@ -215,77 +271,19 @@
       ],
       "name": "Leistungen Neu",
       "settings": {
-        "heading": "Unsere Leistungen",
+        "heading": "Leistungen Industrieservice",
         "heading_font": "sans-serif",
+        "heading_bold": true,
+        "heading_italic": false,
         "heading_font_size": 42,
-        "heading_color": "#333333",
-        "section_width": 95,
-        "section_bg_color": "#ffffff",
+        "heading_color": "#28a745",
+        "section_scale": 90,
+        "item_spacing": 30,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "section_bg_color": "#f3f3f3",
         "arrow_color": "#111111",
         "line_color": "#dddddd"
-      }
-    },
-    "custom_icon_carousel_6KXbGD": {
-      "type": "custom-icon-carousel",
-      "blocks": {
-        "icon_block_j6rPPB": {
-          "type": "icon_block",
-          "settings": {
-            "title": "Abfallmanagement & Logistik",
-            "link": ""
-          }
-        },
-        "icon_block_t9iqft": {
-          "type": "icon_block",
-          "settings": {
-            "icon_image": "shopify://shop_images/ChatGPT_Image_30._Juli_2025__14_05_42-removebg-preview.png",
-            "title": "Wartung und Instandhaltung",
-            "link": ""
-          }
-        },
-        "icon_block_GUTNzK": {
-          "type": "icon_block",
-          "settings": {
-            "title": "Reinigung",
-            "link": ""
-          }
-        },
-        "icon_block_mimDVr": {
-          "type": "icon_block",
-          "settings": {
-            "title": "Montage, Demontage & Maschinenumzüge",
-            "link": ""
-          }
-        },
-        "icon_block_qgCMK9": {
-          "type": "icon_block",
-          "settings": {
-            "title": "Raumlufttechnik & Küchenabluft",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "icon_block_j6rPPB",
-        "icon_block_t9iqft",
-        "icon_block_GUTNzK",
-        "icon_block_mimDVr",
-        "icon_block_qgCMK9"
-      ],
-      "disabled": true,
-      "name": "Icon Carousel",
-      "settings": {
-        "heading": "Industrieservice Leistungen",
-        "heading_font": "sans-serif",
-        "heading_font_size": 29,
-        "heading_color": "#334fb4",
-        "arrow_color": "#28a745",
-        "block_height": 320,
-        "pointer_color": "#28a745",
-        "border_color": "#cccccc",
-        "section_bg_color": "#f3f3f3",
-        "tile_width": 200,
-        "tile_height": 200
       }
     },
     "image_with_features_nTxeBj": {
@@ -407,14 +405,173 @@
         "background_color": "#f9f9f9",
         "section_padding": 50
       }
+    },
+    "leistungen_neu_C3ikEz": {
+      "type": "leistungen-neu",
+      "blocks": {
+        "service_block_Vdh8xd": {
+          "type": "service_block",
+          "settings": {
+            "main_image": "shopify://shop_images/shutterstock_370492946.jpg",
+            "image_diameter": 150,
+            "image_border_color": "#007bff",
+            "image_border_width": 4,
+            "title": "Industrieservice",
+            "subtitle": "Gebäudeservice",
+            "text": "<p>Listenpunkt 1<br/>Listenpunkt 2</p>",
+            "title_font": "sans-serif",
+            "title_bold": true,
+            "title_italic": false,
+            "title_font_size": 20,
+            "title_color": "#000000",
+            "subtitle_font": "sans-serif",
+            "subtitle_bold": false,
+            "subtitle_italic": false,
+            "subtitle_font_size": 16,
+            "subtitle_color": "#555555",
+            "text_font": "sans-serif",
+            "text_bold": false,
+            "text_italic": false,
+            "text_font_size": 14,
+            "text_color": "#333333"
+          }
+        },
+        "service_block_pYia3X": {
+          "type": "service_block",
+          "settings": {
+            "image_diameter": 150,
+            "image_border_color": "#007bff",
+            "image_border_width": 4,
+            "title": "Industrieservice",
+            "subtitle": "Gebäudeservice",
+            "text": "<p>Listenpunkt 1<br/>Listenpunkt 2</p>",
+            "title_font": "sans-serif",
+            "title_bold": true,
+            "title_italic": false,
+            "title_font_size": 20,
+            "title_color": "#000000",
+            "subtitle_font": "sans-serif",
+            "subtitle_bold": false,
+            "subtitle_italic": false,
+            "subtitle_font_size": 16,
+            "subtitle_color": "#555555",
+            "text_font": "sans-serif",
+            "text_bold": false,
+            "text_italic": false,
+            "text_font_size": 14,
+            "text_color": "#333333"
+          }
+        },
+        "service_block_YizKQx": {
+          "type": "service_block",
+          "settings": {
+            "image_diameter": 150,
+            "image_border_color": "#007bff",
+            "image_border_width": 4,
+            "title": "Industrieservice",
+            "subtitle": "Gebäudeservice",
+            "text": "<p>Listenpunkt 1<br/>Listenpunkt 2</p>",
+            "title_font": "sans-serif",
+            "title_bold": true,
+            "title_italic": false,
+            "title_font_size": 20,
+            "title_color": "#000000",
+            "subtitle_font": "sans-serif",
+            "subtitle_bold": false,
+            "subtitle_italic": false,
+            "subtitle_font_size": 16,
+            "subtitle_color": "#555555",
+            "text_font": "sans-serif",
+            "text_bold": false,
+            "text_italic": false,
+            "text_font_size": 14,
+            "text_color": "#333333"
+          }
+        },
+        "service_block_bqxDkm": {
+          "type": "service_block",
+          "settings": {
+            "image_diameter": 150,
+            "image_border_color": "#007bff",
+            "image_border_width": 4,
+            "title": "Industrieservice",
+            "subtitle": "Gebäudeservice",
+            "text": "<p>Listenpunkt 1<br/>Listenpunkt 2</p>",
+            "title_font": "sans-serif",
+            "title_bold": true,
+            "title_italic": false,
+            "title_font_size": 20,
+            "title_color": "#000000",
+            "subtitle_font": "sans-serif",
+            "subtitle_bold": false,
+            "subtitle_italic": false,
+            "subtitle_font_size": 16,
+            "subtitle_color": "#555555",
+            "text_font": "sans-serif",
+            "text_bold": false,
+            "text_italic": false,
+            "text_font_size": 14,
+            "text_color": "#333333"
+          }
+        },
+        "service_block_8TUerB": {
+          "type": "service_block",
+          "settings": {
+            "image_diameter": 150,
+            "image_border_color": "#E0E0E0",
+            "image_border_width": 4,
+            "title": "Industrieservice",
+            "subtitle": "Gebäudeservice",
+            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
+            "title_font": "sans-serif",
+            "title_bold": true,
+            "title_italic": false,
+            "title_font_size": 20,
+            "title_color": "#000000",
+            "subtitle_font": "sans-serif",
+            "subtitle_bold": false,
+            "subtitle_italic": false,
+            "subtitle_font_size": 16,
+            "subtitle_color": "#555555",
+            "text_font": "sans-serif",
+            "text_bold": false,
+            "text_italic": false,
+            "text_font_size": 14,
+            "text_color": "#333333"
+          }
+        }
+      },
+      "block_order": [
+        "service_block_Vdh8xd",
+        "service_block_pYia3X",
+        "service_block_YizKQx",
+        "service_block_bqxDkm",
+        "service_block_8TUerB"
+      ],
+      "name": "Leistungen Neu",
+      "settings": {
+        "heading": "Leistungen Gebäudeservice",
+        "heading_font": "sans-serif",
+        "heading_bold": true,
+        "heading_italic": false,
+        "heading_font_size": 42,
+        "heading_color": "#007bff",
+        "section_scale": 100,
+        "item_spacing": 30,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "section_bg_color": "#f3f3f3",
+        "arrow_color": "#111111",
+        "line_color": "#DDDDDD"
+      }
     }
   },
   "order": [
     "dual_service_hero_pyHdH3",
     "text_mit_bild_dCQRLd",
     "leistungen_neu_yKwjK9",
-    "custom_icon_carousel_6KXbGD",
     "image_with_features_nTxeBj",
-    "kundenbewertung_tzkjqA"
+    "kundenbewertung_tzkjqA",
+    "leistungen_neu_C3ikEz"
   ]
 }

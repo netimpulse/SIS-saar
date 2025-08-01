@@ -1,181 +1,141 @@
-/* --- Grundlegende Sektions-Styles --- */
-.leistungen-neu-heading {
-  text-align: center;
-  margin-bottom: 40px;
-}
+class LeistungenCarousel {
+  constructor(section) {
+    this.section = section;
+    this.viewport = this.section.querySelector('.carousel-viewport');
+    this.track = this.section.querySelector('.carousel-track');
+    this.prevButton = this.section.querySelector('.carousel-arrow--prev');
+    this.nextButton = this.section.querySelector('.carousel-arrow--next');
+    this.isTransitioning = false;
 
-.carousel-wrapper {
-  position: relative;
-}
+    // Auf Mobile-Geräten wird natives Scrollen verwendet, daher kein JS nötig.
+    if (window.innerWidth <= 749) {
+      this.disableJsCarousel();
+      return;
+    }
+    
+    this.init();
+    // Beobachter, um das Karussell bei Größenänderungen neu zu initialisieren
+    new ResizeObserver(() => this.reInit()).observe(this.viewport);
+  }
 
-.carousel-viewport {
-  overflow: hidden;
-  position: relative;
-}
+  init() {
+    this.originalSlides = Array.from(this.track.children).filter(child => !child.classList.contains('is-clone'));
+    if (this.originalSlides.length === 0) return;
 
-.carousel-track {
-  display: flex;
-  flex-wrap: nowrap;
-}
+    // Berechnen, wie viele Slides sichtbar sind
+    const slideWidth = this.originalSlides[0].offsetWidth;
+    const viewportWidth = this.viewport.offsetWidth;
+    const visibleSlidesCount = Math.floor(viewportWidth / slideWidth);
 
-.carousel-slide {
-  flex-shrink: 0;
-  width: 25%; /* 4 sichtbare Elemente standardmäßig auf Desktop */
-  box-sizing: border-box;
-  /* Das Padding wird nun direkt in der .liquid-Datei gesetzt */
-}
+    // Karussell nur aktivieren, wenn mehr Slides als sichtbar vorhanden sind
+    if (this.originalSlides.length <= visibleSlidesCount) {
+      this.disableJsCarousel();
+      return;
+    }
 
-/* --- Pfeile --- */
-.carousel-arrow {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
-  height: 48px;
-  width: 48px;
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid #e0e0e0;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s;
-}
+    this.setupClones();
+    this.allSlides = Array.from(this.track.children);
+    this.slideWidth = this.allSlides[0].offsetWidth;
 
-.carousel-arrow:hover {
-  background: #fff;
-  transform: scale(1.1);
-}
+    // Startposition auf dem ersten "echten" Slide
+    this.currentIndex = this.originalSlides.length;
+    this.positionTrack(false);
 
-.carousel-arrow svg {
-  width: 28px;
-  height: 28px;
-}
+    this.bindEvents();
+  }
 
-/* Position der Pfeile leicht angepasst für bessere Optik */
-.carousel-arrow--prev {
-  left: -24px;
-}
+  reInit() {
+    if (window.innerWidth <= 749) {
+      this.disableJsCarousel();
+      return;
+    }
+    // Entferne alte Klone und setze das Karussell zurück
+    this.track.querySelectorAll('.is-clone').forEach(clone => clone.remove());
+    this.track.style.transition = 'none';
+    this.track.style.transform = 'translateX(0px)';
+    if(this.prevButton) this.prevButton.style.display = 'flex';
+    if(this.nextButton) this.nextButton.style.display = 'flex';
+    this.init();
+  }
 
-.carousel-arrow--next {
-  right: -24px;
-}
+  disableJsCarousel() {
+    if(this.prevButton) this.prevButton.style.display = 'none';
+    if(this.nextButton) this.nextButton.style.display = 'none';
+    this.viewport.style.overflowX = 'auto'; // Fallback auf natives Scrollen
+  }
 
-/* --- Das eigentliche Leistungs-Item --- */
-.service-item {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  position: relative;
-  z-index: 2; /* Über der Linie */
-}
+  setupClones() {
+    // Klone das Ende und stelle es an den Anfang
+    this.originalSlides.slice().reverse().forEach(slide => {
+      const clone = slide.cloneNode(true);
+      clone.classList.add('is-clone');
+      this.track.prepend(clone);
+    });
 
-.service-item__timeline {
-  margin-bottom: 25px;
-}
+    // Klone den Anfang und stelle es ans Ende
+    this.originalSlides.forEach(slide => {
+      const clone = slide.cloneNode(true);
+      clone.classList.add('is-clone');
+      this.track.appendChild(clone);
+    });
+  }
 
-.service-item__timeline-connector {
-  content: '';
-  position: absolute;
-  top: calc(var(--image-diameter, 150px) / 2);
-  left: 0;
-  right: 0;
-  height: 2px;
-  z-index: 1; /* Hinter den Bildern */
-  transform: translateY(-50%);
-  margin: 0 auto;
-  width: 95%;
-}
+  bindEvents() {
+    this.prevButton.addEventListener('click', () => this.move(-1));
+    this.nextButton.addEventListener('click', () => this.move(1));
+    this.track.addEventListener('transitionend', () => this.handleTransitionEnd());
+  }
 
-.service-item__image-wrapper {
-  --image-diameter: 150px; /* Default-Wert, wird von Liquid überschrieben */
-  width: var(--image-diameter);
-  height: var(--image-diameter);
-  position: relative;
-  margin: 0 auto;
-  border-radius: 50%;
-  padding: 5px; /* Abstand zur Linie */
-  background: var(--section-bg-color, #fff); /* Gleiche Farbe wie Sektionshintergrund */
-}
+  move(direction) {
+    if (this.isTransitioning) return;
+    this.isTransitioning = true;
+    this.currentIndex += direction;
+    this.positionTrack(true);
+  }
 
-.service-item__main-image {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.service-item__main-image.placeholder,
-.service-item__main-image.placeholder svg {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #f2f2f2;
-}
+  positionTrack(animated = true) {
+    const offset = -this.currentIndex * this.slideWidth;
+    this.track.style.transition = animated ? 'transform 0.5s ease-in-out' : 'none';
+    this.track.style.transform = `translateX(${offset}px)`;
+  }
 
+  handleTransitionEnd() {
+    this.isTransitioning = false;
 
-.service-item__number-icon {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  width: 30%;
-  height: 30%;
-  min-width: 30px;
-  min-height: 30px;
-  object-fit: contain;
-}
+    // Wenn am Ende der Klone, springe zum Anfang der echten Slides
+    if (this.currentIndex >= this.originalSlides.length * 2) {
+      this.currentIndex = this.originalSlides.length;
+      this.positionTrack(false);
+    }
 
-.service-item__content {
-  flex-grow: 1;
-}
-
-.service-item__title {
-  margin: 0 0 8px 0;
-  font-weight: bold;
-}
-
-.service-item__subtitle {
-  margin: 0 0 15px 0;
-  font-weight: normal;
-}
-
-.service-item__text p {
-  margin: 0;
-  line-height: 1.6;
-}
-
-/* --- Responsive Anpassungen --- */
-@media (max-width: 1200px) {
-  .carousel-slide {
-    width: 33.333%; /* 3 sichtbare Elemente */
+    // Wenn am Anfang der Klone, springe zum Ende der echten Slides
+    if (this.currentIndex < this.originalSlides.length) {
+      this.currentIndex = this.originalSlides.length * 2 - 1;
+      this.positionTrack(false);
+    }
   }
 }
 
-@media (max-width: 990px) {
-  .carousel-slide {
-    width: 50%; /* 2 sichtbare Elemente */
-  }
-}
+// Initialisierung der Sektion
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('.leistungen-neu-section');
+  sections.forEach(section => {
+    new LeistungenCarousel(section);
+  });
+});
 
-@media (max-width: 749px) {
-  .carousel-slide {
-    width: 85%; /* Fast 1 Element sichtbar */
-    scroll-snap-align: center; /* Sorgt für schönes Einrasten beim Scrollen */
-  }
-  .carousel-viewport {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory; /* Aktiviert Snap-Scrolling auf Touch-Geräten */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
-  .carousel-viewport::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
-  }
-   .carousel-track {
-    transition: none;
-  }
-  .carousel-arrow {
-    display: none; /* Pfeile auf Mobile ausblenden */
-  }
+// Sicherstellen, dass es auch im Shopify Theme Editor funktioniert
+if (window.Shopify && window.Shopify.designMode) {
+  document.addEventListener('shopify:section:load', (event) => {
+    const section = event.target.querySelector('.leistungen-neu-section');
+    if (section) {
+      new LeistungenCarousel(section);
+    }
+  });
+   document.addEventListener('shopify:section:reorder', (event) => {
+    const section = event.target.querySelector('.leistungen-neu-section');
+    if (section) {
+      new LeistungenCarousel(section);
+    }
+  });
 }
