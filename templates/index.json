@@ -292,6 +292,7 @@
         "feature_Ljt6zC": {
           "type": "feature",
           "settings": {
+            "icon": "shopify://shop_images/ChatGPT_Image_31._Juli_2025_18_20_03.png",
             "heading": "Effizienz",
             "text": "schnelle und sorgfältige Reinigung"
           }
@@ -334,76 +335,6 @@
         "text_font": "sans-serif",
         "text_font_size": 16,
         "text_color": "#555555"
-      }
-    },
-    "kundenbewertung_tzkjqA": {
-      "type": "Kundenbewertung",
-      "blocks": {
-        "review_FJeXGD": {
-          "type": "review",
-          "settings": {
-            "person_image": "shopify://shop_images/luca.jpg",
-            "image_size": 80,
-            "person_name": "Max Mustermann",
-            "name_font": "helvetica_n4",
-            "name_font_size": 18,
-            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
-            "text_font": "helvetica_n4",
-            "text_font_size": 16,
-            "star_rating": 1
-          }
-        },
-        "review_9YC7yy": {
-          "type": "review",
-          "settings": {
-            "person_image": "shopify://shop_images/WhatsApp_Image_2025-02-03_at_15.31.49.jpg",
-            "image_size": 80,
-            "person_name": "Max Mustermann",
-            "name_font": "helvetica_n4",
-            "name_font_size": 18,
-            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
-            "text_font": "helvetica_n4",
-            "text_font_size": 16,
-            "star_rating": 5
-          }
-        },
-        "review_cUnGwJ": {
-          "type": "review",
-          "settings": {
-            "image_size": 80,
-            "person_name": "Max Mustermann",
-            "name_font": "helvetica_n4",
-            "name_font_size": 18,
-            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
-            "text_font": "helvetica_n4",
-            "text_font_size": 16,
-            "star_rating": 5
-          }
-        },
-        "review_QThjeR": {
-          "type": "review",
-          "settings": {
-            "image_size": 80,
-            "person_name": "Max Mustermann",
-            "name_font": "helvetica_n4",
-            "name_font_size": 18,
-            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
-            "text_font": "helvetica_n4",
-            "text_font_size": 16,
-            "star_rating": 5
-          }
-        }
-      },
-      "block_order": [
-        "review_FJeXGD",
-        "review_9YC7yy",
-        "review_cUnGwJ",
-        "review_QThjeR"
-      ],
-      "name": "Kundenbewertung",
-      "settings": {
-        "background_color": "#f9f9f9",
-        "section_padding": 50
       }
     },
     "leistungen_neu_C3ikEz": {
@@ -564,6 +495,76 @@
         "arrow_color": "#111111",
         "line_color": "#dddddd"
       }
+    },
+    "kundenbewertung_tzkjqA": {
+      "type": "Kundenbewertung",
+      "blocks": {
+        "review_FJeXGD": {
+          "type": "review",
+          "settings": {
+            "person_image": "shopify://shop_images/luca.jpg",
+            "image_size": 80,
+            "person_name": "Max Mustermann",
+            "name_font": "helvetica_n4",
+            "name_font_size": 18,
+            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
+            "text_font": "helvetica_n4",
+            "text_font_size": 16,
+            "star_rating": 1
+          }
+        },
+        "review_9YC7yy": {
+          "type": "review",
+          "settings": {
+            "person_image": "shopify://shop_images/WhatsApp_Image_2025-02-03_at_15.31.49.jpg",
+            "image_size": 80,
+            "person_name": "Max Mustermann",
+            "name_font": "helvetica_n4",
+            "name_font_size": 18,
+            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
+            "text_font": "helvetica_n4",
+            "text_font_size": 16,
+            "star_rating": 5
+          }
+        },
+        "review_cUnGwJ": {
+          "type": "review",
+          "settings": {
+            "image_size": 80,
+            "person_name": "Max Mustermann",
+            "name_font": "helvetica_n4",
+            "name_font_size": 18,
+            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
+            "text_font": "helvetica_n4",
+            "text_font_size": 16,
+            "star_rating": 5
+          }
+        },
+        "review_QThjeR": {
+          "type": "review",
+          "settings": {
+            "image_size": 80,
+            "person_name": "Max Mustermann",
+            "name_font": "helvetica_n4",
+            "name_font_size": 18,
+            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
+            "text_font": "helvetica_n4",
+            "text_font_size": 16,
+            "star_rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "review_FJeXGD",
+        "review_9YC7yy",
+        "review_cUnGwJ",
+        "review_QThjeR"
+      ],
+      "name": "Kundenbewertung",
+      "settings": {
+        "background_color": "#f9f9f9",
+        "section_padding": 50
+      }
     }
   },
   "order": [
@@ -571,7 +572,7 @@
     "text_mit_bild_dCQRLd",
     "leistungen_neu_yKwjK9",
     "image_with_features_nTxeBj",
-    "kundenbewertung_tzkjqA",
-    "leistungen_neu_C3ikEz"
+    "leistungen_neu_C3ikEz",
+    "kundenbewertung_tzkjqA"
   ]
 }
