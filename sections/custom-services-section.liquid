@@ -1,0 +1,180 @@
+{% comment %}
+  ============================================================================
+  CUSTOM SERVICES SECTION
+  ============================================================================
+{% endcomment %}
+
+<div class="page-width">
+  <div class="custom-services-container">
+    {% for block in section.blocks %}
+      <div 
+        class="service-block" 
+        id="{{ block.settings.unique_id | handleize }}" 
+        style="
+          --text-color: {{ block.settings.text_color }};
+          --font-size: {{ block.settings.font_size }}px;
+          --font-style: {{ block.settings.font_style }};
+        "
+        {{ block.shopify_attributes }}>
+        
+        <div class="service-block__image-wrapper">
+          {% if block.settings.image != blank %}
+            <img 
+              src="{{ block.settings.image | img_url: '800x' }}" 
+              alt="{{ block.settings.image.alt | escape }}"
+              loading="lazy"
+              width="800"
+              height="{{ 800 | divided_by: block.settings.image.aspect_ratio | round }}"
+            >
+          {% else %}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %}
+        </div>
+        
+        <div class="service-block__content">
+          <h2 class="service-block__title">{{ block.settings.title | escape }}</h2>
+          <div class="service-block__text">{{ block.settings.description }}</div>
+        </div>
+
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Leistungsblöcke",
+  "tag": "section",
+  "class": "custom-services-section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "service_item",
+      "name": "Leistungsblock",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Bild"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titel der Leistung",
+          "default": "Decken- / Wandreinigung"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Beschreibung",
+          "default": "<p>Unser Portfolio der Decken- und Wandreinigung deckt sowohl die Intensivreinigung von Beton- / Trapezflächen, als auch von Konstruktionsbauteilen Ihrer Industriegebäude ab.</p>"
+        },
+        {
+          "type": "text",
+          "id": "unique_id",
+          "label": "Eindeutige ID für die Suche",
+          "info": "Wichtig! Gib hier eine einmalige ID ohne Leerzeichen oder Sonderzeichen ein (z.B. 'deckenreinigung' oder 'fassadenpflege'). Diese ID wird für die Suche benötigt."
+        },
+        {
+          "type": "header",
+          "content": "Text-Styling"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Textfarbe",
+          "default": "#4a4a4a"
+        },
+        {
+          "type": "range",
+          "id": "font_size",
+          "min": 12,
+          "max": 24,
+          "step": 1,
+          "unit": "px",
+          "label": "Schriftgröße",
+          "default": 16
+        },
+        {
+          "type": "select",
+          "id": "font_style",
+          "label": "Schriftart",
+          "options": [
+            { "value": "inherit", "label": "Standard" },
+            { "value": "serif", "label": "Serif" },
+            { "value": "monospace", "label": "Monospace" }
+          ],
+          "default": "inherit"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Leistungsblöcke",
+      "blocks": [
+        { "type": "service_item" },
+        { "type": "service_item" }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  .custom-services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 2rem 0;
+  }
+
+  .service-block {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    color: var(--text-color);
+    font-size: var(--font-size);
+    font-family: var(--font-style);
+  }
+
+  /* Abwechselndes Layout */
+  .service-block:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .service-block__image-wrapper {
+    flex: 1 1 50%; /* Nimmt 50% der Breite ein */
+  }
+
+  .service-block__image-wrapper img,
+  .service-block__image-wrapper .placeholder-svg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+
+  .service-block__content {
+    flex: 1 1 50%; /* Nimmt 50% der Breite ein */
+    padding: 1rem;
+  }
+  
+  .service-block__title {
+    font-size: 1.8em; /* Relative Schriftgröße für den Titel */
+    margin-bottom: 1em;
+  }
+
+  .service-block__text p {
+    line-height: 1.6;
+  }
+
+  /* Für mobile Ansichten */
+  @media (max-width: 768px) {
+    .service-block,
+    .service-block:nth-child(even) {
+      flex-direction: column;
+    }
+  }
+</style>
