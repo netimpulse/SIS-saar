@@ -1,0 +1,263 @@
+{% comment %}
+  Finale Version: Ein normaler, zweispaltiger Abschnitt für Firmeninformationen.
+  Inhalte werden über Blöcke (Linklisten, Text) flexibel hinzugefügt.
+{% endcomment %}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  .firmen-infobereich-container {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+
+  .firmen-column {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .firmen-divider {
+    width: 1px;
+    background-color: rgba(var(--color-foreground), 0.1);
+    align-self: stretch;
+  }
+  
+  /* Stile für die Linkliste im Block */
+  .firmen-block--link_list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .firmen-block--link_list li {
+    margin-bottom: 0.8rem;
+  }
+
+  .firmen-block--link_list a {
+    text-decoration: none;
+    color: rgba(var(--color-foreground), 0.75);
+    transition: color 0.3s ease;
+  }
+
+  .firmen-block--link_list a:hover {
+    color: rgb(var(--color-foreground));
+    text-decoration: underline;
+  }
+
+  .firmen-block__heading {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  @media screen and (max-width: 749px) {
+    .firmen-infobereich-container {
+      flex-direction: column;
+      gap: 0;
+    }
+    .firmen-divider {
+      width: 100%;
+      height: 1px;
+      margin: 3rem 0;
+      align-self: auto;
+    }
+    .firmen-column {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="page-width">
+    <div class="firmen-infobereich-container">
+      
+      {% comment %} --- LINKE SPALTE --- {% endcomment %}
+      <div class="firmen-column firmen-column--left">
+        {%- for block in section.blocks -%}
+          {%- if block.settings.column == 'left' -%}
+            <div class="firmen-block firmen-block--{{ block.type | handle }}" {{ block.shopify_attributes }}>
+              {%- if block.settings.heading != blank -%}
+                <h3 class="firmen-block__heading inline-richtext">{{ block.settings.heading }}</h3>
+              {%- endif -%}
+              {%- case block.type -%}
+                {%- when 'link_list' -%}
+                  {%- if block.settings.menu != blank and block.settings.menu.links.size > 0 -%}
+                    <ul>
+                      {%- for link in block.settings.menu.links -%}
+                        <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- endif -%}
+                {%- when 'text' -%}
+                  <div class="rte">{{ block.settings.subtext }}</div>
+              {%- endcase -%}
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      {% comment %} --- TEILER --- {% endcomment %}
+      <div class="firmen-divider"></div>
+
+      {% comment %} --- RECHTE SPALTE --- {% endcomment %}
+      <div class="firmen-column firmen-column--right">
+        {%- for block in section.blocks -%}
+          {%- if block.settings.column == 'right' -%}
+            <div class="firmen-block firmen-block--{{ block.type | handle }}" {{ block.shopify_attributes }}>
+              {%- if block.settings.heading != blank -%}
+                <h3 class="firmen-block__heading inline-richtext">{{ block.settings.heading }}</h3>
+              {%- endif -%}
+              {%- case block.type -%}
+                {%- when 'link_list' -%}
+                  {%- if block.settings.menu != blank and block.settings.menu.links.size > 0 -%}
+                    <ul>
+                      {%- for link in block.settings.menu.links -%}
+                        <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- endif -%}
+                {%- when 'text' -%}
+                  <div class="rte">{{ block.settings.subtext }}</div>
+              {%- endcase -%}
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Firmen-Infobereich",
+  "class": "shopify-section--firmen-infobereich",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Farbschema",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "Abstände"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Innerer Abstand oben",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Innerer Abstand unten",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "link_list",
+      "name": "Linkliste (für Impressum etc.)",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "select",
+          "id": "column",
+          "label": "Spalte zuweisen",
+          "options": [
+            { "value": "left", "label": "Links" },
+            { "value": "right", "label": "Rechts" }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Überschrift",
+          "default": "Rechtliches"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menü auswählen",
+          "info": "Wähle das Menü mit den Links aus, die du hier anzeigen möchtest (z.B. 'Rechtliches - Firma A')."
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Textblock",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "select",
+          "id": "column",
+          "label": "Spalte zuweisen",
+          "options": [
+            { "value": "left", "label": "Links" },
+            { "value": "right", "label": "Rechts" }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Überschrift",
+          "default": "Über uns"
+        },
+        {
+          "type": "richtext",
+          "id": "subtext",
+          "label": "Text",
+          "default": "<p>Ein kurzer Text über diese Firma.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Firmen-Infobereich",
+      "blocks": [
+        {
+          "type": "link_list",
+          "settings": {
+            "column": "left",
+            "heading": "Firma A"
+          }
+        },
+        {
+          "type": "link_list",
+          "settings": {
+            "column": "right",
+            "heading": "Firma B"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
