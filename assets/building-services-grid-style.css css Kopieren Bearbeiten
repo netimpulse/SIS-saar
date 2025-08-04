@@ -1,0 +1,54 @@
+/* Styles für den Services-Grid der Gebäudeservice-Seite */
+.building-services-grid {
+  padding: 3rem 1rem;
+}
+.building-services-grid .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.building-services-grid .grid-title {
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 1.2;
+}
+.building-services-grid .service-grid {
+  display: grid;
+  grid-gap: 1.5rem;
+}
+.building-services-grid .cols-1 { grid-template-columns: 1fr; }
+.building-services-grid .cols-2 { grid-template-columns: repeat(2, 1fr); }
+.building-services-grid .cols-3 { grid-template-columns: repeat(3, 1fr); }
+.building-services-grid .cols-4 { grid-template-columns: repeat(4, 1fr); }
+.building-services-grid .service-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+.building-services-grid .service-card:hover {
+  transform: translateY(-5px);
+}
+.building-services-grid .service-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.building-services-grid .service-title { margin: 0.5rem 0; }
+.building-services-grid .service-text { margin-bottom: 1rem; }
+.building-services-grid .service-link {
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .building-services-grid .cols-3,
+  .building-services-grid .cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .building-services-grid .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
