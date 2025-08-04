@@ -1,0 +1,524 @@
+{% comment %}
+  Dieser Code erstellt eine zweispaltige Fußzeile.
+  Jede Spalte hat ihre eigenen, unabhängigen Einstellungen im Theme-Customizer.
+  Blöcke können über eine Einstellung der linken oder rechten Spalte zugewiesen werden.
+{% endcomment %}
+
+{{ 'section-footer.css' | asset_url | stylesheet_tag }}
+{{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
+{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}
+{{ 'component-list-payment.css' | asset_url | stylesheet_tag }}
+{{ 'component-list-social.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  /* Allgemeine Stile für die Sektion */
+  .footer {
+    margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
+  }
+
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  /* Neue Stile für das zweispaltige Layout */
+  .footer-dual-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .footer-column {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .footer-divider {
+    width: 1px;
+    background-color: rgba(var(--color-foreground), 0.1);
+    flex-shrink: 0;
+  }
+
+  .footer-column .footer__content-bottom {
+    border-top: none; /* Der Teiler ersetzt die obere Linie */
+    padding-top: 3rem;
+  }
+
+  .footer-column .footer__copyright {
+      text-align: left; /* Richtet Copyright-Text linksbündig aus */
+  }
+
+  .footer-column .footer__content-bottom-wrapper {
+      justify-content: flex-start;
+  }
+   .footer-column .footer__content-bottom-wrapper--center {
+      justify-content: flex-start;
+  }
+
+  /* Responsive Anpassungen für mobile Ansicht */
+  @media screen and (max-width: 749px) {
+    .footer-dual-container {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .footer-divider {
+      width: 100%;
+      height: 1px;
+      margin: 3rem 0;
+    }
+    .footer-column .footer-block.grid__item {
+        margin: 2rem 0; /* Reduzierter Abstand auf Mobilgeräten */
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    .footer {
+      margin-top: {{ section.settings.margin_top }}px;
+    }
+
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="footer-dual-container page-width">
+    {%- liquid
+      assign has_social_icons = true
+      if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank
+        assign has_social_icons = false
+      endif
+    -%}
+    
+    {% comment %} ======================= LINKE SPALTE ======================= {% endcomment %}
+    <div class="footer-column footer-column--left">
+      <div class="footer__content-top">
+        <div class="footer__blocks-wrapper grid grid--1-col grid--2-col-tablet">
+          {%- for block in section.blocks -%}
+            {%- if block.settings.column == 'left' -%}
+              <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
+                {%- if block.settings.heading != blank -%}
+                  <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                {%- endif -%}
+                {%- case block.type -%}
+                  {%- when '@app' -%}
+                    {% render block %}
+                  {%- when 'text' -%}
+                    <div class="footer-block__details-content rte">{{ block.settings.subtext }}</div>
+                  {%- when 'link_list' -%}
+                    {%- if block.settings.menu != blank -%}
+                      <ul class="footer-block__details-content list-unstyled">
+                        {%- for link in block.settings.menu.links -%}
+                          <li><a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link">{{ link.title }}</a></li>
+                        {%- endfor -%}
+                      </ul>
+                    {%- endif -%}
+                  {%- when 'image' -%}
+                    <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
+                      {%- if block.settings.image != blank -%}
+                        <div class="footer-block__image-wrapper" style="max-width: min(100%, {{ block.settings.image_width }}px);">
+                          <img
+                            srcset="{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: block.settings.image_width | times: 2 }} 2x"
+                            src="{{ block.settings.image | image_url: width: 760 }}"
+                            alt="{{ block.settings.image.alt | escape }}"
+                            loading="lazy"
+                            width="{{ block.settings.image.width }}"
+                            height="{{ block.settings.image.height }}"
+                          >
+                        </div>
+                      {%- else -%}
+                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                      {%- endif -%}
+                    </div>
+                {%- endcase -%}
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+      
+      <div class="footer__content-bottom">
+        <div class="footer__content-bottom-wrapper">
+          <div class="footer__column footer__localization isolate">
+            {%- if section.settings.left_enable_country_selector and localization.available_countries.size > 1 -%}
+              <localization-form>{%- form 'localization', id: 'FooterCountryFormLeft', class: 'localization-form' -%}<div><h2 class="caption-large text-body">{{ 'localization.country_label' | t }}</h2>{%- render 'country-localization', localPosition: 'FooterCountryLeft' -%}</div>{%- endform -%}</localization-form>
+            {%- endif -%}
+            {%- if section.settings.left_enable_language_selector and localization.available_languages.size > 1 -%}
+              <localization-form>{%- form 'localization', id: 'FooterLanguageFormLeft', class: 'localization-form' -%}<div><h2 class="caption-large text-body">{{ 'localization.language_label' | t }}</h2>{%- render 'language-localization', localPosition: 'FooterLanguageLeft' -%}</div>{%- endform -%}</localization-form>
+            {%- endif -%}
+          </div>
+        </div>
+        {%- if section.settings.left_newsletter_enable or section.settings.left_show_social and has_social_icons -%}
+          <div class="footer-block--newsletter">
+            {%- if section.settings.left_newsletter_enable -%}
+              <div class="footer-block__newsletter">
+                {%- if section.settings.left_newsletter_heading != blank -%}<h2 class="footer-block__heading inline-richtext">{{ section.settings.left_newsletter_heading }}</h2>{%- endif -%}
+                {%- form 'customer', id: 'ContactFooterLeft', class: 'footer__newsletter newsletter-form' -%}<input type="hidden" name="contact[tags]" value="newsletter"><div class="newsletter-form__field-wrapper"><div class="field"><input id="NewsletterForm-Left" type="email" name="contact[email]" class="field__input" required placeholder="{{ 'newsletter.label' | t }}"><label class="field__label" for="NewsletterForm-Left">{{ 'newsletter.label' | t }}</label><button type="submit" class="newsletter-form__button field__button">{%- render 'icon-arrow' -%}</button></div></div>{%- endform -%}
+              </div>
+            {%- endif -%}
+            {%- if section.settings.left_show_social and has_social_icons -%}{%- render 'social-icons' -%}{%- endif -%}
+          </div>
+        {%- endif -%}
+        <div class="footer__content-bottom-wrapper page-width">
+          <div class="footer__copyright caption">
+            {%- if section.settings.left_payment_enable -%}<div class="footer__payment"><span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span><ul class="list list-payment">{%- for type in shop.enabled_payment_types -%}<li class="list-payment__item">{{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}</li>{%- endfor -%}</ul></div>{%- endif -%}<br>
+            <small class="copyright__content">&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url }}</small><br>
+            <small class="copyright__content">{{ powered_by_link }}</small>
+            {%- if section.settings.left_show_policy -%}<ul class="policies list-unstyled">{%- for policy in shop.policies -%}{%- if policy != blank -%}<li><small><a href="{{ policy.url }}">{{ policy.title }}</a></small></li>{%- endif -%}{%- endfor -%}</ul>{%- endif -%}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% comment %} ======================= TEILER ======================= {% endcomment %}
+    <div class="footer-divider"></div>
+
+    {% comment %} ======================= RECHTE SPALTE ======================= {% endcomment %}
+    <div class="footer-column footer-column--right">
+      <div class="footer__content-top">
+        <div class="footer__blocks-wrapper grid grid--1-col grid--2-col-tablet">
+          {%- for block in section.blocks -%}
+            {%- if block.settings.column == 'right' -%}
+              <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
+                {%- if block.settings.heading != blank -%}
+                  <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                {%- endif -%}
+                {%- case block.type -%}
+                  {%- when '@app' -%}
+                    {% render block %}
+                  {%- when 'text' -%}
+                    <div class="footer-block__details-content rte">{{ block.settings.subtext }}</div>
+                  {%- when 'link_list' -%}
+                    {%- if block.settings.menu != blank -%}
+                      <ul class="footer-block__details-content list-unstyled">
+                        {%- for link in block.settings.menu.links -%}
+                          <li><a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link">{{ link.title }}</a></li>
+                        {%- endfor -%}
+                      </ul>
+                    {%- endif -%}
+                  {%- when 'image' -%}
+                    <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
+                      {%- if block.settings.image != blank -%}
+                        <div class="footer-block__image-wrapper" style="max-width: min(100%, {{ block.settings.image_width }}px);">
+                           <img
+                            srcset="{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: block.settings.image_width | times: 2 }} 2x"
+                            src="{{ block.settings.image | image_url: width: 760 }}"
+                            alt="{{ block.settings.image.alt | escape }}"
+                            loading="lazy"
+                            width="{{ block.settings.image.width }}"
+                            height="{{ block.settings.image.height }}"
+                          >
+                        </div>
+                      {%- else -%}
+                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                      {%- endif -%}
+                    </div>
+                {%- endcase -%}
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+
+      <div class="footer__content-bottom">
+        <div class="footer__content-bottom-wrapper">
+          <div class="footer__column footer__localization isolate">
+            {%- if section.settings.right_enable_country_selector and localization.available_countries.size > 1 -%}
+              <localization-form>{%- form 'localization', id: 'FooterCountryFormRight', class: 'localization-form' -%}<div><h2 class="caption-large text-body">{{ 'localization.country_label' | t }}</h2>{%- render 'country-localization', localPosition: 'FooterCountryRight' -%}</div>{%- endform -%}</localization-form>
+            {%- endif -%}
+            {%- if section.settings.right_enable_language_selector and localization.available_languages.size > 1 -%}
+              <localization-form>{%- form 'localization', id: 'FooterLanguageFormRight', class: 'localization-form' -%}<div><h2 class="caption-large text-body">{{ 'localization.language_label' | t }}</h2>{%- render 'language-localization', localPosition: 'FooterLanguageRight' -%}</div>{%- endform -%}</localization-form>
+            {%- endif -%}
+          </div>
+        </div>
+        {%- if section.settings.right_newsletter_enable or section.settings.right_show_social and has_social_icons -%}
+          <div class="footer-block--newsletter">
+            {%- if section.settings.right_newsletter_enable -%}
+              <div class="footer-block__newsletter">
+                {%- if section.settings.right_newsletter_heading != blank -%}<h2 class="footer-block__heading inline-richtext">{{ section.settings.right_newsletter_heading }}</h2>{%- endif -%}
+                {%- form 'customer', id: 'ContactFooterRight', class: 'footer__newsletter newsletter-form' -%}<input type="hidden" name="contact[tags]" value="newsletter"><div class="newsletter-form__field-wrapper"><div class="field"><input id="NewsletterForm-Right" type="email" name="contact[email]" class="field__input" required placeholder="{{ 'newsletter.label' | t }}"><label class="field__label" for="NewsletterForm-Right">{{ 'newsletter.label' | t }}</label><button type="submit" class="newsletter-form__button field__button">{%- render 'icon-arrow' -%}</button></div></div>{%- endform -%}
+              </div>
+            {%- endif -%}
+            {%- if section.settings.right_show_social and has_social_icons -%}{%- render 'social-icons' -%}{%- endif -%}
+          </div>
+        {%- endif -%}
+        <div class="footer__content-bottom-wrapper page-width">
+          <div class="footer__copyright caption">
+            {%- if section.settings.right_payment_enable -%}<div class="footer__payment"><span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span><ul class="list list-payment">{%- for type in shop.enabled_payment_types -%}<li class="list-payment__item">{{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}</li>{%- endfor -%}</ul></div>{%- endif -%}<br>
+            <small class="copyright__content">&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url }}</small><br>
+            <small class="copyright__content">{{ powered_by_link }}</small>
+            {%- if section.settings.right_show_policy -%}<ul class="policies list-unstyled">{%- for policy in shop.policies -%}{%- if policy != blank -%}<li><small><a href="{{ policy.url }}">{{ policy.title }}</a></small></li>{%- endif -%}{%- endfor -%}</ul>{%- endif -%}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Dual Column Footer",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Farbschema",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Linke Spalte"
+    },
+    {
+      "type": "checkbox",
+      "id": "left_newsletter_enable",
+      "default": true,
+      "label": "Newsletter-Anmeldung anzeigen"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "left_newsletter_heading",
+      "default": "Abonnieren Sie unsere E-Mails",
+      "label": "Newsletter Überschrift"
+    },
+    {
+      "type": "checkbox",
+      "id": "left_show_social",
+      "default": true,
+      "label": "Social-Media-Symbole anzeigen"
+    },
+    {
+      "type": "checkbox",
+      "id": "left_enable_country_selector",
+      "default": false,
+      "label": "Länderauswahl aktivieren"
+    },
+    {
+      "type": "checkbox",
+      "id": "left_enable_language_selector",
+      "default": false,
+      "label": "Sprachauswahl aktivieren"
+    },
+    {
+      "type": "checkbox",
+      "id": "left_payment_enable",
+      "default": true,
+      "label": "Zahlungssymbole anzeigen"
+    },
+    {
+      "type": "checkbox",
+      "id": "left_show_policy",
+      "default": false,
+      "label": "Richtlinien-Links anzeigen"
+    },
+    {
+      "type": "header",
+      "content": "Rechte Spalte"
+    },
+    {
+      "type": "checkbox",
+      "id": "right_newsletter_enable",
+      "default": true,
+      "label": "Newsletter-Anmeldung anzeigen"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "right_newsletter_heading",
+      "default": "Abonnieren Sie unsere E-Mails",
+      "label": "Newsletter Überschrift"
+    },
+    {
+      "type": "checkbox",
+      "id": "right_show_social",
+      "default": true,
+      "label": "Social-Media-Symbole anzeigen"
+    },
+    {
+      "type": "checkbox",
+      "id": "right_enable_country_selector",
+      "default": false,
+      "label": "Länderauswahl aktivieren"
+    },
+    {
+      "type": "checkbox",
+      "id": "right_enable_language_selector",
+      "default": false,
+      "label": "Sprachauswahl aktivieren"
+    },
+    {
+      "type": "checkbox",
+      "id": "right_payment_enable",
+      "default": true,
+      "label": "Zahlungssymbole anzeigen"
+    },
+    {
+      "type": "checkbox",
+      "id": "right_show_policy",
+      "default": false,
+      "label": "Richtlinien-Links anzeigen"
+    },
+    {
+      "type": "header",
+      "content": "Abstände der Sektion"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Abstand oben",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Innerer Abstand oben",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Innerer Abstand unten",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    },
+    {
+      "type": "link_list",
+      "name": "Menü",
+      "settings": [
+        {
+          "type": "select",
+          "id": "column",
+          "label": "Spalte",
+          "options": [
+            { "value": "left", "label": "Links" },
+            { "value": "right", "label": "Rechts" }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "Quick-Links",
+          "label": "Überschrift"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "default": "footer",
+          "label": "Menü auswählen"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "select",
+          "id": "column",
+          "label": "Spalte",
+          "options": [
+            { "value": "left", "label": "Links" },
+            { "value": "right", "label": "Rechts" }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "Sprechen Sie über Ihre Marke",
+          "label": "Überschrift"
+        },
+        {
+          "type": "richtext",
+          "id": "subtext",
+          "default": "<p>Teilen Sie Details über Ihre Marke mit Ihren Kunden.</p>",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Bild",
+      "settings": [
+        {
+          "type": "select",
+          "id": "column",
+          "label": "Spalte",
+          "options": [
+            { "value": "left", "label": "Links" },
+            { "value": "right", "label": "Rechts" }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Bild"
+        },
+        {
+          "type": "range",
+          "id": "image_width",
+          "min": 50,
+          "max": 550,
+          "step": 5,
+          "unit": "px",
+          "label": "Bildbreite",
+          "default": 100
+        },
+        {
+          "type": "select",
+          "id": "alignment",
+          "label": "Bildausrichtung",
+          "options": [
+            { "value": "", "label": "Links" },
+            { "value": "center", "label": "Zentriert" },
+            { "value": "right", "label": "Rechts" }
+          ],
+          "default": "center"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "link_list",
+        "settings": {
+          "column": "left"
+        }
+      },
+      {
+        "type": "text",
+        "settings": {
+          "column": "left"
+        }
+      },
+      {
+        "type": "link_list",
+        "settings": {
+          "column": "right"
+        }
+      }
+    ]
+  }
+}
+{% endschema %}
