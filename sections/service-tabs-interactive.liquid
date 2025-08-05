@@ -1,16 +1,19 @@
 {% comment %}
   ** Service Tabs Interaktiv Sektion **
-  - Kombiniert ein Klick-Karussell (Tabs) mit einem Inhaltsbereich.
-  - Jedes Element im Karussell steuert einen eigenen Inhaltsbereich.
-  - Vollständig im Editor anpassbar.
+  - Verwendet externe CSS- und JS-Dateien.
 {% endcomment %}
 
-{{ 'flickity.css' | asset_url | stylesheet_tag }}
+{{ 'service-tabs-interactive.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
   assign first_block_id = section.blocks[0].id
 -%}
 
+{%- comment -%}
+  Dieser Style-Block ist notwendig, damit die Einstellungen aus dem
+  Theme Editor (Farben, Schriftgrößen etc.) funktionieren können.
+  Die grundlegende Struktur liegt in der externen CSS-Datei.
+{%- endcomment -%}
 {%- style -%}
   .section-{{ section.id }} {
     --section-bg-color: {{ section.settings.section_bg_color }};
@@ -35,77 +38,24 @@
     font-family: {{ section.settings.heading_font.family }}, {{ section.settings.heading_font.fallback_families }};
     font-weight: {% if section.settings.heading_bold %}bold{% else %}normal{% endif %};
     font-style: {% if section.settings.heading_italic %}italic{% else %}normal{% endif %};
-    text-align: center;
-    margin-bottom: 40px;
   }
 
-  /* --- Karussell / Tabs Navigation --- */
-  .section-{{ section.id }} .service-tabs-nav-carousel {
-    margin-bottom: 50px;
+  .section-{{ section.id }} .nav-item.is-active .nav-item__image-wrapper {
+     box-shadow: 0 0 0 4px {{ section.settings.section_bg_color }}, 0 0 0 6px {{ section.settings.active_tab_color }};
   }
 
-  .section-{{ section.id }} .nav-item-cell {
-    width: 25%;
-    padding: 0 15px;
-  }
-
-  .section-{{ section.id }} .nav-item {
-    cursor: pointer;
-    text-align: center;
-    transition: transform 0.2s ease;
-  }
-  .section-{{ section.id }} .nav-item:hover {
-    transform: translateY(-5px);
-  }
-
-  .section-{{ section.id }} .nav-item__image-wrapper {
-    position: relative;
-    margin: 0 auto 15px;
-    border-radius: 50%;
-    transition: border-color 0.3s ease;
+  .section-{{ section.id }} .content__button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
   }
   
-  .section-{{ section.id }} .nav-item.is-active .nav-item__image-wrapper {
-     box-shadow: 0 0 0 4px var(--section-bg-color), 0 0 0 6px {{ section.settings.active_tab_color }};
+  .section-{{ section.id }} .content__button:hover {
+     background-color: var(--button-bg-hover-color);
+     color: var(--button-text-hover-color);
   }
 
-  .section-{{ section.id }} .nav-item__image {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-
-  .section-{{ section.id }} .nav-item__title {
-    margin: 0;
-  }
-
-  /* --- Inhaltsbereich --- */
   .section-{{ section.id }} .interactive-content-area {
     background-color: var(--content-bg-color);
-    padding: 40px;
-    border-radius: 8px;
-    transition: background-color 0.3s;
-  }
-
-  .section-{{ section.id }} .interactive-content__panel {
-    display: none; /* Wichtig: Standardmäßig ausgeblendet */
-    gap: 40px;
-    align-items: center;
-    animation: fadeIn 0.6s ease-in-out;
-  }
-
-  .section-{{ section.id }} .interactive-content__panel.is-active {
-    display: grid; /* Nur der aktive Panel wird sichtbar */
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .section-{{ section.id }} .content__image-wrapper img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    object-fit: cover;
-    max-height: 450px;
   }
 
   .section-{{ section.id }} .content__text-wrapper {
@@ -114,62 +64,6 @@
 
   .section-{{ section.id }} .content__title {
     color: var(--content-title-color);
-    margin-top: 0;
-  }
-  
-  .section-{{ section.id }} .content__button {
-    background-color: var(--button-bg-color);
-    color: var(--button-text-color);
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 20px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .section-{{ section.id }} .content__button:hover {
-     background-color: var(--button-bg-hover-color);
-     color: var(--button-text-hover-color);
-  }
-
-
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  
-  /* Responsive Anpassungen */
-  @media (max-width: 990px) {
-    .section-{{ section.id }} .interactive-content__panel.is-active {
-       grid-template-columns: 1fr;
-    }
-     .section-{{ section.id }} .nav-item-cell {
-      width: 33.33%;
-    }
-  }
-
-   @media (max-width: 749px) {
-     .section-{{ section.id }} .nav-item-cell {
-      width: 45%;
-    }
-    .section-{{ section.id }} .interactive-content-area {
-      padding: 20px;
-    }
-  }
-  
-  /* Flickity Pfeile anpassen */
-  .flickity-prev-next-button {
-    width: 44px;
-    height: 44px;
-    background: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  .flickity-prev-next-button:hover {
-    background: #f0f0f0;
-  }
-  .flickity-prev-next-button .flickity-button-icon {
-    fill: #333;
   }
 
   {% for block in section.blocks %}
@@ -193,21 +87,19 @@
     }
     .section-{{ section.id }} .content-panel-{{ block.id }} .content__description {
         font-size: {{ block.settings.content_text_font_size }}px;
-        line-height: 1.6;
         font-family: {{ block.settings.content_text_font.family }}, {{ block.settings.content_text_font.fallback_families }};
         font-weight: {% if block.settings.content_text_bold %}bold{% else %}normal{% endif %};
         font-style: {% if block.settings.content_text_italic %}italic{% else %}normal{% endif %};
     }
   {% endfor %}
-
 {%- endstyle -%}
 
-<div class="page-width section-{{ section.id }}" data-section-id="{{ section.id }}">
+<div class="page-width service-tabs-interactive-section section-{{ section.id }}" data-section-id="{{ section.id }}">
   {%- if section.settings.heading != blank -%}
     <h2 class="service-tabs-heading">{{ section.settings.heading | escape }}</h2>
   {%- endif -%}
 
-  <div class="service-tabs-nav-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "prevNextButtons": true, "pageDots": false, "groupCells": true, "dragThreshold": 10 }'>
+  <div class="service-tabs-nav-carousel">
     {%- for block in section.blocks -%}
       <div
         class="nav-item-cell"
@@ -266,66 +158,13 @@
   </div>
 </div>
 
-<script src="{{ 'flickity.pkgd.min.js' | asset_url }}" defer="defer"></script>
-
-<script>
-  class ServiceTabsInteractive {
-    constructor(section) {
-      this.section = section;
-      this.tabs = this.section.querySelectorAll('[data-tab-for]');
-      this.contentPanels = this.section.querySelectorAll('[data-content-for]');
-
-      this.init();
-    }
-
-    init() {
-      if (!this.tabs.length) return;
-
-      this.tabs.forEach(tab => {
-        tab.addEventListener('click', () => this.handleTabClick(tab));
-      });
-    }
-
-    handleTabClick(clickedTab) {
-      const targetId = clickedTab.dataset.tabFor;
-
-      // Deaktiviere alle anderen
-      this.tabs.forEach(tab => tab.classList.remove('is-active'));
-      this.contentPanels.forEach(panel => panel.classList.remove('is-active'));
-      
-      // Aktiviere das geklickte Tab
-      clickedTab.classList.add('is-active');
-      
-      // Aktiviere den zugehörigen Inhalt
-      const targetPanel = this.section.querySelector(`[data-content-for="${targetId}"]`);
-      if (targetPanel) {
-        targetPanel.classList.add('is-active');
-      }
-    }
-  }
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('[data-section-id]');
-    sections.forEach(section => {
-      new ServiceTabsInteractive(section);
-    });
-  });
-
-  if (window.Shopify && window.Shopify.designMode) {
-    document.addEventListener('shopify:section:load', (event) => {
-      new ServiceTabsInteractive(event.target);
-    });
-     document.addEventListener('shopify:section:reorder', (event) => {
-       // Optional: Re-initialize if reordering causes issues
-    });
-  }
-</script>
+<script src="{{ 'service-tabs-interactive.js' | asset_url }}" defer="defer"></script>
 
 {% schema %}
 {
-  "name": "Leistungen Interaktiv",
+  "name": "Leistungen Interaktiv (3 Dateien)",
   "tag": "section",
-  "class": "service-tabs-interactive-section",
+  "class": "service-tabs-interactive-wrapper",
   "max_blocks": 12,
   "settings": [
     {
@@ -416,7 +255,7 @@
   ],
   "presets": [
     {
-      "name": "Leistungen Interaktiv",
+      "name": "Leistungen Interaktiv (3 Dateien)",
       "blocks": [
         { "type": "service_tab" },
         { "type": "service_tab" },
