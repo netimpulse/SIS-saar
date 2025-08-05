@@ -1,0 +1,73 @@
+{% comment %}
+  Dieses Snippet generiert den HTML-Code für einen einzelnen Slide.
+  Es verwendet die 'block' Variable, um auf die Einstellungen zuzugreifen.
+{% endcomment %}
+
+{%- liquid
+  assign bg_image = block.settings.background_image
+  assign headline_font = block.settings.headline_font
+  assign subtext_font = block.settings.subtext_font
+-%}
+
+<style>
+  #Slide-{{ block.id }} .custom-hero__headline {
+    font-family: {{ headline_font.family }}, {{ headline_font.fallback_families }};
+    font-weight: {{ headline_font.weight }};
+    font-style: {{ headline_font.style }};
+    font-size: {{ block.settings.headline_size }}px;
+    color: {{ block.settings.headline_color }};
+  }
+
+  #Slide-{{ block.id }} .custom-hero__subtext {
+    font-family: {{ subtext_font.family }}, {{ subtext_font.fallback_families }};
+    font-weight: {{ subtext_font.weight }};
+    font-style: {{ subtext_font.style }};
+    font-size: {{ block.settings.subtext_size }}px;
+    color: {{ block.settings.subtext_color }};
+  }
+
+  #Slide-{{ block.id }} .custom-hero__button {
+    background-color: {{ block.settings.button_bg }};
+    color: {{ block.settings.button_text_color }};
+    border: 1px solid transparent;
+  }
+
+  #Slide-{{ block.id }} .custom-hero__button:hover {
+    background-color: {{ block.settings.button_bg_hover }};
+  }
+</style>
+
+<div id="Slide-{{ block.id }}" class="swiper-slide custom-hero__slide"
+  {% if bg_image %}
+    style="background-image: url('{{ bg_image | image_url: width: 1800 }}');"
+  {% else %}
+    style="background-color: #333;"
+  {% endif %}
+  >
+  <div class="custom-hero__overlay"></div>
+  <div class="custom-hero__content-wrapper">
+    <div class="custom-hero__content">
+
+      {% if block.settings.logo_image %}
+        <div class="custom-hero__logo-wrapper" style="--logo-width: {{ block.settings.logo_width }}px;">
+          <img src="{{ block.settings.logo_image | image_url: width: 600 }}" alt="{{ block.settings.logo_image.alt | escape }}" class="custom-hero__logo">
+        </div>
+      {% endif %}
+      
+      {% if block.settings.headline != blank %}
+        <h2 class="custom-hero__headline">{{ block.settings.headline | escape }}</h2>
+      {% endif %}
+
+      {% if block.settings.subtext != blank %}
+        <div class="custom-hero__subtext">{{ block.settings.subtext }}</div>
+      {% endif %}
+
+      {% if block.settings.button_label != blank and block.settings.button_link != blank %}
+        <a href="{{ block.settings.button_link }}" class="custom-hero__button">
+          {{ block.settings.button_label | escape }}
+        </a>
+      {% endif %}
+
+    </div>
+  </div>
+</div>
