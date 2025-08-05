@@ -1,6 +1,5 @@
 {% comment %}
-  Dieses Snippet generiert den HTML-Code für einen einzelnen Slide.
-  Es verwendet die 'block' Variable, um auf die Einstellungen zuzugreifen.
+  snippets/hero-slider-block.liquid
 {% endcomment %}
 
 {%- liquid
@@ -50,7 +49,7 @@
 
       {% if block.settings.logo_image %}
         <div class="custom-hero__logo-wrapper" style="--logo-width: {{ block.settings.logo_width }}px;">
-          <img src="{{ block.settings.logo_image | image_url: width: 600 }}" alt="{{ block.settings.logo_image.alt | escape }}" class="custom-hero__logo">
+          <img src="{{ block.settings.logo_image | image_url: width: 600 }}" loading="lazy" alt="{{ block.settings.logo_image.alt | escape }}" class="custom-hero__logo">
         </div>
       {% endif %}
       
