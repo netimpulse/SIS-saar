@@ -1,13 +1,12 @@
 {% comment %}
-  Diese Datei bindet die CSS-Datei ein, initialisiert die Slider-Bibliothek (Swiper.js)
-  und durchläuft alle Blöcke (Slides), um sie mit dem Snippet darzustellen.
+  sections/custom-hero-slider.liquid
 {% endcomment %}
 
 {{ 'custom-hero-slider.css' | asset_url | stylesheet_tag }}
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
 <div id="CustomHeroSlider-{{ section.id }}" class="custom-hero-slider-wrapper">
-  <div class="swiper-container">
+  <div class="swiper">
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
         {% render 'hero-slider-block', block: block, section: section %}
@@ -19,57 +18,40 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  const slider = new Swiper('#CustomHeroSlider-{{ section.id }} .swiper-container', {
-    // Optional parameters
-    loop: true,
-    effect: 'fade',
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-
-    // Pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    // Animation on slide change
-    on: {
-      slideChangeTransitionStart: function () {
-        const activeSlide = this.slides[this.previousIndex];
-        const content = activeSlide.querySelector('.custom-hero__content');
-        if (content) {
-            content.classList.remove('animate-in');
-        }
+  // Wähle den Slider spezifisch für diese Section aus
+  const sliderElement = document.querySelector('#CustomHeroSlider-{{ section.id }} .swiper');
+  
+  // Stelle sicher, dass das Element existiert, bevor der Slider initialisiert wird
+  if (sliderElement) {
+    const swiper = new Swiper(sliderElement, {
+      // Standardparameter
+      loop: true,
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
       },
-      slideChangeTransitionEnd: function () {
-        const activeSlide = this.slides[this.activeIndex];
-        const content = activeSlide.querySelector('.custom-hero__content');
-        if (content) {
-            content.classList.add('animate-in');
-        }
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
       },
-      init: function() {
-        // Trigger animation for the very first slide on load
-        const initialSlide = this.slides[this.activeIndex];
-        const content = initialSlide.querySelector('.custom-hero__content');
-        if (content) {
-            content.classList.add('animate-in');
-        }
-      }
-    },
-  });
+
+      // Pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  }
 });
 </script>
 
