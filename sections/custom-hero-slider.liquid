@@ -1,0 +1,224 @@
+{% comment %}
+  Diese Datei bindet die CSS-Datei ein, initialisiert die Slider-Bibliothek (Swiper.js)
+  und durchläuft alle Blöcke (Slides), um sie mit dem Snippet darzustellen.
+{% endcomment %}
+
+{{ 'custom-hero-slider.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<div id="CustomHeroSlider-{{ section.id }}" class="custom-hero-slider-wrapper">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        {% render 'hero-slider-block', block: block, section: section %}
+      {% endfor %}
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const slider = new Swiper('#CustomHeroSlider-{{ section.id }} .swiper-container', {
+    // Optional parameters
+    loop: true,
+    effect: 'fade',
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+
+    // Pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // Animation on slide change
+    on: {
+      slideChangeTransitionStart: function () {
+        const activeSlide = this.slides[this.previousIndex];
+        const content = activeSlide.querySelector('.custom-hero__content');
+        if (content) {
+            content.classList.remove('animate-in');
+        }
+      },
+      slideChangeTransitionEnd: function () {
+        const activeSlide = this.slides[this.activeIndex];
+        const content = activeSlide.querySelector('.custom-hero__content');
+        if (content) {
+            content.classList.add('animate-in');
+        }
+      },
+      init: function() {
+        // Trigger animation for the very first slide on load
+        const initialSlide = this.slides[this.activeIndex];
+        const content = initialSlide.querySelector('.custom-hero__content');
+        if (content) {
+            content.classList.add('animate-in');
+        }
+      }
+    },
+  });
+});
+</script>
+
+
+{% schema %}
+{
+  "name": "Custom Hero Slider",
+  "tag": "section",
+  "class": "custom-hero-slider-section",
+  "max_blocks": 5,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Allgemeine Hinweise"
+    },
+    {
+      "type": "paragraph",
+      "content": "Füge Blöcke für jeden Slide hinzu, den du anzeigen möchtest. Du kannst jeden Slide individuell gestalten."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "background_image",
+          "label": "Hintergrundbild"
+        },
+        {
+          "type": "header",
+          "content": "Logo (Optional)"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo_image",
+          "label": "Logo-Bild"
+        },
+        {
+          "type": "range",
+          "id": "logo_width",
+          "min": 50,
+          "max": 300,
+          "step": 10,
+          "unit": "px",
+          "label": "Logo-Breite",
+          "default": 150
+        },
+        {
+          "type": "header",
+          "content": "Textinhalte"
+        },
+        {
+          "type": "text",
+          "id": "headline",
+          "label": "Überschrift",
+          "default": "Deine Überschrift"
+        },
+        {
+          "type": "font_picker",
+          "id": "headline_font",
+          "label": "Schriftart der Überschrift",
+          "default": "sans-serif"
+        },
+        {
+          "type": "color",
+          "id": "headline_color",
+          "label": "Farbe der Überschrift",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "range",
+          "id": "headline_size",
+          "min": 24,
+          "max": 80,
+          "step": 1,
+          "unit": "px",
+          "label": "Schriftgröße der Überschrift",
+          "default": 48
+        },
+        {
+          "type": "richtext",
+          "id": "subtext",
+          "label": "Untertext",
+          "default": "<p>Beschreibe hier deinen Service oder dein Produkt.</p>"
+        },
+        {
+          "type": "font_picker",
+          "id": "subtext_font",
+          "label": "Schriftart des Untertexts",
+          "default": "sans-serif"
+        },
+        {
+          "type": "color",
+          "id": "subtext_color",
+          "label": "Farbe des Untertexts",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "range",
+          "id": "subtext_size",
+          "min": 12,
+          "max": 30,
+          "step": 1,
+          "unit": "px",
+          "label": "Schriftgröße des Untertexts",
+          "default": 16
+        },
+        {
+          "type": "header",
+          "content": "Button (Optional)"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button-Text",
+          "default": "Mehr"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button-Link"
+        },
+        {
+          "type": "color",
+          "id": "button_bg",
+          "label": "Button Hintergrundfarbe",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "color",
+          "id": "button_text_color",
+          "label": "Button Textfarbe",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "button_bg_hover",
+          "label": "Button Hintergrundfarbe (Hover)",
+          "default": "#DDDDDD"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Hero Slider"
+    }
+  ]
+}
+{% endschema %}
