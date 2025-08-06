@@ -1,20 +1,23 @@
 /*
  * Dateiname: split-showcase.css
- * Version: 3.1
- * Beschreibung: Stile für den "Split Showcase" Abschnitt.
+ * Version: 4.0
+ * Beschreibung: Zurück zum zentrierten Layout mit fester Breite und rechteckigen Boxen.
  */
 
 /* Grundstruktur und Container */
-.sc-section-wrapper {
+.sc-container-wrapper {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 0;
 }
 
-/* Wrapper für den Header, der die Shopify-Standardbreite nutzt */
-.sc-header-wrapper {
-  /* Die Klasse .page-width kommt vom Theme und zentriert den Inhalt. */
-  padding-bottom: 40px;
+.sc-container {
+  /* Feste maximale Breite für den gesamten Inhalt, um das schmalere Layout zu erreichen */
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 25px; /* Seitlicher Abstand */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 /* Header (Überschrift & Text) */
@@ -39,18 +42,11 @@
   margin: 0;
 }
 
-/* Wrapper für das Grid, der die volle Breite nutzt */
-.sc-grid-wrapper {
-  width: 100%;
-}
-
+/* Grid für die Boxen */
 .sc-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  /* Seitlicher Abstand, damit die Boxen nicht am Bildschirmrand kleben */
-  padding-left: 70px;
-  padding-right: 70px;
 }
 
 /* Styling der einzelnen Boxen */
@@ -63,8 +59,8 @@
 
 .sc-box {
   position: relative;
-  /* Feste Höhe entfernt und durch aspect-ratio ersetzt für quadratischeres Aussehen */
-  aspect-ratio: 5 / 4;
+  /* Feste Höhe für rechteckiges Aussehen wiederhergestellt */
+  height: 480px; 
   padding: 40px;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -165,16 +161,15 @@
   .sc-grid {
     grid-template-columns: 1fr;
     gap: 25px;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 
   .sc-box {
-    /* Feste Höhe hier ebenfalls entfernt, damit aspect-ratio greift */
+    /* Feste Höhe für Tablets */
+    height: 400px; 
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 30px;
   }
 
   .sc-content {
@@ -198,12 +193,15 @@
 }
 
 @media (max-width: 480px) {
-  .sc-section-wrapper {
+  .sc-container-wrapper {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .sc-grid {
-    padding-left: 20px;
-    padding-right: 20px;
+  .sc-container {
+    padding: 0 15px;
+  }
+  .sc-box {
+    /* Feste Höhe für Smartphones */
+    height: 350px;
   }
 }
