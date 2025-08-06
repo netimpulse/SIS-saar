@@ -1,7 +1,7 @@
 /*
  * Dateiname: split-showcase.css
- * Version: 4.0
- * Beschreibung: Zurück zum zentrierten Layout mit fester Breite und rechteckigen Boxen.
+ * Version: 4.1
+ * Beschreibung: Höhe der Boxen für ein länglicheres Aussehen angepasst.
  */
 
 /* Grundstruktur und Container */
@@ -59,8 +59,8 @@
 
 .sc-box {
   position: relative;
-  /* Feste Höhe für rechteckiges Aussehen wiederhergestellt */
-  height: 480px; 
+  /* Höhe für länglicheres Aussehen angepasst */
+  height: 520px; 
   padding: 40px;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -164,8 +164,8 @@
   }
 
   .sc-box {
-    /* Feste Höhe für Tablets */
-    height: 400px; 
+    /* Höhe für Tablets angepasst */
+    height: 440px; 
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -201,7 +201,7 @@
     padding: 0 15px;
   }
   .sc-box {
-    /* Feste Höhe für Smartphones */
-    height: 350px;
+    /* Höhe für Smartphones angepasst */
+    height: 380px;
   }
 }
