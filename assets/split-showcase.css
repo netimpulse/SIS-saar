@@ -1,7 +1,7 @@
 /*
  * Dateiname: split-showcase.css
- * Version: 4.1
- * Beschreibung: Höhe der Boxen für ein länglicheres Aussehen angepasst.
+ * Version: 4.2
+ * Beschreibung: Container verbreitert und Höhe der Boxen zurückgesetzt.
  */
 
 /* Grundstruktur und Container */
@@ -11,8 +11,8 @@
 }
 
 .sc-container {
-  /* Feste maximale Breite für den gesamten Inhalt, um das schmalere Layout zu erreichen */
-  max-width: 1200px; 
+  /* HIER: Container verbreitert, damit die Boxen breiter werden */
+  max-width: 1400px; 
   margin: 0 auto;
   padding: 0 25px; /* Seitlicher Abstand */
   display: flex;
@@ -59,8 +59,8 @@
 
 .sc-box {
   position: relative;
-  /* Höhe für länglicheres Aussehen angepasst */
-  height: 520px; 
+  /* HIER: Höhe auf den ursprünglichen, weniger hohen Wert zurückgesetzt */
+  height: 480px; 
   padding: 40px;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -164,8 +164,8 @@
   }
 
   .sc-box {
-    /* Höhe für Tablets angepasst */
-    height: 440px; 
+    /* HIER: Höhe für Tablets zurückgesetzt */
+    height: 400px; 
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -201,7 +201,7 @@
     padding: 0 15px;
   }
   .sc-box {
-    /* Höhe für Smartphones angepasst */
-    height: 380px;
+    /* HIER: Höhe für Smartphones zurückgesetzt */
+    height: 350px;
   }
 }
