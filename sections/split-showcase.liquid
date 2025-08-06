@@ -1,15 +1,17 @@
 {% comment %}
   Dateiname: split-showcase.liquid
+  Version: 3.0
   Beschreibung: Ein Abschnitt, der zwei Service-Boxen nebeneinander darstellt.
-                Inklusive Optionen für Icons, Hover-Effekte und vollständige Anpassbarkeit.
+                Korrekte Struktur für volle Breite der Boxen bei zentrierter Überschrift.
 {% endcomment %}
 
 {{ 'split-showcase.css' | asset_url | stylesheet_tag }}
 
-<div class="sc-container-wrapper">
-  <div class="sc-container" id="split-showcase-{{ section.id }}">
-    
-    {% if section.settings.heading != blank or section.settings.subheading != blank %}
+<div class="sc-section-wrapper" id="split-showcase-{{ section.id }}">
+  
+  {% comment %} Container für zentrierte Inhalte (Überschriften) {% endcomment %}
+  {% if section.settings.heading != blank or section.settings.subheading != blank %}
+    <div class="page-width sc-header-wrapper">
       <div class="sc-header">
         {% if section.settings.heading != blank %}
           <h2 class="sc-heading">{{ section.settings.heading }}</h2>
@@ -18,8 +20,11 @@
           <div class="sc-subheading">{{ section.settings.subheading }}</div>
         {% endif %}
       </div>
-    {% endif %}
+    </div>
+  {% endif %}
 
+  {% comment %} Container für die Boxen, der die volle Breite nutzt {% endcomment %}
+  <div class="sc-grid-wrapper">
     <div class="sc-grid">
       {% comment %} Linke Box {% endcomment %}
       <a href="{{ section.settings.left_button_link | default: '#' }}" class="sc-box-link">
