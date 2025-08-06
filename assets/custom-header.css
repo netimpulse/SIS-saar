@@ -1,0 +1,112 @@
+/*
+ * Dateiname: custom-header.css
+ * Beschreibung: Stile für den custom-header.liquid Abschnitt.
+ */
+
+.header-section {
+  padding: 15px 0;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__logo-image {
+  display: block;
+}
+
+.header__shop-name {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #121212;
+}
+
+.header__nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__nav-link {
+  font-family: var(--font-family-menu);
+  font-weight: var(--font-weight-menu);
+  color: var(--color-menu-link);
+  text-decoration: none;
+  padding: 10px 5px;
+  position: relative;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Stil für den Hover-Effekt */
+.header__nav-link:hover {
+  color: var(--color-menu-hover);
+}
+
+/* Unterstrich für den aktiven Link */
+.header__nav-link--active {
+  color: var(--color-menu-active);
+  font-weight: 700; /* Aktiven Link immer fett machen */
+}
+
+.header__nav-link--active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-menu-active);
+}
+
+.header__cta-button {
+  display: inline-block;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: var(--radius-button);
+  background-color: var(--color-button-bg);
+  color: var(--color-button-text);
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  white-space: nowrap; /* Verhindert, dass der Text umbricht */
+}
+
+.header__cta-button:hover {
+  background-color: var(--color-button-bg-hover);
+  color: var(--color-button-text-hover);
+}
+
+
+/* --- Responsive Design --- */
+@media (max-width: 990px) {
+  .header-container {
+    flex-wrap: wrap; /* Erlaubt umbrechen */
+    justify-content: center; /* Zentriert alles, wenn es umbricht */
+  }
+
+  .header__nav {
+    order: 3; /* Setzt die Navigation nach unten */
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .header__nav-list {
+    justify-content: center; /* Zentriert die Nav-Punkte auf Mobilgeräten */
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__nav-list {
+    gap: 15px; /* Noch weniger Abstand auf sehr kleinen Geräten */
+    font-size: 14px;
+  }
+}
