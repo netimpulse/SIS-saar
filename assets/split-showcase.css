@@ -60,7 +60,8 @@
 
 .sc-box {
   position: relative;
-  height: 480px; 
+  height: 480px;
+  witdth: 600px
   padding: 40px;
   overflow: hidden;
   transition: transform 0.3s ease;
