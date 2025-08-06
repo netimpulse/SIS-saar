@@ -4,13 +4,18 @@
  */
 
 /* Grundstruktur und Container */
-.sc-page-width {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px 20px;
+.sc-container-wrapper {
+  /* Diese Klasse sorgt für die volle Breite und den vertikalen Abstand */
+  width: 100%;
+  padding: 50px 0;
 }
 
 .sc-container {
+  /* Diese Klasse sorgt für den seitlichen Abstand und zentriert den Inhalt */
+  width: 100%;
+  max-width: 1200px; /* Standardbreite, kann angepasst werden */
+  margin: 0 auto;
+  padding: 0 25px; /* Seitlicher Abstand, damit der Inhalt nicht am Rand klebt */
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -24,17 +29,20 @@
 }
 
 .sc-heading {
-  font-size: 2.2rem;
   font-weight: 600;
-  margin: 0 0 10px 0;
+  margin: 0 0 15px 0;
+  line-height: 1.2;
 }
 
 .sc-subheading {
-  font-size: 1.1rem;
   line-height: 1.6;
   margin: 0;
-  color: #555;
 }
+
+.sc-subheading p {
+  margin: 0;
+}
+
 
 /* Grid für die Boxen */
 .sc-grid {
@@ -48,15 +56,12 @@
   text-decoration: none;
   display: block;
   overflow: hidden;
-  border-radius: var(--sc-border-radius, 12px); /* Fallback */
+  border-radius: var(--sc-border-radius, 12px);
 }
 
 .sc-box {
   position: relative;
   height: 480px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   padding: 40px;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -112,22 +117,21 @@
 
 /* Inhalt der Box (Icon, Text, Button) */
 .sc-content {
-  position: relative;
+  position: absolute;
   z-index: 3;
-  color: #fff;
-}
-
-.sc-icon-wrapper {
-  margin-bottom: 20px;
-}
-
-.sc-icon-wrapper svg {
-  display: block;
+  width: calc(100% - 80px); /* Breite anpassen an Padding der .sc-box */
+  max-width: 450px;
+  text-align: center;
+  transform: translate(-50%, -50%);
   transition: transform 0.3s ease;
 }
 
-.sc-box-link:hover .sc-icon-wrapper svg {
-  transform: translateY(-5px);
+.sc-box-link:hover .sc-content {
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.sc-icon-wrapper {
+  margin: 0 auto 20px;
 }
 
 .sc-title {
@@ -163,20 +167,39 @@
   .sc-box {
     height: 400px;
     padding: 30px;
+    /* Auf Mobilgeräten auf Flexbox umstellen für einfache, robuste Ausrichtung */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .sc-content {
+    /* Absolute Positionierung aufheben */
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+  }
+  
+  .sc-box-link:hover .sc-content {
+    transform: translateY(-10px);
+  }
+
+  .sc-icon-wrapper {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
 @media (max-width: 480px) {
-  .sc-page-width {
-    padding: 30px 15px;
+  .sc-container-wrapper {
+    padding: 30px 0;
   }
-  
-  .sc-heading {
-    font-size: 1.8rem;
-  }
-
-  .sc-subheading {
-    font-size: 1rem;
+  .sc-container {
+    padding: 0 15px;
   }
 
   .sc-box {
