@@ -1,7 +1,7 @@
 /*
  * Dateiname: split-showcase.css
- * Version: 5.1
- * Beschreibung: Boxen verbreitert durch Reduzierung des Abstands (gap).
+ * Version: 6.0
+ * Beschreibung: Finaler Fix - Innenabstand des Containers entfernt, um Boxen maximale Breite zu geben.
  */
 
 /* Grundstruktur und Container */
@@ -13,7 +13,8 @@
 .sc-container {
   max-width: 1400px; 
   margin: 0 auto;
-  padding: 0 25px; 
+  /* HIER: Der Innenabstand wurde entfernt, damit die Boxen die volle Breite nutzen können. */
+  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -24,6 +25,8 @@
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
+  /* Etwas Abstand, damit der Text nicht am Rand klebt */
+  padding: 0 25px; 
 }
 
 .sc-heading {
@@ -45,8 +48,9 @@
 .sc-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* HIER: Abstand verringert, um die Boxen breiter zu machen */
   gap: 15px;
+  /* Etwas Abstand für das Grid selbst, falls der Container keinen hat */
+  padding: 0 15px;
 }
 
 /* Styling der einzelnen Boxen */
@@ -194,9 +198,6 @@
   .sc-container-wrapper {
     padding-top: 30px;
     padding-bottom: 30px;
-  }
-  .sc-container {
-    padding: 0 15px;
   }
   .sc-box {
     height: 350px;
