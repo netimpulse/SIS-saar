@@ -11,11 +11,11 @@
 }
 
 .sc-container {
-  /* Diese Klasse sorgt für den seitlichen Abstand und zentriert den Inhalt */
+  /* Diese Klasse sorgt für den seitlichen Abstand. 
+     KEINE max-width, damit die volle Breite des Themes genutzt wird. */
   width: 100%;
-  max-width: 1200px; /* Standardbreite, kann angepasst werden */
   margin: 0 auto;
-  padding: 0 25px; /* Seitlicher Abstand, damit der Inhalt nicht am Rand klebt */
+  padding: 0 35px; /* Seitlicher Abstand, damit der Inhalt nicht am Rand klebt */
   display: flex;
   flex-direction: column;
   gap: 40px;
