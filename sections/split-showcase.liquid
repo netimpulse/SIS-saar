@@ -6,7 +6,7 @@
 
 {{ 'split-showcase.css' | asset_url | stylesheet_tag }}
 
-<div class="sc-page-width">
+<div class="sc-container-wrapper">
   <div class="sc-container" id="split-showcase-{{ section.id }}">
     
     {% if section.settings.heading != blank or section.settings.subheading != blank %}
@@ -15,7 +15,7 @@
           <h2 class="sc-heading">{{ section.settings.heading }}</h2>
         {% endif %}
         {% if section.settings.subheading != blank %}
-          <p class="sc-subheading">{{ section.settings.subheading }}</p>
+          <div class="sc-subheading">{{ section.settings.subheading }}</div>
         {% endif %}
       </div>
     {% endif %}
@@ -44,7 +44,7 @@
               >
             {% endif %}
           </div>
-          <div class="sc-content">
+          <div class="sc-content" style="top: {{ section.settings.left_content_y }}%; left: {{ section.settings.left_content_x }}%;">
             {% if section.settings.left_icon != blank %}
               <div class="sc-icon-wrapper">
                 {{ section.settings.left_icon }}
@@ -84,7 +84,7 @@
               >
             {% endif %}
           </div>
-          <div class="sc-content">
+          <div class="sc-content" style="top: {{ section.settings.right_content_y }}%; left: {{ section.settings.right_content_x }}%;">
              {% if section.settings.right_icon != blank %}
               <div class="sc-icon-wrapper">
                 {{ section.settings.right_icon }}
@@ -107,9 +107,11 @@
 <style>
   #split-showcase-{{ section.id }} .sc-heading {
     color: {{ section.settings.heading_color }};
+    font-size: {{ section.settings.heading_font_size }}px;
   }
   #split-showcase-{{ section.id }} .sc-subheading {
     color: {{ section.settings.subheading_color }};
+    font-size: {{ section.settings.subheading_font_size }}px;
   }
   #split-showcase-{{ section.id }} .sc-box {
     background-color: {{ section.settings.box_bg_color }};
@@ -118,7 +120,7 @@
   #split-showcase-{{ section.id }} .sc-box::before {
     background: {{ section.settings.overlay_color }};
   }
-  #split-showcase-{{ section.id }} .sc-box:hover::before {
+  #split-showcase-{{ section.id }} .sc-box-link:hover .sc-box::before {
      background: {{ section.settings.overlay_hover_color }};
   }
   #split-showcase-{{ section.id }} .sc-icon-wrapper svg {
@@ -140,9 +142,19 @@
     background-color: {{ section.settings.button_bg_color }};
     border: 1px solid {{ section.settings.button_border_color }};
   }
-  #split-showcase-{{ section.id }} .sc-box:hover .sc-button {
+  #split-showcase-{{ section.id }} .sc-box-link:hover .sc-button {
     background-color: {{ section.settings.button_hover_bg_color }};
     border-color: {{ section.settings.button_hover_border_color }};
+  }
+
+  /* Responsive font sizes for main heading/subheading */
+  @media (max-width: 768px) {
+    #split-showcase-{{ section.id }} .sc-heading {
+      font-size: {{ section.settings.heading_font_size | times: 0.8 | round }}px;
+    }
+    #split-showcase-{{ section.id }} .sc-subheading {
+      font-size: {{ section.settings.subheading_font_size | times: 0.9 | round }}px;
+    }
   }
 </style>
 
@@ -167,6 +179,16 @@
       "default": "#121212"
     },
     {
+      "type": "range",
+      "id": "heading_font_size",
+      "label": "Schriftgröße der Überschrift",
+      "min": 20,
+      "max": 72,
+      "step": 1,
+      "unit": "px",
+      "default": 36
+    },
+    {
       "type": "richtext",
       "id": "subheading",
       "label": "Unterüberschrift / Text",
@@ -175,8 +197,18 @@
     {
       "type": "color",
       "id": "subheading_color",
-      "label": "Farbe des Textes",
+      "label": "Farbe der Unterüberschrift",
       "default": "#454545"
+    },
+    {
+      "type": "range",
+      "id": "subheading_font_size",
+      "label": "Schriftgröße der Unterüberschrift",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "default": 18
     },
     {
       "type": "header",
@@ -193,7 +225,7 @@
       "id": "box_corner_radius",
       "label": "Eckenradius der Boxen",
       "min": 0,
-      "max": 24,
+      "max": 30,
       "step": 1,
       "unit": "px",
       "default": 12
@@ -212,7 +244,7 @@
     },
     {
       "type": "header",
-      "content": "Inhalts-Einstellungen"
+      "content": "Inhalts-Einstellungen (in den Boxen)"
     },
     {
       "type": "color",
@@ -252,7 +284,7 @@
     },
     {
       "type": "header",
-      "content": "Button-Einstellungen"
+      "content": "Button-Einstellungen (in den Boxen)"
     },
     {
       "type": "color",
@@ -277,6 +309,50 @@
       "id": "button_hover_border_color",
       "label": "Button Rahmen (Hover)",
       "default": "rgba(255, 255, 255, 0.5)"
+    },
+    {
+      "type": "header",
+      "content": "Positionierung (Desktop)"
+    },
+    {
+      "type": "range",
+      "id": "left_content_x",
+      "label": "Horizontale Position (Links)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "left_content_y",
+      "label": "Vertikale Position (Links)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "right_content_x",
+      "label": "Horizontale Position (Rechts)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "right_content_y",
+      "label": "Vertikale Position (Rechts)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 50
     },
     {
       "type": "header",
