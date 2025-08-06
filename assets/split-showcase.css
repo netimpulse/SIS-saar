@@ -1,7 +1,7 @@
 /*
  * Dateiname: split-showcase.css
- * Version: 4.2
- * Beschreibung: Container verbreitert und Höhe der Boxen zurückgesetzt.
+ * Version: 5.1
+ * Beschreibung: Boxen verbreitert durch Reduzierung des Abstands (gap).
  */
 
 /* Grundstruktur und Container */
@@ -11,10 +11,9 @@
 }
 
 .sc-container {
-  /* HIER: Container verbreitert, damit die Boxen breiter werden */
   max-width: 1400px; 
   margin: 0 auto;
-  padding: 0 25px; /* Seitlicher Abstand */
+  padding: 0 25px; 
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -46,7 +45,8 @@
 .sc-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  /* HIER: Abstand verringert, um die Boxen breiter zu machen */
+  gap: 15px;
 }
 
 /* Styling der einzelnen Boxen */
@@ -59,7 +59,6 @@
 
 .sc-box {
   position: relative;
-  /* HIER: Höhe auf den ursprünglichen, weniger hohen Wert zurückgesetzt */
   height: 480px; 
   padding: 40px;
   overflow: hidden;
@@ -118,7 +117,7 @@
 .sc-content {
   position: absolute;
   z-index: 3;
-  width: calc(100% - 80px); /* Breite anpassen an Padding der .sc-box */
+  width: calc(100% - 80px); 
   max-width: 450px;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -164,7 +163,6 @@
   }
 
   .sc-box {
-    /* HIER: Höhe für Tablets zurückgesetzt */
     height: 400px; 
     padding: 30px;
     display: flex;
@@ -201,7 +199,6 @@
     padding: 0 15px;
   }
   .sc-box {
-    /* HIER: Höhe für Smartphones zurückgesetzt */
     height: 350px;
   }
 }
