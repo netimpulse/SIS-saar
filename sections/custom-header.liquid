@@ -1,81 +1,134 @@
-{% comment %}
-  Dateiname: custom-header.liquid
-  Beschreibung: Ein vollständig anpassbarer Header mit Logo, auswählbarem Menü und separatem Kontakt-Button.
-{% endcomment %}
+{{ 'section-custom-header.css' | asset_url | stylesheet_tag }}
 
-{{ 'custom-header.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign logo_width = section.settings.logo_width | prepend: 'width:'
+-%}
 
-<header class="header-section" id="header-{{ section.id }}">
-  <div class="header-container page-width">
+{%- style -%}
+  .header-wrapper-{{ section.id }} {
+    --menu-font: {{ section.settings.menu_font.family }}, {{ section.settings.menu_font.fallback_families }};
+    --menu-font-weight: {% if section.settings.menu_font_bold %}bold{% else %}normal{% endif %};
+    --menu-active-color: {{ section.settings.active_color }};
+    --button-text: {{ section.settings.button_text_color }};
+    --button-background: {{ section.settings.button_bg_color }};
+  }
+
+  .header-wrapper-{{ section.id }} .custom-header__logo-image {
+    max-width: {{ section.settings.logo_width }}px;
+  }
+{%- endstyle -%}
+
+<div class="header-wrapper-{{ section.id }}">
+  <header class="custom-header page-width">
     
-    {% comment %} Logo-Bereich {% endcomment %}
-    <div class="header__logo">
-      <a href="{{ routes.root_url }}">
-        {% if section.settings.logo_image != blank %}
-          {{ section.settings.logo_image | image_url: width: 500 | image_tag:
-            class: 'header__logo-image',
-            width: section.settings.logo_max_width,
-            alt: section.settings.logo_image.alt | default: shop.name
-          }}
-        {% else %}
-          <span class="header__shop-name">{{ shop.name }}</span>
-        {% endif %}
-      </a>
+    <div class="custom-header__left">
+      {%- if section.settings.logo != blank -%}
+        <a href="{{ routes.root_url }}" class="custom-header__logo-link">
+          {{ section.settings.logo | image_url: width: 500 | image_tag:
+            class: 'custom-header__logo-image',
+            alt: section.settings.logo.alt | default: shop.name,
+            width: section.settings.logo_width }}
+        </a>
+      {%- else -%}
+        <a href="{{ routes.root_url }}" class="custom-header__shop-name h2">
+          {{ shop.name }}
+        </a>
+      {%- endif -%}
     </div>
 
-    {% comment %} Navigationsmenü {% endcomment %}
-    {% if section.settings.menu != blank %}
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          {% for link in section.settings.menu.links %}
-            <li class="header__nav-item">
+    <div class="custom-header__center">
+      <nav class="custom-header__nav" role="navigation">
+        <ul class="custom-header__menu-list">
+          {%- for link in section.settings.menu.links -%}
+            <li>
               <a 
                 href="{{ link.url }}" 
-                class="header__nav-link {% if link.active %}header__nav-link--active{% endif %}"
+                class="custom-header__menu-link {% if link.active %}active{% endif %}"
               >
-                {{ link.title }}
+                <span>{{ link.title }}</span>
               </a>
             </li>
-          {% endfor %}
+          {%- endfor -%}
         </ul>
       </nav>
-    {% endif %}
-    
-    {% comment %} Kontakt-Button (CTA) {% endcomment %}
-    {% if section.settings.button_text != blank and section.settings.button_link != blank %}
-      <div class="header__cta">
-        <a href="{{ section.settings.button_link }}" class="header__cta-button">
+    </div>
+
+    <div class="custom-header__right">
+       {%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
+        <a href="{{ section.settings.button_link }}" class="custom-header__button">
           {{ section.settings.button_text }}
         </a>
-      </div>
-    {% endif %}
-    
+      {%- endif -%}
+      <button type="button" class="custom-header__mobile-toggle" aria-controls="mobile-menu-drawer" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+        <span class="visually-hidden">Menü</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu__drawer" id="mobile-menu-drawer" role="dialog" aria-modal="true">
+    <div class="mobile-menu__header">
+        <button type="button" class="mobile-menu__close-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+            <span class="visually-hidden">Schließen</span>
+        </button>
+    </div>
+    <div class="mobile-menu__content">
+      <ul class="mobile-menu__list">
+        {%- for link in section.settings.menu.links -%}
+          <li>
+            <a href="{{ link.url }}" class="mobile-menu__link {% if link.active %}active{% endif %}">
+              {{ link.title }}
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+      {%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
+        <a href="{{ section.settings.button_link }}" class="mobile-menu__button">
+          {{ section.settings.button_text }}
+        </a>
+      {%- endif -%}
+    </div>
   </div>
-</header>
+</div>
 
-{% comment %}
-  Dynamische Stile, die durch die Theme-Einstellungen gesteuert werden.
-{% endcomment %}
-<style>
-  #header-{{ section.id }} {
-    --font-family-menu: {{ section.settings.menu_font.family }}, {{ section.settings.menu_font.fallback_families }};
-    --font-weight-menu: {{ section.settings.menu_font_bold | if: '700', else: '400' }};
-    --color-menu-link: {{ section.settings.menu_link_color }};
-    --color-menu-active: {{ section.settings.menu_link_active_color }};
-    --color-menu-hover: {{ section.settings.menu_link_hover_color }};
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileToggle = document.querySelector('.custom-header__mobile-toggle');
+    const closeButton = document.querySelector('.mobile-menu__close-button');
+    const drawer = document.getElementById('mobile-menu-drawer');
+    const headerWrapper = document.querySelector('.header-wrapper-{{ section.id }}');
 
-    --color-button-bg: {{ section.settings.button_bg_color }};
-    --color-button-text: {{ section.settings.button_text_color }};
-    --color-button-bg-hover: {{ section.settings.button_bg_hover_color }};
-    --color-button-text-hover: {{ section.settings.button_text_hover_color }};
-    --radius-button: {{ section.settings.button_corner_radius }}px;
-  }
-</style>
+    const openMenu = () => {
+      drawer.classList.add('is-open');
+      headerWrapper.classList.add('drawer-is-open');
+      document.body.style.overflow = 'hidden';
+      mobileToggle.setAttribute('aria-expanded', 'true');
+    };
 
+    const closeMenu = () => {
+      drawer.classList.remove('is-open');
+      headerWrapper.classList.remove('drawer-is-open');
+      document.body.style.overflow = '';
+      mobileToggle.setAttribute('aria-expanded', 'false');
+    };
+
+    mobileToggle.addEventListener('click', openMenu);
+    closeButton.addEventListener('click', closeMenu);
+    
+    // Optional: Close drawer if escape key is pressed
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && drawer.classList.contains('is-open')) {
+        closeMenu();
+      }
+    });
+  });
+</script>
 
 {% schema %}
 {
-  "name": "Custom Header",
+  "name": "Custom Header SIS",
+  "class": "section-header",
   "settings": [
     {
       "type": "header",
@@ -83,18 +136,18 @@
     },
     {
       "type": "image_picker",
-      "id": "logo_image",
-      "label": "Logo-Bild"
+      "id": "logo",
+      "label": "Logo Bild"
     },
     {
       "type": "range",
-      "id": "logo_max_width",
+      "id": "logo_width",
       "min": 50,
-      "max": 300,
+      "max": 250,
       "step": 5,
       "unit": "px",
-      "label": "Maximale Logo-Breite",
-      "default": 150
+      "label": "Logo Breite (Desktop)",
+      "default": 140
     },
     {
       "type": "header",
@@ -103,39 +156,26 @@
     {
       "type": "link_list",
       "id": "menu",
-      "label": "Menü auswählen",
-      "info": "Wähle das Menü, das im Header angezeigt werden soll. Menüs werden unter 'Navigation' verwaltet."
+      "default": "main-menu",
+      "label": "Menü auswählen"
     },
     {
       "type": "font_picker",
       "id": "menu_font",
-      "label": "Schriftart für Menüpunkte",
+      "label": "Schriftart für Menü",
       "default": "sans-serif"
     },
     {
       "type": "checkbox",
       "id": "menu_font_bold",
-      "label": "Menüpunkte fett drucken",
+      "label": "Menü-Schrift fett darstellen",
       "default": false
     },
     {
       "type": "color",
-      "id": "menu_link_color",
-      "label": "Farbe der Menüpunkte",
-      "default": "#333333"
-    },
-    {
-      "type": "color",
-      "id": "menu_link_active_color",
-      "label": "Farbe (aktiver Menüpunkt)",
-      "info": "Die Farbe für die Seite, auf der sich der Nutzer gerade befindet (wie im Screenshot).",
-      "default": "#28a745"
-    },
-    {
-      "type": "color",
-      "id": "menu_link_hover_color",
-      "label": "Farbe (beim Darüberfahren)",
-      "default": "#28a745"
+      "id": "active_color",
+      "label": "Farbe für aktiven/Hover-Link",
+      "default": "#39B54A"
     },
     {
       "type": "header",
@@ -144,47 +184,25 @@
     {
       "type": "text",
       "id": "button_text",
-      "label": "Button-Text",
+      "label": "Button Text",
       "default": "Kontakt"
     },
     {
       "type": "url",
       "id": "button_link",
-      "label": "Button-Link"
-    },
-    {
-      "type": "color",
-      "id": "button_bg_color",
-      "label": "Hintergrundfarbe",
-      "default": "#28a745"
+      "label": "Button Link"
     },
     {
       "type": "color",
       "id": "button_text_color",
-      "label": "Textfarbe",
+      "label": "Button Textfarbe",
       "default": "#FFFFFF"
     },
     {
       "type": "color",
-      "id": "button_bg_hover_color",
-      "label": "Hintergrundfarbe (Hover)",
-      "default": "#218838"
-    },
-    {
-      "type": "color",
-      "id": "button_text_hover_color",
-      "label": "Textfarbe (Hover)",
-      "default": "#FFFFFF"
-    },
-    {
-      "type": "range",
-      "id": "button_corner_radius",
-      "min": 0,
-      "max": 25,
-      "step": 1,
-      "unit": "px",
-      "label": "Eckenradius",
-      "default": 8
+      "id": "button_bg_color",
+      "label": "Button Hintergrundfarbe",
+      "default": "#39B54A"
     }
   ]
 }
