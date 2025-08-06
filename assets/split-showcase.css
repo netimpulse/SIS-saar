@@ -50,7 +50,7 @@
 
 /* HIER: DIE WICHTIGSTE ÄNDERUNG - FESTE BREITE FÜR DIE BOXEN GESETZT */
 .sc-box-link {
-  width: 650px; /* <-- HIER IST DIE FESTE BREITE */
+  width: 900px; /* <-- HIER IST DIE FESTE BREITE */
   max-width: 100%; /* Verhindert, dass die Box auf kleinen Bildschirmen überläuft */
   text-decoration: none;
   display: block;
