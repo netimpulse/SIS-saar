@@ -1,24 +1,20 @@
 /*
  * Dateiname: split-showcase.css
+ * Version: 3.0
  * Beschreibung: Stile für den "Split Showcase" Abschnitt.
  */
 
 /* Grundstruktur und Container */
-.sc-container-wrapper {
-  /* Diese Klasse sorgt für die volle Breite und den vertikalen Abstand */
+.sc-section-wrapper {
   width: 100%;
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.sc-container {
-  /* Diese Klasse sorgt für den seitlichen Abstand. 
-     KEINE max-width, damit die volle Breite des Themes genutzt wird. */
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 35px; /* Seitlicher Abstand, damit der Inhalt nicht am Rand klebt */
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+/* Wrapper für den Header, der die Shopify-Standardbreite nutzt */
+.sc-header-wrapper {
+  /* Die Klasse .page-width kommt vom Theme und zentriert den Inhalt. */
+  padding-bottom: 40px;
 }
 
 /* Header (Überschrift & Text) */
@@ -43,12 +39,18 @@
   margin: 0;
 }
 
+/* Wrapper für das Grid, der die volle Breite nutzt */
+.sc-grid-wrapper {
+  width: 100%;
+}
 
-/* Grid für die Boxen */
 .sc-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+  /* Seitlicher Abstand, damit die Boxen nicht am Bildschirmrand kleben */
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 /* Styling der einzelnen Boxen */
@@ -167,14 +169,12 @@
   .sc-box {
     height: 400px;
     padding: 30px;
-    /* Auf Mobilgeräten auf Flexbox umstellen für einfache, robuste Ausrichtung */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }
 
   .sc-content {
-    /* Absolute Positionierung aufheben */
     position: relative;
     top: auto;
     left: auto;
@@ -195,13 +195,14 @@
 }
 
 @media (max-width: 480px) {
-  .sc-container-wrapper {
-    padding: 30px 0;
+  .sc-section-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
-  .sc-container {
-    padding: 0 15px;
+  .sc-grid {
+    padding-left: 15px;
+    padding-right: 15px;
   }
-
   .sc-box {
     height: 350px;
   }
