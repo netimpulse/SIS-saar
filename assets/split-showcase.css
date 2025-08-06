@@ -1,7 +1,7 @@
 /*
  * Dateiname: split-showcase.css
- * Version: 6.0
- * Beschreibung: Finaler Fix - Innenabstand des Containers entfernt, um Boxen maximale Breite zu geben.
+ * Version: 7.0
+ * Beschreibung: Finale Version - Feste Breite für Boxen per 'width' gesetzt, wie gefordert.
  */
 
 /* Grundstruktur und Container */
@@ -13,8 +13,7 @@
 .sc-container {
   max-width: 1400px; 
   margin: 0 auto;
-  /* HIER: Der Innenabstand wurde entfernt, damit die Boxen die volle Breite nutzen können. */
-  padding: 0;
+  padding: 0 25px; 
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -25,8 +24,6 @@
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
-  /* Etwas Abstand, damit der Text nicht am Rand klebt */
-  padding: 0 25px; 
 }
 
 .sc-heading {
@@ -44,17 +41,17 @@
   margin: 0;
 }
 
-/* Grid für die Boxen */
+/* HIER: Grid-Layout geändert, um eine feste Breite für die Boxen zu ermöglichen */
 .sc-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  /* Etwas Abstand für das Grid selbst, falls der Container keinen hat */
-  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
-/* Styling der einzelnen Boxen */
+/* HIER: DIE WICHTIGSTE ÄNDERUNG - FESTE BREITE FÜR DIE BOXEN GESETZT */
 .sc-box-link {
+  width: 650px; /* <-- HIER IST DIE FESTE BREITE */
+  max-width: 100%; /* Verhindert, dass die Box auf kleinen Bildschirmen überläuft */
   text-decoration: none;
   display: block;
   overflow: hidden;
@@ -162,7 +159,8 @@
 /* Responsive Design für Mobilgeräte */
 @media (max-width: 900px) {
   .sc-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
     gap: 25px;
   }
 
@@ -198,6 +196,9 @@
   .sc-container-wrapper {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+  .sc-container {
+    padding: 0 15px;
   }
   .sc-box {
     height: 350px;
