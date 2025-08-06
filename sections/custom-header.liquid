@@ -1,0 +1,191 @@
+{% comment %}
+  Dateiname: custom-header.liquid
+  Beschreibung: Ein vollständig anpassbarer Header mit Logo, auswählbarem Menü und separatem Kontakt-Button.
+{% endcomment %}
+
+{{ 'custom-header.css' | asset_url | stylesheet_tag }}
+
+<header class="header-section" id="header-{{ section.id }}">
+  <div class="header-container page-width">
+    
+    {% comment %} Logo-Bereich {% endcomment %}
+    <div class="header__logo">
+      <a href="{{ routes.root_url }}">
+        {% if section.settings.logo_image != blank %}
+          {{ section.settings.logo_image | image_url: width: 500 | image_tag:
+            class: 'header__logo-image',
+            width: section.settings.logo_max_width,
+            alt: section.settings.logo_image.alt | default: shop.name
+          }}
+        {% else %}
+          <span class="header__shop-name">{{ shop.name }}</span>
+        {% endif %}
+      </a>
+    </div>
+
+    {% comment %} Navigationsmenü {% endcomment %}
+    {% if section.settings.menu != blank %}
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          {% for link in section.settings.menu.links %}
+            <li class="header__nav-item">
+              <a 
+                href="{{ link.url }}" 
+                class="header__nav-link {% if link.active %}header__nav-link--active{% endif %}"
+              >
+                {{ link.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    {% endif %}
+    
+    {% comment %} Kontakt-Button (CTA) {% endcomment %}
+    {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+      <div class="header__cta">
+        <a href="{{ section.settings.button_link }}" class="header__cta-button">
+          {{ section.settings.button_text }}
+        </a>
+      </div>
+    {% endif %}
+    
+  </div>
+</header>
+
+{% comment %}
+  Dynamische Stile, die durch die Theme-Einstellungen gesteuert werden.
+{% endcomment %}
+<style>
+  #header-{{ section.id }} {
+    --font-family-menu: {{ section.settings.menu_font.family }}, {{ section.settings.menu_font.fallback_families }};
+    --font-weight-menu: {{ section.settings.menu_font_bold | if: '700', else: '400' }};
+    --color-menu-link: {{ section.settings.menu_link_color }};
+    --color-menu-active: {{ section.settings.menu_link_active_color }};
+    --color-menu-hover: {{ section.settings.menu_link_hover_color }};
+
+    --color-button-bg: {{ section.settings.button_bg_color }};
+    --color-button-text: {{ section.settings.button_text_color }};
+    --color-button-bg-hover: {{ section.settings.button_bg_hover_color }};
+    --color-button-text-hover: {{ section.settings.button_text_hover_color }};
+    --radius-button: {{ section.settings.button_corner_radius }}px;
+  }
+</style>
+
+
+{% schema %}
+{
+  "name": "Custom Header",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Logo Einstellungen"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_image",
+      "label": "Logo-Bild"
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width",
+      "min": 50,
+      "max": 300,
+      "step": 5,
+      "unit": "px",
+      "label": "Maximale Logo-Breite",
+      "default": 150
+    },
+    {
+      "type": "header",
+      "content": "Navigation"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menü auswählen",
+      "info": "Wähle das Menü, das im Header angezeigt werden soll. Menüs werden unter 'Navigation' verwaltet."
+    },
+    {
+      "type": "font_picker",
+      "id": "menu_font",
+      "label": "Schriftart für Menüpunkte",
+      "default": "sans-serif"
+    },
+    {
+      "type": "checkbox",
+      "id": "menu_font_bold",
+      "label": "Menüpunkte fett drucken",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "menu_link_color",
+      "label": "Farbe der Menüpunkte",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "menu_link_active_color",
+      "label": "Farbe (aktiver Menüpunkt)",
+      "info": "Die Farbe für die Seite, auf der sich der Nutzer gerade befindet (wie im Screenshot).",
+      "default": "#28a745"
+    },
+    {
+      "type": "color",
+      "id": "menu_link_hover_color",
+      "label": "Farbe (beim Darüberfahren)",
+      "default": "#28a745"
+    },
+    {
+      "type": "header",
+      "content": "Kontakt Button"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button-Text",
+      "default": "Kontakt"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button-Link"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Hintergrundfarbe",
+      "default": "#28a745"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Textfarbe",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_hover_color",
+      "label": "Hintergrundfarbe (Hover)",
+      "default": "#218838"
+    },
+    {
+      "type": "color",
+      "id": "button_text_hover_color",
+      "label": "Textfarbe (Hover)",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "button_corner_radius",
+      "min": 0,
+      "max": 25,
+      "step": 1,
+      "unit": "px",
+      "label": "Eckenradius",
+      "default": 8
+    }
+  ]
+}
+{% endschema %}
