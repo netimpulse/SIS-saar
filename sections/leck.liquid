@@ -1,58 +1,376 @@
-{{ 'sis-header-neu.css' | asset_url | stylesheet_tag }}
-
 {% comment %}
-  Wir fügen CSS-Variablen direkt hier ein, damit sie im CSS-Code verwendet werden können.
-  Das ist sauberer als viele einzelne Style-Tags.
+  ====================================================================================================================
+  CUSTOM HEADER SECTION
+  ====================================================================================================================
+  * Dynamisches Menü über Theme-Editor wählbar
+  * Anpassbare Hover-Farbe für Navigationslinks
+  * Anpassbarer Kontakt-Button (Text, Link, Farben)
+  * X/Y-Positionierung für Logo und Navigation
+  * Anpassbares Padding für den gesamten Header
+  ====================================================================================================================
 {% endcomment %}
+
 <style>
-  :root {
-    --header-padding-vertical: {{ section.settings.header_padding_vertical }}px;
-    --header-padding-horizontal: {{ section.settings.header_padding_horizontal }}px;
-    --nav-hover-color: {{ section.settings.nav_hover_color }};
+  .custom-header-section {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: {{ section.settings.background_color }};
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .custom-header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: {{ section.settings.padding_vertical }}px {{ section.settings.padding_horizontal }}px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* Wichtig für die Positionierung */
+  }
+
+  .custom-header__logo {
+    display: flex;
+    align-items: center;
+    /* Dynamische Positionierung */
+    transform: translate({{ section.settings.logo_position_x }}px, {{ section.settings.logo_position_y }}px);
+    transition: transform 0.3s ease;
+  }
+
+  .custom-header__logo-img {
+    height: 40px;
+    width: auto;
+  }
+
+  .custom-header__logo-text {
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .custom-header__nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    /* Dynamische Positionierung */
+    transform: translate({{ section.settings.menu_position_x }}px, {{ section.settings.menu_position_y }}px);
+    transition: transform 0.3s ease;
+  }
+  
+  .custom-header__nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .custom-header__nav-link {
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+    padding-bottom: 5px; /* Platz für den Unterstrich */
+  }
+
+  .custom-header__nav-link:hover {
+    color: {{ section.settings.nav_hover_color }} !important;
+  }
+
+  /* Unterstrich-Effekt */
+  .custom-header__nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: {{ section.settings.nav_hover_color }};
+    transition: width 0.3s ease;
+  }
+
+  .custom-header__nav-link:hover::after,
+  .custom-header__nav-link.active::after {
+    width: 100%;
+  }
+  
+  .custom-header__nav-link.active {
+     color: {{ section.settings.nav_hover_color }} !important;
+  }
+
+  .custom-header__contact-btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem; /* 8px 24px */
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: {{ section.settings.button_bg_color }};
+    color: {{ section.settings.button_text_color }};
+    border: 1px solid transparent;
+  }
+
+  .custom-header__contact-btn:hover {
+    background-color: {{ section.settings.button_hover_bg_color }};
+    color: {{ section.settings.button_hover_text_color }};
+  }
+
+  .custom-header__mobile-toggle {
+    display: none; /* Wird nur auf Mobilgeräten angezeigt */
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+  }
+
+  .custom-header__mobile-toggle span {
+    width: 24px;
+    height: 2px;
+    background-color: {{ section.settings.nav_text_color }};
+    transition: all 0.3s ease;
+  }
+
+  /* Responsive Design für Mobilgeräte */
+  @media (max-width: 990px) {
+    .custom-header__nav-wrapper {
+      display: none; /* Verstecke Navigations-Wrapper auf Mobilgeräten */
+    }
+    
+    .custom-header__mobile-toggle {
+      display: flex; /* Zeige Hamburger-Menü-Icon */
+    }
+    
+    /* Setze Positionierung auf Mobilgeräten zurück */
+    .custom-header__logo, .custom-header__nav-wrapper {
+      transform: none !important;
+    }
   }
 </style>
 
-<header class="sis-header" style="background-color: {{ section.settings.background_color }};">
-  <div class="sis-header__container">
+<header class="custom-header-section">
+  <div class="custom-header__container">
     
-    {% comment %} LOGO {% endcomment %}
-    <div class="sis-header__logo" style="position: absolute; top: {{ section.settings.logo_position_y }}%; left: {{ section.settings.logo_position_x }}%; transform: translate(-{{ section.settings.logo_position_x }}%, -{{ section.settings.logo_position_y }}%);">
+    <div class="custom-header__logo">
       <a href="{{ shop.url }}">
         {% if section.settings.logo %}
-          <img src="{{ section.settings.logo | img_url: '300x' }}" alt="{{ shop.name }}" class="sis-header__logo-img">
+          <img src="{{ section.settings.logo | image_url: width: 200 }}" 
+               alt="{{ section.settings.logo.alt | default: shop.name }}"
+               class="custom-header__logo-img"
+               height="{{ 40 }}"
+               width="{{ 40 | times: section.settings.logo.aspect_ratio | round }}">
         {% else %}
-          <span class="sis-header__logo-text" style="color: {{ section.settings.logo_text_color }}; font-size: {{ section.settings.logo_font_size }}px;">
+          <span class="custom-header__logo-text" style="color: {{ section.settings.logo_color }}; font-size: {{ section.settings.logo_font_size }}px;">
             {{ section.settings.logo_text | default: shop.name }}
           </span>
         {% endif %}
       </a>
     </div>
 
-    {% comment %} NAVIGATION (jetzt aus dem Shopify Admin) {% endcomment %}
-    <nav class="sis-header__nav" style="position: absolute; top: {{ section.settings.menu_position_y }}%; left: {{ section.settings.menu_position_x }}%; transform: translate(-{{ section.settings.menu_position_x }}%, -{{ section.settings.menu_position_y }}%);">
-      {% for link in section.settings.menu.links %}
-        <a href="{{ link.url }}" 
-           class="sis-header__nav-link {% if link.active %}sis-header__nav-link--active{% endif %}" 
-           style="color: {{ section.settings.nav_text_color }}; font-size: {{ section.settings.nav_font_size }}px;">
-          {{ link.title }}
+    <div class="custom-header__nav-wrapper">
+      <nav class="custom-header__nav" role="navigation">
+        {%- for link in section.settings.menu.links -%}
+          <a href="{{ link.url }}" 
+             class="custom-header__nav-link {% if link.active %}active{% endif %}"
+             style="color: {{ section.settings.nav_text_color }}; font-size: {{ section.settings.nav_font_size }}px;">
+            {{ link.title }}
+          </a>
+        {%- endfor -%}
+      </nav>
+
+      {%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
+        <a href="{{ section.settings.button_link }}" class="custom-header__contact-btn">
+          {{ section.settings.button_text }}
         </a>
-      {% endfor %}
-    </nav>
+      {%- endif -%}
+    </div>
 
-    {% comment %} KONTAKT BUTTON {% endcomment %}
-    {% if section.settings.contact_button_link != blank %}
-      <a href="{{ section.settings.contact_button_link }}" 
-         class="sis-header__contact-btn" 
-         style="background-color: {{ section.settings.contact_button_bg_color }}; color: {{ section.settings.contact_button_text_color }};">
-        {{ section.settings.contact_button_text | default: 'Kontakt' }}
-      </a>
-    {% endif %}
-
-    {% comment %} Mobile Burger Menu Button {% endcomment %}
-    <button class="sis-header__mobile-toggle" style="color: {{ section.settings.nav_text_color }};">
+    <button class="custom-header__mobile-toggle" aria-label="Menü öffnen">
       <span></span>
       <span></span>
       <span></span>
     </button>
+    
   </div>
 </header>
+
+{% schema %}
+{
+  "name": "Custom Header",
+  "tag": "header",
+  "class": "shopify-section-header",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Hintergrundfarbe",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "padding_vertical",
+      "label": "Padding Oben/Unten (px)",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "default": 16,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "label": "Padding Links/Rechts (px)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 24,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo Bild"
+    },
+    {
+      "type": "text",
+      "id": "logo_text",
+      "label": "Logo Text (Fallback)",
+      "default": "Mein Shop"
+    },
+    {
+      "type": "color",
+      "id": "logo_color",
+      "label": "Logo Textfarbe",
+      "default": "#1e40af"
+    },
+    {
+      "type": "range",
+      "id": "logo_font_size",
+      "label": "Logo Schriftgröße",
+      "min": 16,
+      "max": 48,
+      "step": 1,
+      "default": 24,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "logo_position_x",
+      "label": "Logo Position X (px)",
+      "min": -200,
+      "max": 200,
+      "step": 5,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "logo_position_y",
+      "label": "Logo Position Y (px)",
+      "min": -100,
+      "max": 100,
+      "step": 5,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Navigation"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menü auswählen",
+      "default": "main-menu"
+    },
+    {
+      "type": "color",
+      "id": "nav_text_color",
+      "label": "Navigation Textfarbe",
+      "default": "#374151"
+    },
+    {
+      "type": "color",
+      "id": "nav_hover_color",
+      "label": "Navigation Hover-Farbe",
+      "default": "#4ade80"
+    },
+    {
+      "type": "range",
+      "id": "nav_font_size",
+      "label": "Navigation Schriftgröße",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "default": 16,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "menu_position_x",
+      "label": "Menü Position X (px)",
+      "min": -200,
+      "max": 200,
+      "step": 5,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "menu_position_y",
+      "label": "Menü Position Y (px)",
+      "min": -100,
+      "max": 100,
+      "step": 5,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Kontakt Button"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Kontakt"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button Textfarbe",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button Hintergrund",
+      "default": "#4ade80"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Button Textfarbe (Hover)",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_bg_color",
+      "label": "Button Hintergrund (Hover)",
+      "default": "#22c55e"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Header"
+    }
+  ]
+}
+{% endschema %}
