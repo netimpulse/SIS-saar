@@ -1,152 +1,34 @@
+{{ 'custom-header.css' | asset_url | stylesheet_tag }}
+
 {% comment %}
-  ====================================================================================================================
-  CUSTOM HEADER SECTION
-  ====================================================================================================================
-  * Dynamisches Menü über Theme-Editor wählbar
-  * Anpassbare Hover-Farbe für Navigationslinks
-  * Anpassbarer Kontakt-Button (Text, Link, Farben)
-  * X/Y-Positionierung für Logo und Navigation
-  * Anpassbares Padding für den gesamten Header
-  ====================================================================================================================
+  Diese <style>-Sektion ist notwendig, um die dynamischen Werte 
+  aus den Theme-Einstellungen (z.B. Farben, Positionen) an die 
+  externe CSS-Datei zu übergeben.
 {% endcomment %}
-
 <style>
-  .custom-header-section {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    background-color: {{ section.settings.background_color }};
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  }
-
-  .custom-header__container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: {{ section.settings.padding_vertical }}px {{ section.settings.padding_horizontal }}px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative; /* Wichtig für die Positionierung */
-  }
-
-  .custom-header__logo {
-    display: flex;
-    align-items: center;
-    /* Dynamische Positionierung */
-    transform: translate({{ section.settings.logo_position_x }}px, {{ section.settings.logo_position_y }}px);
-    transition: transform 0.3s ease;
-  }
-
-  .custom-header__logo-img {
-    height: 40px;
-    width: auto;
-  }
-
-  .custom-header__logo-text {
-    font-weight: 700;
-    text-decoration: none;
-  }
-
-  .custom-header__nav-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    /* Dynamische Positionierung */
-    transform: translate({{ section.settings.menu_position_x }}px, {{ section.settings.menu_position_y }}px);
-    transition: transform 0.3s ease;
-  }
-  
-  .custom-header__nav {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-  }
-
-  .custom-header__nav-link {
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-    position: relative;
-    padding-bottom: 5px; /* Platz für den Unterstrich */
-  }
-
-  .custom-header__nav-link:hover {
-    color: {{ section.settings.nav_hover_color }} !important;
-  }
-
-  /* Unterstrich-Effekt */
-  .custom-header__nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: {{ section.settings.nav_hover_color }};
-    transition: width 0.3s ease;
-  }
-
-  .custom-header__nav-link:hover::after,
-  .custom-header__nav-link.active::after {
-    width: 100%;
-  }
-  
-  .custom-header__nav-link.active {
-     color: {{ section.settings.nav_hover_color }} !important;
-  }
-
-  .custom-header__contact-btn {
-    display: inline-block;
-    padding: 0.5rem 1.5rem; /* 8px 24px */
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    background-color: {{ section.settings.button_bg_color }};
-    color: {{ section.settings.button_text_color }};
-    border: 1px solid transparent;
-  }
-
-  .custom-header__contact-btn:hover {
-    background-color: {{ section.settings.button_hover_bg_color }};
-    color: {{ section.settings.button_hover_text_color }};
-  }
-
-  .custom-header__mobile-toggle {
-    display: none; /* Wird nur auf Mobilgeräten angezeigt */
-    flex-direction: column;
-    gap: 4px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 8px;
-  }
-
-  .custom-header__mobile-toggle span {
-    width: 24px;
-    height: 2px;
-    background-color: {{ section.settings.nav_text_color }};
-    transition: all 0.3s ease;
-  }
-
-  /* Responsive Design für Mobilgeräte */
-  @media (max-width: 990px) {
-    .custom-header__nav-wrapper {
-      display: none; /* Verstecke Navigations-Wrapper auf Mobilgeräten */
-    }
+  .custom-header-section-{{ section.id }} {
+    --header-bg-color: {{ section.settings.background_color }};
+    --padding-vertical: {{ section.settings.padding_vertical }}px;
+    --padding-horizontal: {{ section.settings.padding_horizontal }}px;
     
-    .custom-header__mobile-toggle {
-      display: flex; /* Zeige Hamburger-Menü-Icon */
-    }
-    
-    /* Setze Positionierung auf Mobilgeräten zurück */
-    .custom-header__logo, .custom-header__nav-wrapper {
-      transform: none !important;
-    }
+    --logo-pos-x: {{ section.settings.logo_position_x }}px;
+    --logo-pos-y: {{ section.settings.logo_position_y }}px;
+
+    --menu-pos-x: {{ section.settings.menu_position_x }}px;
+    --menu-pos-y: {{ section.settings.menu_position_y }}px;
+
+    --nav-text-color: {{ section.settings.nav_text_color }};
+    --nav-hover-color: {{ section.settings.nav_hover_color }};
+    --nav-font-size: {{ section.settings.nav_font_size }}px;
+
+    --btn-text-color: {{ section.settings.button_text_color }};
+    --btn-bg-color: {{ section.settings.button_bg_color }};
+    --btn-hover-text-color: {{ section.settings.button_hover_text_color }};
+    --btn-hover-bg-color: {{ section.settings.button_hover_bg_color }};
   }
 </style>
 
-<header class="custom-header-section">
+<header class="custom-header-section custom-header-section-{{ section.id }}">
   <div class="custom-header__container">
     
     <div class="custom-header__logo">
@@ -168,9 +50,7 @@
     <div class="custom-header__nav-wrapper">
       <nav class="custom-header__nav" role="navigation">
         {%- for link in section.settings.menu.links -%}
-          <a href="{{ link.url }}" 
-             class="custom-header__nav-link {% if link.active %}active{% endif %}"
-             style="color: {{ section.settings.nav_text_color }}; font-size: {{ section.settings.nav_font_size }}px;">
+          <a href="{{ link.url }}" class="custom-header__nav-link {% if link.active %}active{% endif %}">
             {{ link.title }}
           </a>
         {%- endfor -%}
