@@ -1,282 +1,128 @@
-{% comment %}
-  Define CSS variables based on section settings.
-  These variables are then used by the sis-footer.css asset file.
-{% endcomment %}
-<style>
-  #shopify-section-{{ section.id }} {
-    --sis-background-color: {{ section.settings.background_color }};
-    --sis-section-padding: {{ section.settings.section_padding }}px;
-    --sis-separator-color: {{ section.settings.separator_color }};
-    --sis-title-color: {{ section.settings.title_color }};
-    --sis-title-font-size: {{ section.settings.title_font_size }}px;
-    --sis-subtitle-color: {{ section.settings.subtitle_color }};
-    --sis-subtitle-font-size: {{ section.settings.subtitle_font_size }}px;
-    --sis-text-color: {{ section.settings.text_color }};
-    --sis-text-font-size: {{ section.settings.text_font_size }}px;
-    --sis-link-color: {{ section.settings.link_color }};
-    --sis-copyright-margin-top: {{ section.settings.section_padding | divided_by: 2 }}px;
-    --sis-copyright-padding-top: {{ section.settings.section_padding | divided_by: 4 }}px;
-    --sis-copyright-font-size: {{ section.settings.text_font_size | minus: 2 }}px;
-  }
-</style>
+{{ 'sis-header.css' | asset_url | stylesheet_tag }}
 
-{{ 'sis-footer.css' | asset_url | stylesheet_tag }}
+<header class="sis-header" style="background-color: {{ section.settings.background_color }};">
+  <div class="sis-header__container">
+    <div class="sis-header__logo">
+      {% if section.settings.logo %}
+        <img src="{{ section.settings.logo | img_url: '200x' }}" alt="{{ shop.name }}" class="sis-header__logo-img">
+      {% else %}
+        <span class="sis-header__logo-text" style="color: {{ section.settings.logo_color }}; font-size: {{ section.settings.logo_font_size }}px;">
+          {{ section.settings.logo_text | default: shop.name }}
+        </span>
+      {% endif %}
+    </div>
 
-<footer class="sis-footer">
-  <div class="sis-footer__container">
-    <div class="sis-footer__section">
-      <h3 class="sis-footer__title">
-        {{ section.settings.gebaeude_title | default: "SIS Saar Gebäude Service" }}
-      </h3>
-      
-      <div class="sis-footer__content">
-        <div class="sis-footer__info">
-          <h4 class="sis-footer__subtitle">Kontakt</h4>
-          
-          {% if section.settings.gebaeude_address != blank %}
-            <p class="sis-footer__text">{{ section.settings.gebaeude_address }}</p>
-          {% endif %}
-          
-          {% if section.settings.gebaeude_phone != blank %}
-            <p class="sis-footer__text">Tel: {{ section.settings.gebaeude_phone }}</p>
-          {% endif %}
-          
-          {% if section.settings.gebaeude_email != blank %}
-            <p class="sis-footer__text">E-Mail: {{ section.settings.gebaeude_email }}</p>
-          {% endif %}
-        </div>
-        
-        <div class="sis-footer__legal">
-          <h4 class="sis-footer__subtitle">Rechtliches</h4>
-          
+    <nav class="sis-header__nav">
+      {% case template.name %}
+        {% when 'index' %}
+          <!-- Main navigation -->
           {% for block in section.blocks %}
-            {% if block.type == 'gebaeude_legal' %}
-              <a href="{{ block.settings.link }}" class="sis-footer__link">
+            {% if block.type == 'nav_link' %}
+              <a href="{{ block.settings.link }}" 
+                 class="sis-header__nav-link" 
+                 style="color: {{ section.settings.nav_text_color }}; font-size: {{ section.settings.nav_font_size }}px;">
                 {{ block.settings.text }}
               </a>
             {% endif %}
           {% endfor %}
-        </div>
-      </div>
-    </div>
-    
-    <div class="sis-footer__separator"></div>
-    
-    <div class="sis-footer__section">
-      <h3 class="sis-footer__title">
-        {{ section.settings.industrie_title | default: "SIS Saar Industrie Service" }}
-      </h3>
-      
-      <div class="sis-footer__content">
-        <div class="sis-footer__info">
-          <h4 class="sis-footer__subtitle">Kontakt</h4>
-          
-          {% if section.settings.industrie_address != blank %}
-            <p class="sis-footer__text">{{ section.settings.industrie_address }}</p>
+        {% when 'page' %}
+          {% if page.handle contains 'gebaeude' %}
+            <!-- Gebäude Service navigation -->
+            {% for block in section.blocks %}
+              {% if block.type == 'gebaeude_nav' %}
+                <a href="{{ block.settings.link }}" 
+                   class="sis-header__nav-link" 
+                   style="color: {{ section.settings.nav_text_color }}; font-size: {{ section.settings.nav_font_size }}px;">
+                  {{ block.settings.text }}
+                </a>
+              {% endif %}
+            {% endfor %}
+          {% elsif page.handle contains 'industrie' %}
+            <!-- Industrie Service navigation -->
+            {% for block in section.blocks %}
+              {% if block.type == 'industrie_nav' %}
+                <a href="{{ block.settings.link }}" 
+                   class="sis-header__nav-link" 
+                   style="color: {{ section.settings.nav_text_color }}; font-size: {{ section.settings.nav_font_size }}px;">
+                  {{ block.settings.text }}
+                </a>
+              {% endif %}
+            {% endfor %}
           {% endif %}
-          
-          {% if section.settings.industrie_phone != blank %}
-            <p class="sis-footer__text">Tel: {{ section.settings.industrie_phone }}</p>
-          {% endif %}
-          
-          {% if section.settings.industrie_email != blank %}
-            <p class="sis-footer__text">E-Mail: {{ section.settings.industrie_email }}</p>
-          {% endif %}
-        </div>
-        
-        <div class="sis-footer__legal">
-          <h4 class="sis-footer__subtitle">Rechtliches</h4>
-          
-          {% for block in section.blocks %}
-            {% if block.type == 'industrie_legal' %}
-              <a href="{{ block.settings.link }}" class="sis-footer__link">
-                {{ block.settings.text }}
-              </a>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </div>
-    </div>
+      {% endcase %}
+    </nav>
+
+    <button class="sis-header__mobile-toggle" style="color: {{ section.settings.nav_text_color }};">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
-  
-  {% if section.settings.copyright_text != blank %}
-    <div class="sis-footer__copyright">
-      <div class="sis-footer__container">
-        <p class="sis-footer__copyright-text">
-          {{ section.settings.copyright_text }}
-        </p>
-      </div>
-    </div>
-  {% endif %}
-</footer>
+</header>
 
 {% schema %}
 {
-  "name": "SIS Footer",
-  "tag": "footer",
-  "class": "sis-footer-section",
+  "name": "Header",
+  "tag": "header",
+  "class": "sis-header-section",
   "settings": [
-    {
-      "type": "header",
-      "content": "Section Einstellungen"
-    },
     {
       "type": "color",
       "id": "background_color",
       "label": "Hintergrundfarbe",
-      "default": "#111827"
-    },
-    {
-      "type": "range",
-      "id": "section_padding",
-      "label": "Section Abstand (oben/unten)",
-      "min": 30,
-      "max": 100,
-      "step": 10,
-      "unit": "px",
-      "default": 60
-    },
-    {
-      "type": "color",
-      "id": "separator_color",
-      "label": "Trennlinie Farbe",
-      "default": "#374151"
-    },
-    {
-      "type": "header",
-      "content": "Typografie"
-    },
-    {
-      "type": "color",
-      "id": "title_color",
-      "label": "Titel Farbe",
       "default": "#ffffff"
     },
     {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo Bild"
+    },
+    {
+      "type": "text",
+      "id": "logo_text",
+      "label": "Logo Text",
+      "default": "SIS Saar"
+    },
+    {
+      "type": "color",
+      "id": "logo_color",
+      "label": "Logo Farbe",
+      "default": "#1e40af"
+    },
+    {
       "type": "range",
-      "id": "title_font_size",
-      "label": "Titel Schriftgröße",
-      "min": 18,
-      "max": 32,
+      "id": "logo_font_size",
+      "label": "Logo Schriftgröße",
+      "min": 16,
+      "max": 48,
       "step": 2,
-      "unit": "px",
       "default": 24
     },
     {
       "type": "color",
-      "id": "subtitle_color",
-      "label": "Untertitel Farbe",
-      "default": "#d1d5db"
+      "id": "nav_text_color",
+      "label": "Navigation Textfarbe",
+      "default": "#374151"
     },
     {
       "type": "range",
-      "id": "subtitle_font_size",
-      "label": "Untertitel Schriftgröße",
-      "min": 14,
-      "max": 20,
-      "step": 1,
-      "unit": "px",
-      "default": 18
-    },
-    {
-      "type": "color",
-      "id": "text_color",
-      "label": "Text Farbe",
-      "default": "#9ca3af"
-    },
-    {
-      "type": "range",
-      "id": "text_font_size",
-      "label": "Text Schriftgröße",
+      "id": "nav_font_size",
+      "label": "Navigation Schriftgröße",
       "min": 12,
-      "max": 18,
+      "max": 24,
       "step": 1,
-      "unit": "px",
-      "default": 14
-    },
-    {
-      "type": "color",
-      "id": "link_color",
-      "label": "Link Farbe",
-      "default": "#60a5fa"
-    },
-    {
-      "type": "header",
-      "content": "Gebäude Service"
-    },
-    {
-      "type": "text",
-      "id": "gebaeude_title",
-      "label": "Titel",
-      "default": "SIS Saar Gebäude Service"
-    },
-    {
-      "type": "text",
-      "id": "gebaeude_address",
-      "label": "Adresse",
-      "default": "Musterstraße 1, 12345 Musterstadt"
-    },
-    {
-      "type": "text",
-      "id": "gebaeude_phone",
-      "label": "Telefon",
-      "default": "0123 / 456 789"
-    },
-    {
-      "type": "text",
-      "id": "gebaeude_email",
-      "label": "E-Mail",
-      "default": "gebaeude@sis-saar.de"
-    },
-    {
-      "type": "header",
-      "content": "Industrie Service"
-    },
-    {
-      "type": "text",
-      "id": "industrie_title",
-      "label": "Titel",
-      "default": "SIS Saar Industrie Service"
-    },
-    {
-      "type": "text",
-      "id": "industrie_address",
-      "label": "Adresse",
-      "default": "Beispielweg 2, 54321 Beispielhausen"
-    },
-    {
-      "type": "text",
-      "id": "industrie_phone",
-      "label": "Telefon",
-      "default": "0987 / 654 321"
-    },
-    {
-      "type": "text",
-      "id": "industrie_email",
-      "label": "E-Mail",
-      "default": "industrie@sis-saar.de"
-    },
-    {
-      "type": "header",
-      "content": "Copyright"
-    },
-    {
-      "type": "text",
-      "id": "copyright_text",
-      "label": "Copyright Text",
-      "default": "© 2024 SIS Saar. Alle Rechte vorbehalten."
+      "default": 16
     }
   ],
   "blocks": [
     {
-      "type": "gebaeude_legal",
-      "name": "Gebäude Rechtlicher Link",
+      "type": "nav_link",
+      "name": "Nav Link",
       "settings": [
         {
           "type": "text",
           "id": "text",
-          "label": "Link Text",
-          "default": "Impressum"
+          "label": "Link Text"
         },
         {
           "type": "url",
@@ -286,14 +132,29 @@
       ]
     },
     {
-      "type": "industrie_legal",
-      "name": "Industrie-Rechtlicher Li",
+      "type": "gebaeude_nav",
+      "name": "Gebäude Nav",
       "settings": [
         {
           "type": "text",
           "id": "text",
-          "label": "Link Text",
-          "default": "Impressum"
+          "label": "Link Text"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link URL"
+        }
+      ]
+    },
+    {
+      "type": "industrie_nav",
+      "name": "Industrie Nav",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Link Text"
         },
         {
           "type": "url",
@@ -305,19 +166,84 @@
   ],
   "presets": [
     {
-      "name": "SIS Footer",
+      "name": "Header",
       "blocks": [
-        { "type": "gebaeude_legal" },
         {
-          "type": "gebaeude_legal",
-          "settings": { "text": "Datenschutz" }
+          "type": "nav_link",
+          "settings": {
+            "text": "Home",
+            "link": "/"
+          }
         },
         {
-          "type": "industrie_legal"
+          "type": "nav_link",
+          "settings": {
+            "text": "Gebäude Service",
+            "link": "/pages/gebaeude"
+          }
         },
         {
-          "type": "industrie_legal",
-          "settings": { "text": "Datenschutz" }
+          "type": "nav_link",
+          "settings": {
+            "text": "Industrie Service",
+            "link": "/pages/industrie"
+          }
+        },
+        {
+          "type": "gebaeude_nav",
+          "settings": {
+            "text": "Über uns",
+            "link": "/pages/gebaeude-ueber-uns"
+          }
+        },
+        {
+          "type": "gebaeude_nav",
+          "settings": {
+            "text": "Leistungen",
+            "link": "/pages/gebaeude-leistungen"
+          }
+        },
+        {
+          "type": "gebaeude_nav",
+          "settings": {
+            "text": "Kontakt",
+            "link": "/pages/gebaeude-kontakt"
+          }
+        },
+        {
+          "type": "gebaeude_nav",
+          "settings": {
+            "text": "Karriere",
+            "link": "/pages/gebaeude-karriere"
+          }
+        },
+        {
+          "type": "industrie_nav",
+          "settings": {
+            "text": "Über uns",
+            "link": "/pages/industrie-ueber-uns"
+          }
+        },
+        {
+          "type": "industrie_nav",
+          "settings": {
+            "text": "Leistungen",
+            "link": "/pages/industrie-leistungen"
+          }
+        },
+        {
+          "type": "industrie_nav",
+          "settings": {
+            "text": "Kontakt",
+            "link": "/pages/industrie-kontakt"
+          }
+        },
+        {
+          "type": "industrie_nav",
+          "settings": {
+            "text": "Karriere",
+            "link": "/pages/industrie-karriere"
+          }
         }
       ]
     }
