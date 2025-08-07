@@ -60,8 +60,6 @@
       </div>
     </div>
     
-    <div class="sis-footer__separator"></div>
-    
     <div class="sis-footer__section">
       <h3 class="sis-footer__title">
         {{ section.settings.industrie_title | default: "SIS Saar Industrie Service" }}
@@ -110,6 +108,7 @@
   {% endif %}
 </footer>
 
+{% comment %} Das Schema bleibt unverändert {% endcomment %}
 {% schema %}
   {
     "name": "SIS Footer",
@@ -287,7 +286,7 @@
       },
       {
         "type": "industrie_legal",
-        "name": "Industrie-Rechtlicher Li",
+        "name": "Industrie-Rechtlicher Link",
         "settings": [
           {
             "type": "text",
