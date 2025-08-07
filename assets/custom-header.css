@@ -1,139 +1,138 @@
 .custom-header-section {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background-color: var(--header-bg-color);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-}
+   position: sticky;
+   top: 0;
+   z-index: 50;
+   background-color: var(--header-bg-color);
+   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+ }
 
-.custom-header__container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: var(--padding-vertical) var(--padding-horizontal);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-}
+ .custom-header__container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: var(--padding-vertical) var(--padding-horizontal);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+ }
 
-.custom-header__logo {
-  display: flex;
-  align-items: center;
-  transform: translate(var(--logo-pos-x), var(--logo-pos-y));
-  transition: transform 0.3s ease;
-}
+ .custom-header__logo {
+   display: flex;
+   align-items: center;
+   transform: translate(var(--logo-pos-x), var(--logo-pos-y));
+   transition: transform 0.3s ease;
+ }
 
-.custom-header__logo-img {
-  height: 40px;
-  width: auto;
-}
+ .custom-header__logo-img {
+   height: 40px;
+   width: auto;
+ }
 
-.custom-header__logo-text {
-  font-weight: 700;
-  text-decoration: none;
-}
+ .custom-header__logo-text {
+   font-weight: 700;
+   text-decoration: none;
+ }
 
-.custom-header__nav-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  transform: translate(var(--menu-pos-x), var(--menu-pos-y));
-  transition: transform 0.3s ease;
-}
+ .custom-header__nav-wrapper {
+   display: flex;
+   align-items: center;
+   gap: 1.5rem;
+   transform: translate(var(--menu-pos-x), var(--menu-pos-y));
+   transition: transform 0.3s ease;
+ }
 
-.custom-header__nav {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
+ .custom-header__nav {
+   display: flex;
+   gap: 2rem;
+   align-items: center;
+ }
 
-.custom-header__nav-link {
-  text-decoration: none;
-  color: var(--nav-text-color);
-  font-size: var(--nav-font-size);
-  transition: color 0.3s ease;
-  position: relative;
-  padding-bottom: 5px; /* Platz für den Unterstrich */
-  
-  /* Angewendete Schriftart-Variablen */
-  font-family: var(--nav-font-family);
-  font-style: var(--nav-font-style);
-  font-weight: var(--nav-font-weight);
-}
+ .custom-header__nav-link {
+   text-decoration: none;
+   color: var(--nav-text-color);
+   font-size: var(--nav-font-size);
+   transition: color 0.3s ease;
+   position: relative;
+   padding-bottom: 5px; /* Platz für den Unterstrich */
+  
+   /* Angewendete Schriftart-Variablen */
+   font-family: var(--nav-font-family);
+   font-style: var(--nav-font-style);
+   font-weight: var(--nav-font-weight);
+ }
 
-.custom-header__nav-link:hover {
-  color: var(--nav-hover-color);
-}
+ .custom-header__nav-link:hover {
+   color: var(--nav-hover-color);
+ }
 
-.custom-header__nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: var(--nav-hover-color);
-  transition: width 0.3s ease;
-}
+ .custom-header__nav-link::after {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 0;
+   height: 2px;
+   background-color: var(--nav-hover-color);
+   transition: width 0.3s ease;
+ }
 
-.custom-header__nav-link:hover::after,
-.custom-header__nav-link.active::after {
-  width: 100%;
-}
+ .custom-header__nav-link:hover::after,
+ .custom-header__nav-link.active::after {
+   width: 100%;
+ }
 
-.custom-header__nav-link.active {
-   color: var(--nav-hover-color);
-}
+ .custom-header__nav-link.active {
+    color: var(--nav-hover-color);
+ }
 
-/* --- ANGEPASSTER BEREICH START --- */
-.custom-header__contact-btn {
-  display: inline-block;
-  padding: 0.7rem 1.8rem; /* Etwas mehr Padding für ein besseres Gefühl */
-  border-radius: 16px; /* Stärkere Abrundung wie im Screenshot */
-  text-decoration: none;
-  font-weight: 500;
-  color: var(--btn-text-color);
-  background-color: var(--btn-bg-color);
-  border: none; /* Rand entfernt für einen flacheren Look */
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+ /* --- HIER IST DIE ÄNDERUNG --- */
+ .custom-header__contact-btn {
+  display: inline-block;
+  padding: 10px 24px; /* Innenabstand für die Button-Größe */
+  border-radius: 8px; /* Abgerundete Ecken wie im Screenshot */
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--btn-text-color, #ffffff); /* Fallback auf Weiß, falls nicht gesetzt */
+  background-color: var(--btn-bg-color, #4ade80); /* Fallback auf Grün, falls nicht gesetzt */
+  border: none; /* Kein Rand */
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .custom-header__contact-btn:hover {
-  color: var(--btn-hover-text-color);
-  background-color: var(--btn-hover-bg-color);
-  transform: translateY(-2px); /* Leichter Schwebe-Effekt beibehalten */
-  /* Schatten beim Hover entfernt, um den flachen Stil beizubehalten */
-}
-/* --- ANGEPASSTER BEREICH ENDE --- */
-
-.custom-header__mobile-toggle {
-  display: none;
-  flex-direction: column;
-  gap: 4px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 8px;
+  color: var(--btn-hover-text-color, #ffffff);
+  background-color: var(--btn-hover-bg-color, #22c55e); /* Etwas dunkleres Grün beim Hover */
+  transform: translateY(-2px); /* Leichter Schwebe-Effekt */
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.12);
 }
 
-.custom-header__mobile-toggle span {
-  width: 24px;
-  height: 2px;
-  background-color: var(--nav-text-color);
-  transition: all 0.3s ease;
-}
+ .custom-header__mobile-toggle {
+   display: none;
+   flex-direction: column;
+   gap: 4px;
+   background: none;
+   border: none;
+   cursor: pointer;
+   padding: 8px;
+ }
 
-/* Responsive Design für Mobilgeräte */
-@media (max-width: 990px) {
-  .custom-header__nav-wrapper {
-    display: none;
-  }
-  
-  .custom-header__mobile-toggle {
-    display: flex;
-  }
-  
-  .custom-header__logo, .custom-header__nav-wrapper {
-    transform: none !important;
-  }
-}
+ .custom-header__mobile-toggle span {
+   width: 24px;
+   height: 2px;
+   background-color: var(--nav-text-color);
+   transition: all 0.3s ease;
+ }
+
+ /* Responsive Design für Mobilgeräte */
+ @media (max-width: 990px) {
+   .custom-header__nav-wrapper {
+     display: none;
+   }
+  
+   .custom-header__mobile-toggle {
+     display: flex;
+   }
+  
+   .custom-header__logo, .custom-header__nav-wrapper {
+     transform: none !important;
+   }
+ }
