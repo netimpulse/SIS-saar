@@ -49,12 +49,16 @@
 
 .custom-header__nav-link {
   text-decoration: none;
-  font-weight: 500;
   color: var(--nav-text-color);
   font-size: var(--nav-font-size);
   transition: color 0.3s ease;
   position: relative;
   padding-bottom: 5px; /* Platz für den Unterstrich */
+  
+  /* Angewendete Schriftart-Variablen */
+  font-family: var(--nav-font-family);
+  font-style: var(--nav-font-style);
+  font-weight: var(--nav-font-weight);
 }
 
 .custom-header__nav-link:hover {
@@ -83,19 +87,21 @@
 
 .custom-header__contact-btn {
   display: inline-block;
-  padding: 0.5rem 1.5rem;
-  border-radius: 8px;
+  padding: 0.6rem 1.6rem; /* Etwas mehr Padding */
+  border-radius: 12px; /* Stärkere Abrundung */
   text-decoration: none;
   font-weight: 500;
-  transition: background-color 0.3s ease, color 0.3s ease;
   color: var(--btn-text-color);
   background-color: var(--btn-bg-color);
   border: 1px solid transparent;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
 }
 
 .custom-header__contact-btn:hover {
   color: var(--btn-hover-text-color);
   background-color: var(--btn-hover-bg-color);
+  transform: translateY(-2px); /* Leichter Schwebe-Effekt */
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.12); /* Subtiler Schatten */
 }
 
 .custom-header__mobile-toggle {
@@ -111,7 +117,6 @@
 .custom-header__mobile-toggle span {
   width: 24px;
   height: 2px;
-  /* Verwendet die Textfarbe der Navigation für die Striche */
   background-color: var(--nav-text-color);
   transition: all 0.3s ease;
 }
@@ -126,7 +131,6 @@
     display: flex;
   }
   
-  /* Setze Positionierung auf Mobilgeräten zurück */
   .custom-header__logo, .custom-header__nav-wrapper {
     transform: none !important;
   }
