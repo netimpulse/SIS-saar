@@ -1,57 +1,54 @@
-{{ 'sis-header.css' | asset_url | stylesheet_tag }}
+{{ 'sis-header-neu.css' | asset_url | stylesheet_tag }}
+
+{% comment %}
+  Wir fügen CSS-Variablen direkt hier ein, damit sie im CSS-Code verwendet werden können.
+  Das ist sauberer als viele einzelne Style-Tags.
+{% endcomment %}
+<style>
+  :root {
+    --header-padding-vertical: {{ section.settings.header_padding_vertical }}px;
+    --header-padding-horizontal: {{ section.settings.header_padding_horizontal }}px;
+    --nav-hover-color: {{ section.settings.nav_hover_color }};
+  }
+</style>
 
 <header class="sis-header" style="background-color: {{ section.settings.background_color }};">
   <div class="sis-header__container">
-    <div class="sis-header__logo">
-      {% if section.settings.logo %}
-        <img src="{{ section.settings.logo | img_url: '200x' }}" alt="{{ shop.name }}" class="sis-header__logo-img">
-      {% else %}
-        <span class="sis-header__logo-text" style="color: {{ section.settings.logo_color }}; font-size: {{ section.settings.logo_font_size }}px;">
-          {{ section.settings.logo_text | default: shop.name }}
-        </span>
-      {% endif %}
+    
+    {% comment %} LOGO {% endcomment %}
+    <div class="sis-header__logo" style="position: absolute; top: {{ section.settings.logo_position_y }}%; left: {{ section.settings.logo_position_x }}%; transform: translate(-{{ section.settings.logo_position_x }}%, -{{ section.settings.logo_position_y }}%);">
+      <a href="{{ shop.url }}">
+        {% if section.settings.logo %}
+          <img src="{{ section.settings.logo | img_url: '300x' }}" alt="{{ shop.name }}" class="sis-header__logo-img">
+        {% else %}
+          <span class="sis-header__logo-text" style="color: {{ section.settings.logo_text_color }}; font-size: {{ section.settings.logo_font_size }}px;">
+            {{ section.settings.logo_text | default: shop.name }}
+          </span>
+        {% endif %}
+      </a>
     </div>
 
-    <nav class="sis-header__nav">
-      {% case template.name %}
-        {% when 'index' %}
-          <!-- Main navigation -->
-          {% for block in section.blocks %}
-            {% if block.type == 'nav_link' %}
-              <a href="{{ block.settings.link }}" 
-                 class="sis-header__nav-link" 
-                 style="color: {{ section.settings.nav_text_color }}; font-size: {{ section.settings.nav_font_size }}px;">
-                {{ block.settings.text }}
-              </a>
-            {% endif %}
-          {% endfor %}
-        {% when 'page' %}
-          {% if page.handle contains 'gebaeude' %}
-            <!-- Gebäude Service navigation -->
-            {% for block in section.blocks %}
-              {% if block.type == 'gebaeude_nav' %}
-                <a href="{{ block.settings.link }}" 
-                   class="sis-header__nav-link" 
-                   style="color: {{ section.settings.nav_text_color }}; font-size: {{ section.settings.nav_font_size }}px;">
-                  {{ block.settings.text }}
-                </a>
-              {% endif %}
-            {% endfor %}
-          {% elsif page.handle contains 'industrie' %}
-            <!-- Industrie Service navigation -->
-            {% for block in section.blocks %}
-              {% if block.type == 'industrie_nav' %}
-                <a href="{{ block.settings.link }}" 
-                   class="sis-header__nav-link" 
-                   style="color: {{ section.settings.nav_text_color }}; font-size: {{ section.settings.nav_font_size }}px;">
-                  {{ block.settings.text }}
-                </a>
-              {% endif %}
-            {% endfor %}
-          {% endif %}
-      {% endcase %}
+    {% comment %} NAVIGATION (jetzt aus dem Shopify Admin) {% endcomment %}
+    <nav class="sis-header__nav" style="position: absolute; top: {{ section.settings.menu_position_y }}%; left: {{ section.settings.menu_position_x }}%; transform: translate(-{{ section.settings.menu_position_x }}%, -{{ section.settings.menu_position_y }}%);">
+      {% for link in section.settings.menu.links %}
+        <a href="{{ link.url }}" 
+           class="sis-header__nav-link {% if link.active %}sis-header__nav-link--active{% endif %}" 
+           style="color: {{ section.settings.nav_text_color }}; font-size: {{ section.settings.nav_font_size }}px;">
+          {{ link.title }}
+        </a>
+      {% endfor %}
     </nav>
 
+    {% comment %} KONTAKT BUTTON {% endcomment %}
+    {% if section.settings.contact_button_link != blank %}
+      <a href="{{ section.settings.contact_button_link }}" 
+         class="sis-header__contact-btn" 
+         style="background-color: {{ section.settings.contact_button_bg_color }}; color: {{ section.settings.contact_button_text_color }};">
+        {{ section.settings.contact_button_text | default: 'Kontakt' }}
+      </a>
+    {% endif %}
+
+    {% comment %} Mobile Burger Menu Button {% endcomment %}
     <button class="sis-header__mobile-toggle" style="color: {{ section.settings.nav_text_color }};">
       <span></span>
       <span></span>
@@ -59,194 +56,3 @@
     </button>
   </div>
 </header>
-
-{% schema %}
-{
-  "name": "Header",
-  "tag": "header",
-  "class": "sis-header-section",
-  "settings": [
-    {
-      "type": "color",
-      "id": "background_color",
-      "label": "Hintergrundfarbe",
-      "default": "#ffffff"
-    },
-    {
-      "type": "image_picker",
-      "id": "logo",
-      "label": "Logo Bild"
-    },
-    {
-      "type": "text",
-      "id": "logo_text",
-      "label": "Logo Text",
-      "default": "SIS Saar"
-    },
-    {
-      "type": "color",
-      "id": "logo_color",
-      "label": "Logo Farbe",
-      "default": "#1e40af"
-    },
-    {
-      "type": "range",
-      "id": "logo_font_size",
-      "label": "Logo Schriftgröße",
-      "min": 16,
-      "max": 48,
-      "step": 2,
-      "default": 24
-    },
-    {
-      "type": "color",
-      "id": "nav_text_color",
-      "label": "Navigation Textfarbe",
-      "default": "#374151"
-    },
-    {
-      "type": "range",
-      "id": "nav_font_size",
-      "label": "Navigation Schriftgröße",
-      "min": 12,
-      "max": 24,
-      "step": 1,
-      "default": 16
-    }
-  ],
-  "blocks": [
-    {
-      "type": "nav_link",
-      "name": "Nav Link",
-      "settings": [
-        {
-          "type": "text",
-          "id": "text",
-          "label": "Link Text"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "Link URL"
-        }
-      ]
-    },
-    {
-      "type": "gebaeude_nav",
-      "name": "Gebäude Nav",
-      "settings": [
-        {
-          "type": "text",
-          "id": "text",
-          "label": "Link Text"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "Link URL"
-        }
-      ]
-    },
-    {
-      "type": "industrie_nav",
-      "name": "Industrie Nav",
-      "settings": [
-        {
-          "type": "text",
-          "id": "text",
-          "label": "Link Text"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "Link URL"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Header",
-      "blocks": [
-        {
-          "type": "nav_link",
-          "settings": {
-            "text": "Home",
-            "link": "/"
-          }
-        },
-        {
-          "type": "nav_link",
-          "settings": {
-            "text": "Gebäude Service",
-            "link": "/pages/gebaeude"
-          }
-        },
-        {
-          "type": "nav_link",
-          "settings": {
-            "text": "Industrie Service",
-            "link": "/pages/industrie"
-          }
-        },
-        {
-          "type": "gebaeude_nav",
-          "settings": {
-            "text": "Über uns",
-            "link": "/pages/gebaeude-ueber-uns"
-          }
-        },
-        {
-          "type": "gebaeude_nav",
-          "settings": {
-            "text": "Leistungen",
-            "link": "/pages/gebaeude-leistungen"
-          }
-        },
-        {
-          "type": "gebaeude_nav",
-          "settings": {
-            "text": "Kontakt",
-            "link": "/pages/gebaeude-kontakt"
-          }
-        },
-        {
-          "type": "gebaeude_nav",
-          "settings": {
-            "text": "Karriere",
-            "link": "/pages/gebaeude-karriere"
-          }
-        },
-        {
-          "type": "industrie_nav",
-          "settings": {
-            "text": "Über uns",
-            "link": "/pages/industrie-ueber-uns"
-          }
-        },
-        {
-          "type": "industrie_nav",
-          "settings": {
-            "text": "Leistungen",
-            "link": "/pages/industrie-leistungen"
-          }
-        },
-        {
-          "type": "industrie_nav",
-          "settings": {
-            "text": "Kontakt",
-            "link": "/pages/industrie-kontakt"
-          }
-        },
-        {
-          "type": "industrie_nav",
-          "settings": {
-            "text": "Karriere",
-            "link": "/pages/industrie-karriere"
-          }
-        }
-      ]
-    }
-  ]
-}
-{% endschema %}
