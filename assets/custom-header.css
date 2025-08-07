@@ -53,9 +53,7 @@
   font-size: var(--nav-font-size);
   transition: color 0.3s ease;
   position: relative;
-  padding-bottom: 5px; /* Platz für den Unterstrich */
-  
-  /* Angewendete Schriftart-Variablen */
+  padding-bottom: 5px;
   font-family: var(--nav-font-family);
   font-style: var(--nav-font-style);
   font-weight: var(--nav-font-weight);
@@ -85,24 +83,37 @@
    color: var(--nav-hover-color);
 }
 
-.custom-header__contact-btn {
+
+/* === ANGEPASSTE BUTTON-STILE (START) === */
+/*
+  HINWEIS: Der Selektor wurde präziser gemacht und es wurden !important-Regeln hinzugefügt.
+  Dies zwingt den Browser, unsere Stile für den Button zu verwenden und die Standard-Stile
+  des Themes zu ignorieren.
+*/
+.custom-header__nav-wrapper .custom-header__contact-btn {
   display: inline-block;
-  padding: 0.6rem 1.6rem; /* Etwas mehr Padding */
-  border-radius: 12px; /* Stärkere Abrundung */
-  text-decoration: none;
+  padding: 0.6rem 1.6rem;
+  border-radius: 12px;
   font-weight: 500;
-  color: var(--btn-text-color);
-  background-color: var(--btn-bg-color);
-  border: 1px solid transparent;
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  box-shadow: none;
+  
+  /* Diese Regeln stellen sicher, dass der Button immer korrekt aussieht */
+  background: var(--btn-bg-color) !important;
+  color: var(--btn-text-color) !important;
+  border: none !important;
+  text-decoration: none !important;
+
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
 }
 
-.custom-header__contact-btn:hover {
-  color: var(--btn-hover-text-color);
-  background-color: var(--btn-hover-bg-color);
-  transform: translateY(-2px); /* Leichter Schwebe-Effekt */
-  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.12); /* Subtiler Schatten */
+.custom-header__nav-wrapper .custom-header__contact-btn:hover {
+  background: var(--btn-hover-bg-color) !important;
+  color: var(--btn-hover-text-color) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.12);
 }
+/* === ANGEPASSTE BUTTON-STILE (ENDE) === */
+
 
 .custom-header__mobile-toggle {
   display: none;
@@ -121,7 +132,6 @@
   transition: all 0.3s ease;
 }
 
-/* Responsive Design für Mobilgeräte */
 @media (max-width: 990px) {
   .custom-header__nav-wrapper {
     display: none;
