@@ -72,6 +72,94 @@
         "text_color": "#333333"
       }
     },
+    "two_areas_MH8aTk": {
+      "type": "two-areas",
+      "blocks": {
+        "industry_tile_WHhM7W": {
+          "type": "industry_tile",
+          "settings": {
+            "title": "Instandhaltung",
+            "link": ""
+          }
+        },
+        "industry_tile_H9aCzt": {
+          "type": "industry_tile",
+          "settings": {
+            "title": "Technischer Support",
+            "link": ""
+          }
+        },
+        "building_tile_TmXRPT": {
+          "type": "building_tile",
+          "settings": {
+            "title": "Gebäudereinigung",
+            "link": ""
+          }
+        },
+        "building_tile_AXA3qz": {
+          "type": "building_tile",
+          "settings": {
+            "title": "Facility Management",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "industry_tile_WHhM7W",
+        "industry_tile_H9aCzt",
+        "building_tile_TmXRPT",
+        "building_tile_AXA3qz"
+      ],
+      "name": "Industrie & Gebäude (Demo)",
+      "settings": {
+        "show_heading": true,
+        "heading": "Industrie & Gebäudeservice",
+        "heading_color": "#121212",
+        "heading_font_size": 38,
+        "show_subheading": true,
+        "subheading": "Zwei starke Bereiche, ein Qualitätsversprechen",
+        "subheading_color": "#6c757d",
+        "subheading_font_size": 18,
+        "industry_title": "Industrieservice",
+        "industry_title_color": "#343a40",
+        "industry_title_font_size": 28,
+        "industry_text": "<p>Wir sorgen für reibungslose Abläufe…</p>",
+        "industry_text_color": "#6c757d",
+        "industry_text_font_size": 16,
+        "industry_area_border_color": "#0B3D91",
+        "industry_btn_label": "Mehr erfahren",
+        "industry_btn_link": "",
+        "industry_btn_bg_color": "#0B3D91",
+        "industry_btn_text_color": "#FFFFFF",
+        "industry_btn_font_size": 16,
+        "industry_btn_bg_hover_color": "#FFFFFF",
+        "industry_btn_text_hover_color": "#0B3D91",
+        "industry_btn_border_hover_color": "#0B3D91",
+        "industry_tile_bg_color": "#0B3D91",
+        "industry_tile_text_color": "#FFFFFF",
+        "industry_tile_title_font_size": 14,
+        "industry_tile_bg_hover_color": "#0056b3",
+        "building_title": "Gebäudeservice",
+        "building_title_color": "#343a40",
+        "building_title_font_size": 28,
+        "building_text": "<p>Wir kümmern uns um Ihre Immobilie…</p>",
+        "building_text_color": "#6c757d",
+        "building_text_font_size": 16,
+        "building_area_border_color": "#57B894",
+        "building_btn_label": "Mehr erfahren",
+        "building_btn_link": "",
+        "building_btn_bg_color": "#57B894",
+        "building_btn_text_color": "#FFFFFF",
+        "building_btn_font_size": 16,
+        "building_btn_bg_hover_color": "#FFFFFF",
+        "building_btn_text_hover_color": "#57B894",
+        "building_btn_border_hover_color": "#57B894",
+        "building_tile_bg_color": "#57B894",
+        "building_tile_text_color": "#FFFFFF",
+        "building_tile_title_font_size": 14,
+        "building_tile_bg_hover_color": "#4AA080"
+      }
+    },
     "about_section_QCV3x4": {
       "type": "about-section",
       "blocks": {
@@ -88,7 +176,25 @@
           "type": "feature",
           "settings": {
             "icon_type": "svg",
-            "icon_svg": "",
+            "icon_svg": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#22C55E\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <circle cx=\"12\" cy=\"8\" r=\"7\"></circle>\n  <path d=\"M8.21 13.89 7 23l5-3 5 3-1.21-9.12\"></path>\n</svg>",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung"
+          }
+        },
+        "feature_ahqWEE": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#22C55E\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <path d=\"M12 6v6l4 2\"></path>\n</svg>",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung des Features."
+          }
+        },
+        "feature_VwjfHG": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#22C55E\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <path d=\"M9 12l2 2 4-4\"></path>\n</svg>",
             "feature_title": "Feature Titel",
             "feature_description": "Kurze Beschreibung des Features."
           }
@@ -96,12 +202,14 @@
       },
       "block_order": [
         "feature_jHnrVQ",
-        "feature_MGqp7x"
+        "feature_MGqp7x",
+        "feature_ahqWEE",
+        "feature_VwjfHG"
       ],
       "name": "Über Uns (Layout)",
       "settings": {
         "layout_direction": "image_left",
-        "background_color": "#FFFFFF",
+        "background_color": "#e9e7e7",
         "section_padding_top": 80,
         "section_padding_bottom": 80,
         "title": "Warum SIS",
@@ -193,6 +301,7 @@
   "order": [
     "split_showcase_WTD9YW",
     "text_mit_bild_dCQRLd",
+    "two_areas_MH8aTk",
     "about_section_QCV3x4",
     "kundenbewertung_tzkjqA"
   ]
