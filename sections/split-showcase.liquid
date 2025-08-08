@@ -1,15 +1,14 @@
 {% comment %}
   Dateiname: split-showcase.liquid
-  Version: 4.0
-  Beschreibung: Zurück zum zentrierten Layout mit fester Breite und rechteckigen Boxen.
+  Beschreibung: Ein Abschnitt, der zwei Service-Boxen nebeneinander darstellt.
+                Inklusive Optionen für Icons, Hover-Effekte und vollständige Anpassbarkeit.
 {% endcomment %}
 
 {{ 'split-showcase.css' | asset_url | stylesheet_tag }}
 
-<div class="sc-container-wrapper" id="split-showcase-{{ section.id }}">
-  <div class="sc-container">
+<div class="sc-container-wrapper">
+  <div class="sc-container" id="split-showcase-{{ section.id }}">
     
-    {% comment %} Header-Bereich {% endcomment %}
     {% if section.settings.heading != blank or section.settings.subheading != blank %}
       <div class="sc-header">
         {% if section.settings.heading != blank %}
@@ -21,7 +20,6 @@
       </div>
     {% endif %}
 
-    {% comment %} Grid-Bereich mit den Boxen {% endcomment %}
     <div class="sc-grid">
       {% comment %} Linke Box {% endcomment %}
       <a href="{{ section.settings.left_button_link | default: '#' }}" class="sc-box-link">
