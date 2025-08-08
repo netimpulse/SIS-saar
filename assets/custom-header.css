@@ -1,9 +1,9 @@
 .custom-header-section {
-   position: sticky;
-   top: 0;
-   z-index: 50;
-   background-color: var(--header-bg-color);
-   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: var(--header-bg-color);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 .custom-header__container {
@@ -54,7 +54,7 @@
   transition: color 0.3s ease;
   position: relative;
   padding-bottom: 5px; /* Platz für den Unterstrich */
- 
+  
   /* Angewendete Schriftart-Variablen */
   font-family: var(--nav-font-family);
   font-style: var(--nav-font-style);
@@ -82,33 +82,26 @@
 }
 
 .custom-header__nav-link.active {
-  color: var(--nav-hover-color);
+   color: var(--nav-hover-color);
 }
 
-/* --- Neuer Kontakt-Button --- */
-.contact-button {
+.custom-header__contact-btn {
   display: inline-block;
-  padding: 10px 24px;                 
-  border-radius: 12px;                
+  padding: 0.6rem 1.6rem; /* Etwas mehr Padding */
+  border-radius: 12px; /* Stärkere Abrundung */
   text-decoration: none;
-  font-weight: 700;                   
-  line-height: 1;
-  color: #ffffff;                     
-  background: linear-gradient(180deg, #4ade80 0%, #22c55e 100%); 
-  border: none;
-  box-shadow: 0 1px 0 rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.12);
-  transition: filter .2s ease, transform .1s ease;
-  white-space: nowrap;                
+  font-weight: 500;
+  color: var(--btn-text-color);
+  background-color: var(--btn-bg-color);
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
 }
 
-.contact-button:hover {
-  filter: brightness(0.95);           
-  transform: translateY(-1px);
-}
-
-.contact-button:focus {
-  outline: 2px solid rgba(34,197,94,.35);
-  outline-offset: 2px;
+.custom-header__contact-btn:hover {
+  color: var(--btn-hover-text-color);
+  background-color: var(--btn-hover-bg-color);
+  transform: translateY(-2px); /* Leichter Schwebe-Effekt */
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.12); /* Subtiler Schatten */
 }
 
 .custom-header__mobile-toggle {
@@ -133,11 +126,11 @@
   .custom-header__nav-wrapper {
     display: none;
   }
- 
+  
   .custom-header__mobile-toggle {
     display: flex;
   }
- 
+  
   .custom-header__logo, .custom-header__nav-wrapper {
     transform: none !important;
   }
