@@ -1,10 +1,10 @@
 {% comment %}
   **
-  * Angepasster "Über Uns" Abschnitt (Version 3 - Korrigiert)
+  * Angepasster "Über Uns" Abschnitt (Version 4 - Bild-Icons)
   *
+  * - NEU: Pro Feature kann zwischen SVG-Icon und Bild-Icon gewählt werden.
   * - Lädt eine externe CSS-Datei für statische Stile.
   * - Definiert CSS-Variablen für dynamische Einstellungen aus dem Editor.
-  * - Schema-Fehler für 'features_per_row' behoben (range -> select).
   *
   {% endcomment %}
 
@@ -57,7 +57,21 @@
             {% for block in section.blocks %}
               <div class="sis-about__feature" {{ block.shopify_attributes }}>
                 <div class="sis-about__feature-icon">
-                  {{ block.settings.icon_svg }}
+                  
+                  {%- comment -%}
+                    {%- endcomment -%}
+                  {% if block.settings.icon_type == 'image' and block.settings.icon_image != blank %}
+                    <img 
+                      src="{{ block.settings.icon_image | image_url: width: 120, height: 120 }}"
+                      alt="{{ block.settings.feature_title | escape }}"
+                      style="width: {{ section.settings.icon_size }}px; height: auto;"
+                      width="{{ section.settings.icon_size }}"
+                      height="{{ section.settings.icon_size }}"
+                      loading="lazy">
+                  {% elsif block.settings.icon_type == 'svg' and block.settings.icon_svg != blank %}
+                    {{ block.settings.icon_svg }}
+                  {% endif %}
+
                 </div>
                 <div class="sis-about__feature-text">
                   <h4 class="sis-about__feature-title">{{ block.settings.feature_title }}</h4>
@@ -205,7 +219,8 @@
       {
         "type": "color",
         "id": "icon_color",
-        "label": "Icon Farbe",
+        "label": "SVG-Icon Farbe",
+        "info": "Gilt nur für SVG-Icons.",
         "default": "#34D399"
       },
       {
@@ -221,10 +236,34 @@
         "name": "Feature Punkt",
         "settings": [
           {
+            "type": "header",
+            "content": "Icon"
+          },
+          {
+            "type": "select",
+            "id": "icon_type",
+            "label": "Icon-Typ",
+            "options": [
+              { "value": "svg", "label": "SVG-Code" },
+              { "value": "image", "label": "Bild" }
+            ],
+            "default": "svg"
+          },
+          {
             "type": "html",
             "id": "icon_svg",
-            "label": "SVG Code für Icon",
-            "info": "Suche Icons z.B. auf heroicons.com und kopiere den SVG-Code hierher."
+            "label": "SVG Code",
+            "info": "Wird verwendet, wenn Icon-Typ 'SVG-Code' ist."
+          },
+          {
+            "type": "image_picker",
+            "id": "icon_image",
+            "label": "Icon-Bild",
+            "info": "Wird verwendet, wenn Icon-Typ 'Bild' ist."
+          },
+          {
+            "type": "header",
+            "content": "Inhalt"
           },
           {
             "type": "text",
