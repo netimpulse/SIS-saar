@@ -1,19 +1,21 @@
 /*
  * Dateiname: split-showcase.css
- * Version: 7.0
- * Beschreibung: Finale Version - Feste Breite für Boxen per 'width' gesetzt, wie gefordert.
+ * Beschreibung: Stile für den "Split Showcase" Abschnitt.
  */
 
 /* Grundstruktur und Container */
 .sc-container-wrapper {
+  /* Diese Klasse sorgt für die volle Breite und den vertikalen Abstand */
   width: 100%;
   padding: 50px 0;
 }
 
 .sc-container {
-  max-width: 1400px; 
+  /* Diese Klasse sorgt für den seitlichen Abstand und zentriert den Inhalt */
+  width: 100%;
+  max-width: 1200px; /* Standardbreite, kann angepasst werden */
   margin: 0 auto;
-  padding: 0 25px; 
+  padding: 0 25px; /* Seitlicher Abstand, damit der Inhalt nicht am Rand klebt */
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -41,17 +43,16 @@
   margin: 0;
 }
 
-/* HIER: Grid-Layout geändert, um eine feste Breite für die Boxen zu ermöglichen */
+
+/* Grid für die Boxen */
 .sc-grid {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
 
-/* HIER: DIE WICHTIGSTE ÄNDERUNG - FESTE BREITE FÜR DIE BOXEN GESETZT */
+/* Styling der einzelnen Boxen */
 .sc-box-link {
-  width: 650px; /* <-- HIER IST DIE FESTE BREITE */
-  max-width: 100%; /* Verhindert, dass die Box auf kleinen Bildschirmen überläuft */
   text-decoration: none;
   display: block;
   overflow: hidden;
@@ -60,7 +61,7 @@
 
 .sc-box {
   position: relative;
-  height: 480px; 
+  height: 480px;
   padding: 40px;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -118,7 +119,7 @@
 .sc-content {
   position: absolute;
   z-index: 3;
-  width: calc(100% - 80px); 
+  width: calc(100% - 80px); /* Breite anpassen an Padding der .sc-box */
   max-width: 450px;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -159,20 +160,21 @@
 /* Responsive Design für Mobilgeräte */
 @media (max-width: 900px) {
   .sc-grid {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
     gap: 25px;
   }
 
   .sc-box {
-    height: 400px; 
+    height: 400px;
     padding: 30px;
+    /* Auf Mobilgeräten auf Flexbox umstellen für einfache, robuste Ausrichtung */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }
 
   .sc-content {
+    /* Absolute Positionierung aufheben */
     position: relative;
     top: auto;
     left: auto;
@@ -194,12 +196,12 @@
 
 @media (max-width: 480px) {
   .sc-container-wrapper {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 0;
   }
   .sc-container {
     padding: 0 15px;
   }
+
   .sc-box {
     height: 350px;
   }
