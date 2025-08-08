@@ -13,21 +13,17 @@
   "sections": {
     "header": {
       "type": "header",
+      "disabled": true,
       "settings": {
-        "logo_position": "middle-left",
-        "mobile_logo_position": "center",
+        "logo_width": 140,
         "menu": "main-menu",
-        "menu_type_desktop": "dropdown",
-        "sticky_header_type": "none",
-        "show_line_separator": true,
-        "color_scheme": "scheme-1",
-        "menu_color_scheme": "scheme-1",
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "enable_customer_avatar": true,
-        "margin_bottom": 0,
-        "padding_top": 20,
-        "padding_bottom": 20
+        "menu_font": "sans-serif",
+        "menu_font_bold": false,
+        "active_color": "#39b54a",
+        "button_text": "Kontakt",
+        "button_link": "",
+        "button_text_color": "#ffffff",
+        "button_bg_color": "#39b54a"
       }
     }
   },

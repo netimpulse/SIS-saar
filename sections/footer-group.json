@@ -11,18 +11,102 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "sis_footer_VVMxFM": {
+      "type": "sis-footer",
+      "blocks": {
+        "gebaeude_legal_7qmJwL": {
+          "type": "gebaeude_legal",
+          "settings": {
+            "text": "Impressum",
+            "link": ""
+          }
+        },
+        "gebaeude_legal_fjUhGz": {
+          "type": "gebaeude_legal",
+          "settings": {
+            "text": "Datenschutz",
+            "link": ""
+          }
+        },
+        "gebaeude_legal_yL74UX": {
+          "type": "gebaeude_legal",
+          "settings": {
+            "text": "AGBs",
+            "link": ""
+          }
+        },
+        "industrie_legal_t3RwWk": {
+          "type": "industrie_legal",
+          "settings": {
+            "text": "Impressum",
+            "link": ""
+          }
+        },
+        "industrie_legal_PrM44d": {
+          "type": "industrie_legal",
+          "settings": {
+            "text": "Datenschutz",
+            "link": ""
+          }
+        },
+        "industrie_legal_cgpRDK": {
+          "type": "industrie_legal",
+          "settings": {
+            "text": "AGBs",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "gebaeude_legal_7qmJwL",
+        "gebaeude_legal_fjUhGz",
+        "gebaeude_legal_yL74UX",
+        "industrie_legal_t3RwWk",
+        "industrie_legal_PrM44d",
+        "industrie_legal_cgpRDK"
+      ],
+      "name": "SIS Footer",
+      "settings": {
+        "background_color": "#111827",
+        "section_padding": 60,
+        "separator_color": "#374151",
+        "title_color": "#ffffff",
+        "title_font_size": 24,
+        "subtitle_color": "#d1d5db",
+        "subtitle_font_size": 18,
+        "text_color": "#9ca3af",
+        "text_font_size": 14,
+        "link_color": "#60a5fa",
+        "gebaeude_title": "SIS Saar Gebäude Service",
+        "gebaeude_address": "Musterstraße 1, 12345 Musterstadt",
+        "gebaeude_phone": "0123 / 456 789",
+        "gebaeude_email": "gebaeude@sis-saar.de",
+        "industrie_title": "SIS Saar Industrie Service",
+        "industrie_address": "Beispielweg 2, 54321 Beispielhausen",
+        "industrie_phone": "0987 / 654 321",
+        "industrie_email": "industrie@sis-saar.de",
+        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
+      }
+    },
     "footer": {
       "type": "footer",
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-1",
-        "newsletter_enable": false,
-        "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": true,
-        "show_social": true,
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "payment_enable": true,
-        "show_policy": true,
+        "left_newsletter_enable": true,
+        "left_newsletter_heading": "Abonnieren Sie unsere E-Mails",
+        "left_show_social": true,
+        "left_enable_country_selector": false,
+        "left_enable_language_selector": false,
+        "left_payment_enable": true,
+        "left_show_policy": false,
+        "right_newsletter_enable": true,
+        "right_newsletter_heading": "Abonnieren Sie unsere E-Mails",
+        "right_show_social": true,
+        "right_enable_country_selector": false,
+        "right_enable_language_selector": false,
+        "right_payment_enable": true,
+        "right_show_policy": false,
         "margin_top": 0,
         "padding_top": 36,
         "padding_bottom": 36
@@ -30,6 +114,7 @@
     }
   },
   "order": [
+    "sis_footer_VVMxFM",
     "footer"
   ]
 }
