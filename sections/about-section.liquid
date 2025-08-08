@@ -1,0 +1,361 @@
+<section class="sis-about" style="background-color: {{ section.settings.background_color }}; padding: {{ section.settings.section_padding }}px 0;">
+  <div class="sis-about__container">
+    <div class="sis-about__grid">
+      <!-- Text Content -->
+      <div class="sis-about__content">
+        {% if section.settings.title %}
+          <h2 class="sis-about__title" 
+              style="color: {{ section.settings.title_color }}; 
+                     font-size: {{ section.settings.title_font_size }}px;
+                     margin-bottom: {{ section.settings.title_margin }}px;">
+            {{ section.settings.title }}
+          </h2>
+        {% endif %}
+        
+        {% if section.settings.description %}
+          <p class="sis-about__description" 
+             style="color: {{ section.settings.text_color }}; 
+                    font-size: {{ section.settings.text_font_size }}px;
+                    margin-bottom: {{ section.settings.text_margin }}px;">
+            {{ section.settings.description }}
+          </p>
+        {% endif %}
+        
+        {% if section.settings.additional_text %}
+          <p class="sis-about__text" 
+             style="color: {{ section.settings.text_color }}; 
+                    font-size: {{ section.settings.text_font_size }}px;">
+            {{ section.settings.additional_text }}
+          </p>
+        {% endif %}
+        
+        <!-- Features Grid -->
+        <div class="sis-about__features" 
+             style="grid-template-columns: repeat({{ section.settings.features_per_row }}, 1fr); gap: {{ section.settings.features_gap }}px;">
+          {% for block in section.blocks %}
+            {% if block.type == 'feature' %}
+              <div class="sis-about__feature" 
+                   style="background-color: {{ block.settings.feature_background }}; 
+                          border-radius: {{ section.settings.feature_border_radius }}px;
+                          padding: {{ section.settings.feature_padding }}px;">
+                
+                {% if block.settings.icon_type == 'svg' and block.settings.icon_svg %}
+                  <div class="sis-about__feature-icon" 
+                       style="color: {{ block.settings.icon_color }}; font-size: {{ block.settings.icon_size }}px;">
+                    {{ block.settings.icon_svg }}
+                  </div>
+                {% elsif block.settings.icon_type == 'image' and block.settings.icon_image %}
+                  <div class="sis-about__feature-icon">
+                    <img src="{{ block.settings.icon_image | img_url: '60x60' }}" 
+                         alt="{{ block.settings.feature_title }}"
+                         style="width: {{ block.settings.icon_size }}px; height: {{ block.settings.icon_size }}px;">
+                  </div>
+                {% endif %}
+                
+                {% if block.settings.feature_title %}
+                  <h4 class="sis-about__feature-title" 
+                      style="color: {{ block.settings.title_color }}; 
+                             font-size: {{ block.settings.title_font_size }}px;">
+                    {{ block.settings.feature_title }}
+                  </h4>
+                {% endif %}
+                
+                {% if block.settings.feature_description %}
+                  <p class="sis-about__feature-description" 
+                     style="color: {{ block.settings.description_color }}; 
+                            font-size: {{ block.settings.description_font_size }}px;">
+                    {{ block.settings.feature_description }}
+                  </p>
+                {% endif %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      
+      <!-- Image Content -->
+      {% if section.settings.image %}
+        <div class="sis-about__image-wrapper">
+          <div class="sis-about__image" 
+               style="border-radius: {{ section.settings.image_border_radius }}px;">
+            <img src="{{ section.settings.image | img_url: '600x400' }}" 
+                 alt="{{ section.settings.image_alt | default: section.settings.title }}"
+                 style="border-radius: {{ section.settings.image_border_radius }}px;">
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "About Section",
+  "tag": "section",
+  "class": "sis-about-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Einstellungen"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Hintergrundfarbe",
+      "default": "#f8fafc"
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "label": "Section Abstand (oben/unten)",
+      "min": 40,
+      "max": 200,
+      "step": 10,
+      "default": 80
+    },
+    {
+      "type": "header",
+      "content": "Inhalt"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titel",
+      "default": "Über uns"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Titel Farbe",
+      "default": "#1e40af"
+    },
+    {
+      "type": "range",
+      "id": "title_font_size",
+      "label": "Titel Schriftgröße",
+      "min": 24,
+      "max": 48,
+      "step": 2,
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "title_margin",
+      "label": "Titel Abstand unten",
+      "min": 16,
+      "max": 48,
+      "step": 4,
+      "default": 24
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Haupt Beschreibung"
+    },
+    {
+      "type": "textarea",
+      "id": "additional_text",
+      "label": "Zusätzlicher Text"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Farbe",
+      "default": "#6b7280"
+    },
+    {
+      "type": "range",
+      "id": "text_font_size",
+      "label": "Text Schriftgröße",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "text_margin",
+      "label": "Text Abstand unten",
+      "min": 16,
+      "max": 48,
+      "step": 4,
+      "default": 24
+    },
+    {
+      "type": "header",
+      "content": "Bild Einstellungen"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Hauptbild"
+    },
+    {
+      "type": "text",
+      "id": "image_alt",
+      "label": "Bild Alt Text"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "label": "Bild Rundung",
+      "min": 0,
+      "max": 24,
+      "step": 2,
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Features Layout"
+    },
+    {
+      "type": "range",
+      "id": "features_per_row",
+      "label": "Features pro Zeile",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "features_gap",
+      "label": "Abstand zwischen Features",
+      "min": 16,
+      "max": 48,
+      "step": 4,
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "feature_border_radius",
+      "label": "Feature Rundung",
+      "min": 0,
+      "max": 16,
+      "step": 2,
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "feature_padding",
+      "label": "Feature Innenabstand",
+      "min": 16,
+      "max": 32,
+      "step": 4,
+      "default": 24
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "text",
+          "id": "feature_title",
+          "label": "Feature Titel"
+        },
+        {
+          "type": "textarea",
+          "id": "feature_description",
+          "label": "Feature Beschreibung"
+        },
+        {
+          "type": "color",
+          "id": "feature_background",
+          "label": "Feature Hintergrund",
+          "default": "#ffffff"
+        },
+        {
+          "type": "select",
+          "id": "icon_type",
+          "label": "Icon Typ",
+          "options": [
+            {"value": "svg", "label": "SVG Code"},
+            {"value": "image", "label": "Bild"}
+          ],
+          "default": "svg"
+        },
+        {
+          "type": "html",
+          "id": "icon_svg",
+          "label": "SVG Icon Code"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Icon Bild"
+        },
+        {
+          "type": "color",
+          "id": "icon_color",
+          "label": "Icon Farbe",
+          "default": "#10b981"
+        },
+        {
+          "type": "range",
+          "id": "icon_size",
+          "label": "Icon Größe",
+          "min": 24,
+          "max": 64,
+          "step": 4,
+          "default": 32
+        },
+        {
+          "type": "color",
+          "id": "title_color",
+          "label": "Titel Farbe",
+          "default": "#111827"
+        },
+        {
+          "type": "range",
+          "id": "title_font_size",
+          "label": "Titel Schriftgröße",
+          "min": 14,
+          "max": 24,
+          "step": 1,
+          "default": 18
+        },
+        {
+          "type": "color",
+          "id": "description_color",
+          "label": "Beschreibung Farbe",
+          "default": "#6b7280"
+        },
+        {
+          "type": "range",
+          "id": "description_font_size",
+          "label": "Beschreibung Schriftgröße",
+          "min": 12,
+          "max": 18,
+          "step": 1,
+          "default": 14
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Section",
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "feature_title": "15+ Jahre Erfahrung",
+            "feature_description": "Langjährige Expertise in der Branche",
+            "icon_svg": "<svg width='32' height='32' viewBox='0 0 24 24' fill='currentColor'><path d='M17 12h-5v5h5v-5zM16 6V4l-2-2H5c-1.11 0-2 .89-2 2v14c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2V8l-3-2zm-5 6h5v5h-5v-5z'/></svg>"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "feature_title": "Zertifizierte Qualität",
+            "feature_description": "ISO-zertifizierte Prozesse und Standards",
+            "icon_svg": "<svg width='32' height='32' viewBox='0 0 24 24' fill='currentColor'><path d='M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z'/></svg>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
