@@ -112,10 +112,139 @@
         "tile_width": 180,
         "tile_height": 160
       }
+    },
+    "amenities_hotspots_WPyByP": {
+      "type": "amenities-hotspots",
+      "blocks": {
+        "hotspot_9caqpn": {
+          "type": "hotspot",
+          "settings": {
+            "title": "Smart Home Features",
+            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
+            "pos_x": 12,
+            "pos_y": 28,
+            "dot_color": "#3AC47D",
+            "panel_bg": "#4CAF78",
+            "panel_text": "#ffffff",
+            "panel_position": "top-left",
+            "open_by_default": false
+          }
+        },
+        "hotspot_Bmmjqa": {
+          "type": "hotspot",
+          "settings": {
+            "title": "Smart Home Features",
+            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
+            "pos_x": 14,
+            "pos_y": 48,
+            "dot_color": "#3AC47D",
+            "panel_bg": "#4CAF78",
+            "panel_text": "#ffffff",
+            "panel_position": "top-left",
+            "open_by_default": false
+          }
+        },
+        "hotspot_PHU33q": {
+          "type": "hotspot",
+          "settings": {
+            "title": "Smart Home Features",
+            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
+            "pos_x": 35,
+            "pos_y": 28,
+            "dot_color": "#3AC47D",
+            "panel_bg": "#4CAF78",
+            "panel_text": "#ffffff",
+            "panel_position": "top-left",
+            "open_by_default": false
+          }
+        },
+        "hotspot_miTtqQ": {
+          "type": "hotspot",
+          "settings": {
+            "title": "Smart Home Features",
+            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
+            "pos_x": 35,
+            "pos_y": 28,
+            "dot_color": "#3AC47D",
+            "panel_bg": "#4CAF78",
+            "panel_text": "#ffffff",
+            "panel_position": "top-left",
+            "open_by_default": false
+          }
+        },
+        "hotspot_pbMgpE": {
+          "type": "hotspot",
+          "settings": {
+            "title": "Smart Home Features",
+            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
+            "pos_x": 35,
+            "pos_y": 28,
+            "dot_color": "#3AC47D",
+            "panel_bg": "#4CAF78",
+            "panel_text": "#ffffff",
+            "panel_position": "top-left",
+            "open_by_default": false
+          }
+        },
+        "hotspot_DGzM4X": {
+          "type": "hotspot",
+          "settings": {
+            "title": "Smart Home Features",
+            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
+            "pos_x": 35,
+            "pos_y": 28,
+            "dot_color": "#3AC47D",
+            "panel_bg": "#4CAF78",
+            "panel_text": "#ffffff",
+            "panel_position": "top-left",
+            "open_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "hotspot_9caqpn",
+        "hotspot_Bmmjqa",
+        "hotspot_PHU33q",
+        "hotspot_miTtqQ",
+        "hotspot_pbMgpE",
+        "hotspot_DGzM4X"
+      ],
+      "name": "Amenities Hotspots",
+      "settings": {
+        "image": "shopify://shop_images/shutterstock_370492946.jpg",
+        "content_side": "left",
+        "kicker": "Special Amenities!",
+        "heading": "Special Amenities!",
+        "body": "<p>Enter description text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+        "heading_font": "poppins_n4",
+        "heading_size": 44,
+        "heading_weight": "700",
+        "heading_italic": false,
+        "heading_color": "#111111",
+        "body_font": "poppins_n4",
+        "body_size": 16,
+        "body_weight": "400",
+        "body_italic": false,
+        "body_color": "#444444",
+        "btn_label": "Call now",
+        "btn_link": "",
+        "button_bg": "#4CAF78",
+        "button_color": "#ffffff",
+        "btn_newtab": false,
+        "section_bg": "#FFFFFF",
+        "content_gap": 40,
+        "pad_y": 40,
+        "pad_x": 24,
+        "dot_size": 18,
+        "pulse_size": 12,
+        "close_others": true,
+        "panel_maxw": 360
+      }
     }
   },
   "order": [
     "dual_service_hero_pyHdH3",
-    "custom_icon_carousel_6KXbGD"
+    "custom_icon_carousel_6KXbGD",
+    "amenities_hotspots_WPyByP"
   ]
 }
