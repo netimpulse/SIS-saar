@@ -1,10 +1,9 @@
 {{ 'custom-header.css' | asset_url | stylesheet_tag }}
-{{ 'contact-button.css' | asset_url | stylesheet_tag }}
 
 {% comment %}
   Diese <style>-Sektion ist notwendig, um die dynamischen Werte 
-  aus den Theme-Einstellungen (z.B. Farben, Positionen, Schriftarten) 
-  an die externe CSS-Datei zu übergeben.
+  aus den Theme-Einstellungen (z.B. Farben, Positionen) an die 
+  externe CSS-Datei zu übergeben.
 {% endcomment %}
 <style>
   .custom-header-section-{{ section.id }} {
@@ -12,17 +11,12 @@
     --padding-vertical: {{ section.settings.padding_vertical }}px;
     --padding-horizontal: {{ section.settings.padding_horizontal }}px;
     
-    --logo-pos-x: {{ section.settings.logo_position_x }}%;
-    --logo-pos-y: {{ section.settings.logo_position_y }}%;
+    --logo-pos-x: {{ section.settings.logo_position_x }}px;
+    --logo-pos-y: {{ section.settings.logo_position_y }}px;
 
-    --menu-pos-x: {{ section.settings.menu_position_x }}%;
-    --menu-pos-y: {{ section.settings.menu_position_y }}%;
+    --menu-pos-x: {{ section.settings.menu_position_x }}px;
+    --menu-pos-y: {{ section.settings.menu_position_y }}px;
 
-    /* Neue Variablen für die Schriftart */
-    --nav-font-family: {{ section.settings.nav_font.family }}, {{ section.settings.nav_font.fallback_families }};
-    --nav-font-style: {{ section.settings.nav_font.style }};
-    --nav-font-weight: {% if section.settings.nav_font_bold %}bold{% else %}{{ section.settings.nav_font.weight }}{% endif %};
-    
     --nav-text-color: {{ section.settings.nav_text_color }};
     --nav-hover-color: {{ section.settings.nav_hover_color }};
     --nav-font-size: {{ section.settings.nav_font_size }}px;
@@ -63,7 +57,9 @@
       </nav>
 
       {%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
-        {% render 'contact-button', text: section.settings.button_text, url: section.settings.button_link %}
+        <a href="{{ section.settings.button_link }}" class="custom-header__contact-btn">
+          {{ section.settings.button_text }}
+        </a>
       {%- endif -%}
     </div>
 
@@ -142,22 +138,22 @@
     {
       "type": "range",
       "id": "logo_position_x",
-      "label": "Logo Position X (%)",
-      "min": -50,
-      "max": 50,
-      "step": 1,
+      "label": "Logo Position X (px)",
+      "min": -200,
+      "max": 200,
+      "step": 5,
       "default": 0,
-      "unit": "%"
+      "unit": "px"
     },
     {
       "type": "range",
       "id": "logo_position_y",
-      "label": "Logo Position Y (%)",
-      "min": -50,
-      "max": 50,
-      "step": 1,
+      "label": "Logo Position Y (px)",
+      "min": -100,
+      "max": 100,
+      "step": 5,
       "default": 0,
-      "unit": "%"
+      "unit": "px"
     },
     {
       "type": "header",
@@ -168,18 +164,6 @@
       "id": "menu",
       "label": "Menü auswählen",
       "default": "main-menu"
-    },
-    {
-      "type": "font_picker",
-      "id": "nav_font",
-      "label": "Navigation Schriftart",
-      "default": "sans-serif"
-    },
-    {
-      "type": "checkbox",
-      "id": "nav_font_bold",
-      "label": "Navigation fettgedruckt",
-      "default": false
     },
     {
       "type": "color",
@@ -206,22 +190,22 @@
     {
       "type": "range",
       "id": "menu_position_x",
-      "label": "Menü Position X (%)",
-      "min": -50,
-      "max": 50,
-      "step": 1,
+      "label": "Menü Position X (px)",
+      "min": -200,
+      "max": 200,
+      "step": 5,
       "default": 0,
-      "unit": "%"
+      "unit": "px"
     },
     {
       "type": "range",
       "id": "menu_position_y",
-      "label": "Menü Position Y (%)",
-      "min": -50,
-      "max": 50,
-      "step": 1,
+      "label": "Menü Position Y (px)",
+      "min": -100,
+      "max": 100,
+      "step": 5,
       "default": 0,
-      "unit": "%"
+      "unit": "px"
     },
     {
       "type": "header",
