@@ -1,3 +1,7 @@
+/* =========================================================
+   Amenities Hotspots – COMPLETE CSS
+   ========================================================= */
+
 /* Base layout */
 .amenities-hotspots {
   background: var(--ah-bg);
@@ -65,54 +69,82 @@
   inset: 0;
 }
 
-/* Hotspot dot */
+/* =========================================================
+   Modern Hotspot Dot
+   ========================================================= */
 .amenities-hotspots .ah-hotspot {
   position: absolute;
   transform: translate(-50%, -50%);
   z-index: 2;
 }
+
+/* Minimaler, moderner Ring mit Glow */
 .amenities-hotspots .ah-dot {
   --dot: var(--ah-dot-size, 18px);
   --pulse: var(--ah-pulse-size, 12px);
   width: var(--dot);
   height: var(--dot);
   border-radius: 999px;
-  background: var(--ah-dot-color, #3AC47D);
-  border: 2px solid #0d0d0d;
+  color: var(--ah-dot-color, #3AC47D);      /* steuert Ring/Kern/Glow */
+  background: transparent;
+  border: 2px solid currentColor;
+  position: relative;
   display: grid;
   place-items: center;
-  position: relative;
   cursor: pointer;
-  box-shadow: 0 0 0 2px rgba(0,0,0,.15);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,.22);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
-/* inner ring */
+/* Kleiner farbiger Kern */
 .amenities-hotspots .ah-dot::before {
   content: "";
-  width: calc(var(--dot) * 0.45);
-  height: calc(var(--dot) * 0.45);
-  border-radius: 999px;
-  border: 2px solid #111;
-  background: #fff;
-  box-shadow: inset 0 0 0 2px rgba(0,0,0,.15);
+  position: absolute;
+  inset: 28%;
+  border-radius: inherit;
+  background: currentColor;
+  transition: transform .18s ease, opacity .18s ease;
 }
 
-/* pulse animation */
-@keyframes ah-pulse {
-  0% { transform: scale(1); opacity: .65; }
-  70% { transform: scale(1.8); opacity: 0; }
-  100% { transform: scale(1.8); opacity: 0; }
+/* Dezenter Ripple/Pulse */
+@keyframes ah-pulse-modern {
+  0%   { transform: scale(.7); opacity:.55; }
+  70%  { transform: scale(1.6); opacity: 0; }
+  100% { transform: scale(1.6); opacity: 0; }
 }
 .amenities-hotspots .ah-dot::after {
   content: "";
   position: absolute;
   inset: calc(-1 * var(--pulse));
-  border-radius: 999px;
-  border: 2px solid var(--ah-dot-color, #3AC47D);
-  animation: ah-pulse 2s ease-out infinite;
+  border-radius: inherit;
+  border: 2px solid currentColor;
+  animation: ah-pulse-modern 1.8s ease-out infinite;
+  opacity: .45;
 }
 
-/* Panel */
+/* Hover/Active – etwas größer & Glow-Ring */
+.amenities-hotspots .ah-dot:hover { transform: scale(1.04); }
+.amenities-hotspots .ah-hotspot.is-active .ah-dot {
+  transform: scale(1.06);
+  box-shadow:
+    0 10px 26px rgba(0,0,0,.28),
+    0 0 0 3px #fff,
+    0 0 0 7px currentColor;
+}
+
+/* Tastatur-Fokus – gut sichtbar */
+.amenities-hotspots .ah-dot:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 3px #fff,
+    0 0 0 7px currentColor;
+}
+
+/* =========================================================
+   Panel
+   ========================================================= */
 .amenities-hotspots .ah-panel {
   position: absolute;
   min-width: 220px;
@@ -134,12 +166,13 @@
 }
 .amenities-hotspots .ah-panel .ah-panel-text { opacity: .95; }
 
+/* Panel-Ausrichtung relativ zum Punkt */
 .amenities-hotspots .ah-hotspot[data-panel-pos="top-left"] .ah-panel { transform: translate(calc(-100% - 16px), calc(-100% - 16px)); }
 .amenities-hotspots .ah-hotspot[data-panel-pos="top-right"] .ah-panel { transform: translate(16px, calc(-100% - 16px)); left: 0; }
 .amenities-hotspots .ah-hotspot[data-panel-pos="bottom-left"] .ah-panel { transform: translate(calc(-100% - 16px), 16px); top: 0; }
 .amenities-hotspots .ah-hotspot[data-panel-pos="bottom-right"] .ah-panel { transform: translate(16px, 16px); top: 0; left: 0; }
 
-/* Show panel when active */
+/* Panel zeigen, wenn aktiv */
 .amenities-hotspots .ah-hotspot.is-active .ah-panel {
   opacity: 1;
   visibility: visible;
