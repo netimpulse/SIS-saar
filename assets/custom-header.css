@@ -1,12 +1,12 @@
 .custom-header-section {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background-color: var(--header-bg-color);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
- }
+   position: sticky;
+   top: 0;
+   z-index: 50;
+   background-color: var(--header-bg-color);
+   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
 
- .custom-header__container {
+.custom-header__container {
   max-width: 1200px;
   margin: 0 auto;
   padding: var(--padding-vertical) var(--padding-horizontal);
@@ -14,40 +14,40 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
- }
+}
 
- .custom-header__logo {
+.custom-header__logo {
   display: flex;
   align-items: center;
   transform: translate(var(--logo-pos-x), var(--logo-pos-y));
   transition: transform 0.3s ease;
- }
+}
 
- .custom-header__logo-img {
+.custom-header__logo-img {
   height: 40px;
   width: auto;
- }
+}
 
- .custom-header__logo-text {
+.custom-header__logo-text {
   font-weight: 700;
   text-decoration: none;
- }
+}
 
- .custom-header__nav-wrapper {
+.custom-header__nav-wrapper {
   display: flex;
   align-items: center;
   gap: 1.5rem;
   transform: translate(var(--menu-pos-x), var(--menu-pos-y));
   transition: transform 0.3s ease;
- }
+}
 
- .custom-header__nav {
+.custom-header__nav {
   display: flex;
   gap: 2rem;
   align-items: center;
- }
+}
 
- .custom-header__nav-link {
+.custom-header__nav-link {
   text-decoration: none;
   color: var(--nav-text-color);
   font-size: var(--nav-font-size);
@@ -59,13 +59,13 @@
   font-family: var(--nav-font-family);
   font-style: var(--nav-font-style);
   font-weight: var(--nav-font-weight);
- }
+}
 
- .custom-header__nav-link:hover {
+.custom-header__nav-link:hover {
   color: var(--nav-hover-color);
- }
+}
 
- .custom-header__nav-link::after {
+.custom-header__nav-link::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -74,38 +74,43 @@
   height: 2px;
   background-color: var(--nav-hover-color);
   transition: width 0.3s ease;
- }
+}
 
- .custom-header__nav-link:hover::after,
- .custom-header__nav-link.active::after {
+.custom-header__nav-link:hover::after,
+.custom-header__nav-link.active::after {
   width: 100%;
- }
+}
 
- .custom-header__nav-link.active {
+.custom-header__nav-link.active {
   color: var(--nav-hover-color);
- }
+}
 
- /* --- HIER IST DIE ÄNDERUNG --- */
- .custom-header__contact-btn {
+/* --- Kontaktbutton exakt wie im Screenshot --- */
+.custom-header__contact-btn {
   display: inline-block;
-  padding: 10px 24px; /* Innenabstand für die Button-Größe */
-  border-radius: 8px; /* Abgerundete Ecken wie im Screenshot */
+  padding: 10px 24px;              /* Größe wie im Screenshot */
+  border-radius: 12px;             /* stark abgerundet */
   text-decoration: none;
-  font-weight: 500;
-  color: var(--btn-text-color, #ffffff); /* Fallback auf Weiß, falls nicht gesetzt */
-  background-color: var(--btn-bg-color, #4ade80); /* Fallback auf Grün, falls nicht gesetzt */
-  border: none; /* Kein Rand */
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 700;                /* fetter Text */
+  line-height: 1;
+  color: #ffffff;                  /* weiße Schrift */
+  background: linear-gradient(180deg, #4ade80 0%, #22c55e 100%); /* grüner Verlauf */
+  border: none;
+  box-shadow: 0 1px 0 rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.12);
+  transition: filter .2s ease, transform .1s ease;
 }
 
 .custom-header__contact-btn:hover {
-  color: var(--btn-hover-text-color, #ffffff);
-  background-color: var(--btn-hover-bg-color, #22c55e); /* Etwas dunkleres Grün beim Hover */
-  transform: translateY(-2px); /* Leichter Schwebe-Effekt */
-  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.12);
+  filter: brightness(0.95);        /* leichte Abdunklung beim Hover */
+  transform: translateY(-1px);
 }
 
- .custom-header__mobile-toggle {
+.custom-header__contact-btn:focus {
+  outline: 2px solid rgba(34, 197, 94, .35);
+  outline-offset: 2px;
+}
+
+.custom-header__mobile-toggle {
   display: none;
   flex-direction: column;
   gap: 4px;
@@ -113,26 +118,26 @@
   border: none;
   cursor: pointer;
   padding: 8px;
- }
+}
 
- .custom-header__mobile-toggle span {
+.custom-header__mobile-toggle span {
   width: 24px;
   height: 2px;
   background-color: var(--nav-text-color);
   transition: all 0.3s ease;
- }
+}
 
- /* Responsive Design für Mobilgeräte */
- @media (max-width: 990px) {
+/* Responsive Design für Mobilgeräte */
+@media (max-width: 990px) {
   .custom-header__nav-wrapper {
-   display: none;
+    display: none;
   }
  
   .custom-header__mobile-toggle {
-   display: flex;
+    display: flex;
   }
  
   .custom-header__logo, .custom-header__nav-wrapper {
-   transform: none !important;
+    transform: none !important;
   }
- }
+}
