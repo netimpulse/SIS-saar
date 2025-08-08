@@ -1,4 +1,5 @@
 {{ 'custom-header.css' | asset_url | stylesheet_tag }}
+{{ 'contact-button.css' | asset_url | stylesheet_tag }}
 
 {% comment %}
   Diese <style>-Sektion ist notwendig, um die dynamischen Werte 
@@ -62,9 +63,7 @@
       </nav>
 
       {%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
-        <a href="{{ section.settings.button_link }}" class="custom-header__contact-btn">
-          {{ section.settings.button_text }}
-        </a>
+        {% render 'contact-button', text: section.settings.button_text, url: section.settings.button_link %}
       {%- endif -%}
     </div>
 
