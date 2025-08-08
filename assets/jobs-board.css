@@ -1,19 +1,24 @@
 /* jobs-board.css */
+
+/* Section wrapper */
 .jobs-section {
   background: var(--jobs-section-bg, #f6f7fb);
   padding: var(--jobs-pad-y, 48px) 0;
 }
 
+/* Max width container */
 .jobs-container {
   width: min(1200px, 100% - 2rem);
   margin: 0 auto;
 }
 
+/* Headline area */
 .jobs-header {
   text-align: center;
   margin-bottom: 28px;
 }
 
+/* Grid */
 .jobs-grid {
   display: grid;
   gap: var(--jobs-gap, 24px);
@@ -26,15 +31,42 @@
   }
 }
 
+/* === Cards === */
 .job-card {
   position: relative;
   background: var(--card-bg, #ffffff);
   border-radius: var(--card-radius, 16px);
   padding: 22px;
-  box-shadow: 0 1px 3px rgba(0,0,0,.06);
-  border: 1px solid rgba(0,0,0,.04);
+  border: 1px solid rgba(0,0,0,.06);
+
+  /* sanfter Grundschatten + animierte Übergänge */
+  box-shadow:
+    0 1px 2px rgba(16,24,40,.04),
+    0 1px 3px rgba(16,24,40,.06);
+  transition:
+    box-shadow .25s ease,
+    transform .25s ease,
+    border-color .25s ease;
 }
 
+/* Hover-/Focus-Effekt: leichtes Anheben + stärkerer Schatten */
+.job-card:hover,
+.job-card:focus-within {
+  transform: translateY(-4px);
+  border-color: rgba(0,0,0,.08);
+  box-shadow:
+    0 12px 24px rgba(16,24,40,.10),
+    0 6px 12px rgba(16,24,40,.06);
+}
+
+/* Reduzierte Bewegung respektieren */
+@media (prefers-reduced-motion: reduce) {
+  .job-card { transition: box-shadow .25s ease, border-color .25s ease; }
+  .job-card:hover,
+  .job-card:focus-within { transform: none; }
+}
+
+/* Badge (Pill oben rechts) */
 .job-badge {
   position: absolute;
   top: 16px;
@@ -45,10 +77,12 @@
   white-space: nowrap;
 }
 
+/* Typografie-Abstände in der Karte */
 .job-title { margin: 0 0 10px; }
 .job-desc  { margin: 0 0 14px; }
 .job-meta  { margin: 0 0 18px; opacity: .9; }
 
+/* Button */
 .job-button {
   display: inline-block;
   padding: 10px 16px;
@@ -57,9 +91,9 @@
   transition: transform .06s ease;
   border: 1px solid transparent;
 }
-
 .job-button:hover { transform: translateY(-1px); }
 
+/* Screenreader only helper */
 .jobs--sr-only {
   position: absolute !important;
   height: 1px; width: 1px;
