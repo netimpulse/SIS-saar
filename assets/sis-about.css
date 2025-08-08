@@ -1,0 +1,78 @@
+.sis-about { position: relative; }
+
+.sis-about__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Grid + side switch */
+.sis-about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.sis-about__grid--image-right .sis-about__content { order: 1; }
+.sis-about__grid--image-right .sis-about__image-wrapper { order: 2; }
+.sis-about__grid--image-left .sis-about__content { order: 2; }
+.sis-about__grid--image-left .sis-about__image-wrapper { order: 1; }
+
+/* Texts */
+.sis-about__content { animation: slideInLeft 0.6s ease-out; }
+.sis-about__overline { letter-spacing: .06em; text-transform: uppercase; font-weight: 600; }
+.sis-about__title { font-weight: 800; line-height: 1.1; margin: 0; }
+.sis-about__description, .sis-about__text { line-height: 1.7; margin: 0; color: inherit; }
+
+/* Feature list (two-column bullets like screenshot) */
+.sis-about__features {
+  display: grid;
+  margin-top: 1.25rem;
+}
+.sis-about__feature {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  column-gap: 12px;
+  row-gap: 4px;
+  padding: 0; /* no cards */
+}
+.sis-about__feature-icon-wrap {
+  display: flex; align-items: center; justify-content: center;
+  flex: 0 0 auto;
+}
+.sis-about__feature-icon, .sis-about__feature-icon-img {
+  display: block;
+}
+.sis-about__feature-title {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.sis-about__feature-description {
+  margin: 0;
+  grid-column: 2 / -1;
+  line-height: 1.5;
+}
+
+/* Image */
+.sis-about__image-wrapper { animation: slideInRight 0.6s ease-out; }
+.sis-about__image {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 40px -10px rgba(0,0,0,.2);
+}
+.sis-about__image img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Animations */
+@keyframes slideInLeft { from { opacity:0; transform:translateX(-24px);} to {opacity:1; transform:none;} }
+@keyframes slideInRight { from { opacity:0; transform:translateX(24px);} to {opacity:1; transform:none;} }
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .sis-about__grid { grid-template-columns: 1fr; gap: 2rem; }
+}
+@media (max-width: 768px) {
+  .sis-about__features { grid-template-columns: 1fr !important; gap: 14px !important; }
+  .sis-about__container { padding: 0 1rem; }
+}
