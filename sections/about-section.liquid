@@ -1,165 +1,258 @@
-<section class="sis-about" style="background-color: {{ section.settings.background_color }}; padding: {{ section.settings.section_padding }}px 0;">
+{% comment %}
+  **
+  * Angepasster "Über Uns" Abschnitt (Version 3 - Korrigiert)
+  *
+  * - Lädt eine externe CSS-Datei für statische Stile.
+  * - Definiert CSS-Variablen für dynamische Einstellungen aus dem Editor.
+  * - Schema-Fehler für 'features_per_row' behoben (range -> select).
+  *
+  {% endcomment %}
+
+{{ 'section-ueber-uns-layout.css' | asset_url | stylesheet_tag }}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --background-color: {{ section.settings.background_color }};
+    --section-padding-top: {{ section.settings.section_padding_top }}px;
+    --section-padding-bottom: {{ section.settings.section_padding_bottom }}px;
+    
+    --title-color: {{ section.settings.title_color }};
+    --title-font-size: {{ section.settings.title_font_size }}px;
+
+    --text-color: {{ section.settings.text_color }};
+    --text-font-size: {{ section.settings.text_font_size }}px;
+    
+    --image-border-radius: {{ section.settings.image_border_radius }}px;
+    
+    --features-per-row: {{ section.settings.features_per_row }};
+    --icon-size: {{ section.settings.icon_size }}px;
+    --icon-color: {{ section.settings.icon_color }};
+    --feature-title-color: {{ section.settings.feature_title_color }};
+  }
+</style>
+
+<div class="sis-about-section">
   <div class="sis-about__container">
-    <div class="sis-about__card">
-      <div class="sis-about__grid {% if section.settings.layout == 'image_left' %}sis-about__grid--image-left{% else %}sis-about__grid--image-right{% endif %}">
-        
-        <!-- TEXT -->
-        <div class="sis-about__content" style="max-width: {{ section.settings.text_max_width }}px">
-          {% if section.settings.title %}
-            <h2 class="sis-about__title"
-                style="color: {{ section.settings.title_color }}; font-size: {{ section.settings.title_font_size }}px; margin-bottom: {{ section.settings.title_margin }}px;">
-              {{ section.settings.title }}
-            </h2>
-          {% endif %}
+    <div class="sis-about__grid {% if section.settings.layout_direction == 'image_left' %}sis-about__grid--image-left{% endif %}">
+      
+      {%- liquid
+        assign image_on_left = false
+        if section.settings.layout_direction == 'image_left'
+          assign image_on_left = true
+        endif
+      -%}
 
-          {% if section.settings.description %}
-            <p class="sis-about__description"
-               style="color: {{ section.settings.text_color }}; font-size: {{ section.settings.text_font_size }}px; margin-bottom: {{ section.settings.text_margin }}px;">
-              {{ section.settings.description }}
-            </p>
-          {% endif %}
+      {%- if image_on_left -%}
+        {%- render 'about-image', section: section -%}
+      {%- endif -%}
 
-          {% if section.settings.additional_text %}
-            <p class="sis-about__text"
-               style="color: {{ section.settings.text_color }}; font-size: {{ section.settings.text_font_size }}px; margin-bottom: {{ section.settings.text_margin_bottom }}px;">
-              {{ section.settings.additional_text }}
-            </p>
-          {% endif %}
-
-          <!-- FEATURES -->
-          <div class="sis-about__features" style="--cols: {{ section.settings.features_per_row }}; --gap: {{ section.settings.features_gap }}px;">
-            {% for block in section.blocks %}
-              {% if block.type == 'feature' %}
-                <div class="sis-about__feature" {{ block.shopify_attributes }}>
-                  <span class="sis-about__feature-icon-wrap"
-                        style="width: {{ section.settings.icon_circle_size }}px; height: {{ section.settings.icon_circle_size }}px; {% if section.settings.icon_circle %}background-color: {{ section.settings.icon_circle_bg }};{% endif %} {% if section.settings.icon_circle_border %}border: 1px solid {{ section.settings.icon_circle_border_color }};{% endif %}">
-                    {% if block.settings.icon_type == 'svg' and block.settings.icon_svg %}
-                      <span class="sis-about__feature-icon" style="color: {{ block.settings.icon_color }}; width: {{ section.settings.icon_size }}px; height: {{ section.settings.icon_size }}px;">
-                        {{ block.settings.icon_svg }}
-                      </span>
-                    {% elsif block.settings.icon_type == 'image' and block.settings.icon_image %}
-                      <img class="sis-about__feature-icon-img"
-                           src="{{ block.settings.icon_image | img_url: '80x80' }}"
-                           alt="{{ block.settings.feature_title | escape }}"
-                           style="width: {{ section.settings.icon_size }}px; height: {{ section.settings.icon_size }}px;">
-                    {% endif %}
-                  </span>
-
-                  <div class="sis-about__feature-text">
-                    {% if block.settings.feature_title %}
-                      <h4 class="sis-about__feature-title"
-                          style="color: {{ block.settings.title_color }}; font-size: {{ block.settings.title_font_size }}px;">
-                        {{ block.settings.feature_title }}
-                      </h4>
-                    {% endif %}
-                    {% if block.settings.feature_description %}
-                      <p class="sis-about__feature-description"
-                         style="color: {{ block.settings.description_color }}; font-size: {{ block.settings.description_font_size }}px;">
-                        {{ block.settings.feature_description }}
-                      </p>
-                    {% endif %}
-                  </div>
-                </div>
-              {% endif %}
-            {% endfor %}
-          </div>
+      <div class="sis-about__content">
+        <h2 class="sis-about__title">{{ section.settings.title }}</h2>
+        <div class="sis-about__description">
+          {{ section.settings.description }}
         </div>
-
-        <!-- IMAGE -->
-        {% if section.settings.image %}
-          <div class="sis-about__image-wrapper">
-            <div class="sis-about__image" style="border-radius: {{ section.settings.image_border_radius }}px;">
-              <img
-                src="{{ section.settings.image | img_url: '1600x' }}"
-                alt="{{ section.settings.image_alt | default: section.settings.title | escape }}"
-                style="border-radius: {{ section.settings.image_border_radius }}px;">
-            </div>
+        
+        {% if section.blocks.size > 0 %}
+          <div class="sis-about__features">
+            {% for block in section.blocks %}
+              <div class="sis-about__feature" {{ block.shopify_attributes }}>
+                <div class="sis-about__feature-icon">
+                  {{ block.settings.icon_svg }}
+                </div>
+                <div class="sis-about__feature-text">
+                  <h4 class="sis-about__feature-title">{{ block.settings.feature_title }}</h4>
+                  <p class="sis-about__feature-description">{{ block.settings.feature_description }}</p>
+                </div>
+              </div>
+            {% endfor %}
           </div>
         {% endif %}
       </div>
+
+      {%- unless image_on_left -%}
+        {%- render 'about-image', section: section -%}
+      {%- endunless -%}
+
     </div>
   </div>
-</section>
+</div>
 
 {% schema %}
-{
-  "name": "About (Screenshot Style)",
-  "tag": "section",
-  "class": "sis-about-section",
-  "settings": [
-    {
-      "type": "select",
-      "id": "layout",
-      "label": "Anordnung",
-      "options": [
-        { "value": "image_right", "label": "Bild rechts, Text links" },
-        { "value": "image_left", "label": "Bild links, Text rechts" }
-      ],
-      "default": "image_right"
-    },
-    { "type": "color", "id": "background_color", "label": "Hintergrundfarbe", "default": "#f3f6f9" },
-    { "type": "range", "id": "section_padding", "label": "Abstand (oben/unten)", "min": 40, "max": 200, "step": 10, "default": 60 },
-    { "type": "range", "id": "text_max_width", "label": "Max. Textbreite", "min": 480, "max": 900, "step": 10, "default": 760 },
-
-    { "type": "text", "id": "title", "label": "Titel", "default": "Über uns" },
-    { "type": "color", "id": "title_color", "label": "Titelfarbe", "default": "#0f172a" },
-    { "type": "range", "id": "title_font_size", "label": "Titel Schriftgröße", "min": 28, "max": 56, "step": 1, "default": 48 },
-    { "type": "range", "id": "title_margin", "label": "Abstand nach Titel", "min": 8, "max": 48, "step": 2, "default": 20 },
-
-    { "type": "textarea", "id": "description", "label": "Hauptbeschreibung" },
-    { "type": "textarea", "id": "additional_text", "label": "Zusätzlicher Text" },
-    { "type": "color", "id": "text_color", "label": "Textfarbe", "default": "#445566" },
-    { "type": "range", "id": "text_font_size", "label": "Text Schriftgröße", "min": 14, "max": 22, "step": 1, "default": 18 },
-    { "type": "range", "id": "text_margin", "label": "Abstand nach Hauptbeschreibung", "min": 8, "max": 40, "step": 2, "default": 20 },
-    { "type": "range", "id": "text_margin_bottom", "label": "Abstand nach Zusatztext", "min": 0, "max": 40, "step": 2, "default": 18 },
-
-    { "type": "image_picker", "id": "image", "label": "Hauptbild" },
-    { "type": "text", "id": "image_alt", "label": "Bild Alt Text" },
-    { "type": "range", "id": "image_border_radius", "label": "Bild-Rundung", "min": 0, "max": 24, "step": 2, "default": 12 },
-
-    { "type": "range", "id": "features_per_row", "label": "Punkte pro Zeile (Desktop)", "min": 1, "max": 3, "step": 1, "default": 2 },
-    { "type": "range", "id": "features_gap", "label": "Abstand zwischen Punkten", "min": 12, "max": 48, "step": 2, "default": 24 },
-
-    { "type": "checkbox", "id": "icon_circle", "label": "Icon in Kreis anzeigen", "default": true },
-    { "type": "color", "id": "icon_circle_bg", "label": "Kreis Hintergrund", "default": "#EAF8F0" },
-    { "type": "checkbox", "id": "icon_circle_border", "label": "Kreis-Rand anzeigen", "default": false },
-    { "type": "color", "id": "icon_circle_border_color", "label": "Kreis-Randfarbe", "default": "#d1d5db" },
-    { "type": "range", "id": "icon_circle_size", "label": "Kreisgröße", "min": 28, "max": 56, "step": 2, "default": 40 },
-    { "type": "range", "id": "icon_size", "label": "Icon-Größe", "min": 16, "max": 40, "step": 2, "default": 22 }
-  ],
-  "blocks": [
-    {
-      "type": "feature",
-      "name": "Punkt",
-      "settings": [
-        { "type": "text", "id": "feature_title", "label": "Titel", "default": "Erfahrenes Team" },
-        { "type": "textarea", "id": "feature_description", "label": "Beschreibung", "default": "Über 20 Jahre Erfahrung in der Servicebranche" },
-
-        { "type": "select", "id": "icon_type", "label": "Icon Typ", "options": [
-          { "value": "svg", "label": "SVG Code" },
-          { "value": "image", "label": "Bild" }
-        ], "default": "svg" },
-        { "type": "html", "id": "icon_svg", "label": "SVG Icon Code", "default": "<svg viewBox='0 0 24 24' width='100%' height='100%' fill='currentColor'><path d='M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z'/></svg>" },
-        { "type": "image_picker", "id": "icon_image", "label": "Icon Bild" },
-        { "type": "color", "id": "icon_color", "label": "Icon Farbe", "default": "#16a34a" },
-
-        { "type": "color", "id": "title_color", "label": "Titelfarbe", "default": "#0f172a" },
-        { "type": "range", "id": "title_font_size", "label": "Titel Größe", "min": 14, "max": 20, "step": 1, "default": 18 },
-        { "type": "color", "id": "description_color", "label": "Beschreibung Farbe", "default": "#64748b" },
-        { "type": "range", "id": "description_font_size", "label": "Beschreibung Größe", "min": 12, "max": 16, "step": 1, "default": 14 }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "About – Screenshot Style",
-      "blocks": [
-        { "type": "feature", "settings": { "feature_title": "Erfahrenes Team", "feature_description": "Über 20 Jahre Erfahrung in der Servicebranche" } },
-        { "type": "feature", "settings": { "feature_title": "Zertifizierte Qualität", "feature_description": "ISO-zertifizierte Prozesse und höchste Standards" } },
-        { "type": "feature", "settings": { "feature_title": "24/7 Verfügbarkeit", "feature_description": "Rund um die Uhr erreichbar für Notfälle" } },
-        { "type": "feature", "settings": { "feature_title": "Komplettlösungen", "feature_description": "Alles aus einer Hand für maximale Effizienz" } }
-      ]
-    }
-  ]
-}
+  {
+    "name": "Über Uns (Layout)",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Layout & Abstände"
+      },
+      {
+        "type": "select",
+        "id": "layout_direction",
+        "label": "Layout-Richtung",
+        "options": [
+          { "value": "text_left", "label": "Text links, Bild rechts" },
+          { "value": "image_left", "label": "Bild links, Text rechts" }
+        ],
+        "default": "text_left"
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Hintergrundfarbe",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top",
+        "label": "Abstand oben",
+        "min": 0, "max": 150, "step": 5, "unit": "px", "default": 80
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom",
+        "label": "Abstand unten",
+        "min": 0, "max": 150, "step": 5, "unit": "px", "default": 80
+      },
+      {
+        "type": "header",
+        "content": "Textinhalt"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Titel",
+        "default": "Über uns"
+      },
+      {
+        "type": "color",
+        "id": "title_color",
+        "label": "Titel Farbe",
+        "default": "#000000"
+      },
+      {
+        "type": "range",
+        "id": "title_font_size",
+        "label": "Titel Schriftgröße",
+        "min": 24, "max": 56, "step": 2, "unit": "px", "default": 40
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Beschreibungstext",
+        "default": "<p>Wir sind SIS Saar - ein innovatives Unternehmen mit zwei spezialisierten Geschäftsbereichen. Seit über zwei Jahrzehnten stehen wir für zuverlässige und hochwertige Serviceleistungen in der Region.</p><p>Unser Erfolgsrezept liegt in der Kombination aus langjähriger Erfahrung, modernster Technik und einem motivierten Team von Fachkräften. Jeder Mitarbeiter trägt dazu bei, dass wir unseren Kunden stets erstklassige Lösungen anbieten können.</p>"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text Farbe",
+        "default": "#6B7280"
+      },
+      {
+        "type": "range",
+        "id": "text_font_size",
+        "label": "Text Schriftgröße",
+        "min": 14, "max": 22, "step": 1, "unit": "px", "default": 18
+      },
+      {
+        "type": "header",
+        "content": "Bild"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Bild"
+      },
+      {
+        "type": "range",
+        "id": "image_border_radius",
+        "label": "Bild Eckenrundung",
+        "min": 0, "max": 40, "step": 2, "unit": "px", "default": 12
+      },
+      {
+        "type": "text",
+        "id": "image_alt",
+        "label": "Bild Alt-Text",
+        "info": "Wichtig für SEO und Barrierefreiheit."
+      },
+      {
+        "type": "header",
+        "content": "Features (Punkte mit Icons)"
+      },
+      {
+        "type": "select",
+        "id": "features_per_row",
+        "label": "Elemente pro Zeile (Desktop)",
+        "options": [
+          {
+            "value": "1",
+            "label": "1"
+          },
+          {
+            "value": "2",
+            "label": "2"
+          }
+        ],
+        "default": "2"
+      },
+      {
+        "type": "range",
+        "id": "icon_size",
+        "label": "Icon Größe",
+        "min": 24, "max": 48, "step": 2, "unit": "px", "default": 32
+      },
+      {
+        "type": "color",
+        "id": "icon_color",
+        "label": "Icon Farbe",
+        "default": "#34D399"
+      },
+      {
+        "type": "color",
+        "id": "feature_title_color",
+        "label": "Feature Titel Farbe",
+        "default": "#111827"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "feature",
+        "name": "Feature Punkt",
+        "settings": [
+          {
+            "type": "html",
+            "id": "icon_svg",
+            "label": "SVG Code für Icon",
+            "info": "Suche Icons z.B. auf heroicons.com und kopiere den SVG-Code hierher."
+          },
+          {
+            "type": "text",
+            "id": "feature_title",
+            "label": "Titel",
+            "default": "Feature Titel"
+          },
+          {
+            "type": "text",
+            "id": "feature_description",
+            "label": "Beschreibung",
+            "default": "Kurze Beschreibung des Features."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Über Uns (Layout)",
+        "blocks": [
+          {
+            "type": "feature"
+          },
+          {
+            "type": "feature"
+          }
+        ]
+      }
+    ]
+  }
 {% endschema %}
