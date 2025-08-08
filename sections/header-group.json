@@ -25,9 +25,39 @@
         "button_text_color": "#ffffff",
         "button_bg_color": "#39b54a"
       }
+    },
+    "custom_header_WXxFAX": {
+      "type": "custom-header",
+      "name": "Custom Header",
+      "settings": {
+        "background_color": "#f5f5f5",
+        "padding_vertical": 16,
+        "padding_horizontal": 24,
+        "logo": "shopify://shop_images/Logo_SIS_Saar__1_-removebg-preview.png",
+        "logo_text": "Mein Shop",
+        "logo_color": "#1e40af",
+        "logo_font_size": 24,
+        "logo_position_x": -50,
+        "logo_position_y": 0,
+        "menu": "main-menu",
+        "nav_font": "sans-serif",
+        "nav_font_bold": true,
+        "nav_text_color": "#374151",
+        "nav_hover_color": "#4ade80",
+        "nav_font_size": 16,
+        "menu_position_x": 0,
+        "menu_position_y": 0,
+        "button_text": "Kontakt",
+        "button_link": "shopify://pages/contact",
+        "button_text_color": "#ffffff",
+        "button_bg_color": "#4ade80",
+        "button_hover_text_color": "#ffffff",
+        "button_hover_bg_color": "#22c55e"
+      }
     }
   },
   "order": [
-    "header"
+    "header",
+    "custom_header_WXxFAX"
   ]
 }
