@@ -16,7 +16,7 @@
         "background_color": "#ffffff",
         "padding_vertical": 16,
         "padding_horizontal": 24,
-        "logo": "shopify://shop_images/Logo_SIS_Saar__1_-removebg-preview.png",
+        "logo": "shopify://shop_images/logo_Industrieservice_exact_v2.png",
         "logo_text": "Mein Shop",
         "logo_color": "#1e40af",
         "logo_font_size": 24,
@@ -65,7 +65,7 @@
         "text_size": 20,
         "text_color": "#ffffff",
         "btn1_text": "Mehr über unsere Services",
-        "btn1_link": "",
+        "btn1_link": "shopify://pages/industrieservice-leistungen",
         "btn1_font": "sans-serif",
         "btn1_font_size": 16,
         "btn1_padding_x": 28,
@@ -76,7 +76,7 @@
         "btn1_text_color": "#ffffff",
         "btn1_text_hover": "#ffffff",
         "btn2_text": "Kontakt aufnehmen",
-        "btn2_link": "",
+        "btn2_link": "shopify://pages/industrieservice-kontakt",
         "btn2_font": "sans-serif",
         "btn2_font_size": 16,
         "btn2_padding_x": 24,
@@ -227,12 +227,212 @@
         "cta_btn_bg_color": "#111111",
         "cta_btn_text_color": "#FFFFFF"
       }
+    },
+    "amenities_hotspots_4fU76A": {
+      "type": "amenities-hotspots",
+      "blocks": {
+        "hotspot_V3Ca3z": {
+          "type": "hotspot",
+          "settings": {
+            "title": "Smart Home Features",
+            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
+            "pos_x": 35,
+            "pos_y": 28,
+            "dot_color": "#3AC47D",
+            "panel_bg": "#4CAF78",
+            "panel_text": "#ffffff",
+            "panel_position": "top-left",
+            "open_by_default": false
+          }
+        },
+        "hotspot_DwzydK": {
+          "type": "hotspot",
+          "settings": {
+            "title": "Smart Home Features",
+            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
+            "pos_x": 35,
+            "pos_y": 28,
+            "dot_color": "#3AC47D",
+            "panel_bg": "#4CAF78",
+            "panel_text": "#ffffff",
+            "panel_position": "top-left",
+            "open_by_default": false
+          }
+        },
+        "hotspot_9x4KGX": {
+          "type": "hotspot",
+          "settings": {
+            "title": "Smart Home Features",
+            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
+            "pos_x": 35,
+            "pos_y": 28,
+            "dot_color": "#3AC47D",
+            "panel_bg": "#4CAF78",
+            "panel_text": "#ffffff",
+            "panel_position": "top-left",
+            "open_by_default": false
+          }
+        },
+        "hotspot_FcjBaQ": {
+          "type": "hotspot",
+          "settings": {
+            "title": "Smart Home Features",
+            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
+            "pos_x": 35,
+            "pos_y": 28,
+            "dot_color": "#3AC47D",
+            "panel_bg": "#4CAF78",
+            "panel_text": "#ffffff",
+            "panel_position": "top-left",
+            "open_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "hotspot_V3Ca3z",
+        "hotspot_DwzydK",
+        "hotspot_9x4KGX",
+        "hotspot_FcjBaQ"
+      ],
+      "name": "Amenities Hotspots",
+      "settings": {
+        "image": "shopify://shop_images/shutterstock_370492946.jpg",
+        "content_side": "right",
+        "kicker": "Special Amenities!",
+        "heading": "Special Amenities!",
+        "body": "<p>Enter description text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+        "heading_font": "poppins_n4",
+        "heading_size": 44,
+        "heading_weight": "700",
+        "heading_italic": false,
+        "heading_color": "#111111",
+        "body_font": "poppins_n4",
+        "body_size": 16,
+        "body_weight": "400",
+        "body_italic": false,
+        "body_color": "#444444",
+        "btn_label": "Call now",
+        "btn_link": "",
+        "button_bg": "#4CAF78",
+        "button_color": "#ffffff",
+        "btn_newtab": false,
+        "section_bg": "#FFFFFF",
+        "content_gap": 40,
+        "pad_y": 40,
+        "pad_x": 24,
+        "dot_size": 18,
+        "pulse_size": 12,
+        "close_others": true,
+        "panel_maxw": 360
+      }
+    },
+    "text_mit_bild_button_PxGyff": {
+      "type": "text-mit-bild-button",
+      "name": "Text mit Bild",
+      "settings": {
+        "image": "shopify://shop_images/Image_29._Juli_2025_20_41_34_cleanup.png",
+        "image_position": "right",
+        "image_shadow_strength": 20,
+        "heading": "Über uns",
+        "heading_font": "sans-serif",
+        "heading_font_size": 42,
+        "heading_color": "#1f1f1f",
+        "subheading": "Wer wir sind und was uns auszeichnet",
+        "subheading_font": "sans-serif",
+        "subheading_font_size": 18,
+        "subheading_color": "#555555",
+        "text": "<p>Beschreiben Sie hier Ihr Unternehmen, Ihre Produkte oder Dienstleistungen. Dieser Text ist vollständig anpassbar und unterstützt auch Formatierungen wie <strong>fett</strong> oder <em>kursiv</em>.</p>",
+        "text_font": "sans-serif",
+        "text_font_size": 16,
+        "text_color": "#333333",
+        "button_text": "Schaltflächenbeschriftung",
+        "button_link": "",
+        "button_font": "sans-serif",
+        "button_font_size": 16,
+        "button_padding_x": 24,
+        "button_padding_y": 14,
+        "button_border_radius": 10,
+        "button_bg_color": "#8e8e8e",
+        "button_bg_hover_color": "#6f6f6f",
+        "button_text_color": "#ffffff",
+        "button_text_color_hover": "#ffffff"
+      }
+    },
+    "custom_cta_block_e7jJM9": {
+      "type": "custom-cta-block",
+      "blocks": {
+        "button_jt6jdw": {
+          "type": "button",
+          "settings": {
+            "label": "<p>Kostenlose Beratung</p>",
+            "link": "",
+            "variant": "solid",
+            "text_color": "#ffffff",
+            "bg_color": "#0b132a",
+            "border_color": "#0b132a",
+            "hover_bg": "#111827",
+            "hover_text": "#ffffff",
+            "radius": 12,
+            "padding_x": 24,
+            "padding_y": 14,
+            "bold": true,
+            "offset_x": 0,
+            "offset_y": 0
+          }
+        },
+        "button_yPX8Ax": {
+          "type": "button",
+          "settings": {
+            "label": "<p>Kostenlose Beratung</p>",
+            "link": "",
+            "variant": "solid",
+            "text_color": "#ffffff",
+            "bg_color": "#0b132a",
+            "border_color": "#0b132a",
+            "hover_bg": "#111827",
+            "hover_text": "#ffffff",
+            "radius": 12,
+            "padding_x": 24,
+            "padding_y": 14,
+            "bold": true,
+            "offset_x": 0,
+            "offset_y": 0
+          }
+        }
+      },
+      "block_order": [
+        "button_jt6jdw",
+        "button_yPX8Ax"
+      ],
+      "name": "Custom CTA Block",
+      "settings": {
+        "heading": "<p><strong>Bereit für professionellen Gebäudeservice?</strong></p>",
+        "heading_size": 56,
+        "heading_bold": true,
+        "heading_color": "#0f172a",
+        "heading_font": "inherit",
+        "subheading": "<p>Kontaktieren Sie uns für ein unverbindliches Beratungsgespräch und ein individuelles Angebot für Ihre Anforderungen.</p>",
+        "sub_size": 20,
+        "sub_bold": false,
+        "sub_color": "#475569",
+        "sub_font": "inherit",
+        "align": "center",
+        "content_max": 1000,
+        "pad_top": 64,
+        "pad_bottom": 64,
+        "use_gradient_bg": true,
+        "bg_gradient": "linear-gradient(180deg, rgba(241, 245, 249, 0.6), rgba(241, 245, 249, 0) 100%)",
+        "buttons_gap": 16
+      }
     }
   },
   "order": [
     "custom_header_fi69pY",
     "main",
     "hero_overlay_section_hdypDf",
-    "leistungen_button_crpLkQ"
+    "leistungen_button_crpLkQ",
+    "amenities_hotspots_4fU76A",
+    "text_mit_bild_button_PxGyff",
+    "custom_cta_block_e7jJM9"
   ]
 }
