@@ -101,7 +101,7 @@
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
+            "image_border_color": "#e0e0e0",
             "image_border_width": 4,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
@@ -127,7 +127,7 @@
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
+            "image_border_color": "#e0e0e0",
             "image_border_width": 4,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
@@ -153,7 +153,7 @@
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
+            "image_border_color": "#e0e0e0",
             "image_border_width": 4,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
@@ -179,7 +179,7 @@
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
+            "image_border_color": "#e0e0e0",
             "image_border_width": 4,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
@@ -205,7 +205,7 @@
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
+            "image_border_color": "#e0e0e0",
             "image_border_width": 4,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
@@ -231,7 +231,7 @@
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
+            "image_border_color": "#e0e0e0",
             "image_border_width": 4,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
@@ -257,7 +257,7 @@
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
+            "image_border_color": "#e0e0e0",
             "image_border_width": 4,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
@@ -301,24 +301,9 @@
         "item_spacing": 30,
         "padding_top": 50,
         "padding_bottom": 50,
-        "section_bg_color": "#FFFFFF",
+        "section_bg_color": "#ffffff",
         "arrow_color": "#111111",
-        "line_color": "#DDDDDD"
-      }
-    },
-    "video_ajPc6F": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
-      "settings": {
-        "heading": "Video",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "line_color": "#dddddd"
       }
     },
     "image_with_text_zE8Lk8": {
@@ -367,6 +352,103 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "video_ajPc6F": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "amenities_hotspots_tap6zf": {
+      "type": "amenities-hotspots",
+      "blocks": {
+        "hotspot_YGhMHC": {
+          "type": "hotspot",
+          "settings": {
+            "title": "Smart Home Features",
+            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
+            "pos_x": 35,
+            "pos_y": 28,
+            "dot_color": "#3AC47D",
+            "panel_bg": "#4CAF78",
+            "panel_text": "#ffffff",
+            "panel_position": "top-left",
+            "open_by_default": false
+          }
+        },
+        "hotspot_3agTmd": {
+          "type": "hotspot",
+          "settings": {
+            "title": "Smart Home Features",
+            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
+            "pos_x": 35,
+            "pos_y": 28,
+            "dot_color": "#3AC47D",
+            "panel_bg": "#4CAF78",
+            "panel_text": "#ffffff",
+            "panel_position": "top-left",
+            "open_by_default": false
+          }
+        },
+        "hotspot_7PGJ9X": {
+          "type": "hotspot",
+          "settings": {
+            "title": "Smart Home Features",
+            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
+            "pos_x": 35,
+            "pos_y": 28,
+            "dot_color": "#3AC47D",
+            "panel_bg": "#4CAF78",
+            "panel_text": "#ffffff",
+            "panel_position": "top-left",
+            "open_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "hotspot_YGhMHC",
+        "hotspot_3agTmd",
+        "hotspot_7PGJ9X"
+      ],
+      "name": "Amenities Hotspots",
+      "settings": {
+        "content_side": "left",
+        "kicker": "Special Amenities!",
+        "heading": "Special Amenities!",
+        "body": "<p>Enter description text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+        "heading_font": "poppins_n4",
+        "heading_size": 44,
+        "heading_weight": "700",
+        "heading_italic": false,
+        "heading_color": "#111111",
+        "body_font": "poppins_n4",
+        "body_size": 16,
+        "body_weight": "400",
+        "body_italic": false,
+        "body_color": "#444444",
+        "btn_label": "Call now",
+        "btn_link": "",
+        "button_bg": "#4CAF78",
+        "button_color": "#ffffff",
+        "btn_newtab": false,
+        "section_bg": "#FFFFFF",
+        "content_gap": 40,
+        "pad_y": 40,
+        "pad_x": 24,
+        "dot_size": 18,
+        "pulse_size": 12,
+        "close_others": true,
+        "panel_maxw": 360
+      }
     }
   },
   "order": [
@@ -375,6 +457,7 @@
     "image_banner_dLWiNX",
     "leistungen_neu_jUfqgU",
     "image_with_text_zE8Lk8",
-    "video_ajPc6F"
+    "video_ajPc6F",
+    "amenities_hotspots_tap6zf"
   ]
 }
