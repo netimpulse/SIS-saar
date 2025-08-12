@@ -9,37 +9,29 @@
  */
 {
   "sections": {
-    "custom_header_2_hFL3RA": {
-      "type": "custom-header-2",
-      "name": "Custom Header 2",
+    "custom_header_PW6nR9": {
+      "type": "custom-header",
+      "name": "Custom Header",
       "settings": {
         "background_color": "#ffffff",
         "padding_vertical": 16,
         "padding_horizontal": 24,
-        "back_link": "",
-        "back_label": "Zurück",
-        "back_font": "sans-serif",
-        "back_font_bold": false,
-        "back_text_color": "#374151",
-        "back_hover_color": "#4ade80",
-        "back_font_size": 16,
-        "back_position_x": 0,
-        "back_position_y": 0,
+        "logo": "shopify://shop_images/Logo_SIS_Saar__1_-removebg-preview.png",
         "logo_text": "Mein Shop",
         "logo_color": "#1e40af",
         "logo_font_size": 24,
         "logo_position_x": 0,
         "logo_position_y": 0,
-        "menu": "main-menu",
+        "menu": "hauptmen",
         "nav_font": "sans-serif",
-        "nav_font_bold": false,
+        "nav_font_bold": true,
         "nav_text_color": "#374151",
         "nav_hover_color": "#4ade80",
         "nav_font_size": 16,
         "menu_position_x": 0,
         "menu_position_y": 0,
         "button_text": "Kontakt",
-        "button_link": "",
+        "button_link": "shopify://pages/gebaudeservice-kontakt",
         "button_text_color": "#ffffff",
         "button_bg_color": "#4ade80",
         "button_hover_text_color": "#ffffff",
@@ -201,7 +193,7 @@
     }
   },
   "order": [
-    "custom_header_2_hFL3RA",
+    "custom_header_PW6nR9",
     "kundenbewertung_tzkjqA",
     "interactive_map_LRFRC8",
     "image_banner_mMg4Yx"
