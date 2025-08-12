@@ -77,9 +77,46 @@
         "background_color": "#f9f9f9",
         "section_padding": 50
       }
+    },
+    "interactive_map_LRFRC8": {
+      "type": "interactive-map",
+      "name": "Interaktive Karte",
+      "settings": {
+        "api_key": "",
+        "title": "So finden Sie uns",
+        "subtitle": "Besuchen Sie uns in unseren Geschäftsräumen",
+        "title_color": "#0B2545",
+        "title_size": 36,
+        "title_font": "inherit",
+        "subtitle_color": "#54627A",
+        "subtitle_size": 16,
+        "subtitle_font": "inherit",
+        "card_bg": "#F5F7FA",
+        "lat": 49,
+        "lng": 6,
+        "zoom": 14,
+        "height_desktop": 420,
+        "height_mobile": 360,
+        "draggable": true,
+        "scrollwheel": true,
+        "marker_title": "Unser Standort",
+        "pin_w": 40,
+        "pin_h": 40,
+        "pin_anchor_x": 20,
+        "pin_anchor_y": 40,
+        "radius_enabled": true,
+        "radius_km": 25,
+        "radius_stroke_color": "#16a34a",
+        "radius_stroke_weight": 2,
+        "radius_fill_color": "#16a34a",
+        "radius_fill_opacity": 1,
+        "placeholder_title": "Interaktive Karte",
+        "placeholder_text": "Hier würde eine interaktive Google Maps Karte eingebettet werden"
+      }
     }
   },
   "order": [
-    "kundenbewertung_tzkjqA"
+    "kundenbewertung_tzkjqA",
+    "interactive_map_LRFRC8"
   ]
 }
