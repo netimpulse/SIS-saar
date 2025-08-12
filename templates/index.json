@@ -9,231 +9,12 @@
  */
 {
   "sections": {
-    "split_showcase_WTD9YW": {
-      "type": "split-showcase",
-      "name": "Split Showcase",
-      "settings": {
-        "heading": "Ihr Partner für professionelle Service-Lösungen",
-        "heading_color": "#121212",
-        "heading_font_size": 36,
-        "subheading": "<p>Zwei spezialisierte Unternehmen unter einem Dach - für Gebäude- und Industrieservice auf höchstem Niveau.</p>",
-        "subheading_color": "#454545",
-        "subheading_font_size": 18,
-        "box_bg_color": "#f5f5f5",
-        "box_corner_radius": 12,
-        "overlay_color": "linear-gradient(#0000004D, #00000080)",
-        "overlay_hover_color": "linear-gradient(#0000001A, #00000066)",
-        "text_color": "#ffffff",
-        "icon_size": 48,
-        "title_size": 24,
-        "description_size": 16,
-        "button_bg_color": "#ffffff1a",
-        "button_border_color": "#ffffff4d",
-        "button_hover_bg_color": "#ffffff33",
-        "button_hover_border_color": "#ffffff80",
-        "left_content_x": 50,
-        "left_content_y": 50,
-        "right_content_x": 50,
-        "right_content_y": 50,
-        "left_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_00_15_46_cleanup.png",
-        "left_hover_image": "shopify://shop_images/mage_29._Juli_2025_00_15_46.png",
-        "left_icon": "",
-        "left_title": "GEBÄUDE SERVICE",
-        "left_description": "Facility Management, Reinigung und Hausmeisterservice",
-        "left_button_text": "Mehr erfahren",
-        "left_button_link": "",
-        "right_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
-        "right_hover_image": "shopify://shop_images/Image_29._Juli_2025_20_41_34_cleanup.png",
-        "right_icon": "",
-        "right_title": "INDUSTRIE SERVICE",
-        "right_description": "Anlagenwartung, Reparatur und Industriedienstleistungen",
-        "right_button_text": "Mehr erfahren",
-        "right_button_link": ""
-      }
-    },
-    "text_mit_bild_dCQRLd": {
-      "type": "text-mit-bild",
-      "name": "Text mit Bild",
-      "settings": {
-        "image": "shopify://shop_images/shutterstock_370492946.jpg",
-        "image_position": "right",
-        "image_shadow_strength": 23,
-        "heading": "Über uns",
-        "heading_font": "sans-serif",
-        "heading_font_size": 42,
-        "heading_color": "#1f1f1f",
-        "subheading": "Wer wir sind und was uns auszeichnet",
-        "subheading_font": "sans-serif",
-        "subheading_font_size": 18,
-        "subheading_color": "#555555",
-        "text": "<p>Beschreiben Sie hier Ihr Unternehmen, Ihre Produkte oder Dienstleistungen. Dieser Text ist vollständig anpassbar und unterstützt auch Formatierungen wie <strong>fett</strong> oder <em>kursiv</em>.</p>",
-        "text_font": "sans-serif",
-        "text_font_size": 16,
-        "text_color": "#333333"
-      }
-    },
-    "two_areas_MH8aTk": {
-      "type": "two-areas",
-      "blocks": {
-        "industry_tile_WHhM7W": {
-          "type": "industry_tile",
-          "settings": {
-            "title": "Instandhaltung",
-            "link": ""
-          }
-        },
-        "industry_tile_H9aCzt": {
-          "type": "industry_tile",
-          "settings": {
-            "title": "Technischer Support",
-            "link": ""
-          }
-        },
-        "building_tile_TmXRPT": {
-          "type": "building_tile",
-          "settings": {
-            "title": "Gebäudereinigung",
-            "link": ""
-          }
-        },
-        "building_tile_AXA3qz": {
-          "type": "building_tile",
-          "settings": {
-            "title": "Facility Management",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "industry_tile_WHhM7W",
-        "industry_tile_H9aCzt",
-        "building_tile_TmXRPT",
-        "building_tile_AXA3qz"
-      ],
-      "name": "Industrie & Gebäude (Demo)",
-      "settings": {
-        "show_heading": true,
-        "heading": "Industrie & Gebäudeservice",
-        "heading_color": "#121212",
-        "heading_font_size": 38,
-        "show_subheading": true,
-        "subheading": "Zwei starke Bereiche, ein Qualitätsversprechen",
-        "subheading_color": "#6c757d",
-        "subheading_font_size": 18,
-        "industry_title": "Industrieservice",
-        "industry_title_color": "#343a40",
-        "industry_title_font_size": 28,
-        "industry_text": "<p>Wir sorgen für reibungslose Abläufe…</p>",
-        "industry_text_color": "#6c757d",
-        "industry_text_font_size": 16,
-        "industry_area_border_color": "#0B3D91",
-        "industry_btn_label": "Mehr erfahren",
-        "industry_btn_link": "",
-        "industry_btn_bg_color": "#0B3D91",
-        "industry_btn_text_color": "#FFFFFF",
-        "industry_btn_font_size": 16,
-        "industry_btn_bg_hover_color": "#FFFFFF",
-        "industry_btn_text_hover_color": "#0B3D91",
-        "industry_btn_border_hover_color": "#0B3D91",
-        "industry_tile_bg_color": "#0B3D91",
-        "industry_tile_text_color": "#FFFFFF",
-        "industry_tile_title_font_size": 14,
-        "industry_tile_bg_hover_color": "#0056b3",
-        "building_title": "Gebäudeservice",
-        "building_title_color": "#343a40",
-        "building_title_font_size": 28,
-        "building_text": "<p>Wir kümmern uns um Ihre Immobilie…</p>",
-        "building_text_color": "#6c757d",
-        "building_text_font_size": 16,
-        "building_area_border_color": "#57B894",
-        "building_btn_label": "Mehr erfahren",
-        "building_btn_link": "",
-        "building_btn_bg_color": "#57B894",
-        "building_btn_text_color": "#FFFFFF",
-        "building_btn_font_size": 16,
-        "building_btn_bg_hover_color": "#FFFFFF",
-        "building_btn_text_hover_color": "#57B894",
-        "building_btn_border_hover_color": "#57B894",
-        "building_tile_bg_color": "#57B894",
-        "building_tile_text_color": "#FFFFFF",
-        "building_tile_title_font_size": 14,
-        "building_tile_bg_hover_color": "#4AA080"
-      }
-    },
-    "about_section_QCV3x4": {
-      "type": "about-section",
-      "blocks": {
-        "feature_jHnrVQ": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#22C55E\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <circle cx=\"12\" cy=\"7\" r=\"4\"></circle>\n  <path d=\"M20 21a8 8 0 0 0-16 0\"></path>\n</svg>",
-            "feature_title": "Erfahrenes Team",
-            "feature_description": "Über 20 Jahre Erfahrung"
-          }
-        },
-        "feature_MGqp7x": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#22C55E\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <circle cx=\"12\" cy=\"8\" r=\"7\"></circle>\n  <path d=\"M8.21 13.89 7 23l5-3 5 3-1.21-9.12\"></path>\n</svg>",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung"
-          }
-        },
-        "feature_ahqWEE": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#22C55E\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <path d=\"M12 6v6l4 2\"></path>\n</svg>",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        },
-        "feature_VwjfHG": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"#22C55E\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <path d=\"M9 12l2 2 4-4\"></path>\n</svg>",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        }
-      },
-      "block_order": [
-        "feature_jHnrVQ",
-        "feature_MGqp7x",
-        "feature_ahqWEE",
-        "feature_VwjfHG"
-      ],
-      "name": "Über Uns (Layout)",
-      "settings": {
-        "layout_direction": "image_left",
-        "background_color": "#e9e7e7",
-        "section_padding_top": 80,
-        "section_padding_bottom": 80,
-        "title": "Warum SIS",
-        "title_color": "#000000",
-        "title_font_size": 40,
-        "description": "<p>Wir sind SIS Saar - ein innovatives Unternehmen mit zwei spezialisierten Geschäftsbereichen. Seit über zwei Jahrzehnten stehen wir für zuverlässige und hochwertige Serviceleistungen in der Region.</p><p>Unser Erfolgsrezept liegt in der Kombination aus langjähriger Erfahrung, modernster Technik und einem motivierten Team von Fachkräften. Jeder Mitarbeiter trägt dazu bei, dass wir unseren Kunden stets erstklassige Lösungen anbieten können.</p>",
-        "text_color": "#6B7280",
-        "text_font_size": 18,
-        "image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_00_15_46_cleanup.png",
-        "image_border_radius": 12,
-        "image_alt": "",
-        "features_per_row": "2",
-        "icon_size": 32,
-        "icon_color": "#34D399",
-        "feature_title_color": "#111827"
-      }
-    },
     "kundenbewertung_tzkjqA": {
       "type": "Kundenbewertung",
       "blocks": {
         "review_FJeXGD": {
           "type": "review",
           "settings": {
-            "person_image": "shopify://shop_images/luca.jpg",
             "image_size": 80,
             "person_name": "Max Mustermann",
             "name_font": "helvetica_n4",
@@ -247,7 +28,6 @@
         "review_9YC7yy": {
           "type": "review",
           "settings": {
-            "person_image": "shopify://shop_images/WhatsApp_Image_2025-02-03_at_15.31.49.jpg",
             "image_size": 80,
             "person_name": "Max Mustermann",
             "name_font": "helvetica_n4",
@@ -291,6 +71,7 @@
         "review_cUnGwJ",
         "review_QThjeR"
       ],
+      "disabled": true,
       "name": "Kundenbewertung",
       "settings": {
         "background_color": "#f9f9f9",
@@ -299,10 +80,6 @@
     }
   },
   "order": [
-    "split_showcase_WTD9YW",
-    "text_mit_bild_dCQRLd",
-    "two_areas_MH8aTk",
-    "about_section_QCV3x4",
     "kundenbewertung_tzkjqA"
   ]
 }
