@@ -49,41 +49,32 @@
     "contact_info_form_tjiQNz": {
       "type": "contact-info-form",
       "blocks": {
-        "info_card_fMfjm9": {
-          "type": "info_card",
-          "settings": {
-            "title": "Adresse",
-            "text": "<p>Straße 1<br>12345 Stadt</p>",
-            "icon": "map"
-          }
-        },
         "info_card_Utzr7H": {
           "type": "info_card",
           "settings": {
             "title": "Adresse",
-            "text": "<p>Straße 1<br>12345 Stadt</p>",
-            "icon": "map"
+            "text": "<p>Straße 1<br/>12345 Stadt</p>",
+            "icon": "phone"
           }
         },
         "info_card_Ht4E9k": {
           "type": "info_card",
           "settings": {
             "title": "Adresse",
-            "text": "<p>Straße 1<br>12345 Stadt</p>",
-            "icon": "map"
+            "text": "<p>Straße 1<br/>12345 Stadt</p>",
+            "icon": "mail"
           }
         },
         "info_card_MrE36Q": {
           "type": "info_card",
           "settings": {
             "title": "Adresse",
-            "text": "<p>Straße 1<br>12345 Stadt</p>",
-            "icon": "map"
+            "text": "<p>Straße 1<br/>12345 Stadt</p>",
+            "icon": "clock"
           }
         }
       },
       "block_order": [
-        "info_card_fMfjm9",
         "info_card_Utzr7H",
         "info_card_Ht4E9k",
         "info_card_MrE36Q"
