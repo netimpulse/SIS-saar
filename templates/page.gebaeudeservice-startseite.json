@@ -80,6 +80,7 @@
         "text_GKmJxp",
         "buttons_AeejY7"
       ],
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image_overlay_opacity": 0,
@@ -92,6 +93,89 @@
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
         "show_text_below": true
+      }
+    },
+    "amenities_hotspots_tap6zf": {
+      "type": "amenities-hotspots",
+      "blocks": {
+        "hotspot_YGhMHC": {
+          "type": "hotspot",
+          "settings": {
+            "title": "Smart Home Features",
+            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
+            "pos_x": 35,
+            "pos_y": 28,
+            "dot_color": "#3ac47d",
+            "panel_bg": "#4caf78",
+            "panel_text": "#ffffff",
+            "panel_position": "top-left",
+            "open_by_default": false
+          }
+        },
+        "hotspot_3agTmd": {
+          "type": "hotspot",
+          "settings": {
+            "title": "Smart Home Features",
+            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
+            "pos_x": 35,
+            "pos_y": 28,
+            "dot_color": "#3ac47d",
+            "panel_bg": "#4caf78",
+            "panel_text": "#ffffff",
+            "panel_position": "top-left",
+            "open_by_default": false
+          }
+        },
+        "hotspot_7PGJ9X": {
+          "type": "hotspot",
+          "settings": {
+            "title": "Smart Home Features",
+            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
+            "pos_x": 35,
+            "pos_y": 28,
+            "dot_color": "#3ac47d",
+            "panel_bg": "#4caf78",
+            "panel_text": "#ffffff",
+            "panel_position": "top-left",
+            "open_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "hotspot_YGhMHC",
+        "hotspot_3agTmd",
+        "hotspot_7PGJ9X"
+      ],
+      "name": "Amenities Hotspots",
+      "settings": {
+        "image": "shopify://shop_images/shutterstock_370492946.jpg",
+        "content_side": "left",
+        "kicker": "Sis Saar",
+        "heading": "Gebäudeservice",
+        "body": "",
+        "heading_font": "poppins_n4",
+        "heading_size": 44,
+        "heading_weight": "700",
+        "heading_italic": false,
+        "heading_color": "#111111",
+        "body_font": "poppins_n4",
+        "body_size": 16,
+        "body_weight": "400",
+        "body_italic": false,
+        "body_color": "#444444",
+        "btn_label": "Call now",
+        "btn_link": "",
+        "button_bg": "#4caf78",
+        "button_color": "#ffffff",
+        "btn_newtab": false,
+        "section_bg": "#ffffff",
+        "content_gap": 40,
+        "pad_y": 40,
+        "pad_x": 24,
+        "dot_size": 18,
+        "pulse_size": 12,
+        "close_others": true,
+        "panel_maxw": 360
       }
     },
     "leistungen_neu_jUfqgU": {
@@ -306,6 +390,50 @@
         "line_color": "#dddddd"
       }
     },
+    "rich_text_HKkV8z": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CzkWix": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Erzähle etwas über deine Marke",
+            "heading_size": "h1"
+          }
+        },
+        "text_ewCJ7c": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Erdahren Sie über unsere Leistungen im Detail</p>"
+          }
+        },
+        "button_FP3ceV": {
+          "type": "button",
+          "settings": {
+            "button_label": "Schaltflächenbeschriftung",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_CzkWix",
+        "text_ewCJ7c",
+        "button_FP3ceV"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
     "image_with_text_zE8Lk8": {
       "type": "image-with-text",
       "blocks": {
@@ -367,97 +495,16 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "amenities_hotspots_tap6zf": {
-      "type": "amenities-hotspots",
-      "blocks": {
-        "hotspot_YGhMHC": {
-          "type": "hotspot",
-          "settings": {
-            "title": "Smart Home Features",
-            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
-            "pos_x": 35,
-            "pos_y": 28,
-            "dot_color": "#3AC47D",
-            "panel_bg": "#4CAF78",
-            "panel_text": "#ffffff",
-            "panel_position": "top-left",
-            "open_by_default": false
-          }
-        },
-        "hotspot_3agTmd": {
-          "type": "hotspot",
-          "settings": {
-            "title": "Smart Home Features",
-            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
-            "pos_x": 35,
-            "pos_y": 28,
-            "dot_color": "#3AC47D",
-            "panel_bg": "#4CAF78",
-            "panel_text": "#ffffff",
-            "panel_position": "top-left",
-            "open_by_default": false
-          }
-        },
-        "hotspot_7PGJ9X": {
-          "type": "hotspot",
-          "settings": {
-            "title": "Smart Home Features",
-            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
-            "pos_x": 35,
-            "pos_y": 28,
-            "dot_color": "#3AC47D",
-            "panel_bg": "#4CAF78",
-            "panel_text": "#ffffff",
-            "panel_position": "top-left",
-            "open_by_default": false
-          }
-        }
-      },
-      "block_order": [
-        "hotspot_YGhMHC",
-        "hotspot_3agTmd",
-        "hotspot_7PGJ9X"
-      ],
-      "name": "Amenities Hotspots",
-      "settings": {
-        "content_side": "left",
-        "kicker": "Special Amenities!",
-        "heading": "Special Amenities!",
-        "body": "<p>Enter description text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-        "heading_font": "poppins_n4",
-        "heading_size": 44,
-        "heading_weight": "700",
-        "heading_italic": false,
-        "heading_color": "#111111",
-        "body_font": "poppins_n4",
-        "body_size": 16,
-        "body_weight": "400",
-        "body_italic": false,
-        "body_color": "#444444",
-        "btn_label": "Call now",
-        "btn_link": "",
-        "button_bg": "#4CAF78",
-        "button_color": "#ffffff",
-        "btn_newtab": false,
-        "section_bg": "#FFFFFF",
-        "content_gap": 40,
-        "pad_y": 40,
-        "pad_x": 24,
-        "dot_size": 18,
-        "pulse_size": 12,
-        "close_others": true,
-        "panel_maxw": 360
-      }
     }
   },
   "order": [
     "custom_header_rJ3rhV",
     "main",
     "image_banner_dLWiNX",
+    "amenities_hotspots_tap6zf",
     "leistungen_neu_jUfqgU",
+    "rich_text_HKkV8z",
     "image_with_text_zE8Lk8",
-    "video_ajPc6F",
-    "amenities_hotspots_tap6zf"
+    "video_ajPc6F"
   ]
 }

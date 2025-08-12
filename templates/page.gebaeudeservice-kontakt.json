@@ -11,13 +11,111 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "custom_header_RrUzAh": {
+      "type": "custom-header",
+      "name": "Custom Header",
+      "settings": {
+        "background_color": "#ffffff",
+        "padding_vertical": 16,
+        "padding_horizontal": 24,
+        "logo": "shopify://shop_images/Logo_SIS_Saar__1_-removebg-preview.png",
+        "logo_text": "Mein Shop",
+        "logo_color": "#1e40af",
+        "logo_font_size": 24,
+        "logo_position_x": 0,
+        "logo_position_y": 0,
+        "menu": "main-menu",
+        "nav_font": "sans-serif",
+        "nav_font_bold": false,
+        "nav_text_color": "#374151",
+        "nav_hover_color": "#4ade80",
+        "nav_font_size": 16,
+        "menu_position_x": 0,
+        "menu_position_y": 0,
+        "button_text": "Kontakt",
+        "button_link": "",
+        "button_text_color": "#ffffff",
+        "button_bg_color": "#4ade80",
+        "button_hover_text_color": "#ffffff",
+        "button_hover_bg_color": "#22c55e"
+      }
+    },
+    "contact_info_form_tjiQNz": {
+      "type": "contact-info-form",
+      "blocks": {
+        "info_card_fMfjm9": {
+          "type": "info_card",
+          "settings": {
+            "title": "Adresse",
+            "text": "<p>Straße 1<br>12345 Stadt</p>",
+            "icon": "map"
+          }
+        },
+        "info_card_Utzr7H": {
+          "type": "info_card",
+          "settings": {
+            "title": "Adresse",
+            "text": "<p>Straße 1<br>12345 Stadt</p>",
+            "icon": "map"
+          }
+        },
+        "info_card_Ht4E9k": {
+          "type": "info_card",
+          "settings": {
+            "title": "Adresse",
+            "text": "<p>Straße 1<br>12345 Stadt</p>",
+            "icon": "map"
+          }
+        },
+        "info_card_MrE36Q": {
+          "type": "info_card",
+          "settings": {
+            "title": "Adresse",
+            "text": "<p>Straße 1<br>12345 Stadt</p>",
+            "icon": "map"
+          }
+        }
+      },
+      "block_order": [
+        "info_card_fMfjm9",
+        "info_card_Utzr7H",
+        "info_card_Ht4E9k",
+        "info_card_MrE36Q"
+      ],
+      "name": "Kontaktbereich mit Formular",
+      "settings": {
+        "left_title": "Kontaktinformationen",
+        "right_title": "Nachricht senden",
+        "label_firstname": "Vorname *",
+        "ph_firstname": "Ihr Vorname",
+        "label_lastname": "Nachname *",
+        "ph_lastname": "Ihr Nachname",
+        "label_email": "E-Mail *",
+        "ph_email": "ihre.email@beispiel.de",
+        "label_phone": "Telefon",
+        "ph_phone": "Ihre Telefonnummer",
+        "label_company": "Unternehmen",
+        "ph_company": "Ihr Unternehmen",
+        "label_subject": "Betreff *",
+        "ph_subject": "Worum geht es?",
+        "label_message": "Nachricht *",
+        "ph_message": "Beschreiben Sie Ihr Anliegen...",
+        "consent_text": "<p>Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zu.</p>",
+        "consent_label": "Datenschutz zugestimmt",
+        "button_label": "Nachricht senden",
+        "success_text": "Danke für Ihre Nachricht! Wir melden uns bald."
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_header_RrUzAh",
+    "contact_info_form_tjiQNz"
   ]
 }
