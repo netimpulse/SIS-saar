@@ -9,7 +9,7 @@
  */
 {
   "sections": {
-    "custom_header_2_KCGMzj": {
+    "custom_header_2_hFL3RA": {
       "type": "custom-header-2",
       "name": "Custom Header 2",
       "settings": {
@@ -201,7 +201,7 @@
     }
   },
   "order": [
-    "custom_header_2_KCGMzj",
+    "custom_header_2_hFL3RA",
     "kundenbewertung_tzkjqA",
     "interactive_map_LRFRC8",
     "image_banner_mMg4Yx"
