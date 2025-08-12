@@ -85,13 +85,13 @@
         "api_key": "",
         "title": "So finden Sie uns",
         "subtitle": "Besuchen Sie uns in unseren Geschäftsräumen",
-        "title_color": "#0B2545",
+        "title_color": "#0b2545",
         "title_size": 36,
         "title_font": "inherit",
-        "subtitle_color": "#54627A",
+        "subtitle_color": "#54627a",
         "subtitle_size": 16,
         "subtitle_font": "inherit",
-        "card_bg": "#F5F7FA",
+        "card_bg": "#f5f7fa",
         "lat": 49,
         "lng": 6,
         "zoom": 14,
@@ -113,10 +113,59 @@
         "placeholder_title": "Interaktive Karte",
         "placeholder_text": "Hier würde eine interaktive Google Maps Karte eingebettet werden"
       }
+    },
+    "image_banner_mMg4Yx": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_6Uhrbm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bild-Banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_p9Tiny": {
+          "type": "text",
+          "settings": {
+            "text": "Stelle Kunden Details zu Banner-Bildern oder Inhalt auf der Vorlage zur Verfügung.",
+            "text_style": "body"
+          }
+        },
+        "buttons_NKL9h3": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Schaltflächenbeschriftung",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Schaltflächenbeschriftung",
+            "button_link_2": "shopify://pages/startseite-allgemein",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_6Uhrbm",
+        "text_p9Tiny",
+        "buttons_NKL9h3"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
     }
   },
   "order": [
     "kundenbewertung_tzkjqA",
-    "interactive_map_LRFRC8"
+    "interactive_map_LRFRC8",
+    "image_banner_mMg4Yx"
   ]
 }

@@ -11,13 +11,93 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "custom_header_jrp4Hg": {
+      "type": "custom-header",
+      "name": "Custom Header",
+      "settings": {
+        "background_color": "#ffffff",
+        "padding_vertical": 16,
+        "padding_horizontal": 24,
+        "logo": "shopify://shop_images/Logo_SIS_Saar__1_-removebg-preview.png",
+        "logo_text": "Mein Shop",
+        "logo_color": "#1e40af",
+        "logo_font_size": 24,
+        "logo_position_x": 0,
+        "logo_position_y": 0,
+        "menu": "main-menu",
+        "nav_font": "sans-serif",
+        "nav_font_bold": false,
+        "nav_text_color": "#374151",
+        "nav_hover_color": "#4ade80",
+        "nav_font_size": 16,
+        "menu_position_x": 0,
+        "menu_position_y": 0,
+        "button_text": "Kontakt",
+        "button_link": "",
+        "button_text_color": "#ffffff",
+        "button_bg_color": "#4ade80",
+        "button_hover_text_color": "#ffffff",
+        "button_hover_bg_color": "#22c55e"
+      }
+    },
+    "image_banner_kRJTJ8": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_ecGUER": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bild-Banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_pXbK6m": {
+          "type": "text",
+          "settings": {
+            "text": "Stelle Kunden Details zu Banner-Bildern oder Inhalt auf der Vorlage zur Verfügung.",
+            "text_style": "body"
+          }
+        },
+        "buttons_qNay6V": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Schaltflächenbeschriftung",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Schaltflächenbeschriftung",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ecGUER",
+        "text_pXbK6m",
+        "buttons_qNay6V"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_header_jrp4Hg",
+    "image_banner_kRJTJ8"
   ]
 }
