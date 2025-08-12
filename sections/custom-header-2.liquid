@@ -30,7 +30,7 @@
     --btn-hover-text-color: {{ section.settings.button_hover_text_color }};
     --btn-hover-bg-color: {{ section.settings.button_hover_bg_color }};
 
-    /* Zurück-Pfeil */
+    /* Zurück-Link Typo/Position */
     --back-pos-x: {{ section.settings.back_position_x }}%;
     --back-pos-y: {{ section.settings.back_position_y }}%;
     --back-font-family: {{ section.settings.back_font.family }}, {{ section.settings.back_font.fallback_families }};
@@ -39,13 +39,42 @@
     --back-text-color: {{ section.settings.back_text_color }};
     --back-hover-color: {{ section.settings.back_hover_color }};
     --back-font-size: {{ section.settings.back_font_size }}px;
+
+    /* Branding Untertitel */
+    --brand-subtext-color: {{ section.settings.logo_subtext_color }};
+    --brand-subtext-size: {{ section.settings.logo_subtext_size }}px;
   }
 </style>
 
 <header class="custom-header-section custom-header-section-{{ section.id }}">
   <div class="custom-header__container">
     
-    {%- comment -%} Zurück-Pfeil {%- endcomment -%}
+    <!-- Branding: Logo + Titel + Untertitel -->
+    <div class="custom-header__logo">
+      <a href="{{ shop.url }}" class="custom-header__branding-link">
+        {% if section.settings.logo %}
+          <img
+            src="{{ section.settings.logo | image_url: width: 200 }}"
+            alt="{{ section.settings.logo.alt | default: shop.name }}"
+            class="custom-header__logo-img"
+            height="40"
+            width="{{ 40 | times: section.settings.logo.aspect_ratio | round }}"
+          >
+        {% endif %}
+        <div class="custom-header__brand-text" style="color: {{ section.settings.logo_color }};">
+          <span class="custom-header__brand-title" style="font-size: {{ section.settings.logo_font_size }}px;">
+            {{ section.settings.logo_text | default: shop.name }}
+          </span>
+          {% if section.settings.logo_subtext != blank %}
+            <span class="custom-header__brand-subtitle">
+              {{ section.settings.logo_subtext }}
+            </span>
+          {% endif %}
+        </div>
+      </a>
+    </div>
+
+    <!-- Zurück zur Hauptseite (inline neben Branding) -->
     <a
       href="{{ section.settings.back_link | default: shop.url }}"
       class="custom-header__back"
@@ -60,22 +89,7 @@
       {% endif %}
     </a>
 
-    <div class="custom-header__logo">
-      <a href="{{ shop.url }}">
-        {% if section.settings.logo %}
-          <img src="{{ section.settings.logo | image_url: width: 200 }}" 
-               alt="{{ section.settings.logo.alt | default: shop.name }}"
-               class="custom-header__logo-img"
-               height="{{ 40 }}"
-               width="{{ 40 | times: section.settings.logo.aspect_ratio | round }}">
-        {% else %}
-          <span class="custom-header__logo-text" style="color: {{ section.settings.logo_color }}; font-size: {{ section.settings.logo_font_size }}px;">
-            {{ section.settings.logo_text | default: shop.name }}
-          </span>
-        {% endif %}
-      </a>
-    </div>
-
+    <!-- Navigation + Button -->
     <div class="custom-header__nav-wrapper">
       <nav class="custom-header__nav" role="navigation">
         {%- for link in section.settings.menu.links -%}
@@ -133,25 +147,26 @@
       "default": 24,
       "unit": "px"
     },
+
     {
       "type": "header",
-      "content": "Zurück-Pfeil"
+      "content": "Zurück-Link"
     },
     {
       "type": "url",
       "id": "back_link",
-      "label": "Link für Zurück-Pfeil"
+      "label": "Link für „Zur Hauptseite“"
     },
     {
       "type": "text",
       "id": "back_label",
       "label": "Text neben Pfeil (optional)",
-      "default": "Zurück"
+      "default": "Zur Hauptseite"
     },
     {
       "type": "font_picker",
       "id": "back_font",
-      "label": "Pfeil/Label Schriftart",
+      "label": "Schriftart",
       "default": "sans-serif"
     },
     {
@@ -164,7 +179,7 @@
       "type": "color",
       "id": "back_text_color",
       "label": "Farbe",
-      "default": "#374151"
+      "default": "#64748b"
     },
     {
       "type": "color",
@@ -177,7 +192,7 @@
       "id": "back_font_size",
       "label": "Schriftgröße (px)",
       "min": 12,
-      "max": 28,
+      "max": 24,
       "step": 1,
       "default": 16,
       "unit": "px"
@@ -202,9 +217,10 @@
       "default": 0,
       "unit": "%"
     },
+
     {
       "type": "header",
-      "content": "Logo"
+      "content": "Logo & Branding"
     },
     {
       "type": "image_picker",
@@ -214,29 +230,51 @@
     {
       "type": "text",
       "id": "logo_text",
-      "label": "Logo Text (Fallback)",
+      "label": "Titel (z. B. Firmenname)",
       "default": "Mein Shop"
+    },
+    {
+      "type": "text",
+      "id": "logo_subtext",
+      "label": "Untertitel (z. B. Claim)",
+      "default": "Service & Solutions"
     },
     {
       "type": "color",
       "id": "logo_color",
-      "label": "Logo Textfarbe",
-      "default": "#1e40af"
+      "label": "Titel-Farbe",
+      "default": "#0f172a"
     },
     {
       "type": "range",
       "id": "logo_font_size",
-      "label": "Logo Schriftgröße",
+      "label": "Titel-Größe",
       "min": 16,
       "max": 48,
       "step": 1,
-      "default": 24,
+      "default": 22,
+      "unit": "px"
+    },
+    {
+      "type": "color",
+      "id": "logo_subtext_color",
+      "label": "Untertitel-Farbe",
+      "default": "#6b7280"
+    },
+    {
+      "type": "range",
+      "id": "logo_subtext_size",
+      "label": "Untertitel-Größe",
+      "min": 10,
+      "max": 18,
+      "step": 1,
+      "default": 12,
       "unit": "px"
     },
     {
       "type": "range",
       "id": "logo_position_x",
-      "label": "Logo Position X (%)",
+      "label": "Branding Position X (%)",
       "min": -50,
       "max": 50,
       "step": 1,
@@ -246,13 +284,14 @@
     {
       "type": "range",
       "id": "logo_position_y",
-      "label": "Logo Position Y (%)",
+      "label": "Branding Position Y (%)",
       "min": -50,
       "max": 50,
       "step": 1,
       "default": 0,
       "unit": "%"
     },
+
     {
       "type": "header",
       "content": "Navigation"
@@ -284,8 +323,8 @@
     {
       "type": "color",
       "id": "nav_hover_color",
-      "label": "Navigation Hover-Farbe",
-      "default": "#4ade80"
+      "label": "Navigation Hover-/Aktiv-Farbe",
+      "default": "#22c55e"
     },
     {
       "type": "range",
@@ -317,6 +356,7 @@
       "default": 0,
       "unit": "%"
     },
+
     {
       "type": "header",
       "content": "Kontakt Button"
@@ -342,7 +382,7 @@
       "type": "color",
       "id": "button_bg_color",
       "label": "Button Hintergrund",
-      "default": "#4ade80"
+      "default": "#0f2640"
     },
     {
       "type": "color",
@@ -354,7 +394,7 @@
       "type": "color",
       "id": "button_hover_bg_color",
       "label": "Button Hintergrund (Hover)",
-      "default": "#22c55e"
+      "default": "#193352"
     }
   ],
   "presets": [
