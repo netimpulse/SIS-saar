@@ -24,7 +24,7 @@
         "logo_position_y": 0,
         "menu": "geb-udeservice",
         "nav_font": "sans-serif",
-        "nav_font_bold": false,
+        "nav_font_bold": true,
         "nav_text_color": "#374151",
         "nav_hover_color": "#4ade80",
         "nav_font_size": 16,
