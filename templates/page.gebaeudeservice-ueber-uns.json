@@ -16,7 +16,7 @@
         "background_color": "#ffffff",
         "padding_vertical": 16,
         "padding_horizontal": 24,
-        "logo": "shopify://shop_images/logo_Industrieservice_exact_v2.png",
+        "logo": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
         "logo_text": "Mein Shop",
         "logo_color": "#1e40af",
         "logo_font_size": 24,
@@ -50,7 +50,7 @@
       "type": "hero-overlay-section",
       "name": "Hero – Service Overlay",
       "settings": {
-        "bg_image": "shopify://shop_images/Image_29._Juli_2025_20_41_34_cleanup.png",
+        "bg_image": "shopify://shop_images/mage_29._Juli_2025_00_15_46.png",
         "overlay_color": "#2baaa2",
         "overlay_opacity": 70,
         "section_height": 60,
@@ -202,36 +202,36 @@
         "team_member_MxVGA7": {
           "type": "team_member",
           "settings": {
-            "image": "shopify://shop_images/Image_29._Juli_2025_20_41_34_cleanup.png",
+            "image": "shopify://shop_images/mage_29._Juli_2025_00_15_46.png",
             "name": "Max Mustermann",
             "position": "CEO & Founder",
             "name_color": "#1e293b",
             "name_font_size": 20,
-            "position_color": "#4A6965",
+            "position_color": "#4a6965",
             "position_font_size": 16
           }
         },
         "team_member_chWED9": {
           "type": "team_member",
           "settings": {
-            "image": "shopify://shop_images/Image_29._Juli_2025_20_41_34_cleanup.png",
+            "image": "shopify://shop_images/mage_29._Juli_2025_00_15_46.png",
             "name": "Erika Mustermann",
             "position": "Head of SEO",
             "name_color": "#1e293b",
             "name_font_size": 20,
-            "position_color": "#4A6965",
+            "position_color": "#4a6965",
             "position_font_size": 16
           }
         },
         "team_member_akkJpd": {
           "type": "team_member",
           "settings": {
-            "image": "shopify://shop_images/Image_29._Juli_2025_20_41_34_cleanup.png",
+            "image": "shopify://shop_images/mage_29._Juli_2025_00_15_46.png",
             "name": "John Doe",
             "position": "Head of SEA",
             "name_color": "#1e293b",
             "name_font_size": 20,
-            "position_color": "#4A6965",
+            "position_color": "#4a6965",
             "position_font_size": 16
           }
         }
@@ -243,7 +243,7 @@
       ],
       "name": "Team",
       "settings": {
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "padding_top": 80,
         "padding_bottom": 80,
         "title": "Unser Team",
