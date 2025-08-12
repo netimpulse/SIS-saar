@@ -50,7 +50,7 @@
       "type": "hero-overlay-section",
       "name": "Hero – Service Overlay",
       "settings": {
-        "bg_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
+        "bg_image": "shopify://shop_images/Image_29._Juli_2025_20_41_34_cleanup.png",
         "overlay_color": "#2baaa2",
         "overlay_opacity": 70,
         "section_height": 60,
@@ -88,144 +88,156 @@
         "btn2_text_hover": "#238b84"
       }
     },
-    "leistungen_button_Didgg8": {
-      "type": "leistungen-button",
+    "highlights_icons_7K7kJa": {
+      "type": "highlights-icons",
       "blocks": {
-        "service_block_E9zHe9": {
-          "type": "service_block",
+        "item_U66kAy": {
+          "type": "item",
           "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
+            "icon_bg": "#e5e7eb",
+            "title": "QUALITÄT",
+            "text": "Kurzer, prägnanter Beschreibungstext für dieses Highlight.",
+            "show_btn": true,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "btn_bg": "#0b63c8",
+            "btn_text": "#ffffff"
           }
         },
-        "service_block_C3fk7J": {
-          "type": "service_block",
+        "item_YKMbmB": {
+          "type": "item",
           "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
+            "icon_bg": "#e5e7eb",
+            "title": "UNTERNEHMEN",
+            "text": "Kurzer, prägnanter Beschreibungstext für dieses Highlight.",
+            "show_btn": true,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "btn_bg": "#0b63c8",
+            "btn_text": "#ffffff"
           }
         },
-        "service_block_nDPUVx": {
-          "type": "service_block",
+        "item_Ykhf8d": {
+          "type": "item",
           "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
-          }
-        },
-        "service_block_efGdrb": {
-          "type": "service_block",
-          "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
+            "icon_bg": "#e5e7eb",
+            "title": "PERSONAL",
+            "text": "Kurzer, prägnanter Beschreibungstext für dieses Highlight.",
+            "show_btn": true,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "btn_bg": "#0b63c8",
+            "btn_text": "#ffffff"
           }
         }
       },
       "block_order": [
-        "service_block_E9zHe9",
-        "service_block_C3fk7J",
-        "service_block_nDPUVx",
-        "service_block_efGdrb"
+        "item_U66kAy",
+        "item_YKMbmB",
+        "item_Ykhf8d"
       ],
-      "name": "Leistungen Button",
+      "name": "Highlights – Icons",
+      "settings": {
+        "heading": "Das macht uns aus",
+        "intro": "<p>Kurzer Einleitungstext, der die Highlights erklärt.</p>",
+        "color_scheme": "background-1",
+        "gap": 24,
+        "cols_desktop": 3,
+        "cols_tablet": 2,
+        "icon_size": 88,
+        "icon_radius": 1000
+      }
+    },
+    "services_cards_twxhKC": {
+      "type": "services-cards",
+      "blocks": {
+        "card_KNGfH9": {
+          "type": "card",
+          "settings": {
+            "badge": "texti",
+            "badge_color_bg": "#E8F2FF",
+            "badge_color_text": "#0A66C2",
+            "title": "Gebäudeservice",
+            "text": "Kurze Einleitung zur Leistung.",
+            "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
+            "bullet_color": "#10b981",
+            "show_btn": true,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "card_bg": "#ffffff",
+            "card_text": "#0f172a"
+          }
+        },
+        "card_QWpPpY": {
+          "type": "card",
+          "settings": {
+            "badge": "texti",
+            "badge_color_bg": "#E8F2FF",
+            "badge_color_text": "#0A66C2",
+            "title": "Industrieservice",
+            "text": "Kurze Einleitung zur Leistung.",
+            "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
+            "bullet_color": "#10b981",
+            "show_btn": true,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "card_bg": "#ffffff",
+            "card_text": "#0f172a"
+          }
+        },
+        "card_MxiN3e": {
+          "type": "card",
+          "settings": {
+            "badge": "texti",
+            "badge_color_bg": "#E8F2FF",
+            "badge_color_text": "#0A66C2",
+            "title": "Facility Management",
+            "text": "Kurze Einleitung zur Leistung.",
+            "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
+            "bullet_color": "#10b981",
+            "show_btn": true,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "card_bg": "#ffffff",
+            "card_text": "#0f172a"
+          }
+        },
+        "card_KLmt9e": {
+          "type": "card",
+          "settings": {
+            "badge": "Spezialreinigung",
+            "badge_color_bg": "#E8F2FF",
+            "badge_color_text": "#0A66C2",
+            "title": "Spezialreinigung",
+            "text": "Kurze Einleitung zur Leistung.",
+            "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
+            "bullet_color": "#10b981",
+            "show_btn": true,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "card_bg": "#ffffff",
+            "card_text": "#0f172a"
+          }
+        }
+      },
+      "block_order": [
+        "card_KNGfH9",
+        "card_QWpPpY",
+        "card_MxiN3e",
+        "card_KLmt9e"
+      ],
+      "name": "Leistungen – Kachel-Slider",
       "settings": {
         "heading": "Unsere Leistungen",
-        "heading_font": "sans-serif",
-        "heading_bold": true,
-        "heading_italic": false,
-        "heading_font_size": 42,
-        "heading_color": "#333333",
-        "section_scale": 100,
-        "item_spacing": 30,
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "section_bg_color": "#FFFFFF",
-        "arrow_color": "#111111",
-        "line_color": "#DDDDDD",
-        "cta_kicker": "Mehr zu unseren Services",
-        "cta_btn_label": "Alle Leistungen ansehen",
-        "cta_btn_link": "shopify://pages/industrieservice-leistungen",
-        "cta_btn_newtab": false,
-        "cta_btn_style": "primary",
-        "cta_align": "center",
-        "cta_kicker_color": "#555555",
-        "cta_btn_bg_color": "#111111",
-        "cta_btn_text_color": "#FFFFFF"
+        "subheading": "<p>Entdecken Sie unser Portfolio an professionellen Dienstleistungen.</p>",
+        "color_scheme": "background-1",
+        "card_gap": 16,
+        "card_radius": 14,
+        "cols_desktop": 4,
+        "cols_tablet": 3,
+        "show_arrows": true,
+        "show_scrollbar": false,
+        "snap_scroll": true
       }
     }
   },
@@ -233,6 +245,7 @@
     "custom_header_fi69pY",
     "main",
     "hero_overlay_section_6beqpy",
-    "leistungen_button_Didgg8"
+    "highlights_icons_7K7kJa",
+    "services_cards_twxhKC"
   ]
 }
