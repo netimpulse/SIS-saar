@@ -54,7 +54,9 @@
 
     { "type": "header", "content": "Icon-Stil" },
     { "type": "range", "id": "icon_size", "min": 56, "max": 140, "step": 4, "unit": "px", "label": "Icon-Größe (Kreis)", "default": 88 },
-    { "type": "range", "id": "icon_radius", "min": 0, "max": 1000, "step": 1, "unit": "px", "label": "Icon-Hintergrund: Radius", "default": 1000 }
+
+    /* WICHTIG: exakt 101 Schritte -> step 10, 0..1000 */
+    { "type": "range", "id": "icon_radius", "min": 0, "max": 1000, "step": 10, "unit": "px", "label": "Icon-Hintergrund: Radius", "default": 1000 }
   ],
   "blocks": [
     {
