@@ -80,6 +80,38 @@
         "right_button_link": "shopify://pages/industrieservice-startseite"
       }
     },
+    "text_mit_bild_button_VryaeN": {
+      "type": "text-mit-bild-button",
+      "name": "Text mit Bild",
+      "settings": {
+        "image": "shopify://shop_images/shutterstock_370492946.jpg",
+        "image_position": "right",
+        "image_shadow_strength": 20,
+        "heading": "Über uns",
+        "heading_font": "sans-serif",
+        "heading_font_size": 42,
+        "heading_color": "#1f1f1f",
+        "subheading": "Wer wir sind und was uns auszeichnet",
+        "subheading_font": "sans-serif",
+        "subheading_font_size": 18,
+        "subheading_color": "#555555",
+        "text": "<p>Beschreiben Sie hier Ihr Unternehmen, Ihre Produkte oder Dienstleistungen. Dieser Text ist vollständig anpassbar und unterstützt auch Formatierungen wie <strong>fett</strong> oder <em>kursiv</em>.</p>",
+        "text_font": "sans-serif",
+        "text_font_size": 16,
+        "text_color": "#333333",
+        "button_text": "Schaltflächenbeschriftung",
+        "button_link": "",
+        "button_font": "sans-serif",
+        "button_font_size": 16,
+        "button_padding_x": 24,
+        "button_padding_y": 14,
+        "button_border_radius": 10,
+        "button_bg_color": "#8e8e8e",
+        "button_bg_hover_color": "#6f6f6f",
+        "button_text_color": "#ffffff",
+        "button_text_color_hover": "#ffffff"
+      }
+    },
     "kundenbewertung_tzkjqA": {
       "type": "Kundenbewertung",
       "blocks": {
@@ -147,11 +179,50 @@
         "background_color": "#f9f9f9",
         "section_padding": 50
       }
+    },
+    "interactive_map_BWTdBe": {
+      "type": "interactive-map",
+      "name": "Interaktive Karte",
+      "settings": {
+        "api_key": "https://www.google.com/maps/place/Saar+Industrie+Service+GmbH/@49.2595077,6.81992,13z/data=!4m6!3m5!1s0x4795ae8157cd4b17:0x1ef8cc20edac0b6c!8m2!3d49.2495!4d6.83047!16s%2Fg%2F1tdy7_n9?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D",
+        "title": "So finden Sie uns",
+        "subtitle": "Besuchen Sie uns in unseren Geschäftsräumen",
+        "title_color": "#0B2545",
+        "title_size": 36,
+        "title_font": "inherit",
+        "subtitle_color": "#54627A",
+        "subtitle_size": 16,
+        "subtitle_font": "inherit",
+        "card_bg": "#F5F7FA",
+        "lat": 49,
+        "lng": 6,
+        "zoom": 14,
+        "height_desktop": 420,
+        "height_mobile": 360,
+        "draggable": false,
+        "scrollwheel": true,
+        "marker_title": "Unser Standort",
+        "pin_image": "shopify://shop_images/sis_location.png",
+        "pin_w": 40,
+        "pin_h": 40,
+        "pin_anchor_x": 20,
+        "pin_anchor_y": 40,
+        "radius_enabled": false,
+        "radius_km": 25,
+        "radius_stroke_color": "#16a34a",
+        "radius_stroke_weight": 2,
+        "radius_fill_color": "#ffffff",
+        "radius_fill_opacity": 1,
+        "placeholder_title": "Interaktive Karte",
+        "placeholder_text": "Hier würde eine interaktive Google Maps Karte eingebettet werden"
+      }
     }
   },
   "order": [
     "custom_header_iUWBMf",
     "split_showcase_DdJNLE",
-    "kundenbewertung_tzkjqA"
+    "text_mit_bild_button_VryaeN",
+    "kundenbewertung_tzkjqA",
+    "interactive_map_BWTdBe"
   ]
 }
