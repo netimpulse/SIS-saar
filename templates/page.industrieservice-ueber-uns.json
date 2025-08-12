@@ -46,11 +46,11 @@
         "padding_bottom": 28
       }
     },
-    "hero_overlay_section_6beqpy": {
+    "hero_overlay_section_Rk9gNP": {
       "type": "hero-overlay-section",
       "name": "Hero – Service Overlay",
       "settings": {
-        "bg_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
+        "bg_image": "shopify://shop_images/Image_29._Juli_2025_20_41_34_cleanup.png",
         "overlay_color": "#2baaa2",
         "overlay_opacity": 70,
         "section_height": 60,
@@ -65,7 +65,7 @@
         "text_size": 20,
         "text_color": "#ffffff",
         "btn1_text": "Mehr über unsere Services",
-        "btn1_link": "",
+        "btn1_link": "shopify://pages/industrieservice-leistungen",
         "btn1_font": "sans-serif",
         "btn1_font_size": 16,
         "btn1_padding_x": 28,
@@ -76,7 +76,7 @@
         "btn1_text_color": "#ffffff",
         "btn1_text_hover": "#ffffff",
         "btn2_text": "Kontakt aufnehmen",
-        "btn2_link": "",
+        "btn2_link": "shopify://pages/industrieservice-kontakt",
         "btn2_font": "sans-serif",
         "btn2_font_size": 16,
         "btn2_padding_x": 24,
@@ -88,151 +88,57 @@
         "btn2_text_hover": "#238b84"
       }
     },
-    "leistungen_button_Didgg8": {
-      "type": "leistungen-button",
+    "about_section_FRmjn4": {
+      "type": "about-section",
       "blocks": {
-        "service_block_E9zHe9": {
-          "type": "service_block",
+        "feature_qRrXEC": {
+          "type": "feature",
           "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung des Features."
           }
         },
-        "service_block_C3fk7J": {
-          "type": "service_block",
+        "feature_iVwUKB": {
+          "type": "feature",
           "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
-          }
-        },
-        "service_block_nDPUVx": {
-          "type": "service_block",
-          "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
-          }
-        },
-        "service_block_efGdrb": {
-          "type": "service_block",
-          "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung des Features."
           }
         }
       },
       "block_order": [
-        "service_block_E9zHe9",
-        "service_block_C3fk7J",
-        "service_block_nDPUVx",
-        "service_block_efGdrb"
+        "feature_qRrXEC",
+        "feature_iVwUKB"
       ],
-      "name": "Leistungen Button",
+      "name": "Über Uns (Layout)",
       "settings": {
-        "heading": "Unsere Leistungen",
-        "heading_font": "sans-serif",
-        "heading_bold": true,
-        "heading_italic": false,
-        "heading_font_size": 42,
-        "heading_color": "#333333",
-        "section_scale": 100,
-        "item_spacing": 30,
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "section_bg_color": "#FFFFFF",
-        "arrow_color": "#111111",
-        "line_color": "#DDDDDD",
-        "cta_kicker": "Mehr zu unseren Services",
-        "cta_btn_label": "Alle Leistungen ansehen",
-        "cta_btn_link": "shopify://pages/industrieservice-leistungen",
-        "cta_btn_newtab": false,
-        "cta_btn_style": "primary",
-        "cta_align": "center",
-        "cta_kicker_color": "#555555",
-        "cta_btn_bg_color": "#111111",
-        "cta_btn_text_color": "#FFFFFF"
+        "layout_direction": "text_left",
+        "background_color": "#FFFFFF",
+        "section_padding_top": 80,
+        "section_padding_bottom": 80,
+        "title": "Über uns",
+        "title_color": "#000000",
+        "title_font_size": 40,
+        "description": "<p>Wir sind SIS Saar - ein innovatives Unternehmen mit zwei spezialisierten Geschäftsbereichen. Seit über zwei Jahrzehnten stehen wir für zuverlässige und hochwertige Serviceleistungen in der Region.</p><p>Unser Erfolgsrezept liegt in der Kombination aus langjähriger Erfahrung, modernster Technik und einem motivierten Team von Fachkräften. Jeder Mitarbeiter trägt dazu bei, dass wir unseren Kunden stets erstklassige Lösungen anbieten können.</p>",
+        "text_color": "#6B7280",
+        "text_font_size": 18,
+        "image_border_radius": 12,
+        "image_alt": "",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34D399",
+        "feature_title_color": "#111827"
       }
     }
   },
   "order": [
     "custom_header_fi69pY",
     "main",
-    "hero_overlay_section_6beqpy",
-    "leistungen_button_Didgg8"
+    "hero_overlay_section_Rk9gNP",
+    "about_section_FRmjn4"
   ]
 }
