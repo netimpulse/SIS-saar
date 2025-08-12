@@ -194,21 +194,6 @@
         "icon_size": 88,
         "icon_radius": 1000
       }
-    },
-    "video_Ge3Aah": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -216,7 +201,6 @@
     "main",
     "hero_overlay_section_Rk9gNP",
     "about_section_FRmjn4",
-    "highlights_icons_4mpBYK",
-    "video_Ge3Aah"
+    "highlights_icons_4mpBYK"
   ]
 }
