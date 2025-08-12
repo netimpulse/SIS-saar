@@ -16,7 +16,7 @@
         "background_color": "#ffffff",
         "padding_vertical": 16,
         "padding_horizontal": 24,
-        "logo": "shopify://shop_images/Logo_SIS_Saar__1_-removebg-preview.png",
+        "logo": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
         "logo_text": "Mein Shop",
         "logo_color": "#1e40af",
         "logo_font_size": 24,
@@ -50,11 +50,11 @@
         "subheading": "Wir bieten erstklassige Reinigungs- und Facility Services für Unternehmen und Privatkunden.",
         "button_label": "Jetzt Angebot anfordern",
         "button_link": "",
-        "button_color": "#007ACC",
-        "button_text_color": "#FFFFFF",
+        "button_color": "#007acc",
+        "button_text_color": "#ffffff",
         "button_radius": 4,
-        "heading_color": "#FFFFFF",
-        "text_color": "#F5F5F5",
+        "heading_color": "#ffffff",
+        "text_color": "#f5f5f5",
         "heading_size": 48,
         "text_size": 18,
         "font_family": "Arial, sans-serif",
@@ -127,7 +127,7 @@
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
+            "image_border_color": "#e0e0e0",
             "image_border_width": 4,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
@@ -153,7 +153,7 @@
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
+            "image_border_color": "#e0e0e0",
             "image_border_width": 4,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
@@ -179,7 +179,7 @@
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
+            "image_border_color": "#e0e0e0",
             "image_border_width": 4,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
@@ -205,7 +205,7 @@
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
+            "image_border_color": "#e0e0e0",
             "image_border_width": 4,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
@@ -246,9 +246,9 @@
         "item_spacing": 30,
         "padding_top": 50,
         "padding_bottom": 50,
-        "section_bg_color": "#FFFFFF",
+        "section_bg_color": "#ffffff",
         "arrow_color": "#111111",
-        "line_color": "#DDDDDD",
+        "line_color": "#dddddd",
         "cta_kicker": "Mehr zu unseren Services",
         "cta_btn_label": "Alle Leistungen ansehen",
         "cta_btn_link": "shopify://pages/gebaudeservice-leistungen",
@@ -257,7 +257,7 @@
         "cta_align": "center",
         "cta_kicker_color": "#555555",
         "cta_btn_bg_color": "#111111",
-        "cta_btn_text_color": "#FFFFFF"
+        "cta_btn_text_color": "#ffffff"
       }
     },
     "amenities_hotspots_tap6zf": {
