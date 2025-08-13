@@ -135,6 +135,32 @@
     "leistungen_button_eHfFVQ": {
       "type": "leistungen-button",
       "blocks": {
+        "service_block_pCxQdA": {
+          "type": "service_block",
+          "settings": {
+            "image_diameter": 150,
+            "image_border_color": "#e0e0e0",
+            "image_border_width": 4,
+            "title": "Unterhaltsreinigung",
+            "subtitle": "Regelmäßige Reinigung Ihrer Büro‑ und Geschäftsräume.",
+            "text": "<p>Büro‑ und Gebäudereinigung  Oberflächen und Sanitäranlagen   Teppich‑ und Bodenreinigung</p>",
+            "title_font": "sans-serif",
+            "title_bold": true,
+            "title_italic": false,
+            "title_font_size": 20,
+            "title_color": "#000000",
+            "subtitle_font": "sans-serif",
+            "subtitle_bold": false,
+            "subtitle_italic": false,
+            "subtitle_font_size": 16,
+            "subtitle_color": "#555555",
+            "text_font": "sans-serif",
+            "text_bold": false,
+            "text_italic": false,
+            "text_font_size": 14,
+            "text_color": "#333333"
+          }
+        },
         "service_block_EmmrBT": {
           "type": "service_block",
           "settings": {
@@ -241,6 +267,7 @@
         }
       },
       "block_order": [
+        "service_block_pCxQdA",
         "service_block_EmmrBT",
         "service_block_CNxyTb",
         "service_block_ygjHdG",
@@ -369,7 +396,7 @@
         "subheading_font": "sans-serif",
         "subheading_font_size": 18,
         "subheading_color": "#555555",
-        "text": "<p>Beschreiben Sie hier Ihr Unternehmen, Ihre Produkte oder Dienstleistungen. Dieser Text ist vollständig anpassbar und unterstützt auch Formatierungen wie <strong>fett</strong> oder <em>kursiv</em>.</p>",
+        "text": "<p><br/>Die SIS Saar Gebäudeservice GmbH wurde gegründet, um unsere Kompetenz in der Unterhaltsreinigung und Gebäudedienstleistung zu bündeln und konsequent auszubauen. Wir setzen auf geschultes Personal, moderne Maschinen und umweltschonende Reinigungsmittel, um Ihnen beste Ergebnisse zu bieten. Unser Team kümmert sich mit Herzblut um die Sauberkeit Ihrer Räumlichkeiten – vom Bürogebäude über Ferienparks bis hin zu Sonderreinigungen.<br/><br/></p>",
         "text_font": "sans-serif",
         "text_font_size": 16,
         "text_color": "#333333",
