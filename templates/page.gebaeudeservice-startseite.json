@@ -31,7 +31,7 @@
         "menu_position_x": 0,
         "menu_position_y": 0,
         "button_text": "Kontakt",
-        "button_link": "shopify://pages/gebaudeservice-kontakt",
+        "button_link": "shopify://pages/allgemeiner-kontakt",
         "button_text_color": "#ffffff",
         "button_bg_color": "#4ade80",
         "button_hover_text_color": "#ffffff",
