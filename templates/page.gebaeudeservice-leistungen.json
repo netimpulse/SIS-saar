@@ -215,13 +215,49 @@
             "card_bg": "#ffffff",
             "card_text": "#0f172a"
           }
+        },
+        "card_ab8hdM": {
+          "type": "card",
+          "settings": {
+            "badge": "texti",
+            "badge_color_bg": "#e8f2ff",
+            "badge_color_text": "#0a66c2",
+            "title": "Gebäudeservice",
+            "text": "Kurze Einleitung zur Leistung.",
+            "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
+            "bullet_color": "#10b981",
+            "show_btn": true,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "card_bg": "#ffffff",
+            "card_text": "#0f172a"
+          }
+        },
+        "card_VqTrCK": {
+          "type": "card",
+          "settings": {
+            "badge": "texti",
+            "badge_color_bg": "#e8f2ff",
+            "badge_color_text": "#0a66c2",
+            "title": "Gebäudeservice",
+            "text": "Kurze Einleitung zur Leistung.",
+            "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
+            "bullet_color": "#10b981",
+            "show_btn": true,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "card_bg": "#ffffff",
+            "card_text": "#0f172a"
+          }
         }
       },
       "block_order": [
         "card_fdDgtk",
         "card_KHVAXa",
         "card_wVCUAF",
-        "card_L6gDP9"
+        "card_L6gDP9",
+        "card_ab8hdM",
+        "card_VqTrCK"
       ],
       "name": "Leistungen – Kachel-Slider",
       "settings": {
@@ -358,8 +394,8 @@
           "type": "card",
           "settings": {
             "badge": "texti",
-            "badge_color_bg": "#E8F2FF",
-            "badge_color_text": "#0A66C2",
+            "badge_color_bg": "#e8f2ff",
+            "badge_color_text": "#0a66c2",
             "title": "Gebäudeservice",
             "text": "Kurze Einleitung zur Leistung.",
             "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
@@ -375,8 +411,8 @@
           "type": "card",
           "settings": {
             "badge": "texti",
-            "badge_color_bg": "#E8F2FF",
-            "badge_color_text": "#0A66C2",
+            "badge_color_bg": "#e8f2ff",
+            "badge_color_text": "#0a66c2",
             "title": "Industrieservice",
             "text": "Kurze Einleitung zur Leistung.",
             "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
@@ -392,8 +428,8 @@
           "type": "card",
           "settings": {
             "badge": "texti",
-            "badge_color_bg": "#E8F2FF",
-            "badge_color_text": "#0A66C2",
+            "badge_color_bg": "#e8f2ff",
+            "badge_color_text": "#0a66c2",
             "title": "Facility Management",
             "text": "Kurze Einleitung zur Leistung.",
             "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
@@ -409,8 +445,8 @@
           "type": "card",
           "settings": {
             "badge": "Spezialreinigung",
-            "badge_color_bg": "#E8F2FF",
-            "badge_color_text": "#0A66C2",
+            "badge_color_bg": "#e8f2ff",
+            "badge_color_text": "#0a66c2",
             "title": "Spezialreinigung",
             "text": "Kurze Einleitung zur Leistung.",
             "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
@@ -426,8 +462,8 @@
           "type": "card",
           "settings": {
             "badge": "texti",
-            "badge_color_bg": "#E8F2FF",
-            "badge_color_text": "#0A66C2",
+            "badge_color_bg": "#e8f2ff",
+            "badge_color_text": "#0a66c2",
             "title": "Gebäudeservice",
             "text": "Kurze Einleitung zur Leistung.",
             "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
