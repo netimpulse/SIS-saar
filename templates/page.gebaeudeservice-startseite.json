@@ -378,7 +378,7 @@
         "pad_x": 24,
         "dot_size": 25,
         "pulse_size": 12,
-        "close_others": false,
+        "close_others": true,
         "panel_maxw": 360
       }
     },
