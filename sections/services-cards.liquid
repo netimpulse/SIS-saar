@@ -1,9 +1,9 @@
 {% comment %}
-  Services Cards – horizontally scrolling, infinite carousel
-  Files required:
-    - snippets/service-card.liquid   (unverändert)
-    - assets/services-cards.css      (dein bestehendes CSS)
-    - assets/services-carousel.js    (neue Datei unten)
+  karussel.leistungen – endloses Kachel-Karussell
+  Benötigt:
+    - snippets/service-card.liquid (dein bestehendes Snippet)
+    - assets/services-cards.css    (dein bestehendes CSS)
+    - assets/karussel.leistungen.js (JS unten)
 {% endcomment %}
 
 <link rel="stylesheet" href="{{ 'services-cards.css' | asset_url }}" media="all">
@@ -47,11 +47,11 @@
   </div>
 </section>
 
-<script src="{{ 'services-carousel.js' | asset_url }}" defer></script>
+<script src="{{ 'karussel.leistungen.js' | asset_url }}" defer></script>
 
 {% schema %}
 {
-  "name": "Leistungen 2",
+  "name": "karussel.leistungen",
   "tag": "section",
   "class": "section",
   "settings": [
@@ -107,7 +107,7 @@
   "max_blocks": 20,
   "presets": [
     {
-      "name": "Leistungen – Kachel-Slider",
+      "name": "karussel.leistungen",
       "blocks": [
         { "type": "card", "settings": { "title": "Gebäudeservice" } },
         { "type": "card", "settings": { "title": "Industrieservice" } },
@@ -118,4 +118,3 @@
   ]
 }
 {% endschema %}
-
