@@ -234,12 +234,25 @@
             "position_color": "#4a6965",
             "position_font_size": 16
           }
+        },
+        "team_member_bcMgey": {
+          "type": "team_member",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_370492946.jpg",
+            "name": "Max Mustermann",
+            "position": "CEO & Founder",
+            "name_color": "#1e293b",
+            "name_font_size": 20,
+            "position_color": "#4a6965",
+            "position_font_size": 16
+          }
         }
       },
       "block_order": [
         "team_member_MxVGA7",
         "team_member_chWED9",
-        "team_member_akkJpd"
+        "team_member_akkJpd",
+        "team_member_bcMgey"
       ],
       "name": "Team",
       "settings": {
