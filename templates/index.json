@@ -276,6 +276,44 @@
         "industrie_email": "industrie@sis-saar.de",
         "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
+    },
+    "services_cards_bz8GHT": {
+      "type": "services-cards",
+      "blocks": {
+        "card_d4BF4G": {
+          "type": "card",
+          "settings": {
+            "badge": "texti",
+            "badge_color_bg": "#E8F2FF",
+            "badge_color_text": "#0A66C2",
+            "title": "Gebäudeservice",
+            "text": "Kurze Einleitung zur Leistung.",
+            "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
+            "bullet_color": "#10b981",
+            "show_btn": true,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "card_bg": "#ffffff",
+            "card_text": "#0f172a"
+          }
+        }
+      },
+      "block_order": [
+        "card_d4BF4G"
+      ],
+      "name": "Leistungen – Kachel-Slider",
+      "settings": {
+        "heading": "Unsere Leistungen",
+        "subheading": "<p>Entdecken Sie unser Portfolio an professionellen Dienstleistungen.</p>",
+        "color_scheme": "background-1",
+        "card_gap": 16,
+        "card_radius": 14,
+        "cols_desktop": 4,
+        "cols_tablet": 3,
+        "show_arrows": true,
+        "show_scrollbar": false,
+        "snap_scroll": true
+      }
     }
   },
   "order": [
@@ -284,6 +322,7 @@
     "text_mit_bild_button_VryaeN",
     "kundenbewertung_tzkjqA",
     "interactive_map_BWTdBe",
-    "sis_footer_E9Qb9V"
+    "sis_footer_E9Qb9V",
+    "services_cards_bz8GHT"
   ]
 }
