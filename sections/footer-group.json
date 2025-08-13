@@ -49,6 +49,7 @@
         "industrie_legal_Na7dtH",
         "industrie_legal_JVQPfD"
       ],
+      "disabled": true,
       "name": "SIS Footer",
       "settings": {
         "background_color": "#111827",
@@ -102,7 +103,6 @@
         "legal_link_TEqGxb",
         "legal_link_pNNQVA"
       ],
-      "disabled": true,
       "name": "SIS – Einzelfooter",
       "settings": {
         "title": "SIS Saar Gebäude Service",
