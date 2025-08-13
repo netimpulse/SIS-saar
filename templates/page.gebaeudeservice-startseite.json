@@ -9,35 +9,6 @@
  */
 {
   "sections": {
-    "custom_header_rJ3rhV": {
-      "type": "custom-header",
-      "name": "Custom Header",
-      "settings": {
-        "background_color": "#ffffff",
-        "padding_vertical": 16,
-        "padding_horizontal": 24,
-        "logo": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
-        "logo_text": "Mein Shop",
-        "logo_color": "#1e40af",
-        "logo_font_size": 24,
-        "logo_position_x": 0,
-        "logo_position_y": 0,
-        "menu": "geb-udeservice",
-        "nav_font": "sans-serif",
-        "nav_font_bold": true,
-        "nav_text_color": "#374151",
-        "nav_hover_color": "#4ade80",
-        "nav_font_size": 16,
-        "menu_position_x": 0,
-        "menu_position_y": 0,
-        "button_text": "Kontakt",
-        "button_link": "shopify://pages/allgemeiner-kontakt",
-        "button_text_color": "#ffffff",
-        "button_bg_color": "#4ade80",
-        "button_hover_text_color": "#ffffff",
-        "button_hover_bg_color": "#22c55e"
-      }
-    },
     "hero_building_section_kFETXt": {
       "type": "hero-building-section",
       "name": "Hero Building",
@@ -503,10 +474,51 @@
         "link_color": "#3b82f6",
         "divider_color": "#1e293b"
       }
+    },
+    "custom_header_2_GcgWYg": {
+      "type": "custom-header-2",
+      "name": "Custom Header 2",
+      "settings": {
+        "background_color": "#ffffff",
+        "padding_vertical": 16,
+        "padding_horizontal": 24,
+        "back_link": "shopify://pages/startseite-allgemein",
+        "back_label": "Zur Hauptseite",
+        "back_font": "sans-serif",
+        "back_font_bold": false,
+        "back_text_color": "#64748b",
+        "back_hover_color": "#4ade80",
+        "back_font_size": 16,
+        "back_position_x": 0,
+        "back_position_y": 0,
+        "logo": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
+        "logo_text": "Mein Shop",
+        "logo_subtext": "Service & Solutions",
+        "logo_color": "#0f172a",
+        "logo_font_size": 22,
+        "logo_subtext_color": "#6b7280",
+        "logo_subtext_size": 12,
+        "logo_position_x": 0,
+        "logo_position_y": 0,
+        "menu": "geb-udeservice",
+        "nav_font": "sans-serif",
+        "nav_font_bold": true,
+        "nav_text_color": "#374151",
+        "nav_hover_color": "#22c55e",
+        "nav_font_size": 16,
+        "menu_position_x": 0,
+        "menu_position_y": 0,
+        "button_text": "Kontakt",
+        "button_link": "shopify://pages/allgemeiner-kontakt",
+        "button_text_color": "#ffffff",
+        "button_bg_color": "#0f2640",
+        "button_hover_text_color": "#ffffff",
+        "button_hover_bg_color": "#193352"
+      }
     }
   },
   "order": [
-    "custom_header_rJ3rhV",
+    "custom_header_2_GcgWYg",
     "hero_building_section_kFETXt",
     "main",
     "image_banner_dLWiNX",
