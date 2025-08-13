@@ -17,35 +17,6 @@
         "padding_bottom": 28
       }
     },
-    "custom_header_jrp4Hg": {
-      "type": "custom-header",
-      "name": "Custom Header",
-      "settings": {
-        "background_color": "#ffffff",
-        "padding_vertical": 16,
-        "padding_horizontal": 24,
-        "logo": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
-        "logo_text": "Mein Shop",
-        "logo_color": "#1e40af",
-        "logo_font_size": 24,
-        "logo_position_x": 0,
-        "logo_position_y": 0,
-        "menu": "main-menu",
-        "nav_font": "sans-serif",
-        "nav_font_bold": false,
-        "nav_text_color": "#374151",
-        "nav_hover_color": "#4ade80",
-        "nav_font_size": 16,
-        "menu_position_x": 0,
-        "menu_position_y": 0,
-        "button_text": "Kontakt",
-        "button_link": "shopify://pages/allgemeiner-kontakt",
-        "button_text_color": "#ffffff",
-        "button_bg_color": "#4ade80",
-        "button_hover_text_color": "#ffffff",
-        "button_hover_bg_color": "#22c55e"
-      }
-    },
     "hero_building_section_jFhK9K": {
       "type": "hero-building-section",
       "name": "Hero Building",
@@ -382,13 +353,12 @@
     }
   },
   "order": [
+    "custom_header_2_qQeGYW",
     "main",
-    "custom_header_jrp4Hg",
     "hero_building_section_jFhK9K",
     "highlights_icons_kWf4Y9",
     "services_cards_aAFJw9",
     "custom_cta_block_xMcPbA",
-    "sis_single_footer_PQBXAB",
-    "custom_header_2_qQeGYW"
+    "sis_single_footer_PQBXAB"
   ]
 }
