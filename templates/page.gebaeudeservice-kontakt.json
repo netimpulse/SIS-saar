@@ -114,11 +114,73 @@
         "button_label": "Nachricht senden",
         "success_text": "Danke für Ihre Nachricht! Wir melden uns bald."
       }
+    },
+    "sis_footer_cFcxeB": {
+      "type": "sis-footer",
+      "blocks": {
+        "gebaeude_legal_VefYaP": {
+          "type": "gebaeude_legal",
+          "settings": {
+            "text": "Impressum",
+            "link": ""
+          }
+        },
+        "gebaeude_legal_F6XDm3": {
+          "type": "gebaeude_legal",
+          "settings": {
+            "text": "Datenschutz",
+            "link": ""
+          }
+        },
+        "industrie_legal_cN9PhC": {
+          "type": "industrie_legal",
+          "settings": {
+            "text": "Impressum",
+            "link": ""
+          }
+        },
+        "industrie_legal_axm4QD": {
+          "type": "industrie_legal",
+          "settings": {
+            "text": "Datenschutz",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "gebaeude_legal_VefYaP",
+        "gebaeude_legal_F6XDm3",
+        "industrie_legal_cN9PhC",
+        "industrie_legal_axm4QD"
+      ],
+      "name": "SIS Footer",
+      "settings": {
+        "background_color": "#111827",
+        "section_padding": 60,
+        "separator_color": "#374151",
+        "title_color": "#ffffff",
+        "title_font_size": 24,
+        "subtitle_color": "#d1d5db",
+        "subtitle_font_size": 18,
+        "text_color": "#9ca3af",
+        "text_font_size": 14,
+        "link_color": "#60a5fa",
+        "gebaeude_title": "SIS Saar Gebäude Service",
+        "gebaeude_address": "Musterstraße 1, 12345 Musterstadt",
+        "gebaeude_phone": "0123 / 456 789",
+        "gebaeude_email": "gebaeude@sis-saar.de",
+        "industrie_title": "SIS Saar Industrie Service",
+        "industrie_address": "Beispielweg 2, 54321 Beispielhausen",
+        "industrie_phone": "0987 / 654 321",
+        "industrie_email": "industrie@sis-saar.de",
+        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
+      }
     }
   },
   "order": [
     "main",
     "custom_header_RrUzAh",
-    "contact_info_form_tjiQNz"
+    "contact_info_form_tjiQNz",
+    "sis_footer_cFcxeB"
   ]
 }
