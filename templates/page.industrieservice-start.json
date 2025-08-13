@@ -363,6 +363,7 @@
       "blocks": {
         "button_jt6jdw": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "label": "<p>Kostenlose Beratung</p>",
             "link": "",
@@ -384,7 +385,7 @@
           "type": "button",
           "settings": {
             "label": "<p>Kostenlose Beratung</p>",
-            "link": "",
+            "link": "shopify://pages/allgemeiner-kontakt",
             "variant": "solid",
             "text_color": "#ffffff",
             "bg_color": "#0b132a",
