@@ -76,7 +76,7 @@
         "btn1_text_color": "#ffffff",
         "btn1_text_hover": "#ffffff",
         "btn2_text": "Kontakt aufnehmen",
-        "btn2_link": "shopify://pages/industrieservice-kontakt",
+        "btn2_link": "shopify://pages/allgemeiner-kontakt",
         "btn2_font": "sans-serif",
         "btn2_font_size": 16,
         "btn2_padding_x": 24,
