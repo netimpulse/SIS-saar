@@ -160,98 +160,6 @@
         "icon_radius": 1000
       }
     },
-    "services_cards_twxhKC": {
-      "type": "services-cards",
-      "blocks": {
-        "card_KNGfH9": {
-          "type": "card",
-          "settings": {
-            "badge": "texti",
-            "badge_color_bg": "#e8f2ff",
-            "badge_color_text": "#0a66c2",
-            "title": "Gebäudeservice",
-            "text": "Kurze Einleitung zur Leistung.",
-            "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
-            "bullet_color": "#10b981",
-            "show_btn": true,
-            "btn_label": "Mehr erfahren",
-            "btn_link": "",
-            "card_bg": "#ffffff",
-            "card_text": "#0f172a"
-          }
-        },
-        "card_QWpPpY": {
-          "type": "card",
-          "settings": {
-            "badge": "texti",
-            "badge_color_bg": "#e8f2ff",
-            "badge_color_text": "#0a66c2",
-            "title": "Industrieservice",
-            "text": "Kurze Einleitung zur Leistung.",
-            "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
-            "bullet_color": "#10b981",
-            "show_btn": true,
-            "btn_label": "Mehr erfahren",
-            "btn_link": "",
-            "card_bg": "#ffffff",
-            "card_text": "#0f172a"
-          }
-        },
-        "card_MxiN3e": {
-          "type": "card",
-          "settings": {
-            "badge": "texti",
-            "badge_color_bg": "#e8f2ff",
-            "badge_color_text": "#0a66c2",
-            "title": "Facility Management",
-            "text": "Kurze Einleitung zur Leistung.",
-            "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
-            "bullet_color": "#10b981",
-            "show_btn": true,
-            "btn_label": "Mehr erfahren",
-            "btn_link": "",
-            "card_bg": "#ffffff",
-            "card_text": "#0f172a"
-          }
-        },
-        "card_KLmt9e": {
-          "type": "card",
-          "settings": {
-            "badge": "Spezialreinigung",
-            "badge_color_bg": "#e8f2ff",
-            "badge_color_text": "#0a66c2",
-            "title": "Spezialreinigung",
-            "text": "Kurze Einleitung zur Leistung.",
-            "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
-            "bullet_color": "#10b981",
-            "show_btn": true,
-            "btn_label": "Mehr erfahren",
-            "btn_link": "",
-            "card_bg": "#ffffff",
-            "card_text": "#0f172a"
-          }
-        }
-      },
-      "block_order": [
-        "card_KNGfH9",
-        "card_QWpPpY",
-        "card_MxiN3e",
-        "card_KLmt9e"
-      ],
-      "name": "Leistungen – Kachel-Slider",
-      "settings": {
-        "heading": "Unsere Leistungen",
-        "subheading": "<p>Entdecken Sie unser Portfolio an professionellen Dienstleistungen.</p>",
-        "color_scheme": "background-1",
-        "card_gap": 16,
-        "card_radius": 14,
-        "cols_desktop": 4,
-        "cols_tablet": 3,
-        "show_arrows": true,
-        "show_scrollbar": false,
-        "snap_scroll": true
-      }
-    },
     "custom_cta_block_Tf7gLb": {
       "type": "custom-cta-block",
       "blocks": {
@@ -366,6 +274,98 @@
         "link_color": "#3b82f6",
         "divider_color": "#1e293b"
       }
+    },
+    "karussel_leistungen_bd9cXU": {
+      "type": "karussel-leistungen",
+      "blocks": {
+        "card_FzdwNM": {
+          "type": "card",
+          "settings": {
+            "badge": "texti",
+            "badge_color_bg": "#E8F2FF",
+            "badge_color_text": "#0A66C2",
+            "title": "Gebäudeservice",
+            "text": "Kurze Einleitung zur Leistung.",
+            "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
+            "bullet_color": "#10b981",
+            "show_btn": true,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "card_bg": "#ffffff",
+            "card_text": "#0f172a"
+          }
+        },
+        "card_H3wkrr": {
+          "type": "card",
+          "settings": {
+            "badge": "texti",
+            "badge_color_bg": "#E8F2FF",
+            "badge_color_text": "#0A66C2",
+            "title": "Industrieservice",
+            "text": "Kurze Einleitung zur Leistung.",
+            "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
+            "bullet_color": "#10b981",
+            "show_btn": true,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "card_bg": "#ffffff",
+            "card_text": "#0f172a"
+          }
+        },
+        "card_fngnwU": {
+          "type": "card",
+          "settings": {
+            "badge": "texti",
+            "badge_color_bg": "#E8F2FF",
+            "badge_color_text": "#0A66C2",
+            "title": "Facility Management",
+            "text": "Kurze Einleitung zur Leistung.",
+            "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
+            "bullet_color": "#10b981",
+            "show_btn": true,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "card_bg": "#ffffff",
+            "card_text": "#0f172a"
+          }
+        },
+        "card_knKCTV": {
+          "type": "card",
+          "settings": {
+            "badge": "Spezialreinigung",
+            "badge_color_bg": "#E8F2FF",
+            "badge_color_text": "#0A66C2",
+            "title": "Spezialreinigung",
+            "text": "Kurze Einleitung zur Leistung.",
+            "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
+            "bullet_color": "#10b981",
+            "show_btn": true,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "card_bg": "#ffffff",
+            "card_text": "#0f172a"
+          }
+        }
+      },
+      "block_order": [
+        "card_FzdwNM",
+        "card_H3wkrr",
+        "card_fngnwU",
+        "card_knKCTV"
+      ],
+      "name": "Leistungen – Karussell",
+      "settings": {
+        "heading": "Unsere Leistungen",
+        "subheading": "<p>Entdecken Sie unser Portfolio an professionellen Dienstleistungen.</p>",
+        "color_scheme": "background-1",
+        "card_gap": 16,
+        "card_radius": 14,
+        "cols_desktop": 4,
+        "cols_tablet": 3,
+        "show_arrows": true,
+        "show_scrollbar": false,
+        "snap_scroll": true
+      }
     }
   },
   "order": [
@@ -373,7 +373,7 @@
     "main",
     "hero_overlay_section_6beqpy",
     "highlights_icons_7K7kJa",
-    "services_cards_twxhKC",
+    "karussel_leistungen_bd9cXU",
     "custom_cta_block_Tf7gLb",
     "sis_single_footer_PEDkQY"
   ]
