@@ -46,193 +46,177 @@
         "padding_bottom": 28
       }
     },
-    "hero_overlay_section_6beqpy": {
-      "type": "hero-overlay-section",
-      "name": "Hero – Service Overlay",
+    "blog_hero_search_84AHtm": {
+      "type": "blog-hero-search",
+      "name": "Blog Hero mit Suche",
       "settings": {
-        "bg_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
-        "overlay_color": "#2baaa2",
-        "overlay_opacity": 70,
-        "section_height": 60,
-        "section_height_mobile": 40,
-        "content_max_width": 760,
-        "heading": "Ihre Partner für professionelle Service-Lösungen",
-        "heading_font": "sans-serif",
-        "heading_size": 64,
+        "bg_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_00_15_46_cleanup.png",
+        "heading_prefix": "Einblicke für",
+        "heading_highlight": "Inudstrie & Gebäudeservice",
+        "subheading": "Entdecken Sie die neuesten Trends, Best Practices und Expertenwissen aus der Welt der digitalen Transformation.",
+        "search_placeholder": "Blog-Artikel durchsuchen…",
+        "search_button_label": "Suchen",
+        "no_results": "Keine Treffer. Bitte Suchbegriff anpassen.",
+        "see_all": "Alle Ergebnisse anzeigen",
+        "content_width": "narrow",
         "heading_color": "#ffffff",
-        "text": "<p>Zwei spezialisierte Unternehmen unter einem Dach. Ihr Experte und Dienstleistungspartner auf höchstem Niveau.</p>",
-        "text_font": "sans-serif",
-        "text_size": 20,
-        "text_color": "#ffffff",
-        "btn1_text": "Mehr über unsere Services",
-        "btn1_link": "",
-        "btn1_font": "sans-serif",
-        "btn1_font_size": 16,
-        "btn1_padding_x": 28,
-        "btn1_padding_y": 14,
-        "btn1_radius": 10,
-        "btn1_bg": "#2baaa2",
-        "btn1_bg_hover": "#238b84",
-        "btn1_text_color": "#ffffff",
-        "btn1_text_hover": "#ffffff",
-        "btn2_text": "Kontakt aufnehmen",
-        "btn2_link": "shopify://pages/allgemeiner-kontakt",
-        "btn2_font": "sans-serif",
-        "btn2_font_size": 16,
-        "btn2_padding_x": 24,
-        "btn2_padding_y": 14,
-        "btn2_radius": 10,
-        "btn2_bg": "#ffffff",
-        "btn2_bg_hover": "#e6e6e6",
-        "btn2_text_color": "#2baaa2",
-        "btn2_text_hover": "#238b84"
+        "highlight_color": "#2b6cff",
+        "subtitle_color": "#e8e8e8",
+        "button_bg": "#2b6cff",
+        "button_color": "#ffffff",
+        "overlay": "rgba(0,0,0,0.45)",
+        "padding_y_mobile": 80,
+        "padding_x_mobile": 20
       }
     },
-    "leistungen_button_Didgg8": {
-      "type": "leistungen-button",
+    "highlight_blog_articles_xELeT7": {
+      "type": "highlight-blog-articles",
+      "name": "Highlight Blog Artikel",
+      "settings": {
+        "title": "Aktuelle Artikel",
+        "subtitle": "Bleiben Sie auf dem Laufenden mit unseren neuesten Insights und Expertenwissen aus verschiedenen Bereichen der digitalen Welt.",
+        "blog": "",
+        "button_geb_label": "Gebäudeservice",
+        "button_geb_link": "",
+        "button_ind_label": "Industrieservice",
+        "button_ind_link": ""
+      }
+    },
+    "custom_cta_block_6BydfM": {
+      "type": "custom-cta-block",
       "blocks": {
-        "service_block_E9zHe9": {
-          "type": "service_block",
+        "button_FEJEcJ": {
+          "type": "button",
           "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#e0e0e0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
+            "label": "<p>Kostenlose Beratung</p>",
+            "link": "",
+            "variant": "solid",
+            "text_color": "#ffffff",
+            "bg_color": "#0b132a",
+            "border_color": "#0b132a",
+            "hover_bg": "#111827",
+            "hover_text": "#ffffff",
+            "radius": 12,
+            "padding_x": 24,
+            "padding_y": 14,
+            "bold": true,
+            "offset_x": 0,
+            "offset_y": 0
           }
         },
-        "service_block_C3fk7J": {
-          "type": "service_block",
+        "button_DPDP6e": {
+          "type": "button",
           "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#e0e0e0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
-          }
-        },
-        "service_block_nDPUVx": {
-          "type": "service_block",
-          "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#e0e0e0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
-          }
-        },
-        "service_block_efGdrb": {
-          "type": "service_block",
-          "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#e0e0e0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
+            "label": "<p>Kostenlose Beratung</p>",
+            "link": "",
+            "variant": "solid",
+            "text_color": "#ffffff",
+            "bg_color": "#0b132a",
+            "border_color": "#0b132a",
+            "hover_bg": "#111827",
+            "hover_text": "#ffffff",
+            "radius": 12,
+            "padding_x": 24,
+            "padding_y": 14,
+            "bold": true,
+            "offset_x": 0,
+            "offset_y": 0
           }
         }
       },
       "block_order": [
-        "service_block_E9zHe9",
-        "service_block_C3fk7J",
-        "service_block_nDPUVx",
-        "service_block_efGdrb"
+        "button_FEJEcJ",
+        "button_DPDP6e"
       ],
-      "name": "Leistungen Button",
+      "name": "Custom CTA Block",
       "settings": {
-        "heading": "Unsere Leistungen",
-        "heading_font": "sans-serif",
+        "heading": "<p><strong>Bereit für professionellen Gebäudeservice?</strong></p>",
+        "heading_size": 56,
         "heading_bold": true,
-        "heading_italic": false,
-        "heading_font_size": 42,
-        "heading_color": "#333333",
-        "section_scale": 100,
-        "item_spacing": 30,
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "section_bg_color": "#ffffff",
-        "arrow_color": "#111111",
-        "line_color": "#dddddd",
-        "cta_kicker": "Mehr zu unseren Services",
-        "cta_btn_label": "Alle Leistungen ansehen",
-        "cta_btn_link": "shopify://pages/industrieservice-leistungen",
-        "cta_btn_newtab": false,
-        "cta_btn_style": "primary",
-        "cta_align": "center",
-        "cta_kicker_color": "#555555",
-        "cta_btn_bg_color": "#111111",
-        "cta_btn_text_color": "#ffffff"
+        "heading_color": "#0f172a",
+        "heading_font": "inherit",
+        "subheading": "<p>Kontaktieren Sie uns für ein unverbindliches Beratungsgespräch und ein individuelles Angebot für Ihre Anforderungen.</p>",
+        "sub_size": 20,
+        "sub_bold": false,
+        "sub_color": "#475569",
+        "sub_font": "inherit",
+        "align": "center",
+        "content_max": 1000,
+        "pad_top": 64,
+        "pad_bottom": 64,
+        "use_gradient_bg": true,
+        "bg_gradient": "linear-gradient(180deg, rgba(241, 245, 249, 0.6), rgba(241, 245, 249, 0) 100%)",
+        "buttons_gap": 16
+      }
+    },
+    "sis_footer_iCdA7K": {
+      "type": "sis-footer",
+      "blocks": {
+        "gebaeude_legal_AycK79": {
+          "type": "gebaeude_legal",
+          "settings": {
+            "text": "Impressum",
+            "link": ""
+          }
+        },
+        "gebaeude_legal_rEkTRQ": {
+          "type": "gebaeude_legal",
+          "settings": {
+            "text": "Datenschutz",
+            "link": ""
+          }
+        },
+        "industrie_legal_m4JFNT": {
+          "type": "industrie_legal",
+          "settings": {
+            "text": "Impressum",
+            "link": ""
+          }
+        },
+        "industrie_legal_M9whLB": {
+          "type": "industrie_legal",
+          "settings": {
+            "text": "Datenschutz",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "gebaeude_legal_AycK79",
+        "gebaeude_legal_rEkTRQ",
+        "industrie_legal_m4JFNT",
+        "industrie_legal_M9whLB"
+      ],
+      "name": "SIS Footer",
+      "settings": {
+        "background_color": "#111827",
+        "section_padding": 60,
+        "separator_color": "#374151",
+        "title_color": "#ffffff",
+        "title_font_size": 24,
+        "subtitle_color": "#d1d5db",
+        "subtitle_font_size": 18,
+        "text_color": "#9ca3af",
+        "text_font_size": 14,
+        "link_color": "#60a5fa",
+        "gebaeude_title": "SIS Saar Gebäude Service",
+        "gebaeude_address": "Musterstraße 1, 12345 Musterstadt",
+        "gebaeude_phone": "0123 / 456 789",
+        "gebaeude_email": "gebaeude@sis-saar.de",
+        "industrie_title": "SIS Saar Industrie Service",
+        "industrie_address": "Beispielweg 2, 54321 Beispielhausen",
+        "industrie_phone": "0987 / 654 321",
+        "industrie_email": "industrie@sis-saar.de",
+        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
     }
   },
   "order": [
     "custom_header_fi69pY",
     "main",
-    "hero_overlay_section_6beqpy",
-    "leistungen_button_Didgg8"
+    "blog_hero_search_84AHtm",
+    "highlight_blog_articles_xELeT7",
+    "custom_cta_block_6BydfM",
+    "sis_footer_iCdA7K"
   ]
 }

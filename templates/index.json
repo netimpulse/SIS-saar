@@ -216,6 +216,38 @@
         "placeholder_text": "Hier würde eine interaktive Google Maps Karte eingebettet werden"
       }
     },
+    "text_mit_bild_button_6UPhhG": {
+      "type": "text-mit-bild-button",
+      "name": "Text mit Bild",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_30._Juli_2025__14_05_42-removebg-preview.png",
+        "image_position": "left",
+        "image_shadow_strength": 20,
+        "heading": "Das könnte Sie interessieren",
+        "heading_font": "sans-serif",
+        "heading_font_size": 42,
+        "heading_color": "#1f1f1f",
+        "subheading": "unsere Blogartikel",
+        "subheading_font": "sans-serif",
+        "subheading_font_size": 18,
+        "subheading_color": "#555555",
+        "text": "<p><strong>Industrieservice</strong> und <strong>Gebäudeservice</strong>: Entdecken Sie unsere neuesten Blogartikel mit praxisnahen Einblicken, Tipps und Strategien rund um unsere umfassenden Leistungen in beiden Bereichen.<br/><br/></p>",
+        "text_font": "sans-serif",
+        "text_font_size": 16,
+        "text_color": "#333333",
+        "button_text": "Schaltflächenbeschriftung",
+        "button_link": "shopify://pages/blogs-allgemein",
+        "button_font": "sans-serif",
+        "button_font_size": 16,
+        "button_padding_x": 24,
+        "button_padding_y": 14,
+        "button_border_radius": 10,
+        "button_bg_color": "#8e8e8e",
+        "button_bg_hover_color": "#6f6f6f",
+        "button_text_color": "#ffffff",
+        "button_text_color_hover": "#ffffff"
+      }
+    },
     "sis_footer_E9Qb9V": {
       "type": "sis-footer",
       "blocks": {
@@ -276,44 +308,6 @@
         "industrie_email": "industrie@sis-saar.de",
         "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
-    },
-    "services_cards_bz8GHT": {
-      "type": "services-cards",
-      "blocks": {
-        "card_d4BF4G": {
-          "type": "card",
-          "settings": {
-            "badge": "texti",
-            "badge_color_bg": "#e8f2ff",
-            "badge_color_text": "#0a66c2",
-            "title": "Gebäudeservice",
-            "text": "Kurze Einleitung zur Leistung.",
-            "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
-            "bullet_color": "#10b981",
-            "show_btn": true,
-            "btn_label": "Mehr erfahren",
-            "btn_link": "",
-            "card_bg": "#ffffff",
-            "card_text": "#0f172a"
-          }
-        }
-      },
-      "block_order": [
-        "card_d4BF4G"
-      ],
-      "name": "Leistungen – Kachel-Slider",
-      "settings": {
-        "heading": "Unsere Leistungen",
-        "subheading": "<p>Entdecken Sie unser Portfolio an professionellen Dienstleistungen.</p>",
-        "color_scheme": "background-1",
-        "card_gap": 16,
-        "card_radius": 14,
-        "cols_desktop": 4,
-        "cols_tablet": 3,
-        "show_arrows": true,
-        "show_scrollbar": false,
-        "snap_scroll": true
-      }
     }
   },
   "order": [
@@ -322,7 +316,7 @@
     "text_mit_bild_button_VryaeN",
     "kundenbewertung_tzkjqA",
     "interactive_map_BWTdBe",
-    "sis_footer_E9Qb9V",
-    "services_cards_bz8GHT"
+    "text_mit_bild_button_6UPhhG",
+    "sis_footer_E9Qb9V"
   ]
 }
