@@ -376,7 +376,7 @@
         "content_gap": 40,
         "pad_y": 40,
         "pad_x": 24,
-        "dot_size": 18,
+        "dot_size": 25,
         "pulse_size": 12,
         "close_others": true,
         "panel_maxw": 360
