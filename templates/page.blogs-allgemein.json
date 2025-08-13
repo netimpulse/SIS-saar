@@ -55,7 +55,7 @@
         "heading_highlight": "Inudstrie & Gebäudeservice",
         "subheading": "Entdecken Sie die neuesten Trends, Best Practices und Expertenwissen aus der Welt der digitalen Transformation.",
         "search_placeholder": "Blog-Artikel durchsuchen…",
-        "search_button_label": "",
+        "search_button_label": "Suchen",
         "no_results": "Keine Treffer. Bitte Suchbegriff anpassen.",
         "see_all": "Alle Ergebnisse anzeigen",
         "content_width": "narrow",
@@ -149,31 +149,31 @@
         "buttons_gap": 16
       }
     },
-    "sis_footer_iCdA7K": {
+    "sis_footer_dchJPH": {
       "type": "sis-footer",
       "blocks": {
-        "gebaeude_legal_AycK79": {
+        "gebaeude_legal_zVddJ9": {
           "type": "gebaeude_legal",
           "settings": {
             "text": "Impressum",
             "link": ""
           }
         },
-        "gebaeude_legal_rEkTRQ": {
+        "gebaeude_legal_haLBKG": {
           "type": "gebaeude_legal",
           "settings": {
             "text": "Datenschutz",
             "link": ""
           }
         },
-        "industrie_legal_m4JFNT": {
+        "industrie_legal_GdC36q": {
           "type": "industrie_legal",
           "settings": {
             "text": "Impressum",
             "link": ""
           }
         },
-        "industrie_legal_M9whLB": {
+        "industrie_legal_y4iGFb": {
           "type": "industrie_legal",
           "settings": {
             "text": "Datenschutz",
@@ -182,10 +182,10 @@
         }
       },
       "block_order": [
-        "gebaeude_legal_AycK79",
-        "gebaeude_legal_rEkTRQ",
-        "industrie_legal_m4JFNT",
-        "industrie_legal_M9whLB"
+        "gebaeude_legal_zVddJ9",
+        "gebaeude_legal_haLBKG",
+        "industrie_legal_GdC36q",
+        "industrie_legal_y4iGFb"
       ],
       "name": "SIS Footer",
       "settings": {
@@ -217,6 +217,6 @@
     "blog_hero_search_84AHtm",
     "highlight_blog_articles_xELeT7",
     "custom_cta_block_6BydfM",
-    "sis_footer_iCdA7K"
+    "sis_footer_dchJPH"
   ]
 }
