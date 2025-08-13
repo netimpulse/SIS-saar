@@ -9,35 +9,6 @@
  */
 {
   "sections": {
-    "custom_header_fi69pY": {
-      "type": "custom-header",
-      "name": "Custom Header",
-      "settings": {
-        "background_color": "#ffffff",
-        "padding_vertical": 16,
-        "padding_horizontal": 24,
-        "logo": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
-        "logo_text": "Mein Shop",
-        "logo_color": "#1e40af",
-        "logo_font_size": 24,
-        "logo_position_x": 0,
-        "logo_position_y": 0,
-        "menu": "geb-udeservice",
-        "nav_font": "sans-serif",
-        "nav_font_bold": true,
-        "nav_text_color": "#374151",
-        "nav_hover_color": "#4ade80",
-        "nav_font_size": 16,
-        "menu_position_x": 0,
-        "menu_position_y": 0,
-        "button_text": "Kontakt",
-        "button_link": "shopify://pages/industrieservice-kontakt",
-        "button_text_color": "#ffffff",
-        "button_bg_color": "#4ade80",
-        "button_hover_text_color": "#ffffff",
-        "button_hover_bg_color": "#22c55e"
-      }
-    },
     "hero_overlay_section_KdK9GH": {
       "type": "hero-overlay-section",
       "name": "Hero – Service Overlay",
@@ -387,13 +358,12 @@
     }
   },
   "order": [
-    "custom_header_fi69pY",
+    "custom_header_2_JnQ8yU",
     "hero_overlay_section_KdK9GH",
     "main",
     "jobs_board_MVQFbQ",
     "highlights_icons_trDdzm",
     "text_mit_bild_button_LWeUiY",
-    "sis_single_footer_EkHzhy",
-    "custom_header_2_JnQ8yU"
+    "sis_single_footer_EkHzhy"
   ]
 }
