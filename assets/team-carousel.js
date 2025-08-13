@@ -1,8 +1,8 @@
-/* team-carousel.js
- * Vanilla JS Karussell mit:
- * - Unendlichem Loop (Clones am Anfang/Ende)
+/* team-carousel.js – Endless/Seamless Loop
+ * - Nahtloser unendlicher Loop (Pre-Wrap vor der Transition, kein sichtbarer Jump)
  * - Buttons & Swipe/Drag
- * - Dynamischer Re-Init bei Resize und im Shopify Theme Editor
+ * - Dots
+ * - Re-Init bei Resize & im Shopify Theme Editor
  */
 
 (function () {
@@ -54,52 +54,48 @@
     }
 
     calcSlideMetrics() {
-      // Breite des ersten Items
       const first = this.track.querySelector('.team-carousel__item');
       if (!first) return;
       const rect = first.getBoundingClientRect();
-      // Schrittweite = Itembreite + Gap
       this.slideW = rect.width + this.gap;
     }
 
     setup() {
-      // Entferne ggf. alte Clones
+      // alte Clones entfernen
       this.track.querySelectorAll('.is-clone').forEach(n => n.remove());
 
       this.perView = this.getPerView();
       this.gap = this.getGap();
 
-      // Wenn weniger/equal als perView: einfach "fake-infinite" (keine Buttons/Dots nötig)
+      // Wenn wenig Slides: Controls ausblenden
       if (this.realCount <= this.perView) {
         this.updateDots(); // 1 Dot
-        this.prevBtn && (this.prevBtn.style.display = 'none');
-        this.nextBtn && (this.nextBtn.style.display = 'none');
+        if (this.prevBtn) this.prevBtn.style.display = 'none';
+        if (this.nextBtn) this.nextBtn.style.display = 'none';
         this.at = 0;
         this.current = 0;
         this.calcSlideMetrics();
         this.jumpTo(0);
         return;
       } else {
-        this.prevBtn && (this.prevBtn.style.display = '');
-        this.nextBtn && (this.nextBtn.style.display = '');
+        if (this.prevBtn) this.prevBtn.style.display = '';
+        if (this.nextBtn) this.nextBtn.style.display = '';
       }
 
-      // Clones erstellen: vorne und hinten jeweils perView Elemente klonen
+      // Clones: vorne & hinten je perView
       const headClones = this.items.slice(0, this.perView).map(n => this.cloneNode(n));
       const tailClones = this.items.slice(-this.perView).map(n => this.cloneNode(n));
 
-      // Hinten anhängen, vorne einfügen
       headClones.forEach(n => this.track.appendChild(n));
       tailClones.forEach(n => this.track.insertBefore(n, this.track.firstChild));
 
-      // Track-Liste neu erfassen
       this.slides = Array.from(this.track.children);
       this.calcSlideMetrics();
 
-      // Startposition: direkt nach den Tail-Clones, damit man links "zurück" kann
+      // Startposition: direkt nach den Tail-Clones
       this.at = this.perView;
-      this.current = 0; // reale 0
-      this.withoutTransition(() => this.translateToIndex(this.at));
+      this.current = 0;
+      this.withoutTransition(() => this.translateRaw(this.at));
 
       // Dots
       this.updateDots();
@@ -113,12 +109,35 @@
       return c;
     }
 
+    /* ===== Utilities ===== */
+
+    withoutTransition(cb) {
+      const prev = this.track.style.transition;
+      this.track.style.transition = 'none';
+      cb();
+      void this.track.offsetHeight; // reflow
+      this.track.style.transition = prev || '';
+    }
+
+    translateRaw(index) {
+      const x = -index * this.slideW;
+      this.track.style.transform = `translate3d(${x}px,0,0)`;
+    }
+
+    leftBound() { return this.perView; }
+    rightBound() { return this.perView + this.realCount - 1; }
+
+    normRealIndex(i) {
+      const m = ((i % this.realCount) + this.realCount) % this.realCount;
+      return m;
+    }
+
+    /* ===== Controls & Events ===== */
+
     bind() {
-      // Buttons
       if (this.prevBtn) this.prevBtn.addEventListener('click', () => this.prev());
       if (this.nextBtn) this.nextBtn.addEventListener('click', () => this.next());
 
-      // Dots
       this.dotsEl.addEventListener('click', (e) => {
         const btn = e.target.closest('button[data-goto]');
         if (!btn) return;
@@ -134,16 +153,13 @@
 
       // Resize (debounced)
       this.onResize = this.debounce(() => {
-        const prevPerView = this.perView;
-        this.setup(); // berechnet perView neu & clont neu
-        // Versuche, die visuell "gleiche" reale Position zu behalten
-        if (this.perView !== prevPerView) {
-          this.goTo(this.current, true);
-        }
+        const prevReal = this.current;
+        this.setup();
+        this.goTo(prevReal, true);
       }, 150);
       window.addEventListener('resize', this.onResize);
 
-      // Theme Editor: Re-Init bei Section-Neuladen
+      // Theme Editor Hooks
       document.addEventListener('shopify:section:load', (evt) => {
         if (evt.target && evt.target.contains(this.root)) {
           this.destroy();
@@ -151,7 +167,6 @@
         }
       });
 
-      // Re-Init bei Block-Reorder
       document.addEventListener('shopify:block:reorder', (evt) => {
         if (!this.root.contains(evt.target)) return;
         this.destroy();
@@ -159,7 +174,7 @@
         new TeamCarousel(this.root);
       });
 
-      // Verhindere Clicks nach Drag
+      // Clicks nach Drag verhindern
       this.track.addEventListener('click', (e) => {
         if (this.dragPreventClick) {
           e.preventDefault();
@@ -181,87 +196,107 @@
       if (this.nextBtn) this.nextBtn.disabled = true;
     }
 
+    debounce(fn, wait) {
+      let t;
+      return (...args) => {
+        clearTimeout(t);
+        t = setTimeout(() => fn.apply(this, args), wait);
+      };
+    }
+
     /* ===== Navigation ===== */
 
-    next() {
-      this.moveBy(1);
-    }
+    next() { this.moveBy(1); }
+    prev() { this.moveBy(-1); }
 
-    prev() {
-      this.moveBy(-1);
-    }
-
-    goTo(realIndex, instant = false) {
-      // reale Index -> Track-Index
-      const targetAt = this.perView + realIndex;
-      if (instant) {
-        this.withoutTransition(() => this.translateToIndex(targetAt));
-      } else {
-        this.translateToIndex(targetAt);
-      }
-      this.at = targetAt;
-      this.current = this.normRealIndex(realIndex);
-      this.updateDotsActive();
-    }
-
+    /**
+     * Nahtlose Bewegung um ±1 (bei Drag auch nur ±1)
+     * Pre-Wrap VOR der Transition, damit kein Transition-Ende-Jump nötig ist.
+     */
     moveBy(step) {
-      const target = this.at + step;
-      this.translateToIndex(target);
-    }
+      if (!step) return;
 
-    translateToIndex(targetIndex) {
+      const left = this.leftBound();
+      const right = this.rightBound();
+
+      // Vorbereitendes Wrapping, damit der Zielindex IMMER innerhalb [left..right] liegt
+      if (step > 0 && this.at >= right) {
+        // Wir stehen auf letztem realen Slide → unsichtbar eine "Etage" zurücksetzen
+        this.at = this.at - this.realCount; // z.B. ... | perView-1 [perView..right] perView+realCount ...
+        this.withoutTransition(() => this.translateRaw(this.at));
+      } else if (step < 0 && this.at <= left) {
+        // Wir stehen auf erstem realen Slide → unsichtbar eine "Etage" nach vorne setzen
+        this.at = this.at + this.realCount;
+        this.withoutTransition(() => this.translateRaw(this.at));
+      }
+
+      // Jetzt liegt at sicher im Bereich [left..right] → 1 Schritt animieren
+      const target = this.at + (step > 0 ? 1 : -1);
       this.track.style.transition = 'transform 400ms ease';
-      const x = -targetIndex * this.slideW;
-      this.track.style.transform = `translate3d(${x}px,0,0)`;
-      this.at = targetIndex;
+      this.translateRaw(target);
 
-      // Nach Ende einer Transition an die reale Position "springen", wenn wir in Clones sind
       const onEnd = () => {
         this.track.removeEventListener('transitionend', onEnd);
-        const { fixedIndex, changed } = this.fixInfiniteBounds();
-        if (changed) {
-          this.withoutTransition(() => this.translateToIndex(fixedIndex));
-        }
-        // reale current berechnen
+        this.at = target;
         this.current = this.normRealIndex(this.at - this.perView);
         this.updateDotsActive();
       };
       this.track.addEventListener('transitionend', onEnd, { once: true });
     }
 
-    withoutTransition(cb) {
-      const prev = this.track.style.transition;
-      this.track.style.transition = 'none';
-      cb();
-      // force reflow
-      void this.track.offsetHeight;
-      this.track.style.transition = prev || '';
-    }
+    /**
+     * Springe zu realIndex (für Dots/Programmatisch)
+     * Wählt die KÜRZESTE animierte Strecke (evtl. mit Vorab-Wrap).
+     */
+    goTo(realIndex, instant = false) {
+      const left = this.leftBound();
+      const base = this.perView + this.normRealIndex(realIndex);
 
-    fixInfiniteBounds() {
-      let changed = false;
-      let idx = this.at;
+      // Finde die nächste "entsprechende Spur" (± realCount), die am nächsten zur aktuellen Position liegt
+      const k = Math.round((this.at - base) / this.realCount);
+      let target = base + k * this.realCount;
 
-      // Von rechts über das Ende → springe zurück
-      const rightEdge = this.perView + this.realCount;
-      if (idx >= rightEdge) {
-        idx = idx - this.realCount;
-        changed = true;
+      // Sicherstellen, dass wir nicht außerhalb der existierenden Clones landen:
+      // Falls doch, vorab unsichtbar um eine "Etage" verschieben.
+      const total = this.realCount + 2 * this.perView; // reale + clones
+      const minIndex = 0;
+      const maxIndex = total - 1;
+
+      if (target < this.perView) {
+        this.at = this.at + this.realCount;
+        this.withoutTransition(() => this.translateRaw(this.at));
+        target = base + (k + 1) * this.realCount;
+      } else if (target > this.perView + this.realCount - 1) {
+        this.at = this.at - this.realCount;
+        this.withoutTransition(() => this.translateRaw(this.at));
+        target = base + (k - 1) * this.realCount;
       }
 
-      // Von links über den Anfang → springe ans Ende
-      if (idx < this.perView) {
-        idx = idx + this.realCount;
-        changed = true;
+      if (instant) {
+        this.at = target;
+        this.current = this.normRealIndex(this.at - this.perView);
+        this.withoutTransition(() => this.translateRaw(this.at));
+        this.updateDotsActive();
+        return;
       }
-      this.at = idx;
-      return { fixedIndex: idx, changed };
+
+      this.track.style.transition = 'transform 400ms ease';
+      this.translateRaw(target);
+
+      const onEnd = () => {
+        this.track.removeEventListener('transitionend', onEnd);
+        this.at = target;
+        this.current = this.normRealIndex(this.at - this.perView);
+        this.updateDotsActive();
+      };
+      this.track.addEventListener('transitionend', onEnd, { once: true });
     }
 
-    normRealIndex(i) {
-      // normalisiert auf [0, realCount)
-      const m = ((i % this.realCount) + this.realCount) % this.realCount;
-      return m;
+    /**
+     * Interner Sprung ohne Animation (z. B. Initialisierung)
+     */
+    jumpTo(trackIndex) {
+      this.withoutTransition(() => this.translateRaw(trackIndex));
     }
 
     /* ===== Dots ===== */
@@ -286,14 +321,13 @@
       });
     }
 
-    /* ===== Drag/Swipe ===== */
+    /* ===== Drag/Swipe (nur ±1 Schritt) ===== */
 
     onPointerDown = (e) => {
       if (e.button !== 0 && e.pointerType === 'mouse') return; // nur linker Mausklick
       this.isDragging = true;
       this.dragPreventClick = false;
       this.startX = e.clientX;
-      // aktuelle x-Position merken
       const matrix = new DOMMatrixReadOnly(getComputedStyle(this.track).transform);
       this.baseX = matrix.m41; // translateX
       this.track.style.transition = 'none';
@@ -319,7 +353,7 @@
       if (Math.abs(this.dragX) > threshold) {
         step = this.dragX < 0 ? 1 : -1; // nach links gezogen → nächstes
       } else {
-        // Zur nächsten "Zelle" runden
+        // Zur aktuellen Zelle zurückschnappen
         const matrix = new DOMMatrixReadOnly(getComputedStyle(this.track).transform);
         const xNow = matrix.m41;
         const idxFloat = -xNow / this.slideW;
@@ -328,29 +362,20 @@
       this.dragX = 0;
 
       if (step === 0) {
-        // Zurück auf die aktuelle Zelle
-        this.translateToIndex(this.at);
+        // zurück auf die aktuelle Zelle
+        this.track.style.transition = 'transform 200ms ease';
+        this.translateRaw(this.at);
       } else {
-        this.moveBy(step);
+        // nur ±1 bewegen → seamless via moveBy
+        this.moveBy(step > 0 ? 1 : -1);
       }
     };
-
-    /* ===== Utilities ===== */
-
-    debounce(fn, wait) {
-      let t;
-      return (...args) => {
-        clearTimeout(t);
-        t = setTimeout(() => fn.apply(this, args), wait);
-      };
-    }
   }
 
   /* ===== Init auf allen Karussells ===== */
 
   function initAll() {
     document.querySelectorAll('.team-carousel').forEach((el) => {
-      // Verhindere Doppel-Init
       if (el.__tc_inited) return;
       el.__tc_inited = true;
       new TeamCarousel(el);
