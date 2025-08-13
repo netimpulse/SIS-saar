@@ -1,16 +1,14 @@
 {{ 'custom-header-2.css' | asset_url | stylesheet_tag }}
 
 {% comment %}
-  Diese <style>-Sektion ist notwendig, um die dynamischen Werte 
-  aus den Theme-Einstellungen (z.B. Farben, Positionen, Schriftarten) 
-  an die externe CSS-Datei zu übergeben.
+  Dynamische Variablen für externe CSS
 {% endcomment %}
 <style>
   .custom-header-section-{{ section.id }} {
     --header-bg-color: {{ section.settings.background_color }};
     --padding-vertical: {{ section.settings.padding_vertical }}px;
     --padding-horizontal: {{ section.settings.padding_horizontal }}px;
-    
+
     --logo-pos-x: {{ section.settings.logo_position_x }}%;
     --logo-pos-y: {{ section.settings.logo_position_y }}%;
 
@@ -48,9 +46,9 @@
 
 <header class="custom-header-section custom-header-section-{{ section.id }}">
   <div class="custom-header__container">
-    
-    <!-- Branding: Logo + Titel + Untertitel -->
-    <div class="custom-header__logo">
+
+    {%- comment -%} Branding: Logo ODER Text-Fallback {%- endcomment -%}
+    <div class="custom-header__logo {% if section.settings.logo %}is-image{% else %}is-text{% endif %}">
       <a href="{{ shop.url }}" class="custom-header__branding-link">
         {% if section.settings.logo %}
           <img
@@ -60,21 +58,22 @@
             height="40"
             width="{{ 40 | times: section.settings.logo.aspect_ratio | round }}"
           >
-        {% endif %}
-        <div class="custom-header__brand-text" style="color: {{ section.settings.logo_color }};">
-          <span class="custom-header__brand-title" style="font-size: {{ section.settings.logo_font_size }}px;">
-            {{ section.settings.logo_text | default: shop.name }}
-          </span>
-          {% if section.settings.logo_subtext != blank %}
-            <span class="custom-header__brand-subtitle">
-              {{ section.settings.logo_subtext }}
+        {% else %}
+          <div class="custom-header__brand-text" style="color: {{ section.settings.logo_color }};">
+            <span class="custom-header__brand-title" style="font-size: {{ section.settings.logo_font_size }}px;">
+              {{ section.settings.logo_text | default: shop.name }}
             </span>
-          {% endif %}
-        </div>
+            {% if section.settings.logo_subtext != blank %}
+              <span class="custom-header__brand-subtitle">
+                {{ section.settings.logo_subtext }}
+              </span>
+            {% endif %}
+          </div>
+        {% endif %}
       </a>
     </div>
 
-    <!-- Zurück zur Hauptseite (inline neben Branding) -->
+    {%- comment -%} Zurück zur Hauptseite (inline) {%- endcomment -%}
     <a
       href="{{ section.settings.back_link | default: shop.url }}"
       class="custom-header__back"
@@ -89,7 +88,6 @@
       {% endif %}
     </a>
 
-    <!-- Navigation + Button -->
     <div class="custom-header__nav-wrapper">
       <nav class="custom-header__nav" role="navigation">
         {%- for link in section.settings.menu.links -%}
@@ -111,7 +109,7 @@
       <span></span>
       <span></span>
     </button>
-    
+
   </div>
 </header>
 
@@ -121,286 +119,50 @@
   "tag": "header",
   "class": "shopify-section-header",
   "settings": [
-    {
-      "type": "color",
-      "id": "background_color",
-      "label": "Hintergrundfarbe",
-      "default": "#ffffff"
-    },
-    {
-      "type": "range",
-      "id": "padding_vertical",
-      "label": "Padding Oben/Unten (px)",
-      "min": 0,
-      "max": 50,
-      "step": 1,
-      "default": 16,
-      "unit": "px"
-    },
-    {
-      "type": "range",
-      "id": "padding_horizontal",
-      "label": "Padding Links/Rechts (px)",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "default": 24,
-      "unit": "px"
-    },
+    { "type": "color", "id": "background_color", "label": "Hintergrundfarbe", "default": "#ffffff" },
+    { "type": "range", "id": "padding_vertical", "label": "Padding Oben/Unten (px)", "min": 0, "max": 50, "step": 1, "default": 16, "unit": "px" },
+    { "type": "range", "id": "padding_horizontal", "label": "Padding Links/Rechts (px)", "min": 0, "max": 100, "step": 1, "default": 24, "unit": "px" },
 
-    {
-      "type": "header",
-      "content": "Zurück-Link"
-    },
-    {
-      "type": "url",
-      "id": "back_link",
-      "label": "Link für „Zur Hauptseite“"
-    },
-    {
-      "type": "text",
-      "id": "back_label",
-      "label": "Text neben Pfeil (optional)",
-      "default": "Zur Hauptseite"
-    },
-    {
-      "type": "font_picker",
-      "id": "back_font",
-      "label": "Schriftart",
-      "default": "sans-serif"
-    },
-    {
-      "type": "checkbox",
-      "id": "back_font_bold",
-      "label": "Fett",
-      "default": false
-    },
-    {
-      "type": "color",
-      "id": "back_text_color",
-      "label": "Farbe",
-      "default": "#64748b"
-    },
-    {
-      "type": "color",
-      "id": "back_hover_color",
-      "label": "Farbe (Hover)",
-      "default": "#4ade80"
-    },
-    {
-      "type": "range",
-      "id": "back_font_size",
-      "label": "Schriftgröße (px)",
-      "min": 12,
-      "max": 24,
-      "step": 1,
-      "default": 16,
-      "unit": "px"
-    },
-    {
-      "type": "range",
-      "id": "back_position_x",
-      "label": "Position X (%)",
-      "min": -50,
-      "max": 50,
-      "step": 1,
-      "default": 0,
-      "unit": "%"
-    },
-    {
-      "type": "range",
-      "id": "back_position_y",
-      "label": "Position Y (%)",
-      "min": -50,
-      "max": 50,
-      "step": 1,
-      "default": 0,
-      "unit": "%"
-    },
+    { "type": "header", "content": "Zurück-Link" },
+    { "type": "url", "id": "back_link", "label": "Link für „Zur Hauptseite“" },
+    { "type": "text", "id": "back_label", "label": "Text neben Pfeil (optional)", "default": "Zur Hauptseite" },
+    { "type": "font_picker", "id": "back_font", "label": "Schriftart", "default": "sans-serif" },
+    { "type": "checkbox", "id": "back_font_bold", "label": "Fett", "default": false },
+    { "type": "color", "id": "back_text_color", "label": "Farbe", "default": "#64748b" },
+    { "type": "color", "id": "back_hover_color", "label": "Farbe (Hover)", "default": "#4ade80" },
+    { "type": "range", "id": "back_font_size", "label": "Schriftgröße (px)", "min": 12, "max": 24, "step": 1, "default": 16, "unit": "px" },
+    { "type": "range", "id": "back_position_x", "label": "Position X (%)", "min": -50, "max": 50, "step": 1, "default": 0, "unit": "%" },
+    { "type": "range", "id": "back_position_y", "label": "Position Y (%)", "min": -50, "max": 50, "step": 1, "default": 0, "unit": "%" },
 
-    {
-      "type": "header",
-      "content": "Logo & Branding"
-    },
-    {
-      "type": "image_picker",
-      "id": "logo",
-      "label": "Logo Bild"
-    },
-    {
-      "type": "text",
-      "id": "logo_text",
-      "label": "Titel (z. B. Firmenname)",
-      "default": "Mein Shop"
-    },
-    {
-      "type": "text",
-      "id": "logo_subtext",
-      "label": "Untertitel (z. B. Claim)",
-      "default": "Service & Solutions"
-    },
-    {
-      "type": "color",
-      "id": "logo_color",
-      "label": "Titel-Farbe",
-      "default": "#0f172a"
-    },
-    {
-      "type": "range",
-      "id": "logo_font_size",
-      "label": "Titel-Größe",
-      "min": 16,
-      "max": 48,
-      "step": 1,
-      "default": 22,
-      "unit": "px"
-    },
-    {
-      "type": "color",
-      "id": "logo_subtext_color",
-      "label": "Untertitel-Farbe",
-      "default": "#6b7280"
-    },
-    {
-      "type": "range",
-      "id": "logo_subtext_size",
-      "label": "Untertitel-Größe",
-      "min": 10,
-      "max": 18,
-      "step": 1,
-      "default": 12,
-      "unit": "px"
-    },
-    {
-      "type": "range",
-      "id": "logo_position_x",
-      "label": "Branding Position X (%)",
-      "min": -50,
-      "max": 50,
-      "step": 1,
-      "default": 0,
-      "unit": "%"
-    },
-    {
-      "type": "range",
-      "id": "logo_position_y",
-      "label": "Branding Position Y (%)",
-      "min": -50,
-      "max": 50,
-      "step": 1,
-      "default": 0,
-      "unit": "%"
-    },
+    { "type": "header", "content": "Logo & Branding" },
+    { "type": "image_picker", "id": "logo", "label": "Logo Bild" },
+    { "type": "text", "id": "logo_text", "label": "Titel (Fallback)", "default": "Mein Shop" },
+    { "type": "text", "id": "logo_subtext", "label": "Untertitel (Fallback)", "default": "Service & Solutions" },
+    { "type": "color", "id": "logo_color", "label": "Titel-Farbe", "default": "#0f172a" },
+    { "type": "range", "id": "logo_font_size", "label": "Titel-Größe", "min": 16, "max": 48, "step": 1, "default": 22, "unit": "px" },
+    { "type": "color", "id": "logo_subtext_color", "label": "Untertitel-Farbe", "default": "#6b7280" },
+    { "type": "range", "id": "logo_subtext_size", "label": "Untertitel-Größe", "min": 10, "max": 18, "step": 1, "default": 12, "unit": "px" },
+    { "type": "range", "id": "logo_position_x", "label": "Branding Position X (%)", "min": -50, "max": 50, "step": 1, "default": 0, "unit": "%" },
+    { "type": "range", "id": "logo_position_y", "label": "Branding Position Y (%)", "min": -50, "max": 50, "step": 1, "default": 0, "unit": "%" },
 
-    {
-      "type": "header",
-      "content": "Navigation"
-    },
-    {
-      "type": "link_list",
-      "id": "menu",
-      "label": "Menü auswählen",
-      "default": "main-menu"
-    },
-    {
-      "type": "font_picker",
-      "id": "nav_font",
-      "label": "Navigation Schriftart",
-      "default": "sans-serif"
-    },
-    {
-      "type": "checkbox",
-      "id": "nav_font_bold",
-      "label": "Navigation fettgedruckt",
-      "default": false
-    },
-    {
-      "type": "color",
-      "id": "nav_text_color",
-      "label": "Navigation Textfarbe",
-      "default": "#374151"
-    },
-    {
-      "type": "color",
-      "id": "nav_hover_color",
-      "label": "Navigation Hover-/Aktiv-Farbe",
-      "default": "#22c55e"
-    },
-    {
-      "type": "range",
-      "id": "nav_font_size",
-      "label": "Navigation Schriftgröße",
-      "min": 12,
-      "max": 24,
-      "step": 1,
-      "default": 16,
-      "unit": "px"
-    },
-    {
-      "type": "range",
-      "id": "menu_position_x",
-      "label": "Menü Position X (%)",
-      "min": -50,
-      "max": 50,
-      "step": 1,
-      "default": 0,
-      "unit": "%"
-    },
-    {
-      "type": "range",
-      "id": "menu_position_y",
-      "label": "Menü Position Y (%)",
-      "min": -50,
-      "max": 50,
-      "step": 1,
-      "default": 0,
-      "unit": "%"
-    },
+    { "type": "header", "content": "Navigation" },
+    { "type": "link_list", "id": "menu", "label": "Menü auswählen", "default": "main-menu" },
+    { "type": "font_picker", "id": "nav_font", "label": "Navigation Schriftart", "default": "sans-serif" },
+    { "type": "checkbox", "id": "nav_font_bold", "label": "Navigation fettgedruckt", "default": false },
+    { "type": "color", "id": "nav_text_color", "label": "Navigation Textfarbe", "default": "#374151" },
+    { "type": "color", "id": "nav_hover_color", "label": "Navigation Hover-/Aktiv-Farbe", "default": "#22c55e" },
+    { "type": "range", "id": "nav_font_size", "label": "Navigation Schriftgröße", "min": 12, "max": 24, "step": 1, "default": 16, "unit": "px" },
+    { "type": "range", "id": "menu_position_x", "label": "Menü Position X (%)", "min": -50, "max": 50, "step": 1, "default": 0, "unit": "%" },
+    { "type": "range", "id": "menu_position_y", "label": "Menü Position Y (%)", "min": -50, "max": 50, "step": 1, "default": 0, "unit": "%" },
 
-    {
-      "type": "header",
-      "content": "Kontakt Button"
-    },
-    {
-      "type": "text",
-      "id": "button_text",
-      "label": "Button Text",
-      "default": "Kontakt"
-    },
-    {
-      "type": "url",
-      "id": "button_link",
-      "label": "Button Link"
-    },
-    {
-      "type": "color",
-      "id": "button_text_color",
-      "label": "Button Textfarbe",
-      "default": "#ffffff"
-    },
-    {
-      "type": "color",
-      "id": "button_bg_color",
-      "label": "Button Hintergrund",
-      "default": "#0f2640"
-    },
-    {
-      "type": "color",
-      "id": "button_hover_text_color",
-      "label": "Button Textfarbe (Hover)",
-      "default": "#ffffff"
-    },
-    {
-      "type": "color",
-      "id": "button_hover_bg_color",
-      "label": "Button Hintergrund (Hover)",
-      "default": "#193352"
-    }
+    { "type": "header", "content": "Kontakt Button" },
+    { "type": "text", "id": "button_text", "label": "Button Text", "default": "Kontakt" },
+    { "type": "url", "id": "button_link", "label": "Button Link" },
+    { "type": "color", "id": "button_text_color", "label": "Button Textfarbe", "default": "#ffffff" },
+    { "type": "color", "id": "button_bg_color", "label": "Button Hintergrund", "default": "#0f2640" },
+    { "type": "color", "id": "button_hover_text_color", "label": "Button Textfarbe (Hover)", "default": "#ffffff" },
+    { "type": "color", "id": "button_hover_bg_color", "label": "Button Hintergrund (Hover)", "default": "#193352" }
   ],
-  "presets": [
-    {
-      "name": "Custom Header 2"
-    }
-  ]
+  "presets": [ { "name": "Custom Header 2" } ]
 }
 {% endschema %}
