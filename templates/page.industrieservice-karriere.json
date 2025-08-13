@@ -124,15 +124,15 @@
       "settings": {
         "heading": "Aktuelle Stellenausschreibungen",
         "subheading": "Finden Sie Ihre nächste berufliche Herausforderung bei uns",
-        "section_bg": "#F6F7FB",
-        "card_bg": "#FFFFFF",
+        "section_bg": "#f6f7fb",
+        "card_bg": "#ffffff",
         "padding_y": 48,
         "grid_gap": 24,
         "card_radius": 16,
         "columns": "2",
         "title_font": "poppins_n4",
         "title_size": 44,
-        "title_color": "#0F172A",
+        "title_color": "#0f172a",
         "title_weight": "700",
         "subtitle_font": "poppins_n4",
         "subtitle_size": 16,
@@ -140,7 +140,7 @@
         "subtitle_weight": "400",
         "jobtitle_font": "poppins_n4",
         "jobtitle_size": 22,
-        "jobtitle_color": "#0F172A",
+        "jobtitle_color": "#0f172a",
         "jobtitle_weight": "700",
         "text_font": "poppins_n4",
         "text_size": 16,
@@ -154,13 +154,13 @@
         "button_size": 15,
         "button_weight": "600",
         "button_bg": "#111827",
-        "button_text": "#FFFFFF",
-        "button_border": "transparent",
+        "button_text": "#ffffff",
+        "button_border": "rgba(0,0,0,0)",
         "badge_font": "poppins_n4",
         "badge_size": 14,
         "badge_weight": "600",
-        "badge_bg": "#D1FADF",
-        "badge_text": "#065F46"
+        "badge_bg": "#d1fadf",
+        "badge_text": "#065f46"
       }
     },
     "highlights_icons_trDdzm": {
@@ -253,6 +253,53 @@
         "button_text_color": "#ffffff",
         "button_text_color_hover": "#ffffff"
       }
+    },
+    "sis_single_footer_DNrhdy": {
+      "type": "sis-single-footer",
+      "blocks": {
+        "legal_link_73bNii": {
+          "type": "legal_link",
+          "settings": {
+            "label": "Impressum",
+            "url": ""
+          }
+        },
+        "legal_link_cEjgGN": {
+          "type": "legal_link",
+          "settings": {
+            "label": "Datenschutz",
+            "url": ""
+          }
+        },
+        "legal_link_Ma6rW3": {
+          "type": "legal_link",
+          "settings": {
+            "label": "AGBs",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "legal_link_73bNii",
+        "legal_link_cEjgGN",
+        "legal_link_Ma6rW3"
+      ],
+      "name": "SIS – Einzelfooter",
+      "settings": {
+        "title": "SIS Saar Gebäude Service",
+        "contact_heading": "Kontakt",
+        "address_line_1": "Musterstraße 1, 12345 Musterstadt",
+        "address_line_2": "1",
+        "phone": "0123 / 456 789",
+        "email": "gebaeude@sis-saar.de",
+        "legal_heading": "Rechtliches",
+        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten.",
+        "bg_color": "#0f1621",
+        "text_color": "#cbd5e1",
+        "heading_color": "#ffffff",
+        "link_color": "#3b82f6",
+        "divider_color": "#1e293b"
+      }
     }
   },
   "order": [
@@ -260,6 +307,7 @@
     "main",
     "jobs_board_MVQFbQ",
     "highlights_icons_trDdzm",
-    "text_mit_bild_button_LWeUiY"
+    "text_mit_bild_button_LWeUiY",
+    "sis_single_footer_DNrhdy"
   ]
 }
