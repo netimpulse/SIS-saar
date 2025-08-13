@@ -1,13 +1,16 @@
 {% comment %}
-  Services Cards – horizontally scrolling, editor-friendly section
+  Services Cards – horizontally scrolling, infinite carousel
   Files required:
-    - snippets/service-card.liquid
-    - assets/services-cards.css
+    - snippets/service-card.liquid   (unverändert)
+    - assets/services-cards.css      (dein bestehendes CSS)
+    - assets/services-carousel.js    (neue Datei unten)
 {% endcomment %}
+
 <link rel="stylesheet" href="{{ 'services-cards.css' | asset_url }}" media="all">
 
 <section
   class="svc-wrap color-{{ section.settings.color_scheme }}"
+  data-svc-carousel
   style="--svc-gap:{{ section.settings.card_gap }}px; --svc-radius:{{ section.settings.card_radius }}px;"
 >
   <div class="svc-inner page-width">
@@ -42,33 +45,9 @@
       </div>
     {% endif %}
   </div>
-
-  <script>
-    (function() {
-      const root = document.currentScript.closest('section');
-      const scroller = root.querySelector('.svc-scroller');
-      const row = root.querySelector('.svc-row');
-      const arrows = root.querySelectorAll('.svc-arrow');
-
-      // drag to scroll (desktop) + momentum feel
-      let isDown=false, startX=0, scrollLeft=0;
-      scroller.addEventListener('mousedown', (e)=>{ isDown=true; scroller.classList.add('is-drag'); startX=e.pageX - scroller.offsetLeft; scrollLeft=scroller.scrollLeft; });
-      window.addEventListener('mouseup', ()=>{ isDown=false; scroller.classList.remove('is-drag'); });
-      scroller.addEventListener('mouseleave', ()=> isDown=false);
-      scroller.addEventListener('mousemove', (e)=>{ if(!isDown) return; e.preventDefault(); const x=e.pageX - scroller.offsetLeft; const walk=(x - startX)*1.2; scroller.scrollLeft = scrollLeft - walk; });
-
-      // arrow scroll
-      arrows.forEach(btn=>{
-        btn.addEventListener('click', ()=>{
-          const dir = parseInt(btn.dataset.dir, 10);
-          const card = row.querySelector('.svc-card');
-          const cardWidth = card ? card.getBoundingClientRect().width : 300;
-          scroller.scrollBy({ left: dir * (cardWidth + parseInt(getComputedStyle(row).gap) ) * 2, behavior: 'smooth' });
-        });
-      });
-    })();
-  </script>
 </section>
+
+<script src="{{ 'services-carousel.js' | asset_url }}" defer></script>
 
 {% schema %}
 {
@@ -139,3 +118,4 @@
   ]
 }
 {% endschema %}
+
