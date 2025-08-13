@@ -305,10 +305,10 @@
         "hotspot_YGhMHC": {
           "type": "hotspot",
           "settings": {
-            "title": "Smart Home Features",
-            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
-            "pos_x": 35,
-            "pos_y": 28,
+            "title": "Fenster Reinigung",
+            "text": "<p>Professionelle Fenstereinigung - dein Garant für strahlende Ergebnisse!</p>",
+            "pos_x": 7,
+            "pos_y": 40,
             "dot_color": "#3ac47d",
             "panel_bg": "#4caf78",
             "panel_text": "#ffffff",
@@ -319,11 +319,11 @@
         "hotspot_3agTmd": {
           "type": "hotspot",
           "settings": {
-            "title": "Smart Home Features",
-            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
-            "pos_x": 35,
-            "pos_y": 28,
-            "dot_color": "#3ac47d",
+            "title": "Teppich Reinigung",
+            "text": "<p>Reinigen, Auffrischen, Verwöhnen - Teppichpflege mit Leidenschaft.</p>",
+            "pos_x": 62,
+            "pos_y": 84,
+            "dot_color": "#4ade80",
             "panel_bg": "#4caf78",
             "panel_text": "#ffffff",
             "panel_position": "top-left",
@@ -333,10 +333,10 @@
         "hotspot_7PGJ9X": {
           "type": "hotspot",
           "settings": {
-            "title": "Smart Home Features",
+            "title": "Innen Reinigung",
             "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
-            "pos_x": 35,
-            "pos_y": 28,
+            "pos_x": 49,
+            "pos_y": 38,
             "dot_color": "#3ac47d",
             "panel_bg": "#4caf78",
             "panel_text": "#ffffff",
@@ -352,7 +352,7 @@
       ],
       "name": "Amenities Hotspots",
       "settings": {
-        "image": "shopify://shop_images/shutterstock_370492946.jpg",
+        "image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
         "content_side": "left",
         "kicker": "Sis Saar",
         "heading": "Gebäudeservice",
