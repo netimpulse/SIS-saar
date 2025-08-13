@@ -362,7 +362,7 @@
         "text_font_size": 16,
         "text_color": "#333333",
         "button_text": "Schaltflächenbeschriftung",
-        "button_link": "",
+        "button_link": "shopify://pages/gebaudeservice-uber-uns",
         "button_font": "sans-serif",
         "button_font_size": 16,
         "button_padding_x": 24,

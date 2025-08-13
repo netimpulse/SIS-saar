@@ -11,81 +11,51 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "sis_footer_VVMxFM": {
-      "type": "sis-footer",
+    "sis_single_footer_dyNjyn": {
+      "type": "sis-single-footer",
       "blocks": {
-        "gebaeude_legal_7qmJwL": {
-          "type": "gebaeude_legal",
+        "legal_link_6RTLqw": {
+          "type": "legal_link",
           "settings": {
-            "text": "Impressum",
-            "link": ""
+            "label": "Impressum",
+            "url": ""
           }
         },
-        "gebaeude_legal_fjUhGz": {
-          "type": "gebaeude_legal",
+        "legal_link_TEqGxb": {
+          "type": "legal_link",
           "settings": {
-            "text": "Datenschutz",
-            "link": ""
+            "label": "Datenschutz",
+            "url": ""
           }
         },
-        "gebaeude_legal_yL74UX": {
-          "type": "gebaeude_legal",
+        "legal_link_pNNQVA": {
+          "type": "legal_link",
           "settings": {
-            "text": "AGBs",
-            "link": ""
-          }
-        },
-        "industrie_legal_t3RwWk": {
-          "type": "industrie_legal",
-          "settings": {
-            "text": "Impressum",
-            "link": ""
-          }
-        },
-        "industrie_legal_PrM44d": {
-          "type": "industrie_legal",
-          "settings": {
-            "text": "Datenschutz",
-            "link": ""
-          }
-        },
-        "industrie_legal_cgpRDK": {
-          "type": "industrie_legal",
-          "settings": {
-            "text": "AGBs",
-            "link": ""
+            "label": "AGBs",
+            "url": ""
           }
         }
       },
       "block_order": [
-        "gebaeude_legal_7qmJwL",
-        "gebaeude_legal_fjUhGz",
-        "gebaeude_legal_yL74UX",
-        "industrie_legal_t3RwWk",
-        "industrie_legal_PrM44d",
-        "industrie_legal_cgpRDK"
+        "legal_link_6RTLqw",
+        "legal_link_TEqGxb",
+        "legal_link_pNNQVA"
       ],
-      "name": "SIS Footer",
+      "name": "SIS – Einzelfooter",
       "settings": {
-        "background_color": "#111827",
-        "section_padding": 60,
-        "separator_color": "#374151",
-        "title_color": "#ffffff",
-        "title_font_size": 24,
-        "subtitle_color": "#d1d5db",
-        "subtitle_font_size": 18,
-        "text_color": "#9ca3af",
-        "text_font_size": 14,
-        "link_color": "#60a5fa",
-        "gebaeude_title": "SIS Saar Gebäude Service",
-        "gebaeude_address": "Musterstraße 1, 12345 Musterstadt",
-        "gebaeude_phone": "0123 / 456 789",
-        "gebaeude_email": "gebaeude@sis-saar.de",
-        "industrie_title": "SIS Saar Industrie Service",
-        "industrie_address": "Beispielweg 2, 54321 Beispielhausen",
-        "industrie_phone": "0987 / 654 321",
-        "industrie_email": "industrie@sis-saar.de",
-        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
+        "title": "SIS Saar Gebäude Service",
+        "contact_heading": "Kontakt",
+        "address_line_1": "Musterstraße 1, 12345 Musterstadt",
+        "address_line_2": "1",
+        "phone": "0123 / 456 789",
+        "email": "gebaeude@sis-saar.de",
+        "legal_heading": "Rechtliches",
+        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten.",
+        "bg_color": "#0f1621",
+        "text_color": "#cbd5e1",
+        "heading_color": "#ffffff",
+        "link_color": "#3b82f6",
+        "divider_color": "#1e293b"
       }
     },
     "footer": {
@@ -114,7 +84,7 @@
     }
   },
   "order": [
-    "sis_footer_VVMxFM",
+    "sis_single_footer_dyNjyn",
     "footer"
   ]
 }
