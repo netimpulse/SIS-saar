@@ -1,4 +1,3 @@
-
 {% comment %}
   SIS Saar – Einzelfooter (Gebäudeservice)
   Dateien: sections/sis-single-footer.liquid, snippets/sis-legal-link.liquid, assets/sis-single-footer.css
@@ -13,6 +12,7 @@
     --sis-text: {{ section.settings.text_color }};
     --sis-link: {{ section.settings.link_color }};
     --sis-divider: {{ section.settings.divider_color }};
+    --sis-heading: {{ section.settings.heading_color }};
   "
 >
   <div class="sis-footer__inner">
@@ -148,6 +148,12 @@
       },
       {
         "type": "color",
+        "id": "heading_color",
+        "label": "Überschriftenfarbe",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
         "id": "link_color",
         "label": "Linkfarbe",
         "default": "#3b82f6"
@@ -183,4 +189,3 @@
   }
   {% endschema %}
 </section>
- 
