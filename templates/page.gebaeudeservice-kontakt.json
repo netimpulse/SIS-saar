@@ -77,7 +77,7 @@
           "type": "extra_field",
           "settings": {
             "field_label": "Dienstleistung",
-            "field_type": "text",
+            "field_type": "select",
             "options": "Gebäudeservice, Industrieservice, beides",
             "placeholder": "Platzhalter",
             "required": true,
