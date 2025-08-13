@@ -356,7 +356,7 @@
         "content_side": "left",
         "kicker": "Sis Saar",
         "heading": "Gebäudeservice",
-        "body": "",
+        "body": "<p>Beispiel Text </p>",
         "heading_font": "poppins_n4",
         "heading_size": 44,
         "heading_weight": "700",
