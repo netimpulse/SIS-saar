@@ -76,7 +76,7 @@
         "extra_field_NrfkGn": {
           "type": "extra_field",
           "settings": {
-            "field_label": "Dienstleistung",
+            "field_label": "Dienstleistung*",
             "field_type": "select",
             "options": "Gebäudeservice, Industrieservice, beides",
             "placeholder": "Platzhalter",
