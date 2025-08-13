@@ -207,7 +207,7 @@
             "position": "CEO & Founder",
             "name_color": "#1e293b",
             "name_font_size": 20,
-            "position_color": "#4A6965",
+            "position_color": "#4a6965",
             "position_font_size": 16
           }
         },
@@ -219,7 +219,7 @@
             "position": "Head of SEO",
             "name_color": "#1e293b",
             "name_font_size": 20,
-            "position_color": "#4A6965",
+            "position_color": "#4a6965",
             "position_font_size": 16
           }
         },
@@ -231,7 +231,7 @@
             "position": "Head of SEA",
             "name_color": "#1e293b",
             "name_font_size": 20,
-            "position_color": "#4A6965",
+            "position_color": "#4a6965",
             "position_font_size": 16
           }
         }
@@ -243,7 +243,7 @@
       ],
       "name": "Team",
       "settings": {
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "padding_top": 80,
         "padding_bottom": 80,
         "title": "Unser Team",
@@ -256,6 +256,53 @@
         "image_size": 160,
         "image_shadow_opacity": 0.1
       }
+    },
+    "sis_single_footer_JfUwth": {
+      "type": "sis-single-footer",
+      "blocks": {
+        "legal_link_HFRTW6": {
+          "type": "legal_link",
+          "settings": {
+            "label": "Impressum",
+            "url": ""
+          }
+        },
+        "legal_link_N9exQD": {
+          "type": "legal_link",
+          "settings": {
+            "label": "Datenschutz",
+            "url": ""
+          }
+        },
+        "legal_link_iUFY7L": {
+          "type": "legal_link",
+          "settings": {
+            "label": "AGBs",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "legal_link_HFRTW6",
+        "legal_link_N9exQD",
+        "legal_link_iUFY7L"
+      ],
+      "name": "SIS – Einzelfooter",
+      "settings": {
+        "title": "SIS Saar Industrie Service",
+        "contact_heading": "Kontakt",
+        "address_line_1": "Musterstraße 1, 12345 Musterstadt",
+        "address_line_2": "1",
+        "phone": "0123 / 456 789",
+        "email": "gebaeude@sis-saar.de",
+        "legal_heading": "Rechtliches",
+        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten.",
+        "bg_color": "#0f1621",
+        "text_color": "#cbd5e1",
+        "heading_color": "#ffffff",
+        "link_color": "#3b82f6",
+        "divider_color": "#1e293b"
+      }
     }
   },
   "order": [
@@ -264,6 +311,7 @@
     "hero_overlay_section_Rk9gNP",
     "about_section_FRmjn4",
     "highlights_icons_4mpBYK",
-    "team_ijJATC"
+    "team_ijJATC",
+    "sis_single_footer_JfUwth"
   ]
 }
