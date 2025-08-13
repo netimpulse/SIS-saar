@@ -313,7 +313,7 @@
             "panel_bg": "#4caf78",
             "panel_text": "#ffffff",
             "panel_position": "top-left",
-            "open_by_default": false
+            "open_by_default": true
           }
         },
         "hotspot_3agTmd": {
