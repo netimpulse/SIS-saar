@@ -208,67 +208,6 @@
         "icon_radius": 1000
       }
     },
-    "team_ijJATC": {
-      "type": "team",
-      "blocks": {
-        "team_member_MxVGA7": {
-          "type": "team_member",
-          "settings": {
-            "image": "shopify://shop_images/Image_29._Juli_2025_20_41_34_cleanup.png",
-            "name": "Max Mustermann",
-            "position": "CEO & Founder",
-            "name_color": "#1e293b",
-            "name_font_size": 20,
-            "position_color": "#4a6965",
-            "position_font_size": 16
-          }
-        },
-        "team_member_chWED9": {
-          "type": "team_member",
-          "settings": {
-            "image": "shopify://shop_images/Image_29._Juli_2025_20_41_34_cleanup.png",
-            "name": "Erika Mustermann",
-            "position": "Head of SEO",
-            "name_color": "#1e293b",
-            "name_font_size": 20,
-            "position_color": "#4a6965",
-            "position_font_size": 16
-          }
-        },
-        "team_member_akkJpd": {
-          "type": "team_member",
-          "settings": {
-            "image": "shopify://shop_images/Image_29._Juli_2025_20_41_34_cleanup.png",
-            "name": "John Doe",
-            "position": "Head of SEA",
-            "name_color": "#1e293b",
-            "name_font_size": 20,
-            "position_color": "#4a6965",
-            "position_font_size": 16
-          }
-        }
-      },
-      "block_order": [
-        "team_member_MxVGA7",
-        "team_member_chWED9",
-        "team_member_akkJpd"
-      ],
-      "name": "Team",
-      "settings": {
-        "background_color": "#ffffff",
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "title": "Unser Team",
-        "title_color": "#1e293b",
-        "title_font": "helvetica_n7",
-        "title_font_size": 48,
-        "subtitle": "Experten mit Leidenschaft für Ihren digitalen Erfolg.",
-        "subtitle_color": "#475569",
-        "subtitle_font_size": 18,
-        "image_size": 160,
-        "image_shadow_opacity": 0.1
-      }
-    },
     "sis_single_footer_JfUwth": {
       "type": "sis-single-footer",
       "blocks": {
@@ -315,6 +254,76 @@
         "link_color": "#3b82f6",
         "divider_color": "#1e293b"
       }
+    },
+    "team_Vf9RQW": {
+      "type": "team",
+      "blocks": {
+        "team_member_3rhAX4": {
+          "type": "team_member",
+          "settings": {
+            "name": "Max Mustermann",
+            "position": "CEO & Founder",
+            "name_color": "#1e293b",
+            "name_font_size": 20,
+            "position_color": "#4A6965",
+            "position_font_size": 16
+          }
+        },
+        "team_member_QkgkCg": {
+          "type": "team_member",
+          "settings": {
+            "name": "Max Mustermann",
+            "position": "CEO & Founder",
+            "name_color": "#1e293b",
+            "name_font_size": 20,
+            "position_color": "#4A6965",
+            "position_font_size": 16
+          }
+        },
+        "team_member_CFREkQ": {
+          "type": "team_member",
+          "settings": {
+            "name": "Max Mustermann",
+            "position": "CEO & Founder",
+            "name_color": "#1e293b",
+            "name_font_size": 20,
+            "position_color": "#4A6965",
+            "position_font_size": 16
+          }
+        },
+        "team_member_AAAThP": {
+          "type": "team_member",
+          "settings": {
+            "name": "Max Mustermann",
+            "position": "CEO & Founder",
+            "name_color": "#1e293b",
+            "name_font_size": 20,
+            "position_color": "#4A6965",
+            "position_font_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "team_member_3rhAX4",
+        "team_member_QkgkCg",
+        "team_member_CFREkQ",
+        "team_member_AAAThP"
+      ],
+      "name": "Team",
+      "settings": {
+        "background_color": "#FFFFFF",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "title": "Unser Team",
+        "title_color": "#1e293b",
+        "title_font": "helvetica_n7",
+        "title_font_size": 48,
+        "subtitle": "Experten mit Leidenschaft für Ihren digitalen Erfolg.",
+        "subtitle_color": "#475569",
+        "subtitle_font_size": 18,
+        "image_size": 160,
+        "image_shadow_opacity": 0.1
+      }
     }
   },
   "order": [
@@ -323,7 +332,7 @@
     "hero_overlay_section_Rk9gNP",
     "about_section_FRmjn4",
     "highlights_icons_4mpBYK",
-    "team_ijJATC",
+    "team_Vf9RQW",
     "sis_single_footer_JfUwth"
   ]
 }
