@@ -22,7 +22,7 @@
         "logo_font_size": 24,
         "logo_position_x": 0,
         "logo_position_y": 0,
-        "menu": "hauptmen",
+        "menu": "",
         "nav_font": "sans-serif",
         "nav_font_bold": false,
         "nav_text_color": "#374151",
@@ -202,7 +202,6 @@
         "draggable": false,
         "scrollwheel": true,
         "marker_title": "Unser Standort",
-        "pin_image": "shopify://shop_images/sis_location.png",
         "pin_w": 40,
         "pin_h": 40,
         "pin_anchor_x": 20,
@@ -216,6 +215,73 @@
         "placeholder_title": "Interaktive Karte",
         "placeholder_text": "Hier würde eine interaktive Google Maps Karte eingebettet werden"
       }
+    },
+    "custom_cta_block_LPknVf": {
+      "type": "custom-cta-block",
+      "blocks": {
+        "button_XGCzQa": {
+          "type": "button",
+          "settings": {
+            "label": "<p>Kostenlose Beratung</p>",
+            "link": "",
+            "variant": "solid",
+            "text_color": "#ffffff",
+            "bg_color": "#0b132a",
+            "border_color": "#0b132a",
+            "hover_bg": "#111827",
+            "hover_text": "#ffffff",
+            "radius": 12,
+            "padding_x": 24,
+            "padding_y": 14,
+            "bold": true,
+            "offset_x": 0,
+            "offset_y": 0
+          }
+        },
+        "button_QyNrcd": {
+          "type": "button",
+          "settings": {
+            "label": "<p>Kostenlose Beratung</p>",
+            "link": "",
+            "variant": "solid",
+            "text_color": "#ffffff",
+            "bg_color": "#0b132a",
+            "border_color": "#0b132a",
+            "hover_bg": "#111827",
+            "hover_text": "#ffffff",
+            "radius": 12,
+            "padding_x": 24,
+            "padding_y": 14,
+            "bold": true,
+            "offset_x": 0,
+            "offset_y": 0
+          }
+        }
+      },
+      "block_order": [
+        "button_XGCzQa",
+        "button_QyNrcd"
+      ],
+      "name": "Custom CTA Block",
+      "settings": {
+        "heading": "<p><strong>Bereit für professionellen Gebäudeservice?</strong></p>",
+        "heading_size": 36,
+        "heading_bold": true,
+        "heading_color": "#0f172a",
+        "heading_font": "inherit",
+        "subheading": "<p>Kontaktieren Sie uns für ein unverbindliches Beratungsgespräch und ein individuelles Angebot für Ihre Anforderungen.</p>",
+        "sub_size": 20,
+        "sub_bold": false,
+        "sub_color": "#475569",
+        "sub_font": "inherit",
+        "align": "center",
+        "content_max": 1000,
+        "pad_top": 65,
+        "pad_bottom": 65,
+        "use_gradient_bg": true,
+        "bg_gradient": "linear-gradient(180deg, rgba(241, 245, 249, 0.6), rgba(241, 245, 249, 0) 100%)",
+        "buttons_gap": 60
+      }
     }
   },
   "order": [
@@ -223,6 +289,7 @@
     "split_showcase_DdJNLE",
     "text_mit_bild_button_VryaeN",
     "kundenbewertung_tzkjqA",
-    "interactive_map_BWTdBe"
+    "interactive_map_BWTdBe",
+    "custom_cta_block_LPknVf"
   ]
 }
