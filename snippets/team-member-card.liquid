@@ -2,15 +2,15 @@
   Renders a single team member card.
 
   Accepts:
-  - image: The image object for the person.
-  - image_size: The diameter of the image in pixels.
-  - name: The person's name.
-  - position: The person's position/title.
+  - image
+  - image_size
+  - name
+  - position
   - name_color, name_font_size
   - position_color, position_font_size
 {% endcomment %}
 
-<div class="team-member-card">
+<div class="team-member-card" role="group" aria-label="{{ name | escape }}{% if position != blank %}, {{ position | escape }}{% endif %}">
   <div class="team-member-card__image-wrapper">
     {%- if image != blank -%}
       <img
@@ -20,10 +20,12 @@
         width="{{ image_size }}"
         height="{{ image_size }}"
         loading="lazy"
+        decoding="async"
+        draggable="false"
         style="width: {{ image_size }}px; height: {{ image_size }}px;"
       >
     {%- else -%}
-      <div class="team-member-card__image" style="width: {{ image_size }}px; height: {{ image_size }}px; background-color: #e2e8f0; display: flex; align-items: center; justify-content: center;">
+      <div class="team-member-card__image" style="width: {{ image_size }}px; height: {{ image_size }}px; background-color: #e2e8f0; display: flex; align-items: center; justify-content: center;" draggable="false">
         <span style="font-size: 24px; color: #4A6965;">Team</span>
       </div>
     {%- endif -%}
