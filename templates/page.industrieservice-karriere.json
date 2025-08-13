@@ -67,7 +67,7 @@
             "title": "Reinigungskraft (m/w/d)",
             "desc": "Für die professionelle Gebäudereinigung in Bürogebäuden und öffentlichen Einrichtungen",
             "location": "Saarbrücken",
-            "time": "beides",
+            "time": "minijob",
             "badge_label": "",
             "badge_bg": "",
             "badge_text": "",
@@ -80,8 +80,8 @@
         "job_9BdEb7": {
           "type": "job",
           "settings": {
-            "title": "Reinigungskraft (m/w/d)",
-            "desc": "Für die professionelle Gebäudereinigung in Bürogebäuden und öffentlichen Einrichtungen",
+            "title": "Industrieservicetechniker (m/w/d)",
+            "desc": "Reinigung und Wartung von Industrieanlagen, Maschinen und Produktionsstätten.",
             "location": "Saarbrücken",
             "time": "beides",
             "badge_label": "",
@@ -96,10 +96,10 @@
         "job_6wp6i4": {
           "type": "job",
           "settings": {
-            "title": "Reinigungskraft (m/w/d)",
-            "desc": "Für die professionelle Gebäudereinigung in Bürogebäuden und öffentlichen Einrichtungen",
+            "title": "Teamleiter Gebäudereinigung (m/w/d)",
+            "desc": "Leitung eines Reinigungsteams, Einsatzplanung, Qualitätssicherung.",
             "location": "Saarbrücken",
-            "time": "beides",
+            "time": "vollzeit",
             "badge_label": "",
             "badge_bg": "",
             "badge_text": "",
