@@ -4,6 +4,7 @@
   --sis-text: #cbd5e1;
   --sis-link: #3b82f6;
   --sis-divider: #1e293b;
+  --sis-heading: #ffffff;
 
   background: var(--sis-bg);
   color: var(--sis-text);
@@ -21,6 +22,7 @@
   font-size: 20px;
   line-height: 1.3;
   font-weight: 700;
+  color: var(--sis-heading);
 }
 
 .sis-footer__content {
@@ -29,12 +31,11 @@
   gap: 28px;
 }
 
-.sis-footer__group { }
-
 .sis-footer__heading {
   margin: 0 0 10px;
   font-size: 16px;
   font-weight: 700;
+  color: var(--sis-heading);
 }
 
 .sis-footer__text {
