@@ -291,6 +291,53 @@
         "bg_gradient": "linear-gradient(180deg, rgba(241, 245, 249, 0.6), rgba(241, 245, 249, 0) 100%)",
         "buttons_gap": 16
       }
+    },
+    "sis_single_footer_PQBXAB": {
+      "type": "sis-single-footer",
+      "blocks": {
+        "legal_link_JzjHPq": {
+          "type": "legal_link",
+          "settings": {
+            "label": "Impressum",
+            "url": ""
+          }
+        },
+        "legal_link_4HVT8X": {
+          "type": "legal_link",
+          "settings": {
+            "label": "Datenschutz",
+            "url": ""
+          }
+        },
+        "legal_link_tKVDxL": {
+          "type": "legal_link",
+          "settings": {
+            "label": "AGBs",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "legal_link_JzjHPq",
+        "legal_link_4HVT8X",
+        "legal_link_tKVDxL"
+      ],
+      "name": "SIS – Einzelfooter",
+      "settings": {
+        "title": "SIS Saar Gebäude Service",
+        "contact_heading": "Kontakt",
+        "address_line_1": "Musterstraße 1, 12345 Musterstadt",
+        "address_line_2": "1",
+        "phone": "0123 / 456 789",
+        "email": "gebaeude@sis-saar.de",
+        "legal_heading": "Rechtliches",
+        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten.",
+        "bg_color": "#0f1621",
+        "text_color": "#cbd5e1",
+        "heading_color": "#ffffff",
+        "link_color": "#3b82f6",
+        "divider_color": "#1e293b"
+      }
     }
   },
   "order": [
@@ -299,6 +346,7 @@
     "hero_building_section_jFhK9K",
     "highlights_icons_kWf4Y9",
     "services_cards_aAFJw9",
-    "custom_cta_block_xMcPbA"
+    "custom_cta_block_xMcPbA",
+    "sis_single_footer_PQBXAB"
   ]
 }
