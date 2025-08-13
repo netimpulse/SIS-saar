@@ -425,6 +425,53 @@
         "bg_gradient": "linear-gradient(180deg, rgba(241, 245, 249, 0.6), rgba(241, 245, 249, 0) 100%)",
         "buttons_gap": 16
       }
+    },
+    "sis_single_footer_bRLGhc": {
+      "type": "sis-single-footer",
+      "blocks": {
+        "legal_link_hh6kct": {
+          "type": "legal_link",
+          "settings": {
+            "label": "Impressum",
+            "url": ""
+          }
+        },
+        "legal_link_ETH84i": {
+          "type": "legal_link",
+          "settings": {
+            "label": "Datenschutz",
+            "url": ""
+          }
+        },
+        "legal_link_hyiydU": {
+          "type": "legal_link",
+          "settings": {
+            "label": "AGBs",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "legal_link_hh6kct",
+        "legal_link_ETH84i",
+        "legal_link_hyiydU"
+      ],
+      "name": "SIS – Einzelfooter",
+      "settings": {
+        "title": "SIS Saar Industrie Service",
+        "contact_heading": "Kontakt",
+        "address_line_1": "Musterstraße 1, 12345 Musterstadt",
+        "address_line_2": "1",
+        "phone": "0123 / 456 789",
+        "email": "gebaeude@sis-saar.de",
+        "legal_heading": "Rechtliches",
+        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten.",
+        "bg_color": "#0f1621",
+        "text_color": "#cbd5e1",
+        "heading_color": "#ffffff",
+        "link_color": "#3b82f6",
+        "divider_color": "#1e293b"
+      }
     }
   },
   "order": [
@@ -434,6 +481,7 @@
     "leistungen_button_crpLkQ",
     "amenities_hotspots_4fU76A",
     "text_mit_bild_button_PxGyff",
-    "custom_cta_block_e7jJM9"
+    "custom_cta_block_e7jJM9",
+    "sis_single_footer_bRLGhc"
   ]
 }
