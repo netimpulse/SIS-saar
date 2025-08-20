@@ -309,6 +309,146 @@
         "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
     },
+    "leistungen_handy_X94iDa": {
+      "type": "leistungen-handy",
+      "blocks": {
+        "service_block_4KaFX3": {
+          "type": "service_block",
+          "settings": {
+            "image_diameter": 150,
+            "image_border_color": "#E0E0E0",
+            "image_border_width": 4,
+            "title": "Industrieservice",
+            "subtitle": "Gebäudeservice",
+            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
+            "title_font": "sans-serif",
+            "title_bold": true,
+            "title_italic": false,
+            "title_font_size": 20,
+            "title_color": "#000000",
+            "subtitle_font": "sans-serif",
+            "subtitle_bold": false,
+            "subtitle_italic": false,
+            "subtitle_font_size": 16,
+            "subtitle_color": "#555555",
+            "text_font": "sans-serif",
+            "text_bold": false,
+            "text_italic": false,
+            "text_font_size": 14,
+            "text_color": "#333333"
+          }
+        },
+        "service_block_fixdFz": {
+          "type": "service_block",
+          "settings": {
+            "image_diameter": 150,
+            "image_border_color": "#E0E0E0",
+            "image_border_width": 4,
+            "title": "Industrieservice",
+            "subtitle": "Gebäudeservice",
+            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
+            "title_font": "sans-serif",
+            "title_bold": true,
+            "title_italic": false,
+            "title_font_size": 20,
+            "title_color": "#000000",
+            "subtitle_font": "sans-serif",
+            "subtitle_bold": false,
+            "subtitle_italic": false,
+            "subtitle_font_size": 16,
+            "subtitle_color": "#555555",
+            "text_font": "sans-serif",
+            "text_bold": false,
+            "text_italic": false,
+            "text_font_size": 14,
+            "text_color": "#333333"
+          }
+        },
+        "service_block_VMiN8E": {
+          "type": "service_block",
+          "settings": {
+            "image_diameter": 150,
+            "image_border_color": "#E0E0E0",
+            "image_border_width": 4,
+            "title": "Industrieservice",
+            "subtitle": "Gebäudeservice",
+            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
+            "title_font": "sans-serif",
+            "title_bold": true,
+            "title_italic": false,
+            "title_font_size": 20,
+            "title_color": "#000000",
+            "subtitle_font": "sans-serif",
+            "subtitle_bold": false,
+            "subtitle_italic": false,
+            "subtitle_font_size": 16,
+            "subtitle_color": "#555555",
+            "text_font": "sans-serif",
+            "text_bold": false,
+            "text_italic": false,
+            "text_font_size": 14,
+            "text_color": "#333333"
+          }
+        },
+        "service_block_8HCXnT": {
+          "type": "service_block",
+          "settings": {
+            "image_diameter": 150,
+            "image_border_color": "#E0E0E0",
+            "image_border_width": 4,
+            "title": "Industrieservice",
+            "subtitle": "Gebäudeservice",
+            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
+            "title_font": "sans-serif",
+            "title_bold": true,
+            "title_italic": false,
+            "title_font_size": 20,
+            "title_color": "#000000",
+            "subtitle_font": "sans-serif",
+            "subtitle_bold": false,
+            "subtitle_italic": false,
+            "subtitle_font_size": 16,
+            "subtitle_color": "#555555",
+            "text_font": "sans-serif",
+            "text_bold": false,
+            "text_italic": false,
+            "text_font_size": 14,
+            "text_color": "#333333"
+          }
+        }
+      },
+      "block_order": [
+        "service_block_4KaFX3",
+        "service_block_fixdFz",
+        "service_block_VMiN8E",
+        "service_block_8HCXnT"
+      ],
+      "name": "Leistungen Handy",
+      "settings": {
+        "heading": "Unsere Leistungen",
+        "heading_font": "sans-serif",
+        "heading_bold": true,
+        "heading_italic": false,
+        "heading_font_size": 42,
+        "heading_color": "#333333",
+        "section_scale": 100,
+        "item_spacing": 30,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "section_bg_color": "#FFFFFF",
+        "arrow_color": "#111111",
+        "line_color": "#DDDDDD",
+        "cta_kicker": "Mehr zu unseren Services",
+        "cta_btn_label": "Alle Leistungen ansehen",
+        "cta_btn_link": "",
+        "cta_btn_newtab": false,
+        "cta_btn_style": "primary",
+        "cta_align": "center",
+        "cta_kicker_color": "#555555",
+        "cta_btn_bg_color": "#111111",
+        "cta_btn_text_color": "#FFFFFF"
+      }
+    },
     "leistungen_handyopt2_BwhVTQ": {
       "type": "leistungen-handyopt2",
       "blocks": {
@@ -364,6 +504,7 @@
     "interactive_map_BWTdBe",
     "text_mit_bild_button_6UPhhG",
     "sis_footer_E9Qb9V",
+    "leistungen_handy_X94iDa",
     "leistungen_handyopt2_BwhVTQ"
   ]
 }
