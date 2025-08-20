@@ -1,7 +1,6 @@
 {% comment %}
   Section: Leistungen Handy
-  – Slider/Carousel
-  – Mobile optimiert (Touch-Scroll, 1 Leistung pro View)
+  – zentriert, Fortschritts-Slider, Mobile 1 Slide pro View
 {% endcomment %}
 
 {{ 'leistungen-handy.css' | asset_url | stylesheet_tag }}
@@ -32,6 +31,11 @@
 
   .section-{{ section.id }} .carousel-arrow { color: {{ section.settings.arrow_color }}; }
   .section-{{ section.id }} .service-item__timeline-connector { background-color: {{ section.settings.line_color }}; }
+
+  /* Progress Farbe aus Setting */
+  .section-{{ section.id }} .carousel-progress__bar {
+    background: {{ section.settings.progress_color }};
+  }
 
   /* Block-spezifische Typo und Bildrahmen */
   {% for block in section.blocks %}
@@ -91,7 +95,7 @@
       {%- endif -%}
 
       <div class="carousel-wrapper">
-        <div class="carousel-viewport">
+        <div class="carousel-viewport" aria-live="polite">
           <div class="carousel-track">
             {%- for block in section.blocks -%}
               {%- render 'service-item-leistungen-handy', block: block, section: section -%}
@@ -108,6 +112,11 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
           </button>
         {%- endif -%}
+
+        <!-- Fortschritts-Slider -->
+        <div class="carousel-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Scrollfortschritt">
+          <div class="carousel-progress__bar"></div>
+        </div>
       </div>
 
       {%- if section.settings.cta_kicker != blank or section.settings.cta_btn_label != blank -%}
@@ -154,6 +163,9 @@
     { "type": "color", "id": "section_bg_color", "label": "Hintergrundfarbe", "default": "#FFFFFF" },
     { "type": "color", "id": "arrow_color", "label": "Pfeilfarbe", "default": "#111111" },
     { "type": "color", "id": "line_color", "label": "Farbe der Verbindungslinie", "default": "#DDDDDD" },
+
+    { "type": "header", "content": "Fortschritts-Slider" },
+    { "type": "color", "id": "progress_color", "label": "Farbe des Fortschritts", "default": "#111111" },
 
     { "type": "header", "content": "CTA unter dem Slider" },
     { "type": "text", "id": "cta_kicker", "label": "Kleiner Überschriftssatz (optional)", "default": "Mehr zu unseren Services" },
