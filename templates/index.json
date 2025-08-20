@@ -309,10 +309,10 @@
         "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
     },
-    "leistungen_handy_X94iDa": {
+    "leistungen_handy_h8jWCq": {
       "type": "leistungen-handy",
       "blocks": {
-        "service_block_4KaFX3": {
+        "service_block_kBKHV4": {
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
@@ -338,7 +338,7 @@
             "text_color": "#333333"
           }
         },
-        "service_block_fixdFz": {
+        "service_block_TELatc": {
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
@@ -364,7 +364,7 @@
             "text_color": "#333333"
           }
         },
-        "service_block_VMiN8E": {
+        "service_block_aAcemA": {
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
@@ -390,7 +390,7 @@
             "text_color": "#333333"
           }
         },
-        "service_block_8HCXnT": {
+        "service_block_ArGX4B": {
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
@@ -418,10 +418,10 @@
         }
       },
       "block_order": [
-        "service_block_4KaFX3",
-        "service_block_fixdFz",
-        "service_block_VMiN8E",
-        "service_block_8HCXnT"
+        "service_block_kBKHV4",
+        "service_block_TELatc",
+        "service_block_aAcemA",
+        "service_block_ArGX4B"
       ],
       "name": "Leistungen Handy",
       "settings": {
@@ -448,52 +448,6 @@
         "cta_btn_bg_color": "#111111",
         "cta_btn_text_color": "#FFFFFF"
       }
-    },
-    "leistungen_handyopt2_BwhVTQ": {
-      "type": "leistungen-handyopt2",
-      "blocks": {
-        "leistungen_handyopt2_y7FWKD": {
-          "type": "leistungen_handyopt2",
-          "settings": {
-            "main_image": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
-            "number_icon": "shopify://shop_images/SIS_Gruppe_logo.png",
-            "title": "aaaaaaa",
-            "subtitle": "aaaaaaaa",
-            "text": ""
-          }
-        },
-        "leistungen_handyopt2_U9Pnhd": {
-          "type": "leistungen_handyopt2",
-          "settings": {
-            "main_image": "shopify://shop_images/sis_location.png",
-            "number_icon": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
-            "title": "",
-            "subtitle": "",
-            "text": ""
-          }
-        },
-        "leistungen_handyopt2_8cL8iG": {
-          "type": "leistungen_handyopt2",
-          "settings": {
-            "title": "",
-            "subtitle": "",
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "leistungen_handyopt2_y7FWKD",
-        "leistungen_handyopt2_U9Pnhd",
-        "leistungen_handyopt2_8cL8iG"
-      ],
-      "name": "Leistungen – Handyopt2",
-      "settings": {
-        "heading": "aaaa",
-        "kicker": "aaaaaa",
-        "cta_label": "Jetzt berateaaaaaaaan lassen",
-        "cta_url": "",
-        "cta_new_tab": false
-      }
     }
   },
   "order": [
@@ -504,7 +458,6 @@
     "interactive_map_BWTdBe",
     "text_mit_bild_button_6UPhhG",
     "sis_footer_E9Qb9V",
-    "leistungen_handy_X94iDa",
-    "leistungen_handyopt2_BwhVTQ"
+    "leistungen_handy_h8jWCq"
   ]
 }
