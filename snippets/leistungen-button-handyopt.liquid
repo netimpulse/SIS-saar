@@ -1,0 +1,188 @@
+{%- comment -%}
+  Section: Leistungen Button – Handyopt
+{%- endcomment -%}
+
+<section id="leistungen-{{ section.id }}" class="leistungen-button-handyopt" data-mobile-infinite="true">
+  {% if section.settings.heading != blank %}
+    <div class="leistungen-neu-heading">
+      <h2>{{ section.settings.heading }}</h2>
+      {% if section.settings.subheading != blank %}
+        <p>{{ section.settings.subheading }}</p>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class="carousel-wrapper">
+    <!-- Pfeile (auf Mobile via CSS versteckt) -->
+    <button class="carousel-arrow carousel-arrow--prev" aria-label="Zurück" type="button">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <div class="carousel-viewport" id="viewport-{{ section.id }}">
+      <div class="carousel-track">
+        {%- for block in section.blocks -%}
+          {% render 'leistungen-button-handyopt-item', block: block %}
+        {%- endfor -%}
+      </div>
+    </div>
+
+    <button class="carousel-arrow carousel-arrow--next" aria-label="Weiter" type="button">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+
+  <div class="carousel-dots" aria-hidden="true"></div>
+
+  {% if section.settings.cta_text != blank %}
+    <div class="leistungen-button-cta">
+      {% if section.settings.cta_kicker != blank %}
+        <p class="leistungen-button-cta__kicker">{{ section.settings.cta_kicker }}</p>
+      {% endif %}
+      <a class="leistungen-button-cta__btn" href="{{ section.settings.cta_link | default: '#' }}">
+        {{ section.settings.cta_text }}
+      </a>
+    </div>
+  {% endif %}
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const root = document.getElementById('leistungen-{{ section.id }}');
+    const viewport = root.querySelector('.carousel-viewport');
+    const track = root.querySelector('.carousel-track');
+    const originalSlides = Array.from(track.children);
+    const dotsWrap = root.querySelector('.carousel-dots');
+    const prevBtn = root.querySelector('.carousel-arrow--prev');
+    const nextBtn = root.querySelector('.carousel-arrow--next');
+    const mq = window.matchMedia('(max-width: 749px)');
+
+    // Punkte (immer anhand der Originalanzahl)
+    dotsWrap.innerHTML = originalSlides.map((_, i) => (
+      `<button class="dot${i===0?' is-active':''}" aria-label="Slide ${i+1}" type="button"></button>`
+    )).join('');
+
+    let index = 0;            // Index im Original-Satz
+    let isMobileInit = false; // Verhindert Mehrfach-Init
+
+    function setActiveDot() {
+      const dots = dotsWrap.querySelectorAll('.dot');
+      dots.forEach((d, i) => d.classList.toggle('is-active', i === ((index % originalSlides.length)+originalSlides.length)%originalSlides.length));
+    }
+
+    function widthOfSlide() {
+      return track.querySelector('.carousel-slide').getBoundingClientRect().width;
+    }
+
+    function goToIndexInstant(i) {
+      const w = widthOfSlide();
+      track.style.transition = 'none';
+      track.style.transform = `translateX(-${w * (i + 1)}px)`;  // +1 wegen Clone am Anfang
+      // Force reflow, damit die nächste transition sauber greift
+      void track.offsetHeight;
+    }
+
+    function go(delta) {
+      index += delta;
+      const total = originalSlides.length;
+      const w = widthOfSlide();
+      track.style.transition = 'transform .35s ease';
+      track.style.transform = `translateX(-${w * (index + 1)}px)`;
+
+      track.addEventListener('transitionend', function handler() {
+        track.removeEventListener('transitionend', handler);
+        // Wenn hinter dem letzten Original -> wieder auf ersten Original-Index 0 springen
+        if (index >= total) {
+          index = 0;
+          goToIndexInstant(index);
+        }
+        // Wenn vor den ersten Original -> auf letzten Original springen
+        if (index < 0) {
+          index = total - 1;
+          goToIndexInstant(index);
+        }
+        setActiveDot();
+      }, { once: true });
+    }
+
+    function initMobile() {
+      if (isMobileInit || !mq.matches) return;
+      isMobileInit = true;
+
+      // Clones für endloses Weiterklicken/Wischen
+      const first = originalSlides[0].cloneNode(true);
+      const second = originalSlides[1] ? originalSlides[1].cloneNode(true) : null;
+      const last = originalSlides[originalSlides.length - 1].cloneNode(true);
+      track.insertBefore(last, track.firstChild);
+      track.appendChild(first);
+      if (second) track.appendChild(second);
+
+      // Startposition auf den ersten Original-Slide
+      goToIndexInstant(0);
+      setActiveDot();
+
+      // Buttons
+      nextBtn?.addEventListener('click', () => go(1));
+      prevBtn?.addEventListener('click', () => go(-1));
+
+      // Touch/Swipe
+      let startX = 0, dx = 0, active = false;
+      viewport.addEventListener('touchstart', e => { active = true; startX = e.touches[0].clientX; dx = 0; }, { passive: true });
+      viewport.addEventListener('touchmove',  e => { if (!active) return; dx = e.touches[0].clientX - startX; }, { passive: true });
+      viewport.addEventListener('touchend',   () => {
+        if (!active) return;
+        active = false;
+        if (Math.abs(dx) > 30) { go(dx < 0 ? 1 : -1); }
+      });
+
+      // Klick auf Punkte
+      dotsWrap.querySelectorAll('.dot').forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+          const jump = i - index; // relative Bewegung
+          if (jump !== 0) go(jump);
+        });
+      });
+
+      window.addEventListener('resize', () => {
+        if (mq.matches) { goToIndexInstant(index); }
+        else {
+          // Desktop: alle JS-Styles zurücksetzen (Layout bleibt via CSS)
+          track.style.transition = '';
+          track.style.transform  = '';
+        }
+      });
+    }
+
+    // Nur auf Mobile aktivieren
+    initMobile();
+    mq.addEventListener ? mq.addEventListener('change', initMobile) : window.addEventListener('resize', initMobile);
+  });
+  </script>
+</section>
+
+{% schema %}
+{
+  "name": "Leistungen Handyopt",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Überschrift" },
+    { "type": "text", "id": "subheading", "label": "Untertitel" },
+    { "type": "text", "id": "cta_kicker", "label": "CTA Kicker" },
+    { "type": "text", "id": "cta_text", "label": "CTA Text" },
+    { "type": "url",  "id": "cta_link", "label": "CTA Link" }
+  ],
+  "blocks": [
+    {
+      "type": "leistung",
+      "name": "Leistung",
+      "settings": [
+        { "type": "image_picker", "id": "main_image", "label": "Hauptbild" },
+        { "type": "image_picker", "id": "number_icon", "label": "Nummern-Icon" },
+        { "type": "text", "id": "title", "label": "Titel" },
+        { "type": "text", "id": "subtitle", "label": "Untertitel" },
+        { "type": "richtext", "id": "text", "label": "Text" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Leistungen Button Handyopt" }
+  ]
+}
+{% endschema %}
