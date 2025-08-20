@@ -308,6 +308,52 @@
         "industrie_email": "industrie@sis-saar.de",
         "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
+    },
+    "leistungen_handyopt2_BwhVTQ": {
+      "type": "leistungen-handyopt2",
+      "blocks": {
+        "leistungen_handyopt2_y7FWKD": {
+          "type": "leistungen_handyopt2",
+          "settings": {
+            "main_image": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
+            "number_icon": "shopify://shop_images/SIS_Gruppe_logo.png",
+            "title": "aaaaaaa",
+            "subtitle": "aaaaaaaa",
+            "text": ""
+          }
+        },
+        "leistungen_handyopt2_U9Pnhd": {
+          "type": "leistungen_handyopt2",
+          "settings": {
+            "main_image": "shopify://shop_images/sis_location.png",
+            "number_icon": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
+            "title": "",
+            "subtitle": "",
+            "text": ""
+          }
+        },
+        "leistungen_handyopt2_8cL8iG": {
+          "type": "leistungen_handyopt2",
+          "settings": {
+            "title": "",
+            "subtitle": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "leistungen_handyopt2_y7FWKD",
+        "leistungen_handyopt2_U9Pnhd",
+        "leistungen_handyopt2_8cL8iG"
+      ],
+      "name": "Leistungen – Handyopt2",
+      "settings": {
+        "heading": "aaaa",
+        "kicker": "aaaaaa",
+        "cta_label": "Jetzt berateaaaaaaaan lassen",
+        "cta_url": "",
+        "cta_new_tab": false
+      }
     }
   },
   "order": [
@@ -317,6 +363,7 @@
     "kundenbewertung_tzkjqA",
     "interactive_map_BWTdBe",
     "text_mit_bild_button_6UPhhG",
-    "sis_footer_E9Qb9V"
+    "sis_footer_E9Qb9V",
+    "leistungen_handyopt2_BwhVTQ"
   ]
 }
