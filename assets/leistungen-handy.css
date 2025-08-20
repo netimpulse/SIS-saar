@@ -1,8 +1,14 @@
-/* ---- Leistungen Handy (optimiert) ---- */
+/* ---- Leistungen Handy (optimiert & zentriert) ---- */
 
 .leistungen-handy-heading {
   text-align: center;
   margin-bottom: 40px;
+}
+
+/* zentrierter Inhaltsbereich */
+.leistungen-handy-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* --- CTA unter dem Slider --- */
@@ -33,7 +39,7 @@
 /* --- Grundlegende Sektions-Styles (Carousel) --- */
 .carousel-wrapper {
   position: relative;
-  padding: 0 50px; /* Platz für die Pfeile */
+  padding: 0 50px; /* Platz für die Pfeile links/rechts */
 }
 .carousel-viewport {
   overflow: hidden;
@@ -48,6 +54,22 @@
   width: 25%; /* 4 sichtbare Elemente standardmäßig */
   box-sizing: border-box;
   padding: 0 15px;
+}
+
+/* --- Fortschritts-Slider --- */
+.carousel-progress {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.08);
+  overflow: hidden;
+  margin: 16px auto 0; /* unter den Unterpunkten */
+  max-width: 420px;
+}
+.carousel-progress__bar {
+  height: 100%;
+  width: 0%;
+  background: #111; /* via Section-Setting überschrieben */
+  transition: width .25s ease;
 }
 
 /* --- Pfeile --- */
@@ -127,7 +149,7 @@
 @media (max-width: 990px) { .carousel-slide { width: 50%; } }
 
 @media (max-width: 749px) {
-  .carousel-slide { width: 85%; }
+  .carousel-slide { width: 85%; } /* wird per JS auf 100% gesetzt */
   .carousel-wrapper { padding: 0 15px; }
   .carousel-arrow { display: none; } /* Touch-Scroll */
   .carousel-viewport {
