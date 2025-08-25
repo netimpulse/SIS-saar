@@ -1,0 +1,120 @@
+{% comment %}
+  Section: Leistung Showcase
+  Layout:
+  - Desktop: Bild links, rechts bis zu 2 Punkte (Kacheln)
+  - Ab dem 3. Punkt: erscheinen die restlichen Punkte unter dem Text
+  - Mobile: Bild -> Punkte (untereinander) -> Text
+{% endcomment %}
+
+{{ 'leistung-showcase.css' | asset_url | stylesheet_tag }}
+
+<section class="lsc-section"
+  style="
+    --lsc-bg: {{ section.settings.bg_color }};
+    --lsc-pad: {{ section.settings.section_padding }}px;
+    --lsc-radius: {{ section.settings.image_radius }}px;
+    --lsc-icon-size: {{ section.settings.icon_size }}px;
+  "
+>
+  <div class="lsc-inner">
+
+    <!-- GRID: Bild links + rechte Sidebar (max 2 Punkte) -->
+    <div class="lsc-grid">
+
+      <!-- Bild -->
+      <div class="lsc-media">
+        {%- if section.settings.main_image != blank -%}
+          {{ section.settings.main_image
+            | image_url: width: 1200
+            | image_tag: loading: 'lazy', sizes: '(min-width: 990px) 600px, 100vw', class: 'lsc-img', alt: section.settings.heading | escape }}
+        {%- else -%}
+          <div class="lsc-img lsc-img--placeholder" aria-hidden="true"></div>
+        {%- endif -%}
+      </div>
+
+      <!-- Rechte Spalte: bis zu 2 Punkte -->
+      <aside class="lsc-aside">
+        {%- assign idx = 0 -%}
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'showcase_point' -%}
+            {%- assign idx = idx | plus: 1 -%}
+            {%- if idx <= 2 -%}
+              {% render 'point-card-showcase',
+                icon: block.settings.icon,
+                text: block.settings.text,
+                id: block.id
+              %}
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+      </aside>
+
+    </div><!-- /lsc-grid -->
+
+    <!-- Content unter dem Grid (Heading + Text) -->
+    <div class="lsc-content">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="lsc-heading">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+      {%- if section.settings.subtext != blank -%}
+        <div class="lsc-text rte">{{ section.settings.subtext }}</div>
+      {%- endif -%}
+    </div>
+
+    <!-- Zusätzliche Punkte (ab dem 3.) unter dem Text -->
+    <div class="lsc-extras">
+      {%- assign idx2 = 0 -%}
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'showcase_point' -%}
+          {%- assign idx2 = idx2 | plus: 1 -%}
+          {%- if idx2 > 2 -%}
+            {% render 'point-card-showcase',
+              icon: block.settings.icon,
+              text: block.settings.text,
+              id: block.id
+            %}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Leistung Showcase",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Überschrift", "default": "Überschrift bei Überschrift" },
+    { "type": "richtext", "id": "subtext", "label": "Einleitungstext", "default": "<p>hier steht ein text</p>" },
+
+    { "type": "image_picker", "id": "main_image", "label": "Bild links" },
+    { "type": "range", "id": "image_radius", "min": 0, "max": 40, "step": 1, "unit": "px", "label": "Bild-Abrundung", "default": 12 },
+
+    { "type": "color", "id": "bg_color", "label": "Hintergrundfarbe des Blocks", "default": "#F6F8FB" },
+    { "type": "range", "id": "section_padding", "min": 0, "max": 80, "step": 4, "unit": "px", "label": "Innenabstand", "default": 24 },
+    { "type": "range", "id": "icon_size", "min": 16, "max": 64, "step": 2, "unit": "px", "label": "Icon-Größe", "default": 28 }
+  ],
+  "blocks": [
+    {
+      "type": "showcase_point",
+      "name": "Punkt (Kachel)",
+      "settings": [
+        { "type": "image_picker", "id": "icon", "label": "Icon (SVG/PNG)" },
+        { "type": "text", "id": "text", "label": "Text", "default": "hier steht ein text" }
+      ]
+    }
+  ],
+  "max_blocks": 20,
+  "presets": [
+    {
+      "name": "Leistung Showcase",
+      "blocks": [
+        { "type": "showcase_point" },
+        { "type": "showcase_point" },
+        { "type": "showcase_point" }
+      ]
+    }
+  ]
+}
+{% endschema %}
