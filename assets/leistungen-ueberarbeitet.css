@@ -9,16 +9,19 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-.leh-heading{
+.leh-heading {
   font-family: var(--leh-font-head);
   font-size: clamp(24px, 2.4vw, 32px);
   margin: 0 0 8px;
+  text-align: center;      /* NEU */
 }
-.leh-subtext{
+
+.leh-subtext {
   max-width: 720px;
   line-height: 1.6;
-  margin: 0 0 24px;
+  margin: 0 auto 24px;     /* auto links/rechts = mittig */
   opacity: .9;
+  text-align: center;      /* NEU */
 }
 
 /* Grid */
