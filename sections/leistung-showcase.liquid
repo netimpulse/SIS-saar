@@ -1,8 +1,7 @@
 {% comment %}
   Section: Leistung Showcase
   Layout:
-  - Desktop: Bild links, rechts bis zu 2 Punkte (Kacheln)
-  - Ab dem 3. Punkt: erscheinen die restlichen Punkte unter dem Text
+  - Desktop: Bild links, rechts ALLE Punkte (Kacheln)
   - Mobile: Bild -> Punkte (untereinander) -> Text
 {% endcomment %}
 
@@ -18,7 +17,7 @@
 >
   <div class="lsc-inner">
 
-    <!-- GRID: Bild links + rechte Sidebar (max 2 Punkte) -->
+    <!-- GRID: Bild links + rechte Sidebar mit allen Punkten -->
     <div class="lsc-grid">
 
       <!-- Bild -->
@@ -32,19 +31,15 @@
         {%- endif -%}
       </div>
 
-      <!-- Rechte Spalte: bis zu 2 Punkte -->
+      <!-- Rechte Spalte: ALLE Punkte -->
       <aside class="lsc-aside">
-        {%- assign idx = 0 -%}
         {%- for block in section.blocks -%}
           {%- if block.type == 'showcase_point' -%}
-            {%- assign idx = idx | plus: 1 -%}
-            {%- if idx <= 2 -%}
-              {% render 'point-card-showcase',
-                icon: block.settings.icon,
-                text: block.settings.text,
-                id: block.id
-              %}
-            {%- endif -%}
+            {% render 'point-card-showcase',
+              icon: block.settings.icon,
+              text: block.settings.text,
+              id: block.id
+            %}
           {%- endif -%}
         {%- endfor -%}
       </aside>
@@ -59,23 +54,6 @@
       {%- if section.settings.subtext != blank -%}
         <div class="lsc-text rte">{{ section.settings.subtext }}</div>
       {%- endif -%}
-    </div>
-
-    <!-- Zusätzliche Punkte (ab dem 3.) unter dem Text -->
-    <div class="lsc-extras">
-      {%- assign idx2 = 0 -%}
-      {%- for block in section.blocks -%}
-        {%- if block.type == 'showcase_point' -%}
-          {%- assign idx2 = idx2 | plus: 1 -%}
-          {%- if idx2 > 2 -%}
-            {% render 'point-card-showcase',
-              icon: block.settings.icon,
-              text: block.settings.text,
-              id: block.id
-            %}
-          {%- endif -%}
-        {%- endif -%}
-      {%- endfor -%}
     </div>
 
   </div>
@@ -101,7 +79,7 @@
       "name": "Punkt (Kachel)",
       "settings": [
         { "type": "image_picker", "id": "icon", "label": "Icon (SVG/PNG)" },
-        { "type": "text", "id": "text", "label": "Text", "default": "hier steht ein text" }
+        { "type": "richtext", "id": "text", "label": "Text", "default": "<p>hier steht ein text</p>" }
       ]
     }
   ],
