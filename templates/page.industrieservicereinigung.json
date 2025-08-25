@@ -178,13 +178,44 @@
         "button_text_color_hover": "#ffffff"
       }
     },
+    "rich_text_AyzdX6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_pd7TCc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hallenbodenreinigung",
+            "heading_size": "h1"
+          }
+        },
+        "text_RaPqmk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Teile Infos über deine Marke mit deinen Kunden. Beschreibe ein Produkt, kündige etwas an oder heiße Kunden willkommen.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_pd7TCc",
+        "text_RaPqmk"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "text_mit_bild_RijNFH": {
       "type": "text-mit-bild",
       "name": "Text mit Bild",
       "settings": {
         "image_position": "left",
         "image_shadow_strength": 20,
-        "heading": "Hallenbodereinigung",
+        "heading": "Wand und Deckenreinigung",
         "heading_font": "sans-serif",
         "heading_font_size": 42,
         "heading_color": "#1f1f1f",
@@ -320,6 +351,7 @@
     "hero_overlay_section_6beqpy",
     "leistung_showcase_n3D9xt",
     "text_mit_bild_button_GU3rjc",
+    "rich_text_AyzdX6",
     "text_mit_bild_RijNFH",
     "custom_cta_block_Tf7gLb",
     "sis_single_footer_PEDkQY"
