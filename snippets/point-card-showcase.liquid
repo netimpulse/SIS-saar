@@ -1,0 +1,15 @@
+{%- comment -%}
+  Ein einzelner „Punkt“ (Kachel) mit Icon links und Text rechts.
+  Übergabewerte: icon, text
+{%- endcomment -%}
+
+<div class="lsc-card" {{ block.shopify_attributes }}>
+  <div class="lsc-card-icon">
+    {%- if icon != blank -%}
+      {{ icon | image_url: width: 64 | image_tag: loading: 'lazy', class: 'lsc-icon', alt: text | escape }}
+    {%- else -%}
+      <span class="lsc-icon lsc-icon--placeholder" aria-hidden="true"></span>
+    {%- endif -%}
+  </div>
+  <div class="lsc-card-text">{{ text }}</div>
+</div>
