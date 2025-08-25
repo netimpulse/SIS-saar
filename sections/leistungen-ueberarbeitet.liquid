@@ -1,7 +1,5 @@
 {% comment %}
   Section: Leistungen überarbeitet
-  - Bindet assets/leistungen-ueberarbeitet.css ein
-  - Rendert flexible Kachel-Blöcke + Button
 {% endcomment %}
 
 {{ 'leistungen-ueberarbeitet.css' | asset_url | stylesheet_tag }}
@@ -39,8 +37,8 @@
 
     <div class="leh-grid">
       {%- for block in section.blocks -%}
-        {%- if block.type == 'service_card' -%}
-          {% render 'service-card',
+        {%- if block.type == 'service_card_lue' -%}
+          {% render 'service-card-leistung-ueberarbeitet',
             image: block.settings.image,
             title: block.settings.title,
             text: block.settings.text,
@@ -102,7 +100,7 @@
   ],
   "blocks": [
     {
-      "type": "service_card",
+      "type": "service_card_lue",
       "name": "Kachel",
       "settings": [
         { "type": "image_picker", "id": "image", "label": "Bild" },
@@ -117,11 +115,10 @@
   "presets": [
     {
       "name": "Leistungen überarbeitet",
-      "category": "Abschnitte",
       "blocks": [
-        { "type": "service_card" },
-        { "type": "service_card" },
-        { "type": "service_card" }
+        { "type": "service_card_lue" },
+        { "type": "service_card_lue" },
+        { "type": "service_card_lue" }
       ]
     }
   ]
