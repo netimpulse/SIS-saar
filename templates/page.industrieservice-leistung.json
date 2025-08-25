@@ -274,7 +274,7 @@
       "name": "Custom CTA Block",
       "settings": {
         "heading": "<p><strong>Bereit für professionellen Gebäudeservice?</strong></p>",
-        "heading_size": 56,
+        "heading_size": 45,
         "heading_bold": true,
         "heading_color": "#0f172a",
         "heading_font": "inherit",
