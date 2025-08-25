@@ -1,0 +1,105 @@
+/* Container */
+.lsc-section{
+  background: var(--lsc-bg);
+  padding: var(--lsc-pad);
+}
+.lsc-inner{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid: Bild links, Punkte rechts (bis 2) */
+.lsc-grid{
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 24px;
+  align-items: start;
+}
+
+/* Bild */
+.lsc-media{}
+.lsc-img{
+  width: 100%;
+  height: auto;
+  border-radius: var(--lsc-radius);
+  display: block;
+  object-fit: cover;
+}
+.lsc-img--placeholder{
+  background: #e9edf2;
+  height: 320px;
+  border-radius: var(--lsc-radius);
+}
+
+/* Rechte Spalte (max 2 Punkte) */
+.lsc-aside{
+  display: grid;
+  gap: 12px;
+}
+
+/* Überschrift & Text (unter dem Grid) */
+.lsc-content{
+  margin-top: 18px;
+}
+.lsc-heading{
+  text-align: left;      /* bei Bedarf anpassbar */
+  margin: 0 0 6px;
+  font-size: clamp(22px, 2.2vw, 28px);
+  font-weight: 700;
+}
+.lsc-text{
+  max-width: 70ch;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Weitere Punkte (ab dem 3.) – unter dem Text */
+.lsc-extras{
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 12px;
+}
+
+/* Kachel/Point */
+.lsc-card{
+  background: #fff;
+  border: 1px solid #e5e8ee;
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: center;
+}
+.lsc-card-icon{}
+.lsc-icon{
+  width: var(--lsc-icon-size);
+  height: var(--lsc-icon-size);
+  object-fit: contain;
+  display: block;
+}
+.lsc-icon--placeholder{
+  width: var(--lsc-icon-size);
+  height: var(--lsc-icon-size);
+  border-radius: 50%;
+  background: #d7dbe3;
+  display: inline-block;
+}
+.lsc-card-text{
+  font-weight: 600;
+  color: #111;
+}
+
+/* Responsive */
+@media (max-width: 990px){
+  .lsc-grid{
+    grid-template-columns: 1fr;
+  }
+  /* Mobile-Reihenfolge: Bild -> Punkte -> Text */
+  .lsc-aside{ order: 2; }
+  .lsc-content{ order: 3; }
+  .lsc-extras{
+    grid-template-columns: 1fr;
+  }
+}
