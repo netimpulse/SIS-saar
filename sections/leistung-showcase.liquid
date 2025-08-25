@@ -1,7 +1,4 @@
-{% comment %}
-  Section: Leistung Showcase (mit eigenem Punkte-Container, Button & Icons je Punkt)
-{% endcomment %}
-
+{% comment %} Leistung Showcase – Punkte-Container + Icons je Punkt {% endcomment %}
 {{ 'leistung-showcase.css' | asset_url | stylesheet_tag }}
 
 <section class="lsc-section"
@@ -15,9 +12,9 @@
   "
 >
   <div class="lsc-inner">
-
     <div class="lsc-grid lsc-pos-{{ section.settings.image_position }}">
 
+      <!-- Bild -->
       <div class="lsc-media">
         {%- if section.settings.main_image != blank -%}
           {{ section.settings.main_image
@@ -28,6 +25,7 @@
         {%- endif -%}
       </div>
 
+      <!-- Text + Punkte-Container -->
       <div class="lsc-rightcol">
         <div class="lsc-content">
           {%- if section.settings.heading != blank -%}
@@ -65,7 +63,6 @@
         </aside>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -78,39 +75,22 @@
 
     { "type": "image_picker", "id": "main_image", "label": "Bild" },
     { "type": "range", "id": "image_radius", "min": 0, "max": 40, "step": 1, "unit": "px", "label": "Bild-Abrundung", "default": 12 },
-    {
-      "type": "select",
-      "id": "image_position",
-      "label": "Bild-Position (Desktop)",
-      "default": "left",
-      "options": [
-        { "value": "left", "label": "Links" },
-        { "value": "right", "label": "Rechts" }
-      ]
-    },
+    { "type": "select", "id": "image_position", "label": "Bild-Position (Desktop)", "default": "left",
+      "options": [{"value":"left","label":"Links"},{"value":"right","label":"Rechts"}] },
 
     { "type": "color", "id": "bg_color", "label": "Hintergrundfarbe Abschnitt", "default": "#F6F8FB" },
     { "type": "range", "id": "section_padding", "min": 0, "max": 80, "step": 4, "unit": "px", "label": "Innenabstand", "default": 24 },
 
     { "type": "header", "content": "Punkte-Container" },
     { "type": "text", "id": "points_title", "label": "Titel Punkte-Container", "default": "Unsere Dienstleistungen:" },
-    { "type": "checkbox", "id": "points_as_card", "label": "Container als Kachel (mit Rahmen/Hintergrund)", "default": true },
+    { "type": "checkbox", "id": "points_as_card", "label": "Container als Kachel", "default": true },
     { "type": "color", "id": "points_bg", "label": "Container-Hintergrund", "default": "#FFFFFF" },
     { "type": "color", "id": "points_border", "label": "Container-Rahmen", "default": "#E5E8EE" },
 
     { "type": "text", "id": "points_btn_label", "label": "Button-Text im Punkte-Container", "default": "Jetzt anfragen" },
     { "type": "url", "id": "points_btn_url", "label": "Button-Link" },
-    {
-      "type": "select",
-      "id": "points_btn_align",
-      "label": "Button-Ausrichtung",
-      "default": "left",
-      "options": [
-        { "value": "left", "label": "Links" },
-        { "value": "center", "label": "Zentriert" },
-        { "value": "right", "label": "Rechts" }
-      ]
-    },
+    { "type": "select", "id": "points_btn_align", "label": "Button-Ausrichtung", "default": "left",
+      "options": [{"value":"left","label":"Links"},{"value":"center","label":"Zentriert"},{"value":"right","label":"Rechts"}] },
 
     { "type": "color", "id": "fallback_bullet_color", "label": "Fallback-Bullet-Farbe (wenn kein Icon)", "default": "#2B6CB0" }
   ],
@@ -125,14 +105,6 @@
     }
   ],
   "max_blocks": 30,
-  "presets": [
-    {
-      "name": "Leistung Showcase",
-      "blocks": [
-        { "type": "showcase_item" },
-        { "type": "showcase_item" }
-      ]
-    }
-  ]
+  "presets": [{"name":"Leistung Showcase","blocks":[{"type":"showcase_item"},{"type":"showcase_item"}]}]
 }
 {% endschema %}
