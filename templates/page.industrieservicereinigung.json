@@ -135,7 +135,7 @@
         "main_image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
         "image_radius": 12,
         "image_position": "left",
-        "bg_color": "#F6F8FB",
+        "bg_color": "#f3f3f3",
         "section_padding": 24,
         "points_title": "Unsere Dienstleistungen:",
         "points_as_card": true,
