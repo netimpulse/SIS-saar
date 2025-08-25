@@ -143,6 +143,67 @@
         "icon_radius": 1000
       }
     },
+    "leistungen_ueberarbeitet_GirNU6": {
+      "type": "leistungen-ueberarbeitet",
+      "blocks": {
+        "service_card_lue_UWtVqg": {
+          "type": "service_card_lue",
+          "settings": {
+            "title": "We Understand Requirements",
+            "text": "Sed sit amet sapien sit amet odio lobortis ullamcorper quis vel nisl. Nam blandit maximus tristique.",
+            "link_url": "",
+            "link_label": "Learn More →"
+          }
+        },
+        "service_card_lue_Cha6hh": {
+          "type": "service_card_lue",
+          "settings": {
+            "title": "We Understand Requirements",
+            "text": "Sed sit amet sapien sit amet odio lobortis ullamcorper quis vel nisl. Nam blandit maximus tristique.",
+            "link_url": "",
+            "link_label": "Learn More →"
+          }
+        },
+        "service_card_lue_y7nQQE": {
+          "type": "service_card_lue",
+          "settings": {
+            "title": "We Understand Requirements",
+            "text": "Sed sit amet sapien sit amet odio lobortis ullamcorper quis vel nisl. Nam blandit maximus tristique.",
+            "link_url": "",
+            "link_label": "Learn More →"
+          }
+        }
+      },
+      "block_order": [
+        "service_card_lue_UWtVqg",
+        "service_card_lue_Cha6hh",
+        "service_card_lue_y7nQQE"
+      ],
+      "name": "Leistungen überarbeitet",
+      "settings": {
+        "heading": "What We Offer",
+        "subtext": "Use these sections to highlight your features. Keep it short and attractive.",
+        "font_heading": "helvetica_n4",
+        "font_body": "helvetica_n4",
+        "bg_color": "#F3F6F9",
+        "text_color": "#222222",
+        "accent_color": "#ff6a00",
+        "card_bg": "#ffffff",
+        "card_hover_bg": "#ffffff",
+        "card_radius": 12,
+        "card_hover_lift": 6,
+        "grid_gap": 20,
+        "section_padding": 24,
+        "show_button": true,
+        "button_label": "Schaltflächenbeschriftung",
+        "button_url": "",
+        "button_align": "center",
+        "button_bg": "#8B8E93",
+        "button_hover_bg": "#6f7276",
+        "button_text": "#ffffff",
+        "button_radius": 20
+      }
+    },
     "custom_cta_block_xMcPbA": {
       "type": "custom-cta-block",
       "blocks": {
@@ -256,116 +317,6 @@
         "link_color": "#3b82f6",
         "divider_color": "#1e293b"
       }
-    },
-    "karussel_leistungen_ee9ib3": {
-      "type": "karussel-leistungen",
-      "blocks": {
-        "card_DbtJB8": {
-          "type": "card",
-          "settings": {
-            "badge": "texti",
-            "badge_color_bg": "#e8f2ff",
-            "badge_color_text": "#0a66c2",
-            "title": "Gebäudeservice",
-            "text": "Kurze Einleitung zur Leistung.",
-            "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
-            "bullet_color": "#10b981",
-            "show_btn": true,
-            "btn_label": "Mehr erfahren",
-            "btn_link": "",
-            "card_bg": "#ffffff",
-            "card_text": "#0f172a"
-          }
-        },
-        "card_tE4tAW": {
-          "type": "card",
-          "settings": {
-            "badge": "texti",
-            "badge_color_bg": "#e8f2ff",
-            "badge_color_text": "#0a66c2",
-            "title": "Industrieservice",
-            "text": "Kurze Einleitung zur Leistung.",
-            "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
-            "bullet_color": "#10b981",
-            "show_btn": true,
-            "btn_label": "Mehr erfahren",
-            "btn_link": "",
-            "card_bg": "#ffffff",
-            "card_text": "#0f172a"
-          }
-        },
-        "card_4BVpFz": {
-          "type": "card",
-          "settings": {
-            "badge": "texti",
-            "badge_color_bg": "#e8f2ff",
-            "badge_color_text": "#0a66c2",
-            "title": "Facility Management",
-            "text": "Kurze Einleitung zur Leistung.",
-            "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
-            "bullet_color": "#10b981",
-            "show_btn": true,
-            "btn_label": "Mehr erfahren",
-            "btn_link": "",
-            "card_bg": "#ffffff",
-            "card_text": "#0f172a"
-          }
-        },
-        "card_VYjtdP": {
-          "type": "card",
-          "settings": {
-            "badge": "Spezialreinigung",
-            "badge_color_bg": "#e8f2ff",
-            "badge_color_text": "#0a66c2",
-            "title": "Spezialreinigung",
-            "text": "Kurze Einleitung zur Leistung.",
-            "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
-            "bullet_color": "#10b981",
-            "show_btn": true,
-            "btn_label": "Mehr erfahren",
-            "btn_link": "",
-            "card_bg": "#ffffff",
-            "card_text": "#0f172a"
-          }
-        },
-        "card_rkLkzP": {
-          "type": "card",
-          "settings": {
-            "badge": "texti",
-            "badge_color_bg": "#e8f2ff",
-            "badge_color_text": "#0a66c2",
-            "title": "Gebäudeservice",
-            "text": "Kurze Einleitung zur Leistung.",
-            "bullets": "Unterhaltsreinigung\nGrundreinigung\nGlasreinigung\nWartung und Instandhaltung",
-            "bullet_color": "#10b981",
-            "show_btn": true,
-            "btn_label": "Mehr erfahren",
-            "btn_link": "",
-            "card_bg": "#ffffff",
-            "card_text": "#0f172a"
-          }
-        }
-      },
-      "block_order": [
-        "card_DbtJB8",
-        "card_tE4tAW",
-        "card_4BVpFz",
-        "card_VYjtdP",
-        "card_rkLkzP"
-      ],
-      "name": "Leistungen – Karussell",
-      "settings": {
-        "heading": "Unsere Leistungen",
-        "subheading": "<p>Entdecken Sie unser Portfolio an professionellen Dienstleistungen.</p>",
-        "color_scheme": "background-1",
-        "card_gap": 16,
-        "card_radius": 14,
-        "cols_desktop": 4,
-        "cols_tablet": 3,
-        "show_arrows": true,
-        "show_scrollbar": false,
-        "snap_scroll": true
-      }
     }
   },
   "order": [
@@ -373,7 +324,7 @@
     "main",
     "hero_building_section_jFhK9K",
     "highlights_icons_kWf4Y9",
-    "karussel_leistungen_ee9ib3",
+    "leistungen_ueberarbeitet_GirNU6",
     "custom_cta_block_xMcPbA",
     "sis_single_footer_PQBXAB"
   ]
