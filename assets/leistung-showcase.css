@@ -3,18 +3,21 @@
   background: var(--lsc-bg);
   padding: var(--lsc-pad);
 }
-.lsc-inner{
-  max-width: 1200px;
-  margin: 0 auto;
-}
+.lsc-inner{ max-width: 1200px; margin: 0 auto; }
 
-/* Grid: Bild links, Punkte rechts */
+/* Grid: Bild + rechte Spalte (Text + Punkte) */
 .lsc-grid{
   display: grid;
-  grid-template-columns: 1.2fr .8fr;
-  gap: 24px;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 28px;
   align-items: start;
 }
+
+/* Bildposition steuern */
+.lsc-pos-left  { grid-auto-flow: column; }
+.lsc-pos-right { grid-auto-flow: column; }
+.lsc-pos-right .lsc-media { order: 2; }
+.lsc-pos-right .lsc-rightcol { order: 1; }
 
 /* Bild */
 .lsc-img{
@@ -30,71 +33,59 @@
   border-radius: var(--lsc-radius);
 }
 
-/* Rechte Spalte: alle Punkte */
-.lsc-aside{
-  display: grid;
-  gap: 12px;
-}
-
-/* Überschrift & Text */
-.lsc-content{
-  margin-top: 18px;
-}
+/* Rechte Spalte */
+.lsc-rightcol{ display: grid; gap: 16px; }
 .lsc-heading{
-  text-align: left;
-  margin: 0 0 6px;
+  margin: 0 0 8px;
   font-size: clamp(22px, 2.2vw, 28px);
   font-weight: 700;
 }
-.lsc-text{
-  max-width: 70ch;
-  line-height: 1.6;
-  color: #333;
+.lsc-text{ color:#333; line-height:1.6; max-width:70ch; }
+
+/* Gruppen/Listen rechts */
+.lsc-aside{ display: grid; gap: 14px; }
+
+/* Gruppe */
+.lsc-group{
+  padding: 0; /* default */
+}
+.lsc-group.is-card{
+  background: var(--lsc-card-bg);
+  border: 1px solid var(--lsc-card-bd);
+  border-radius: 10px;
+  padding: 14px 16px;
+  box-shadow: 0 1px 0 rgba(255,255,255,.4) inset;
+}
+.lsc-group-title{
+  margin: 0 0 8px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #2b2b2b;
 }
 
-/* Kachel/Point */
-.lsc-card{
-  background: #fff;
-  border: 1px solid #e5e8ee;
-  border-radius: 10px;
-  padding: 12px 14px;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 12px;
-  align-items: start;
-}
-.lsc-card-icon{}
-.lsc-icon{
-  width: var(--lsc-icon-size);
-  height: var(--lsc-icon-size);
-  object-fit: contain;
-  display: block;
-}
-.lsc-icon--placeholder{
-  width: var(--lsc-icon-size);
-  height: var(--lsc-icon-size);
-  border-radius: 50%;
-  background: #d7dbe3;
-  display: inline-block;
-}
-.lsc-card-text{
-  font-weight: 500;
-  color: #111;
+/* Liste mit Bullets wie im Screenshot */
+.lsc-list{ list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+.lsc-list-item{
+  position: relative;
+  padding-left: 16px;
+  color: #0f172a;
+  font-size: 14px;
   line-height: 1.5;
 }
-.lsc-card-text p{
-  margin: 0 0 6px;
-}
-.lsc-card-text p:last-child{
-  margin-bottom: 0;
+.lsc-list-item::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .6em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--lsc-bullet);
 }
 
-/* Responsive */
+/* Responsive: Mobile = Bild -> Text -> Punkte */
 @media (max-width: 990px){
-  .lsc-grid{
-    grid-template-columns: 1fr;
-  }
-  /* Mobile: Bild -> Punkte -> Text */
-  .lsc-aside{ order: 2; }
-  .lsc-content{ order: 3; }
+  .lsc-grid{ grid-template-columns: 1fr; }
+  .lsc-media{ order: 1; }
+  .lsc-rightcol{ order: 2; }      /* enthält Text + Punkte; Punkte kommen dadurch unter dem Text */
 }
