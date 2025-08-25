@@ -1,15 +1,26 @@
 {%- comment -%}
-  Ein einzelner „Punkt“ (Kachel) mit Icon links und Text rechts.
-  Übergabewerte: icon, text
+  Punkt-Gruppe: Überschrift + Liste mit Bullets
+  Übergabewerte: title (Text), items (Textarea, je Zeile ein Eintrag), as_card (Bool), card_bg, card_border
 {%- endcomment -%}
 
-<div class="lsc-card" {{ block.shopify_attributes }}>
-  <div class="lsc-card-icon">
-    {%- if icon != blank -%}
-      {{ icon | image_url: width: 64 | image_tag: loading: 'lazy', class: 'lsc-icon', alt: '' }}
-    {%- else -%}
-      <span class="lsc-icon lsc-icon--placeholder" aria-hidden="true"></span>
-    {%- endif -%}
-  </div>
-  <div class="lsc-card-text rte">{{ text }}</div>
-</div>
+{%- assign lines = items | default: '' | newline_to_br | split: '<br />' -%}
+{%- assign is_card = as_card | default: false -%}
+
+<section
+  class="lsc-group{% if is_card %} is-card{% endif %}"
+  style="{% if is_card %}--lsc-card-bg: {{ card_bg }}; --lsc-card-bd: {{ card_border }};{% endif %}"
+  {{ block.shopify_attributes }}
+>
+  {%- if title != blank -%}
+    <h3 class="lsc-group-title">{{ title }}</h3>
+  {%- endif -%}
+
+  <ul class="lsc-list">
+    {%- for l in lines -%}
+      {%- assign trimmed = l | strip -%}
+      {%- if trimmed != blank -%}
+        <li class="lsc-list-item">{{ trimmed }}</li>
+      {%- endif -%}
+    {%- endfor -%}
+  </ul>
+</section>
