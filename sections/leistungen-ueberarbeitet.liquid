@@ -27,13 +27,18 @@
   "
 >
   <div class="leh-inner">
-    {%- if section.settings.heading != blank -%}
-      <h2 class="leh-heading">{{ section.settings.heading }}</h2>
-    {%- endif -%}
+  {%- if section.settings.heading != blank -%}
+  <h2 class="leh-heading" style="text-align: center;">
+    {{ section.settings.heading }}
+  </h2>
+{%- endif -%}
 
-    {%- if section.settings.subtext != blank -%}
-      <p class="leh-subtext">{{ section.settings.subtext }}</p>
-    {%- endif -%}
+{%- if section.settings.subtext != blank -%}
+  <p class="leh-subtext" style="text-align: center;">
+    {{ section.settings.subtext }}
+  </p>
+{%- endif -%}
+
 
     <div class="leh-grid">
       {%- for block in section.blocks -%}
