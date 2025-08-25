@@ -176,8 +176,9 @@
         "service_card_lue_Lyacme": {
           "type": "service_card_lue",
           "settings": {
-            "title": "We Understand Requirements",
-            "text": "Sed sit amet sapien sit amet odio lobortis ullamcorper quis vel nisl. Nam blandit maximus tristique.",
+            "image": "shopify://shop_images/shutterstock_370492946.jpg",
+            "title": "Wartung",
+            "text": "Regelmäßige Wartung verlängert die Lebensdauer Ihrer Anlagen und gewährleistet einen sicheren, störungsfreien Betrieb",
             "link_url": "",
             "link_label": "Learn More →"
           }
@@ -185,8 +186,9 @@
         "service_card_lue_ALFnq8": {
           "type": "service_card_lue",
           "settings": {
-            "title": "We Understand Requirements",
-            "text": "Sed sit amet sapien sit amet odio lobortis ullamcorper quis vel nisl. Nam blandit maximus tristique.",
+            "image": "shopify://shop_images/sis_location.png",
+            "title": "Trockeneisstrahlen",
+            "text": "Durch das Trockeneisstrahlen reinigen wir alle Ihre Oberflächen schonend und effektiv, und das ganz ohne Chemikalien oder Rückstände.",
             "link_url": "",
             "link_label": "Learn More →"
           }
@@ -205,7 +207,7 @@
         "font_body": "helvetica_n4",
         "bg_color": "#ffffff",
         "text_color": "#222222",
-        "accent_color": "#ff6a00",
+        "accent_color": "#4ade80",
         "card_bg": "#ffffff",
         "card_hover_bg": "#ffffff",
         "card_radius": 12,
