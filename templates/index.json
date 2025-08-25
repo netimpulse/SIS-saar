@@ -316,7 +316,7 @@
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
+            "image_border_color": "#e0e0e0",
             "image_border_width": 4,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
@@ -342,7 +342,7 @@
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
+            "image_border_color": "#e0e0e0",
             "image_border_width": 4,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
@@ -368,7 +368,7 @@
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
+            "image_border_color": "#e0e0e0",
             "image_border_width": 4,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
@@ -394,7 +394,7 @@
           "type": "service_block",
           "settings": {
             "image_diameter": 150,
-            "image_border_color": "#E0E0E0",
+            "image_border_color": "#e0e0e0",
             "image_border_width": 4,
             "title": "Industrieservice",
             "subtitle": "Gebäudeservice",
@@ -435,9 +435,10 @@
         "item_spacing": 30,
         "padding_top": 50,
         "padding_bottom": 50,
-        "section_bg_color": "#FFFFFF",
+        "section_bg_color": "#ffffff",
         "arrow_color": "#111111",
-        "line_color": "#DDDDDD",
+        "line_color": "#dddddd",
+        "progress_color": "#111111",
         "cta_kicker": "Mehr zu unseren Services",
         "cta_btn_label": "Alle Leistungen ansehen",
         "cta_btn_link": "",
@@ -446,7 +447,7 @@
         "cta_align": "center",
         "cta_kicker_color": "#555555",
         "cta_btn_bg_color": "#111111",
-        "cta_btn_text_color": "#FFFFFF"
+        "cta_btn_text_color": "#ffffff"
       }
     }
   },

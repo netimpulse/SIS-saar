@@ -100,13 +100,60 @@
         "btn2_text_hover": "#238b84"
       }
     },
+    "leistung_showcase_n3D9xt": {
+      "type": "leistung-showcase",
+      "blocks": {
+        "showcase_item_fyApKb": {
+          "type": "showcase_item",
+          "settings": {
+            "icon": "shopify://shop_images/ChatGPT_Image_31._Juli_2025_18_20_03.png",
+            "text": "<p>hier steht ein text</p>"
+          }
+        },
+        "showcase_item_f7nfN6": {
+          "type": "showcase_item",
+          "settings": {
+            "text": "<p>hier steht ein text</p>"
+          }
+        },
+        "showcase_item_EfNG96": {
+          "type": "showcase_item",
+          "settings": {
+            "text": "<p>hier steht ein text</p>"
+          }
+        }
+      },
+      "block_order": [
+        "showcase_item_fyApKb",
+        "showcase_item_f7nfN6",
+        "showcase_item_EfNG96"
+      ],
+      "name": "Leistung Showcase",
+      "settings": {
+        "heading": "Reinigung",
+        "subtext": "<p></p><p>Unsere Leistungen umfassen <strong>Maschinenreinigung</strong>, <strong>Hallenbodenreinigung</strong>, <strong>Decken- und Wandreinigung</strong> sowie die <strong>Reinigung von Lüftungskanälen</strong>. Ergänzt durch <strong>Dampfreinigung</strong> sorgen wir für hygienische Sauberkeit, Werterhalt und einen störungsfreien Betrieb Ihrer Anlagen.<br/><br/></p>",
+        "main_image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
+        "image_radius": 12,
+        "image_position": "left",
+        "bg_color": "#F6F8FB",
+        "section_padding": 24,
+        "points_title": "Unsere Dienstleistungen:",
+        "points_as_card": true,
+        "points_bg": "#FFFFFF",
+        "points_border": "#E5E8EE",
+        "points_btn_label": "Jetzt anfragen",
+        "points_btn_url": "",
+        "points_btn_align": "left",
+        "fallback_bullet_color": "#2B6CB0"
+      }
+    },
     "text_mit_bild_button_GU3rjc": {
       "type": "text-mit-bild-button",
       "name": "Text mit Bild",
       "settings": {
         "image_position": "right",
         "image_shadow_strength": 20,
-        "heading": "Über uns",
+        "heading": "Maschinenreinigung",
         "heading_font": "sans-serif",
         "heading_font_size": 42,
         "heading_color": "#1f1f1f",
@@ -137,7 +184,7 @@
       "settings": {
         "image_position": "left",
         "image_shadow_strength": 20,
-        "heading": "Über uns",
+        "heading": "Hallenbodereinigung",
         "heading_font": "sans-serif",
         "heading_font_size": 42,
         "heading_color": "#1f1f1f",
@@ -271,6 +318,7 @@
     "custom_header_2_EhxrGx",
     "main",
     "hero_overlay_section_6beqpy",
+    "leistung_showcase_n3D9xt",
     "text_mit_bild_button_GU3rjc",
     "text_mit_bild_RijNFH",
     "custom_cta_block_Tf7gLb",
