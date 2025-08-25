@@ -1,9 +1,5 @@
 {% comment %}
-  Section: Leistung Showcase
-  Desktop:
-    - Zwei Spalten: Bild (links/rechts einstellbar) + rechte Spalte mit Text und ALLEM Bullet-Content
-  Mobile:
-    - Reihenfolge: Bild -> Text -> Punkte
+  Section: Leistung Showcase (mit eigenem Punkte-Container, Button & Icons je Punkt)
 {% endcomment %}
 
 {{ 'leistung-showcase.css' | asset_url | stylesheet_tag }}
@@ -13,13 +9,15 @@
     --lsc-bg: {{ section.settings.bg_color }};
     --lsc-pad: {{ section.settings.section_padding }}px;
     --lsc-radius: {{ section.settings.image_radius }}px;
-    --lsc-bullet: {{ section.settings.bullet_color }};
+    --lsc-bullet: {{ section.settings.fallback_bullet_color }};
+    --lsc-card-bg: {{ section.settings.points_bg }};
+    --lsc-card-bd: {{ section.settings.points_border }};
   "
 >
   <div class="lsc-inner">
 
     <div class="lsc-grid lsc-pos-{{ section.settings.image_position }}">
-      {%- comment -%} Spalte: Bild {%- endcomment -%}
+
       <div class="lsc-media">
         {%- if section.settings.main_image != blank -%}
           {{ section.settings.main_image
@@ -30,7 +28,6 @@
         {%- endif -%}
       </div>
 
-      {%- comment -%} Spalte: Text + Punkte (untereinander) {%- endcomment -%}
       <div class="lsc-rightcol">
         <div class="lsc-content">
           {%- if section.settings.heading != blank -%}
@@ -41,19 +38,30 @@
           {%- endif -%}
         </div>
 
-        <aside class="lsc-aside">
-          {%- for block in section.blocks -%}
-            {%- if block.type == 'showcase_group' -%}
-              {% render 'point-group-showcase',
-                title: block.settings.title,
-                items: block.settings.items,
-                as_card: block.settings.as_card,
-                card_bg: block.settings.card_bg,
-                card_border: block.settings.card_border,
-                id: block.id
-              %}
-            {%- endif -%}
-          {%- endfor -%}
+        <aside class="lsc-points{% if section.settings.points_as_card %} is-card{% endif %}">
+          {%- if section.settings.points_title != blank -%}
+            <h3 class="lsc-points-title">{{ section.settings.points_title }}</h3>
+          {%- endif -%}
+
+          <div class="lsc-points-list">
+            {%- for block in section.blocks -%}
+              {%- if block.type == 'showcase_item' -%}
+                {% render 'point-item-showcase',
+                  icon: block.settings.icon,
+                  text: block.settings.text,
+                  id: block.id
+                %}
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+
+          {%- if section.settings.points_btn_label != blank -%}
+            <div class="lsc-points-cta" style="text-align: {{ section.settings.points_btn_align }};">
+              <a class="lsc-btn" href="{{ section.settings.points_btn_url | default: '#' }}">
+                {{ section.settings.points_btn_label }}
+              </a>
+            </div>
+          {%- endif -%}
         </aside>
       </div>
     </div>
@@ -81,30 +89,48 @@
       ]
     },
 
-    { "type": "color", "id": "bg_color", "label": "Hintergrundfarbe Gesamtab­schnitt", "default": "#F6F8FB" },
-    { "type": "color", "id": "bullet_color", "label": "Farbe der Bullet-Punkte", "default": "#2B6CB0" },
-    { "type": "range", "id": "section_padding", "min": 0, "max": 80, "step": 4, "unit": "px", "label": "Innenabstand", "default": 24 }
+    { "type": "color", "id": "bg_color", "label": "Hintergrundfarbe Abschnitt", "default": "#F6F8FB" },
+    { "type": "range", "id": "section_padding", "min": 0, "max": 80, "step": 4, "unit": "px", "label": "Innenabstand", "default": 24 },
+
+    { "type": "header", "content": "Punkte-Container" },
+    { "type": "text", "id": "points_title", "label": "Titel Punkte-Container", "default": "Unsere Dienstleistungen:" },
+    { "type": "checkbox", "id": "points_as_card", "label": "Container als Kachel (mit Rahmen/Hintergrund)", "default": true },
+    { "type": "color", "id": "points_bg", "label": "Container-Hintergrund", "default": "#FFFFFF" },
+    { "type": "color", "id": "points_border", "label": "Container-Rahmen", "default": "#E5E8EE" },
+
+    { "type": "text", "id": "points_btn_label", "label": "Button-Text im Punkte-Container", "default": "Jetzt anfragen" },
+    { "type": "url", "id": "points_btn_url", "label": "Button-Link" },
+    {
+      "type": "select",
+      "id": "points_btn_align",
+      "label": "Button-Ausrichtung",
+      "default": "left",
+      "options": [
+        { "value": "left", "label": "Links" },
+        { "value": "center", "label": "Zentriert" },
+        { "value": "right", "label": "Rechts" }
+      ]
+    },
+
+    { "type": "color", "id": "fallback_bullet_color", "label": "Fallback-Bullet-Farbe (wenn kein Icon)", "default": "#2B6CB0" }
   ],
   "blocks": [
     {
-      "type": "showcase_group",
-      "name": "Punkt-Gruppe",
+      "type": "showcase_item",
+      "name": "Punkt",
       "settings": [
-        { "type": "text", "id": "title", "label": "Gruppen-Überschrift", "default": "Unsere Dienstleistungen:" },
-        { "type": "textarea", "id": "items", "label": "Punkte (je Zeile ein Punkt)", "default": "Unterhaltsreinigung\nPraxisreinigung\nTreppenhausreinigung\nGlas- und Fensterreinigung" },
-        { "type": "checkbox", "id": "as_card", "label": "Als Kachel darstellen", "default": true },
-        { "type": "color", "id": "card_bg", "label": "Kachel Hintergrund", "default": "#FFFFFF" },
-        { "type": "color", "id": "card_border", "label": "Kachel Rahmenfarbe", "default": "#E5E8EE" }
+        { "type": "image_picker", "id": "icon", "label": "Icon (SVG/PNG)" },
+        { "type": "richtext", "id": "text", "label": "Text (mehrzeilig möglich)", "default": "<p>hier steht ein text</p>" }
       ]
     }
   ],
-  "max_blocks": 12,
+  "max_blocks": 30,
   "presets": [
     {
       "name": "Leistung Showcase",
       "blocks": [
-        { "type": "showcase_group" },
-        { "type": "showcase_group" }
+        { "type": "showcase_item" },
+        { "type": "showcase_item" }
       ]
     }
   ]
