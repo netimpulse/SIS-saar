@@ -100,6 +100,67 @@
         "btn2_text_hover": "#238b84"
       }
     },
+    "highlights_icons_n9B3Vc": {
+      "type": "highlights-icons",
+      "blocks": {
+        "item_QBTdaj": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify://shop_images/ChatGPT_Image_31._Juli_2025_18_20_03.png",
+            "icon_bg": "#ffffff",
+            "title": "QUALITÄT",
+            "text": "Kurzer, prägnanter Beschreibungstext für dieses Highlight.",
+            "show_btn": false,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "btn_bg": "#0b63c8",
+            "btn_text": "#ffffff"
+          }
+        },
+        "item_N9hmcV": {
+          "type": "item",
+          "settings": {
+            "icon_bg": "#e5e7eb",
+            "title": "UNTERNEHMEN",
+            "text": "Kurzer, prägnanter Beschreibungstext für dieses Highlight.",
+            "show_btn": true,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "btn_bg": "#0b63c8",
+            "btn_text": "#ffffff"
+          }
+        },
+        "item_H33CTg": {
+          "type": "item",
+          "settings": {
+            "icon_bg": "#e5e7eb",
+            "title": "PERSONAL",
+            "text": "Kurzer, prägnanter Beschreibungstext für dieses Highlight.",
+            "show_btn": true,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "btn_bg": "#0b63c8",
+            "btn_text": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "item_QBTdaj",
+        "item_N9hmcV",
+        "item_H33CTg"
+      ],
+      "name": "Highlights – Icons",
+      "settings": {
+        "heading": "Unsere Werte",
+        "intro": "<p>Kurzer Einleitungstext, der die Highlights erklärt.</p>",
+        "color_scheme": "background-1",
+        "gap": 24,
+        "cols_desktop": 3,
+        "cols_tablet": 2,
+        "icon_size": 88,
+        "icon_radius": 1000
+      }
+    },
     "about_section_FRmjn4": {
       "type": "about-section",
       "blocks": {
@@ -129,7 +190,7 @@
       "name": "Über Uns (Layout)",
       "settings": {
         "layout_direction": "text_left",
-        "background_color": "#ffffff",
+        "background_color": "#f5f5f5",
         "section_padding_top": 80,
         "section_padding_bottom": 80,
         "title": "Über uns",
@@ -334,6 +395,7 @@
     "custom_header_2_YbKLhd",
     "main",
     "hero_overlay_section_Rk9gNP",
+    "highlights_icons_n9B3Vc",
     "about_section_FRmjn4",
     "highlights_icons_4mpBYK",
     "team_ijJATC",
