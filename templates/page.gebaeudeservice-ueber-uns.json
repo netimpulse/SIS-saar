@@ -100,24 +100,105 @@
         "btn2_text_hover": "#238b84"
       }
     },
-    "highlights_icons_n9B3Vc": {
+    "about_experience_whcfYC": {
+      "type": "about-experience",
+      "blocks": {
+        "badge_GrfDn7": {
+          "type": "badge",
+          "settings": {
+            "badge_text": "200+ Kunden"
+          }
+        },
+        "badge_P7areN": {
+          "type": "badge",
+          "settings": {
+            "badge_text": "50+ Mitarbeiter"
+          }
+        },
+        "badge_DJCgBQ": {
+          "type": "badge",
+          "settings": {
+            "badge_text": "15+ Jahre Erfahrung"
+          }
+        },
+        "stat_YMHHDL": {
+          "type": "stat",
+          "settings": {
+            "emoji": "✅",
+            "title": "ISO 9001",
+            "subtitle": "Zertifizierte Qualität",
+            "aria_label": "1"
+          }
+        },
+        "stat_gwJA6a": {
+          "type": "stat",
+          "settings": {
+            "emoji": "✅",
+            "title": "ISO 9001",
+            "subtitle": "Zertifizierte Qualität",
+            "aria_label": "1"
+          }
+        },
+        "stat_UeadTy": {
+          "type": "stat",
+          "settings": {
+            "emoji": "✅",
+            "title": "24/7",
+            "subtitle": "Notfallservice",
+            "aria_label": "1"
+          }
+        },
+        "stat_cPLhLk": {
+          "type": "stat",
+          "settings": {
+            "emoji": "✅",
+            "title": "100%",
+            "subtitle": "Kundenzufriedenheit",
+            "aria_label": "1"
+          }
+        }
+      },
+      "block_order": [
+        "badge_GrfDn7",
+        "badge_P7areN",
+        "badge_DJCgBQ",
+        "stat_YMHHDL",
+        "stat_gwJA6a",
+        "stat_UeadTy",
+        "stat_cPLhLk"
+      ],
+      "name": "Über uns – Erfahrung/Stats",
+      "settings": {
+        "kicker": "Über 15 Jahre Erfahrung",
+        "heading": "Das macht uns aus",
+        "richtext": "<p>Als familiengeführtes Unternehmen legen wir Wert auf persönlichen Service und langfristige Kundenbeziehungen. Unser Team von über 50 qualifizierten Mitarbeitern sorgt täglich dafür, dass mehr als 200 zufriedene Kunden auf unsere Zuverlässigkeit vertrauen können.</p>",
+        "btn_label": "button",
+        "btn_link": "shopify://pages/blogs-gebaudeservice",
+        "btn_newtab": false,
+        "bg_color": "#ffffff",
+        "card_bg": "#FFFFFF",
+        "card_radius": 16,
+        "text_color": "#111111",
+        "accent_color": "#22c55e"
+      }
+    },
+    "highlights_icons_8NkQXd": {
       "type": "highlights-icons",
       "blocks": {
-        "item_QBTdaj": {
+        "item_7V7G8V": {
           "type": "item",
           "settings": {
-            "icon": "shopify://shop_images/ChatGPT_Image_31._Juli_2025_18_20_03.png",
-            "icon_bg": "#ffffff",
+            "icon_bg": "#e5e7eb",
             "title": "QUALITÄT",
             "text": "Kurzer, prägnanter Beschreibungstext für dieses Highlight.",
-            "show_btn": false,
+            "show_btn": true,
             "btn_label": "Mehr erfahren",
             "btn_link": "",
             "btn_bg": "#0b63c8",
             "btn_text": "#ffffff"
           }
         },
-        "item_N9hmcV": {
+        "item_QDiATR": {
           "type": "item",
           "settings": {
             "icon_bg": "#e5e7eb",
@@ -130,7 +211,7 @@
             "btn_text": "#ffffff"
           }
         },
-        "item_H33CTg": {
+        "item_W9WYXw": {
           "type": "item",
           "settings": {
             "icon_bg": "#e5e7eb",
@@ -145,9 +226,9 @@
         }
       },
       "block_order": [
-        "item_QBTdaj",
-        "item_N9hmcV",
-        "item_H33CTg"
+        "item_7V7G8V",
+        "item_QDiATR",
+        "item_W9WYXw"
       ],
       "name": "Highlights – Icons",
       "settings": {
@@ -462,7 +543,8 @@
     "custom_header_2_YbKLhd",
     "main",
     "hero_overlay_section_Rk9gNP",
-    "highlights_icons_n9B3Vc",
+    "about_experience_whcfYC",
+    "highlights_icons_8NkQXd",
     "about_section_FRmjn4",
     "highlights_icons_4mpBYK",
     "team_ijJATC",
