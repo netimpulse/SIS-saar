@@ -247,7 +247,7 @@
         "button_margin_bottom": 0,
         "button_bg": "#000000",
         "button_text": "#ffffff",
-        "button_hover_bg": "#334fb4",
+        "button_hover_bg": "#22c55e",
         "button_hover_text": "#ffffff"
       }
     },
