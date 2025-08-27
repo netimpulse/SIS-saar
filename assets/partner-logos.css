@@ -65,7 +65,10 @@
 
 /* Trennlinien (innerhalb der Grid-Zellen) */
 .pl-has-dividers { gap: 0; }
-.pl-has-dividers .pl-item { border-right: 1px solid rgba(0,0,0,.08); border-bottom: 1px solid rgba(0,0,0,.08); }
+.pl-has-dividers .pl-item {
+  border-right: 1px solid rgba(0,0,0,.08);
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
 
 /* Rechte Kante pro Zeile entfernen (abhängig von Spaltenzahl) */
 @media (min-width: 992px) {
@@ -87,7 +90,13 @@
 }
 
 /* Bild */
-.pl-link { display: inline-flex; align-items: center; justify-content: center; width: 100%; }
+.pl-link { 
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  width: 100%; 
+}
+
 .pl-img {
   max-height: var(--pl-item-h, var(--pl-logo-h, 72px));
   width: auto;
@@ -95,10 +104,14 @@
   max-width: min(240px, 90%);
   object-fit: contain;
   image-rendering: auto;
-  opacity: calc(var(--pl-normal-op, 100) / 100);
-  transition: opacity .2s ease;
+  opacity: 1; /* immer sichtbar */
+  transform: scale(1);
+  transition: transform .25s ease;
 }
-.pl-link:hover .pl-img { opacity: 1; }
+
+.pl-link:hover .pl-img {
+  transform: scale(1.08); /* beim Hover etwas größer */
+}
 
 /* Platzhalter, falls kein Bild gewählt ist */
 .pl-placeholder {
@@ -114,4 +127,4 @@
 
 /* Graustufen-Option */
 .pl-gray .pl-img { filter: grayscale(1); }
-.pl-gray .pl-link:hover .pl-img { filter: grayscale(0); }
+.pl-gray .pl-link:hover .pl-img { filter: grayscale(0) scale(1.08); }
