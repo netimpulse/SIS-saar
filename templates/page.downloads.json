@@ -88,6 +88,15 @@
             "tags": "Zertifikat, ISO, 9001"
           }
         },
+        "download_8DtA3a": {
+          "type": "download",
+          "settings": {
+            "title": "ISO 9001",
+            "date": "11.09.2023",
+            "file_url": "",
+            "tags": "Zertifikat, ISO, 9001"
+          }
+        },
         "download_tMiKnQ": {
           "type": "download",
           "settings": {
@@ -154,6 +163,7 @@
       },
       "block_order": [
         "download_fxWaAz",
+        "download_8DtA3a",
         "download_tMiKnQ",
         "download_6fPBmX",
         "download_4Y6eV7",
@@ -175,12 +185,135 @@
         "search_hint": "Tipp: Mehrere Tags mit Komma trennen – z. B. “ISO, 9001”",
         "hover_color": "#e6f4ff"
       }
+    },
+    "sis_footer_neu_QWgWbD": {
+      "type": "sis-footer-neu",
+      "blocks": {
+        "leistungen_link_yUQyxA": {
+          "type": "leistungen_link",
+          "settings": {
+            "text": "Industrieservice",
+            "link": "shopify://pages/industrieservice-leistungen"
+          }
+        },
+        "leistungen_link_6kNcz4": {
+          "type": "leistungen_link",
+          "settings": {
+            "text": "Gebäudeservice",
+            "link": "shopify://pages/gebaudeservice-leistungen"
+          }
+        },
+        "unternehmen_link_EQLDFH": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Kontakt",
+            "link": "shopify://pages/allgemeiner-kontakt"
+          }
+        },
+        "unternehmen_link_wj3m3a": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Karriere",
+            "link": "shopify://pages/gebaudeservice-karriere"
+          }
+        },
+        "unternehmen_link_PL68X4": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Unsere Partner",
+            "link": "shopify://pages/partner"
+          }
+        },
+        "unternehmen_link_g4KPDy": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Downloads",
+            "link": "shopify://pages/downloads"
+          }
+        },
+        "kontakt_link_n9dncr": {
+          "type": "kontakt_link",
+          "settings": {
+            "text": "Impressum Industrieservice",
+            "link": ""
+          }
+        },
+        "kontakt_link_rPB7nz": {
+          "type": "kontakt_link",
+          "settings": {
+            "text": "Impressum Gebäudeservice",
+            "link": ""
+          }
+        },
+        "kontakt_link_nktzLz": {
+          "type": "kontakt_link",
+          "settings": {
+            "text": "Datenschutz",
+            "link": ""
+          }
+        },
+        "partner_logo_b9qp7H": {
+          "type": "partner_logo",
+          "settings": {
+            "logo": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
+            "alt": "Partner",
+            "link": "",
+            "new_tab": true
+          }
+        },
+        "partner_logo_RWCB9g": {
+          "type": "partner_logo",
+          "settings": {
+            "logo": "shopify://shop_images/logo_Industrieservice_exact_v2.png",
+            "alt": "Partner",
+            "link": "",
+            "new_tab": true
+          }
+        }
+      },
+      "block_order": [
+        "leistungen_link_yUQyxA",
+        "leistungen_link_6kNcz4",
+        "unternehmen_link_EQLDFH",
+        "unternehmen_link_wj3m3a",
+        "unternehmen_link_PL68X4",
+        "unternehmen_link_g4KPDy",
+        "kontakt_link_n9dncr",
+        "kontakt_link_rPB7nz",
+        "kontakt_link_nktzLz",
+        "partner_logo_b9qp7H",
+        "partner_logo_RWCB9g"
+      ],
+      "name": "SIS Footer NEU",
+      "settings": {
+        "background_color": "#111827",
+        "section_padding": 60,
+        "separator_color": "#374151",
+        "title_color": "#ffffff",
+        "title_font_size": 24,
+        "subtitle_color": "#d1d5db",
+        "subtitle_font_size": 18,
+        "text_color": "#9ca3af",
+        "text_font_size": 14,
+        "link_color": "#60a5fa",
+        "col1_title": "Leistungen",
+        "col2_title": "Unternehmen",
+        "col3_title": "Kontakt",
+        "col4_title": "Partner",
+        "contact_company": "SIS Saar",
+        "contact_address": "Musterstraße 1, 12345 Musterstadt",
+        "contact_phone": "0123 / 456 789",
+        "contact_email": "info@sis-saar.de",
+        "contact_hours": "Mo–Fr 8–17 Uhr",
+        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
+      }
     }
   },
   "order": [
     "main",
     "sticky_header_aecVGd",
     "hero_building_section_ztyrhy",
-    "downloads_dXGd8N"
+    "downloads_dXGd8N",
+    "sis_footer_neu_QWgWbD"
   ]
 }
