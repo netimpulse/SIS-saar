@@ -1,9 +1,8 @@
 {{ 'sticky-header.css' | asset_url | stylesheet_tag }}
 
 {% comment %}
-  Sticky header – bleibt beim Scrollen stets sichtbar.
-  Hinweis: Damit sticky zuverlässig greift, sollte kein übergeordnetes
-  Element overflow: hidden/auto/scroll haben.
+  Sticky header (fixed). Direkt danach erzeugen wir einen Spacer,
+  damit der Seiteninhalt korrekt unterhalb startet.
 {% endcomment %}
 
 <style>
@@ -11,6 +10,10 @@
     --header-bg-color: {{ section.settings.background_color }};
     --padding-vertical: {{ section.settings.padding_vertical }}px;
     --padding-horizontal: {{ section.settings.padding_horizontal }}px;
+
+    --logo-height: {{ section.settings.logo_height | default: 40 }}px;
+    /* berechnete Header-Höhe = Logo-Höhe + 2 × vertikales Padding */
+    --header-height: calc(var(--logo-height) + (var(--padding-vertical) * 2));
 
     --logo-pos-x: {{ section.settings.logo_position_x }}%;
     --logo-pos-y: {{ section.settings.logo_position_y }}%;
@@ -45,7 +48,6 @@
 
 <header class="custom-header-section custom-header-section-{{ section.id }}">
   <div class="custom-header__container">
-    {%- comment -%} Zurück-Pfeil {%- endcomment -%}
     <a
       href="{{ section.settings.back_link | default: shop.url }}"
       class="custom-header__back"
@@ -63,12 +65,16 @@
     <div class="custom-header__logo">
       <a href="{{ shop.url }}">
         {% if section.settings.logo %}
+          {% liquid
+            assign h = section.settings.logo_height | default: 40
+            assign w = h | times: section.settings.logo.aspect_ratio | round
+          %}
           <img
-            src="{{ section.settings.logo | image_url: width: 200 }}"
+            src="{{ section.settings.logo | image_url: width: w }}"
             alt="{{ section.settings.logo.alt | default: shop.name }}"
             class="custom-header__logo-img"
-            height="40"
-            width="{{ 40 | times: section.settings.logo.aspect_ratio | round }}"
+            height="{{ h }}"
+            width="{{ w }}"
           >
         {% else %}
           <span class="custom-header__logo-text" style="color: {{ section.settings.logo_color }}; font-size: {{ section.settings.logo_font_size }}px;">
@@ -98,6 +104,9 @@
   </div>
 </header>
 
+{%- comment -%} Spacer verhindert Überlappungen mit dem Seiteninhalt {%- endcomment -%}
+<div class="sticky-spacer custom-header-section-{{ section.id }}"></div>
+
 {% schema %}
 {
   "name": "Sticky header",
@@ -107,6 +116,8 @@
     { "type": "color", "id": "background_color", "label": "Hintergrundfarbe", "default": "#ffffff" },
     { "type": "range", "id": "padding_vertical", "label": "Padding Oben/Unten (px)", "min": 0, "max": 50, "step": 1, "default": 16, "unit": "px" },
     { "type": "range", "id": "padding_horizontal", "label": "Padding Links/Rechts (px)", "min": 0, "max": 100, "step": 1, "default": 24, "unit": "px" },
+
+    { "type": "range", "id": "logo_height", "label": "Logo-Höhe (px)", "min": 20, "max": 120, "step": 1, "default": 40, "unit": "px" },
 
     { "type": "header", "content": "Zurück-Pfeil" },
     { "type": "url", "id": "back_link", "label": "Link für Zurück-Pfeil" },
@@ -124,6 +135,7 @@
     { "type": "text", "id": "logo_text", "label": "Logo Text (Fallback)", "default": "Mein Shop" },
     { "type": "color", "id": "logo_color", "label": "Logo Textfarbe", "default": "#1e40af" },
     { "type": "range", "id": "logo_font_size", "label": "Logo Schriftgröße", "min": 16, "max": 48, "step": 1, "default": 24, "unit": "px" },
+
     { "type": "range", "id": "logo_position_x", "label": "Logo Position X (%)", "min": -50, "max": 50, "step": 1, "default": 0, "unit": "%" },
     { "type": "range", "id": "logo_position_y", "label": "Logo Position Y (%)", "min": -50, "max": 50, "step": 1, "default": 0, "unit": "%" },
 
