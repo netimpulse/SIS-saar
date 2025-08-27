@@ -1,10 +1,10 @@
 {%- comment -%}
   Snippet: einzelne Service-Kachel (leistung-final)
   Übergabewerte (via render):
-  - image, title, text, link_url, link_label, id
+  - image, title, text, link_url, link_label, block_attrs
 {%- endcomment -%}
 
-<article class="lf-card" {{ block.shopify_attributes }}>
+<article class="lf-card" {{ block_attrs }}>
   <div class="lf-card-media">
     {%- if image != blank -%}
       {{ image | image_url: width: 800 | image_tag: loading: 'lazy', class: 'lf-img', alt: title }}
