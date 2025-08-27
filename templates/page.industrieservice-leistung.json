@@ -200,7 +200,7 @@
           "settings": {
             "title": "Reinigung von Lüftungskanälen",
             "text": "Kurze Beschreibung hier.",
-            "link_url": "",
+            "link_url": "shopify://pages/reinigung-von-luftungskanalen",
             "link_label": "Mehr erfahren →"
           }
         },
@@ -209,7 +209,7 @@
           "settings": {
             "title": "Dampfreinigung",
             "text": "Kurze Beschreibung hier.",
-            "link_url": "",
+            "link_url": "shopify://pages/dampfreinigung",
             "link_label": "Mehr erfahren →"
           }
         },
