@@ -218,7 +218,7 @@
           "settings": {
             "title": "Trockeneisstrahlen",
             "text": "Kurze Beschreibung hier.",
-            "link_url": "",
+            "link_url": "shopify://pages/trockeneisstrahlen",
             "link_label": "Mehr erfahren →"
           }
         }
