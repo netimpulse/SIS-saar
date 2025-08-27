@@ -1,0 +1,28 @@
+/* Base */
+.lf-container{ background: var(--lf-bg); color: var(--lf-text); padding: var(--lf-pad); font-family: var(--lf-font-body); }
+.lf-inner{ max-width: 1200px; margin: 0 auto; }
+.lf-heading{ font-family: var(--lf-font-head); font-size: clamp(24px,2.4vw,32px); margin:0 0 8px; text-align:center; }
+.lf-subtext{ max-width:720px; line-height:1.6; margin:0 auto 24px; opacity:.9; text-align:center; }
+
+/* Grid Fallback */
+.lf-grid-mode .lf-viewport{ overflow: visible; }
+.lf-grid-mode .lf-track{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:var(--lf-gap); transform:none!important; }
+@media(max-width:990px){ .lf-grid-mode .lf-track{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:640px){ .lf-grid-mode .lf-track{ grid-template-columns:1fr; } }
+
+/* Card */
+.lf-card{ background:var(--lf-card-bg); border-radius:var(--lf-card-radius); overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,.08); transition:transform .25s,box-shadow .25s,background .25s; display:flex; flex-direction:column; min-height:100%; }
+.lf-card:hover{ background:var(--lf-card-hover-bg); transform:translateY(calc(var(--lf-card-lift) * -1)); box-shadow:0 14px 34px rgba(0,0,0,.16); }
+.lf-card-media{ position:relative; }
+.lf-img{ width:100%; height:190px; object-fit:cover; display:block; }
+.lf-img--placeholder{ background:#eaeaea; }
+.lf-card-body{ padding:18px 18px 14px; }
+.lf-card-title{ font-family:var(--lf-font-head); margin:0 0 8px; font-size:18px; }
+.lf-card-text{ margin:0 0 12px; opacity:.9; }
+.lf-card-link{ color:var(--lf-accent); font-weight:600; text-decoration:none; font-size:14px; }
+.lf-card-link:hover{ text-decoration:underline; }
+
+/* Button */
+.lf-cta-wrap{ margin-top:28px; text-align:center; }
+.lf-btn{ display:inline-block; padding:10px 20px; background:var(--lf-btn-bg); color:var(--lf-btn-text); border-radius:var(--lf-btn-radius); text-decoration:none; font-weight:600; line-height:1; box-shadow:0 2px 6px rgba(0,0,0,.12) inset,0 1px 0 rgba(255,255,255,.2); transition:transform .2s,background .2s; }
+.lf-btn:hover{ background:var(--lf-btn-hover-bg); transform:translateY(-1px);
