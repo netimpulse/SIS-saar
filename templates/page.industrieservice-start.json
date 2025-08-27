@@ -484,6 +484,13 @@
             "link": "shopify://pages/gebaudeservice-leistungen"
           }
         },
+        "leistungen_link_6Ma4j3": {
+          "type": "leistungen_link",
+          "settings": {
+            "text": "Unsere Partner",
+            "link": ""
+          }
+        },
         "unternehmen_link_Cbwrpk": {
           "type": "unternehmen_link",
           "settings": {
@@ -534,6 +541,7 @@
       "block_order": [
         "leistungen_link_G7xNeq",
         "leistungen_link_FqmmqT",
+        "leistungen_link_6Ma4j3",
         "unternehmen_link_Cbwrpk",
         "unternehmen_link_GDfwBW",
         "kontakt_link_wrARxQ",
