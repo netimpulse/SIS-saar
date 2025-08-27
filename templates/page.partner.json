@@ -29,11 +29,11 @@
         "subheading": "",
         "button_label": "Jetzt Angebot anfordern",
         "button_link": "",
-        "button_color": "#007ACC",
-        "button_text_color": "#FFFFFF",
+        "button_color": "#007acc",
+        "button_text_color": "#ffffff",
         "button_radius": 4,
-        "heading_color": "#FFFFFF",
-        "text_color": "#F5F5F5",
+        "heading_color": "#ffffff",
+        "text_color": "#f5f5f5",
         "heading_size": 48,
         "text_size": 18,
         "font_family": "Arial, sans-serif",
@@ -48,6 +48,7 @@
         "logo_q3ni9V": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/SIS_Gruppe_logo.png",
             "alt": "Partner-Logo",
             "link": "",
             "custom_size": false,
@@ -57,6 +58,17 @@
         "logo_ALFJVp": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
+            "alt": "Partner-Logo",
+            "link": "",
+            "custom_size": false,
+            "logo_height": 72
+          }
+        },
+        "logo_CaFVen": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/ChatGPT_Image_31._Juli_2025_18_20_03.png",
             "alt": "Partner-Logo",
             "link": "",
             "custom_size": false,
@@ -175,6 +187,7 @@
       "block_order": [
         "logo_q3ni9V",
         "logo_ALFJVp",
+        "logo_CaFVen",
         "logo_3WixzK",
         "logo_XcKQnh",
         "logo_dcJrrr",
