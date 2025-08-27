@@ -152,6 +152,105 @@
         "icon_radius": 1000
       }
     },
+    "leistung_final_hf6FKX": {
+      "type": "leistung-final",
+      "blocks": {
+        "service_card_lf_gMndBw": {
+          "type": "service_card_lf",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
+            "title": "Unterhaltsreinigung",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "shopify://pages/unterhaltsreinigung",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_yCYXmB": {
+          "type": "service_card_lf",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_370492946.jpg",
+            "title": "Glas- / Lamellenreinigung",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "shopify://pages/glas-und-lamellenreinigung",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_KkYFkt": {
+          "type": "service_card_lf",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
+            "title": "Bauschlussreinigung",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "shopify://pages/bauschlussreinigung",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_eMW7yK": {
+          "type": "service_card_lf",
+          "settings": {
+            "image": "shopify://shop_images/sis_location.png",
+            "title": "Sonderreinigung",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "shopify://pages/sonderreinigung",
+            "link_label": "Mehr erfahren →"
+          }
+        }
+      },
+      "block_order": [
+        "service_card_lf_gMndBw",
+        "service_card_lf_yCYXmB",
+        "service_card_lf_KkYFkt",
+        "service_card_lf_eMW7yK"
+      ],
+      "name": "Leistung final",
+      "settings": {
+        "heading": "Unsere Leistungen",
+        "subtext": "Mit Leidenschaft für Ihren Erfolg.",
+        "font_heading": "helvetica_n4",
+        "font_body": "helvetica_n4",
+        "heading_size": 32,
+        "heading_bold": true,
+        "heading_italic": false,
+        "subtext_size": 16,
+        "subtext_bold": false,
+        "subtext_italic": false,
+        "card_title_size": 18,
+        "card_title_bold": true,
+        "card_title_italic": false,
+        "card_text_size": 14,
+        "card_text_bold": false,
+        "card_text_italic": false,
+        "card_link_size": 14,
+        "card_link_bold": true,
+        "card_link_italic": false,
+        "bg_color": "#f3f6f9",
+        "text_color": "#222222",
+        "accent_color": "#22c55e",
+        "card_bg": "#ffffff",
+        "card_hover_bg": "#ffffff",
+        "card_radius": 12,
+        "card_hover_lift": 6,
+        "grid_gap": 20,
+        "section_padding": 24,
+        "show_button": true,
+        "button_label": "Mehr erfahren",
+        "button_url": "shopify://pages/gebaudeservice-kontakt",
+        "button_align": "center",
+        "button_full_width": false,
+        "button_max_width": 420,
+        "button_font_size": 16,
+        "button_bold": true,
+        "button_italic": false,
+        "button_padding_x": 20,
+        "button_padding_y": 10,
+        "button_margin_top": 28,
+        "button_margin_bottom": 0,
+        "button_bg": "#000000",
+        "button_text": "#ffffff",
+        "button_hover_bg": "#334fb4",
+        "button_hover_text": "#ffffff"
+      }
+    },
     "custom_cta_block_Tf7gLb": {
       "type": "custom-cta-block",
       "blocks": {
@@ -372,6 +471,7 @@
     "main",
     "hero_overlay_section_6beqpy",
     "highlights_icons_7K7kJa",
+    "leistung_final_hf6FKX",
     "custom_cta_block_Tf7gLb",
     "sis_single_footer_PEDkQY",
     "leistung_final_peMkg3"
