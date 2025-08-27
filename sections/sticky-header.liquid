@@ -1,9 +1,23 @@
 {{ 'sticky-header.css' | asset_url | stylesheet_tag }}
 
 {% comment %}
-  Sticky header (fixed). Direkt danach erzeugen wir einen Spacer,
-  damit der Seiteninhalt korrekt unterhalb startet.
+  Sticky header (fixed) – garantiert sichtbar beim Scrollen.
 {% endcomment %}
+
+<style>
+  /* Kritische Regeln inline, damit sie 100% greifen */
+  #sticky-header-{{ section.id }} {
+    position: fixed; top: 0; left: 0; right: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: var(--header-bg-color);
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+  }
+  /* Containerhöhe, damit JS korrekt messen kann (Fallback) */
+  #sticky-header-{{ section.id }} .custom-header__container {
+    min-height: var(--header-min-height, 56px);
+  }
+</style>
 
 <style>
   .custom-header-section-{{ section.id }}{
@@ -12,16 +26,14 @@
     --padding-horizontal: {{ section.settings.padding_horizontal }}px;
 
     --logo-height: {{ section.settings.logo_height | default: 40 }}px;
-    /* berechnete Header-Höhe = Logo-Höhe + 2 × vertikales Padding */
-    --header-height: calc(var(--logo-height) + (var(--padding-vertical) * 2));
+    /* grobe Mindesthöhe als Fallback, genaue Höhe setzt JS */
+    --header-min-height: calc(var(--logo-height) + (var(--padding-vertical) * 2));
 
     --logo-pos-x: {{ section.settings.logo_position_x }}%;
     --logo-pos-y: {{ section.settings.logo_position_y }}%;
-
     --menu-pos-x: {{ section.settings.menu_position_x }}%;
     --menu-pos-y: {{ section.settings.menu_position_y }}%;
 
-    /* Navigation Typo */
     --nav-font-family: {{ section.settings.nav_font.family }}, {{ section.settings.nav_font.fallback_families }};
     --nav-font-style: {{ section.settings.nav_font.style }};
     --nav-font-weight: {% if section.settings.nav_font_bold %}bold{% else %}{{ section.settings.nav_font.weight }}{% endif %};
@@ -34,7 +46,6 @@
     --btn-hover-text-color: {{ section.settings.button_hover_text_color }};
     --btn-hover-bg-color: {{ section.settings.button_hover_bg_color }};
 
-    /* Zurück-Pfeil */
     --back-pos-x: {{ section.settings.back_position_x }}%;
     --back-pos-y: {{ section.settings.back_position_y }}%;
     --back-font-family: {{ section.settings.back_font.family }}, {{ section.settings.back_font.fallback_families }};
@@ -46,14 +57,11 @@
   }
 </style>
 
-<header class="custom-header-section custom-header-section-{{ section.id }}">
+<header id="sticky-header-{{ section.id }}" class="custom-header-section custom-header-section-{{ section.id }}">
   <div class="custom-header__container">
-    <a
-      href="{{ section.settings.back_link | default: shop.url }}"
-      class="custom-header__back"
-      aria-label="{{ section.settings.back_label | default: 'Zurück zur Startseite' }}"
-      title="{{ section.settings.back_label | default: 'Zurück zur Startseite' }}"
-    >
+    <a href="{{ section.settings.back_link | default: shop.url }}" class="custom-header__back"
+       aria-label="{{ section.settings.back_label | default: 'Zurück zur Startseite' }}"
+       title="{{ section.settings.back_label | default: 'Zurück zur Startseite' }}">
       <svg class="custom-header__back-icon" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
@@ -69,15 +77,13 @@
             assign h = section.settings.logo_height | default: 40
             assign w = h | times: section.settings.logo.aspect_ratio | round
           %}
-          <img
-            src="{{ section.settings.logo | image_url: width: w }}"
-            alt="{{ section.settings.logo.alt | default: shop.name }}"
-            class="custom-header__logo-img"
-            height="{{ h }}"
-            width="{{ w }}"
-          >
+          <img src="{{ section.settings.logo | image_url: width: w }}"
+               alt="{{ section.settings.logo.alt | default: shop.name }}"
+               class="custom-header__logo-img"
+               height="{{ h }}" width="{{ w }}">
         {% else %}
-          <span class="custom-header__logo-text" style="color: {{ section.settings.logo_color }}; font-size: {{ section.settings.logo_font_size }}px;">
+          <span class="custom-header__logo-text"
+                style="color: {{ section.settings.logo_color }}; font-size: {{ section.settings.logo_font_size }}px;">
             {{ section.settings.logo_text | default: shop.name }}
           </span>
         {% endif %}
@@ -90,11 +96,8 @@
           <a href="{{ link.url }}" class="custom-header__nav-link {% if link.active %}active{% endif %}">{{ link.title }}</a>
         {%- endfor -%}
       </nav>
-
       {%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
-        <a href="{{ section.settings.button_link }}" class="custom-header__contact-btn">
-          {{ section.settings.button_text }}
-        </a>
+        <a href="{{ section.settings.button_link }}" class="custom-header__contact-btn">{{ section.settings.button_text }}</a>
       {%- endif -%}
     </div>
 
@@ -104,8 +107,40 @@
   </div>
 </header>
 
-{%- comment -%} Spacer verhindert Überlappungen mit dem Seiteninhalt {%- endcomment -%}
-<div class="sticky-spacer custom-header-section-{{ section.id }}"></div>
+<script>
+  (function() {
+    var header = document.getElementById('sticky-header-{{ section.id }}');
+    if (!header) return;
+
+    function setOffsets() {
+      var h = header.offsetHeight;
+
+      // Höhe einer möglichen Announcement-Bar berücksichtigen
+      var bar = document.querySelector('[data-announcement-bar], .announcement-bar, .shopify-section-announcement');
+      if (bar) {
+        var barH = bar.offsetHeight || 0;
+        header.style.top = barH + 'px';
+        h = header.offsetHeight + barH;
+      } else {
+        header.style.top = '0px';
+      }
+
+      // Body- oder Haupt-Container mit Padding-Top versehen
+      document.body.style.paddingTop = h + 'px';
+      var main = document.querySelector('main');
+      if (main) main.style.scrollMarginTop = h + 'px';
+    }
+
+    // Initial + bei Resize/Font-Load/DOM-Änderungen
+    setOffsets();
+    window.addEventListener('resize', setOffsets);
+    document.addEventListener('shopify:section:load', setOffsets);
+    document.addEventListener('shopify:section:unload', setOffsets);
+    if ('ResizeObserver' in window) {
+      new ResizeObserver(setOffsets).observe(header);
+    }
+  })();
+</script>
 
 {% schema %}
 {
@@ -116,7 +151,6 @@
     { "type": "color", "id": "background_color", "label": "Hintergrundfarbe", "default": "#ffffff" },
     { "type": "range", "id": "padding_vertical", "label": "Padding Oben/Unten (px)", "min": 0, "max": 50, "step": 1, "default": 16, "unit": "px" },
     { "type": "range", "id": "padding_horizontal", "label": "Padding Links/Rechts (px)", "min": 0, "max": 100, "step": 1, "default": 24, "unit": "px" },
-
     { "type": "range", "id": "logo_height", "label": "Logo-Höhe (px)", "min": 20, "max": 120, "step": 1, "default": 40, "unit": "px" },
 
     { "type": "header", "content": "Zurück-Pfeil" },
@@ -147,15 +181,7 @@
     { "type": "color", "id": "nav_hover_color", "label": "Navigation Hover-Farbe", "default": "#4ade80" },
     { "type": "range", "id": "nav_font_size", "label": "Navigation Schriftgröße", "min": 12, "max": 24, "step": 1, "default": 16, "unit": "px" },
     { "type": "range", "id": "menu_position_x", "label": "Menü Position X (%)", "min": -50, "max": 50, "step": 1, "default": 0, "unit": "%" },
-    { "type": "range", "id": "menu_position_y", "label": "Menü Position Y (%)", "min": -50, "max": 50, "step": 1, "default": 0, "unit": "%" },
-
-    { "type": "header", "content": "Kontakt Button" },
-    { "type": "text", "id": "button_text", "label": "Button Text", "default": "Kontakt" },
-    { "type": "url", "id": "button_link", "label": "Button Link" },
-    { "type": "color", "id": "button_text_color", "label": "Button Textfarbe", "default": "#ffffff" },
-    { "type": "color", "id": "button_bg_color", "label": "Button Hintergrund", "default": "#4ade80" },
-    { "type": "color", "id": "button_hover_text_color", "label": "Button Textfarbe (Hover)", "default": "#ffffff" },
-    { "type": "color", "id": "button_hover_bg_color", "label": "Button Hintergrund (Hover)", "default": "#22c55e" }
+    { "type": "range", "id": "menu_position_y", "label": "Menü Position Y (%)", "min": -50, "max": 50, "step": 1, "default": 0, "unit": "%" }
   ],
   "presets": [{ "name": "Sticky header" }]
 }
