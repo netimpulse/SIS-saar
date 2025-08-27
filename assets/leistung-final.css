@@ -53,3 +53,6 @@
 .lf-dots{ display:flex; justify-content:center; gap:8px; margin-top:16px; }
 .lf-dot{ width:8px; height:8px; border-radius:50%; background:#cbd5e1; border:0; padding:0; cursor:pointer; }
 .lf-dot.active{ background:#111827; }
+
+/* ⬇️ Variante B: Button immer pill-rund */
+.lf-btn{ border-radius:9999px !important; }
