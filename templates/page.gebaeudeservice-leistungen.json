@@ -144,7 +144,7 @@
             "image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
             "title": "Unterhaltsreinigung",
             "text": "Kurze Beschreibung hier.",
-            "link_url": "",
+            "link_url": "shopify://pages/unterhaltsreinigung",
             "link_label": "Mehr erfahren →"
           }
         },
@@ -266,12 +266,12 @@
         "section_padding": 24,
         "points_title": "Unsere Dienstleistungen:",
         "points_as_card": true,
-        "points_bg": "#FFFFFF",
-        "points_border": "#E5E8EE",
+        "points_bg": "#ffffff",
+        "points_border": "#e5e8ee",
         "points_btn_label": "Jetzt anfragen",
         "points_btn_url": "",
         "points_btn_align": "left",
-        "fallback_bullet_color": "#2B6CB0"
+        "fallback_bullet_color": "#2b6cb0"
       }
     },
     "kundenbewertung_JQ9ATr": {
