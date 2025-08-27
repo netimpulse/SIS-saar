@@ -204,7 +204,7 @@
         "section_padding": 24,
         "show_button": true,
         "button_label": "Alle Leistungen im Überblick",
-        "button_url": "shopify://pages/gebaudeservice-kontakt",
+        "button_url": "shopify://pages/industrieservice-leistungen",
         "button_align": "center",
         "button_full_width": false,
         "button_max_width": 420,
