@@ -1,0 +1,260 @@
+{% comment %}
+  Section: Leistung final – mit Karussell
+{% endcomment %}
+
+{{ 'leistung-final.css' | asset_url | stylesheet_tag }}
+
+{%- assign section_id = 'leistung-final-' | append: section.id -%}
+
+<section id="{{ section_id }}"
+  class="lf-container"
+  style="
+    --lf-bg: {{ section.settings.bg_color }};
+    --lf-text: {{ section.settings.text_color }};
+    --lf-accent: {{ section.settings.accent_color }};
+    --lf-card-bg: {{ section.settings.card_bg }};
+    --lf-card-hover-bg: {{ section.settings.card_hover_bg }};
+    --lf-card-radius: {{ section.settings.card_radius }}px;
+    --lf-card-lift: {{ section.settings.card_hover_lift | divided_by: 10.0 }}rem;
+    --lf-gap: {{ section.settings.grid_gap }}px;
+    --lf-pad: {{ section.settings.section_padding }}px;
+    --lf-font-head: {{ section.settings.font_heading.family }}, {{ section.settings.font_heading.fallback_families }};
+    --lf-font-body: {{ section.settings.font_body.family }}, {{ section.settings.font_body.fallback_families }};
+    --lf-btn-bg: {{ section.settings.button_bg }};
+    --lf-btn-text: {{ section.settings.button_text }};
+    --lf-btn-hover-bg: {{ section.settings.button_hover_bg }};
+    --lf-btn-radius: {{ section.settings.button_radius }}px;
+  "
+>
+  <div class="lf-inner">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="lf-heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+
+    {%- if section.settings.subtext != blank -%}
+      <p class="lf-subtext">{{ section.settings.subtext }}</p>
+    {%- endif -%}
+
+    <div class="lf-carousel" data-section-id="{{ section.id }}">
+      <div class="lf-viewport">
+        <div class="lf-track">
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'service_card_lf' -%}
+              <div class="lf-slide">
+                {% render 'service-card-leistung-final',
+                  image: block.settings.image,
+                  title: block.settings.title,
+                  text: block.settings.text,
+                  link_url: block.settings.link_url,
+                  link_label: block.settings.link_label,
+                  id: block.id
+                %}
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+
+      <!-- Pfeile -->
+      <button class="lf-arrow lf-prev" aria-label="Zurück" type="button">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="lf-arrow lf-next" aria-label="Weiter" type="button">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <!-- Punkte -->
+      <div class="lf-dots" role="tablist" aria-label="Karussell Navigation"></div>
+    </div>
+
+    {%- if section.settings.show_button and section.settings.button_label != blank -%}
+      <div class="lf-cta-wrap" style="text-align: {{ section.settings.button_align }};">
+        <a class="lf-btn" href="{{ section.settings.button_url | default: '#' }}">{{ section.settings.button_label }}</a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+<script>
+  (function() {
+    const root = document.querySelector('[data-section-id="{{ section.id }}"]');
+    if (!root) return;
+
+    const viewport = root.querySelector('.lf-viewport');
+    const track    = root.querySelector('.lf-track');
+    const slides   = Array.from(root.querySelectorAll('.lf-slide'));
+    const prevBtn  = root.querySelector('.lf-prev');
+    const nextBtn  = root.querySelector('.lf-next');
+    const dotsWrap = root.querySelector('.lf-dots');
+
+    function getState() {
+      const isMobile = window.matchMedia('(max-width: 640px)').matches;
+      const slidesPerView = isMobile ? 1 : 3;
+      const enableCarousel = isMobile || slides.length > 3;
+      return { isMobile, slidesPerView, enableCarousel };
+    }
+
+    let current = 0;
+    let pages = 1;
+    let state = getState();
+
+    function setupLayout() {
+      state = getState();
+
+      // Grid-Modus
+      if (!state.enableCarousel) {
+        root.classList.add('lf-grid-mode');
+        track.style.transform = 'translateX(0)';
+        prevBtn.style.display = 'none';
+        nextBtn.style.display = 'none';
+        dotsWrap.innerHTML = '';
+        return;
+      }
+
+      // Karussell-Modus
+      root.classList.remove('lf-grid-mode');
+      prevBtn.style.display = '';
+      nextBtn.style.display = '';
+
+      const basis = (100 / state.slidesPerView);
+      slides.forEach(s => { s.style.flex = '0 0 ' + basis + '%'; });
+
+      pages = Math.max(1, Math.ceil(slides.length / state.slidesPerView));
+      if (current > pages - 1) current = pages - 1;
+
+      dotsWrap.innerHTML = '';
+      for (let i = 0; i < pages; i++) {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'lf-dot';
+        b.setAttribute('role', 'tab');
+        b.setAttribute('aria-label', 'Seite ' + (i+1));
+        b.addEventListener('click', () => { goTo(i); });
+        dotsWrap.appendChild(b);
+      }
+      update();
+    }
+
+    function update() {
+      const offset = current * -100;
+      track.style.transform = 'translateX(' + offset + '%)';
+      dotsWrap.querySelectorAll('.lf-dot').forEach((d, i) => {
+        d.classList.toggle('active', i === current);
+      });
+      prevBtn.disabled = (current === 0);
+      nextBtn.disabled = (current >= pages - 1);
+    }
+
+    function goTo(idx) {
+      current = Math.max(0, Math.min(pages - 1, idx));
+      update();
+    }
+
+    prevBtn.addEventListener('click', () => goTo(current - 1));
+    nextBtn.addEventListener('click', () => goTo(current + 1));
+
+    // Swipe
+    let startX = 0, moved = 0, dragging = false;
+    function onStart(e){
+      dragging = true;
+      startX = (e.touches ? e.touches[0].clientX : e.clientX);
+      moved = 0;
+      track.style.transition = 'none';
+    }
+    function onMove(e){
+      if (!dragging) return;
+      const x = (e.touches ? e.touches[0].clientX : e.clientX);
+      moved = x - startX;
+      const width = viewport.clientWidth;
+      const deltaPct = (moved / width) * 100;
+      track.style.transform = 'translateX(' + (-(current*100) + deltaPct) + '%)';
+    }
+    function onEnd(){
+      if (!dragging) return;
+      dragging = false;
+      track.style.transition = '';
+      if (Math.abs(moved) > viewport.clientWidth * 0.15) {
+        if (moved < 0) goTo(current + 1); else goTo(current - 1);
+      } else {
+        update();
+      }
+    }
+    track.addEventListener('pointerdown', onStart);
+    window.addEventListener('pointermove', onMove);
+    window.addEventListener('pointerup', onEnd);
+    track.addEventListener('touchstart', onStart, {passive:true});
+    track.addEventListener('touchmove', onMove, {passive:true});
+    track.addEventListener('touchend', onEnd);
+
+    setupLayout();
+    window.addEventListener('resize', setupLayout);
+    document.addEventListener('shopify:section:load', setupLayout);
+    document.addEventListener('shopify:section:unload', setupLayout);
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Leistung final",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Überschrift", "default": "Unsere Leistungen" },
+    { "type": "textarea", "id": "subtext", "label": "Einleitungstext", "default": "Mit Leidenschaft für Ihren Erfolg." },
+
+    { "type": "font_picker", "id": "font_heading", "label": "Schrift – Überschriften", "default": "helvetica_n4" },
+    { "type": "font_picker", "id": "font_body", "label": "Schrift – Fließtext", "default": "helvetica_n4" },
+
+    { "type": "color", "id": "bg_color", "label": "Hintergrundfarbe", "default": "#F3F6F9" },
+    { "type": "color", "id": "text_color", "label": "Textfarbe", "default": "#222222" },
+    { "type": "color", "id": "accent_color", "label": "Akzentfarbe", "default": "#ff6a00" },
+
+    { "type": "header", "content": "Kacheln" },
+    { "type": "color", "id": "card_bg", "label": "Kachel Hintergrund", "default": "#ffffff" },
+    { "type": "color", "id": "card_hover_bg", "label": "Kachel Hover Hintergrund", "default": "#ffffff" },
+    { "type": "range", "id": "card_radius", "min": 0, "max": 30, "step": 1, "unit": "px", "label": "Abrundung", "default": 12 },
+    { "type": "range", "id": "card_hover_lift", "min": 0, "max": 12, "step": 1, "unit": "px", "label": "Hover-Lift", "default": 6 },
+    { "type": "range", "id": "grid_gap", "min": 8, "max": 40, "step": 2, "unit": "px", "label": "Abstand", "default": 20 },
+
+    { "type": "header", "content": "Abstände" },
+    { "type": "range", "id": "section_padding", "min": 0, "max": 80, "step": 4, "unit": "px", "label": "Innenabstand", "default": 24 },
+
+    { "type": "header", "content": "Button" },
+    { "type": "checkbox", "id": "show_button", "label": "Button anzeigen", "default": true },
+    { "type": "text", "id": "button_label", "label": "Button Text", "default": "Mehr erfahren" },
+    { "type": "url", "id": "button_url", "label": "Button Link" },
+    { "type": "select", "id": "button_align", "label": "Ausrichtung", "default": "center", "options": [
+      { "value": "left", "label": "Links" },
+      { "value": "center", "label": "Zentriert" },
+      { "value": "right", "label": "Rechts" }
+    ]},
+    { "type": "color", "id": "button_bg", "label": "Button Hintergrund", "default": "#8B8E93" },
+    { "type": "color", "id": "button_hover_bg", "label": "Button Hover", "default": "#6f7276" },
+    { "type": "color", "id": "button_text", "label": "Button Textfarbe", "default": "#ffffff" },
+    { "type": "range", "id": "button_radius", "min": 0, "max": 40, "step": 1, "unit": "px", "label": "Button Abrundung", "default": 20 }
+  ],
+  "blocks": [
+    {
+      "type": "service_card_lf",
+      "name": "Kachel",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Bild" },
+        { "type": "text", "id": "title", "label": "Titel", "default": "Titel" },
+        { "type": "textarea", "id": "text", "label": "Beschreibung", "default": "Kurze Beschreibung hier." },
+        { "type": "url", "id": "link_url", "label": "Link" },
+        { "type": "text", "id": "link_label", "label": "Link-Text", "default": "Mehr erfahren →" }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Leistung final",
+      "blocks": [
+        { "type": "service_card_lf" },
+        { "type": "service_card_lf" },
+        { "type": "service_card_lf" },
+        { "type": "service_card_lf" }
+      ]
+    }
+  ]
+}
+{% endschema %}
