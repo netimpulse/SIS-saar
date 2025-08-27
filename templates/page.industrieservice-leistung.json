@@ -503,10 +503,9 @@
       "blocks": {
         "button_DzM34x": {
           "type": "button",
-          "disabled": true,
           "settings": {
             "label": "<p>Kostenlose Beratung</p>",
-            "link": "",
+            "link": "shopify://blogs/news",
             "variant": "solid",
             "text_color": "#ffffff",
             "bg_color": "#0b132a",
