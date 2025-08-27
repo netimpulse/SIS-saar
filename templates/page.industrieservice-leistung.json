@@ -159,7 +159,7 @@
           "type": "service_card_lf",
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
-            "title": "Unterhaltsreinigung",
+            "title": "Maschinenreinigung",
             "text": "Kurze Beschreibung hier.",
             "link_url": "shopify://pages/unterhaltsreinigung",
             "link_label": "Mehr erfahren →"
@@ -169,7 +169,7 @@
           "type": "service_card_lf",
           "settings": {
             "image": "shopify://shop_images/shutterstock_370492946.jpg",
-            "title": "Glas- / Lamellenreinigung",
+            "title": "Fluidmanagement & Wartung",
             "text": "Kurze Beschreibung hier.",
             "link_url": "shopify://pages/glas-und-lamellenreinigung",
             "link_label": "Mehr erfahren →"
@@ -179,7 +179,7 @@
           "type": "service_card_lf",
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
-            "title": "Bauschlussreinigung",
+            "title": "Hallenbodenreinigung",
             "text": "Kurze Beschreibung hier.",
             "link_url": "shopify://pages/bauschlussreinigung",
             "link_label": "Mehr erfahren →"
@@ -189,9 +189,36 @@
           "type": "service_card_lf",
           "settings": {
             "image": "shopify://shop_images/sis_location.png",
-            "title": "Sonderreinigung",
+            "title": "Decken- / Wandreinigung",
             "text": "Kurze Beschreibung hier.",
             "link_url": "shopify://pages/sonderreinigung",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_LH7yyq": {
+          "type": "service_card_lf",
+          "settings": {
+            "title": "Reinigung von Lüftungskanälen",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_xPMEac": {
+          "type": "service_card_lf",
+          "settings": {
+            "title": "Dampfreinigung",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_ERyXVY": {
+          "type": "service_card_lf",
+          "settings": {
+            "title": "Trockeneisstrahlen",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "",
             "link_label": "Mehr erfahren →"
           }
         }
@@ -200,7 +227,10 @@
         "service_card_lf_gMndBw",
         "service_card_lf_yCYXmB",
         "service_card_lf_KkYFkt",
-        "service_card_lf_eMW7yK"
+        "service_card_lf_eMW7yK",
+        "service_card_lf_LH7yyq",
+        "service_card_lf_xPMEac",
+        "service_card_lf_ERyXVY"
       ],
       "name": "Leistung final",
       "settings": {
