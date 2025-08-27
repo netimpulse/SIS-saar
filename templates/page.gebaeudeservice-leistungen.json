@@ -185,7 +185,7 @@
         "subtext": "Use these sections to highlight your features. Keep it short and attractive.",
         "font_heading": "helvetica_n4",
         "font_body": "helvetica_n4",
-        "bg_color": "#F3F6F9",
+        "bg_color": "#f3f6f9",
         "text_color": "#222222",
         "accent_color": "#ff6a00",
         "card_bg": "#ffffff",
@@ -198,7 +198,7 @@
         "button_label": "Schaltflächenbeschriftung",
         "button_url": "",
         "button_align": "center",
-        "button_bg": "#8B8E93",
+        "button_bg": "#8b8e93",
         "button_hover_bg": "#6f7276",
         "button_text": "#ffffff",
         "button_radius": 20
@@ -253,7 +253,7 @@
       "name": "Custom CTA Block",
       "settings": {
         "heading": "<p><strong>Bereit für professionellen Gebäudeservice?</strong></p>",
-        "heading_size": 56,
+        "heading_size": 36,
         "heading_bold": true,
         "heading_color": "#0f172a",
         "heading_font": "inherit",
