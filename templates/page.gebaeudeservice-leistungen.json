@@ -135,6 +135,77 @@
         "icon_radius": 1000
       }
     },
+    "leistung_final_mzTNaw": {
+      "type": "leistung-final",
+      "blocks": {
+        "service_card_lf_LCXAEL": {
+          "type": "service_card_lf",
+          "settings": {
+            "title": "Titel",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_K9CA39": {
+          "type": "service_card_lf",
+          "settings": {
+            "title": "Titel",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_E7JFRc": {
+          "type": "service_card_lf",
+          "settings": {
+            "title": "Titel",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_UQJbBh": {
+          "type": "service_card_lf",
+          "settings": {
+            "title": "Titel",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "",
+            "link_label": "Mehr erfahren →"
+          }
+        }
+      },
+      "block_order": [
+        "service_card_lf_LCXAEL",
+        "service_card_lf_K9CA39",
+        "service_card_lf_E7JFRc",
+        "service_card_lf_UQJbBh"
+      ],
+      "name": "Leistung final",
+      "settings": {
+        "heading": "Unsere Leistungen",
+        "subtext": "Mit Leidenschaft für Ihren Erfolg.",
+        "font_heading": "helvetica_n4",
+        "font_body": "helvetica_n4",
+        "bg_color": "#F3F6F9",
+        "text_color": "#222222",
+        "accent_color": "#ff6a00",
+        "card_bg": "#ffffff",
+        "card_hover_bg": "#ffffff",
+        "card_radius": 12,
+        "card_hover_lift": 6,
+        "grid_gap": 20,
+        "section_padding": 24,
+        "show_button": true,
+        "button_label": "Mehr erfahren",
+        "button_url": "",
+        "button_align": "center",
+        "button_bg": "#8B8E93",
+        "button_hover_bg": "#6f7276",
+        "button_text": "#ffffff",
+        "button_radius": 20
+      }
+    },
     "leistungen_ueberarbeitet_zVAJTt": {
       "type": "leistungen-ueberarbeitet",
       "blocks": {
@@ -318,6 +389,7 @@
     "main",
     "hero_building_section_jFhK9K",
     "highlights_icons_kWf4Y9",
+    "leistung_final_mzTNaw",
     "leistungen_ueberarbeitet_zVAJTt",
     "custom_cta_block_xMcPbA",
     "sis_single_footer_PQBXAB"
