@@ -1,21 +1,9 @@
 {{ 'sticky-header.css' | asset_url | stylesheet_tag }}
 
-{% comment %}
-  Sticky header (fixed) – garantiert sichtbar beim Scrollen.
-{% endcomment %}
-
 <style>
-  /* Kritische Regeln inline, damit sie 100% greifen */
   #sticky-header-{{ section.id }} {
     position: fixed; top: 0; left: 0; right: 0;
-    z-index: 1000;
-    width: 100%;
-    background-color: var(--header-bg-color);
-    box-shadow: 0 1px 3px rgba(0,0,0,.1);
-  }
-  /* Containerhöhe, damit JS korrekt messen kann (Fallback) */
-  #sticky-header-{{ section.id }} .custom-header__container {
-    min-height: var(--header-min-height, 56px);
+    z-index: 1000; width: 100%;
   }
 </style>
 
@@ -26,7 +14,6 @@
     --padding-horizontal: {{ section.settings.padding_horizontal }}px;
 
     --logo-height: {{ section.settings.logo_height | default: 40 }}px;
-    /* grobe Mindesthöhe als Fallback, genaue Höhe setzt JS */
     --header-min-height: calc(var(--logo-height) + (var(--padding-vertical) * 2));
 
     --logo-pos-x: {{ section.settings.logo_position_x }}%;
@@ -46,8 +33,6 @@
     --btn-hover-text-color: {{ section.settings.button_hover_text_color }};
     --btn-hover-bg-color: {{ section.settings.button_hover_bg_color }};
 
-    --back-pos-x: {{ section.settings.back_position_x }}%;
-    --back-pos-y: {{ section.settings.back_position_y }}%;
     --back-font-family: {{ section.settings.back_font.family }}, {{ section.settings.back_font.fallback_families }};
     --back-font-style: {{ section.settings.back_font.style }};
     --back-font-weight: {% if section.settings.back_font_bold %}bold{% else %}{{ section.settings.back_font.weight }}{% endif %};
@@ -59,19 +44,10 @@
 
 <header id="sticky-header-{{ section.id }}" class="custom-header-section custom-header-section-{{ section.id }}">
   <div class="custom-header__container">
-    <a href="{{ section.settings.back_link | default: shop.url }}" class="custom-header__back"
-       aria-label="{{ section.settings.back_label | default: 'Zurück zur Startseite' }}"
-       title="{{ section.settings.back_label | default: 'Zurück zur Startseite' }}">
-      <svg class="custom-header__back-icon" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      {% if section.settings.back_label != blank %}
-        <span class="custom-header__back-label">{{ section.settings.back_label }}</span>
-      {% endif %}
-    </a>
-
-    <div class="custom-header__logo">
-      <a href="{{ shop.url }}">
+    
+    <!-- Logo + Zurück-Pfeil -->
+    <div class="custom-header__brand">
+      <a href="{{ shop.url }}" class="custom-header__logo">
         {% if section.settings.logo %}
           {% liquid
             assign h = section.settings.logo_height | default: 40
@@ -88,8 +64,24 @@
           </span>
         {% endif %}
       </a>
+
+      {% if section.settings.back_link != blank or section.settings.back_label != blank %}
+        <a href="{{ section.settings.back_link | default: shop.url }}"
+           class="custom-header__back"
+           aria-label="{{ section.settings.back_label | default: 'Zurück' }}"
+           title="{{ section.settings.back_label | default: 'Zurück' }}">
+          <svg class="custom-header__back-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          {% if section.settings.back_label != blank %}
+            <span class="custom-header__back-label">{{ section.settings.back_label }}</span>
+          {% endif %}
+        </a>
+      {% endif %}
     </div>
 
+    <!-- Navigation -->
     <div class="custom-header__nav-wrapper">
       <nav class="custom-header__nav" role="navigation">
         {%- for link in section.settings.menu.links -%}
@@ -111,11 +103,8 @@
   (function() {
     var header = document.getElementById('sticky-header-{{ section.id }}');
     if (!header) return;
-
     function setOffsets() {
       var h = header.offsetHeight;
-
-      // Höhe einer möglichen Announcement-Bar berücksichtigen
       var bar = document.querySelector('[data-announcement-bar], .announcement-bar, .shopify-section-announcement');
       if (bar) {
         var barH = bar.offsetHeight || 0;
@@ -124,21 +113,11 @@
       } else {
         header.style.top = '0px';
       }
-
-      // Body- oder Haupt-Container mit Padding-Top versehen
       document.body.style.paddingTop = h + 'px';
-      var main = document.querySelector('main');
-      if (main) main.style.scrollMarginTop = h + 'px';
     }
-
-    // Initial + bei Resize/Font-Load/DOM-Änderungen
     setOffsets();
     window.addEventListener('resize', setOffsets);
-    document.addEventListener('shopify:section:load', setOffsets);
-    document.addEventListener('shopify:section:unload', setOffsets);
-    if ('ResizeObserver' in window) {
-      new ResizeObserver(setOffsets).observe(header);
-    }
+    if ('ResizeObserver' in window) new ResizeObserver(setOffsets).observe(header);
   })();
 </script>
 
@@ -161,8 +140,6 @@
     { "type": "color", "id": "back_text_color", "label": "Farbe", "default": "#374151" },
     { "type": "color", "id": "back_hover_color", "label": "Farbe (Hover)", "default": "#4ade80" },
     { "type": "range", "id": "back_font_size", "label": "Schriftgröße (px)", "min": 12, "max": 28, "step": 1, "default": 16, "unit": "px" },
-    { "type": "range", "id": "back_position_x", "label": "Position X (%)", "min": -50, "max": 50, "step": 1, "default": 0, "unit": "%" },
-    { "type": "range", "id": "back_position_y", "label": "Position Y (%)", "min": -50, "max": 50, "step": 1, "default": 0, "unit": "%" },
 
     { "type": "header", "content": "Logo" },
     { "type": "image_picker", "id": "logo", "label": "Logo Bild" },
@@ -181,7 +158,15 @@
     { "type": "color", "id": "nav_hover_color", "label": "Navigation Hover-Farbe", "default": "#4ade80" },
     { "type": "range", "id": "nav_font_size", "label": "Navigation Schriftgröße", "min": 12, "max": 24, "step": 1, "default": 16, "unit": "px" },
     { "type": "range", "id": "menu_position_x", "label": "Menü Position X (%)", "min": -50, "max": 50, "step": 1, "default": 0, "unit": "%" },
-    { "type": "range", "id": "menu_position_y", "label": "Menü Position Y (%)", "min": -50, "max": 50, "step": 1, "default": 0, "unit": "%" }
+    { "type": "range", "id": "menu_position_y", "label": "Menü Position Y (%)", "min": -50, "max": 50, "step": 1, "default": 0, "unit": "%" },
+
+    { "type": "header", "content": "Kontakt Button" },
+    { "type": "text", "id": "button_text", "label": "Button Text", "default": "Kontakt" },
+    { "type": "url", "id": "button_link", "label": "Button Link" },
+    { "type": "color", "id": "button_text_color", "label": "Button Textfarbe", "default": "#ffffff" },
+    { "type": "color", "id": "button_bg_color", "label": "Button Hintergrund", "default": "#4ade80" },
+    { "type": "color", "id": "button_hover_text_color", "label": "Button Textfarbe (Hover)", "default": "#ffffff" },
+    { "type": "color", "id": "button_hover_bg_color", "label": "Button Hintergrund (Hover)", "default": "#22c55e" }
   ],
   "presets": [{ "name": "Sticky header" }]
 }
