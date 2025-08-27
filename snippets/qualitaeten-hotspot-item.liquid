@@ -26,13 +26,11 @@
 
 <article class="{{ card_classes }}" {{ block.shopify_attributes }}>
   {% if show_icon_final %}
-    <div class="hi-icon" style="background-color: {{ block.settings.icon_bg }};">
-      {% if icon %}
+    {% if icon %}
+      <div class="hi-icon" style="background-color: {{ block.settings.icon_bg }};">
         {{ icon | image_url: width: 160 | image_tag: loading: 'lazy', class: 'hi-icon__img', widths: '80,120,160' }}
-      {% else %}
-        <span class="hi-icon__placeholder" aria-hidden="true">★</span>
-      {% endif %}
-    </div>
+      </div>
+    {% endif %}
   {% endif %}
 
   <h3 class="hi-card__title">{{ title }}</h3>
