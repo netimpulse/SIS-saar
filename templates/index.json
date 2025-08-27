@@ -357,6 +357,7 @@
         "industrie_legal_rbAnMH",
         "industrie_legal_jURxBG"
       ],
+      "disabled": true,
       "name": "SIS Footer",
       "settings": {
         "background_color": "#111827",
@@ -386,29 +387,29 @@
         "leistungen_link_kG74cq": {
           "type": "leistungen_link",
           "settings": {
-            "text": "Badsanierung",
-            "link": ""
+            "text": "Industrieservice",
+            "link": "shopify://pages/industrieservice-leistungen"
           }
         },
         "leistungen_link_AzgFLY": {
           "type": "leistungen_link",
           "settings": {
-            "text": "Heizungsbau",
-            "link": ""
+            "text": "Gebäudeservice",
+            "link": "shopify://pages/gebaudeservice-leistungen"
           }
         },
         "unternehmen_link_8iityn": {
           "type": "unternehmen_link",
           "settings": {
-            "text": "Team",
-            "link": ""
+            "text": "Kontakt",
+            "link": "shopify://pages/allgemeiner-kontakt"
           }
         },
         "unternehmen_link_yLV8hR": {
           "type": "unternehmen_link",
           "settings": {
-            "text": "Jobs",
-            "link": ""
+            "text": "Karriere",
+            "link": "shopify://pages/gebaudeservice-karriere"
           }
         },
         "kontakt_link_7FDx3f": {
@@ -428,6 +429,7 @@
         "partner_logo_RKdAt8": {
           "type": "partner_logo",
           "settings": {
+            "logo": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
             "alt": "Partner",
             "link": "",
             "new_tab": true
@@ -436,6 +438,7 @@
         "partner_logo_a6NL8k": {
           "type": "partner_logo",
           "settings": {
+            "logo": "shopify://shop_images/logo_Industrieservice_exact_v2.png",
             "alt": "Partner",
             "link": "",
             "new_tab": true
