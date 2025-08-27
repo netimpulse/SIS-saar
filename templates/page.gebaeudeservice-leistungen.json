@@ -274,86 +274,128 @@
         "fallback_bullet_color": "#2b6cb0"
       }
     },
-    "kundenbewertung_JQ9ATr": {
-      "type": "Kundenbewertung",
-      "blocks": {
-        "review_mUxtke": {
-          "type": "review",
-          "settings": {
-            "image_size": 80,
-            "person_name": "Max Mustermann",
-            "name_font": "helvetica_n4",
-            "name_font_size": 18,
-            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
-            "text_font": "helvetica_n4",
-            "text_font_size": 16,
-            "star_rating": 5
-          }
-        },
-        "review_mbRQ7C": {
-          "type": "review",
-          "settings": {
-            "image_size": 80,
-            "person_name": "Max Mustermann",
-            "name_font": "helvetica_n4",
-            "name_font_size": 18,
-            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
-            "text_font": "helvetica_n4",
-            "text_font_size": 16,
-            "star_rating": 5
-          }
-        },
-        "review_49M7rA": {
-          "type": "review",
-          "settings": {
-            "image_size": 80,
-            "person_name": "Max Mustermann",
-            "name_font": "helvetica_n4",
-            "name_font_size": 18,
-            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
-            "text_font": "helvetica_n4",
-            "text_font_size": 16,
-            "star_rating": 5
-          }
-        },
-        "review_zVhQkV": {
-          "type": "review",
-          "settings": {
-            "image_size": 80,
-            "person_name": "Max Mustermann",
-            "name_font": "helvetica_n4",
-            "name_font_size": 18,
-            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
-            "text_font": "helvetica_n4",
-            "text_font_size": 16,
-            "star_rating": 5
-          }
-        },
-        "review_nipAha": {
-          "type": "review",
-          "settings": {
-            "image_size": 80,
-            "person_name": "Max Mustermann",
-            "name_font": "helvetica_n4",
-            "name_font_size": 18,
-            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
-            "text_font": "helvetica_n4",
-            "text_font_size": 16,
-            "star_rating": 5
-          }
-        }
-      },
-      "block_order": [
-        "review_mUxtke",
-        "review_mbRQ7C",
-        "review_49M7rA",
-        "review_zVhQkV",
-        "review_nipAha"
-      ],
-      "name": "Kundenbewertung",
+    "text_mit_bild_button_RzRFn4": {
+      "type": "text-mit-bild-button",
+      "name": "Text mit Bild",
       "settings": {
-        "background_color": "#ffffff",
-        "section_padding": 50
+        "image_position": "right",
+        "image_shadow_strength": 20,
+        "heading": "Unterhaltsreinigung",
+        "heading_font": "sans-serif",
+        "heading_font_size": 42,
+        "heading_color": "#1f1f1f",
+        "subheading": "",
+        "subheading_font": "sans-serif",
+        "subheading_font_size": 18,
+        "subheading_color": "#555555",
+        "text": "<p>Der saubere Auftritt eines Unternehmens und dessen Geschäftsräume sind eine wichtige Erfolgskomponente im Wettbewerb.</p><p>Zu unserem Spektrum gehören alle Leistungen wie die regelmäßige Büro- und Gebäudereinigung, die Grundreinigung und Beschichtung von Bodenbelägen als auch die Teppichreinigung.</p>",
+        "text_font": "sans-serif",
+        "text_font_size": 16,
+        "text_color": "#333333",
+        "button_text": "Detailinformationen",
+        "button_link": "shopify://pages/unterhaltsreinigung",
+        "button_font": "sans-serif",
+        "button_font_size": 16,
+        "button_padding_x": 24,
+        "button_padding_y": 14,
+        "button_border_radius": 10,
+        "button_bg_color": "#242833",
+        "button_bg_hover_color": "#334fb4",
+        "button_text_color": "#ffffff",
+        "button_text_color_hover": "#ffffff"
+      }
+    },
+    "text_mit_bild_button_xPAQqM": {
+      "type": "text-mit-bild-button",
+      "name": "Text mit Bild",
+      "settings": {
+        "image_position": "right",
+        "image_shadow_strength": 20,
+        "heading": "Über uns",
+        "heading_font": "sans-serif",
+        "heading_font_size": 42,
+        "heading_color": "#1f1f1f",
+        "subheading": "",
+        "subheading_font": "sans-serif",
+        "subheading_font_size": 18,
+        "subheading_color": "#555555",
+        "text": "<p>Beschreiben Sie hier Ihr Unternehmen, Ihre Produkte oder Dienstleistungen. Dieser Text ist vollständig anpassbar und unterstützt auch Formatierungen wie <strong>fett</strong> oder <em>kursiv</em>.</p>",
+        "text_font": "sans-serif",
+        "text_font_size": 16,
+        "text_color": "#333333",
+        "button_text": "Schaltflächenbeschriftung",
+        "button_link": "",
+        "button_font": "sans-serif",
+        "button_font_size": 16,
+        "button_padding_x": 24,
+        "button_padding_y": 14,
+        "button_border_radius": 10,
+        "button_bg_color": "#242833",
+        "button_bg_hover_color": "#334fb4",
+        "button_text_color": "#ffffff",
+        "button_text_color_hover": "#ffffff"
+      }
+    },
+    "text_mit_bild_button_zE48kh": {
+      "type": "text-mit-bild-button",
+      "name": "Text mit Bild",
+      "settings": {
+        "image_position": "right",
+        "image_shadow_strength": 20,
+        "heading": "Über uns",
+        "heading_font": "sans-serif",
+        "heading_font_size": 42,
+        "heading_color": "#1f1f1f",
+        "subheading": "",
+        "subheading_font": "sans-serif",
+        "subheading_font_size": 18,
+        "subheading_color": "#555555",
+        "text": "<p>Beschreiben Sie hier Ihr Unternehmen, Ihre Produkte oder Dienstleistungen. Dieser Text ist vollständig anpassbar und unterstützt auch Formatierungen wie <strong>fett</strong> oder <em>kursiv</em>.</p>",
+        "text_font": "sans-serif",
+        "text_font_size": 16,
+        "text_color": "#333333",
+        "button_text": "Schaltflächenbeschriftung",
+        "button_link": "",
+        "button_font": "sans-serif",
+        "button_font_size": 16,
+        "button_padding_x": 24,
+        "button_padding_y": 14,
+        "button_border_radius": 10,
+        "button_bg_color": "#242833",
+        "button_bg_hover_color": "#334fb4",
+        "button_text_color": "#ffffff",
+        "button_text_color_hover": "#ffffff"
+      }
+    },
+    "text_mit_bild_button_3tdqmk": {
+      "type": "text-mit-bild-button",
+      "name": "Text mit Bild",
+      "settings": {
+        "image_position": "right",
+        "image_shadow_strength": 20,
+        "heading": "Über uns",
+        "heading_font": "sans-serif",
+        "heading_font_size": 42,
+        "heading_color": "#1f1f1f",
+        "subheading": "",
+        "subheading_font": "sans-serif",
+        "subheading_font_size": 18,
+        "subheading_color": "#555555",
+        "text": "<p>Beschreiben Sie hier Ihr Unternehmen, Ihre Produkte oder Dienstleistungen. Dieser Text ist vollständig anpassbar und unterstützt auch Formatierungen wie <strong>fett</strong> oder <em>kursiv</em>.</p>",
+        "text_font": "sans-serif",
+        "text_font_size": 16,
+        "text_color": "#333333",
+        "button_text": "Schaltflächenbeschriftung",
+        "button_link": "",
+        "button_font": "sans-serif",
+        "button_font_size": 16,
+        "button_padding_x": 24,
+        "button_padding_y": 14,
+        "button_border_radius": 10,
+        "button_bg_color": "#242833",
+        "button_bg_hover_color": "#334fb4",
+        "button_text_color": "#ffffff",
+        "button_text_color_hover": "#ffffff"
       }
     },
     "custom_cta_block_xMcPbA": {
@@ -478,7 +520,10 @@
     "highlights_icons_kWf4Y9",
     "leistung_final_mzTNaw",
     "leistung_showcase_Wq4Ytn",
-    "kundenbewertung_JQ9ATr",
+    "text_mit_bild_button_RzRFn4",
+    "text_mit_bild_button_xPAQqM",
+    "text_mit_bild_button_zE48kh",
+    "text_mit_bild_button_3tdqmk",
     "custom_cta_block_xMcPbA",
     "sis_single_footer_PQBXAB"
   ]
