@@ -98,7 +98,7 @@
         "item_U66kAy": {
           "type": "item",
           "settings": {
-            "icon_bg": "#e5e7eb",
+            "icon_bg": "#ffffff",
             "title": "QUALITÄT",
             "text": "Kurzer, prägnanter Beschreibungstext für dieses Highlight.",
             "show_btn": true,
