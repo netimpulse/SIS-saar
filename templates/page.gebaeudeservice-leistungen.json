@@ -142,7 +142,7 @@
           "type": "service_card_lf",
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
-            "title": "Titel",
+            "title": "Unterhaltsreinigung",
             "text": "Kurze Beschreibung hier.",
             "link_url": "",
             "link_label": "Mehr erfahren →"
@@ -152,7 +152,7 @@
           "type": "service_card_lf",
           "settings": {
             "image": "shopify://shop_images/shutterstock_370492946.jpg",
-            "title": "Titel",
+            "title": "Glas- / Lamellenreinigung",
             "text": "Kurze Beschreibung hier.",
             "link_url": "",
             "link_label": "Mehr erfahren →"
@@ -162,7 +162,7 @@
           "type": "service_card_lf",
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
-            "title": "Titel",
+            "title": "Bauschlussreinigung",
             "text": "Kurze Beschreibung hier.",
             "link_url": "",
             "link_label": "Mehr erfahren →"
@@ -172,7 +172,7 @@
           "type": "service_card_lf",
           "settings": {
             "image": "shopify://shop_images/sis_location.png",
-            "title": "Titel",
+            "title": "Sonderreinigung",
             "text": "Kurze Beschreibung hier.",
             "link_url": "",
             "link_label": "Mehr erfahren →"
@@ -218,7 +218,7 @@
         "card_link_italic": false,
         "bg_color": "#f3f6f9",
         "text_color": "#222222",
-        "accent_color": "#ff6a00",
+        "accent_color": "#007acc",
         "card_bg": "#ffffff",
         "card_hover_bg": "#ffffff",
         "card_radius": 12,
@@ -264,6 +264,7 @@
         "showcase_item_t9Yecd",
         "showcase_item_3try3B"
       ],
+      "disabled": true,
       "name": "Leistung Showcase",
       "settings": {
         "heading": "Überschrift bei Überschrift",
