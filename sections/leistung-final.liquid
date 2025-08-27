@@ -3,32 +3,40 @@
 
 {%- assign section_id = 'leistung-final-' | append: section.id -%}
 
-/* Inline-Fallback CSS, falls Asset nicht lädt */
+{% comment %} Inline-Fallback CSS, falls Asset nicht lädt {% endcomment %}
 <style>
-#{{ section_id }} .lf-viewport{overflow:hidden;}
-#{{ section_id }} .lf-track{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--lf-gap,20px);}
-@media(max-width:990px){#{{ section_id }} .lf-track{grid-template-columns:repeat(2,minmax(0,1fr));}}
-@media(max-width:640px){#{{ section_id }} .lf-track{grid-template-columns:1fr;}}
-#{{ section_id }} .lf-carousel.lf-carousel--active .lf-track{display:flex;gap:0;transition:transform .35s ease;will-change:transform;}
-#{{ section_id }} .lf-carousel.lf-carousel--active .lf-slide{flex:0 0 calc(100% / var(--lf-per-view,3));padding:0 10px;box-sizing:border-box;}
-#{{ section_id }} .lf-carousel{position:relative;}
-#{{ section_id }} .lf-arrow{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:999px;border:0;background:#f3f4f6;box-shadow:0 2px 10px rgba(0,0,0,.12);display:grid;place-items:center;cursor:pointer;transition:transform .15s,background .2s,opacity .2s;z-index:2}
-#{{ section_id }} .lf-arrow:hover{transform:translateY(-50%) scale(1.05);background:#e5e7eb}
-#{{ section_id }} .lf-prev{left:-24px} #{{ section_id }} .lf-next{right:-24px}
-@media(max-width:640px){#{{ section_id }} .lf-prev{left:6px} #{{ section_id }} .lf-next{right:6px}}
-#{{ section_id }} .lf-dots{display:flex;justify-content:center;gap:8px;margin-top:16px}
-#{{ section_id }} .lf-dot{width:8px;height:8px;border-radius:50%;background:#cbd5e1;border:0;padding:0;cursor:pointer;transition:transform .15s,background .2s}
-#{{ section_id }} .lf-dot:hover{transform:scale(1.1)} #{{ section_id }} .lf-dot.active{background:#111827}
-#{{ section_id }} .lf-card{background:var(--lf-card-bg,#fff);border-radius:var(--lf-card-radius,12px);overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.08);display:flex;flex-direction:column}
-#{{ section_id }} .lf-img{width:100%;height:190px;object-fit:cover;display:block}
+  #{{ section_id }} .lf-viewport{overflow:hidden;}
+  #{{ section_id }} .lf-track{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--lf-gap,20px);}
+  @media(max-width:990px){#{{ section_id }} .lf-track{grid-template-columns:repeat(2,minmax(0,1fr));}}
+  @media(max-width:640px){#{{ section_id }} .lf-track{grid-template-columns:1fr;}}
 
-/* Typografie über Variablen (werden unten befüllt) */
-#{{ section_id }} .lf-heading{font-family:var(--lf-font-head);font-weight:var(--lf-head-fw);font-style:var(--lf-head-style);font-size:var(--lf-head-size);text-align:center;margin:0 0 8px;}
-#{{ section_id }} .lf-subtext{font-family:var(--lf-font-body);font-weight:var(--lf-sub-fw);font-style:var(--lf-sub-style);font-size:var(--lf-sub-size);max-width:720px;line-height:1.6;margin:0 auto 24px;opacity:.9;text-align:center;}
-#{{ section_id }} .lf-card-title{font-family:var(--lf-font-head);font-weight:var(--lf-title-fw);font-style:var(--lf-title-style);font-size:var(--lf-title-size);margin:0 0 8px;}
-#{{ section_id }} .lf-card-text{font-family:var(--lf-font-body);font-weight:var(--lf-text-fw);font-style:var(--lf-text-style);font-size:var(--lf-text-size);margin:0 0 12px;opacity:.9;}
-#{{ section_id }} .lf-card-link{font-family:var(--lf-font-body);font-weight:var(--lf-link-fw);font-style:var(--lf-link-style);font-size:var(--lf-link-size);color:var(--lf-accent);text-decoration:none;}
-#{{ section_id }} .lf-card-link:hover{text-decoration:underline;}
+  /* aktiviertes Karussell */
+  #{{ section_id }} .lf-carousel.lf-carousel--active .lf-track{display:flex;gap:0;transition:transform .35s ease;will-change:transform;}
+  #{{ section_id }} .lf-carousel.lf-carousel--active .lf-slide{flex:0 0 calc(100% / var(--lf-per-view,3));padding:0 10px;box-sizing:border-box;}
+
+  /* Pfeile */
+  #{{ section_id }} .lf-carousel{position:relative;}
+  #{{ section_id }} .lf-arrow{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:999px;border:0;background:#f3f4f6;box-shadow:0 2px 10px rgba(0,0,0,.12);display:grid;place-items:center;cursor:pointer;transition:transform .15s,background .2s,opacity .2s;z-index:2}
+  #{{ section_id }} .lf-arrow:hover{transform:translateY(-50%) scale(1.05);background:#e5e7eb}
+  #{{ section_id }} .lf-prev{left:-24px} #{{ section_id }} .lf-next{right:-24px}
+  @media(max-width:640px){#{{ section_id }} .lf-prev{left:6px} #{{ section_id }} .lf-next{right:6px}}
+
+  /* Punkte */
+  #{{ section_id }} .lf-dots{display:flex;justify-content:center;gap:8px;margin-top:16px}
+  #{{ section_id }} .lf-dot{width:8px;height:8px;border-radius:50%;background:#cbd5e1;border:0;padding:0;cursor:pointer;transition:transform .15s,background .2s}
+  #{{ section_id }} .lf-dot:hover{transform:scale(1.1)} #{{ section_id }} .lf-dot.active{background:#111827}
+
+  /* Basis Card + Bilder */
+  #{{ section_id }} .lf-card{background:var(--lf-card-bg,#fff);border-radius:var(--lf-card-radius,12px);overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.08);display:flex;flex-direction:column}
+  #{{ section_id }} .lf-img{width:100%;height:190px;object-fit:cover;display:block}
+
+  /* Typografie über Variablen (unten befüllt) */
+  #{{ section_id }} .lf-heading{font-family:var(--lf-font-head);font-weight:var(--lf-head-fw);font-style:var(--lf-head-style);font-size:var(--lf-head-size);text-align:center;margin:0 0 8px;}
+  #{{ section_id }} .lf-subtext{font-family:var(--lf-font-body);font-weight:var(--lf-sub-fw);font-style:var(--lf-sub-style);font-size:var(--lf-sub-size);max-width:720px;line-height:1.6;margin:0 auto 24px;opacity:.9;text-align:center;}
+  #{{ section_id }} .lf-card-title{font-family:var(--lf-font-head);font-weight:var(--lf-title-fw);font-style:var(--lf-title-style);font-size:var(--lf-title-size);margin:0 0 8px;}
+  #{{ section_id }} .lf-card-text{font-family:var(--lf-font-body);font-weight:var(--lf-text-fw);font-style:var(--lf-text-style);font-size:var(--lf-text-size);margin:0 0 12px;opacity:.9;}
+  #{{ section_id }} .lf-card-link{font-family:var(--lf-font-body);font-weight:var(--lf-link-fw);font-style:var(--lf-link-style);font-size:var(--lf-link-size);color:var(--lf-accent);text-decoration:none;}
+  #{{ section_id }} .lf-card-link:hover{text-decoration:underline;}
 </style>
 
 <section id="{{ section_id }}"
@@ -44,21 +52,19 @@
     --lf-gap: {{ section.settings.grid_gap }}px;
     --lf-pad: {{ section.settings.section_padding }}px;
 
-    /* Fonts: Familien */
+    /* Schriftfamilien */
     --lf-font-head: {{ section.settings.font_heading.family }}, {{ section.settings.font_heading.fallback_families }};
     --lf-font-body: {{ section.settings.font_body.family }}, {{ section.settings.font_body.fallback_families }};
 
-    /* Typo Variablen – Section Head */
+    /* Typografie-Variablen */
     --lf-head-fw: {% if section.settings.heading_bold %}700{% else %}{{ section.settings.font_heading.weight | default: 600 }}{% endif %};
     --lf-head-style: {% if section.settings.heading_italic %}italic{% else %}{{ section.settings.font_heading.style | default: 'normal' }}{% endif %};
     --lf-head-size: {{ section.settings.heading_size | default: 32 }}px;
 
-    /* Typo Variablen – Subtext */
     --lf-sub-fw: {% if section.settings.subtext_bold %}600{% else %}{{ section.settings.font_body.weight | default: 400 }}{% endif %};
     --lf-sub-style: {% if section.settings.subtext_italic %}italic{% else %}{{ section.settings.font_body.style | default: 'normal' }}{% endif %};
     --lf-sub-size: {{ section.settings.subtext_size | default: 16 }}px;
 
-    /* Typo Variablen – Karten */
     --lf-title-fw: {% if section.settings.card_title_bold %}700{% else %}{{ section.settings.font_heading.weight | default: 600 }}{% endif %};
     --lf-title-style: {% if section.settings.card_title_italic %}italic{% else %}{{ section.settings.font_heading.style | default: 'normal' }}{% endif %};
     --lf-title-size: {{ section.settings.card_title_size | default: 18 }}px;
@@ -185,7 +191,7 @@
     Array.prototype.forEach.call(dotsWrap.children, function(d, i){
       d.classList.toggle('active', i === current);
     });
-    /* Mit Loop nie deaktivieren */
+    /* Loop: Pfeile nie disablen */
     prevBtn.disabled = false;
     nextBtn.disabled = false;
   }
