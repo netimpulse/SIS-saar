@@ -99,6 +99,24 @@
             "file_url": "",
             "tags": "Zertifikat, ISO, 9001"
           }
+        },
+        "download_Yf6qxN": {
+          "type": "download",
+          "settings": {
+            "title": "ISO 9001",
+            "date": "11.09.2023",
+            "file_url": "",
+            "tags": "Zertifikat, ISO, 9001"
+          }
+        },
+        "download_cYwP6y": {
+          "type": "download",
+          "settings": {
+            "title": "ISO 9001",
+            "date": "11.09.2023",
+            "file_url": "",
+            "tags": "Zertifikat, ISO, 9001"
+          }
         }
       },
       "block_order": [
@@ -107,7 +125,9 @@
         "download_6fPBmX",
         "download_4Y6eV7",
         "download_dGWLCx",
-        "download_6qaXwF"
+        "download_6qaXwF",
+        "download_Yf6qxN",
+        "download_cYwP6y"
       ],
       "name": "Downloads / Zertifikate",
       "settings": {
