@@ -129,7 +129,7 @@
       "name": "Über Uns (Layout)",
       "settings": {
         "layout_direction": "text_left",
-        "background_color": "#ffffff",
+        "background_color": "#f3f3f3",
         "section_padding_top": 80,
         "section_padding_bottom": 80,
         "title": "Über uns",
@@ -145,6 +145,88 @@
         "icon_size": 32,
         "icon_color": "#34d399",
         "feature_title_color": "#111827"
+      }
+    },
+    "about_experience_PtnLUT": {
+      "type": "about-experience",
+      "blocks": {
+        "badge_cVJ3YH": {
+          "type": "badge",
+          "settings": {
+            "badge_text": "200+ Kunden"
+          }
+        },
+        "badge_fdnJXL": {
+          "type": "badge",
+          "settings": {
+            "badge_text": "50+ Mitarbeiter"
+          }
+        },
+        "badge_XKEfBY": {
+          "type": "badge",
+          "settings": {
+            "badge_text": "15+ Jahre Erfahrung"
+          }
+        },
+        "stat_zgiyhn": {
+          "type": "stat",
+          "settings": {
+            "emoji": "✅",
+            "title": "ISO 9001",
+            "subtitle": "Zertifizierte Qualität",
+            "aria_label": "1"
+          }
+        },
+        "stat_gfmYxN": {
+          "type": "stat",
+          "settings": {
+            "emoji": "✅",
+            "title": "24/7",
+            "subtitle": "Notfallservice",
+            "aria_label": "1"
+          }
+        },
+        "stat_tfKQt3": {
+          "type": "stat",
+          "settings": {
+            "emoji": "✅",
+            "title": "100%",
+            "subtitle": "Kundenzufriedenheit",
+            "aria_label": "1"
+          }
+        },
+        "stat_iffd3f": {
+          "type": "stat",
+          "settings": {
+            "emoji": "🌱",
+            "title": "Nachhaltig",
+            "subtitle": "Zertifizierte Qualität",
+            "aria_label": "1"
+          }
+        }
+      },
+      "block_order": [
+        "badge_cVJ3YH",
+        "badge_fdnJXL",
+        "badge_XKEfBY",
+        "stat_zgiyhn",
+        "stat_gfmYxN",
+        "stat_tfKQt3",
+        "stat_iffd3f"
+      ],
+      "name": "Über uns – Erfahrung/Stats",
+      "settings": {
+        "kicker": "Über 15 Jahre Erfahrung",
+        "heading": "Über 15 Jahre Erfahrung",
+        "richtext": "<p>Als familiengeführtes Unternehmen legen wir Wert auf persönlichen Service und langfristige Kundenbeziehungen. Unser Team von über 50 qualifizierten Mitarbeitern sorgt täglich dafür, dass mehr als 200 zufriedene Kunden auf unsere Zuverlässigkeit vertrauen können.</p>",
+        "btn_label": "Mehr über uns erfahren",
+        "btn_link": "",
+        "btn_newtab": false,
+        "bg_color": "#ffffff",
+        "card_bg": "#ffffff",
+        "card_radius": 16,
+        "text_color": "#111111",
+        "accent_color": "#22C55E"
       }
     },
     "highlights_icons_4mpBYK": {
@@ -398,6 +480,7 @@
     "main",
     "hero_overlay_section_Rk9gNP",
     "about_section_FRmjn4",
+    "about_experience_PtnLUT",
     "highlights_icons_4mpBYK",
     "team_Vf9RQW",
     "custom_cta_block_EcaCpX",
