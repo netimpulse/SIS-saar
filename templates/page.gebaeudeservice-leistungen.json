@@ -125,7 +125,7 @@
       ],
       "name": "Highlights – Icons",
       "settings": {
-        "heading": "Das macht uns aus",
+        "heading": "Unsere Qualitäten",
         "intro": "<p>Kurzer Einleitungstext, der die Highlights erklärt.</p>",
         "color_scheme": "background-1",
         "gap": 24,
@@ -141,6 +141,7 @@
         "service_card_lf_LCXAEL": {
           "type": "service_card_lf",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
             "title": "Titel",
             "text": "Kurze Beschreibung hier.",
             "link_url": "",
@@ -150,6 +151,7 @@
         "service_card_lf_K9CA39": {
           "type": "service_card_lf",
           "settings": {
+            "image": "shopify://shop_images/shutterstock_370492946.jpg",
             "title": "Titel",
             "text": "Kurze Beschreibung hier.",
             "link_url": "",
@@ -159,6 +161,7 @@
         "service_card_lf_GhBQY3": {
           "type": "service_card_lf",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
             "title": "Titel",
             "text": "Kurze Beschreibung hier.",
             "link_url": "",
@@ -168,58 +171,14 @@
         "service_card_lf_9zpRDB": {
           "type": "service_card_lf",
           "settings": {
+            "image": "shopify://shop_images/sis_location.png",
             "title": "Titel",
             "text": "Kurze Beschreibung hier.",
             "link_url": "",
             "link_label": "Mehr erfahren →"
           }
         },
-        "service_card_lf_JpJYnR": {
-          "type": "service_card_lf",
-          "settings": {
-            "title": "Titel",
-            "text": "Kurze Beschreibung hier.",
-            "link_url": "",
-            "link_label": "Mehr erfahren →"
-          }
-        },
-        "service_card_lf_3dXJQw": {
-          "type": "service_card_lf",
-          "settings": {
-            "title": "Titel",
-            "text": "Kurze Beschreibung hier.",
-            "link_url": "",
-            "link_label": "Mehr erfahren →"
-          }
-        },
-        "service_card_lf_AgYJgK": {
-          "type": "service_card_lf",
-          "settings": {
-            "title": "Titel",
-            "text": "Kurze Beschreibung hier.",
-            "link_url": "",
-            "link_label": "Mehr erfahren →"
-          }
-        },
-        "service_card_lf_YLCJjy": {
-          "type": "service_card_lf",
-          "settings": {
-            "title": "Titel",
-            "text": "Kurze Beschreibung hier.",
-            "link_url": "",
-            "link_label": "Mehr erfahren →"
-          }
-        },
-        "service_card_lf_E7JFRc": {
-          "type": "service_card_lf",
-          "settings": {
-            "title": "Titel",
-            "text": "Kurze Beschreibung hier.",
-            "link_url": "",
-            "link_label": "Mehr erfahren →"
-          }
-        },
-        "service_card_lf_UQJbBh": {
+        "service_card_lf_kAz9it": {
           "type": "service_card_lf",
           "settings": {
             "title": "Titel",
@@ -234,12 +193,7 @@
         "service_card_lf_K9CA39",
         "service_card_lf_GhBQY3",
         "service_card_lf_9zpRDB",
-        "service_card_lf_JpJYnR",
-        "service_card_lf_3dXJQw",
-        "service_card_lf_AgYJgK",
-        "service_card_lf_YLCJjy",
-        "service_card_lf_E7JFRc",
-        "service_card_lf_UQJbBh"
+        "service_card_lf_kAz9it"
       ],
       "name": "Leistung final",
       "settings": {
@@ -275,73 +229,101 @@
         "button_label": "Mehr erfahren",
         "button_url": "shopify://pages/gebaudeservice-kontakt",
         "button_align": "center",
+        "button_full_width": false,
+        "button_max_width": 420,
+        "button_font_size": 16,
+        "button_bold": true,
+        "button_italic": false,
+        "button_padding_x": 20,
+        "button_padding_y": 10,
+        "button_margin_top": 28,
+        "button_margin_bottom": 0,
         "button_bg": "#000000",
-        "button_hover_bg": "#334fb4",
         "button_text": "#ffffff",
-        "button_radius": 17
+        "button_hover_bg": "#334fb4",
+        "button_hover_text": "#ffffff"
       }
     },
-    "leistungen_ueberarbeitet_zVAJTt": {
-      "type": "leistungen-ueberarbeitet",
+    "kundenbewertung_JQ9ATr": {
+      "type": "Kundenbewertung",
       "blocks": {
-        "service_card_lue_cH6tzT": {
-          "type": "service_card_lue",
+        "review_mUxtke": {
+          "type": "review",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
-            "title": "Reinigung",
-            "text": "Unsere Industriereinigung sorgt für Sauberkeit und Sicherheit in Produktions- und Fertigungsstätten – effizient, zuverlässig und nach höchsten Standards.",
-            "link_url": "shopify://pages/industrieservice-reinigung",
-            "link_label": "Mehr Erfahren"
+            "image_size": 80,
+            "person_name": "Max Mustermann",
+            "name_font": "helvetica_n4",
+            "name_font_size": 18,
+            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
+            "text_font": "helvetica_n4",
+            "text_font_size": 16,
+            "star_rating": 5
           }
         },
-        "service_card_lue_Dhp4wf": {
-          "type": "service_card_lue",
+        "review_mbRQ7C": {
+          "type": "review",
           "settings": {
-            "title": "We Understand Requirements",
-            "text": "Sed sit amet sapien sit amet odio lobortis ullamcorper quis vel nisl. Nam blandit maximus tristique.",
-            "link_url": "",
-            "link_label": "Learn More →"
+            "image_size": 80,
+            "person_name": "Max Mustermann",
+            "name_font": "helvetica_n4",
+            "name_font_size": 18,
+            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
+            "text_font": "helvetica_n4",
+            "text_font_size": 16,
+            "star_rating": 5
           }
         },
-        "service_card_lue_LFetP8": {
-          "type": "service_card_lue",
+        "review_49M7rA": {
+          "type": "review",
           "settings": {
-            "image": "shopify://shop_images/shutterstock_370492946.jpg",
-            "title": "Wartung",
-            "text": "Regelmäßige Wartung verlängert die Lebensdauer Ihrer Anlagen und gewährleistet einen sicheren, störungsfreien Betrieb",
-            "link_url": "",
-            "link_label": "Learn More →"
+            "image_size": 80,
+            "person_name": "Max Mustermann",
+            "name_font": "helvetica_n4",
+            "name_font_size": 18,
+            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
+            "text_font": "helvetica_n4",
+            "text_font_size": 16,
+            "star_rating": 5
+          }
+        },
+        "review_zVhQkV": {
+          "type": "review",
+          "settings": {
+            "image_size": 80,
+            "person_name": "Max Mustermann",
+            "name_font": "helvetica_n4",
+            "name_font_size": 18,
+            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
+            "text_font": "helvetica_n4",
+            "text_font_size": 16,
+            "star_rating": 5
+          }
+        },
+        "review_nipAha": {
+          "type": "review",
+          "settings": {
+            "image_size": 80,
+            "person_name": "Max Mustermann",
+            "name_font": "helvetica_n4",
+            "name_font_size": 18,
+            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
+            "text_font": "helvetica_n4",
+            "text_font_size": 16,
+            "star_rating": 5
           }
         }
       },
       "block_order": [
-        "service_card_lue_cH6tzT",
-        "service_card_lue_Dhp4wf",
-        "service_card_lue_LFetP8"
+        "review_mUxtke",
+        "review_mbRQ7C",
+        "review_49M7rA",
+        "review_zVhQkV",
+        "review_nipAha"
       ],
-      "name": "Leistungen überarbeitet",
+      "name": "Kundenbewertung",
       "settings": {
-        "heading": "Unsere Leistungen",
-        "subtext": "Hier sind unsere Kernleistungen im Bereich Industrieservice",
-        "font_heading": "helvetica_n4",
-        "font_body": "helvetica_n4",
-        "bg_color": "#ffffff",
-        "text_color": "#222222",
-        "accent_color": "#4ade80",
-        "card_bg": "#ffffff",
-        "card_hover_bg": "#ffffff",
-        "card_radius": 12,
-        "card_hover_lift": 6,
-        "grid_gap": 20,
-        "section_padding": 24,
-        "show_button": true,
-        "button_label": "Schaltflächenbeschriftung",
-        "button_url": "",
-        "button_align": "center",
-        "button_bg": "#242833",
-        "button_hover_bg": "#6f7276",
-        "button_text": "#ffffff",
-        "button_radius": 20
+        "background_color": "#ffffff",
+        "section_padding": 50
       }
     },
     "custom_cta_block_xMcPbA": {
@@ -465,7 +447,7 @@
     "hero_building_section_jFhK9K",
     "highlights_icons_kWf4Y9",
     "leistung_final_mzTNaw",
-    "leistungen_ueberarbeitet_zVAJTt",
+    "kundenbewertung_JQ9ATr",
     "custom_cta_block_xMcPbA",
     "sis_single_footer_PQBXAB"
   ]
