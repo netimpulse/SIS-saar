@@ -379,6 +379,102 @@
         "industrie_email": "industrie@sis-saar.de",
         "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
+    },
+    "sis_footer_neu_nw6VCQ": {
+      "type": "sis-footer-neu",
+      "blocks": {
+        "leistungen_link_kG74cq": {
+          "type": "leistungen_link",
+          "settings": {
+            "text": "Badsanierung",
+            "link": ""
+          }
+        },
+        "leistungen_link_AzgFLY": {
+          "type": "leistungen_link",
+          "settings": {
+            "text": "Heizungsbau",
+            "link": ""
+          }
+        },
+        "unternehmen_link_8iityn": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Team",
+            "link": ""
+          }
+        },
+        "unternehmen_link_yLV8hR": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Jobs",
+            "link": ""
+          }
+        },
+        "kontakt_link_7FDx3f": {
+          "type": "kontakt_link",
+          "settings": {
+            "text": "Impressum",
+            "link": ""
+          }
+        },
+        "kontakt_link_b7tpnY": {
+          "type": "kontakt_link",
+          "settings": {
+            "text": "Datenschutz",
+            "link": ""
+          }
+        },
+        "partner_logo_RKdAt8": {
+          "type": "partner_logo",
+          "settings": {
+            "alt": "Partner",
+            "link": "",
+            "new_tab": true
+          }
+        },
+        "partner_logo_a6NL8k": {
+          "type": "partner_logo",
+          "settings": {
+            "alt": "Partner",
+            "link": "",
+            "new_tab": true
+          }
+        }
+      },
+      "block_order": [
+        "leistungen_link_kG74cq",
+        "leistungen_link_AzgFLY",
+        "unternehmen_link_8iityn",
+        "unternehmen_link_yLV8hR",
+        "kontakt_link_7FDx3f",
+        "kontakt_link_b7tpnY",
+        "partner_logo_RKdAt8",
+        "partner_logo_a6NL8k"
+      ],
+      "name": "SIS Footer NEU",
+      "settings": {
+        "background_color": "#111827",
+        "section_padding": 60,
+        "separator_color": "#374151",
+        "title_color": "#ffffff",
+        "title_font_size": 24,
+        "subtitle_color": "#d1d5db",
+        "subtitle_font_size": 18,
+        "text_color": "#9ca3af",
+        "text_font_size": 14,
+        "link_color": "#60a5fa",
+        "col1_title": "Leistungen",
+        "col2_title": "Unternehmen",
+        "col3_title": "Kontakt",
+        "col4_title": "Partner",
+        "contact_company": "SIS Saar",
+        "contact_address": "Musterstraße 1, 12345 Musterstadt",
+        "contact_phone": "0123 / 456 789",
+        "contact_email": "info@sis-saar.de",
+        "contact_hours": "Mo–Fr 8–17 Uhr",
+        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
+      }
     }
   },
   "order": [
@@ -389,6 +485,7 @@
     "interactive_map_BWTdBe",
     "text_mit_bild_button_6UPhhG",
     "custom_cta_block_UK3hyB",
-    "sis_footer_E9Qb9V"
+    "sis_footer_E9Qb9V",
+    "sis_footer_neu_nw6VCQ"
   ]
 }
