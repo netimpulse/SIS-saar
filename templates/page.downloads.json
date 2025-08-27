@@ -42,186 +42,91 @@
         "text_alignment": "left"
       }
     },
-    "partner_logos_e7Eb7J": {
-      "type": "partner-logos",
+    "downloads_dXGd8N": {
+      "type": "downloads",
       "blocks": {
-        "logo_q3ni9V": {
-          "type": "logo",
+        "download_fxWaAz": {
+          "type": "download",
           "settings": {
-            "logo": "shopify://shop_images/SIS_Gruppe_logo.png",
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
+            "title": "ISO 9001",
+            "date": "11.09.2023",
+            "image": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
+            "file_url": "",
+            "tags": "Zertifikat, ISO, 9001"
           }
         },
-        "logo_ALFJVp": {
-          "type": "logo",
+        "download_tMiKnQ": {
+          "type": "download",
           "settings": {
-            "logo": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
+            "title": "ISO 9001",
+            "date": "11.09.2023",
+            "file_url": "",
+            "tags": "Zertifikat, ISO, 9001"
           }
         },
-        "logo_CaFVen": {
-          "type": "logo",
+        "download_6fPBmX": {
+          "type": "download",
           "settings": {
-            "logo": "shopify://shop_images/ChatGPT_Image_31._Juli_2025_18_20_03.png",
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
+            "title": "ISO 9001",
+            "date": "11.09.2023",
+            "file_url": "",
+            "tags": "Zertifikat, ISO, 9001"
           }
         },
-        "logo_3WixzK": {
-          "type": "logo",
+        "download_4Y6eV7": {
+          "type": "download",
           "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
+            "title": "ISO 9001",
+            "date": "11.09.2023",
+            "file_url": "",
+            "tags": "Zertifikat, ISO, 9001"
           }
         },
-        "logo_XcKQnh": {
-          "type": "logo",
+        "download_dGWLCx": {
+          "type": "download",
           "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
+            "title": "ISO 9001",
+            "date": "11.09.2023",
+            "file_url": "",
+            "tags": "Zertifikat, ISO, 9001"
           }
         },
-        "logo_dcJrrr": {
-          "type": "logo",
+        "download_6qaXwF": {
+          "type": "download",
           "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
-          }
-        },
-        "logo_wDkpGV": {
-          "type": "logo",
-          "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
-          }
-        },
-        "logo_Ug6JXG": {
-          "type": "logo",
-          "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
-          }
-        },
-        "logo_yWDBU7": {
-          "type": "logo",
-          "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
-          }
-        },
-        "logo_FRpmjz": {
-          "type": "logo",
-          "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
-          }
-        },
-        "logo_nQY3LB": {
-          "type": "logo",
-          "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
-          }
-        },
-        "logo_qXGeCt": {
-          "type": "logo",
-          "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
-          }
-        },
-        "logo_HUnt7h": {
-          "type": "logo",
-          "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
-          }
-        },
-        "logo_DQjzVD": {
-          "type": "logo",
-          "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
-          }
-        },
-        "logo_paUrC7": {
-          "type": "logo",
-          "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
+            "title": "ISO 9001",
+            "date": "11.09.2023",
+            "file_url": "",
+            "tags": "Zertifikat, ISO, 9001"
           }
         }
       },
       "block_order": [
-        "logo_q3ni9V",
-        "logo_ALFJVp",
-        "logo_CaFVen",
-        "logo_3WixzK",
-        "logo_XcKQnh",
-        "logo_dcJrrr",
-        "logo_wDkpGV",
-        "logo_Ug6JXG",
-        "logo_yWDBU7",
-        "logo_FRpmjz",
-        "logo_nQY3LB",
-        "logo_qXGeCt",
-        "logo_HUnt7h",
-        "logo_DQjzVD",
-        "logo_paUrC7"
+        "download_fxWaAz",
+        "download_tMiKnQ",
+        "download_6fPBmX",
+        "download_4Y6eV7",
+        "download_dGWLCx",
+        "download_6qaXwF"
       ],
-      "name": "Partner-Logos (Grid)",
+      "name": "Downloads / Zertifikate",
       "settings": {
-        "eyebrow": "MIT WEM ARBEITEN WIR ZUSAMMEN?",
-        "eyebrow_marker": true,
-        "heading": "<p>Lernen Sie <strong>unsere Partner</strong> kennen</p>",
-        "subtext": "<p>Entdecken Sie die Unternehmen, deren erstklassige Produkte und Dienstleistungen wir nutzen.</p>",
-        "color_scheme": "background-1",
-        "gap": 24,
-        "cols_desktop": 4,
-        "cols_tablet": 3,
-        "show_dividers": true,
-        "logo_max_height": 72,
-        "gray_on": false,
-        "hover_opacity": 100,
-        "open_new": true
+        "heading": "Downloads",
+        "subtext": "<p>Hier finden Sie unsere Zertifikate, Broschüren und weitere Unterlagen. Klicken Sie auf eine Kachel oder den Button, um die Datei herunterzuladen.</p>",
+        "text_color": "#111111",
+        "font_size": 34,
+        "subtext_size": 16,
+        "font_family": "theme",
+        "show_search": true,
+        "search_placeholder": "Suchen… (Titel oder Tags, z. B. ISO, VDI, Brandschutz)",
+        "search_hint": "Tipp: Mehrere Tags mit Komma trennen – z. B. “ISO, 9001”",
+        "hover_color": "#e6f4ff"
       }
     }
   },
   "order": [
     "main",
     "hero_building_section_ztyrhy",
-    "partner_logos_e7Eb7J"
+    "downloads_dXGd8N"
   ]
 }
