@@ -419,6 +419,13 @@
             "link": "shopify://pages/partner"
           }
         },
+        "unternehmen_link_GetrT3": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Downloads",
+            "link": "shopify://pages/downloads"
+          }
+        },
         "kontakt_link_F9KkVU": {
           "type": "kontakt_link",
           "settings": {
@@ -465,6 +472,7 @@
         "unternehmen_link_8EkMEt",
         "unternehmen_link_JyWGQA",
         "unternehmen_link_JpjtgE",
+        "unternehmen_link_GetrT3",
         "kontakt_link_F9KkVU",
         "kontakt_link_TwQexH",
         "kontakt_link_4pHeLi",
