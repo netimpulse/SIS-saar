@@ -439,6 +439,45 @@
         "link_color": "#3b82f6",
         "divider_color": "#1e293b"
       }
+    },
+    "leistung_showcase_Wq4Ytn": {
+      "type": "leistung-showcase",
+      "blocks": {
+        "showcase_item_t9Yecd": {
+          "type": "showcase_item",
+          "settings": {
+            "text": "<p>hier steht ein text</p>"
+          }
+        },
+        "showcase_item_3try3B": {
+          "type": "showcase_item",
+          "settings": {
+            "text": "<p>hier steht ein text</p>"
+          }
+        }
+      },
+      "block_order": [
+        "showcase_item_t9Yecd",
+        "showcase_item_3try3B"
+      ],
+      "name": "Leistung Showcase",
+      "settings": {
+        "heading": "Überschrift bei Überschrift",
+        "subtext": "<p>hier steht ein text</p>",
+        "main_image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
+        "image_radius": 12,
+        "image_position": "left",
+        "bg_color": "#ffffff",
+        "section_padding": 24,
+        "points_title": "Unsere Dienstleistungen:",
+        "points_as_card": true,
+        "points_bg": "#FFFFFF",
+        "points_border": "#E5E8EE",
+        "points_btn_label": "Jetzt anfragen",
+        "points_btn_url": "",
+        "points_btn_align": "left",
+        "fallback_bullet_color": "#2B6CB0"
+      }
     }
   },
   "order": [
@@ -449,6 +488,7 @@
     "leistung_final_mzTNaw",
     "kundenbewertung_JQ9ATr",
     "custom_cta_block_xMcPbA",
-    "sis_single_footer_PQBXAB"
+    "sis_single_footer_PQBXAB",
+    "leistung_showcase_Wq4Ytn"
   ]
 }
