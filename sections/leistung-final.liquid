@@ -1,5 +1,5 @@
 {% comment %}
-  Section: Leistung final – mit Karussell
+  Section: Leistung final – mit Karussell (fixes: Grid-Fallback, Pfeile außen, Dots mittig)
 {% endcomment %}
 
 {{ 'leistung-final.css' | asset_url | stylesheet_tag }}
@@ -37,6 +37,10 @@
 
     <div class="lf-carousel" data-section-id="{{ section.id }}">
       <div class="lf-viewport">
+        {%- comment -%}
+          Default-Markup: ohne JS zeigen wir automatisch ein Grid (per CSS).
+          JS schaltet .lf-carousel--active ein und macht aus .lf-track ein flexbasiertes Karussell.
+        {%- endcomment -%}
         <div class="lf-track">
           {%- for block in section.blocks -%}
             {%- if block.type == 'service_card_lf' -%}
@@ -57,10 +61,14 @@
 
       <!-- Pfeile -->
       <button class="lf-arrow lf-prev" aria-label="Zurück" type="button">
-        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
       </button>
       <button class="lf-arrow lf-next" aria-label="Weiter" type="button">
-        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
       </button>
 
       <!-- Punkte -->
@@ -89,95 +97,78 @@
 
     function getState() {
       const isMobile = window.matchMedia('(max-width: 640px)').matches;
-      const slidesPerView = isMobile ? 1 : 3;
-      const enableCarousel = isMobile || slides.length > 3;
-      return { isMobile, slidesPerView, enableCarousel };
+      const perView = isMobile ? 1 : 3;
+      const enable  = isMobile || slides.length > 3;
+      return { isMobile, perView, enable };
     }
 
-    let current = 0;
-    let pages = 1;
-    let state = getState();
+    let current = 0, pages = 1, state = getState();
 
-    function setupLayout() {
+    function setup() {
       state = getState();
 
-      // Grid-Modus
-      if (!state.enableCarousel) {
-        root.classList.add('lf-grid-mode');
-        track.style.transform = 'translateX(0)';
-        prevBtn.style.display = 'none';
-        nextBtn.style.display = 'none';
-        dotsWrap.innerHTML = '';
-        return;
-      }
+      // Default: Grid (kein Karussell)
+      root.classList.remove('lf-carousel--active');
+      prevBtn.style.display = 'none';
+      nextBtn.style.display = 'none';
+      dotsWrap.innerHTML = '';
+      track.style.transform = 'translateX(0)';
 
-      // Karussell-Modus
-      root.classList.remove('lf-grid-mode');
+      if (!state.enable) return;
+
+      // Karussell aktivieren
+      root.classList.add('lf-carousel--active');
+      root.style.setProperty('--lf-per-view', state.perView);
       prevBtn.style.display = '';
       nextBtn.style.display = '';
 
-      const basis = (100 / state.slidesPerView);
-      slides.forEach(s => { s.style.flex = '0 0 ' + basis + '%'; });
-
-      pages = Math.max(1, Math.ceil(slides.length / state.slidesPerView));
+      pages = Math.max(1, Math.ceil(slides.length / state.perView));
       if (current > pages - 1) current = pages - 1;
 
+      // Dots erzeugen
       dotsWrap.innerHTML = '';
       for (let i = 0; i < pages; i++) {
         const b = document.createElement('button');
         b.type = 'button';
         b.className = 'lf-dot';
         b.setAttribute('role', 'tab');
-        b.setAttribute('aria-label', 'Seite ' + (i+1));
-        b.addEventListener('click', () => { goTo(i); });
+        b.setAttribute('aria-label', 'Seite ' + (i + 1));
+        b.addEventListener('click', () => goTo(i));
         dotsWrap.appendChild(b);
       }
       update();
     }
 
     function update() {
-      const offset = current * -100;
-      track.style.transform = 'translateX(' + offset + '%)';
-      dotsWrap.querySelectorAll('.lf-dot').forEach((d, i) => {
-        d.classList.toggle('active', i === current);
-      });
-      prevBtn.disabled = (current === 0);
-      nextBtn.disabled = (current >= pages - 1);
+      track.style.transform = 'translateX(' + (current * -100) + '%)';
+      dotsWrap.querySelectorAll('.lf-dot').forEach((d, i) => d.classList.toggle('active', i === current));
+      prevBtn.disabled = current === 0;
+      nextBtn.disabled = current >= pages - 1;
     }
 
-    function goTo(idx) {
-      current = Math.max(0, Math.min(pages - 1, idx));
+    function goTo(i) {
+      current = Math.max(0, Math.min(pages - 1, i));
       update();
     }
 
     prevBtn.addEventListener('click', () => goTo(current - 1));
     nextBtn.addEventListener('click', () => goTo(current + 1));
 
-    // Swipe
+    // Swipe/Drag
     let startX = 0, moved = 0, dragging = false;
-    function onStart(e){
-      dragging = true;
-      startX = (e.touches ? e.touches[0].clientX : e.clientX);
-      moved = 0;
-      track.style.transition = 'none';
-    }
+    function onStart(e){ dragging = true; startX = (e.touches ? e.touches[0].clientX : e.clientX); moved = 0; track.style.transition = 'none'; }
     function onMove(e){
       if (!dragging) return;
       const x = (e.touches ? e.touches[0].clientX : e.clientX);
       moved = x - startX;
-      const width = viewport.clientWidth;
-      const deltaPct = (moved / width) * 100;
+      const deltaPct = (moved / viewport.clientWidth) * 100;
       track.style.transform = 'translateX(' + (-(current*100) + deltaPct) + '%)';
     }
     function onEnd(){
       if (!dragging) return;
-      dragging = false;
-      track.style.transition = '';
-      if (Math.abs(moved) > viewport.clientWidth * 0.15) {
-        if (moved < 0) goTo(current + 1); else goTo(current - 1);
-      } else {
-        update();
-      }
+      dragging = false; track.style.transition = '';
+      if (Math.abs(moved) > viewport.clientWidth * 0.15) { moved < 0 ? goTo(current + 1) : goTo(current - 1); }
+      else { update(); }
     }
     track.addEventListener('pointerdown', onStart);
     window.addEventListener('pointermove', onMove);
@@ -186,10 +177,10 @@
     track.addEventListener('touchmove', onMove, {passive:true});
     track.addEventListener('touchend', onEnd);
 
-    setupLayout();
-    window.addEventListener('resize', setupLayout);
-    document.addEventListener('shopify:section:load', setupLayout);
-    document.addEventListener('shopify:section:unload', setupLayout);
+    setup();
+    window.addEventListener('resize', setup);
+    document.addEventListener('shopify:section:load', setup);
+    document.addEventListener('shopify:section:unload', setup);
   })();
 </script>
 
