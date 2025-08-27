@@ -1,10 +1,7 @@
 {{ 'sticky-header.css' | asset_url | stylesheet_tag }}
 
 <style>
-  #sticky-header-{{ section.id }} {
-    position: fixed; top: 0; left: 0; right: 0;
-    z-index: 1000; width: 100%;
-  }
+  #sticky-header-{{ section.id }}{ position:fixed; top:0; left:0; right:0; z-index:1000; width:100%; }
 </style>
 
 <style>
@@ -15,12 +12,9 @@
 
     --logo-height: {{ section.settings.logo_height | default: 40 }}px;
     --header-min-height: calc(var(--logo-height) + (var(--padding-vertical) * 2));
+    --brand-gap: 16px;
 
-    --logo-pos-x: {{ section.settings.logo_position_x }}%;
-    --logo-pos-y: {{ section.settings.logo_position_y }}%;
-    --menu-pos-x: {{ section.settings.menu_position_x }}%;
-    --menu-pos-y: {{ section.settings.menu_position_y }}%;
-
+    /* Navigation Typo */
     --nav-font-family: {{ section.settings.nav_font.family }}, {{ section.settings.nav_font.fallback_families }};
     --nav-font-style: {{ section.settings.nav_font.style }};
     --nav-font-weight: {% if section.settings.nav_font_bold %}bold{% else %}{{ section.settings.nav_font.weight }}{% endif %};
@@ -33,6 +27,7 @@
     --btn-hover-text-color: {{ section.settings.button_hover_text_color }};
     --btn-hover-bg-color: {{ section.settings.button_hover_bg_color }};
 
+    /* Back/Label Typo */
     --back-font-family: {{ section.settings.back_font.family }}, {{ section.settings.back_font.fallback_families }};
     --back-font-style: {{ section.settings.back_font.style }};
     --back-font-weight: {% if section.settings.back_font_bold %}bold{% else %}{{ section.settings.back_font.weight }}{% endif %};
@@ -44,8 +39,8 @@
 
 <header id="sticky-header-{{ section.id }}" class="custom-header-section custom-header-section-{{ section.id }}">
   <div class="custom-header__container">
-    
-    <!-- Logo + Zurück-Pfeil -->
+
+    <!-- Logo + Zurück IMMER nebeneinander -->
     <div class="custom-header__brand">
       <a href="{{ shop.url }}" class="custom-header__logo">
         {% if section.settings.logo %}
@@ -81,7 +76,7 @@
       {% endif %}
     </div>
 
-    <!-- Navigation -->
+    <!-- Navigation / CTA -->
     <div class="custom-header__nav-wrapper">
       <nav class="custom-header__nav" role="navigation">
         {%- for link in section.settings.menu.links -%}
@@ -100,10 +95,10 @@
 </header>
 
 <script>
-  (function() {
+  (function(){
     var header = document.getElementById('sticky-header-{{ section.id }}');
-    if (!header) return;
-    function setOffsets() {
+    if(!header) return;
+    function setOffsets(){
       var h = header.offsetHeight;
       var bar = document.querySelector('[data-announcement-bar], .announcement-bar, .shopify-section-announcement');
       if (bar) {
@@ -117,7 +112,7 @@
     }
     setOffsets();
     window.addEventListener('resize', setOffsets);
-    if ('ResizeObserver' in window) new ResizeObserver(setOffsets).observe(header);
+    if('ResizeObserver' in window) new ResizeObserver(setOffsets).observe(header);
   })();
 </script>
 
@@ -147,26 +142,13 @@
     { "type": "color", "id": "logo_color", "label": "Logo Textfarbe", "default": "#1e40af" },
     { "type": "range", "id": "logo_font_size", "label": "Logo Schriftgröße", "min": 16, "max": 48, "step": 1, "default": 24, "unit": "px" },
 
-    { "type": "range", "id": "logo_position_x", "label": "Logo Position X (%)", "min": -50, "max": 50, "step": 1, "default": 0, "unit": "%" },
-    { "type": "range", "id": "logo_position_y", "label": "Logo Position Y (%)", "min": -50, "max": 50, "step": 1, "default": 0, "unit": "%" },
-
     { "type": "header", "content": "Navigation" },
     { "type": "link_list", "id": "menu", "label": "Menü auswählen", "default": "main-menu" },
     { "type": "font_picker", "id": "nav_font", "label": "Navigation Schriftart", "default": "sans-serif" },
     { "type": "checkbox", "id": "nav_font_bold", "label": "Navigation fettgedruckt", "default": false },
     { "type": "color", "id": "nav_text_color", "label": "Navigation Textfarbe", "default": "#374151" },
     { "type": "color", "id": "nav_hover_color", "label": "Navigation Hover-Farbe", "default": "#4ade80" },
-    { "type": "range", "id": "nav_font_size", "label": "Navigation Schriftgröße", "min": 12, "max": 24, "step": 1, "default": 16, "unit": "px" },
-    { "type": "range", "id": "menu_position_x", "label": "Menü Position X (%)", "min": -50, "max": 50, "step": 1, "default": 0, "unit": "%" },
-    { "type": "range", "id": "menu_position_y", "label": "Menü Position Y (%)", "min": -50, "max": 50, "step": 1, "default": 0, "unit": "%" },
-
-    { "type": "header", "content": "Kontakt Button" },
-    { "type": "text", "id": "button_text", "label": "Button Text", "default": "Kontakt" },
-    { "type": "url", "id": "button_link", "label": "Button Link" },
-    { "type": "color", "id": "button_text_color", "label": "Button Textfarbe", "default": "#ffffff" },
-    { "type": "color", "id": "button_bg_color", "label": "Button Hintergrund", "default": "#4ade80" },
-    { "type": "color", "id": "button_hover_text_color", "label": "Button Textfarbe (Hover)", "default": "#ffffff" },
-    { "type": "color", "id": "button_hover_bg_color", "label": "Button Hintergrund (Hover)", "default": "#22c55e" }
+    { "type": "range", "id": "nav_font_size", "label": "Navigation Schriftgröße", "min": 12, "max": 24, "step": 1, "default": 16, "unit": "px" }
   ],
   "presets": [{ "name": "Sticky header" }]
 }
