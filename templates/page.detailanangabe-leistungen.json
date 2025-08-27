@@ -9,29 +9,33 @@
  */
 {
   "sections": {
-    "custom_header_fi69pY": {
-      "type": "custom-header",
-      "name": "Custom Header",
+    "sticky_header_mWiXqk": {
+      "type": "sticky-header",
+      "name": "Sticky header",
       "settings": {
         "background_color": "#ffffff",
         "padding_vertical": 16,
         "padding_horizontal": 24,
+        "logo_height": 40,
+        "back_link": "",
+        "back_label": "Zurück",
+        "back_font": "sans-serif",
+        "back_font_bold": false,
+        "back_text_color": "#374151",
+        "back_hover_color": "#4ade80",
+        "back_font_size": 16,
         "logo": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
         "logo_text": "Mein Shop",
         "logo_color": "#1e40af",
         "logo_font_size": 24,
-        "logo_position_x": 0,
-        "logo_position_y": 0,
         "menu": "geb-udeservice",
         "nav_font": "sans-serif",
-        "nav_font_bold": true,
+        "nav_font_bold": false,
         "nav_text_color": "#374151",
         "nav_hover_color": "#4ade80",
         "nav_font_size": 16,
-        "menu_position_x": 0,
-        "menu_position_y": 0,
         "button_text": "Kontakt",
-        "button_link": "shopify://pages/industrieservice-kontakt",
+        "button_link": "shopify://pages/allgemeiner-kontakt",
         "button_text_color": "#ffffff",
         "button_bg_color": "#4ade80",
         "button_hover_text_color": "#ffffff",
@@ -322,7 +326,7 @@
     }
   },
   "order": [
-    "custom_header_fi69pY",
+    "sticky_header_mWiXqk",
     "main",
     "hero_building_section_xFPFdb",
     "leistung_showcase_9Y9rK6",
