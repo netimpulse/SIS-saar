@@ -100,6 +100,53 @@
         "btn2_text_hover": "#238b84"
       }
     },
+    "about_section_FRmjn4": {
+      "type": "about-section",
+      "blocks": {
+        "feature_qRrXEC": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung des Features."
+          }
+        },
+        "feature_iVwUKB": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung des Features."
+          }
+        }
+      },
+      "block_order": [
+        "feature_qRrXEC",
+        "feature_iVwUKB"
+      ],
+      "name": "Über Uns (Layout)",
+      "settings": {
+        "layout_direction": "text_left",
+        "background_color": "#f5f5f5",
+        "section_padding_top": 80,
+        "section_padding_bottom": 80,
+        "title": "Über uns",
+        "title_color": "#000000",
+        "title_font_size": 40,
+        "description": "<p>Wir sind SIS Saar - ein innovatives Unternehmen mit zwei spezialisierten Geschäftsbereichen. Seit über zwei Jahrzehnten stehen wir für zuverlässige und hochwertige Serviceleistungen in der Region.</p><p>Unser Erfolgsrezept liegt in der Kombination aus langjähriger Erfahrung, modernster Technik und einem motivierten Team von Fachkräften. Jeder Mitarbeiter trägt dazu bei, dass wir unseren Kunden stets erstklassige Lösungen anbieten können.</p>",
+        "text_color": "#6b7280",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/shutterstock_370492946.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827"
+      }
+    },
     "about_experience_whcfYC": {
       "type": "about-experience",
       "blocks": {
@@ -180,113 +227,6 @@
         "card_radius": 16,
         "text_color": "#111111",
         "accent_color": "#22c55e"
-      }
-    },
-    "highlights_icons_8NkQXd": {
-      "type": "highlights-icons",
-      "blocks": {
-        "item_7V7G8V": {
-          "type": "item",
-          "settings": {
-            "icon_bg": "#e5e7eb",
-            "title": "QUALITÄT",
-            "text": "Kurzer, prägnanter Beschreibungstext für dieses Highlight.",
-            "show_btn": true,
-            "btn_label": "Mehr erfahren",
-            "btn_link": "",
-            "btn_bg": "#0b63c8",
-            "btn_text": "#ffffff"
-          }
-        },
-        "item_QDiATR": {
-          "type": "item",
-          "settings": {
-            "icon_bg": "#e5e7eb",
-            "title": "UNTERNEHMEN",
-            "text": "Kurzer, prägnanter Beschreibungstext für dieses Highlight.",
-            "show_btn": true,
-            "btn_label": "Mehr erfahren",
-            "btn_link": "",
-            "btn_bg": "#0b63c8",
-            "btn_text": "#ffffff"
-          }
-        },
-        "item_W9WYXw": {
-          "type": "item",
-          "settings": {
-            "icon_bg": "#e5e7eb",
-            "title": "PERSONAL",
-            "text": "Kurzer, prägnanter Beschreibungstext für dieses Highlight.",
-            "show_btn": true,
-            "btn_label": "Mehr erfahren",
-            "btn_link": "",
-            "btn_bg": "#0b63c8",
-            "btn_text": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "item_7V7G8V",
-        "item_QDiATR",
-        "item_W9WYXw"
-      ],
-      "name": "Highlights – Icons",
-      "settings": {
-        "heading": "Unsere Werte",
-        "intro": "<p>Kurzer Einleitungstext, der die Highlights erklärt.</p>",
-        "color_scheme": "background-1",
-        "gap": 24,
-        "cols_desktop": 3,
-        "cols_tablet": 2,
-        "icon_size": 88,
-        "icon_radius": 1000
-      }
-    },
-    "about_section_FRmjn4": {
-      "type": "about-section",
-      "blocks": {
-        "feature_qRrXEC": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        },
-        "feature_iVwUKB": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        }
-      },
-      "block_order": [
-        "feature_qRrXEC",
-        "feature_iVwUKB"
-      ],
-      "name": "Über Uns (Layout)",
-      "settings": {
-        "layout_direction": "text_left",
-        "background_color": "#f5f5f5",
-        "section_padding_top": 80,
-        "section_padding_bottom": 80,
-        "title": "Über uns",
-        "title_color": "#000000",
-        "title_font_size": 40,
-        "description": "<p>Wir sind SIS Saar - ein innovatives Unternehmen mit zwei spezialisierten Geschäftsbereichen. Seit über zwei Jahrzehnten stehen wir für zuverlässige und hochwertige Serviceleistungen in der Region.</p><p>Unser Erfolgsrezept liegt in der Kombination aus langjähriger Erfahrung, modernster Technik und einem motivierten Team von Fachkräften. Jeder Mitarbeiter trägt dazu bei, dass wir unseren Kunden stets erstklassige Lösungen anbieten können.</p>",
-        "text_color": "#6b7280",
-        "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_370492946.jpg",
-        "image_border_radius": 12,
-        "image_alt": "",
-        "features_per_row": "2",
-        "icon_size": 32,
-        "icon_color": "#34d399",
-        "feature_title_color": "#111827"
       }
     },
     "highlights_icons_4mpBYK": {
@@ -543,9 +483,8 @@
     "custom_header_2_YbKLhd",
     "main",
     "hero_overlay_section_Rk9gNP",
-    "about_experience_whcfYC",
-    "highlights_icons_8NkQXd",
     "about_section_FRmjn4",
+    "about_experience_whcfYC",
     "highlights_icons_4mpBYK",
     "team_ijJATC",
     "custom_cta_block_kUWpCr",
