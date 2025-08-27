@@ -148,6 +148,15 @@
             "link_label": "Mehr Erfahren"
           }
         },
+        "service_card_lue_Dhp4wf": {
+          "type": "service_card_lue",
+          "settings": {
+            "title": "We Understand Requirements",
+            "text": "Sed sit amet sapien sit amet odio lobortis ullamcorper quis vel nisl. Nam blandit maximus tristique.",
+            "link_url": "",
+            "link_label": "Learn More →"
+          }
+        },
         "service_card_lue_LFetP8": {
           "type": "service_card_lue",
           "settings": {
@@ -157,22 +166,12 @@
             "link_url": "",
             "link_label": "Learn More →"
           }
-        },
-        "service_card_lue_Y7iFCX": {
-          "type": "service_card_lue",
-          "settings": {
-            "image": "shopify://shop_images/sis_location.png",
-            "title": "Trockeneisstrahlen",
-            "text": "Durch das Trockeneisstrahlen reinigen wir alle Ihre Oberflächen schonend und effektiv, und das ganz ohne Chemikalien oder Rückstände.",
-            "link_url": "",
-            "link_label": "Learn More →"
-          }
         }
       },
       "block_order": [
         "service_card_lue_cH6tzT",
-        "service_card_lue_LFetP8",
-        "service_card_lue_Y7iFCX"
+        "service_card_lue_Dhp4wf",
+        "service_card_lue_LFetP8"
       ],
       "name": "Leistungen überarbeitet",
       "settings": {
