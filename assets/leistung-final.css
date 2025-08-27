@@ -27,8 +27,23 @@
 .lf-img{ width:100%; height:190px; object-fit:cover; display:block; }
 
 /* CTA */
-.lf-cta-wrap{ margin-top:28px; text-align:center; }
-.lf-btn{ display:inline-block; padding:10px 20px; background:var(--lf-btn-bg); color:var(--lf-btn-text); border-radius:var(--lf-btn-radius); text-decoration:none; font-weight:600; }
+.lf-cta-wrap{ margin-top: var(--lf-btn-mt,28px); margin-bottom: var(--lf-btn-mb,0px); }
+.lf-cta-inner{ max-width: var(--lf-btn-maxw,420px); margin: 0 auto; }
+.lf-btn{
+  display:inline-block; width:auto;
+  padding: var(--lf-btn-py,10px) var(--lf-btn-px,20px);
+  border-radius: var(--lf-btn-radius,20px);
+  background: var(--lf-btn-bg,#8B8E93);
+  color: var(--lf-btn-text,#fff);
+  text-decoration:none; line-height:1;
+  font-family: var(--lf-font-body);
+  font-weight: var(--lf-btn-fw,600);
+  font-style: var(--lf-btn-style,normal);
+  font-size: var(--lf-btn-size,16px);
+  transition: transform .2s, background .2s, color .2s;
+}
+.lf-btn:hover{ background: var(--lf-btn-hover-bg,#6f7276); color: var(--lf-btn-hover-text,#fff); transform: translateY(-1px); }
+.lf-btn--block{ display:block; width:100%; }
 
 /* Pfeile & Dots */
 .lf-carousel{ position:relative; }
