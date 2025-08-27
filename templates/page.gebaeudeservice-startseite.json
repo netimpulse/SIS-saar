@@ -405,7 +405,14 @@
         "kontakt_link_E3KkQW": {
           "type": "kontakt_link",
           "settings": {
-            "text": "Impressum",
+            "text": "Impressum Industrieservice",
+            "link": ""
+          }
+        },
+        "kontakt_link_VPnAcG": {
+          "type": "kontakt_link",
+          "settings": {
+            "text": "Impressum Gebäudeservice",
             "link": ""
           }
         },
@@ -441,6 +448,7 @@
         "unternehmen_link_F6WDXP",
         "unternehmen_link_3zrdRP",
         "kontakt_link_E3KkQW",
+        "kontakt_link_VPnAcG",
         "kontakt_link_ENGb74",
         "partner_logo_PKGDmt",
         "partner_logo_eXxmYL"
