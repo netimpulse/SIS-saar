@@ -42,36 +42,6 @@
         "button_hover_bg_color": "#22c55e"
       }
     },
-    "custom_header_iUWBMf": {
-      "type": "custom-header",
-      "disabled": true,
-      "name": "Custom Header",
-      "settings": {
-        "background_color": "#ffffff",
-        "padding_vertical": 16,
-        "padding_horizontal": 24,
-        "logo": "shopify://shop_images/Logo_SIS_Saar__1_-removebg-preview.png",
-        "logo_text": "Mein Shop",
-        "logo_color": "#1e40af",
-        "logo_font_size": 24,
-        "logo_position_x": 0,
-        "logo_position_y": 0,
-        "menu": "hauptmen",
-        "nav_font": "sans-serif",
-        "nav_font_bold": true,
-        "nav_text_color": "#374151",
-        "nav_hover_color": "#4ade80",
-        "nav_font_size": 16,
-        "menu_position_x": 0,
-        "menu_position_y": 0,
-        "button_text": "Kontakt",
-        "button_link": "shopify://pages/allgemeiner-kontakt",
-        "button_text_color": "#ffffff",
-        "button_bg_color": "#4ade80",
-        "button_hover_text_color": "#ffffff",
-        "button_hover_bg_color": "#22c55e"
-      }
-    },
     "split_showcase_DdJNLE": {
       "type": "split-showcase",
       "name": "Split Showcase",
@@ -267,7 +237,7 @@
         "subheading_color": "#555555",
         "text": "<p><strong>Industrieservice</strong> und <strong>Gebäudeservice</strong>: Entdecken Sie unsere neuesten Blogartikel mit praxisnahen Einblicken, Tipps und Strategien rund um unsere umfassenden Leistungen in beiden Bereichen.<br/><br/></p>",
         "text_font": "sans-serif",
-        "text_font_size": 20,
+        "text_font_size": 18,
         "text_color": "#333333",
         "button_text": "Schaltflächenbeschriftung",
         "button_link": "shopify://pages/blogs-allgemein",
@@ -413,7 +383,6 @@
   },
   "order": [
     "sticky_header_mwbBwL",
-    "custom_header_iUWBMf",
     "split_showcase_DdJNLE",
     "text_mit_bild_button_VryaeN",
     "kundenbewertung_tzkjqA",
