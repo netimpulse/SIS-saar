@@ -156,6 +156,60 @@
             "link_label": "Mehr erfahren →"
           }
         },
+        "service_card_lf_GhBQY3": {
+          "type": "service_card_lf",
+          "settings": {
+            "title": "Titel",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_9zpRDB": {
+          "type": "service_card_lf",
+          "settings": {
+            "title": "Titel",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_JpJYnR": {
+          "type": "service_card_lf",
+          "settings": {
+            "title": "Titel",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_3dXJQw": {
+          "type": "service_card_lf",
+          "settings": {
+            "title": "Titel",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_AgYJgK": {
+          "type": "service_card_lf",
+          "settings": {
+            "title": "Titel",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_YLCJjy": {
+          "type": "service_card_lf",
+          "settings": {
+            "title": "Titel",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "",
+            "link_label": "Mehr erfahren →"
+          }
+        },
         "service_card_lf_E7JFRc": {
           "type": "service_card_lf",
           "settings": {
@@ -178,6 +232,12 @@
       "block_order": [
         "service_card_lf_LCXAEL",
         "service_card_lf_K9CA39",
+        "service_card_lf_GhBQY3",
+        "service_card_lf_9zpRDB",
+        "service_card_lf_JpJYnR",
+        "service_card_lf_3dXJQw",
+        "service_card_lf_AgYJgK",
+        "service_card_lf_YLCJjy",
         "service_card_lf_E7JFRc",
         "service_card_lf_UQJbBh"
       ],
