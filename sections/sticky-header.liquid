@@ -2,6 +2,9 @@
 
 <style>
   #sticky-header-{{ section.id }}{ position:fixed; top:0; left:0; right:0; z-index:1000; width:100%; }
+  /* Mobile CTA sichtbar unter 990px, am Desktop ausgeblendet */
+  @media (min-width: 991px){ .custom-header__cta-mobile{ display:none !important; } }
+  @media (max-width: 990px){ .custom-header__cta-mobile{ display:flex; } }
 </style>
 
 <style>
@@ -40,7 +43,7 @@
 <header id="sticky-header-{{ section.id }}" class="custom-header-section custom-header-section-{{ section.id }}">
   <div class="custom-header__container">
 
-    <!-- Logo + Zurück IMMER nebeneinander -->
+    <!-- Logo + Zurück nebeneinander -->
     <div class="custom-header__brand">
       <a href="{{ shop.url }}" class="custom-header__logo">
         {% if section.settings.logo %}
@@ -76,18 +79,27 @@
       {% endif %}
     </div>
 
-    <!-- Navigation / CTA -->
+    <!-- Navigation + Desktop-CTA -->
     <div class="custom-header__nav-wrapper">
       <nav class="custom-header__nav" role="navigation">
         {%- for link in section.settings.menu.links -%}
           <a href="{{ link.url }}" class="custom-header__nav-link {% if link.active %}active{% endif %}">{{ link.title }}</a>
         {%- endfor -%}
       </nav>
+
       {%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
         <a href="{{ section.settings.button_link }}" class="custom-header__contact-btn">{{ section.settings.button_text }}</a>
       {%- endif -%}
     </div>
 
+    <!-- Mobile CTA (sichtbar < 991px) -->
+    {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+      <a href="{{ section.settings.button_link }}" class="custom-header__contact-btn custom-header__cta-mobile">
+        {{ section.settings.button_text }}
+      </a>
+    {% endif %}
+
+    <!-- Optional: Burger (ohne Funktion) -->
     <button class="custom-header__mobile-toggle" aria-label="Menü öffnen">
       <span></span><span></span><span></span>
     </button>
@@ -125,6 +137,7 @@
     { "type": "color", "id": "background_color", "label": "Hintergrundfarbe", "default": "#ffffff" },
     { "type": "range", "id": "padding_vertical", "label": "Padding Oben/Unten (px)", "min": 0, "max": 50, "step": 1, "default": 16, "unit": "px" },
     { "type": "range", "id": "padding_horizontal", "label": "Padding Links/Rechts (px)", "min": 0, "max": 100, "step": 1, "default": 24, "unit": "px" },
+
     { "type": "range", "id": "logo_height", "label": "Logo-Höhe (px)", "min": 20, "max": 120, "step": 1, "default": 40, "unit": "px" },
 
     { "type": "header", "content": "Zurück-Pfeil" },
@@ -148,7 +161,15 @@
     { "type": "checkbox", "id": "nav_font_bold", "label": "Navigation fettgedruckt", "default": false },
     { "type": "color", "id": "nav_text_color", "label": "Navigation Textfarbe", "default": "#374151" },
     { "type": "color", "id": "nav_hover_color", "label": "Navigation Hover-Farbe", "default": "#4ade80" },
-    { "type": "range", "id": "nav_font_size", "label": "Navigation Schriftgröße", "min": 12, "max": 24, "step": 1, "default": 16, "unit": "px" }
+    { "type": "range", "id": "nav_font_size", "label": "Navigation Schriftgröße", "min": 12, "max": 24, "step": 1, "default": 16, "unit": "px" },
+
+    { "type": "header", "content": "Kontakt Button" },
+    { "type": "text", "id": "button_text", "label": "Button Text", "default": "Kontakt" },
+    { "type": "url", "id": "button_link", "label": "Button Link" },
+    { "type": "color", "id": "button_text_color", "label": "Button Textfarbe", "default": "#ffffff" },
+    { "type": "color", "id": "button_bg_color", "label": "Button Hintergrund", "default": "#4ade80" },
+    { "type": "color", "id": "button_hover_text_color", "label": "Button Textfarbe (Hover)", "default": "#ffffff" },
+    { "type": "color", "id": "button_hover_bg_color", "label": "Button Hintergrund (Hover)", "default": "#22c55e" }
   ],
   "presets": [{ "name": "Sticky header" }]
 }
