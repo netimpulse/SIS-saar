@@ -161,7 +161,7 @@
             "image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
             "title": "Maschinenreinigung",
             "text": "Kurze Beschreibung hier.",
-            "link_url": "shopify://pages/unterhaltsreinigung",
+            "link_url": "shopify://pages/maschinenreinigung",
             "link_label": "Mehr erfahren →"
           }
         },
@@ -171,7 +171,7 @@
             "image": "shopify://shop_images/shutterstock_370492946.jpg",
             "title": "Fluidmanagement & Wartung",
             "text": "Kurze Beschreibung hier.",
-            "link_url": "shopify://pages/glas-und-lamellenreinigung",
+            "link_url": "shopify://pages/fluidmanagement-wartung",
             "link_label": "Mehr erfahren →"
           }
         },
@@ -181,7 +181,7 @@
             "image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
             "title": "Hallenbodenreinigung",
             "text": "Kurze Beschreibung hier.",
-            "link_url": "shopify://pages/bauschlussreinigung",
+            "link_url": "shopify://pages/hallenbodenreinigung",
             "link_label": "Mehr erfahren →"
           }
         },
