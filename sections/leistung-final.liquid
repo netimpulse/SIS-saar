@@ -1,10 +1,32 @@
-{% comment %}
-  Section: Leistung final – mit Karussell (fixes: Grid-Fallback, Pfeile außen, Dots mittig)
-{% endcomment %}
-
+{% comment %} Section: Leistung final – Karussell mit Pfeilen links/rechts und Punkten mittig {% endcomment %}
 {{ 'leistung-final.css' | asset_url | stylesheet_tag }}
 
 {%- assign section_id = 'leistung-final-' | append: section.id -%}
+
+<style>
+/* --- Minimaler Inline-Fallback, falls Asset nicht geladen wird --- */
+#{{ section_id }} .lf-viewport{overflow:hidden;}
+#{{ section_id }} .lf-track{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--lf-gap,20px);}
+@media(max-width:990px){#{{ section_id }} .lf-track{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:640px){#{{ section_id }} .lf-track{grid-template-columns:1fr;}}
+/* aktiviertes Karussell */
+#{{ section_id }} .lf-carousel.lf-carousel--active .lf-track{display:flex;gap:0;will-change:transform;transition:transform .35s ease;}
+#{{ section_id }} .lf-carousel.lf-carousel--active .lf-slide{flex:0 0 calc(100% / var(--lf-per-view,3));padding:0 10px;box-sizing:border-box;}
+/* Pfeile */
+#{{ section_id }} .lf-carousel{position:relative;}
+#{{ section_id }} .lf-arrow{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:999px;border:0;background:#f3f4f6;box-shadow:0 2px 10px rgba(0,0,0,.12);display:grid;place-items:center;cursor:pointer;transition:transform .15s,background .2s,opacity .2s;z-index:2}
+#{{ section_id }} .lf-arrow:hover{transform:translateY(-50%) scale(1.05);background:#e5e7eb}
+#{{ section_id }} .lf-arrow:disabled{opacity:.45;cursor:default;transform:translateY(-50%)}
+#{{ section_id }} .lf-prev{left:-24px} #{{ section_id }} .lf-next{right:-24px}
+@media(max-width:640px){#{{ section_id }} .lf-prev{left:6px} #{{ section_id }} .lf-next{right:6px}}
+/* Punkte */
+#{{ section_id }} .lf-dots{display:flex;justify-content:center;gap:8px;margin-top:16px}
+#{{ section_id }} .lf-dot{width:8px;height:8px;border-radius:50%;background:#cbd5e1;border:0;padding:0;cursor:pointer;transition:transform .15s,background .2s}
+#{{ section_id }} .lf-dot:hover{transform:scale(1.1)} #{{ section_id }} .lf-dot.active{background:#111827}
+/* Basis Card, damit Bilder sicher sichtbar sind */
+#{{ section_id }} .lf-card{background:var(--lf-card-bg,#fff);border-radius:var(--lf-card-radius,12px);overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.08);display:flex;flex-direction:column}
+#{{ section_id }} .lf-img{width:100%;height:190px;object-fit:cover;display:block}
+</style>
 
 <section id="{{ section_id }}"
   class="lf-container"
@@ -27,20 +49,11 @@
   "
 >
   <div class="lf-inner">
-    {%- if section.settings.heading != blank -%}
-      <h2 class="lf-heading">{{ section.settings.heading }}</h2>
-    {%- endif -%}
-
-    {%- if section.settings.subtext != blank -%}
-      <p class="lf-subtext">{{ section.settings.subtext }}</p>
-    {%- endif -%}
+    {% if section.settings.heading != blank %}<h2 class="lf-heading">{{ section.settings.heading }}</h2>{% endif %}
+    {% if section.settings.subtext != blank %}<p class="lf-subtext">{{ section.settings.subtext }}</p>{% endif %}
 
     <div class="lf-carousel" data-section-id="{{ section.id }}">
       <div class="lf-viewport">
-        {%- comment -%}
-          Default-Markup: ohne JS zeigen wir automatisch ein Grid (per CSS).
-          JS schaltet .lf-carousel--active ein und macht aus .lf-track ein flexbasiertes Karussell.
-        {%- endcomment -%}
         <div class="lf-track">
           {%- for block in section.blocks -%}
             {%- if block.type == 'service_card_lf' -%}
@@ -51,7 +64,7 @@
                   text: block.settings.text,
                   link_url: block.settings.link_url,
                   link_label: block.settings.link_label,
-                  id: block.id
+                  block_attrs: block.shopify_attributes
                 %}
               </div>
             {%- endif -%}
@@ -59,129 +72,126 @@
         </div>
       </div>
 
-      <!-- Pfeile -->
       <button class="lf-arrow lf-prev" aria-label="Zurück" type="button">
-        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
       <button class="lf-arrow lf-next" aria-label="Weiter" type="button">
-        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
 
-      <!-- Punkte -->
       <div class="lf-dots" role="tablist" aria-label="Karussell Navigation"></div>
     </div>
 
-    {%- if section.settings.show_button and section.settings.button_label != blank -%}
+    {% if section.settings.show_button and section.settings.button_label != blank %}
       <div class="lf-cta-wrap" style="text-align: {{ section.settings.button_align }};">
         <a class="lf-btn" href="{{ section.settings.button_url | default: '#' }}">{{ section.settings.button_label }}</a>
       </div>
-    {%- endif -%}
+    {% endif %}
   </div>
 </section>
 
 <script>
-  (function() {
-    const root = document.querySelector('[data-section-id="{{ section.id }}"]');
-    if (!root) return;
+(function(){
+  var root = document.querySelector('[data-section-id="{{ section.id }}"]');
+  if(!root) return;
 
-    const viewport = root.querySelector('.lf-viewport');
-    const track    = root.querySelector('.lf-track');
-    const slides   = Array.from(root.querySelectorAll('.lf-slide'));
-    const prevBtn  = root.querySelector('.lf-prev');
-    const nextBtn  = root.querySelector('.lf-next');
-    const dotsWrap = root.querySelector('.lf-dots');
+  var viewport = root.querySelector('.lf-viewport');
+  var track    = root.querySelector('.lf-track');
+  var slides   = Array.from(root.querySelectorAll('.lf-slide'));
+  var prevBtn  = root.querySelector('.lf-prev');
+  var nextBtn  = root.querySelector('.lf-next');
+  var dotsWrap = root.querySelector('.lf-dots');
 
-    function getState() {
-      const isMobile = window.matchMedia('(max-width: 640px)').matches;
-      const perView = isMobile ? 1 : 3;
-      const enable  = isMobile || slides.length > 3;
-      return { isMobile, perView, enable };
+  function getState(){
+    var isMobile = window.matchMedia('(max-width: 640px)').matches;
+    var perView  = isMobile ? 1 : 3;
+    var enable   = isMobile || slides.length > 3; /* Desktop erst ab 4 */
+    return {isMobile:isMobile, perView:perView, enable:enable};
+  }
+
+  var current = 0, pages = 1, state = getState();
+
+  function setup(){
+    state = getState();
+
+    /* Standard: Grid (keine Pfeile, keine Dots) */
+    root.classList.remove('lf-carousel--active');
+    prevBtn.style.display = 'none';
+    nextBtn.style.display = 'none';
+    dotsWrap.innerHTML = '';
+    track.style.transform = 'translateX(0)';
+
+    if(!state.enable) return;
+
+    /* Karussell aktivieren */
+    root.classList.add('lf-carousel--active');
+    root.style.setProperty('--lf-per-view', state.perView);
+    prevBtn.style.display = '';
+    nextBtn.style.display = '';
+
+    pages = Math.max(1, Math.ceil(slides.length / state.perView));
+    if(current > pages-1) current = pages-1;
+
+    dotsWrap.innerHTML = '';
+    for(var i=0;i<pages;i++){
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'lf-dot';
+      b.setAttribute('role','tab');
+      b.setAttribute('aria-label','Seite ' + (i+1));
+      (function(idx){ b.addEventListener('click', function(){ goTo(idx); }); })(i);
+      dotsWrap.appendChild(b);
     }
+    update();
+  }
 
-    let current = 0, pages = 1, state = getState();
+  function update(){
+    track.style.transform = 'translateX(' + (current * -100) + '%)';
+    Array.prototype.forEach.call(dotsWrap.children, function(d, i){
+      d.classList.toggle('active', i === current);
+    });
+    prevBtn.disabled = current === 0;
+    nextBtn.disabled = current >= pages - 1;
+  }
 
-    function setup() {
-      state = getState();
+  function goTo(i){
+    current = Math.max(0, Math.min(pages-1, i));
+    update();
+  }
 
-      // Default: Grid (kein Karussell)
-      root.classList.remove('lf-carousel--active');
-      prevBtn.style.display = 'none';
-      nextBtn.style.display = 'none';
-      dotsWrap.innerHTML = '';
-      track.style.transform = 'translateX(0)';
+  prevBtn.addEventListener('click', function(){ goTo(current - 1); });
+  nextBtn.addEventListener('click', function(){ goTo(current + 1); });
 
-      if (!state.enable) return;
+  /* Swipe/Drag */
+  var startX = 0, moved = 0, dragging = false;
+  function onStart(e){ dragging = true; startX = (e.touches?e.touches[0].clientX:e.clientX); moved = 0; track.style.transition = 'none'; }
+  function onMove(e){
+    if(!dragging) return;
+    var x = (e.touches?e.touches[0].clientX:e.clientX);
+    moved = x - startX;
+    var deltaPct = (moved / viewport.clientWidth) * 100;
+    track.style.transform = 'translateX(' + (-(current*100) + deltaPct) + '%)';
+  }
+  function onEnd(){
+    if(!dragging) return;
+    dragging = false; track.style.transition = '';
+    if(Math.abs(moved) > viewport.clientWidth * 0.15){ (moved < 0) ? goTo(current + 1) : goTo(current - 1); }
+    else { update(); }
+  }
+  track.addEventListener('pointerdown', onStart);
+  window.addEventListener('pointermove', onMove);
+  window.addEventListener('pointerup', onEnd);
+  track.addEventListener('touchstart', onStart, {passive:true});
+  track.addEventListener('touchmove', onMove, {passive:true});
+  track.addEventListener('touchend', onEnd);
 
-      // Karussell aktivieren
-      root.classList.add('lf-carousel--active');
-      root.style.setProperty('--lf-per-view', state.perView);
-      prevBtn.style.display = '';
-      nextBtn.style.display = '';
-
-      pages = Math.max(1, Math.ceil(slides.length / state.perView));
-      if (current > pages - 1) current = pages - 1;
-
-      // Dots erzeugen
-      dotsWrap.innerHTML = '';
-      for (let i = 0; i < pages; i++) {
-        const b = document.createElement('button');
-        b.type = 'button';
-        b.className = 'lf-dot';
-        b.setAttribute('role', 'tab');
-        b.setAttribute('aria-label', 'Seite ' + (i + 1));
-        b.addEventListener('click', () => goTo(i));
-        dotsWrap.appendChild(b);
-      }
-      update();
-    }
-
-    function update() {
-      track.style.transform = 'translateX(' + (current * -100) + '%)';
-      dotsWrap.querySelectorAll('.lf-dot').forEach((d, i) => d.classList.toggle('active', i === current));
-      prevBtn.disabled = current === 0;
-      nextBtn.disabled = current >= pages - 1;
-    }
-
-    function goTo(i) {
-      current = Math.max(0, Math.min(pages - 1, i));
-      update();
-    }
-
-    prevBtn.addEventListener('click', () => goTo(current - 1));
-    nextBtn.addEventListener('click', () => goTo(current + 1));
-
-    // Swipe/Drag
-    let startX = 0, moved = 0, dragging = false;
-    function onStart(e){ dragging = true; startX = (e.touches ? e.touches[0].clientX : e.clientX); moved = 0; track.style.transition = 'none'; }
-    function onMove(e){
-      if (!dragging) return;
-      const x = (e.touches ? e.touches[0].clientX : e.clientX);
-      moved = x - startX;
-      const deltaPct = (moved / viewport.clientWidth) * 100;
-      track.style.transform = 'translateX(' + (-(current*100) + deltaPct) + '%)';
-    }
-    function onEnd(){
-      if (!dragging) return;
-      dragging = false; track.style.transition = '';
-      if (Math.abs(moved) > viewport.clientWidth * 0.15) { moved < 0 ? goTo(current + 1) : goTo(current - 1); }
-      else { update(); }
-    }
-    track.addEventListener('pointerdown', onStart);
-    window.addEventListener('pointermove', onMove);
-    window.addEventListener('pointerup', onEnd);
-    track.addEventListener('touchstart', onStart, {passive:true});
-    track.addEventListener('touchmove', onMove, {passive:true});
-    track.addEventListener('touchend', onEnd);
-
-    setup();
-    window.addEventListener('resize', setup);
-    document.addEventListener('shopify:section:load', setup);
-    document.addEventListener('shopify:section:unload', setup);
-  })();
+  /* Initialisieren (nach kurzer Verzögerung für Editor/iframe) */
+  function init(){ setup(); }
+  if(document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', init); } else { init(); }
+  window.addEventListener('resize', setup);
+  document.addEventListener('shopify:section:load', setup);
+  document.addEventListener('shopify:section:unload', setup);
+})();
 </script>
 
 {% schema %}
