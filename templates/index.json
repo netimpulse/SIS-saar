@@ -89,15 +89,15 @@
         "image_shadow_strength": 20,
         "heading": "Über uns",
         "heading_font": "sans-serif",
-        "heading_font_size": 42,
+        "heading_font_size": 36,
         "heading_color": "#1f1f1f",
         "subheading": "Wer wir sind und was uns auszeichnet",
         "subheading_font": "sans-serif",
-        "subheading_font_size": 18,
+        "subheading_font_size": 16,
         "subheading_color": "#555555",
         "text": "<p><br/>Seit mehr als zwei Jahrzehnten steht die SIS‑Saar‑Gruppe für zuverlässige und hochwertige Serviceleistungen in den Bereichen Industrie‑ und Gebäudereinigung. Unser Motto „Kompetenter Service aus erster Hand“ spiegelt sich in jeder Aufgabe wider. Wir unterstützen Ihr Kerngeschäft mit gründlicher, flexibler und leistungsstarker Dienstleistung, damit Sie sich auf Ihre Ziele konzentrieren können. Unsere motivierten und regelmäßig geschulten Mitarbeitenden sind das Herzstück unseres Erfolgs. Gemeinsam nutzen wir Innovationen und nachhaltige Arbeitsmethoden, um Ausfallzeiten zu minimieren und die Umwelt zu schützen.<br/><br/></p>",
         "text_font": "sans-serif",
-        "text_font_size": 16,
+        "text_font_size": 20,
         "text_color": "#333333",
         "button_text": "Mehr über uns",
         "button_link": "",
@@ -225,15 +225,15 @@
         "image_shadow_strength": 20,
         "heading": "Das könnte Sie interessieren",
         "heading_font": "sans-serif",
-        "heading_font_size": 42,
-        "heading_color": "#1f1f1f",
+        "heading_font_size": 36,
+        "heading_color": "#121212",
         "subheading": "unsere Blogartikel",
         "subheading_font": "sans-serif",
-        "subheading_font_size": 18,
+        "subheading_font_size": 16,
         "subheading_color": "#555555",
         "text": "<p><strong>Industrieservice</strong> und <strong>Gebäudeservice</strong>: Entdecken Sie unsere neuesten Blogartikel mit praxisnahen Einblicken, Tipps und Strategien rund um unsere umfassenden Leistungen in beiden Bereichen.<br/><br/></p>",
         "text_font": "sans-serif",
-        "text_font_size": 16,
+        "text_font_size": 20,
         "text_color": "#333333",
         "button_text": "Schaltflächenbeschriftung",
         "button_link": "shopify://pages/blogs-allgemein",
@@ -246,6 +246,73 @@
         "button_bg_hover_color": "#6f6f6f",
         "button_text_color": "#ffffff",
         "button_text_color_hover": "#ffffff"
+      }
+    },
+    "custom_cta_block_UK3hyB": {
+      "type": "custom-cta-block",
+      "blocks": {
+        "button_4pcX9a": {
+          "type": "button",
+          "settings": {
+            "label": "<p>Kostenlose Beratung</p>",
+            "link": "",
+            "variant": "solid",
+            "text_color": "#ffffff",
+            "bg_color": "#0b132a",
+            "border_color": "#0b132a",
+            "hover_bg": "#111827",
+            "hover_text": "#ffffff",
+            "radius": 12,
+            "padding_x": 24,
+            "padding_y": 14,
+            "bold": true,
+            "offset_x": 0,
+            "offset_y": 0
+          }
+        },
+        "button_nbft47": {
+          "type": "button",
+          "settings": {
+            "label": "<p>Kostenlose Beratung</p>",
+            "link": "",
+            "variant": "solid",
+            "text_color": "#ffffff",
+            "bg_color": "#0b132a",
+            "border_color": "#0b132a",
+            "hover_bg": "#111827",
+            "hover_text": "#ffffff",
+            "radius": 12,
+            "padding_x": 24,
+            "padding_y": 14,
+            "bold": true,
+            "offset_x": 0,
+            "offset_y": 0
+          }
+        }
+      },
+      "block_order": [
+        "button_4pcX9a",
+        "button_nbft47"
+      ],
+      "name": "Custom CTA Block",
+      "settings": {
+        "heading": "<p>Bereit für professionellen Gebäudeservice?</p>",
+        "heading_size": 36,
+        "heading_bold": true,
+        "heading_color": "#121212",
+        "heading_font": "inherit",
+        "subheading": "<p>Kontaktieren Sie uns für ein unverbindliches Beratungsgespräch und ein individuelles Angebot für Ihre Anforderungen.</p>",
+        "sub_size": 20,
+        "sub_bold": false,
+        "sub_color": "#475569",
+        "sub_font": "inherit",
+        "align": "center",
+        "content_max": 1000,
+        "pad_top": 64,
+        "pad_bottom": 64,
+        "use_gradient_bg": true,
+        "bg_gradient": "linear-gradient(180deg, rgba(241, 245, 249, 0.6), rgba(241, 245, 249, 0) 100%)",
+        "buttons_gap": 16
       }
     },
     "sis_footer_E9Qb9V": {
@@ -308,147 +375,6 @@
         "industrie_email": "industrie@sis-saar.de",
         "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
-    },
-    "leistungen_handy_h8jWCq": {
-      "type": "leistungen-handy",
-      "blocks": {
-        "service_block_kBKHV4": {
-          "type": "service_block",
-          "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#e0e0e0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
-          }
-        },
-        "service_block_TELatc": {
-          "type": "service_block",
-          "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#e0e0e0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
-          }
-        },
-        "service_block_aAcemA": {
-          "type": "service_block",
-          "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#e0e0e0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
-          }
-        },
-        "service_block_ArGX4B": {
-          "type": "service_block",
-          "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#e0e0e0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
-          }
-        }
-      },
-      "block_order": [
-        "service_block_kBKHV4",
-        "service_block_TELatc",
-        "service_block_aAcemA",
-        "service_block_ArGX4B"
-      ],
-      "name": "Leistungen Handy",
-      "settings": {
-        "heading": "Unsere Leistungen",
-        "heading_font": "sans-serif",
-        "heading_bold": true,
-        "heading_italic": false,
-        "heading_font_size": 42,
-        "heading_color": "#333333",
-        "section_scale": 100,
-        "item_spacing": 30,
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "section_bg_color": "#ffffff",
-        "arrow_color": "#111111",
-        "line_color": "#dddddd",
-        "progress_color": "#111111",
-        "cta_kicker": "Mehr zu unseren Services",
-        "cta_btn_label": "Alle Leistungen ansehen",
-        "cta_btn_link": "",
-        "cta_btn_newtab": false,
-        "cta_btn_style": "primary",
-        "cta_align": "center",
-        "cta_kicker_color": "#555555",
-        "cta_btn_bg_color": "#111111",
-        "cta_btn_text_color": "#ffffff"
-      }
     }
   },
   "order": [
@@ -458,7 +384,7 @@
     "kundenbewertung_tzkjqA",
     "interactive_map_BWTdBe",
     "text_mit_bild_button_6UPhhG",
-    "sis_footer_E9Qb9V",
-    "leistungen_handy_h8jWCq"
+    "custom_cta_block_UK3hyB",
+    "sis_footer_E9Qb9V"
   ]
 }
