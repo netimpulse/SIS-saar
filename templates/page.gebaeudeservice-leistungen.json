@@ -75,15 +75,17 @@
         "text_alignment": "left"
       }
     },
-    "highlights_icons_kWf4Y9": {
-      "type": "highlights-icons",
+    "qualitaeten_hotspot_HKLnY6": {
+      "type": "qualitaeten-hotspot",
       "blocks": {
-        "item_mWnjdJ": {
+        "item_gqefMF": {
           "type": "item",
           "settings": {
+            "show_icon": true,
             "icon_bg": "#e5e7eb",
-            "title": "QUALITÄT",
-            "text": "Kurzer, prägnanter Beschreibungstext für dieses Highlight.",
+            "title": "Qualitäten Hotspot",
+            "text": "Kurzer, prägnanter Beschreibungstext für diesen Qualitäten Hotspot.",
+            "subpoints": "Erster Unterpunkt\nZweiter Unterpunkt",
             "show_btn": true,
             "btn_label": "Mehr erfahren",
             "btn_link": "",
@@ -91,12 +93,14 @@
             "btn_text": "#ffffff"
           }
         },
-        "item_xjDR4L": {
+        "item_4FnnFt": {
           "type": "item",
           "settings": {
+            "show_icon": true,
             "icon_bg": "#e5e7eb",
-            "title": "UNTERNEHMEN",
-            "text": "Kurzer, prägnanter Beschreibungstext für dieses Highlight.",
+            "title": "Qualitäten Hotspot",
+            "text": "Kurzer, prägnanter Beschreibungstext für diesen Qualitäten Hotspot.",
+            "subpoints": "Erster Unterpunkt\nZweiter Unterpunkt",
             "show_btn": true,
             "btn_label": "Mehr erfahren",
             "btn_link": "",
@@ -104,12 +108,14 @@
             "btn_text": "#ffffff"
           }
         },
-        "item_d3zHx4": {
+        "item_hGAYEB": {
           "type": "item",
           "settings": {
+            "show_icon": true,
             "icon_bg": "#e5e7eb",
-            "title": "PERSONAL",
-            "text": "Kurzer, prägnanter Beschreibungstext für dieses Highlight.",
+            "title": "Qualitäten Hotspot",
+            "text": "Kurzer, prägnanter Beschreibungstext für diesen Qualitäten Hotspot.",
+            "subpoints": "Erster Unterpunkt\nZweiter Unterpunkt",
             "show_btn": true,
             "btn_label": "Mehr erfahren",
             "btn_link": "",
@@ -119,18 +125,19 @@
         }
       },
       "block_order": [
-        "item_mWnjdJ",
-        "item_xjDR4L",
-        "item_d3zHx4"
+        "item_gqefMF",
+        "item_4FnnFt",
+        "item_hGAYEB"
       ],
-      "name": "Highlights – Icons",
+      "name": "Qualitäten Hotspot",
       "settings": {
-        "heading": "Unsere Qualitäten",
-        "intro": "<p>Kurzer Einleitungstext, der die Highlights erklärt.</p>",
+        "heading": "Qualitäten Hotspot",
+        "intro": "<p>Kurzer Einleitungstext für den Qualitäten Hotspot.</p>",
         "color_scheme": "background-1",
         "gap": 24,
         "cols_desktop": 3,
         "cols_tablet": 2,
+        "show_icons": true,
         "icon_size": 88,
         "icon_radius": 1000
       }
@@ -568,7 +575,7 @@
     "sticky_header_trVgjG",
     "main",
     "hero_building_section_jFhK9K",
-    "highlights_icons_kWf4Y9",
+    "qualitaeten_hotspot_HKLnY6",
     "leistung_final_mzTNaw",
     "leistung_showcase_Wq4Ytn",
     "text_mit_bild_button_RzRFn4",
