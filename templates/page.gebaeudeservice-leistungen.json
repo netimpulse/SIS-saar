@@ -174,7 +174,7 @@
             "image": "shopify://shop_images/sis_location.png",
             "title": "Sonderreinigung",
             "text": "Kurze Beschreibung hier.",
-            "link_url": "",
+            "link_url": "shopify://pages/sonderreinigung",
             "link_label": "Mehr erfahren →"
           }
         }
