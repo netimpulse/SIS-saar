@@ -412,6 +412,13 @@
             "link": "shopify://pages/gebaudeservice-karriere"
           }
         },
+        "unternehmen_link_JpjtgE": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Unsere Partner",
+            "link": "shopify://pages/partner"
+          }
+        },
         "kontakt_link_F9KkVU": {
           "type": "kontakt_link",
           "settings": {
@@ -457,6 +464,7 @@
         "leistungen_link_8rcNd6",
         "unternehmen_link_8EkMEt",
         "unternehmen_link_JyWGQA",
+        "unternehmen_link_JpjtgE",
         "kontakt_link_F9KkVU",
         "kontakt_link_TwQexH",
         "kontakt_link_4pHeLi",
