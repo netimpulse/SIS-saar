@@ -75,274 +75,103 @@
         "padding_bottom": 28
       }
     },
-    "image_banner_dLWiNX": {
-      "type": "image-banner",
+    "leistung_final_pQB9VM": {
+      "type": "leistung-final",
       "blocks": {
-        "heading_ENUR6F": {
-          "type": "heading",
+        "service_card_lf_ngKVqM": {
+          "type": "service_card_lf",
           "settings": {
-            "heading": "Bild-Banner",
-            "heading_size": "h1"
-          }
-        },
-        "text_GKmJxp": {
-          "type": "text",
-          "settings": {
-            "text": "Stelle Kunden Details zu Banner-Bildern oder Inhalt auf der Vorlage zur Verfügung.",
-            "text_style": "body"
-          }
-        },
-        "buttons_AeejY7": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Schaltflächenbeschriftung",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Schaltflächenbeschriftung",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_ENUR6F",
-        "text_GKmJxp",
-        "buttons_AeejY7"
-      ],
-      "disabled": true,
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": true,
-        "color_scheme": "",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
-      }
-    },
-    "leistungen_button_eHfFVQ": {
-      "type": "leistungen-button",
-      "blocks": {
-        "service_block_pCxQdA": {
-          "type": "service_block",
-          "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#e0e0e0",
-            "image_border_width": 4,
+            "image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
             "title": "Unterhaltsreinigung",
-            "subtitle": "Regelmäßige Reinigung Ihrer Büro‑ und Geschäftsräume.",
-            "text": "<p>Büro‑ und Gebäudereinigung  Oberflächen und Sanitäranlagen   Teppich‑ und Bodenreinigung</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "shopify://pages/unterhaltsreinigung",
+            "link_label": "Mehr erfahren →"
           }
         },
-        "service_block_EmmrBT": {
-          "type": "service_block",
+        "service_card_lf_PXJaE6": {
+          "type": "service_card_lf",
           "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#e0e0e0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
+            "image": "shopify://shop_images/shutterstock_370492946.jpg",
+            "title": "Glas- / Lamellenreinigung",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "shopify://pages/glas-und-lamellenreinigung",
+            "link_label": "Mehr erfahren →"
           }
         },
-        "service_block_CNxyTb": {
-          "type": "service_block",
+        "service_card_lf_EqV6LD": {
+          "type": "service_card_lf",
           "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#e0e0e0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
+            "image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
+            "title": "Bauschlussreinigung",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "shopify://pages/bauschlussreinigung",
+            "link_label": "Mehr erfahren →"
           }
         },
-        "service_block_ygjHdG": {
-          "type": "service_block",
+        "service_card_lf_nn8th7": {
+          "type": "service_card_lf",
           "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#e0e0e0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
-          }
-        },
-        "service_block_FK3pXP": {
-          "type": "service_block",
-          "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#e0e0e0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
-          }
-        },
-        "service_block_TtDyRh": {
-          "type": "service_block",
-          "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#e0e0e0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br/>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
-          }
-        },
-        "service_block_eDL8jn": {
-          "type": "service_block",
-          "settings": {
-            "image_diameter": 150,
-            "image_border_color": "#e0e0e0",
-            "image_border_width": 4,
-            "title": "Industrieservice",
-            "subtitle": "Gebäudeservice",
-            "text": "<p>Listenpunkt 1<br>Listenpunkt 2</p>",
-            "title_font": "sans-serif",
-            "title_bold": true,
-            "title_italic": false,
-            "title_font_size": 20,
-            "title_color": "#000000",
-            "subtitle_font": "sans-serif",
-            "subtitle_bold": false,
-            "subtitle_italic": false,
-            "subtitle_font_size": 16,
-            "subtitle_color": "#555555",
-            "text_font": "sans-serif",
-            "text_bold": false,
-            "text_italic": false,
-            "text_font_size": 14,
-            "text_color": "#333333"
+            "image": "shopify://shop_images/sis_location.png",
+            "title": "Sonderreinigung",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "shopify://pages/sonderreinigung",
+            "link_label": "Mehr erfahren →"
           }
         }
       },
       "block_order": [
-        "service_block_pCxQdA",
-        "service_block_EmmrBT",
-        "service_block_CNxyTb",
-        "service_block_ygjHdG",
-        "service_block_FK3pXP",
-        "service_block_TtDyRh",
-        "service_block_eDL8jn"
+        "service_card_lf_ngKVqM",
+        "service_card_lf_PXJaE6",
+        "service_card_lf_EqV6LD",
+        "service_card_lf_nn8th7"
       ],
-      "name": "Leistungen Button",
+      "name": "Leistung final",
       "settings": {
         "heading": "Unsere Leistungen",
-        "heading_font": "sans-serif",
+        "subtext": "Mit Leidenschaft für Ihren Erfolg.",
+        "font_heading": "helvetica_n4",
+        "font_body": "helvetica_n4",
+        "heading_size": 32,
         "heading_bold": true,
         "heading_italic": false,
-        "heading_font_size": 42,
-        "heading_color": "#333333",
-        "section_scale": 100,
-        "item_spacing": 30,
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "section_bg_color": "#ffffff",
-        "arrow_color": "#111111",
-        "line_color": "#dddddd",
-        "cta_kicker": "Mehr zu unseren Services",
-        "cta_btn_label": "Alle Leistungen ansehen",
-        "cta_btn_link": "shopify://pages/gebaudeservice-leistungen",
-        "cta_btn_newtab": false,
-        "cta_btn_style": "primary",
-        "cta_align": "center",
-        "cta_kicker_color": "#555555",
-        "cta_btn_bg_color": "#111111",
-        "cta_btn_text_color": "#ffffff"
+        "subtext_size": 16,
+        "subtext_bold": false,
+        "subtext_italic": false,
+        "card_title_size": 18,
+        "card_title_bold": true,
+        "card_title_italic": false,
+        "card_text_size": 14,
+        "card_text_bold": false,
+        "card_text_italic": false,
+        "card_link_size": 14,
+        "card_link_bold": true,
+        "card_link_italic": false,
+        "bg_color": "#f3f6f9",
+        "text_color": "#222222",
+        "accent_color": "#007acc",
+        "card_bg": "#ffffff",
+        "card_hover_bg": "#ffffff",
+        "card_radius": 12,
+        "card_hover_lift": 6,
+        "grid_gap": 20,
+        "section_padding": 24,
+        "show_button": true,
+        "button_label": "Alle Leistungen im Überblick",
+        "button_url": "shopify://pages/gebaudeservice-kontakt",
+        "button_align": "center",
+        "button_full_width": false,
+        "button_max_width": 420,
+        "button_font_size": 16,
+        "button_bold": true,
+        "button_italic": false,
+        "button_padding_x": 20,
+        "button_padding_y": 10,
+        "button_margin_top": 28,
+        "button_margin_bottom": 0,
+        "button_bg": "#000000",
+        "button_text": "#ffffff",
+        "button_hover_bg": "#334fb4",
+        "button_hover_text": "#ffffff"
       }
     },
     "amenities_hotspots_tap6zf": {
@@ -594,8 +423,7 @@
     "sticky_header_FqAYjf",
     "hero_building_section_kFETXt",
     "main",
-    "image_banner_dLWiNX",
-    "leistungen_button_eHfFVQ",
+    "leistung_final_pQB9VM",
     "amenities_hotspots_tap6zf",
     "text_mit_bild_button_QNXFL4",
     "video_ajPc6F",
