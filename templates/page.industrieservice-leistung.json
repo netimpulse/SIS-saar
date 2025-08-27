@@ -152,70 +152,6 @@
         "icon_radius": 1000
       }
     },
-    "leistungen_ueberarbeitet_QNWH7x": {
-      "type": "leistungen-ueberarbeitet",
-      "blocks": {
-        "service_card_lue_LUzBQV": {
-          "type": "service_card_lue",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
-            "title": "Reinigung",
-            "text": "Unsere Industriereinigung sorgt für Sauberkeit und Sicherheit in Produktions- und Fertigungsstätten – effizient, zuverlässig und nach höchsten Standards.",
-            "link_url": "shopify://pages/industrieservice-reinigung",
-            "link_label": "Mehr Erfahren"
-          }
-        },
-        "service_card_lue_Lyacme": {
-          "type": "service_card_lue",
-          "settings": {
-            "image": "shopify://shop_images/shutterstock_370492946.jpg",
-            "title": "Fluidmanagement und Wartung",
-            "text": "Regelmäßige Wartung verlängert die Lebensdauer Ihrer Anlagen und gewährleistet einen sicheren, störungsfreien Betrieb",
-            "link_url": "",
-            "link_label": "Learn More →"
-          }
-        },
-        "service_card_lue_ALFnq8": {
-          "type": "service_card_lue",
-          "settings": {
-            "image": "shopify://shop_images/sis_location.png",
-            "title": "Trockeneisstrahlen",
-            "text": "Durch das Trockeneisstrahlen reinigen wir alle Ihre Oberflächen schonend und effektiv, und das ganz ohne Chemikalien oder Rückstände.",
-            "link_url": "",
-            "link_label": "Learn More →"
-          }
-        }
-      },
-      "block_order": [
-        "service_card_lue_LUzBQV",
-        "service_card_lue_Lyacme",
-        "service_card_lue_ALFnq8"
-      ],
-      "name": "Leistungen überarbeitet",
-      "settings": {
-        "heading": "Unsere Leistungen",
-        "subtext": "Hier sind unsere Kernleistungen im Bereich Industrieservice",
-        "font_heading": "helvetica_n4",
-        "font_body": "helvetica_n4",
-        "bg_color": "#ffffff",
-        "text_color": "#222222",
-        "accent_color": "#4ade80",
-        "card_bg": "#ffffff",
-        "card_hover_bg": "#ffffff",
-        "card_radius": 12,
-        "card_hover_lift": 6,
-        "grid_gap": 20,
-        "section_padding": 24,
-        "show_button": true,
-        "button_label": "Schaltflächenbeschriftung",
-        "button_url": "",
-        "button_align": "center",
-        "button_bg": "#242833",
-        "button_hover_bg": "#6f7276",
-        "button_text": "#ffffff",
-        "button_radius": 20
-      }
-    },
     "custom_cta_block_Tf7gLb": {
       "type": "custom-cta-block",
       "blocks": {
@@ -330,6 +266,105 @@
         "link_color": "#3b82f6",
         "divider_color": "#1e293b"
       }
+    },
+    "leistung_final_peMkg3": {
+      "type": "leistung-final",
+      "blocks": {
+        "service_card_lf_3CqeXz": {
+          "type": "service_card_lf",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
+            "title": "Unterhaltsreinigung",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "shopify://pages/unterhaltsreinigung",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_RBCngE": {
+          "type": "service_card_lf",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_370492946.jpg",
+            "title": "Glas- / Lamellenreinigung",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "shopify://pages/glas-und-lamellenreinigung",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_XUg8PF": {
+          "type": "service_card_lf",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
+            "title": "Bauschlussreinigung",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "shopify://pages/bauschlussreinigung",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_KhEA83": {
+          "type": "service_card_lf",
+          "settings": {
+            "image": "shopify://shop_images/sis_location.png",
+            "title": "Sonderreinigung",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "shopify://pages/sonderreinigung",
+            "link_label": "Mehr erfahren →"
+          }
+        }
+      },
+      "block_order": [
+        "service_card_lf_3CqeXz",
+        "service_card_lf_RBCngE",
+        "service_card_lf_XUg8PF",
+        "service_card_lf_KhEA83"
+      ],
+      "name": "Leistung final",
+      "settings": {
+        "heading": "Unsere Leistungen",
+        "subtext": "Mit Leidenschaft für Ihren Erfolg.",
+        "font_heading": "helvetica_n4",
+        "font_body": "helvetica_n4",
+        "heading_size": 32,
+        "heading_bold": true,
+        "heading_italic": false,
+        "subtext_size": 16,
+        "subtext_bold": false,
+        "subtext_italic": false,
+        "card_title_size": 18,
+        "card_title_bold": true,
+        "card_title_italic": false,
+        "card_text_size": 14,
+        "card_text_bold": false,
+        "card_text_italic": false,
+        "card_link_size": 14,
+        "card_link_bold": true,
+        "card_link_italic": false,
+        "bg_color": "#f3f6f9",
+        "text_color": "#222222",
+        "accent_color": "#22c55e",
+        "card_bg": "#ffffff",
+        "card_hover_bg": "#ffffff",
+        "card_radius": 12,
+        "card_hover_lift": 6,
+        "grid_gap": 20,
+        "section_padding": 24,
+        "show_button": true,
+        "button_label": "Mehr erfahren",
+        "button_url": "shopify://pages/gebaudeservice-kontakt",
+        "button_align": "center",
+        "button_full_width": false,
+        "button_max_width": 420,
+        "button_font_size": 16,
+        "button_bold": true,
+        "button_italic": false,
+        "button_padding_x": 20,
+        "button_padding_y": 10,
+        "button_margin_top": 28,
+        "button_margin_bottom": 0,
+        "button_bg": "#000000",
+        "button_text": "#ffffff",
+        "button_hover_bg": "#334fb4",
+        "button_hover_text": "#ffffff"
+      }
     }
   },
   "order": [
@@ -337,8 +372,8 @@
     "main",
     "hero_overlay_section_6beqpy",
     "highlights_icons_7K7kJa",
-    "leistungen_ueberarbeitet_QNWH7x",
     "custom_cta_block_Tf7gLb",
-    "sis_single_footer_PEDkQY"
+    "sis_single_footer_PEDkQY",
+    "leistung_final_peMkg3"
   ]
 }
