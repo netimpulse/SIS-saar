@@ -2,6 +2,9 @@
    – Responsiv, hover-zoom & color highlight
    – Mobile optimiert
 */
+.downloads-section {
+  padding-top: 3rem; /* zusätzlicher Abstand zum Seitenanfang */
+}
 
 .downloads-section .container{
   max-width: var(--page-width, 1200px);
