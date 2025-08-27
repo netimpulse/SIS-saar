@@ -177,23 +177,13 @@
             "link_url": "",
             "link_label": "Mehr erfahren →"
           }
-        },
-        "service_card_lf_kAz9it": {
-          "type": "service_card_lf",
-          "settings": {
-            "title": "Titel",
-            "text": "Kurze Beschreibung hier.",
-            "link_url": "",
-            "link_label": "Mehr erfahren →"
-          }
         }
       },
       "block_order": [
         "service_card_lf_LCXAEL",
         "service_card_lf_K9CA39",
         "service_card_lf_GhBQY3",
-        "service_card_lf_9zpRDB",
-        "service_card_lf_kAz9it"
+        "service_card_lf_9zpRDB"
       ],
       "name": "Leistung final",
       "settings": {
