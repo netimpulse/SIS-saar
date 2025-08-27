@@ -9,13 +9,14 @@
  */
 {
   "sections": {
-    "sticky_header_dpTz7z": {
+    "sticky_header_mwbBwL": {
       "type": "sticky-header",
       "name": "Sticky header",
       "settings": {
         "background_color": "#ffffff",
         "padding_vertical": 16,
         "padding_horizontal": 24,
+        "logo_height": 40,
         "back_link": "",
         "back_label": "Zurück",
         "back_font": "sans-serif",
@@ -23,9 +24,8 @@
         "back_text_color": "#374151",
         "back_hover_color": "#4ade80",
         "back_font_size": 16,
-        "back_position_x": 50,
+        "back_position_x": 0,
         "back_position_y": 0,
-        "logo": "shopify://shop_images/SIS_Gruppe_logo.png",
         "logo_text": "Mein Shop",
         "logo_color": "#1e40af",
         "logo_font_size": 24,
@@ -417,7 +417,7 @@
     }
   },
   "order": [
-    "sticky_header_dpTz7z",
+    "sticky_header_mwbBwL",
     "custom_header_iUWBMf",
     "split_showcase_DdJNLE",
     "text_mit_bild_button_VryaeN",
