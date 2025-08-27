@@ -9,45 +9,37 @@
  */
 {
   "sections": {
-    "custom_header_2_XgqPXJ": {
-      "type": "custom-header-2",
-      "name": "Custom Header 2",
+    "sticky_header_XtXzjY": {
+      "type": "sticky-header",
+      "name": "Sticky header",
       "settings": {
         "background_color": "#ffffff",
         "padding_vertical": 16,
         "padding_horizontal": 24,
+        "logo_height": 40,
         "back_link": "",
-        "back_label": "Zur Hauptseite",
+        "back_label": "Zurück",
         "back_font": "sans-serif",
         "back_font_bold": false,
-        "back_text_color": "#64748b",
+        "back_text_color": "#374151",
         "back_hover_color": "#4ade80",
         "back_font_size": 16,
-        "back_position_x": 0,
-        "back_position_y": 0,
         "logo": "shopify://shop_images/logo_Industrieservice_exact_v2.png",
         "logo_text": "Mein Shop",
-        "logo_subtext": "Service & Solutions",
-        "logo_color": "#0f172a",
-        "logo_font_size": 22,
-        "logo_subtext_color": "#6b7280",
-        "logo_subtext_size": 12,
-        "logo_position_x": 0,
-        "logo_position_y": 0,
+        "logo_color": "#1e40af",
+        "logo_font_size": 24,
         "menu": "industrieservice",
         "nav_font": "sans-serif",
-        "nav_font_bold": true,
+        "nav_font_bold": false,
         "nav_text_color": "#374151",
-        "nav_hover_color": "#22c55e",
+        "nav_hover_color": "#4ade80",
         "nav_font_size": 16,
-        "menu_position_x": 0,
-        "menu_position_y": 0,
         "button_text": "Kontakt",
         "button_link": "shopify://pages/allgemeiner-kontakt",
         "button_text_color": "#ffffff",
-        "button_bg_color": "#0f2640",
+        "button_bg_color": "#4ade80",
         "button_hover_text_color": "#ffffff",
-        "button_hover_bg_color": "#193352"
+        "button_hover_bg_color": "#22c55e"
       }
     },
     "main": {
@@ -226,7 +218,7 @@
         "card_bg": "#ffffff",
         "card_radius": 16,
         "text_color": "#111111",
-        "accent_color": "#22C55E"
+        "accent_color": "#22c55e"
       }
     },
     "highlights_icons_4mpBYK": {
@@ -476,7 +468,7 @@
     }
   },
   "order": [
-    "custom_header_2_XgqPXJ",
+    "sticky_header_XtXzjY",
     "main",
     "hero_overlay_section_Rk9gNP",
     "about_section_FRmjn4",
