@@ -84,3 +84,65 @@
   .custom-header__nav-wrapper{ display:none; }
   .custom-header__mobile-toggle{ display:flex; }
 }
+
+/* ===== Mobile Drawer (rechts) ===== */
+html.no-scroll{ overflow:hidden; touch-action:none; }
+
+.custom-header-section .custom-header__overlay{
+  position:fixed; inset:0;
+  background:rgba(0,0,0,.4);
+  opacity:0; pointer-events:none;
+  transition:opacity .3s ease; z-index:1000;
+}
+.custom-header-section.is-drawer-open .custom-header__overlay{
+  opacity:1; pointer-events:auto;
+}
+
+.custom-header__drawer{
+  position:fixed; top:0; right:0; height:100vh;
+  width:min(86vw, 380px);
+  background:var(--header-bg-color);
+  box-shadow:-8px 0 24px rgba(0,0,0,.12);
+  transform:translateX(100%);
+  transition:transform .3s ease;
+  z-index:1001; display:flex; flex-direction:column;
+  padding:24px;
+}
+.custom-header-section.is-drawer-open .custom-header__drawer{
+  transform:translateX(0);
+}
+
+.custom-header__drawer-header{ display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; }
+.custom-header__drawer-title{ font-weight:700; font-size:18px; margin:0; }
+.custom-header__drawer-close{ background:none; border:none; cursor:pointer; padding:8px; line-height:0; }
+
+.custom-header__drawer-nav{ display:flex; flex-direction:column; gap:8px; padding:12px 0; overflow:auto; }
+.custom-header__drawer-link{
+  text-decoration:none; color:var(--nav-text-color);
+  font-family:var(--nav-font-family); font-style:var(--nav-font-style);
+  font-weight:var(--nav-font-weight); font-size:18px;
+  padding:10px 0; border-bottom:1px solid rgba(0,0,0,.06);
+  transition:color .3s ease;
+}
+.custom-header__drawer-link:hover{ color:var(--nav-hover-color); }
+.custom-header__drawer-link.active{ color:var(--nav-hover-color); }
+
+.custom-header__drawer-cta{ margin-top:auto; padding-top:16px; }
+
+/* Burger -> X wenn offen */
+.custom-header-section.is-drawer-open .custom-header__mobile-toggle span:nth-child(1){
+  transform:translateY(6px) rotate(45deg);
+}
+.custom-header-section.is-drawer-open .custom-header__mobile-toggle span:nth-child(2){
+  opacity:0;
+}
+.custom-header-section.is-drawer-open .custom-header__mobile-toggle span:nth-child(3){
+  transform:translateY(-6px) rotate(-45deg);
+}
+.custom-header__mobile-toggle span{ transform-origin:center; }
+
+/* Drawer nur mobil zeigen */
+@media (min-width:991px){
+  .custom-header__overlay, .custom-header__drawer{ display:none !important; }
+}
+
