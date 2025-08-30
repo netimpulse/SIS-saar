@@ -99,49 +99,10 @@
       </a>
     {% endif %}
 
-    <!-- Burger-Button (mit ARIA) -->
-    <button class="custom-header__mobile-toggle"
-            aria-label="Menü öffnen"
-            aria-controls="mobile-drawer-{{ section.id }}"
-            aria-expanded="false">
+    <!-- Optional: Burger (ohne Funktion) -->
+    <button class="custom-header__mobile-toggle" aria-label="Menü öffnen">
       <span></span><span></span><span></span>
     </button>
-
-    <!-- Overlay -->
-    <div class="custom-header__overlay" data-drawer-overlay hidden></div>
-
-    <!-- Mobile Drawer (rechts) -->
-    <aside id="mobile-drawer-{{ section.id }}"
-           class="custom-header__drawer"
-           aria-hidden="true"
-           tabindex="-1">
-      <div class="custom-header__drawer-header">
-        <p class="custom-header__drawer-title">{{ section.settings.logo_text | default: shop.name }}</p>
-        <button class="custom-header__drawer-close" aria-label="Menü schließen">
-          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
-      </div>
-
-      <nav class="custom-header__drawer-nav" role="navigation" aria-label="Mobile Navigation">
-        {%- for link in section.settings.menu.links -%}
-          <a href="{{ link.url }}" class="custom-header__drawer-link {% if link.active %}active{% endif %}">
-            {{ link.title }}
-          </a>
-        {%- endfor -%}
-      </nav>
-
-      {%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
-        <div class="custom-header__drawer-cta">
-          <a href="{{ section.settings.button_link }}" class="custom-header__contact-btn" style="width:100%; text-align:center;">
-            {{ section.settings.button_text }}
-          </a>
-        </div>
-      {%- endif -%}
-    </aside>
-
   </div>
 </header>
 
@@ -167,13 +128,52 @@
   })();
 </script>
 
-<script>
-  (function(){
-    var header = document.getElementById('sticky-header-{{ section.id }}');
-    if(!header) return;
+{% schema %}
+{
+  "name": "Sticky header",
+  "tag": "header",
+  "class": "shopify-section-header",
+  "settings": [
+    { "type": "color", "id": "background_color", "label": "Hintergrundfarbe", "default": "#ffffff" },
+    { "type": "range", "id": "padding_vertical", "label": "Padding Oben/Unten (px)", "min": 0, "max": 50, "step": 1, "default": 16, "unit": "px" },
+    { "type": "range", "id": "padding_horizontal", "label": "Padding Links/Rechts (px)", "min": 0, "max": 100, "step": 1, "default": 24, "unit": "px" },
 
-    var toggle  = header.querySelector('.custom-header__mobile-toggle');
-    var drawer  = document.getElementById('mobile-drawer-{{ section.id }}');
+    { "type": "range", "id": "logo_height", "label": "Logo-Höhe (px)", "min": 20, "max": 120, "step": 1, "default": 40, "unit": "px" },
+
+    { "type": "header", "content": "Zurück-Pfeil" },
+    { "type": "url", "id": "back_link", "label": "Link für Zurück-Pfeil" },
+    { "type": "text", "id": "back_label", "label": "Text neben Pfeil (optional)", "default": "Zurück" },
+    { "type": "font_picker", "id": "back_font", "label": "Pfeil/Label Schriftart", "default": "sans-serif" },
+    { "type": "checkbox", "id": "back_font_bold", "label": "Fett", "default": false },
+    { "type": "color", "id": "back_text_color", "label": "Farbe", "default": "#374151" },
+    { "type": "color", "id": "back_hover_color", "label": "Farbe (Hover)", "default": "#4ade80" },
+    { "type": "range", "id": "back_font_size", "label": "Schriftgröße (px)", "min": 12, "max": 28, "step": 1, "default": 16, "unit": "px" },
+
+    { "type": "header", "content": "Logo" },
+    { "type": "image_picker", "id": "logo", "label": "Logo Bild" },
+    { "type": "text", "id": "logo_text", "label": "Logo Text (Fallback)", "default": "Mein Shop" },
+    { "type": "color", "id": "logo_color", "label": "Logo Textfarbe", "default": "#1e40af" },
+    { "type": "range", "id": "logo_font_size", "label": "Logo Schriftgröße", "min": 16, "max": 48, "step": 1, "default": 24, "unit": "px" },
+
+    { "type": "header", "content": "Navigation" },
+    { "type": "link_list", "id": "menu", "label": "Menü auswählen", "default": "main-menu" },
+    { "type": "font_picker", "id": "nav_font", "label": "Navigation Schriftart", "default": "sans-serif" },
+    { "type": "checkbox", "id": "nav_font_bold", "label": "Navigation fettgedruckt", "default": false },
+    { "type": "color", "id": "nav_text_color", "label": "Navigation Textfarbe", "default": "#374151" },
+    { "type": "color", "id": "nav_hover_color", "label": "Navigation Hover-Farbe", "default": "#4ade80" },
+    { "type": "range", "id": "nav_font_size", "label": "Navigation Schriftgröße", "min": 12, "max": 24, "step": 1, "default": 16, "unit": "px" },
+
+    { "type": "header", "content": "Kontakt Button" },
+    { "type": "text", "id": "button_text", "label": "Button Text", "default": "Kontakt" },
+    { "type": "url", "id": "button_link", "label": "Button Link" },
+    { "type": "color", "id": "button_text_color", "label": "Button Textfarbe", "default": "#ffffff" },
+    { "type": "color", "id": "button_bg_color", "label": "Button Hintergrund", "default": "#4ade80" },
+    { "type": "color", "id": "button_hover_text_color", "label": "Button Textfarbe (Hover)", "default": "#ffffff" },
+    { "type": "color", "id": "button_hover_bg_color", "label": "Button Hintergrund (Hover)", "default": "#22c55e" }
+  ],
+  "presets": [{ "name": "Sticky header" }]
+}
+{% endschema %} = document.getElementById('mobile-drawer-{{ section.id }}');
     var overlay = header.querySelector('[data-drawer-overlay]');
     var closeBtn = header.querySelector('.custom-header__drawer-close');
 
