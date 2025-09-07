@@ -49,7 +49,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--gap);
-  justify-content: center; /* zentriert letzte Reihe (z. B. 2 Elemente) */
+  justify-content: center;
 }
 .services-grid[data-columns="2"] {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -123,7 +123,7 @@
   border: 1px solid var(--badge-bg);
 }
 
-/* Buttons (Fallback – überschreibt dein Theme nicht aggressiv) */
+/* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
