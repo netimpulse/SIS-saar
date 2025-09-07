@@ -18,7 +18,7 @@
   gap: clamp(2rem, 4vw, 4rem);
   align-items: center;
 }
-.sis-about__grid--image-left{ direction: rtl; }
+.sis-about__grid--image-left{ direction: rtl; } /* swap ohne DOM ändern */
 .sis-about__grid--image-left > *{ direction: ltr; }
 .sis-about__grid--no-image{ grid-template-columns: 1fr; }
 
@@ -89,7 +89,6 @@
   margin-inline: auto;
   box-shadow: 0 10px 24px rgba(0,0,0,.08);
 }
-/* Seitenverhältnis steuern */
 .sis-about__image-wrapper img{
   width: 100%;
   height: auto;
@@ -106,7 +105,7 @@
   color: var(--text-color);
   font-size: var(--text-font-size);
   padding: 24px 16px;
-  border-radius: var(--image-border_radius, var(--image-border-radius));
+  border-radius: var(--image-border-radius);
   background: rgba(17,24,39,0.035);
   border: 1px dashed rgba(17,24,39,0.15);
   max-width: calc(var(--image-max-width) * 1%);
@@ -115,9 +114,7 @@
 
 /* --- Responsive --- */
 @media (max-width: 992px){
-  .sis-about__grid{
-    grid-template-columns: 1fr;
-  }
+  .sis-about__grid{ grid-template-columns: 1fr; }
   .sis-about__content{ max-width: 720px; margin: 0 auto; }
 }
 @media (max-width: 640px){
