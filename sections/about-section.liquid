@@ -1,20 +1,24 @@
 {% comment %}
-  **
-  * Über Uns (Layout) – erweitert
-  * - Bild an/aus (mit zentriertem Fallback-Text)
-  * - Überschrift: Ausrichtung + fett/kursiv/unterstrichen
+  Über Uns (Layout) – polierte Version
+  - Bild an/aus + zentrierter Fallback-Text
+  - Überschrift-Ausrichtung & -Stile
+  - Stabile Grid-Ausrichtung per grid-areas (Bild wirklich links/rechts)
 {% endcomment %}
 
 {{ 'section-ueber-uns-layout.css' | asset_url | stylesheet_tag }}
 
 <style>
-  #shopify-section-{{ section.id }} {
+  #shopify-section-{{ section.id }}{
     --background-color: {{ section.settings.background_color }};
     --section-padding-top: {{ section.settings.section_padding_top }}px;
     --section-padding-bottom: {{ section.settings.section_padding_bottom }}px;
 
     --title-color: {{ section.settings.title_color }};
     --title-font-size: {{ section.settings.title_font_size }}px;
+    --title-text-align: {{ section.settings.title_alignment }};
+    --title-font-weight: {% if section.settings.title_bold %}700{% else %}500{% endif %};
+    --title-font-style: {% if section.settings.title_italic %}italic{% else %}normal{% endif %};
+    --title-text-decoration: {% if section.settings.title_underline %}underline{% else %}none{% endif %};
 
     --text-color: {{ section.settings.text_color }};
     --text-font-size: {{ section.settings.text_font_size }}px;
@@ -25,44 +29,33 @@
     --icon-size: {{ section.settings.icon_size }}px;
     --icon-color: {{ section.settings.icon_color }};
     --feature-title-color: {{ section.settings.feature_title_color }};
-
-    /* NEW: Title controls */
-    --title-text-align: {{ section.settings.title_alignment }};
-    --title-font-weight: {% if section.settings.title_bold %}700{% else %}400{% endif %};
-    --title-font-style: {% if section.settings.title_italic %}italic{% else %}normal{% endif %};
-    --title-text-decoration: {% if section.settings.title_underline %}underline{% else %}none{% endif %};
   }
 </style>
 
+{%- liquid
+  assign image_on_left = section.settings.layout_direction == 'image_left'
+  assign show_image = section.settings.show_image
+  assign has_image = section.settings.image != blank
+  assign actually_show_image = show_image and has_image
+-%}
+
 <div class="sis-about-section">
   <div class="sis-about__container">
-    {%- liquid
-      assign image_on_left = false
-      if section.settings.layout_direction == 'image_left'
-        assign image_on_left = true
-      endif
-
-      assign show_image = section.settings.show_image
-      assign has_image = section.settings.image != blank
-      assign actually_show_image = show_image and has_image
-    -%}
-
     <div class="sis-about__grid
       {% if image_on_left %}sis-about__grid--image-left{% endif %}
       {% unless actually_show_image %}sis-about__grid--no-image{% endunless %}
     ">
 
       {%- if image_on_left -%}
-        {%- if actually_show_image -%}
-          {%- render 'about-image', section: section -%}
-        {%- else -%}
-          <!-- NEW: Fallback-Text bei ausgeschaltetem/fehlendem Bild -->
-          <div class="sis-about__image-off">
-            <div class="sis-about__image-off-text">
-              {{ section.settings.image_off_text }}
-            </div>
+        {% if actually_show_image %}
+          <div class="sis-about__image" aria-hidden="false">
+            {%- render 'about-image', section: section -%}
           </div>
-        {%- endif -%}
+        {% else %}
+          <div class="sis-about__image sis-about__image--off">
+            <div class="sis-about__image-off-text">{{ section.settings.image_off_text }}</div>
+          </div>
+        {% endif %}
       {%- endif -%}
 
       <div class="sis-about__content">
@@ -78,11 +71,11 @@
                 <div class="sis-about__feature-icon">
                   {% if block.settings.icon_type == 'image' and block.settings.icon_image != blank %}
                     <img
-                      src="{{ block.settings.icon_image | image_url: width: 120, height: 120 }}"
+                      src="{{ block.settings.icon_image | image_url: width: 160, height: 160 }}"
                       alt="{{ block.settings.feature_title | escape }}"
-                      style="width: {{ section.settings.icon_size }}px; height: auto;"
                       width="{{ section.settings.icon_size }}"
                       height="{{ section.settings.icon_size }}"
+                      style="width:{{ section.settings.icon_size }}px;height:auto"
                       loading="lazy">
                   {% elsif block.settings.icon_type == 'svg' and block.settings.icon_svg != blank %}
                     {{ block.settings.icon_svg }}
@@ -99,16 +92,15 @@
       </div>
 
       {%- unless image_on_left -%}
-        {%- if actually_show_image -%}
-          {%- render 'about-image', section: section -%}
-        {%- else -%}
-          <!-- NEW: Fallback-Text bei ausgeschaltetem/fehlendem Bild -->
-          <div class="sis-about__image-off">
-            <div class="sis-about__image-off-text">
-              {{ section.settings.image_off_text }}
-            </div>
+        {% if actually_show_image %}
+          <div class="sis-about__image" aria-hidden="false">
+            {%- render 'about-image', section: section -%}
           </div>
-        {%- endif -%}
+        {% else %}
+          <div class="sis-about__image sis-about__image--off">
+            <div class="sis-about__image-off-text">{{ section.settings.image_off_text }}</div>
+          </div>
+        {% endif %}
       {%- endunless -%}
 
     </div>
@@ -132,12 +124,7 @@
       ],
       "default": "text_left"
     },
-    {
-      "type": "checkbox",
-      "id": "show_image",
-      "label": "Bild anzeigen",
-      "default": true
-    },
+    { "type": "checkbox", "id": "show_image", "label": "Bild anzeigen", "default": true },
     {
       "type": "richtext",
       "id": "image_off_text",
@@ -149,12 +136,10 @@
     { "type": "range", "id": "section_padding_top", "label": "Abstand oben", "min": 0, "max": 150, "step": 5, "unit": "px", "default": 80 },
     { "type": "range", "id": "section_padding_bottom", "label": "Abstand unten", "min": 0, "max": 150, "step": 5, "unit": "px", "default": 80 },
 
-    { "type": "header", "content": "Textinhalt" },
+    { "type": "header", "content": "Überschrift" },
     { "type": "text", "id": "title", "label": "Titel", "default": "Über uns" },
-    { "type": "color", "id": "title_color", "label": "Titel Farbe", "default": "#000000" },
+    { "type": "color", "id": "title_color", "label": "Titel Farbe", "default": "#111827" },
     { "type": "range", "id": "title_font_size", "label": "Titel Schriftgröße", "min": 24, "max": 56, "step": 2, "unit": "px", "default": 40 },
-
-    /* NEW: Title controls */
     {
       "type": "select",
       "id": "title_alignment",
@@ -170,19 +155,15 @@
     { "type": "checkbox", "id": "title_italic", "label": "Titel kursiv", "default": false },
     { "type": "checkbox", "id": "title_underline", "label": "Titel unterstrichen", "default": false },
 
-    {
-      "type": "richtext",
-      "id": "description",
-      "label": "Beschreibungstext",
-      "default": "<p>Wir sind SIS Saar - ein innovatives Unternehmen mit zwei spezialisierten Geschäftsbereichen. Seit über zwei Jahrzehnten stehen wir für zuverlässige und hochwertige Serviceleistungen in der Region.</p><p>Unser Erfolgsrezept liegt in der Kombination aus langjähriger Erfahrung, modernster Technik und einem motivierten Team von Fachkräften. Jeder Mitarbeiter trägt dazu bei, dass wir unseren Kunden stets erstklassige Lösungen anbieten können.</p>"
-    },
+    { "type": "header", "content": "Text" },
+    { "type": "richtext", "id": "description", "label": "Beschreibungstext", "default": "<p>Wir sind SIS Saar&nbsp;…</p>" },
     { "type": "color", "id": "text_color", "label": "Text Farbe", "default": "#6B7280" },
     { "type": "range", "id": "text_font_size", "label": "Text Schriftgröße", "min": 14, "max": 22, "step": 1, "unit": "px", "default": 18 },
 
     { "type": "header", "content": "Bild" },
     { "type": "image_picker", "id": "image", "label": "Bild" },
-    { "type": "range", "id": "image_border_radius", "label": "Bild Eckenrundung", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 12 },
-    { "type": "text", "id": "image_alt", "label": "Bild Alt-Text", "info": "Wichtig für SEO und Barrierefreiheit." },
+    { "type": "range", "id": "image_border_radius", "label": "Bild Eckenrundung", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 14 },
+    { "type": "text", "id": "image_alt", "label": "Bild Alt-Text" },
 
     { "type": "header", "content": "Features (Punkte mit Icons)" },
     {
@@ -193,7 +174,7 @@
       "default": "2"
     },
     { "type": "range", "id": "icon_size", "label": "Icon Größe", "min": 24, "max": 48, "step": 2, "unit": "px", "default": 32 },
-    { "type": "color", "id": "icon_color", "label": "SVG-Icon Farbe", "info": "Gilt nur für SVG-Icons.", "default": "#34D399" },
+    { "type": "color", "id": "icon_color", "label": "SVG-Icon Farbe", "default": "#34D399" },
     { "type": "color", "id": "feature_title_color", "label": "Feature Titel Farbe", "default": "#111827" }
   ],
   "blocks": [
@@ -202,23 +183,5 @@
       "name": "Feature Punkt",
       "settings": [
         { "type": "header", "content": "Icon" },
-        {
-          "type": "select",
-          "id": "icon_type",
-          "label": "Icon-Typ",
-          "options": [ { "value": "svg", "label": "SVG-Code" }, { "value": "image", "label": "Bild" } ],
-          "default": "svg"
-        },
-        { "type": "html", "id": "icon_svg", "label": "SVG Code", "info": "Wird verwendet, wenn Icon-Typ 'SVG-Code' ist." },
-        { "type": "image_picker", "id": "icon_image", "label": "Icon-Bild", "info": "Wird verwendet, wenn Icon-Typ 'Bild' ist." },
-        { "type": "header", "content": "Inhalt" },
-        { "type": "text", "id": "feature_title", "label": "Titel", "default": "Feature Titel" },
-        { "type": "text", "id": "feature_description", "label": "Beschreibung", "default": "Kurze Beschreibung des Features." }
-      ]
-    }
-  ],
-  "presets": [
-    { "name": "Über Uns (Layout)", "blocks": [ { "type": "feature" }, { "type": "feature" } ] }
-  ]
-}
-{% endschema %}
+        { "type": "select", "id": "icon_type", "label": "Icon-Typ", "options": [ { "value": "svg", "label": "SVG-Code" }, { "value": "image", "label": "Bild" } ], "default": "svg" },
+        { "type": "html", "id": "icon_sv_
