@@ -1,8 +1,8 @@
 {% comment %}
-  Über Uns (Layout) – Neu (v2)
-  - Titel: Richtext (title_richtext) + Fallback auf altes "title"
+  Über Uns (Layout) – Neu (v2, fixed comparisons)
+  - Titel: title_richtext (Richtext) mit Fallback auf title (Text)
   - Bild: show_image Toggle + Fallback-Text
-  - Direkter <img>-Render (kein Snippet nötig)
+  - Kein externes Snippet; <img> wird direkt gerendert
 {% endcomment %}
 
 {{ 'section-ueber-uns-layout-v2.css' | asset_url | stylesheet_tag }}
@@ -31,10 +31,20 @@
 </style>
 
 {%- liquid
-  assign image_on_left = section.settings.layout_direction == 'image_left'
-  assign show_image    = section.settings.show_image
-  assign has_image     = section.settings.image != blank
-  assign actually_show_image = show_image and has_image
+  assign image_on_left = false
+  if section.settings.layout_direction == 'image_left'
+    assign image_on_left = true
+  endif
+
+  assign show_image = section.settings.show_image
+  assign has_image = false
+  if section.settings.image != blank
+    assign has_image = true
+  endif
+  assign actually_show_image = false
+  if show_image and has_image
+    assign actually_show_image = true
+  endif
 
   assign title_html = section.settings.title_richtext
   if title_html == blank and section.settings.title != blank
@@ -44,16 +54,13 @@
 
 <div class="sis-about-section">
   <div class="sis-about__container">
-    <div class="sis-about__grid
-      {% if image_on_left %}sis-about__grid--image-left{% endif %}
-      {% unless actually_show_image %}sis-about__grid--no-image{% endunless %}
-    ">
+    <div class="sis-about__grid{% if image_on_left %} sis-about__grid--image-left{% endif %}{% unless actually_show_image %} sis-about__grid--no-image{% endunless %}">
 
-      {%- if image_on_left -%}
+      {% if image_on_left %}
         {% if actually_show_image %}
           <div class="sis-about__image">
             <div class="sis-about__image-wrapper">
-              {%- assign img = section.settings.image -%}
+              {% assign img = section.settings.image %}
               <img
                 src="{{ img | image_url: width: 1200 }}"
                 srcset="{{ img | image_url: width: 600 }} 600w, {{ img | image_url: width: 900 }} 900w, {{ img | image_url: width: 1200 }} 1200w"
@@ -67,7 +74,7 @@
             <div class="sis-about__image-off-text">{{ section.settings.image_off_text }}</div>
           </div>
         {% endif %}
-      {%- endif -%}
+      {% endif %}
 
       <div class="sis-about__content">
         <div class="sis-about__title rte--title">
@@ -105,11 +112,11 @@
         {% endif %}
       </div>
 
-      {%- unless image_on_left -%}
+      {% unless image_on_left %}
         {% if actually_show_image %}
           <div class="sis-about__image">
             <div class="sis-about__image-wrapper">
-              {%- assign img = section.settings.image -%}
+              {% assign img = section.settings.image %}
               <img
                 src="{{ img | image_url: width: 1200 }}"
                 srcset="{{ img | image_url: width: 600 }} 600w, {{ img | image_url: width: 900 }} 900w, {{ img | image_url: width: 1200 }} 1200w"
@@ -123,7 +130,7 @@
             <div class="sis-about__image-off-text">{{ section.settings.image_off_text }}</div>
           </div>
         {% endif %}
-      {%- endunless -%}
+      {% endunless %}
 
     </div>
   </div>
@@ -166,7 +173,7 @@
     { "type": "range", "id": "title_font_size", "label": "Titel Schriftgröße", "min": 20, "max": 56, "step": 2, "unit": "px", "default": 32 },
 
     { "type": "header", "content": "Textinhalt" },
-    { "type": "richtext", "id": "description", "label": "Beschreibungstext", "default": "<p>Wir sind SIS Saar – ein innovatives Unternehmen …</p>" },
+    { "type": "richtext", "id": "description", "label": "Beschreibungstext", "default": "<p>Wir sind SIS Saar …</p>" },
     { "type": "color", "id": "text_color", "label": "Text Farbe", "default": "#6B7280" },
     { "type": "range", "id": "text_font_size", "label": "Text Schriftgröße", "min": 14, "max": 22, "step": 1, "unit": "px", "default": 18 },
 
