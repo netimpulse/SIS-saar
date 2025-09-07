@@ -19,7 +19,7 @@
         "logo_height": 40,
         "back_link": "",
         "back_label": "Zurück",
-        "back_font": "sans-serif",
+        "back_font": "system_ui_n4",
         "back_font_bold": false,
         "back_text_color": "#374151",
         "back_hover_color": "#4ade80",
@@ -29,7 +29,7 @@
         "logo_color": "#1e40af",
         "logo_font_size": 24,
         "menu": "industrieservice",
-        "nav_font": "sans-serif",
+        "nav_font": "system_ui_n4",
         "nav_font_bold": false,
         "nav_text_color": "#374151",
         "nav_hover_color": "#4ade80",
@@ -234,20 +234,20 @@
         "image_position": "right",
         "image_shadow_strength": 20,
         "heading": "Unser Team",
-        "heading_font": "sans-serif",
+        "heading_font": "system_ui_n4",
         "heading_font_size": 42,
         "heading_color": "#1f1f1f",
         "subheading": "Wer wir sind und was uns auszeichnet",
-        "subheading_font": "sans-serif",
+        "subheading_font": "system_ui_n4",
         "subheading_font_size": 18,
         "subheading_color": "#555555",
         "text": "<p>Beschreiben Sie hier Ihr Unternehmen, Ihre Produkte oder Dienstleistungen. Dieser Text ist vollständig anpassbar und unterstützt auch Formatierungen wie <strong>fett</strong> oder <em>kursiv</em>.</p>",
-        "text_font": "sans-serif",
+        "text_font": "system_ui_n4",
         "text_font_size": 16,
         "text_color": "#333333",
         "button_text": "erfahre mehr über uns",
         "button_link": "shopify://pages/industrieservice-uber-uns",
-        "button_font": "sans-serif",
+        "button_font": "system_ui_n4",
         "button_font_size": 16,
         "button_padding_x": 24,
         "button_padding_y": 14,
@@ -403,6 +403,90 @@
         "contact_hours": "Mo–Fr 8–17 Uhr",
         "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
+    },
+    "karriere_kacheln_rTrwpa": {
+      "type": "karriere-kacheln",
+      "blocks": {
+        "career_tile_WtGbjb": {
+          "type": "career_tile",
+          "settings": {
+            "title_html": "<p><strong>Reinigungskraft (m/w/d)aaaaaaaaa</strong></p>",
+            "desc_html": "<p>Für die professionelle Gebäudereinigung in Bürogebäuden und öffentlichen Einrichtungen</p>",
+            "location_html": "<p>Saarbrücken</p>",
+            "time": "beides",
+            "badge_label": "",
+            "badge_bg": "",
+            "badge_text": "",
+            "details_html": "<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>",
+            "details_toggle": "Details anzeigen",
+            "details_open": false,
+            "btn_label": "Jetzt bewerben",
+            "btn_url": "",
+            "btn_newtab": false,
+            "card_align": "left",
+            "card_bg": ""
+          }
+        },
+        "career_tile_kyVcMw": {
+          "type": "career_tile",
+          "settings": {
+            "title_html": "<p><strong>Reinigungskraft (m/w/d)</strong></p>",
+            "desc_html": "<p>Für die professionelle Gebäudereinigung in Bürogebäuden und öffentlichen Einrichtungen</p>",
+            "location_html": "<p>Saarbrücken</p>",
+            "time": "beides",
+            "badge_label": "",
+            "badge_bg": "",
+            "badge_text": "",
+            "details_html": "",
+            "details_toggle": "Details anzeigen",
+            "details_open": false,
+            "btn_label": "Jetzt bewerben",
+            "btn_url": "",
+            "btn_newtab": false,
+            "card_align": "left",
+            "card_bg": ""
+          }
+        },
+        "career_tile_MggxbG": {
+          "type": "career_tile",
+          "settings": {
+            "title_html": "<p><strong>Reinigungskraft (m/w/d)</strong></p>",
+            "desc_html": "<p>Für die professionelle Gebäudereinigung in Bürogebäuden und öffentlichen Einrichtungen</p>",
+            "location_html": "<p>Saarbrücken</p>",
+            "time": "beides",
+            "badge_label": "",
+            "badge_bg": "",
+            "badge_text": "",
+            "details_html": "",
+            "details_toggle": "Details anzeigen",
+            "details_open": false,
+            "btn_label": "Jetzt bewerben",
+            "btn_url": "",
+            "btn_newtab": false,
+            "card_align": "left",
+            "card_bg": ""
+          }
+        }
+      },
+      "block_order": [
+        "career_tile_WtGbjb",
+        "career_tile_kyVcMw",
+        "career_tile_MggxbG"
+      ],
+      "name": "Karriere-Kacheln",
+      "settings": {
+        "heading": "<p><strong>Aktuelle Stellenausschreibungen</strong></p>",
+        "subheading": "<p>Finden Sie Ihre nächste berufliche Herausforderung bei uns</p>",
+        "text_align": "center",
+        "section_bg": "#F6F7FB",
+        "card_bg": "#FFFFFF",
+        "padding_y": 48,
+        "grid_gap": 24,
+        "card_radius": 16,
+        "columns": "2",
+        "badge_bg": "#D1FADF",
+        "badge_text": "#065F46"
+      }
     }
   },
   "order": [
@@ -412,6 +496,7 @@
     "highlights_icons_trDdzm",
     "text_mit_bild_button_LWeUiY",
     "sis_single_footer_DNrhdy",
-    "sis_footer_neu_md8EiT"
+    "sis_footer_neu_md8EiT",
+    "karriere_kacheln_rTrwpa"
   ]
 }

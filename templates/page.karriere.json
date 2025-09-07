@@ -46,90 +46,6 @@
         "padding_bottom": 28
       }
     },
-    "karriere_kacheln_W6iMBa": {
-      "type": "karriere-kacheln",
-      "blocks": {
-        "career_tile_abAfUa": {
-          "type": "career_tile",
-          "settings": {
-            "title_html": "<p><strong>Reinigungskraft (m/w/d)aaaaaaaaaa</strong></p>",
-            "desc_html": "<p>Für die professionelle Gebäudereinigung in Bürogebäuden und öffentlichen Einrichtungen</p>",
-            "location_html": "<p>Saarbrücken</p>",
-            "time": "beides",
-            "badge_label": "",
-            "badge_bg": "",
-            "badge_text": "",
-            "details_html": "<p>ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</p>",
-            "details_toggle": "Details anzeigen",
-            "details_open": false,
-            "btn_label": "Jetzt bewerben",
-            "btn_url": "",
-            "btn_newtab": false,
-            "card_align": "left",
-            "card_bg": ""
-          }
-        },
-        "career_tile_C3Nyn7": {
-          "type": "career_tile",
-          "settings": {
-            "title_html": "<p><strong>Reinigungskraft (m/w/d)</strong></p>",
-            "desc_html": "<p>Für die professionelle Gebäudereinigung in Bürogebäuden und öffentlichen Einrichtungen</p>",
-            "location_html": "<p>Saarbrücken</p>",
-            "time": "beides",
-            "badge_label": "",
-            "badge_bg": "",
-            "badge_text": "",
-            "details_html": "",
-            "details_toggle": "Details anzeigen",
-            "details_open": false,
-            "btn_label": "Jetzt bewerben",
-            "btn_url": "",
-            "btn_newtab": false,
-            "card_align": "left",
-            "card_bg": ""
-          }
-        },
-        "career_tile_GTUUHX": {
-          "type": "career_tile",
-          "settings": {
-            "title_html": "<p><strong>Reinigungskraft (m/w/d)</strong></p>",
-            "desc_html": "<p>Für die professionelle Gebäudereinigung in Bürogebäuden und öffentlichen Einrichtungen</p>",
-            "location_html": "<p>Saarbrücken</p>",
-            "time": "beides",
-            "badge_label": "",
-            "badge_bg": "",
-            "badge_text": "",
-            "details_html": "",
-            "details_toggle": "Details anzeigen",
-            "details_open": false,
-            "btn_label": "Jetzt bewerben",
-            "btn_url": "",
-            "btn_newtab": false,
-            "card_align": "left",
-            "card_bg": ""
-          }
-        }
-      },
-      "block_order": [
-        "career_tile_abAfUa",
-        "career_tile_C3Nyn7",
-        "career_tile_GTUUHX"
-      ],
-      "name": "Karriere-Kacheln",
-      "settings": {
-        "heading": "<p><strong>Aktuelle Stellenausschreibungen</strong></p>",
-        "subheading": "<p>Finden Sie Ihre nächste berufliche Herausforderung bei uns</p>",
-        "text_align": "center",
-        "section_bg": "#F6F7FB",
-        "card_bg": "#FFFFFF",
-        "padding_y": 48,
-        "grid_gap": 24,
-        "card_radius": 16,
-        "columns": "2",
-        "badge_bg": "#D1FADF",
-        "badge_text": "#065F46"
-      }
-    },
     "jobs_board_MVQFbQ": {
       "type": "jobs-board",
       "blocks": {
@@ -342,7 +258,6 @@
   "order": [
     "custom_header_fi69pY",
     "main",
-    "karriere_kacheln_W6iMBa",
     "jobs_board_MVQFbQ",
     "highlights_icons_trDdzm",
     "text_mit_bild_button_LWeUiY"
