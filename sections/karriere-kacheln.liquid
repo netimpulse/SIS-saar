@@ -1,6 +1,6 @@
 {% comment %}
   sections/karriere-kacheln.liquid
-  "Karriere-Kacheln" – Grid mit Badges (links/oben), Richtext, Ausrichtung & ausklappbaren Details
+  "Karriere-Kacheln" – Badge links über der Überschrift, Richtext, Details ausklappbar
 {% endcomment %}
 
 {{ 'karriere-kacheln.css' | asset_url | stylesheet_tag }}
@@ -15,55 +15,57 @@
   "
 >
   <div class="jobs-container">
-    {%- if section.settings.heading != blank or section.settings.subheading != blank -%}
+    {% if section.settings.heading != blank or section.settings.subheading != blank %}
       <header class="jobs-header text-{{ section.settings.text_align }}">
-        {%- if section.settings.heading != blank -%}
+        {% if section.settings.heading != blank %}
           <div class="jobs-title">{{ section.settings.heading }}</div>
-        {%- endif -%}
-        {%- if section.settings.subheading != blank -%}
+        {% endif %}
+        {% if section.settings.subheading != blank %}
           <div class="jobs-subtitle">{{ section.settings.subheading }}</div>
-        {%- endif -%}
+        {% endif %}
       </header>
-    {%- endif -%}
+    {% endif %}
 
     <div class="jobs-grid">
-      {%- for block in section.blocks -%}
-        {%- assign badge_label = block.settings.badge_label -%}
-        {%- if badge_label == blank -%}
-          {%- case block.settings.time -%}
-            {%- when 'vollzeit' -%}{%- assign badge_label = 'Vollzeit' -%}
-            {%- when 'teilzeit' -%}{%- assign badge_label = 'Teilzeit' -%}
-            {%- when 'beides'   -%}{%- assign badge_label = 'Vollzeit / Teilzeit' -%}
-            {%- when 'minijob'  -%}{%- assign badge_label = 'Minijob' -%}
-            {%- else -%}{%- assign badge_label = '' -%}
-          {%- endcase -%}
-        {%- endif -%}
+      {% for block in section.blocks %}
+        {% assign badge_label = block.settings.badge_label %}
+        {% if badge_label == blank %}
+          {% case block.settings.time %}
+            {% when 'vollzeit' %}{% assign badge_label = 'Vollzeit' %}
+            {% when 'teilzeit' %}{% assign badge_label = 'Teilzeit' %}
+            {% when 'beides'   %}{% assign badge_label = 'Vollzeit / Teilzeit' %}
+            {% when 'minijob'  %}{% assign badge_label = 'Minijob' %}
+            {% else %}{% assign badge_label = '' %}
+          {% endcase %}
+        {% endif %}
 
         <article class="job-card text-{{ block.settings.card_align }}" {{ block.shopify_attributes }}
           style="--card-bg: {{ block.settings.card_bg | default: section.settings.card_bg }};"
         >
-          {%- if badge_label != blank -%}
-            {% render 'karriere-badge',
-              label: badge_label,
-              bg_color: block.settings.badge_bg | default: section.settings.badge_bg,
-              text_color: block.settings.badge_text | default: section.settings.badge_text
-            %}
-          {%- endif -%}
+          <div class="job-head">
+            {% if badge_label != blank %}
+              {% render 'karriere-badge',
+                label: badge_label,
+                bg_color: block.settings.badge_bg | default: section.settings.badge_bg,
+                text_color: block.settings.badge_text | default: section.settings.badge_text
+              %}
+            {% endif %}
 
-          {%- if block.settings.title_html != blank -%}
-            <div class="job-title">{{ block.settings.title_html }}</div>
-          {%- endif -%}
+            {% if block.settings.title_html != blank %}
+              <div class="job-title">{{ block.settings.title_html }}</div>
+            {% endif %}
+          </div>
 
-          {%- if block.settings.desc_html != blank -%}
+          {% if block.settings.desc_html != blank %}
             <div class="job-desc">{{ block.settings.desc_html }}</div>
-          {%- endif -%}
+          {% endif %}
 
-          {%- if block.settings.location_html != blank -%}
+          {% if block.settings.location_html != blank %}
             <div class="job-meta">{{ block.settings.location_html }}</div>
-          {%- endif -%}
+          {% endif %}
 
-          {%- if block.settings.details_html != blank -%}
-            {%- assign _details_id = 'job-details-' | append: block.id -%}
+          {% if block.settings.details_html != blank %}
+            {% assign _details_id = 'job-details-' | append: block.id %}
             <div class="job-details">
               <button
                 class="job-details__toggle"
@@ -81,9 +83,9 @@
                 {{ block.settings.details_html }}
               </div>
             </div>
-          {%- endif -%}
+          {% endif %}
 
-          {%- if block.settings.btn_label != blank and block.settings.btn_url != blank -%}
+          {% if block.settings.btn_label != blank and block.settings.btn_url != blank %}
             <a
               href="{{ block.settings.btn_url }}"
               class="job-button"
@@ -91,9 +93,9 @@
             >
               {{ block.settings.btn_label }}
             </a>
-          {%- endif -%}
+          {% endif %}
         </article>
-      {%- endfor -%}
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -156,7 +158,6 @@
       { "value": "1", "label": "1" }, { "value": "2", "label": "2" }, { "value": "3", "label": "3" }
     ]},
 
-    /* Badge Defaults */
     { "type": "color", "id": "badge_bg", "label": "Badge Hintergrund (Default)", "default": "#D1FADF" },
     { "type": "color", "id": "badge_text", "label": "Badge Textfarbe (Default)", "default": "#065F46" }
   ],
@@ -178,17 +179,17 @@
             { "value": "none", "label": "Kein Badge" }
           ]
         },
-        { "type": "text", "id": "badge_label", "label": "Badge-Text (optional, \u00fcberschreibt Auswahl)" },
+        { "type": "text", "id": "badge_label", "label": "Badge-Text (optional, überschreibt Auswahl)" },
         { "type": "color", "id": "badge_bg", "label": "Badge Hintergrund (optional)" },
         { "type": "color", "id": "badge_text", "label": "Badge Textfarbe (optional)" },
 
         { "type": "richtext", "id": "details_html", "label": "Detailtext (Richtext)" },
         { "type": "text", "id": "details_toggle", "label": "Details Button-Text", "default": "Details anzeigen" },
-        { "type": "checkbox", "id": "details_open", "label": "Details beim Laden ge\u00f6ffnet", "default": false },
+        { "type": "checkbox", "id": "details_open", "label": "Details beim Laden geöffnet", "default": false },
 
         { "type": "text", "id": "btn_label", "label": "Button-Text", "default": "Jetzt bewerben" },
         { "type": "url", "id": "btn_url", "label": "Button-Link" },
-        { "type": "checkbox", "id": "btn_newtab", "label": "Link in neuem Tab \u00f6ffnen", "default": false },
+        { "type": "checkbox", "id": "btn_newtab", "label": "Link in neuem Tab öffnen", "default": false },
 
         { "type": "select", "id": "card_align", "label": "Ausrichtung (nur diese Kachel)", "default": "left",
           "options": [
