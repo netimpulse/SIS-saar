@@ -1,6 +1,6 @@
 {% comment %}
   sections/karriere-kacheln.liquid
-  "Karriere-Kacheln" – Badge oben links über dem Titel, Richtext, ausklappbare Details
+  "Karriere-Kacheln" – Badge oben links über dem Titel, Richtext, Details ausklappbar
 {% endcomment %}
 
 {{ 'karriere-kacheln.css' | asset_url | stylesheet_tag }}
@@ -42,7 +42,7 @@
         <article class="job-card text-{{ block.settings.card_align }}" {{ block.shopify_attributes }}
           style="--card-bg: {{ block.settings.card_bg | default: section.settings.card_bg }};"
         >
-          <!-- Kopf: Badge über dem Titel -->
+          <!-- Kopf: Badge ÜBER dem Titel -->
           <div class="job-head">
             {% if badge_label != blank %}
               {% render 'karriere-badge',
