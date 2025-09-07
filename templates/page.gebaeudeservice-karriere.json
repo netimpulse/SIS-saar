@@ -44,6 +44,7 @@
     },
     "hero_overlay_section_KdK9GH": {
       "type": "hero-overlay-section",
+      "disabled": true,
       "name": "Hero – Service Overlay",
       "settings": {
         "bg_image": "shopify://shop_images/mage_29._Juli_2025_00_15_46.png",
