@@ -19,7 +19,7 @@
         "logo_height": 40,
         "back_link": "",
         "back_label": "Zurück",
-        "back_font": "sans-serif",
+        "back_font": "system_ui_n4",
         "back_font_bold": false,
         "back_text_color": "#374151",
         "back_hover_color": "#4ade80",
@@ -29,7 +29,7 @@
         "logo_color": "#1e40af",
         "logo_font_size": 24,
         "menu": "geb-udeservice",
-        "nav_font": "sans-serif",
+        "nav_font": "system_ui_n4",
         "nav_font_bold": false,
         "nav_text_color": "#374151",
         "nav_hover_color": "#4ade80",
@@ -73,6 +73,110 @@
         "font_bold": true,
         "font_italic": false,
         "text_alignment": "left"
+      }
+    },
+    "leistung_suche_grid_Ai9p6q": {
+      "type": "leistung-suche-grid",
+      "blocks": {
+        "service_tfbgGj": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_1107691484.jpg",
+            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
+            "text_html": "<p>Hallo ich bin eine kurze beschreibung jajajajajajaj</p>",
+            "keywords": "Reinigung, Unterhaltsreinigung",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_frAzEa": {
+          "type": "service",
+          "settings": {
+            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_Ugg4QN": {
+          "type": "service",
+          "settings": {
+            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_FrKBPP": {
+          "type": "service",
+          "settings": {
+            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_J4tGfm": {
+          "type": "service",
+          "settings": {
+            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_xGVYNY": {
+          "type": "service",
+          "settings": {
+            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_tkniVV": {
+          "type": "service",
+          "settings": {
+            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "test,",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "service_tfbgGj",
+        "service_frAzEa",
+        "service_Ugg4QN",
+        "service_FrKBPP",
+        "service_J4tGfm",
+        "service_xGVYNY",
+        "service_tkniVV"
+      ],
+      "name": "Leistung Suche Grid",
+      "settings": {
+        "heading": "<p><strong>Unsere Leistungen</strong></p>",
+        "subheading": "<p>Mit <em>Leidenschaft</em> für Ihren Erfolg.</p>",
+        "text_align": "center",
+        "show_search": true,
+        "search_placeholder": "Leistungen oder Keywords suchen…",
+        "badge_style": "solid",
+        "keyword_badge_bg": "#E6F0FF",
+        "keyword_badge_color": "#0F1C3F",
+        "card_bg": "#ffffff",
+        "card_radius": 18,
+        "card_shadow": true,
+        "grid_gap": 20,
+        "show_cta": false,
+        "cta_label": "Mehr erfahren",
+        "cta_link": "",
+        "button_style": "primary"
       }
     },
     "qualitaeten_hotspot_HKLnY6": {
@@ -142,105 +246,6 @@
         "icon_radius": 1000
       }
     },
-    "leistung_final_mzTNaw": {
-      "type": "leistung-final",
-      "blocks": {
-        "service_card_lf_LCXAEL": {
-          "type": "service_card_lf",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
-            "title": "Unterhaltsreinigung",
-            "text": "Kurze Beschreibung hier.",
-            "link_url": "shopify://pages/unterhaltsreinigung",
-            "link_label": "Mehr erfahren →"
-          }
-        },
-        "service_card_lf_K9CA39": {
-          "type": "service_card_lf",
-          "settings": {
-            "image": "shopify://shop_images/shutterstock_370492946.jpg",
-            "title": "Glas- / Lamellenreinigung",
-            "text": "Kurze Beschreibung hier.",
-            "link_url": "shopify://pages/glas-und-lamellenreinigung",
-            "link_label": "Mehr erfahren →"
-          }
-        },
-        "service_card_lf_GhBQY3": {
-          "type": "service_card_lf",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
-            "title": "Bauschlussreinigung",
-            "text": "Kurze Beschreibung hier.",
-            "link_url": "shopify://pages/bauschlussreinigung",
-            "link_label": "Mehr erfahren →"
-          }
-        },
-        "service_card_lf_9zpRDB": {
-          "type": "service_card_lf",
-          "settings": {
-            "image": "shopify://shop_images/sis_location.png",
-            "title": "Sonderreinigung",
-            "text": "Kurze Beschreibung hier.",
-            "link_url": "shopify://pages/sonderreinigung",
-            "link_label": "Mehr erfahren →"
-          }
-        }
-      },
-      "block_order": [
-        "service_card_lf_LCXAEL",
-        "service_card_lf_K9CA39",
-        "service_card_lf_GhBQY3",
-        "service_card_lf_9zpRDB"
-      ],
-      "name": "Leistung final",
-      "settings": {
-        "heading": "Unsere Leistungen",
-        "subtext": "Mit Leidenschaft für Ihren Erfolg.",
-        "font_heading": "helvetica_n4",
-        "font_body": "helvetica_n4",
-        "heading_size": 32,
-        "heading_bold": true,
-        "heading_italic": false,
-        "subtext_size": 16,
-        "subtext_bold": false,
-        "subtext_italic": false,
-        "card_title_size": 18,
-        "card_title_bold": true,
-        "card_title_italic": false,
-        "card_text_size": 14,
-        "card_text_bold": false,
-        "card_text_italic": false,
-        "card_link_size": 14,
-        "card_link_bold": true,
-        "card_link_italic": false,
-        "bg_color": "#f3f6f9",
-        "text_color": "#222222",
-        "accent_color": "#007acc",
-        "card_bg": "#ffffff",
-        "card_hover_bg": "#ffffff",
-        "card_radius": 12,
-        "card_hover_lift": 6,
-        "grid_gap": 20,
-        "section_padding": 24,
-        "show_button": true,
-        "button_label": "Mehr erfahren",
-        "button_url": "shopify://pages/gebaudeservice-kontakt",
-        "button_align": "center",
-        "button_full_width": false,
-        "button_max_width": 420,
-        "button_font_size": 16,
-        "button_bold": true,
-        "button_italic": false,
-        "button_padding_x": 20,
-        "button_padding_y": 10,
-        "button_margin_top": 28,
-        "button_margin_bottom": 0,
-        "button_bg": "#000000",
-        "button_text": "#ffffff",
-        "button_hover_bg": "#334fb4",
-        "button_hover_text": "#ffffff"
-      }
-    },
     "leistung_showcase_Wq4Ytn": {
       "type": "leistung-showcase",
       "blocks": {
@@ -288,20 +293,20 @@
         "image_position": "right",
         "image_shadow_strength": 20,
         "heading": "Unterhaltsreinigung",
-        "heading_font": "sans-serif",
+        "heading_font": "system_ui_n4",
         "heading_font_size": 42,
         "heading_color": "#1f1f1f",
         "subheading": "",
-        "subheading_font": "sans-serif",
+        "subheading_font": "system_ui_n4",
         "subheading_font_size": 18,
         "subheading_color": "#555555",
         "text": "<p>Der saubere Auftritt eines Unternehmens und dessen Geschäftsräume sind eine wichtige Erfolgskomponente im Wettbewerb.</p><p>Zu unserem Spektrum gehören alle Leistungen wie die regelmäßige Büro- und Gebäudereinigung, die Grundreinigung und Beschichtung von Bodenbelägen als auch die Teppichreinigung.</p>",
-        "text_font": "sans-serif",
+        "text_font": "system_ui_n4",
         "text_font_size": 16,
         "text_color": "#333333",
         "button_text": "Detailinformationen",
         "button_link": "shopify://pages/unterhaltsreinigung",
-        "button_font": "sans-serif",
+        "button_font": "system_ui_n4",
         "button_font_size": 16,
         "button_padding_x": 24,
         "button_padding_y": 14,
@@ -319,20 +324,20 @@
         "image_position": "left",
         "image_shadow_strength": 20,
         "heading": "Glas- / Lamellenreinigung",
-        "heading_font": "sans-serif",
+        "heading_font": "system_ui_n4",
         "heading_font_size": 42,
         "heading_color": "#1f1f1f",
         "subheading": "",
-        "subheading_font": "sans-serif",
+        "subheading_font": "system_ui_n4",
         "subheading_font_size": 18,
         "subheading_color": "#555555",
         "text": "<p>Lassen Sie die Sonne in Ihre Räume! Dies gelingt am besten mit unseren Spezialisten der Glas- und Rahmenreinigung.</p><p>Unsere Leistungen umfassen auch die Reinigung Ihrer Wintergärten oder auch die großflächige Fassadenreinigung. Unser geschultes Team arbeitet sicher und geschützt mit Leiter, Gerüst oder Hebebühne.</p>",
-        "text_font": "sans-serif",
+        "text_font": "system_ui_n4",
         "text_font_size": 16,
         "text_color": "#333333",
         "button_text": "Detailinformationen",
         "button_link": "shopify://pages/glas-und-lamellenreinigung",
-        "button_font": "sans-serif",
+        "button_font": "system_ui_n4",
         "button_font_size": 16,
         "button_padding_x": 24,
         "button_padding_y": 14,
@@ -350,20 +355,20 @@
         "image_position": "right",
         "image_shadow_strength": 20,
         "heading": "Bauschlussreinigung",
-        "heading_font": "sans-serif",
+        "heading_font": "system_ui_n4",
         "heading_font_size": 42,
         "heading_color": "#1f1f1f",
         "subheading": "",
-        "subheading_font": "sans-serif",
+        "subheading_font": "system_ui_n4",
         "subheading_font_size": 18,
         "subheading_color": "#555555",
         "text": "<p>Sind die Handwerker mit ihren Arbeiten im Neu- oder Umbau fertig, beginnt unser Job.</p><p>Zu unserem Repertoire gehören sowohl die baubegleitende Reinigung als auch die Reinigung nach Abschluss der Baumaßnahmen.</p><p>Um ihren neuen Räumen nach den Bauarbeiten das gewünschte Aussehen zu verleihen, bieten wir alle Reinigungsarbeiten von der Glasreinigung bis zur Bodenbeschichtung.</p>",
-        "text_font": "sans-serif",
+        "text_font": "system_ui_n4",
         "text_font_size": 16,
         "text_color": "#333333",
         "button_text": "Detailinformationen",
         "button_link": "shopify://pages/bauschlussreinigung",
-        "button_font": "sans-serif",
+        "button_font": "system_ui_n4",
         "button_font_size": 16,
         "button_padding_x": 24,
         "button_padding_y": 14,
@@ -381,20 +386,20 @@
         "image_position": "left",
         "image_shadow_strength": 20,
         "heading": "Sonderreinigung",
-        "heading_font": "sans-serif",
+        "heading_font": "system_ui_n4",
         "heading_font_size": 42,
         "heading_color": "#1f1f1f",
         "subheading": "",
-        "subheading_font": "sans-serif",
+        "subheading_font": "system_ui_n4",
         "subheading_font_size": 18,
         "subheading_color": "#555555",
         "text": "<p>Wir beseitigen auch alle Arten an Verschmutzungen im Eigenheim, sodass Sie sich in Ihren vier Wänden wohl fühlen.<br/><br/></p>",
-        "text_font": "sans-serif",
+        "text_font": "system_ui_n4",
         "text_font_size": 16,
         "text_color": "#333333",
         "button_text": "Detailinformationen",
         "button_link": "shopify://pages/sonderreinigung",
-        "button_font": "sans-serif",
+        "button_font": "system_ui_n4",
         "button_font_size": 16,
         "button_padding_x": 24,
         "button_padding_y": 14,
@@ -575,8 +580,8 @@
     "sticky_header_trVgjG",
     "main",
     "hero_building_section_jFhK9K",
+    "leistung_suche_grid_Ai9p6q",
     "qualitaeten_hotspot_HKLnY6",
-    "leistung_final_mzTNaw",
     "leistung_showcase_Wq4Ytn",
     "text_mit_bild_button_RzRFn4",
     "text_mit_bild_button_xPAQqM",
