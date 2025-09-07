@@ -184,4 +184,17 @@
       "settings": [
         { "type": "header", "content": "Icon" },
         { "type": "select", "id": "icon_type", "label": "Icon-Typ", "options": [ { "value": "svg", "label": "SVG-Code" }, { "value": "image", "label": "Bild" } ], "default": "svg" },
-        { "type": "html", "id": "icon_sv_
+        { "type": "html", "id": "icon_svg", "label": "SVG Code" },
+        { "type": "image_picker", "id": "icon_image", "label": "Icon-Bild" },
+
+        { "type": "header", "content": "Inhalt" },
+        { "type": "text", "id": "feature_title", "label": "Titel", "default": "Feature Titel" },
+        { "type": "text", "id": "feature_description", "label": "Beschreibung", "default": "Kurze Beschreibung des Features." }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Über Uns (Layout)", "blocks": [ { "type": "feature" }, { "type": "feature" } ] }
+  ]
+}
+{% endschema %}
