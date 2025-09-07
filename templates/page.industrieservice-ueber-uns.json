@@ -224,7 +224,7 @@
       "settings": {
         "layout_direction": "text_left",
         "show_image": true,
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "section_padding_top": 80,
         "section_padding_bottom": 80,
         "title": "Über uns",
@@ -236,7 +236,7 @@
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
         "description": "<p>Wir sind SIS Saar - ein innovatives Unternehmen mit zwei spezialisierten Geschäftsbereichen. Seit über zwei Jahrzehnten stehen wir für zuverlässige und hochwertige Serviceleistungen in der Region.</p><p>Unser Erfolgsrezept liegt in der Kombination aus langjähriger Erfahrung, modernster Technik und einem motivierten Team von Fachkräften. Jeder Mitarbeiter trägt dazu bei, dass wir unseren Kunden stets erstklassige Lösungen anbieten können.</p>",
-        "text_color": "#6B7280",
+        "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_370492946.jpg",
         "image_border_radius": 12,
@@ -245,7 +245,7 @@
         "image_aspect_ratio": "auto",
         "features_per_row": "2",
         "icon_size": 32,
-        "icon_color": "#34D399",
+        "icon_color": "#34d399",
         "feature_title_color": "#111827"
       }
     },
@@ -364,6 +364,7 @@
         "team_member_CFREkQ",
         "team_member_AAAThP"
       ],
+      "disabled": true,
       "name": "Team",
       "settings": {
         "background_color": "#ffffff",
