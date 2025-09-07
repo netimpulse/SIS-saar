@@ -125,7 +125,7 @@
         "left_heading_italic": false,
         "left_heading_weight": "700",
         "left_text": "<p>Eigener Textblock, der erscheint, wenn das Bild ausgeblendet ist.</p>",
-        "bg_color": "#f6f8fb",
+        "bg_color": "#ffffff",
         "section_padding": 24,
         "points_title": "Unsere Dienstleistungen:",
         "points_as_card": true,
@@ -177,7 +177,7 @@
       "settings": {
         "layout_direction": "text_left",
         "show_image": true,
-        "background_color": "#ffffff",
+        "background_color": "#f3f3f3",
         "section_padding_top": 80,
         "section_padding_bottom": 80,
         "title": "Über uns",
