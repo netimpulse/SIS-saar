@@ -447,19 +447,10 @@
             "link": ""
           }
         },
-        "partner_logo_z4yjbJ": {
-          "type": "partner_logo",
-          "settings": {
-            "logo": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
-            "alt": "Partner",
-            "link": "",
-            "new_tab": true
-          }
-        },
         "partner_logo_BJxkyi": {
           "type": "partner_logo",
           "settings": {
-            "logo": "shopify://shop_images/logo_Industrieservice_exact_v2.png",
+            "logo": "shopify://shop_images/2025_AMG_zugeschnitten_DA.png",
             "alt": "Partner",
             "link": "",
             "new_tab": true
@@ -476,7 +467,6 @@
         "kontakt_link_F9KkVU",
         "kontakt_link_TwQexH",
         "kontakt_link_4pHeLi",
-        "partner_logo_z4yjbJ",
         "partner_logo_BJxkyi"
       ],
       "name": "SIS Footer NEU",

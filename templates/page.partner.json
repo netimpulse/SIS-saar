@@ -19,6 +19,7 @@
     },
     "hero_building_section_ztyrhy": {
       "type": "hero-building-section",
+      "disabled": true,
       "name": "Hero Building",
       "settings": {
         "background_image": "shopify://shop_images/shutterstock_370492946.jpg",
@@ -48,7 +49,7 @@
         "logo_q3ni9V": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/SIS_Gruppe_logo.png",
+            "logo": "shopify://shop_images/2025_AMG_zugeschnitten_DA.png",
             "alt": "Partner-Logo",
             "link": "",
             "custom_size": false,
@@ -58,7 +59,6 @@
         "logo_ALFJVp": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
             "alt": "Partner-Logo",
             "link": "",
             "custom_size": false,
@@ -66,79 +66,6 @@
           }
         },
         "logo_CaFVen": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/ChatGPT_Image_31._Juli_2025_18_20_03.png",
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
-          }
-        },
-        "logo_3WixzK": {
-          "type": "logo",
-          "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
-          }
-        },
-        "logo_XcKQnh": {
-          "type": "logo",
-          "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
-          }
-        },
-        "logo_dcJrrr": {
-          "type": "logo",
-          "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
-          }
-        },
-        "logo_wDkpGV": {
-          "type": "logo",
-          "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
-          }
-        },
-        "logo_Ug6JXG": {
-          "type": "logo",
-          "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
-          }
-        },
-        "logo_yWDBU7": {
-          "type": "logo",
-          "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
-          }
-        },
-        "logo_FRpmjz": {
-          "type": "logo",
-          "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
-          }
-        },
-        "logo_nQY3LB": {
           "type": "logo",
           "settings": {
             "alt": "Partner-Logo",
@@ -182,24 +109,26 @@
             "custom_size": false,
             "logo_height": 72
           }
+        },
+        "logo_yeVr8i": {
+          "type": "logo",
+          "settings": {
+            "alt": "Partner-Logo",
+            "link": "",
+            "custom_size": false,
+            "logo_height": 72
+          }
         }
       },
       "block_order": [
         "logo_q3ni9V",
         "logo_ALFJVp",
         "logo_CaFVen",
-        "logo_3WixzK",
-        "logo_XcKQnh",
-        "logo_dcJrrr",
-        "logo_wDkpGV",
-        "logo_Ug6JXG",
-        "logo_yWDBU7",
-        "logo_FRpmjz",
-        "logo_nQY3LB",
         "logo_qXGeCt",
         "logo_HUnt7h",
         "logo_DQjzVD",
-        "logo_paUrC7"
+        "logo_paUrC7",
+        "logo_yeVr8i"
       ],
       "name": "Partner-Logos (Grid)",
       "settings": {
