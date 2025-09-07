@@ -11,13 +11,81 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "contact_info_form_kqm4z8": {
+      "type": "contact-info-form",
+      "blocks": {
+        "info_card_FqXzUL": {
+          "type": "info_card",
+          "settings": {
+            "title": "Adresse",
+            "text": "<p>Straße 1<br/>12345 Stadt</p>",
+            "icon": "map"
+          }
+        },
+        "info_card_iFtBFr": {
+          "type": "info_card",
+          "settings": {
+            "title": "Adresse",
+            "text": "<p>Straße 1<br/>12345 Stadt</p>",
+            "icon": "map"
+          }
+        },
+        "info_card_bVjqiN": {
+          "type": "info_card",
+          "settings": {
+            "title": "Adresse",
+            "text": "<p>Straße 1<br/>12345 Stadt</p>",
+            "icon": "map"
+          }
+        },
+        "info_card_iaPaHw": {
+          "type": "info_card",
+          "settings": {
+            "title": "Adresse",
+            "text": "<p>Straße 1<br/>12345 Stadt</p>",
+            "icon": "map"
+          }
+        }
+      },
+      "block_order": [
+        "info_card_FqXzUL",
+        "info_card_iFtBFr",
+        "info_card_bVjqiN",
+        "info_card_iaPaHw"
+      ],
+      "name": "Kontaktbereich mit Formular",
+      "settings": {
+        "left_title": "Kontaktinformationen",
+        "right_title": "Nachricht senden",
+        "label_firstname": "Vorname *",
+        "ph_firstname": "Ihr Vorname",
+        "label_lastname": "Nachname *",
+        "ph_lastname": "Ihr Nachname",
+        "label_email": "E-Mail *",
+        "ph_email": "ihre.email@beispiel.de",
+        "label_phone": "Telefon",
+        "ph_phone": "Ihre Telefonnummer",
+        "label_company": "Unternehmen",
+        "ph_company": "Ihr Unternehmen",
+        "label_subject": "Stelle",
+        "ph_subject": "Auf welche Stelle wollen Sie sich bewerben?",
+        "label_message": "Nachricht *",
+        "ph_message": "Beschreiben Sie Ihr Anliegen...",
+        "consent_text": "<p>Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zu.</p>",
+        "consent_label": "Datenschutz zugestimmt",
+        "button_label": "Nachricht senden",
+        "success_text": "Danke für Ihre Nachricht! Wir melden uns bald."
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "contact_info_form_kqm4z8"
   ]
 }
