@@ -83,7 +83,7 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_1107691484.jpg",
             "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
-            "text_html": "<p>Hallo ich bin eine kurze beschreibung jajajajajajaj</p>",
+            "text_html": "<p>Hallo ich bin eine kurze beschreibung </p>",
             "keywords": "Reinigung, Unterhaltsreinigung",
             "button_label": "Mehr erfahren",
             "button_link": ""
@@ -92,7 +92,8 @@
         "service_frAzEa": {
           "type": "service",
           "settings": {
-            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
+            "image": "shopify://shop_images/shutterstock_1053670544.jpg",
+            "title_html": "<p><strong>Test</strong></p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
@@ -102,6 +103,7 @@
         "service_Ugg4QN": {
           "type": "service",
           "settings": {
+            "image": "shopify://shop_images/shutterstock_1023985072.jpg",
             "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
@@ -112,6 +114,7 @@
         "service_FrKBPP": {
           "type": "service",
           "settings": {
+            "image": "shopify://shop_images/shutterstock_689385115.jpg",
             "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
@@ -144,7 +147,7 @@
           "settings": {
             "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
-            "keywords": "test,",
+            "keywords": "tag",
             "button_label": "Mehr erfahren",
             "button_link": ""
           }
