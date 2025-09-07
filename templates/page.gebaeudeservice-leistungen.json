@@ -86,7 +86,7 @@
             "text_html": "<p>Hallo ich bin eine kurze beschreibung </p>",
             "keywords": "Reinigung, Unterhaltsreinigung",
             "button_label": "Mehr erfahren",
-            "button_link": ""
+            "button_link": "shopify://pages/unterhaltsreinigung"
           }
         },
         "service_frAzEa": {
@@ -176,9 +176,9 @@
         "card_radius": 18,
         "card_shadow": true,
         "grid_gap": 20,
-        "show_cta": true,
+        "show_cta": false,
         "cta_label": "Mehr erfahren",
-        "cta_link": "shopify://pages/unterhaltsreinigung",
+        "cta_link": "",
         "button_style": "primary"
       }
     },
