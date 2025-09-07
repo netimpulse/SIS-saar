@@ -1,8 +1,9 @@
 {% comment %}
-  Über Uns (Layout) – Neu (v2, fixed comparisons)
-  - Titel: title_richtext (Richtext) mit Fallback auf title (Text)
-  - Bild: show_image Toggle + Fallback-Text
-  - Kein externes Snippet; <img> wird direkt gerendert
+  Über Uns (Layout) – v2
+  - Titel: title_richtext (Richtext) + Fallback auf title (Text)
+  - Unterüberschrift: subtitle_richtext (Richtext) + Fallback auf subtitle (Text)
+  - Bild: show_image Toggle + No-Image-Layout (keine leere Spalte)
+  - Direktes <img> (kein externes Snippet nötig)
 {% endcomment %}
 
 {{ 'section-ueber-uns-layout-v2.css' | asset_url | stylesheet_tag }}
@@ -15,6 +16,9 @@
 
     --title-color: {{ section.settings.title_color }};
     --title-font-size: {{ section.settings.title_font_size }}px;
+
+    --subtitle-color: {{ section.settings.subtitle_color }};
+    --subtitle-font-size: {{ section.settings.subtitle_font_size }}px;
 
     --text-color: {{ section.settings.text_color }};
     --text-font-size: {{ section.settings.text_font_size }}px;
@@ -46,9 +50,16 @@
     assign actually_show_image = true
   endif
 
+  # Titel: Richtext bevorzugt, sonst Fallback-Text
   assign title_html = section.settings.title_richtext
   if title_html == blank and section.settings.title != blank
     assign title_html = '<p>' | append: section.settings.title | append: '</p>'
+  endif
+
+  # Untertitel: Richtext bevorzugt, sonst Fallback-Text
+  assign subtitle_html = section.settings.subtitle_richtext
+  if subtitle_html == blank and section.settings.subtitle != blank
+    assign subtitle_html = '<p>' | append: section.settings.subtitle | append: '</p>'
   endif
 -%}
 
@@ -56,8 +67,8 @@
   <div class="sis-about__container">
     <div class="sis-about__grid{% if image_on_left %} sis-about__grid--image-left{% endif %}{% unless actually_show_image %} sis-about__grid--no-image{% endunless %}">
 
-      {% if image_on_left %}
-        {% if actually_show_image %}
+      {%- if image_on_left -%}
+        {%- if actually_show_image -%}
           <div class="sis-about__image">
             <div class="sis-about__image-wrapper">
               {% assign img = section.settings.image %}
@@ -69,17 +80,21 @@
                 loading="lazy">
             </div>
           </div>
-        {% else %}
-          <div class="sis-about__image sis-about__image--off">
-            <div class="sis-about__image-off-text">{{ section.settings.image_off_text }}</div>
-          </div>
-        {% endif %}
-      {% endif %}
+        {%- endif -%}
+      {%- endif -%}
 
       <div class="sis-about__content">
-        <div class="sis-about__title rte--title">
-          {{ title_html }}
-        </div>
+        {% if title_html != blank %}
+          <div class="sis-about__title rte--title">
+            {{ title_html }}
+          </div>
+        {% endif %}
+
+        {% if subtitle_html != blank %}
+          <div class="sis-about__subtitle rte--subtitle">
+            {{ subtitle_html }}
+          </div>
+        {% endif %}
 
         <div class="sis-about__description">
           {{ section.settings.description }}
@@ -112,8 +127,8 @@
         {% endif %}
       </div>
 
-      {% unless image_on_left %}
-        {% if actually_show_image %}
+      {%- unless image_on_left -%}
+        {%- if actually_show_image -%}
           <div class="sis-about__image">
             <div class="sis-about__image-wrapper">
               {% assign img = section.settings.image %}
@@ -125,12 +140,8 @@
                 loading="lazy">
             </div>
           </div>
-        {% else %}
-          <div class="sis-about__image sis-about__image--off">
-            <div class="sis-about__image-off-text">{{ section.settings.image_off_text }}</div>
-          </div>
-        {% endif %}
-      {% endunless %}
+        {%- endif -%}
+      {%- endunless -%}
 
     </div>
   </div>
@@ -155,25 +166,24 @@
     },
 
     { "type": "checkbox", "id": "show_image", "label": "Bild anzeigen", "default": true },
-    {
-      "type": "richtext",
-      "id": "image_off_text",
-      "label": "Text anzeigen, wenn Bild aus ist",
-      "default": "<p><strong>Kein Bild aktiviert.</strong><br/>Hier könnte ein kurzer Hinweistext stehen.</p>"
-    },
 
     { "type": "color", "id": "background_color", "label": "Hintergrundfarbe", "default": "#FFFFFF" },
     { "type": "range", "id": "section_padding_top", "label": "Abstand oben", "min": 0, "max": 150, "step": 5, "unit": "px", "default": 80 },
     { "type": "range", "id": "section_padding_bottom", "label": "Abstand unten", "min": 0, "max": 150, "step": 5, "unit": "px", "default": 80 },
 
     { "type": "header", "content": "Überschrift" },
-    { "type": "text", "id": "title", "label": "Titel (Fallback)", "default": "Über uns", "info": "Wird genutzt, wenn Richtext leer ist." },
+    { "type": "text", "id": "title", "label": "Titel (Fallback, Text)", "default": "Über uns", "info": "Wird genutzt, wenn Richtext leer ist." },
     { "type": "richtext", "id": "title_richtext", "label": "Titel (Richtext)", "default": "<p><strong>Über uns</strong></p>" },
     { "type": "color", "id": "title_color", "label": "Titel Farbe", "default": "#111827" },
     { "type": "range", "id": "title_font_size", "label": "Titel Schriftgröße", "min": 20, "max": 56, "step": 2, "unit": "px", "default": 32 },
 
+    { "type": "text", "id": "subtitle", "label": "Unterüberschrift (Fallback, Text)", "default": "Unsere Mission", "info": "Wird genutzt, wenn Richtext leer ist." },
+    { "type": "richtext", "id": "subtitle_richtext", "label": "Unterüberschrift (Richtext)", "default": "<p>Unsere Mission</p>" },
+    { "type": "color", "id": "subtitle_color", "label": "Unterüberschrift Farbe", "default": "#374151" },
+    { "type": "range", "id": "subtitle_font_size", "label": "Unterüberschrift Schriftgröße", "min": 16, "max": 32, "step": 1, "unit": "px", "default": 20 },
+
     { "type": "header", "content": "Textinhalt" },
-    { "type": "richtext", "id": "description", "label": "Beschreibungstext", "default": "<p>Wir sind SIS Saar …</p>" },
+    { "type": "richtext", "id": "description", "label": "Beschreibungstext", "default": "<p>Wir sind SIS Saar – ein innovatives Unternehmen …</p>" },
     { "type": "color", "id": "text_color", "label": "Text Farbe", "default": "#6B7280" },
     { "type": "range", "id": "text_font_size", "label": "Text Schriftgröße", "min": 14, "max": 22, "step": 1, "unit": "px", "default": 18 },
 
