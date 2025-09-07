@@ -1,5 +1,8 @@
 {% comment %}
-  Über Uns (Layout) – Richtext-Titel (id:title) + Bild An/Aus
+  Über Uns (Layout) – Richtext-Titel + Bild An/Aus (+ Fallbacks)
+  - Titel: title_richtext (Richtext) mit Fallback auf title (Text)
+  - Bild: show_image Toggle + Fallback-Text
+  - Direktes <img> Rendering (kein externes Snippet nötig)
 {% endcomment %}
 
 {{ 'section-ueber-uns-layout.css' | asset_url | stylesheet_tag }}
@@ -32,6 +35,14 @@
   assign show_image    = section.settings.show_image
   assign has_image     = section.settings.image != blank
   assign actually_show_image = show_image and has_image
+
+  comment
+    Titel-HTML: Richtext bevorzugen; wenn leer, Text-Fallback nutzen.
+  endcomment
+  assign title_html = section.settings.title_richtext
+  if title_html == blank and section.settings.title != blank
+    assign title_html = '<p>' | append: section.settings.title | append: '</p>'
+  endif
 -%}
 
 <div class="sis-about-section">
@@ -45,9 +56,10 @@
         {% if actually_show_image %}
           <div class="sis-about__image">
             <div class="sis-about__image-wrapper">
+              {%- assign img = section.settings.image -%}
               <img
-                src="{{ section.settings.image | image_url: width: 1200 }}"
-                srcset="{{ section.settings.image | image_url: width: 600 }} 600w, {{ section.settings.image | image_url: width: 900 }} 900w, {{ section.settings.image | image_url: width: 1200 }} 1200w"
+                src="{{ img | image_url: width: 1200 }}"
+                srcset="{{ img | image_url: width: 600 }} 600w, {{ img | image_url: width: 900 }} 900w, {{ img | image_url: width: 1200 }} 1200w"
                 sizes="(max-width: 992px) 100vw, 50vw"
                 alt="{{ section.settings.image_alt | escape }}"
                 loading="lazy">
@@ -61,9 +73,8 @@
       {%- endif -%}
 
       <div class="sis-about__content">
-        <!-- Titel als Richtext (id:title) -->
         <div class="sis-about__title rte--title">
-          {{ section.settings.title }}
+          {{ title_html }}
         </div>
 
         <div class="sis-about__description">
@@ -101,9 +112,10 @@
         {% if actually_show_image %}
           <div class="sis-about__image">
             <div class="sis-about__image-wrapper">
+              {%- assign img = section.settings.image -%}
               <img
-                src="{{ section.settings.image | image_url: width: 1200 }}"
-                srcset="{{ section.settings.image | image_url: width: 600 }} 600w, {{ section.settings.image | image_url: width: 900 }} 900w, {{ section.settings.image | image_url: width: 1200 }} 1200w"
+                src="{{ img | image_url: width: 1200 }}"
+                srcset="{{ img | image_url: width: 600 }} 600w, {{ img | image_url: width: 900 }} 900w, {{ img | image_url: width: 1200 }} 1200w"
                 sizes="(max-width: 992px) 100vw, 50vw"
                 alt="{{ section.settings.image_alt | escape }}"
                 loading="lazy">
@@ -122,7 +134,7 @@
 
 {% schema %}
 {
-  "name": "Über Uns (Layout)",
+  "name": "Über Uns (Layout) v2",
   "tag": "section",
   "class": "section",
   "settings": [
@@ -146,23 +158,24 @@
       "default": "<p><strong>Kein Bild aktiviert.</strong><br/>Hier könnte ein kurzer Hinweistext stehen.</p>"
     },
 
-    { "type": "color", "id": "background_color", "label": "Hintergrundfarbe", "default": "#F5F6F7" },
+    { "type": "color", "id": "background_color", "label": "Hintergrundfarbe", "default": "#FFFFFF" },
     { "type": "range", "id": "section_padding_top", "label": "Abstand oben", "min": 0, "max": 150, "step": 5, "unit": "px", "default": 80 },
     { "type": "range", "id": "section_padding_bottom", "label": "Abstand unten", "min": 0, "max": 150, "step": 5, "unit": "px", "default": 80 },
 
     { "type": "header", "content": "Überschrift" },
-    { "type": "richtext", "id": "title", "label": "Titel (Richtext)", "default": "<p><strong>Über uns</strong></p>" },
+    { "type": "text", "id": "title", "label": "Titel (Fallback - nur Text)", "default": "Über uns", "info": "Wird verwendet, wenn 'Titel (Richtext)' leer ist." },
+    { "type": "richtext", "id": "title_richtext", "label": "Titel (Richtext)", "default": "<p><strong>Über uns</strong></p>" },
     { "type": "color", "id": "title_color", "label": "Titel Farbe", "default": "#111827" },
     { "type": "range", "id": "title_font_size", "label": "Titel Schriftgröße", "min": 20, "max": 56, "step": 2, "unit": "px", "default": 32 },
 
-    { "type": "header", "content": "Text" },
-    { "type": "richtext", "id": "description", "label": "Beschreibungstext", "default": "<p>Wir sind SIS Saar – ein innovatives Unternehmen …</p>" },
+    { "type": "header", "content": "Textinhalt" },
+    { "type": "richtext", "id": "description", "label": "Beschreibungstext", "default": "<p>Wir sind SIS Saar – ein innovatives Unternehmen mit zwei spezialisierten Geschäftsbereichen. Seit über zwei Jahrzehnten stehen wir für zuverlässige und hochwertige Serviceleistungen in der Region.</p><p>Unser Erfolgsrezept liegt in der Kombination aus langjähriger Erfahrung, modernster Technik und einem motivierten Team von Fachkräften. Jeder Mitarbeiter trägt dazu bei, dass wir unseren Kunden stets erstklassige Lösungen anbieten können.</p>" },
     { "type": "color", "id": "text_color", "label": "Text Farbe", "default": "#6B7280" },
     { "type": "range", "id": "text_font_size", "label": "Text Schriftgröße", "min": 14, "max": 22, "step": 1, "unit": "px", "default": 18 },
 
     { "type": "header", "content": "Bild" },
     { "type": "image_picker", "id": "image", "label": "Bild" },
-    { "type": "range", "id": "image_border_radius", "label": "Bild Eckenrundung", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 14 },
+    { "type": "range", "id": "image_border_radius", "label": "Bild Eckenrundung", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 12 },
     { "type": "text", "id": "image_alt", "label": "Bild Alt-Text" },
     { "type": "range", "id": "image_max_width", "label": "Bild max. Breite (Spalte)", "min": 60, "max": 100, "step": 5, "unit": "%", "default": 85 },
     {
