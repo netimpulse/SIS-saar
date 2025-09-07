@@ -54,7 +54,7 @@
       "type": "hero-building-section",
       "name": "Hero Building",
       "settings": {
-        "background_image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
+        "background_image": "shopify://shop_images/shutterstock_344049572.jpg",
         "enable_overlay": true,
         "overlay_color": "#000000",
         "overlay_opacity": 0.5,
@@ -160,6 +160,7 @@
         },
         "feature_hxgafx": {
           "type": "feature",
+          "disabled": true,
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
