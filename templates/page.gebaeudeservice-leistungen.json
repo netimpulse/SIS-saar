@@ -161,7 +161,7 @@
       ],
       "name": "Leistung Suche Grid",
       "settings": {
-        "heading": "<p><strong>Unsere Leistungen</strong></p>",
+        "heading": "",
         "subheading": "<p>Mit <em>Leidenschaft</em> für Ihren Erfolg.</p>",
         "text_align": "center",
         "show_search": true,
