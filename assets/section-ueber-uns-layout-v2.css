@@ -18,7 +18,7 @@
   gap: clamp(2rem, 4vw, 4rem);
   align-items: center;
 }
-.sis-about__grid--image-left{ direction: rtl; } /* swap ohne DOM-Änderung */
+.sis-about__grid--image-left{ direction: rtl; }
 .sis-about__grid--image-left > *{ direction: ltr; }
 .sis-about__grid--no-image{ grid-template-columns: 1fr; }
 
