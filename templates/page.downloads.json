@@ -52,6 +52,7 @@
     },
     "hero_building_section_ztyrhy": {
       "type": "hero-building-section",
+      "disabled": true,
       "name": "Hero Building",
       "settings": {
         "background_image": "shopify://shop_images/shutterstock_370492946.jpg",
@@ -104,12 +105,42 @@
             "file_url": "",
             "tags": "Zertifikat, ISO, 9001"
           }
+        },
+        "download_DgDJ8A": {
+          "type": "download",
+          "settings": {
+            "title": "ISO 9001",
+            "date": "11.09.2023",
+            "file_url": "",
+            "tags": "Zertifikat, ISO, 9001"
+          }
+        },
+        "download_69riFF": {
+          "type": "download",
+          "settings": {
+            "title": "ISO 9001",
+            "date": "11.09.2023",
+            "file_url": "",
+            "tags": "Zertifikat, ISO, 9001"
+          }
+        },
+        "download_ApEzt4": {
+          "type": "download",
+          "settings": {
+            "title": "ISO 9001",
+            "date": "11.09.2023",
+            "file_url": "",
+            "tags": "Zertifikat, ISO, 9001"
+          }
         }
       },
       "block_order": [
         "download_cVTVn7",
         "download_7Uq3dW",
-        "download_GRfgxq"
+        "download_GRfgxq",
+        "download_DgDJ8A",
+        "download_69riFF",
+        "download_ApEzt4"
       ],
       "name": "Downloads / Zertifikate (DLX)",
       "settings": {
