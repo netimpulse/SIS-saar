@@ -131,7 +131,7 @@
         "subtext": "Mit Leidenschaft für Ihren Erfolg.",
         "font_heading": "sans_serif_n4",
         "font_body": "sans_serif_n4",
-        "heading_size": 32,
+        "heading_size": 36,
         "heading_bold": true,
         "heading_italic": false,
         "subtext_size": 16,
@@ -218,12 +218,27 @@
             "panel_position": "top-left",
             "open_by_default": false
           }
+        },
+        "hotspot_8Q8LiF": {
+          "type": "hotspot",
+          "settings": {
+            "title": "Smart Home Features",
+            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
+            "pos_x": 35,
+            "pos_y": 28,
+            "dot_color": "#3ac47d",
+            "panel_bg": "#4caf78",
+            "panel_text": "#ffffff",
+            "panel_position": "top-left",
+            "open_by_default": false
+          }
         }
       },
       "block_order": [
         "hotspot_YGhMHC",
         "hotspot_3agTmd",
-        "hotspot_7PGJ9X"
+        "hotspot_7PGJ9X",
+        "hotspot_8Q8LiF"
       ],
       "name": "Amenities Hotspots",
       "settings": {
