@@ -332,7 +332,7 @@
         "heading_color": "#1f1f1f",
         "subheading": "Wer wir sind und was uns auszeichnet",
         "subheading_font": "system_ui_n4",
-        "subheading_font_size": 18,
+        "subheading_font_size": 16,
         "subheading_color": "#555555",
         "text": "<p>Beschreiben Sie hier Ihr Unternehmen, Ihre Produkte oder Dienstleistungen. Dieser Text ist vollständig anpassbar und unterstützt auch Formatierungen wie <strong>fett</strong> oder <em>kursiv</em>.</p>",
         "text_font": "system_ui_n4",
