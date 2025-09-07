@@ -17,6 +17,39 @@
         "padding_bottom": 28
       }
     },
+    "sticky_header_qndHEr": {
+      "type": "sticky-header",
+      "name": "Sticky header",
+      "settings": {
+        "background_color": "#ffffff",
+        "padding_vertical": 16,
+        "padding_horizontal": 24,
+        "logo_height": 40,
+        "back_link": "",
+        "back_label": "Zurück",
+        "back_font": "system_ui_n4",
+        "back_font_bold": false,
+        "back_text_color": "#374151",
+        "back_hover_color": "#4ade80",
+        "back_font_size": 16,
+        "logo": "shopify://shop_images/logo_Industrieservice_exact_v2.png",
+        "logo_text": "Mein Shop",
+        "logo_color": "#1e40af",
+        "logo_font_size": 24,
+        "menu": "industrieservice",
+        "nav_font": "system_ui_n4",
+        "nav_font_bold": false,
+        "nav_text_color": "#374151",
+        "nav_hover_color": "#4ade80",
+        "nav_font_size": 16,
+        "button_text": "Kontakt",
+        "button_link": "shopify://pages/allgemeiner-kontakt",
+        "button_text_color": "#ffffff",
+        "button_bg_color": "#4ade80",
+        "button_hover_text_color": "#ffffff",
+        "button_hover_bg_color": "#22c55e"
+      }
+    },
     "contact_info_form_dVeyFV": {
       "type": "contact-info-form",
       "blocks": {
@@ -198,6 +231,7 @@
   },
   "order": [
     "main",
+    "sticky_header_qndHEr",
     "contact_info_form_dVeyFV",
     "sis_footer_neu_W3U6Pb"
   ]
