@@ -336,7 +336,7 @@
         "subheading_color": "#555555",
         "text": "<p>Beschreiben Sie hier Ihr Unternehmen, Ihre Produkte oder Dienstleistungen. Dieser Text ist vollständig anpassbar und unterstützt auch Formatierungen wie <strong>fett</strong> oder <em>kursiv</em>.</p>",
         "text_font": "system_ui_n4",
-        "text_font_size": 16,
+        "text_font_size": 18,
         "text_color": "#333333",
         "button_text": "erfahren sie mehr",
         "button_link": "shopify://pages/industrieservice-uber-uns",
