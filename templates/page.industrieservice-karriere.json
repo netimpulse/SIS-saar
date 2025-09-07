@@ -50,123 +50,6 @@
         "padding_bottom": 28
       }
     },
-    "jobs_board_MVQFbQ": {
-      "type": "jobs-board",
-      "blocks": {
-        "job_BfmD3W": {
-          "type": "job",
-          "settings": {
-            "title": "Reinigungskraft (m/w/d)",
-            "desc": "Für die professionelle Gebäudereinigung in Bürogebäuden und öffentlichen Einrichtungen",
-            "location": "Saarbrücken",
-            "time": "minijob",
-            "badge_label": "",
-            "badge_bg": "",
-            "badge_text": "",
-            "btn_label": "Jetzt bewerben",
-            "btn_url": "",
-            "btn_newtab": false,
-            "card_bg": ""
-          }
-        },
-        "job_9BdEb7": {
-          "type": "job",
-          "settings": {
-            "title": "Industrieservicetechniker (m/w/d)",
-            "desc": "Reinigung und Wartung von Industrieanlagen, Maschinen und Produktionsstätten.",
-            "location": "Saarbrücken",
-            "time": "beides",
-            "badge_label": "",
-            "badge_bg": "",
-            "badge_text": "",
-            "btn_label": "Jetzt bewerben",
-            "btn_url": "",
-            "btn_newtab": false,
-            "card_bg": ""
-          }
-        },
-        "job_6wp6i4": {
-          "type": "job",
-          "settings": {
-            "title": "Teamleiter Gebäudereinigung (m/w/d)",
-            "desc": "Leitung eines Reinigungsteams, Einsatzplanung, Qualitätssicherung.",
-            "location": "Saarbrücken",
-            "time": "vollzeit",
-            "badge_label": "",
-            "badge_bg": "",
-            "badge_text": "",
-            "btn_label": "Jetzt bewerben",
-            "btn_url": "",
-            "btn_newtab": false,
-            "card_bg": ""
-          }
-        },
-        "job_qY3Npb": {
-          "type": "job",
-          "settings": {
-            "title": "Reinigungskraft (m/w/d)",
-            "desc": "Für die professionelle Gebäudereinigung in Bürogebäuden und öffentlichen Einrichtungen",
-            "location": "Saarbrücken",
-            "time": "beides",
-            "badge_label": "",
-            "badge_bg": "",
-            "badge_text": "",
-            "btn_label": "Jetzt bewerben",
-            "btn_url": "",
-            "btn_newtab": false,
-            "card_bg": ""
-          }
-        }
-      },
-      "block_order": [
-        "job_BfmD3W",
-        "job_9BdEb7",
-        "job_6wp6i4",
-        "job_qY3Npb"
-      ],
-      "name": "Job-Kacheln (Karriere)",
-      "settings": {
-        "heading": "Aktuelle Stellenausschreibungen",
-        "subheading": "Finden Sie Ihre nächste berufliche Herausforderung bei uns",
-        "section_bg": "#f6f7fb",
-        "card_bg": "#ffffff",
-        "padding_y": 48,
-        "grid_gap": 24,
-        "card_radius": 16,
-        "columns": "2",
-        "title_font": "poppins_n4",
-        "title_size": 44,
-        "title_color": "#0f172a",
-        "title_weight": "700",
-        "subtitle_font": "poppins_n4",
-        "subtitle_size": 16,
-        "subtitle_color": "#475569",
-        "subtitle_weight": "400",
-        "jobtitle_font": "poppins_n4",
-        "jobtitle_size": 22,
-        "jobtitle_color": "#0f172a",
-        "jobtitle_weight": "700",
-        "text_font": "poppins_n4",
-        "text_size": 16,
-        "text_color": "#334155",
-        "text_weight": "400",
-        "location_font": "poppins_n4",
-        "location_size": 15,
-        "location_color": "#475569",
-        "location_weight": "400",
-        "button_font": "poppins_n4",
-        "button_size": 15,
-        "button_weight": "600",
-        "button_bg": "#111827",
-        "button_text": "#ffffff",
-        "button_border": "rgba(0,0,0,0)",
-        "badge_font": "poppins_n4",
-        "badge_size": 14,
-        "badge_weight": "600",
-        "badge_bg": "#d1fadf",
-        "badge_text": "#065f46"
-      }
-    },
     "highlights_icons_trDdzm": {
       "type": "highlights-icons",
       "blocks": {
@@ -404,20 +287,20 @@
         "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
     },
-    "karriere_kacheln_rTrwpa": {
+    "karriere_kacheln_nJHMAj": {
       "type": "karriere-kacheln",
       "blocks": {
-        "career_tile_WtGbjb": {
+        "career_tile_RyURLw": {
           "type": "career_tile",
           "settings": {
-            "title_html": "<p><strong>Reinigungskraft (m/w/d)aaaaaaaaa</strong></p>",
+            "title_html": "<p><strong>Reinigungskraft (m/w/d)</strong></p>",
             "desc_html": "<p>Für die professionelle Gebäudereinigung in Bürogebäuden und öffentlichen Einrichtungen</p>",
             "location_html": "<p>Saarbrücken</p>",
             "time": "beides",
             "badge_label": "",
             "badge_bg": "",
             "badge_text": "",
-            "details_html": "<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>",
+            "details_html": "<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>",
             "details_toggle": "Details anzeigen",
             "details_open": false,
             "btn_label": "Jetzt bewerben",
@@ -427,7 +310,7 @@
             "card_bg": ""
           }
         },
-        "career_tile_kyVcMw": {
+        "career_tile_LjGjVM": {
           "type": "career_tile",
           "settings": {
             "title_html": "<p><strong>Reinigungskraft (m/w/d)</strong></p>",
@@ -447,7 +330,27 @@
             "card_bg": ""
           }
         },
-        "career_tile_MggxbG": {
+        "career_tile_JEGcxL": {
+          "type": "career_tile",
+          "settings": {
+            "title_html": "<p><strong>Reinigungskraft (m/w/d)</strong></p>",
+            "desc_html": "<p>Für die professionelle Gebäudereinigung in Bürogebäuden und öffentlichen Einrichtungen</p>",
+            "location_html": "<p>Saarbrücken</p>",
+            "time": "beides",
+            "badge_label": "",
+            "badge_bg": "",
+            "badge_text": "",
+            "details_html": "",
+            "details_toggle": "Details anzeigen",
+            "details_open": false,
+            "btn_label": "Jetzt bewerben",
+            "btn_url": "",
+            "btn_newtab": false,
+            "card_align": "left",
+            "card_bg": ""
+          }
+        },
+        "career_tile_B3VqFi": {
           "type": "career_tile",
           "settings": {
             "title_html": "<p><strong>Reinigungskraft (m/w/d)</strong></p>",
@@ -469,9 +372,10 @@
         }
       },
       "block_order": [
-        "career_tile_WtGbjb",
-        "career_tile_kyVcMw",
-        "career_tile_MggxbG"
+        "career_tile_RyURLw",
+        "career_tile_LjGjVM",
+        "career_tile_JEGcxL",
+        "career_tile_B3VqFi"
       ],
       "name": "Karriere-Kacheln",
       "settings": {
@@ -492,11 +396,10 @@
   "order": [
     "sticky_header_NaNAWz",
     "main",
-    "jobs_board_MVQFbQ",
     "highlights_icons_trDdzm",
     "text_mit_bild_button_LWeUiY",
     "sis_single_footer_DNrhdy",
     "sis_footer_neu_md8EiT",
-    "karriere_kacheln_rTrwpa"
+    "karriere_kacheln_nJHMAj"
   ]
 }

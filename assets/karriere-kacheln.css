@@ -1,4 +1,5 @@
 /* Karriere-Kacheln — Badge garantiert oben links über dem Titel */
+
 .jobs-section{
   --jobs-section-bg:#f6f7fb;
   --jobs-pad-y:48px;
@@ -19,8 +20,14 @@
 
 .job-card{background:var(--card-bg,#fff);border-radius:var(--card-radius);box-shadow:0 10px 30px rgba(2,6,23,.06);padding:18px 18px 16px;display:flex;flex-direction:column;gap:10px;}
 
-/* Kopfbereich – Stack */
+/* --- Harter Kopf-Stack: Badge -> Titel --- */
 .job-head{display:block !important;}
+.job-card .job-head .job-badge{
+  display:inline-block !important;
+  float:none !important;
+  clear:both !important;
+  margin:0 0 8px 0 !important;
+}
 .job-card .job-head .job-title{
   display:block !important;
   clear:both !important;
