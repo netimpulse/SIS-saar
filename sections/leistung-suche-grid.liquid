@@ -1,7 +1,7 @@
 {% comment %}
   Section: Leistung Suche Grid (ohne Karussell)
   - Suchfunktion über Titel + Keywords
-  - 3 Spalten, außer exakt 4 sichtbare Karten -> 2 Spalten (2×2)
+  - 3 Spalten, außer genau 4 sichtbare Karten → 2 Spalten (2×2)
   - Keywords als runde Badges mit frei einstellbaren Farben
   - Jede Karte mit Button/Link
 {% endcomment %}
@@ -96,7 +96,7 @@
           if (match) visibleCount++;
         });
 
-        // Layout-Regel: Genau 4 sichtbare -> 2 Spalten; sonst 3 Spalten
+        // Layout-Regel: Genau 4 sichtbare → 2 Spalten; sonst 3 Spalten
         grid.setAttribute('data-columns', visibleCount === 4 ? '2' : '3');
       }
 
@@ -116,7 +116,6 @@
         });
       }
 
-      // Initial
       applyFilter(input ? input.value : '');
     })();
   </script>
