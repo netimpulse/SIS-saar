@@ -1,8 +1,5 @@
 {% comment %}
-  Über Uns (Layout) – polierte Version
-  - Bild an/aus + zentrierter Fallback-Text
-  - Überschrift-Ausrichtung & -Stile
-  - Stabile Grid-Ausrichtung per grid-areas (Bild wirklich links/rechts)
+  Über Uns (Layout) – Richtext + Bild An/Aus
 {% endcomment %}
 
 {{ 'section-ueber-uns-layout.css' | asset_url | stylesheet_tag }}
@@ -15,10 +12,6 @@
 
     --title-color: {{ section.settings.title_color }};
     --title-font-size: {{ section.settings.title_font_size }}px;
-    --title-text-align: {{ section.settings.title_alignment }};
-    --title-font-weight: {% if section.settings.title_bold %}700{% else %}500{% endif %};
-    --title-font-style: {% if section.settings.title_italic %}italic{% else %}normal{% endif %};
-    --title-text-decoration: {% if section.settings.title_underline %}underline{% else %}none{% endif %};
 
     --text-color: {{ section.settings.text_color }};
     --text-font-size: {{ section.settings.text_font_size }}px;
@@ -48,9 +41,7 @@
 
       {%- if image_on_left -%}
         {% if actually_show_image %}
-          <div class="sis-about__image" aria-hidden="false">
-            {%- render 'about-image', section: section -%}
-          </div>
+          <div class="sis-about__image">{% render 'about-image', section: section %}</div>
         {% else %}
           <div class="sis-about__image sis-about__image--off">
             <div class="sis-about__image-off-text">{{ section.settings.image_off_text }}</div>
@@ -59,7 +50,9 @@
       {%- endif -%}
 
       <div class="sis-about__content">
-        <h2 class="sis-about__title">{{ section.settings.title }}</h2>
+        <div class="sis-about__title rte--title">
+          {{ section.settings.title_richtext }}
+        </div>
         <div class="sis-about__description">
           {{ section.settings.description }}
         </div>
@@ -93,9 +86,7 @@
 
       {%- unless image_on_left -%}
         {% if actually_show_image %}
-          <div class="sis-about__image" aria-hidden="false">
-            {%- render 'about-image', section: section -%}
-          </div>
+          <div class="sis-about__image">{% render 'about-image', section: section %}</div>
         {% else %}
           <div class="sis-about__image sis-about__image--off">
             <div class="sis-about__image-off-text">{{ section.settings.image_off_text }}</div>
@@ -137,26 +128,12 @@
     { "type": "range", "id": "section_padding_bottom", "label": "Abstand unten", "min": 0, "max": 150, "step": 5, "unit": "px", "default": 80 },
 
     { "type": "header", "content": "Überschrift" },
-    { "type": "text", "id": "title", "label": "Titel", "default": "Über uns" },
+    { "type": "richtext", "id": "title_richtext", "label": "Titel", "default": "<p><strong>Über uns</strong></p>" },
     { "type": "color", "id": "title_color", "label": "Titel Farbe", "default": "#111827" },
     { "type": "range", "id": "title_font_size", "label": "Titel Schriftgröße", "min": 24, "max": 56, "step": 2, "unit": "px", "default": 40 },
-    {
-      "type": "select",
-      "id": "title_alignment",
-      "label": "Titel Ausrichtung",
-      "options": [
-        { "value": "left", "label": "Links" },
-        { "value": "center", "label": "Zentriert" },
-        { "value": "right", "label": "Rechts" }
-      ],
-      "default": "left"
-    },
-    { "type": "checkbox", "id": "title_bold", "label": "Titel fett", "default": true },
-    { "type": "checkbox", "id": "title_italic", "label": "Titel kursiv", "default": false },
-    { "type": "checkbox", "id": "title_underline", "label": "Titel unterstrichen", "default": false },
 
     { "type": "header", "content": "Text" },
-    { "type": "richtext", "id": "description", "label": "Beschreibungstext", "default": "<p>Wir sind SIS Saar&nbsp;…</p>" },
+    { "type": "richtext", "id": "description", "label": "Beschreibungstext", "default": "<p>Wir sind SIS Saar - ein innovatives Unternehmen...</p>" },
     { "type": "color", "id": "text_color", "label": "Text Farbe", "default": "#6B7280" },
     { "type": "range", "id": "text_font_size", "label": "Text Schriftgröße", "min": 14, "max": 22, "step": 1, "unit": "px", "default": 18 },
 
