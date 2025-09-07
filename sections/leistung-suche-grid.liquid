@@ -17,39 +17,25 @@
     --card-shadow: {% if section.settings.card_shadow %}0 8px 24px rgba(0,0,0,.08){% else %}none{% endif %};
     --gap: {{ section.settings.grid_gap }}px;
   ">
-
   <div class="services-grid__inner page-width">
     {% if section.settings.heading != blank or section.settings.subheading != blank %}
       <div class="services-grid__header">
-        {% if section.settings.heading != blank %}
-          <h2 class="services-grid__title">{{ section.settings.heading }}</h2>
-        {% endif %}
-        {% if section.settings.subheading != blank %}
-          <p class="services-grid__subtitle">{{ section.settings.subheading }}</p>
-        {% endif %}
+        {% if section.settings.heading != blank %}<h2 class="services-grid__title">{{ section.settings.heading }}</h2>{% endif %}
+        {% if section.settings.subheading != blank %}<p class="services-grid__subtitle">{{ section.settings.subheading }}</p>{% endif %}
       </div>
     {% endif %}
 
     {% if section.settings.show_search %}
       <div class="services-grid__search">
-        <input
-          id="services-search-{{ section.id }}"
-          type="search"
-          class="services-grid__search-input"
+        <input id="services-search-{{ section.id }}" type="search" class="services-grid__search-input"
           placeholder="{{ section.settings.search_placeholder | default: 'Suchen…' | escape }}"
-          aria-label="{{ section.settings.search_placeholder | default: 'Suchen…' | escape }}"
-        >
+          aria-label="{{ section.settings.search_placeholder | default: 'Suchen…' | escape }}">
         <button type="button" class="services-grid__clear" aria-label="Suche löschen" hidden>×</button>
       </div>
     {% endif %}
 
     {%- assign total_items = section.blocks.size -%}
-    <div
-      class="services-grid"
-      data-columns="{% if total_items == 4 %}2{% else %}3{% endif %}"
-      data-section-id="{{ section.id }}"
-      id="services-grid-{{ section.id }}"
-    >
+    <div class="services-grid" data-columns="{% if total_items == 4 %}2{% else %}3{% endif %}" id="services-grid-{{ section.id }}">
       {% for block in section.blocks %}
         {% render 'leistung-suche-card',
           id: block.id,
@@ -67,55 +53,48 @@
 
     {% if section.settings.show_cta and section.settings.cta_label != blank and section.settings.cta_link != blank %}
       <div class="services-grid__footer">
-        <a class="services-grid__cta btn btn--{{ section.settings.button_style }}" href="{{ section.settings.cta_link }}">
-          {{ section.settings.cta_label }}
-        </a>
+        <a class="services-grid__cta btn btn--{{ section.settings.button_style }}" href="{{ section.settings.cta_link }}">{{ section.settings.cta_label }}</a>
       </div>
     {% endif %}
   </div>
 
   <script>
     (function() {
-      const root = document.getElementById('services-{{ section.id }}');
-      if (!root) return;
-
+      const root = document.getElementById('services-{{ section.id }}'); if (!root) return;
       const grid = root.querySelector('.services-grid');
       const input = root.querySelector('.services-grid__search-input');
       const clearBtn = root.querySelector('.services-grid__clear');
 
-      function normalize(s){ return (s || '').toString().toLowerCase().trim(); }
+      const normalize = s => (s || '').toString().toLowerCase().trim();
 
       function applyFilter(q) {
         const query = normalize(q);
         const cards = grid.querySelectorAll('[data-service-card]');
-        let visibleCount = 0;
+        let visible = 0;
         cards.forEach(card => {
-          const hay = card.getAttribute('data-search-haystack');
+          const hay = card.getAttribute('data-search-haystack') || '';
           const match = !query || hay.includes(query);
           card.style.display = match ? '' : 'none';
-          if (match) visibleCount++;
+          if (match) visible++;
         });
-
-        // Layout-Regel: Genau 4 sichtbare → 2 Spalten; sonst 3 Spalten
-        grid.setAttribute('data-columns', visibleCount === 4 ? '2' : '3');
+        grid.setAttribute('data-columns', visible === 4 ? '2' : '3');
       }
 
       if (input) {
-        input.addEventListener('input', (e)=>{
-          const value = e.target.value;
-          clearBtn && clearBtn.toggleAttribute('hidden', !value.length);
-          applyFilter(value);
+        input.addEventListener('input', e => {
+          const val = e.target.value;
+          if (clearBtn) clearBtn.toggleAttribute('hidden', !val.length);
+          applyFilter(val);
         });
       }
       if (clearBtn) {
-        clearBtn.addEventListener('click', ()=>{
+        clearBtn.addEventListener('click', () => {
           input.value = '';
           clearBtn.setAttribute('hidden','');
           applyFilter('');
           input.focus();
         });
       }
-
       applyFilter(input ? input.value : '');
     })();
   </script>
