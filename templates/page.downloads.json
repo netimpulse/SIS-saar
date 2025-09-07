@@ -27,7 +27,7 @@
         "logo_height": 40,
         "back_link": "",
         "back_label": "Zurück",
-        "back_font": "sans-serif",
+        "back_font": "system_ui_n4",
         "back_font_bold": false,
         "back_text_color": "#374151",
         "back_hover_color": "#4ade80",
@@ -37,7 +37,7 @@
         "logo_color": "#1e40af",
         "logo_font_size": 24,
         "menu": "hauptmen",
-        "nav_font": "sans-serif",
+        "nav_font": "system_ui_n4",
         "nav_font_bold": false,
         "nav_text_color": "#374151",
         "nav_hover_color": "#4ade80",
@@ -75,20 +75,10 @@
         "text_alignment": "left"
       }
     },
-    "downloads_dXGd8N": {
-      "type": "downloads",
+    "dlx_downloads_wKpMwN": {
+      "type": "dlx-downloads",
       "blocks": {
-        "download_fxWaAz": {
-          "type": "download",
-          "settings": {
-            "title": "ISO 9001",
-            "date": "11.09.2023",
-            "image": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
-            "file_url": "",
-            "tags": "Zertifikat, ISO, 9001"
-          }
-        },
-        "download_8DtA3a": {
+        "download_cVTVn7": {
           "type": "download",
           "settings": {
             "title": "ISO 9001",
@@ -97,7 +87,7 @@
             "tags": "Zertifikat, ISO, 9001"
           }
         },
-        "download_tMiKnQ": {
+        "download_7Uq3dW": {
           "type": "download",
           "settings": {
             "title": "ISO 9001",
@@ -106,52 +96,7 @@
             "tags": "Zertifikat, ISO, 9001"
           }
         },
-        "download_6fPBmX": {
-          "type": "download",
-          "settings": {
-            "title": "ISO 9001",
-            "date": "11.09.2023",
-            "file_url": "",
-            "tags": "Zertifikat, ISO, 9001"
-          }
-        },
-        "download_4Y6eV7": {
-          "type": "download",
-          "settings": {
-            "title": "ISO 9001",
-            "date": "11.09.2023",
-            "file_url": "",
-            "tags": "Zertifikat, ISO, 9001"
-          }
-        },
-        "download_dGWLCx": {
-          "type": "download",
-          "settings": {
-            "title": "ISO 9001",
-            "date": "11.09.2023",
-            "file_url": "",
-            "tags": "Zertifikat, ISO, 9001"
-          }
-        },
-        "download_6qaXwF": {
-          "type": "download",
-          "settings": {
-            "title": "ISO 9001",
-            "date": "11.09.2023",
-            "file_url": "",
-            "tags": "Zertifikat, ISO, 9001"
-          }
-        },
-        "download_Yf6qxN": {
-          "type": "download",
-          "settings": {
-            "title": "ISO 9001",
-            "date": "11.09.2023",
-            "file_url": "",
-            "tags": "Zertifikat, ISO, 9001"
-          }
-        },
-        "download_cYwP6y": {
+        "download_GRfgxq": {
           "type": "download",
           "settings": {
             "title": "ISO 9001",
@@ -162,17 +107,11 @@
         }
       },
       "block_order": [
-        "download_fxWaAz",
-        "download_8DtA3a",
-        "download_tMiKnQ",
-        "download_6fPBmX",
-        "download_4Y6eV7",
-        "download_dGWLCx",
-        "download_6qaXwF",
-        "download_Yf6qxN",
-        "download_cYwP6y"
+        "download_cVTVn7",
+        "download_7Uq3dW",
+        "download_GRfgxq"
       ],
-      "name": "Downloads / Zertifikate",
+      "name": "Downloads / Zertifikate (DLX)",
       "settings": {
         "heading": "Downloads",
         "subtext": "<p>Hier finden Sie unsere Zertifikate, Broschüren und weitere Unterlagen. Klicken Sie auf eine Kachel oder den Button, um die Datei herunterzuladen.</p>",
@@ -180,6 +119,9 @@
         "font_size": 34,
         "subtext_size": 16,
         "font_family": "theme",
+        "heading_align": "center",
+        "heading_weight": 700,
+        "heading_style": "normal",
         "show_search": true,
         "search_placeholder": "Suchen… (Titel oder Tags, z. B. ISO, VDI, Brandschutz)",
         "search_hint": "Tipp: Mehrere Tags mit Komma trennen – z. B. “ISO, 9001”",
@@ -313,7 +255,7 @@
     "main",
     "sticky_header_aecVGd",
     "hero_building_section_ztyrhy",
-    "downloads_dXGd8N",
+    "dlx_downloads_wKpMwN",
     "sis_footer_neu_QWgWbD"
   ]
 }
