@@ -176,9 +176,9 @@
         "card_radius": 18,
         "card_shadow": true,
         "grid_gap": 20,
-        "show_cta": false,
+        "show_cta": true,
         "cta_label": "Mehr erfahren",
-        "cta_link": "",
+        "cta_link": "shopify://pages/unterhaltsreinigung",
         "button_style": "primary"
       }
     },

@@ -132,7 +132,7 @@
         "points_bg": "#ffffff",
         "points_border": "#e5e8ee",
         "points_btn_label": "Jetzt anfragen",
-        "points_btn_url": "",
+        "points_btn_url": "shopify://pages/allgemeiner-kontakt",
         "points_btn_align": "left",
         "fallback_bullet_color": "#2b6cb0"
       }
