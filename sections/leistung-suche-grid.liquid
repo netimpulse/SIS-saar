@@ -1,8 +1,10 @@
 {% comment %}
   Section: Leistung Suche Grid (ohne Karussell)
-  - Suchfunktion über Titel + Keywords
+  - Richtext für Überschrift, Untertitel und Karteninhalte
+  - Textausrichtung wählbar (links/zentriert/rechts)
+  - Suchfunktion über Titel + Keywords (HTML wird ignoriert)
   - 3 Spalten, außer genau 4 sichtbare Karten → 2 Spalten (2×2)
-  - Keywords als runde Badges mit frei einstellbaren Farben
+  - Keywords als runde Badges (Farben einstellbar)
   - Jede Karte mit Button/Link
 {% endcomment %}
 
@@ -17,31 +19,48 @@
     --card-shadow: {% if section.settings.card_shadow %}0 8px 24px rgba(0,0,0,.08){% else %}none{% endif %};
     --gap: {{ section.settings.grid_gap }}px;
   ">
+
   <div class="services-grid__inner page-width">
     {% if section.settings.heading != blank or section.settings.subheading != blank %}
-      <div class="services-grid__header">
-        {% if section.settings.heading != blank %}<h2 class="services-grid__title">{{ section.settings.heading }}</h2>{% endif %}
-        {% if section.settings.subheading != blank %}<p class="services-grid__subtitle">{{ section.settings.subheading }}</p>{% endif %}
+      <div class="services-grid__header text-{{ section.settings.text_align }}">
+        {% if section.settings.heading != blank %}
+          <div class="services-grid__title">
+            {{ section.settings.heading }}
+          </div>
+        {% endif %}
+        {% if section.settings.subheading != blank %}
+          <div class="services-grid__subtitle">
+            {{ section.settings.subheading }}
+          </div>
+        {% endif %}
       </div>
     {% endif %}
 
     {% if section.settings.show_search %}
       <div class="services-grid__search">
-        <input id="services-search-{{ section.id }}" type="search" class="services-grid__search-input"
+        <input
+          id="services-search-{{ section.id }}"
+          type="search"
+          class="services-grid__search-input"
           placeholder="{{ section.settings.search_placeholder | default: 'Suchen…' | escape }}"
-          aria-label="{{ section.settings.search_placeholder | default: 'Suchen…' | escape }}">
+          aria-label="{{ section.settings.search_placeholder | default: 'Suchen…' | escape }}"
+        >
         <button type="button" class="services-grid__clear" aria-label="Suche löschen" hidden>×</button>
       </div>
     {% endif %}
 
     {%- assign total_items = section.blocks.size -%}
-    <div class="services-grid" data-columns="{% if total_items == 4 %}2{% else %}3{% endif %}" id="services-grid-{{ section.id }}">
+    <div
+      class="services-grid"
+      data-columns="{% if total_items == 4 %}2{% else %}3{% endif %}"
+      id="services-grid-{{ section.id }}"
+    >
       {% for block in section.blocks %}
         {% render 'leistung-suche-card',
           id: block.id,
           image: block.settings.image,
-          title: block.settings.title,
-          text: block.settings.text,
+          title_html: block.settings.title_html,
+          text_html: block.settings.text_html,
           keywords: block.settings.keywords,
           button_label: block.settings.button_label,
           button_link: block.settings.button_link,
@@ -53,14 +72,18 @@
 
     {% if section.settings.show_cta and section.settings.cta_label != blank and section.settings.cta_link != blank %}
       <div class="services-grid__footer">
-        <a class="services-grid__cta btn btn--{{ section.settings.button_style }}" href="{{ section.settings.cta_link }}">{{ section.settings.cta_label }}</a>
+        <a class="services-grid__cta btn btn--{{ section.settings.button_style }}" href="{{ section.settings.cta_link }}">
+          {{ section.settings.cta_label }}
+        </a>
       </div>
     {% endif %}
   </div>
 
   <script>
     (function() {
-      const root = document.getElementById('services-{{ section.id }}'); if (!root) return;
+      const root = document.getElementById('services-{{ section.id }}');
+      if (!root) return;
+
       const grid = root.querySelector('.services-grid');
       const input = root.querySelector('.services-grid__search-input');
       const clearBtn = root.querySelector('.services-grid__clear');
@@ -106,8 +129,20 @@
   "tag": "section",
   "class": "section",
   "settings": [
-    { "type": "text", "id": "heading", "label": "Leistung Suche Überschrift", "default": "Unsere Leistungen" },
-    { "type": "text", "id": "subheading", "label": "Leistung Suche Untertitel", "default": "Mit Leidenschaft für Ihren Erfolg." },
+    { "type": "richtext", "id": "heading", "label": "Leistung Suche Überschrift", "default": "<p><strong>Unsere Leistungen</strong></p>" },
+    { "type": "richtext", "id": "subheading", "label": "Leistung Suche Untertitel", "default": "<p>Mit <em>Leidenschaft</em> für Ihren Erfolg.</p>" },
+
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Textausrichtung (Überschrift/Untertitel)",
+      "default": "center",
+      "options": [
+        { "value": "left", "label": "Links" },
+        { "value": "center", "label": "Zentriert" },
+        { "value": "right", "label": "Rechts" }
+      ]
+    },
 
     { "type": "checkbox", "id": "show_search", "label": "Leistung Suche Feld anzeigen", "default": true },
     { "type": "text", "id": "search_placeholder", "label": "Leistung Suche Suchfeld Placeholder", "default": "Leistungen oder Keywords suchen…" },
@@ -145,8 +180,8 @@
       "name": "Leistung Suche Block",
       "settings": [
         { "type": "image_picker", "id": "image", "label": "Leistung Suche Bild" },
-        { "type": "text", "id": "title", "label": "Leistung Suche Titel", "default": "Unterhaltsreinigung" },
-        { "type": "textarea", "id": "text", "label": "Leistung Suche Kurzbeschreibung", "default": "Kurze Beschreibung hier." },
+        { "type": "richtext", "id": "title_html", "label": "Leistung Suche Titel (Richtext)", "default": "<p><strong>Unterhaltsreinigung</strong></p>" },
+        { "type": "richtext", "id": "text_html", "label": "Leistung Suche Kurzbeschreibung (Richtext)", "default": "<p>Kurze Beschreibung hier.</p>" },
         { "type": "text", "id": "keywords", "label": "Leistung Suche Keywords (Kommagetrennt)", "default": "Büro, täglich, flexibel" },
         { "type": "text", "id": "button_label", "label": "Leistung Suche Button-Text", "default": "Mehr erfahren" },
         { "type": "url", "id": "button_link", "label": "Leistung Suche Button-Link" }
