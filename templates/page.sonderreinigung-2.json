@@ -19,7 +19,7 @@
         "logo_height": 40,
         "back_link": "",
         "back_label": "Zurück",
-        "back_font": "sans-serif",
+        "back_font": "system_ui_n4",
         "back_font_bold": false,
         "back_text_color": "#374151",
         "back_hover_color": "#4ade80",
@@ -29,7 +29,7 @@
         "logo_color": "#1e40af",
         "logo_font_size": 24,
         "menu": "geb-udeservice",
-        "nav_font": "sans-serif",
+        "nav_font": "system_ui_n4",
         "nav_font_bold": false,
         "nav_text_color": "#374151",
         "nav_hover_color": "#4ade80",
@@ -75,28 +75,28 @@
         "text_alignment": "left"
       }
     },
-    "leistung_showcase_9Y9rK6": {
+    "leistung_showcase_B9FPcW": {
       "type": "leistung-showcase",
       "blocks": {
-        "showcase_item_YKfnRj": {
+        "showcase_item_chPktL": {
           "type": "showcase_item",
           "settings": {
             "text": "<p>hier steht ein text</p>"
           }
         },
-        "showcase_item_Ba6nGP": {
+        "showcase_item_CwK89D": {
           "type": "showcase_item",
           "settings": {
             "text": "<p>hier steht ein text</p>"
           }
         },
-        "showcase_item_Gefp9i": {
+        "showcase_item_6eiheB": {
           "type": "showcase_item",
           "settings": {
             "text": "<p>hier steht ein text</p>"
           }
         },
-        "showcase_item_AwWV6R": {
+        "showcase_item_EhxaFW": {
           "type": "showcase_item",
           "settings": {
             "text": "<p>hier steht ein text</p>"
@@ -104,18 +104,27 @@
         }
       },
       "block_order": [
-        "showcase_item_YKfnRj",
-        "showcase_item_Ba6nGP",
-        "showcase_item_Gefp9i",
-        "showcase_item_AwWV6R"
+        "showcase_item_chPktL",
+        "showcase_item_CwK89D",
+        "showcase_item_6eiheB",
+        "showcase_item_EhxaFW"
       ],
       "name": "Leistung Showcase",
       "settings": {
-        "heading": "Überschrift bei Überschrift",
-        "subtext": "<p>hier steht ein text</p>",
+        "heading_html": "",
+        "heading_align": "left",
+        "heading_italic": false,
+        "heading_weight": "700",
+        "subtext": "",
+        "show_image": false,
         "main_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
         "image_radius": 12,
         "image_position": "left",
+        "left_heading_html": "<p><strong>Zusätzliche Informationen</strong></p>",
+        "left_heading_align": "right",
+        "left_heading_italic": false,
+        "left_heading_weight": "700",
+        "left_text": "<p>Eigener Textblock, der erscheint, wenn das Bild ausgeblendet ist.</p>",
         "bg_color": "#f6f8fb",
         "section_padding": 24,
         "points_title": "Unsere Dienstleistungen:",
@@ -428,7 +437,7 @@
     "sticky_header_mWiXqk",
     "main",
     "hero_building_section_xFPFdb",
-    "leistung_showcase_9Y9rK6",
+    "leistung_showcase_B9FPcW",
     "about_section_pzzMVH",
     "video_Cg8Ar8",
     "custom_cta_block_Y6hmWD",
