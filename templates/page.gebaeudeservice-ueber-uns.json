@@ -203,7 +203,7 @@
       "name": "Über Uns (Layout) – Neu",
       "settings": {
         "layout_direction": "text_left",
-        "show_image": true,
+        "show_image": false,
         "background_color": "#f3f3f3",
         "section_padding_top": 80,
         "section_padding_bottom": 80,
@@ -225,7 +225,7 @@
         "image_aspect_ratio": "auto",
         "features_per_row": "2",
         "icon_size": 32,
-        "icon_color": "#34D399",
+        "icon_color": "#34d399",
         "feature_title_color": "#111827"
       }
     },
