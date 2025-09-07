@@ -374,13 +374,6 @@
     "sis_footer_neu_EhzGDM": {
       "type": "sis-footer-neu",
       "blocks": {
-        "leistungen_link_EcCMtd": {
-          "type": "leistungen_link",
-          "settings": {
-            "text": "Industrieservice",
-            "link": "shopify://pages/industrieservice-leistungen"
-          }
-        },
         "leistungen_link_tUxPTb": {
           "type": "leistungen_link",
           "settings": {
@@ -404,6 +397,7 @@
         },
         "kontakt_link_E3KkQW": {
           "type": "kontakt_link",
+          "disabled": true,
           "settings": {
             "text": "Impressum Industrieservice",
             "link": ""
@@ -443,7 +437,6 @@
         }
       },
       "block_order": [
-        "leistungen_link_EcCMtd",
         "leistungen_link_tUxPTb",
         "unternehmen_link_F6WDXP",
         "unternehmen_link_3zrdRP",
@@ -469,7 +462,7 @@
         "col2_title": "Unternehmen",
         "col3_title": "Kontakt",
         "col4_title": "Partner",
-        "contact_company": "SIS Saar",
+        "contact_company": "SIS Saar Gebäudeservice",
         "contact_address": "Musterstraße 1, 12345 Musterstadt",
         "contact_phone": "0123 / 456 789",
         "contact_email": "info@sis-saar.de",
