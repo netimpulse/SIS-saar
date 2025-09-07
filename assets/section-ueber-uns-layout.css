@@ -1,134 +1,160 @@
-/* --- Static Styles for "Über Uns (Layout)" Section --- */
-.sis-about-section {
-  background-color: var(--background-color);
+/* --- Section Basics --- */
+.sis-about-section{
+  background: var(--background-color);
   padding-top: var(--section-padding-top);
   padding-bottom: var(--section-padding-bottom);
 }
 
-.sis-about__container {
-  max-width: 1200px;
+.sis-about__container{
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1.25rem;
 }
 
-.sis-about__grid {
+/* --- Grid mit Areas: stabiler Bild/Content-Flow --- */
+.sis-about__grid{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  grid-template-columns: 1.05fr .95fr;
+  grid-template-areas: "content image";
+  gap: clamp(2rem, 4vw, 4rem);
   align-items: center;
 }
 
-/* NEW: Wenn kein Bild angezeigt wird -> Einspaltig */
-.sis-about__grid--no-image {
+.sis-about__grid--image-left{
+  grid-template-areas: "image content";
+}
+
+/* Ohne Bild → Einspaltig & zentriert */
+.sis-about__grid--no-image{
   grid-template-columns: 1fr;
+  grid-template-areas: "content";
 }
 
 /* --- Content --- */
-.sis-about__title {
+.sis-about__content{
+  grid-area: content;
+  max-width: 720px;
+}
+
+.sis-about__title{
   color: var(--title-color);
   font-size: var(--title-font-size);
-  margin-bottom: 20px;
-  line-height: 1.2;
-
-  /* NEW: Title controls */
+  line-height: 1.15;
+  margin: 0 0 18px 0;
   text-align: var(--title-text-align);
   font-weight: var(--title-font-weight);
   font-style: var(--title-font-style);
   text-decoration: var(--title-text-decoration);
+  letter-spacing: -0.01em;
 }
 
-.sis-about__description p {
+.sis-about__description p{
   color: var(--text-color);
   font-size: var(--text-font-size);
-  line-height: 1.6;
-  margin: 0 0 20px 0;
+  line-height: 1.7;
+  margin: 0 0 16px 0;
 }
 
-/* --- Features --- */
-.sis-about__features {
+/* --- Features: kompakte Karten --- */
+.sis-about__features{
   display: grid;
-  grid-template-columns: repeat(var(--features-per-row), 1fr);
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.sis-about__feature {
-  display: flex;
-  align-items: flex-start;
-  text-align: left;
+  grid-template-columns: repeat(var(--features-per-row), minmax(0,1fr));
   gap: 16px;
+  margin-top: 28px;
 }
 
-.sis-about__feature-icon {
-  flex-shrink: 0;
+.sis-about__feature{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(17,24,39,0.03);
+  box-shadow: 0 1px 0 rgba(17,24,39,0.05) inset;
 }
 
-.sis-about__feature-icon svg {
+.sis-about__feature-icon{ flex-shrink: 0; }
+
+.sis-about__feature-icon svg{
   width: var(--icon-size);
   height: var(--icon-size);
   color: var(--icon-color);
 }
 
-.sis-about__feature-title {
-  font-weight: 700;
+.sis-about__feature-title{
   margin: 0 0 4px 0;
+  font-weight: 700;
   color: var(--feature-title-color);
-  font-size: 16px;
+  font-size: clamp(15px, 1.4vw, 16px);
 }
 
-.sis-about__feature-description {
+.sis-about__feature-description{
   margin: 0;
   color: var(--text-color);
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
-/* --- Image --- */
-.sis-about__image-wrapper {
+/* --- Bild --- */
+.sis-about__image{
+  grid-area: image;
+}
+
+.sis-about__image-wrapper{
   position: relative;
-  border-radius: var(--image-border-radius);
   overflow: hidden;
+  border-radius: var(--image-border-radius);
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
 }
 
 .sis-about__image-wrapper img,
-.sis-about__image-wrapper .placeholder-svg {
+.sis-about__image-wrapper .placeholder-svg{
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: cover;
+  aspect-ratio: 4 / 3; /* harmonische Höhe, verhindert zu hohe Bilder */
 }
 
-/* NEW: Fallback-Text bei ausgeschaltetem Bild */
-.sis-about__image-off {
-  width: 100%;
-}
-.sis-about__image-off-text {
+/* Fallback, wenn Bild aus */
+.sis-about__image--off .sis-about__image-off-text{
+  display: grid;
+  place-items: center;
+  min-height: 260px;
   text-align: center;
   color: var(--text-color);
   font-size: var(--text-font-size);
   padding: 24px 16px;
-  border: 1px dashed rgba(0,0,0,0.1);
   border-radius: var(--image-border-radius);
+  background: rgba(17,24,39,0.035);
+  border: 1px dashed rgba(17,24,39,0.15);
+}
+
+/* Wenn kein Bild: Content zentrieren und Breite begrenzen */
+.sis-about__grid--no-image .sis-about__content{
+  margin: 0 auto;
+  text-align: center;
+}
+.sis-about__grid--no-image .sis-about__description p{
+  margin-left: auto; margin-right: auto;
 }
 
 /* --- Responsive --- */
-@media (max-width: 990px) {
-  .sis-about__grid {
-    gap: 2rem;
+@media (max-width: 992px){
+  .sis-about__grid{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "content";
   }
+  .sis-about__content{ max-width: 720px; margin: 0 auto; }
 }
 
-@media (max-width: 768px) {
-  .sis-about__grid {
+@media (max-width: 640px){
+  .sis-about__features{
     grid-template-columns: 1fr;
+    gap: 12px;
   }
-
-  /* Stellt sicher, dass das Bild auf Mobilgeräten immer oben ist, falls vorhanden */
-  .sis-about__image-wrapper {
-    order: -1;
-  }
-
-  .sis-about__features {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
+  .sis-about__image-wrapper img{ aspect-ratio: 16/10; }
 }
