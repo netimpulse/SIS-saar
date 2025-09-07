@@ -110,7 +110,7 @@
             "details_toggle": "Details anzeigen",
             "details_open": false,
             "btn_label": "Jetzt bewerben",
-            "btn_url": "",
+            "btn_url": "shopify://pages/bewerbung-gebaude",
             "btn_newtab": false,
             "card_align": "left",
             "card_bg": ""
@@ -130,7 +130,7 @@
             "details_toggle": "Details anzeigen",
             "details_open": false,
             "btn_label": "Jetzt bewerben",
-            "btn_url": "",
+            "btn_url": "shopify://pages/bewerbung-gebaude",
             "btn_newtab": false,
             "card_align": "left",
             "card_bg": ""
@@ -150,7 +150,7 @@
             "details_toggle": "Details anzeigen",
             "details_open": false,
             "btn_label": "Jetzt bewerben",
-            "btn_url": "",
+            "btn_url": "shopify://pages/bewerbung-gebaude",
             "btn_newtab": false,
             "card_align": "left",
             "card_bg": ""
@@ -167,14 +167,14 @@
         "heading": "<p><strong>Aktuelle Stellenausschreibungen</strong></p>",
         "subheading": "<p>Finden Sie Ihre nächste berufliche Herausforderung bei uns</p>",
         "text_align": "center",
-        "section_bg": "#F6F7FB",
-        "card_bg": "#FFFFFF",
+        "section_bg": "#f6f7fb",
+        "card_bg": "#ffffff",
         "padding_y": 48,
         "grid_gap": 24,
         "card_radius": 16,
         "columns": "2",
-        "badge_bg": "#D1FADF",
-        "badge_text": "#065F46"
+        "badge_bg": "#d1fadf",
+        "badge_text": "#065f46"
       }
     },
     "highlights_icons_trDdzm": {
