@@ -155,42 +155,48 @@
         "badge_text": "#065f46"
       }
     },
-    "highlights_icons_trDdzm": {
-      "type": "highlights-icons",
+    "qualitaeten_hotspot_LeFKxL": {
+      "type": "qualitaeten-hotspot",
       "blocks": {
-        "item_A6FrLz": {
+        "item_K3ff8g": {
           "type": "item",
           "settings": {
+            "show_icon": true,
             "icon_bg": "#e5e7eb",
-            "title": "QUALITÄT",
-            "text": "Kurzer, prägnanter Beschreibungstext für dieses Highlight.",
-            "show_btn": true,
+            "title": "Qualitäten Hotspot",
+            "text": "Kurzer, prägnanter Beschreibungstext für diesen Qualitäten Hotspot.",
+            "subpoints": "Erster Unterpunkt\nZweiter Unterpunkt",
+            "show_btn": false,
             "btn_label": "Mehr erfahren",
             "btn_link": "",
             "btn_bg": "#0b63c8",
             "btn_text": "#ffffff"
           }
         },
-        "item_WXj8Kr": {
+        "item_HkpcxK": {
           "type": "item",
           "settings": {
+            "show_icon": true,
             "icon_bg": "#e5e7eb",
-            "title": "UNTERNEHMEN",
-            "text": "Kurzer, prägnanter Beschreibungstext für dieses Highlight.",
-            "show_btn": true,
+            "title": "Qualitäten Hotspot",
+            "text": "Kurzer, prägnanter Beschreibungstext für diesen Qualitäten Hotspot.",
+            "subpoints": "Erster Unterpunkt\nZweiter Unterpunkt",
+            "show_btn": false,
             "btn_label": "Mehr erfahren",
             "btn_link": "",
             "btn_bg": "#0b63c8",
             "btn_text": "#ffffff"
           }
         },
-        "item_7yrCbF": {
+        "item_EtMjft": {
           "type": "item",
           "settings": {
+            "show_icon": true,
             "icon_bg": "#e5e7eb",
-            "title": "PERSONAL",
-            "text": "Kurzer, prägnanter Beschreibungstext für dieses Highlight.",
-            "show_btn": true,
+            "title": "Qualitäten Hotspot",
+            "text": "Kurzer, prägnanter Beschreibungstext für diesen Qualitäten Hotspot.",
+            "subpoints": "Erster Unterpunkt\nZweiter Unterpunkt",
+            "show_btn": false,
             "btn_label": "Mehr erfahren",
             "btn_link": "",
             "btn_bg": "#0b63c8",
@@ -199,51 +205,21 @@
         }
       },
       "block_order": [
-        "item_A6FrLz",
-        "item_WXj8Kr",
-        "item_7yrCbF"
+        "item_K3ff8g",
+        "item_HkpcxK",
+        "item_EtMjft"
       ],
-      "name": "Highlights – Icons",
+      "name": "Qualitäten Hotspot",
       "settings": {
-        "heading": "Das bieten wir dir",
-        "intro": "<p>Kurzer Einleitungstext, der die Highlights erklärt.</p>",
+        "heading": "Qualitäten Hotspot",
+        "intro": "<p>Kurzer Einleitungstext für den Qualitäten Hotspot.</p>",
         "color_scheme": "background-1",
         "gap": 24,
         "cols_desktop": 3,
         "cols_tablet": 2,
+        "show_icons": true,
         "icon_size": 88,
         "icon_radius": 1000
-      }
-    },
-    "text_mit_bild_button_LWeUiY": {
-      "type": "text-mit-bild-button",
-      "name": "Text mit Bild",
-      "settings": {
-        "image_position": "right",
-        "image_shadow_strength": 20,
-        "heading": "Unser Team",
-        "heading_font": "system_ui_n4",
-        "heading_font_size": 42,
-        "heading_color": "#1f1f1f",
-        "subheading": "Wer wir sind und was uns auszeichnet",
-        "subheading_font": "system_ui_n4",
-        "subheading_font_size": 18,
-        "subheading_color": "#555555",
-        "text": "<p>Beschreiben Sie hier Ihr Unternehmen, Ihre Produkte oder Dienstleistungen. Dieser Text ist vollständig anpassbar und unterstützt auch Formatierungen wie <strong>fett</strong> oder <em>kursiv</em>.</p>",
-        "text_font": "system_ui_n4",
-        "text_font_size": 16,
-        "text_color": "#333333",
-        "button_text": "erfahre mehr über uns",
-        "button_link": "shopify://pages/industrieservice-uber-uns",
-        "button_font": "system_ui_n4",
-        "button_font_size": 16,
-        "button_padding_x": 24,
-        "button_padding_y": 14,
-        "button_border_radius": 10,
-        "button_bg_color": "#8e8e8e",
-        "button_bg_hover_color": "#6f6f6f",
-        "button_text_color": "#ffffff",
-        "button_text_color_hover": "#ffffff"
       }
     },
     "sis_single_footer_DNrhdy": {
@@ -391,15 +367,73 @@
         "contact_hours": "Mo–Fr 8–17 Uhr",
         "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
+    },
+    "team_RkTwC6": {
+      "type": "team",
+      "blocks": {
+        "team_member_FhCKpW": {
+          "type": "team_member",
+          "settings": {
+            "name": "Max Mustermann",
+            "position": "CEO & Founder",
+            "name_color": "#1e293b",
+            "name_font_size": 20,
+            "position_color": "#4A6965",
+            "position_font_size": 16
+          }
+        },
+        "team_member_bExWEQ": {
+          "type": "team_member",
+          "settings": {
+            "name": "Max Mustermann",
+            "position": "CEO & Founder",
+            "name_color": "#1e293b",
+            "name_font_size": 20,
+            "position_color": "#4A6965",
+            "position_font_size": 16
+          }
+        },
+        "team_member_R8t9ht": {
+          "type": "team_member",
+          "settings": {
+            "name": "Max Mustermann",
+            "position": "CEO & Founder",
+            "name_color": "#1e293b",
+            "name_font_size": 20,
+            "position_color": "#4A6965",
+            "position_font_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "team_member_FhCKpW",
+        "team_member_bExWEQ",
+        "team_member_R8t9ht"
+      ],
+      "name": "Team",
+      "settings": {
+        "background_color": "#FFFFFF",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "title": "Unser Team",
+        "title_color": "#1e293b",
+        "title_font": "sans_serif_n7",
+        "title_font_size": 48,
+        "subtitle": "Experten mit Leidenschaft für Ihren digitalen Erfolg.",
+        "subtitle_color": "#475569",
+        "subtitle_font_size": 18,
+        "image_size": 160,
+        "image_shadow_opacity": 0.1
+      }
     }
   },
   "order": [
     "sticky_header_NaNAWz",
     "main",
     "karriere_kacheln_nJHMAj",
-    "highlights_icons_trDdzm",
-    "text_mit_bild_button_LWeUiY",
+    "qualitaeten_hotspot_LeFKxL",
     "sis_single_footer_DNrhdy",
+    "team_RkTwC6",
     "sis_footer_neu_md8EiT"
   ]
 }
