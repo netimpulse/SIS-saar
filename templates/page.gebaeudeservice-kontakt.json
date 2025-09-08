@@ -219,6 +219,13 @@
             "link": "shopify://pages/industrieservice-impressum"
           }
         },
+        "kontakt_link_LVgkzY": {
+          "type": "kontakt_link",
+          "settings": {
+            "text": "Impressum Gebäudeservice",
+            "link": "shopify://pages/gebaudeservice-impressum"
+          }
+        },
         "kontakt_link_BeAVgX": {
           "type": "kontakt_link",
           "settings": {
@@ -252,6 +259,7 @@
         "unternehmen_link_R8Nn7J",
         "unternehmen_link_GEQTaX",
         "kontakt_link_VhX7wa",
+        "kontakt_link_LVgkzY",
         "kontakt_link_BeAVgX",
         "partner_logo_8NWLFQ",
         "partner_logo_eJmeRw"
