@@ -89,8 +89,8 @@
       "name": "Über Uns (Layout) – Neu",
       "settings": {
         "layout_direction": "text_left",
-        "show_image": true,
-        "background_color": "#FFFFFF",
+        "show_image": false,
+        "background_color": "#ffffff",
         "section_padding_top": 80,
         "section_padding_bottom": 80,
         "title": "",
@@ -111,7 +111,7 @@
         "image_aspect_ratio": "4/3",
         "features_per_row": "2",
         "icon_size": 32,
-        "icon_color": "#34D399",
+        "icon_color": "#34d399",
         "feature_title_color": "#111827"
       }
     },
@@ -177,6 +177,7 @@
         "review_cUnGwJ",
         "review_QThjeR"
       ],
+      "disabled": true,
       "name": "Kundenbewertung",
       "settings": {
         "background_color": "#f9f9f9",
@@ -221,6 +222,7 @@
     },
     "text_mit_bild_button_6UPhhG": {
       "type": "text-mit-bild-button",
+      "disabled": true,
       "name": "Text mit Bild",
       "settings": {
         "image_position": "left",
@@ -274,6 +276,7 @@
         },
         "button_4pcX9a": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "label": "<p>Zu unseren Blogs</p>",
             "link": "shopify://pages/blogs-allgemein",
@@ -324,7 +327,7 @@
           "type": "gebaeude_legal",
           "settings": {
             "text": "Impressum",
-            "link": ""
+            "link": "shopify://pages/gebaudeservice-impressum"
           }
         },
         "gebaeude_legal_d3rqwR": {
@@ -338,7 +341,7 @@
           "type": "industrie_legal",
           "settings": {
             "text": "Impressum",
-            "link": ""
+            "link": "shopify://pages/industrieservice-impressum"
           }
         },
         "industrie_legal_jURxBG": {
