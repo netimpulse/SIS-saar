@@ -215,8 +215,8 @@
         "kontakt_link_VhX7wa": {
           "type": "kontakt_link",
           "settings": {
-            "text": "Impressum",
-            "link": ""
+            "text": "Impressum Industrieservice",
+            "link": "shopify://pages/industrieservice-impressum"
           }
         },
         "kontakt_link_BeAVgX": {
