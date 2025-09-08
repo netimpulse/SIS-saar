@@ -270,6 +270,64 @@
         "divider_color": "#1e293b"
       }
     },
+    "team_RkTwC6": {
+      "type": "team",
+      "blocks": {
+        "team_member_FhCKpW": {
+          "type": "team_member",
+          "settings": {
+            "name": "Max Mustermann",
+            "position": "CEO & Founder",
+            "name_color": "#1e293b",
+            "name_font_size": 20,
+            "position_color": "#4a6965",
+            "position_font_size": 16
+          }
+        },
+        "team_member_bExWEQ": {
+          "type": "team_member",
+          "settings": {
+            "name": "Max Mustermann",
+            "position": "CEO & Founder",
+            "name_color": "#1e293b",
+            "name_font_size": 20,
+            "position_color": "#4a6965",
+            "position_font_size": 16
+          }
+        },
+        "team_member_R8t9ht": {
+          "type": "team_member",
+          "settings": {
+            "name": "Max Mustermann",
+            "position": "CEO & Founder",
+            "name_color": "#1e293b",
+            "name_font_size": 20,
+            "position_color": "#4a6965",
+            "position_font_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "team_member_FhCKpW",
+        "team_member_bExWEQ",
+        "team_member_R8t9ht"
+      ],
+      "name": "Team",
+      "settings": {
+        "background_color": "#ffffff",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "title": "Unser Team",
+        "title_color": "#1e293b",
+        "title_font": "sans_serif_n7",
+        "title_font_size": 48,
+        "subtitle": "Experten mit Leidenschaft für Ihren digitalen Erfolg.",
+        "subtitle_color": "#475569",
+        "subtitle_font_size": 18,
+        "image_size": 160,
+        "image_shadow_opacity": 0.1
+      }
+    },
     "sis_footer_neu_md8EiT": {
       "type": "sis-footer-neu",
       "blocks": {
@@ -344,6 +402,7 @@
         "partner_logo_tk4bDK",
         "partner_logo_ctb6gn"
       ],
+      "disabled": true,
       "name": "SIS Footer NEU",
       "settings": {
         "background_color": "#111827",
@@ -368,62 +427,118 @@
         "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
     },
-    "team_RkTwC6": {
-      "type": "team",
+    "sis_footer_neu_y9DgiN": {
+      "type": "sis-footer-neu",
       "blocks": {
-        "team_member_FhCKpW": {
-          "type": "team_member",
+        "leistungen_link_b3NJpW": {
+          "type": "leistungen_link",
           "settings": {
-            "name": "Max Mustermann",
-            "position": "CEO & Founder",
-            "name_color": "#1e293b",
-            "name_font_size": 20,
-            "position_color": "#4A6965",
-            "position_font_size": 16
+            "text": "Industrieservice",
+            "link": "shopify://pages/industrieservice-leistungen"
           }
         },
-        "team_member_bExWEQ": {
-          "type": "team_member",
+        "leistungen_link_3GKWqK": {
+          "type": "leistungen_link",
+          "disabled": true,
           "settings": {
-            "name": "Max Mustermann",
-            "position": "CEO & Founder",
-            "name_color": "#1e293b",
-            "name_font_size": 20,
-            "position_color": "#4A6965",
-            "position_font_size": 16
+            "text": "Gebäudeservice",
+            "link": "shopify://pages/gebaudeservice-leistungen"
           }
         },
-        "team_member_R8t9ht": {
-          "type": "team_member",
+        "unternehmen_link_eniDBm": {
+          "type": "unternehmen_link",
           "settings": {
-            "name": "Max Mustermann",
-            "position": "CEO & Founder",
-            "name_color": "#1e293b",
-            "name_font_size": 20,
-            "position_color": "#4A6965",
-            "position_font_size": 16
+            "text": "Kontakt",
+            "link": "shopify://pages/allgemeiner-kontakt"
+          }
+        },
+        "unternehmen_link_XyBVec": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Karriere",
+            "link": "shopify://pages/gebaudeservice-karriere"
+          }
+        },
+        "unternehmen_link_G8TNpx": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Unsere Partner",
+            "link": "shopify://pages/partner"
+          }
+        },
+        "unternehmen_link_ccMGKf": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Downloads",
+            "link": "shopify://pages/downloads"
+          }
+        },
+        "kontakt_link_tKirVw": {
+          "type": "kontakt_link",
+          "settings": {
+            "text": "Impressum Industrieservice",
+            "link": ""
+          }
+        },
+        "kontakt_link_HTirJK": {
+          "type": "kontakt_link",
+          "disabled": true,
+          "settings": {
+            "text": "Impressum Gebäudeservice",
+            "link": ""
+          }
+        },
+        "kontakt_link_7xgKgE": {
+          "type": "kontakt_link",
+          "settings": {
+            "text": "Datenschutz",
+            "link": ""
+          }
+        },
+        "partner_logo_datqt4": {
+          "type": "partner_logo",
+          "settings": {
+            "logo": "shopify://shop_images/2025_AMG_zugeschnitten_DA.png",
+            "alt": "Partner",
+            "link": "",
+            "new_tab": true
           }
         }
       },
       "block_order": [
-        "team_member_FhCKpW",
-        "team_member_bExWEQ",
-        "team_member_R8t9ht"
+        "leistungen_link_b3NJpW",
+        "leistungen_link_3GKWqK",
+        "unternehmen_link_eniDBm",
+        "unternehmen_link_XyBVec",
+        "unternehmen_link_G8TNpx",
+        "unternehmen_link_ccMGKf",
+        "kontakt_link_tKirVw",
+        "kontakt_link_HTirJK",
+        "kontakt_link_7xgKgE",
+        "partner_logo_datqt4"
       ],
-      "name": "Team",
+      "name": "SIS Footer NEU",
       "settings": {
-        "background_color": "#FFFFFF",
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "title": "Unser Team",
-        "title_color": "#1e293b",
-        "title_font": "sans_serif_n7",
-        "title_font_size": 48,
-        "subtitle": "Experten mit Leidenschaft für Ihren digitalen Erfolg.",
-        "subtitle_color": "#475569",
+        "background_color": "#111827",
+        "section_padding": 60,
+        "separator_color": "#374151",
+        "title_color": "#ffffff",
+        "title_font_size": 24,
+        "subtitle_color": "#d1d5db",
         "subtitle_font_size": 18,
-        "image_size": 160,
-        "image_shadow_opacity": 0.1
+        "text_color": "#9ca3af",
+        "text_font_size": 14,
+        "link_color": "#60a5fa",
+        "col1_title": "Leistungen",
+        "col2_title": "Unternehmen",
+        "col3_title": "Kontakt",
+        "col4_title": "Partner",
+        "contact_company": "SIS Saar Industrieservice",
+        "contact_address": "Musterstraße 1, 12345 Musterstadt",
+        "contact_phone": "0123 / 456 789",
+        "contact_email": "info@sis-saar.de",
+        "contact_hours": "Mo–Fr 8–17 Uhr",
+        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
     }
   },
@@ -434,6 +549,7 @@
     "qualitaeten_hotspot_LeFKxL",
     "sis_single_footer_DNrhdy",
     "team_RkTwC6",
-    "sis_footer_neu_md8EiT"
+    "sis_footer_neu_md8EiT",
+    "sis_footer_neu_y9DgiN"
   ]
 }
