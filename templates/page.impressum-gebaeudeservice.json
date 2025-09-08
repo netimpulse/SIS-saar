@@ -79,11 +79,126 @@
         "icon_color": "#34D399",
         "feature_title_color": "#111827"
       }
+    },
+    "sis_footer_neu_GPRRfV": {
+      "type": "sis-footer-neu",
+      "blocks": {
+        "leistungen_link_TNU9tg": {
+          "type": "leistungen_link",
+          "disabled": true,
+          "settings": {
+            "text": "Industrieservice",
+            "link": "shopify://pages/industrieservice-leistungen"
+          }
+        },
+        "leistungen_link_VFVgQ6": {
+          "type": "leistungen_link",
+          "settings": {
+            "text": "Gebäudeservice",
+            "link": "shopify://pages/gebaudeservice-leistungen"
+          }
+        },
+        "unternehmen_link_HAKeAB": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Kontakt",
+            "link": "shopify://pages/allgemeiner-kontakt"
+          }
+        },
+        "unternehmen_link_frCgpB": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Karriere",
+            "link": "shopify://pages/gebaudeservice-karriere"
+          }
+        },
+        "unternehmen_link_h3JVYg": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Unsere Partner",
+            "link": "shopify://pages/partner"
+          }
+        },
+        "unternehmen_link_iiwKke": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Downloads",
+            "link": "shopify://pages/downloads"
+          }
+        },
+        "kontakt_link_tLqxVn": {
+          "type": "kontakt_link",
+          "disabled": true,
+          "settings": {
+            "text": "Impressum Industrieservice",
+            "link": ""
+          }
+        },
+        "kontakt_link_8Tgg8D": {
+          "type": "kontakt_link",
+          "settings": {
+            "text": "Impressum Gebäudeservice",
+            "link": ""
+          }
+        },
+        "kontakt_link_pbyxcf": {
+          "type": "kontakt_link",
+          "settings": {
+            "text": "Datenschutz",
+            "link": ""
+          }
+        },
+        "partner_logo_hAxM4d": {
+          "type": "partner_logo",
+          "settings": {
+            "logo": "shopify://shop_images/2025_AMG_zugeschnitten_DA.png",
+            "alt": "Partner",
+            "link": "",
+            "new_tab": true
+          }
+        }
+      },
+      "block_order": [
+        "leistungen_link_TNU9tg",
+        "leistungen_link_VFVgQ6",
+        "unternehmen_link_HAKeAB",
+        "unternehmen_link_frCgpB",
+        "unternehmen_link_h3JVYg",
+        "unternehmen_link_iiwKke",
+        "kontakt_link_tLqxVn",
+        "kontakt_link_8Tgg8D",
+        "kontakt_link_pbyxcf",
+        "partner_logo_hAxM4d"
+      ],
+      "name": "SIS Footer NEU",
+      "settings": {
+        "background_color": "#111827",
+        "section_padding": 60,
+        "separator_color": "#374151",
+        "title_color": "#ffffff",
+        "title_font_size": 24,
+        "subtitle_color": "#d1d5db",
+        "subtitle_font_size": 18,
+        "text_color": "#9ca3af",
+        "text_font_size": 14,
+        "link_color": "#60a5fa",
+        "col1_title": "Leistungen",
+        "col2_title": "Unternehmen",
+        "col3_title": "Kontakt",
+        "col4_title": "Partner",
+        "contact_company": "SIS Saar Gebäudeservice",
+        "contact_address": "Musterstraße 1, 12345 Musterstadt",
+        "contact_phone": "0123 / 456 789",
+        "contact_email": "info@sis-saar.de",
+        "contact_hours": "Mo–Fr 8–17 Uhr",
+        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
+      }
     }
   },
   "order": [
     "main",
     "sticky_header_7QhbKe",
-    "about_section_v2_tDkGHx"
+    "about_section_v2_tDkGHx",
+    "sis_footer_neu_GPRRfV"
   ]
 }
