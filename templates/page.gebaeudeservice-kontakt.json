@@ -27,7 +27,7 @@
         "logo_height": 40,
         "back_link": "",
         "back_label": "Zurück",
-        "back_font": "sans-serif",
+        "back_font": "system_ui_n4",
         "back_font_bold": false,
         "back_text_color": "#374151",
         "back_hover_color": "#4ade80",
@@ -37,7 +37,7 @@
         "logo_color": "#1e40af",
         "logo_font_size": 24,
         "menu": "hauptmen",
-        "nav_font": "sans-serif",
+        "nav_font": "system_ui_n4",
         "nav_font_bold": false,
         "nav_text_color": "#374151",
         "nav_hover_color": "#4ade80",
@@ -229,7 +229,7 @@
         "partner_logo_8NWLFQ": {
           "type": "partner_logo",
           "settings": {
-            "logo": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
+            "logo": "shopify://shop_images/2025_AMG_zugeschnitten_DA.png",
             "alt": "Partner",
             "link": "",
             "new_tab": true
@@ -237,6 +237,7 @@
         },
         "partner_logo_eJmeRw": {
           "type": "partner_logo",
+          "disabled": true,
           "settings": {
             "logo": "shopify://shop_images/logo_Industrieservice_exact_v2.png",
             "alt": "Partner",

@@ -439,6 +439,7 @@
         "partner_logo_LdXEWm",
         "partner_logo_CqKGHx"
       ],
+      "disabled": true,
       "name": "SIS Footer NEU",
       "settings": {
         "background_color": "#111827",
@@ -462,6 +463,120 @@
         "contact_hours": "Mo–Fr 8–17 Uhr",
         "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
+    },
+    "sis_footer_neu_TFiXBx": {
+      "type": "sis-footer-neu",
+      "blocks": {
+        "leistungen_link_fHX7jq": {
+          "type": "leistungen_link",
+          "disabled": true,
+          "settings": {
+            "text": "Industrieservice",
+            "link": "shopify://pages/industrieservice-leistungen"
+          }
+        },
+        "leistungen_link_TMAyhg": {
+          "type": "leistungen_link",
+          "settings": {
+            "text": "Gebäudeservice",
+            "link": "shopify://pages/gebaudeservice-leistungen"
+          }
+        },
+        "unternehmen_link_8CVkPd": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Kontakt",
+            "link": "shopify://pages/allgemeiner-kontakt"
+          }
+        },
+        "unternehmen_link_84pMDE": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Karriere",
+            "link": "shopify://pages/gebaudeservice-karriere"
+          }
+        },
+        "unternehmen_link_aMVh4k": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Unsere Partner",
+            "link": "shopify://pages/partner"
+          }
+        },
+        "unternehmen_link_aNwhtL": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Downloads",
+            "link": "shopify://pages/downloads"
+          }
+        },
+        "kontakt_link_Uy7TxT": {
+          "type": "kontakt_link",
+          "disabled": true,
+          "settings": {
+            "text": "Impressum Industrieservice",
+            "link": ""
+          }
+        },
+        "kontakt_link_pNg9QH": {
+          "type": "kontakt_link",
+          "settings": {
+            "text": "Impressum Gebäudeservice",
+            "link": ""
+          }
+        },
+        "kontakt_link_UcXqL8": {
+          "type": "kontakt_link",
+          "settings": {
+            "text": "Datenschutz",
+            "link": ""
+          }
+        },
+        "partner_logo_WUPUbC": {
+          "type": "partner_logo",
+          "settings": {
+            "logo": "shopify://shop_images/2025_AMG_zugeschnitten_DA.png",
+            "alt": "Partner",
+            "link": "",
+            "new_tab": true
+          }
+        }
+      },
+      "block_order": [
+        "leistungen_link_fHX7jq",
+        "leistungen_link_TMAyhg",
+        "unternehmen_link_8CVkPd",
+        "unternehmen_link_84pMDE",
+        "unternehmen_link_aMVh4k",
+        "unternehmen_link_aNwhtL",
+        "kontakt_link_Uy7TxT",
+        "kontakt_link_pNg9QH",
+        "kontakt_link_UcXqL8",
+        "partner_logo_WUPUbC"
+      ],
+      "name": "SIS Footer NEU",
+      "settings": {
+        "background_color": "#111827",
+        "section_padding": 60,
+        "separator_color": "#374151",
+        "title_color": "#ffffff",
+        "title_font_size": 24,
+        "subtitle_color": "#d1d5db",
+        "subtitle_font_size": 18,
+        "text_color": "#9ca3af",
+        "text_font_size": 14,
+        "link_color": "#60a5fa",
+        "col1_title": "Leistungen",
+        "col2_title": "Unternehmen",
+        "col3_title": "Kontakt",
+        "col4_title": "Partner",
+        "contact_company": "SIS Saar Gebäudeservice",
+        "contact_address": "Musterstraße 1, 12345 Musterstadt",
+        "contact_phone": "0123 / 456 789",
+        "contact_email": "info@sis-saar.de",
+        "contact_hours": "Mo–Fr 8–17 Uhr",
+        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
+      }
     }
   },
   "order": [
@@ -472,6 +587,7 @@
     "qualitaeten_hotspot_HKLnY6",
     "leistung_showcase_Wq4Ytn",
     "custom_cta_block_xMcPbA",
-    "sis_footer_neu_jn6XWw"
+    "sis_footer_neu_jn6XWw",
+    "sis_footer_neu_TFiXBx"
   ]
 }
