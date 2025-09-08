@@ -49,10 +49,41 @@
         "button_hover_text_color": "#ffffff",
         "button_hover_bg_color": "#22c55e"
       }
+    },
+    "about_section_v2_tDkGHx": {
+      "type": "about-section-v2",
+      "name": "Über Uns (Layout) – Neu",
+      "settings": {
+        "layout_direction": "text_left",
+        "show_image": true,
+        "background_color": "#FFFFFF",
+        "section_padding_top": 80,
+        "section_padding_bottom": 80,
+        "title": "",
+        "title_richtext": "<p><strong>Impressum zur SIS Saar Gebäudeservice GmbH</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 44,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<p><strong>Angaben gemäß § 5 DDG:</strong></p><p>SIS Saar Gebäudeservice GmbH</p><p>Vorderster Berg 13</p><p>66333 Völklingen</p><p> </p><p><strong>Vertreten durch:</strong></p><p>Herr Stephan Graf</p><p>Herr Abduljabbar Alokaidi</p><p> </p><p><strong>Kontakt:</strong></p><p>Telefon: +49 (0) 6898 / 16 90 900</p><p>Telefax: +49 (0) 6898 / 16 90 897</p><p>E-Mail: <a href=\"mailto:info@sissaar.de\">info@sissaar.de</a></p><p> </p><p><strong>Registereintrag:</strong></p><p>Eintragung im Handelsregister Saarbrücken</p><p>Registernummer: HRB 108136</p><p> </p><p><strong>Umsatzsteuer:</strong></p><p>Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:</p><p>DE 350 009 655</p><p> </p><p><strong>Angaben zur Firmenhaftpflichtversicherung</strong></p><p>Name und Sitz des Versicherers:</p><p>Allianz Versicherungs-AG</p><p>10900 Berlin</p>",
+        "text_color": "#6B7280",
+        "text_font_size": 18,
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "4/3",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34D399",
+        "feature_title_color": "#111827"
+      }
     }
   },
   "order": [
     "main",
-    "sticky_header_7QhbKe"
+    "sticky_header_7QhbKe",
+    "about_section_v2_tDkGHx"
   ]
 }
