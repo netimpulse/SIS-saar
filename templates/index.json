@@ -186,6 +186,7 @@
     },
     "interactive_map_BWTdBe": {
       "type": "interactive-map",
+      "disabled": true,
       "name": "Interaktive Karte",
       "settings": {
         "api_key": "https://www.google.com/maps/place/Saar+Industrie+Service+GmbH/@49.2595077,6.81992,13z/data=!4m6!3m5!1s0x4795ae8157cd4b17:0x1ef8cc20edac0b6c!8m2!3d49.2495!4d6.83047!16s%2Fg%2F1tdy7_n9?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D",
@@ -222,7 +223,6 @@
     },
     "text_mit_bild_button_6UPhhG": {
       "type": "text-mit-bild-button",
-      "disabled": true,
       "name": "Text mit Bild",
       "settings": {
         "image_position": "left",
