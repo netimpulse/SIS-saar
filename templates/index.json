@@ -452,6 +452,15 @@
           "type": "partner_logo",
           "settings": {
             "logo": "shopify://shop_images/2025_AMG_zugeschnitten_DA.png",
+            "alt": "Partner AMG Tech GmbH",
+            "link": "https://www.trockeneis.saarland/",
+            "new_tab": true
+          }
+        },
+        "partner_logo_8wRFJh": {
+          "type": "partner_logo",
+          "settings": {
+            "logo": "shopify://shop_images/2025-SIS-Gebaeude.png",
             "alt": "Partner",
             "link": "",
             "new_tab": true
@@ -468,7 +477,8 @@
         "kontakt_link_F9KkVU",
         "kontakt_link_TwQexH",
         "kontakt_link_4pHeLi",
-        "partner_logo_BJxkyi"
+        "partner_logo_BJxkyi",
+        "partner_logo_8wRFJh"
       ],
       "name": "SIS Footer NEU",
       "settings": {
