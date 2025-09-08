@@ -431,7 +431,7 @@
           "type": "kontakt_link",
           "settings": {
             "text": "Impressum Industrieservice",
-            "link": ""
+            "link": "shopify://pages/industrieservice-impressum"
           }
         },
         "kontakt_link_TwQexH": {
