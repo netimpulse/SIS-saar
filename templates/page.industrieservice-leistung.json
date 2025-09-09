@@ -190,7 +190,7 @@
         "card_radius": 18,
         "card_shadow": true,
         "grid_gap": 20,
-        "show_cta": false,
+        "show_cta": true,
         "cta_label": "Mehr erfahren",
         "cta_link": "",
         "button_style": "primary"
