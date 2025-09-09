@@ -1,8 +1,13 @@
 {% comment %}
-  Über Uns (Layout) – v3 Final
-  - Bild-Position: links/rechts = float (Text umfließt Bild)
-  - Bild-Position: oben/unten = volle Breite
-  - Kein Bild = Textausrichtung wählbar
+  Über Uns (Layout) – v3.1
+  - Bild-Position:
+      • left / right  → Bild floatet, Text umfließt
+      • top / bottom  → Gestapelt (volle Breite)
+  - Vertikale Ausrichtung bei left/right = Einfügeposition im Text:
+      • start  → Bild direkt am Anfang des Textes
+      • center → Bild nach ca. der Hälfte der Absätze
+      • end    → Bild vor dem letzten Absatz
+  - Kein Bild → Textausrichtung wählbar
 {% endcomment %}
 
 {{ 'section-ueber-uns-layout-v3.css' | asset_url | stylesheet_tag }}
@@ -99,22 +104,53 @@
           <div class="sis-about__subtitle rte--subtitle">{{ subtitle_html }}</div>
         {% endif %}
 
-        {%- if actually_show_image and float_mode -%}
-          <div class="sis-about__image sis-about__image--float {% if img_pos == 'left' %}sis-about__image--float-left{% else %}sis-about__image--float-right{% endif %}">
-            <div class="sis-about__image-wrapper">
-              {% assign img = section.settings.image %}
-              <img
-                src="{{ img | image_url: width: 1200 }}"
-                srcset="{{ img | image_url: width: 600 }} 600w, {{ img | image_url: width: 900 }} 900w, {{ img | image_url: width: 1200 }} 1200w"
-                sizes="(max-width: 992px) 100vw, 50vw"
-                alt="{{ section.settings.image_alt | escape }}"
-                loading="lazy">
-            </div>
-          </div>
-        {%- endif -%}
-
+        {%- comment -%}
+          Beschreibung + ggf. Float-Bild an der richtigen Position einfügen
+        {%- endcomment -%}
         <div class="sis-about__description">
-          {{ section.settings.description }}
+          {%- assign desc_html = section.settings.description -%}
+
+          {%- if actually_show_image and float_mode -%}
+            {%- capture float_markup -%}
+              <div class="sis-about__image sis-about__image--float {% if img_pos == 'left' %}sis-about__image--float-left{% else %}sis-about__image--float-right{% endif %}">
+                <div class="sis-about__image-wrapper">
+                  {% assign img = section.settings.image %}
+                  <img
+                    src="{{ img | image_url: width: 1200 }}"
+                    srcset="{{ img | image_url: width: 600 }} 600w, {{ img | image_url: width: 900 }} 900w, {{ img | image_url: width: 1200 }} 1200w"
+                    sizes="(max-width: 992px) 100vw, 50vw"
+                    alt="{{ section.settings.image_alt | escape }}"
+                    loading="lazy">
+                </div>
+              </div>
+            {%- endcapture -%}
+
+            {%- if section.settings.image_vertical_align == 'start' -%}
+              {{ float_markup }}
+              {{ desc_html }}
+
+            {%- else -%}
+              {%- assign parts = desc_html | split: '</p>' -%}
+              {%- assign total = parts | size -%}
+              {%- if section.settings.image_vertical_align == 'end' -%}
+                {%- assign insert_after = total | minus: 2 -%}
+              {%- else -%}
+                {%- assign insert_after = total | divided_by: 2 -%}
+              {%- endif -%}
+
+              {%- for part in parts -%}
+                {%- unless part == '' -%}
+                  {{ part }}</p>
+                  {%- if forloop.index == insert_after -%}
+                    {{ float_markup }}
+                  {%- endif -%}
+                {%- endunless -%}
+              {%- endfor -%}
+            {%- endif -%}
+
+          {%- else -%}
+            {{ desc_html }}
+          {%- endif -%}
         </div>
 
         {% if section.blocks.size > 0 %}
@@ -159,8 +195,8 @@
       "id": "image_position",
       "label": "Bild-Position",
       "options": [
-        { "value": "right", "label": "Text links, Bild rechts" },
-        { "value": "left",  "label": "Bild links, Text rechts" },
+        { "value": "right", "label": "Text links, Bild rechts (Text umfließt Bild)" },
+        { "value": "left",  "label": "Bild links, Text rechts (Text umfließt Bild)" },
         { "value": "top",   "label": "Bild oben (volle Breite)" },
         { "value": "bottom","label": "Bild unten (volle Breite)" }
       ],
@@ -169,14 +205,15 @@
     {
       "type": "select",
       "id": "image_vertical_align",
-      "label": "Vertikale Ausrichtung (nur bei oben/unten)",
+      "label": "Ausrichtung bei links/rechts (Einfügeposition im Text)",
       "options": [
-        { "value": "start",  "label": "Oben" },
-        { "value": "center", "label": "Mittig" },
-        { "value": "end",    "label": "Unten" }
+        { "value": "start",  "label": "Oben (direkt am Anfang)" },
+        { "value": "center", "label": "Mittig (nach ca. der Hälfte)" },
+        { "value": "end",    "label": "Unten (vor letztem Absatz)" }
       ],
       "default": "center"
     },
+
     { "type": "checkbox", "id": "show_image", "label": "Bild anzeigen", "default": true },
 
     { "type": "color", "id": "background_color", "label": "Hintergrundfarbe", "default": "#FFFFFF" },
