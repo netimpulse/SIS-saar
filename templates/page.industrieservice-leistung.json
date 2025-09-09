@@ -270,7 +270,7 @@
       "name": "Leistung Suche Grid",
       "settings": {
         "heading": "",
-        "subheading": "<p>(Sand-/Soda-/Glasstrahlen, crushed glas)</p>",
+        "subheading": "",
         "text_align": "center",
         "show_search": true,
         "search_placeholder": "Leistungen oder Keywords suchen…",
