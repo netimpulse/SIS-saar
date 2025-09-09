@@ -116,7 +116,7 @@
         "heading_italic": false,
         "heading_weight": "700",
         "subtext": "<p>test</p>",
-        "show_image": true,
+        "show_image": false,
         "main_image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
         "image_radius": 12,
         "image_position": "left",
@@ -141,7 +141,7 @@
       "type": "video",
       "name": "t:sections.video.presets.name",
       "settings": {
-        "heading": "Ein Kurzer Einblick: So gehen wir vor",
+        "heading": "",
         "heading_size": "h2",
         "enable_video_looping": false,
         "video": "shopify://files/videos/SIS Erklärfilm mUT.mp4",
@@ -156,7 +156,7 @@
     },
     "about_section_v2_YLaRmg": {
       "type": "about-section-v2",
-      "name": "Über Uns (Layout) – Neu",
+      "name": "Warum",
       "settings": {
         "layout_direction": "text_left",
         "show_image": false,
@@ -212,7 +212,7 @@
         "feature_eyW8dj",
         "feature_jrD3Pf"
       ],
-      "name": "Über Uns (Layout) – Neu",
+      "name": "mehr Sciherheit weniger Risiko",
       "settings": {
         "layout_direction": "image_left",
         "show_image": true,
@@ -243,22 +243,22 @@
     },
     "about_section_v2_KBkJj8": {
       "type": "about-section-v2",
-      "name": "Über Uns (Layout) – Neu",
+      "name": "Text",
       "settings": {
         "layout_direction": "text_left",
         "show_image": false,
         "background_color": "#ffffff",
         "section_padding_top": 30,
         "section_padding_bottom": 0,
-        "title": "Über uns",
-        "title_richtext": "<p><strong>Lüftungsanlage reinigen - Warum?</strong></p>",
+        "title": "",
+        "title_richtext": "",
         "title_color": "#111827",
         "title_font_size": 32,
         "subtitle": "",
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>In gewerblichen Küchen gelten besondere Anforderungen an <br/>Lüftung, Hygiene und Sicherheit.<br/>Besonders die beim Kochen und-/oder Braten und Backen <br/>entstehenden Dämpfe und Dünste, sogenannte Wrasen, können <br/>Gerüche, Schadstoffe, Fettpartikel usw. beinhalten und sich in den <br/>Komponenten von Lüftungssystemen absetzen. Dies kann weitere <br/>Gefahren mit sich bringen, unter anderem Brandgefahr. <br/>Eine Lüftungsanlage muss diese belasteten Dämpfe abführen und <br/>für ausreichend Frischluftzufuhr sorgen, um eine gute Luftqualität, <br/>Temperaturkontrolle und sichere Arbeitsbedingungen in <br/>gewerblichen Küchen zu gewährleisten.<br/>Die Lebensdauer einer Anlage wird durch regelmäßige Reinigung <br/>gesteigert und das System sicherer, hygienischer und effizienter <br/>gemacht.</p>",
+        "description": "<p>In gewerblichen Küchen gelten besondere Anforderungen an <br/>Lüftung, Hygiene und Sicherheit.<br/>Besonders die beim Kochen und-/oder Braten und Backen <br/>entstehenden Dämpfe und Dünste, sogenannte Wrasen, können <br/>Gerüche, Schadstoffe, Fettpartikel usw. beinhalten und sich in den <br/>Komponenten von Lüftungssystemen absetzen. Dies kann weitere <br/>Gefahren mit sich bringen, unter anderem Brandgefahr. <br/>Eine Lüftungsanlage muss diese belasteten Dämpfe abführen und <br/>für ausreichend Frischluftzufuhr sorgen, um eine gute Luftqualität, <br/>Temperaturkontrolle und sichere Arbeitsbedingungen in <br/>gewerblichen Küchen zu gewährleisten.<br/>Die Lebensdauer einer Anlage wird durch regelmäßige Reinigung <br/>gesteigert und das System sicherer, hygienischer und effizienter <br/>gemacht.</p><p></p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
@@ -274,7 +274,7 @@
     },
     "about_section_v2_zD7QHa": {
       "type": "about-section-v2",
-      "name": "Über Uns (Layout) – Neu",
+      "name": "Auszug Leistung",
       "settings": {
         "layout_direction": "text_left",
         "show_image": false,
@@ -301,6 +301,87 @@
         "icon_size": 32,
         "icon_color": "#34d399",
         "feature_title_color": "#111827"
+      }
+    },
+    "about_experience_fUL8PE": {
+      "type": "about-experience",
+      "blocks": {
+        "stat_yW9hdt": {
+          "type": "stat",
+          "settings": {
+            "emoji": "✅",
+            "title": "Bessere Luftqualität und Hygiene",
+            "subtitle": "Potential für Schimmelbildung wird reduziert, negative Gerüche beseitigt,",
+            "aria_label": "1"
+          }
+        },
+        "stat_jPmEMF": {
+          "type": "stat",
+          "settings": {
+            "emoji": "✅",
+            "title": "Beseititgung von Gesundheitsgefährdungen",
+            "subtitle": "durch Staub, Schmutz und Mikroben",
+            "aria_label": "1"
+          }
+        },
+        "stat_KrPi3x": {
+          "type": "stat",
+          "settings": {
+            "emoji": "✅",
+            "title": "Reduzierte Brandrisiken",
+            "subtitle": "durch Beseitigung von Brandlasten (z.B. Fettablagerungen in den Abluftsystemen)",
+            "aria_label": "1"
+          }
+        },
+        "stat_XrLF9Y": {
+          "type": "stat",
+          "settings": {
+            "emoji": "🌱",
+            "title": "Energieeinsparung und Effizienzsteigerung",
+            "subtitle": "Reduzierte Betriebskosten",
+            "aria_label": "1"
+          }
+        },
+        "stat_wNTYhz": {
+          "type": "stat",
+          "settings": {
+            "emoji": "✅",
+            "title": "Verlängerung der Lebensdauer der Anlagen",
+            "subtitle": "Kosteneinsparung",
+            "aria_label": "1"
+          }
+        },
+        "stat_JQFhdt": {
+          "type": "stat",
+          "settings": {
+            "emoji": "✅",
+            "title": "Einhaltung gesetzlicher Vorgaben, Richtlinien und Standards",
+            "subtitle": "Rechtssicherheit durch Nachweis einer hygienischen Wartung, Arbeitsschutz etc.",
+            "aria_label": "1"
+          }
+        }
+      },
+      "block_order": [
+        "stat_yW9hdt",
+        "stat_jPmEMF",
+        "stat_KrPi3x",
+        "stat_XrLF9Y",
+        "stat_wNTYhz",
+        "stat_JQFhdt"
+      ],
+      "name": "Ihre Vorteile – Erfahrung/Stats",
+      "settings": {
+        "kicker": "",
+        "heading": "Ihre Vorteile",
+        "richtext": "",
+        "btn_label": "",
+        "btn_link": "",
+        "btn_newtab": false,
+        "bg_color": "#ffffff",
+        "card_bg": "#ffffff",
+        "card_radius": 16,
+        "text_color": "#111111",
+        "accent_color": "#22c55e"
       }
     },
     "about_section_v2_t3ejyA": {
@@ -369,7 +450,7 @@
         "feature_PEJBtK",
         "feature_MxYCFC"
       ],
-      "name": "Über Uns (Layout) – Neu",
+      "name": "Ihre Vorteile Features",
       "settings": {
         "layout_direction": "text_left",
         "show_image": false,
@@ -405,7 +486,7 @@
           "type": "button",
           "settings": {
             "label": "<p>Kostenlose Beratung</p>",
-            "link": "",
+            "link": "shopify://pages/industrieservice-kontakt",
             "variant": "solid",
             "text_color": "#ffffff",
             "bg_color": "#0b132a",
@@ -422,6 +503,7 @@
         },
         "button_hfEK7p": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "label": "<p>Kostenlose Beratung</p>",
             "link": "",
@@ -472,7 +554,7 @@
           "type": "legal_link",
           "settings": {
             "label": "Impressum",
-            "url": ""
+            "url": "shopify://pages/industrieservice-impressum"
           }
         },
         "legal_link_ANKwbq": {
@@ -486,7 +568,7 @@
           "type": "legal_link",
           "settings": {
             "label": "AGBs",
-            "url": ""
+            "url": "shopify://pages/industrieservice-agbs"
           }
         }
       },
@@ -737,6 +819,7 @@
     "about_section_v2_dWieTW",
     "about_section_v2_KBkJj8",
     "about_section_v2_zD7QHa",
+    "about_experience_fUL8PE",
     "about_section_v2_t3ejyA",
     "custom_cta_block_Y6hmWD",
     "sis_single_footer_N4n9t3",
