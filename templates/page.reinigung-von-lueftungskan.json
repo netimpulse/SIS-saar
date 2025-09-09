@@ -24,7 +24,7 @@
         "back_text_color": "#374151",
         "back_hover_color": "#4ade80",
         "back_font_size": 16,
-        "logo": "shopify://shop_images/logo_Industrieservice_exact_v2.png",
+        "logo": "shopify://shop_images/2025-SIS.png",
         "logo_text": "Mein Shop",
         "logo_color": "#1e40af",
         "logo_font_size": 24,
@@ -196,7 +196,94 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
+        "description": "",
+        "text_color": "#6b7280",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "auto",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827"
+      }
+    },
+    "about_section_v2_KBkJj8": {
+      "type": "about-section-v2",
+      "name": "Über Uns (Layout) – Neu",
+      "settings": {
+        "layout_direction": "text_left",
+        "show_image": false,
+        "background_color": "#ffffff",
+        "section_padding_top": 30,
+        "section_padding_bottom": 0,
+        "title": "Über uns",
+        "title_richtext": "<p><strong>Lüftungsanlage reinigen - Warum?</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
         "description": "<p>In gewerblichen Küchen gelten besondere Anforderungen an <br/>Lüftung, Hygiene und Sicherheit.<br/>Besonders die beim Kochen und-/oder Braten und Backen <br/>entstehenden Dämpfe und Dünste, sogenannte Wrasen, können <br/>Gerüche, Schadstoffe, Fettpartikel usw. beinhalten und sich in den <br/>Komponenten von Lüftungssystemen absetzen. Dies kann weitere <br/>Gefahren mit sich bringen, unter anderem Brandgefahr. <br/>Eine Lüftungsanlage muss diese belasteten Dämpfe abführen und <br/>für ausreichend Frischluftzufuhr sorgen, um eine gute Luftqualität, <br/>Temperaturkontrolle und sichere Arbeitsbedingungen in <br/>gewerblichen Küchen zu gewährleisten.<br/>Die Lebensdauer einer Anlage wird durch regelmäßige Reinigung <br/>gesteigert und das System sicherer, hygienischer und effizienter <br/>gemacht.</p>",
+        "text_color": "#6b7280",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "auto",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827"
+      }
+    },
+    "about_section_v2_zD7QHa": {
+      "type": "about-section-v2",
+      "blocks": {
+        "feature_fnzXnE": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "icon_image": "shopify://shop_images/25327197-e14f-4df3-a683-b1e471aac8ae.png",
+            "feature_title": "Mehr Sicherheit",
+            "feature_description": ""
+          }
+        },
+        "feature_tGPNGL": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Weniger Risiko",
+            "feature_description": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_fnzXnE",
+        "feature_tGPNGL"
+      ],
+      "name": "Über Uns (Layout) – Neu",
+      "settings": {
+        "layout_direction": "text_left",
+        "show_image": false,
+        "background_color": "#ffffff",
+        "section_padding_top": 30,
+        "section_padding_bottom": 0,
+        "title": "Über uns",
+        "title_richtext": "<p><strong>Auszug unserer Leistungen</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<ul><li>Luftdichte <strong>Versiegelung </strong>aller Öffnungen, um eine Verbreitung der Verschmutzungen während des <br/>Reinigungsvorgangs zu verhindern</li><li><strong>Manuelle</strong>, <strong>mechanische </strong>oder <strong>chemische </strong>Reinigung, je nach Anlagentyp und Verschmutzungsgrad</li><li>Einsatz von <strong>rotierenden Bürsten </strong>(systemgerecht angepasst) und Pressluft, um die Verunreinigungen zu lösen</li><li><strong>Absaugung </strong>der durch rotierende Bürsten und Druckluft gelösten Verschmutzungen aus den Kanälen</li><li><strong>Entfernung von Fremdkörpern</strong> sowie beschädigter oder loser Innendämmungen </li><li><strong>Demontage </strong>und im Anschluss der Reinigung <strong>Montage </strong>neuer, zur Verfügung gestellter, Filter</li><li><strong>Dokumentation </strong>durch Foto- oder Videoaufnahmen vor und nach der Reinigung </li><li>Bei Bedarf anschließende gründliche <strong>Desinfektion </strong>der Lüftungskanäle, um einer zukünftigen Keimbildung <br/>vorzubeugen oder zu verzögern </li><li>Auf Wunsch entnehmen wir Abklatschproben zur <strong>Laboranalyse </strong>– für einen dokumentierten Nachweis des <br/>hygienischen Zustands.</li></ul>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
@@ -641,6 +728,8 @@
     "leistung_showcase_haMeXH",
     "video_Cg8Ar8",
     "about_section_v2_dWieTW",
+    "about_section_v2_KBkJj8",
+    "about_section_v2_zD7QHa",
     "about_section_v2_t3ejyA",
     "custom_cta_block_Y6hmWD",
     "sis_single_footer_N4n9t3",
