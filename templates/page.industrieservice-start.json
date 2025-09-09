@@ -24,7 +24,7 @@
         "back_text_color": "#374151",
         "back_hover_color": "#4ade80",
         "back_font_size": 16,
-        "logo": "shopify://shop_images/logo_Industrieservice_exact_v2.png",
+        "logo": "shopify://shop_images/2025-SIS.png",
         "logo_text": "Mein Shop",
         "logo_color": "#1e40af",
         "logo_font_size": 24,
@@ -54,7 +54,7 @@
       "type": "hero-overlay-section",
       "name": "Hero – Service Overlay",
       "settings": {
-        "bg_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
+        "bg_image": "shopify://shop_images/shutterstock_547239928.jpg",
         "overlay_color": "#2baaa2",
         "overlay_opacity": 70,
         "section_height": 60,
@@ -79,7 +79,7 @@
         "btn1_bg_hover": "#238b84",
         "btn1_text_color": "#ffffff",
         "btn1_text_hover": "#ffffff",
-        "btn2_text": "Kontakt aufnehmen",
+        "btn2_text": "JETZT ANRUFEN",
         "btn2_link": "shopify://pages/allgemeiner-kontakt",
         "btn2_font": "system_ui_n4",
         "btn2_font_size": 16,
@@ -98,7 +98,7 @@
         "service_card_lf_eGL7Px": {
           "type": "service_card_lf",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
+            "image": "shopify://shop_images/shutterstock_344049572.jpg",
             "title": "Industrie- und Maschinenreinigung",
             "text": "Unsere Spezialisten reinigen Ihre Industrieanlagen, Bearbeitungsmaschinen, Produktionsstätten, Lagerhallen und andere industrielle Einrichtungen professionell und sicher.\nDurch modernste Reinigungsverfahren entfernen wir Öl, Schmierstoffe, Metallabrieb und andere Rückstände, um Maschinenlaufzeiten zu verlängern und Produktionsausfälle zu minimieren.",
             "link_url": "shopify://pages/maschinenreinigung",
@@ -108,7 +108,7 @@
         "service_card_lf_cy6kq9": {
           "type": "service_card_lf",
           "settings": {
-            "image": "shopify://shop_images/shutterstock_370492946.jpg",
+            "image": "shopify://shop_images/shutterstock_93443800.jpg",
             "title": "Wartung und Instandhaltung",
             "text": "Wir sorgen dafür, dass Ihre Maschinen und Anlagen kontinuierlich betriebsbereit bleiben. Unser Service umfasst Inspektionen, Reparaturen, präventive Wartungsmaßnahmen und Dokumentation nach DIN-Standards.",
             "link_url": "shopify://pages/fluidmanagement-wartung",
@@ -118,7 +118,7 @@
         "service_card_lf_xLkKFw": {
           "type": "service_card_lf",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
+            "image": "shopify://shop_images/shutterstock_65689291.jpg",
             "title": "Strahlarbetien",
             "text": "Durch unterschiedliche Strahlverfahren entfernen wir Rost, Lack oder Verschmutzungen. Die Wahl des Strahlmediums beeinflusst dabei Oberflächenrauigkeit und Materialschonung. Wir strahlen z.B. mit Trockeneis, Glas, Sand und Soda",
             "link_url": "shopify://pages/hallenbodenreinigung",
@@ -128,7 +128,7 @@
         "service_card_lf_g4h43G": {
           "type": "service_card_lf",
           "settings": {
-            "image": "shopify://shop_images/sis_location.png",
+            "image": "shopify://shop_images/iStock-96920072.jpg",
             "title": "Reinigung von RLT Anlagen",
             "text": "Wir prüfen und reinigen Ihre Lüftungsanlagen, Zu- und Abluftrohre in Küchen und dokumentieren die Reinigungsergebnisse. Dabei richten wir uns nachd en VDI Richtlinien VDI 2052 und VDI 6022",
             "link_url": "shopify://pages/decken-wandreinigung",
@@ -138,8 +138,9 @@
         "service_card_lf_aiHyNR": {
           "type": "service_card_lf",
           "settings": {
+            "image": "shopify://shop_images/staplerfahrer-mit-schutzausr-stung-von-hinten-auf-stapler-der-einen-m-llcontainer-auf-einem-industriegel-nde-transportiert.png",
             "title": "Abfallmanagement und innerbetriebliche Logistik",
-            "text": "Kurze Beschreibung hier.",
+            "text": "Wir übernehmen für Sie die anfallenden Transporte innerhalb der Produktionslinien, egal ob mit Gabelstapler, Schlepper oder sonstigen Flurförderzeugen. Die Sortierung der Abfälle sowie optimierte Transportwege und Recyclingprozesse schützen Ressourcen, reduzieren Schäden und steigern die Effizienz von Lagerhaltung und Produktion.",
             "link_url": "shopify://pages/reinigung-von-luftungskanalen",
             "link_label": "Mehr erfahren →"
           }
@@ -147,17 +148,9 @@
         "service_card_lf_L4KiFR": {
           "type": "service_card_lf",
           "settings": {
-            "title": "Dampfreinigung",
-            "text": "Kurze Beschreibung hier.",
-            "link_url": "shopify://pages/dampfreinigung",
-            "link_label": "Mehr erfahren →"
-          }
-        },
-        "service_card_lf_9wnBNG": {
-          "type": "service_card_lf",
-          "settings": {
+            "image": "shopify://shop_images/Trockeneis_AA_3.jpg",
             "title": "Trockeneisstrahlen",
-            "text": "Kurze Beschreibung hier.",
+            "text": "Viele Anlagen dürfen nicht mit Wasser und chemischen Reinigungsmitteln in Berührung kommen und stellen bei der Reinigung somit eine besondere Herausforderung dar. Trockeneisstrahlen stellt dabei eine besonders schonende Reinigungsmöglichkeit dar.",
             "link_url": "shopify://pages/trockeneisstrahlen",
             "link_label": "Mehr erfahren →"
           }
@@ -169,8 +162,7 @@
         "service_card_lf_xLkKFw",
         "service_card_lf_g4h43G",
         "service_card_lf_aiHyNR",
-        "service_card_lf_L4KiFR",
-        "service_card_lf_9wnBNG"
+        "service_card_lf_L4KiFR"
       ],
       "name": "Leistung final",
       "settings": {
