@@ -294,7 +294,8 @@
           "type": "item",
           "settings": {
             "show_icon": true,
-            "icon_bg": "#e5e7eb",
+            "icon": "shopify://shop_images/shutterstock_424584634.jpg",
+            "icon_bg": "#ffffff",
             "title": "Professionelle Ausführung",
             "text": "Jedes Projekt wird sorgfältig geplant und fachgerecht umgesetzt – effizient, \ngründlich und termintreu.",
             "subpoints": "",
@@ -309,7 +310,8 @@
           "type": "item",
           "settings": {
             "show_icon": true,
-            "icon_bg": "#e5e7eb",
+            "icon": "shopify://shop_images/shutterstock_423092626.jpg",
+            "icon_bg": "#ffffff",
             "title": "Erfahrenes Fachpersonal",
             "text": "Unsere geschulten Teams bringen Know-how und Branchenverständnis mit – und \ndenken im Sinne Ihrer Abläufe mit.",
             "subpoints": "",
@@ -324,6 +326,7 @@
           "type": "item",
           "settings": {
             "show_icon": true,
+            "icon": "shopify://shop_images/shutterstock_424584634.jpg",
             "icon_bg": "#ffffff",
             "title": "Modernste Technik & Equipment",
             "text": "Wir setzen auf leistungsstarke, umweltschonende Reinigungsverfahren –\nabgestimmt auf Ihre spezifischen Anforderungen.",
