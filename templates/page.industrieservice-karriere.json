@@ -143,7 +143,7 @@
           "settings": {
             "show_icon": true,
             "icon_bg": "#e5e7eb",
-            "title": "Flexible Arbeitszeiten",
+            "title": "👍 Flexible Arbeitszeiten",
             "text": "",
             "subpoints": "",
             "show_btn": false,
@@ -158,7 +158,7 @@
           "settings": {
             "show_icon": true,
             "icon_bg": "#e5e7eb",
-            "title": "tarifliche Vergütung",
+            "title": "👍 tarifliche Vergütung",
             "text": "",
             "subpoints": "",
             "show_btn": false,
@@ -173,22 +173,7 @@
           "settings": {
             "show_icon": true,
             "icon_bg": "#e5e7eb",
-            "title": "Multikulturelles Team",
-            "text": "",
-            "subpoints": "",
-            "show_btn": false,
-            "btn_label": "Mehr erfahren",
-            "btn_link": "",
-            "btn_bg": "#0b63c8",
-            "btn_text": "#ffffff"
-          }
-        },
-        "item_VqJXYX": {
-          "type": "item",
-          "settings": {
-            "show_icon": true,
-            "icon_bg": "#e5e7eb",
-            "title": "Multikulturelles Team",
+            "title": "👍 Multikulturelles Team",
             "text": "",
             "subpoints": "",
             "show_btn": false,
@@ -202,13 +187,12 @@
       "block_order": [
         "item_K3ff8g",
         "item_HkpcxK",
-        "item_EtMjft",
-        "item_VqJXYX"
+        "item_EtMjft"
       ],
       "name": "Qualitäten Hotspot",
       "settings": {
-        "heading": "Wir bieten:",
-        "intro": "<p>Werde Teil unseres Teams</p>",
+        "heading": "Werde Teil unseres Teams",
+        "intro": "<p></p><p></p>",
         "color_scheme": "background-1",
         "gap": 24,
         "cols_desktop": 3,
