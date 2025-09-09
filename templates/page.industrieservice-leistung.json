@@ -97,6 +97,7 @@
       "blocks": {
         "service_yAW4Lw": {
           "type": "service",
+          "name": "Leistung Suche Block - Industrie und Maschinenreinigung",
           "settings": {
             "image": "shopify://shop_images/shutterstock_549798139.jpg",
             "title_html": "<p><strong>Industrie- und Maschinenreinigung</strong></p>",
@@ -108,39 +109,43 @@
         },
         "service_qM4UjF": {
           "type": "service",
+          "name": "Leistung Suche Block - Wartung und Instandhaltung",
           "settings": {
             "image": "shopify://shop_images/shutterstock_93443800.jpg",
             "title_html": "<p><strong>Wartung und Instandhaltung</strong></p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
-            "button_link": ""
+            "button_link": "shopify://pages/fluidmanagement-wartung"
           }
         },
         "service_3EXgy7": {
           "type": "service",
+          "name": "Leistung Suche Block - Raumlufttechnik",
           "settings": {
             "image": "shopify://shop_images/shutterstock_160555946_Lueftung.jpg",
             "title_html": "<p><strong>Raumlufttechnik</strong></p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
-            "button_link": ""
+            "button_link": "shopify://pages/reinigung-von-luftungskanalen"
           }
         },
         "service_mtirNV": {
           "type": "service",
+          "name": "Leistung Suche Block - Strahlarbeiten",
           "settings": {
             "image": "shopify://shop_images/shutterstock_65689291.jpg",
             "title_html": "<p><strong>Strahlarbeiten</strong></p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
-            "keywords": "Büro, täglich, flexibel",
+            "text_html": "<p>(Sand-/Soda-/Glasstrahlen, crushed glas)</p>",
+            "keywords": "Sand, Soda, Glas, crushed Glas",
             "button_label": "Mehr erfahren",
-            "button_link": ""
+            "button_link": "shopify://pages/sis-stahlarbeiten"
           }
         },
         "service_7y4xhU": {
           "type": "service",
+          "name": "Leistung Suche Block- Montage, Demontage, Maschinenumzüge",
           "settings": {
             "image": "shopify://shop_images/shutterstock_549798139.jpg",
             "title_html": "<p>Montage, Demontage und<br/>Maschinenumzüge</p>",
@@ -152,6 +157,7 @@
         },
         "service_YUWEK3": {
           "type": "service",
+          "name": "Leistung Suche Block- Schweiß und Richtarbeiten",
           "settings": {
             "image": "shopify://shop_images/shutterstock_785685529.jpg",
             "title_html": "<p>Schweiß- und Richtarbeiten</p>",
@@ -163,17 +169,19 @@
         },
         "service_CmCLLj": {
           "type": "service",
+          "name": "Leistung Suche Block- Hallen Bodenreinigung",
           "settings": {
             "image": "shopify://shop_images/shutterstock_547239928.jpg",
             "title_html": "<p>(Hallen-) Bodenreinigung</p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
-            "button_link": ""
+            "button_link": "shopify://pages/hallenbodenreinigung"
           }
         },
         "service_9AATdz": {
           "type": "service",
+          "name": "Leistung Suche Block- Beschichtung Bodenbeläge",
           "settings": {
             "image": "shopify://shop_images/shutterstock_460822750.jpg",
             "title_html": "<p><strong>(Neu-)Beschichtung von<br/>Bodenbelägen</strong></p>",
@@ -185,34 +193,26 @@
         },
         "service_qkkrgG": {
           "type": "service",
+          "name": "Leistung Suche Block - HallenDecken und Konstruktionsreinigung",
           "settings": {
             "image": "shopify://shop_images/shutterstock_365570120.jpg",
             "title_html": "<p>Hallen-/Decken-/und<br/>Konstruktionsreinigung</p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
-            "button_link": ""
+            "button_link": "shopify://pages/decken-wandreinigung"
           }
         },
         "service_qypYnd": {
           "type": "service",
+          "name": "Leistung Suche Block - Trockeneisstrahlen",
           "settings": {
             "image": "shopify://shop_images/Trockeneis_AA_2.jpg",
             "title_html": "<p>Trockeneisstrahlen</p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
-            "button_link": ""
-          }
-        },
-        "service_PyYp4e": {
-          "type": "service",
-          "settings": {
-            "title_html": "<p>Strahltechnik<br/>(Sand-/Soda-/Glasstrahlen, crushed glas)</p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
-            "keywords": "Büro, täglich, flexibel",
-            "button_label": "Mehr erfahren",
-            "button_link": ""
+            "button_link": "shopify://pages/trockeneisstrahlen"
           }
         },
         "service_7c7A6L": {
@@ -257,7 +257,6 @@
         "service_9AATdz",
         "service_qkkrgG",
         "service_qypYnd",
-        "service_PyYp4e",
         "service_7c7A6L",
         "service_jrn8GJ",
         "service_x8djWD"
@@ -265,7 +264,7 @@
       "name": "Leistung Suche Grid",
       "settings": {
         "heading": "",
-        "subheading": "",
+        "subheading": "<p>(Sand-/Soda-/Glasstrahlen, crushed glas)</p>",
         "text_align": "center",
         "show_search": true,
         "search_placeholder": "Leistungen oder Keywords suchen…",
