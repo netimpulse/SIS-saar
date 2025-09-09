@@ -54,7 +54,7 @@
       "type": "hero-overlay-section",
       "name": "Hero – Service Overlay",
       "settings": {
-        "bg_image": "shopify://shop_images/Image_29._Juli_2025_20_41_34_cleanup.png",
+        "bg_image": "shopify://shop_images/shutterstock_757537723.jpg",
         "overlay_color": "#2baaa2",
         "overlay_opacity": 70,
         "section_height": 60,
@@ -98,7 +98,8 @@
         "service_yAW4Lw": {
           "type": "service",
           "settings": {
-            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
+            "image": "shopify://shop_images/shutterstock_549798139.jpg",
+            "title_html": "<p><strong>Industrie und Maschinenreinigung</strong></p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
