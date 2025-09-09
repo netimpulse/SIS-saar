@@ -82,7 +82,7 @@
           "type": "service",
           "name": "Leistung Suche Block - Unterhaltsreinigung",
           "settings": {
-            "image": "shopify://shop_images/shutterstock_1107691484.jpg",
+            "image": "shopify://shop_images/shutterstock_686341027_119a7489-a590-43e6-9961-72a0d914753c.jpg",
             "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
             "text_html": "<p>Büro und Gebäude</p>",
             "keywords": "Reinigung, Unterhaltsreinigung",
@@ -92,10 +92,11 @@
         },
         "service_frAzEa": {
           "type": "service",
+          "name": "Leistung Suche Block - Ferienparks und Freizeitanlagen",
           "settings": {
-            "image": "shopify://shop_images/shutterstock_1053670544.jpg",
-            "title_html": "<p><strong>Test</strong></p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "image": "shopify://shop_images/shutterstock_368560784.jpg",
+            "title_html": "<p><strong>Reinigung von </strong>Ferien- und Freizeitanlagen</p>",
+            "text_html": "<p>Ferienparks, Campingplätze</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/allgemeiner-kontakt"
@@ -103,10 +104,11 @@
         },
         "service_Ugg4QN": {
           "type": "service",
+          "name": "Leistung Suche Block - Glas-/ Rahmenreinigung",
           "settings": {
-            "image": "shopify://shop_images/shutterstock_1023985072.jpg",
-            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "image": "shopify://shop_images/shutterstock_492241702.jpg",
+            "title_html": "<p>Glas-/ Rahmenreinigung</p>",
+            "text_html": "<p>Lamellenreinigung, wintergartenreinigung, Fassadenreinigung</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
             "button_link": ""
@@ -114,13 +116,14 @@
         },
         "service_FrKBPP": {
           "type": "service",
+          "name": "Leistung Suche Block - Desinfektion und Dampfreinigung",
           "settings": {
-            "image": "shopify://shop_images/shutterstock_689385115.jpg",
-            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
+            "image": "shopify://shop_images/shutterstock_119988076.jpg",
+            "title_html": "<p><strong>Desinfektion und Dampfreinigung</strong></p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
-            "button_link": ""
+            "button_link": "shopify://pages/dampfreinigung"
           }
         },
         "service_J4tGfm": {
