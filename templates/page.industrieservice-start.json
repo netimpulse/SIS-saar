@@ -244,6 +244,20 @@
             "open_by_default": false
           }
         },
+        "hotspot_FcjBaQ": {
+          "type": "hotspot",
+          "settings": {
+            "title": "Küchenabluft",
+            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
+            "pos_x": 11,
+            "pos_y": 8,
+            "dot_color": "#3ac47d",
+            "panel_bg": "#4caf78",
+            "panel_text": "#ffffff",
+            "panel_position": "bottom-right",
+            "open_by_default": false
+          }
+        },
         "hotspot_9x4KGX": {
           "type": "hotspot",
           "settings": {
@@ -254,21 +268,7 @@
             "dot_color": "#3ac47d",
             "panel_bg": "#4caf78",
             "panel_text": "#ffffff",
-            "panel_position": "top-left",
-            "open_by_default": false
-          }
-        },
-        "hotspot_FcjBaQ": {
-          "type": "hotspot",
-          "settings": {
-            "title": "Küchenabluft",
-            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
-            "pos_x": 17,
-            "pos_y": 12,
-            "dot_color": "#3ac47d",
-            "panel_bg": "#4caf78",
-            "panel_text": "#ffffff",
-            "panel_position": "top-left",
+            "panel_position": "bottom-right",
             "open_by_default": false
           }
         }
@@ -276,14 +276,14 @@
       "block_order": [
         "hotspot_V3Ca3z",
         "hotspot_DwzydK",
-        "hotspot_9x4KGX",
-        "hotspot_FcjBaQ"
+        "hotspot_FcjBaQ",
+        "hotspot_9x4KGX"
       ],
       "name": "Amenities Hotspots",
       "settings": {
         "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
         "content_side": "right",
-        "kicker": "Special Amenities!",
+        "kicker": "Wir reinigen auch Ihre Küche",
         "heading": "Special Amenities!",
         "body": "<p>Enter description text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
         "heading_font": "poppins_n4",
@@ -313,6 +313,7 @@
     },
     "text_mit_bild_button_PxGyff": {
       "type": "text-mit-bild-button",
+      "disabled": true,
       "name": "Text mit Bild",
       "settings": {
         "image": "shopify://shop_images/Image_29._Juli_2025_20_41_34_cleanup.png",
