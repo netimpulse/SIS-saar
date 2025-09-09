@@ -7,7 +7,9 @@
 .sis-about__grid--stack{grid-template-columns:1fr}
 .sis-about__grid--image-first .sis-about__image{order:-1}
 .sis-about__grid--image-last .sis-about__image{order:2}
+/* Float-Variante (left/right) → 1 Spalte, Bild floatet im Content */
 .sis-about__grid--float{grid-template-columns:1fr}
+/* Kein Bild */
 .sis-about__grid--no-image{grid-template-columns:1fr}
 .sis-about__grid--no-image .sis-about__image{display:none!important}
 .sis-about__grid--no-image .sis-about__content{text-align:var(--no-image-text-align);max-width:720px;margin:auto}
@@ -35,7 +37,7 @@
 .sis-about__image--float-left{float:left;margin:0 24px 16px 0}
 .sis-about__image--float-right{float:right;margin:0 0 16px 24px}
 
-/* Vertikale Ausrichtung für Stack */
+/* Vertikale Ausrichtung für Stack (top/bottom) */
 .sis-about__image--valign-start{align-self:start}
 .sis-about__image--valign-center{align-self:center}
 .sis-about__image--valign-end{align-self:end}
@@ -47,4 +49,5 @@
   .sis-about__image--float-right{float:none;max-width:100%;margin:0 0 16px 0}
 }
 @media (max-width:640px){
-  .sis-about__features{grid
+  .sis-about__features{grid-template-columns:1fr;gap:12px}
+}
