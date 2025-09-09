@@ -295,12 +295,12 @@
           "settings": {
             "show_icon": true,
             "icon_bg": "#e5e7eb",
-            "title": "Qualitäten Hotspot",
-            "text": "Kurzer, prägnanter Beschreibungstext für diesen Qualitäten Hotspot.",
-            "subpoints": "Erster Unterpunkt\nZweiter Unterpunkt",
-            "show_btn": false,
+            "title": "Professionelle Ausführung",
+            "text": "Jedes Projekt wird sorgfältig geplant und fachgerecht umgesetzt – effizient, \ngründlich und termintreu.",
+            "subpoints": "",
+            "show_btn": true,
             "btn_label": "Mehr erfahren",
-            "btn_link": "",
+            "btn_link": "shopify://pages/industrieservice-uber-uns",
             "btn_bg": "#0b63c8",
             "btn_text": "#ffffff"
           }
@@ -310,12 +310,12 @@
           "settings": {
             "show_icon": true,
             "icon_bg": "#e5e7eb",
-            "title": "Qualitäten Hotspot",
-            "text": "Kurzer, prägnanter Beschreibungstext für diesen Qualitäten Hotspot.",
-            "subpoints": "Erster Unterpunkt\nZweiter Unterpunkt",
-            "show_btn": false,
+            "title": "Erfahrenes Fachpersonal",
+            "text": "Unsere geschulten Teams bringen Know-how und Branchenverständnis mit – und \ndenken im Sinne Ihrer Abläufe mit.",
+            "subpoints": "",
+            "show_btn": true,
             "btn_label": "Mehr erfahren",
-            "btn_link": "",
+            "btn_link": "shopify://pages/industrieservice-uber-uns",
             "btn_bg": "#0b63c8",
             "btn_text": "#ffffff"
           }
@@ -325,12 +325,57 @@
           "settings": {
             "show_icon": true,
             "icon_bg": "#ffffff",
-            "title": "Qualitäten Hotspot",
-            "text": "Kurzer, prägnanter Beschreibungstext für diesen Qualitäten Hotspot.",
-            "subpoints": "Erster Unterpunkt\nZweiter Unterpunkt",
-            "show_btn": false,
+            "title": "Modernste Technik & Equipment",
+            "text": "Wir setzen auf leistungsstarke, umweltschonende Reinigungsverfahren –\nabgestimmt auf Ihre spezifischen Anforderungen.",
+            "subpoints": "",
+            "show_btn": true,
             "btn_label": "Mehr erfahren",
-            "btn_link": "",
+            "btn_link": "shopify://pages/industrieservice-uber-uns",
+            "btn_bg": "#0b63c8",
+            "btn_text": "#ffffff"
+          }
+        },
+        "item_HbRVWe": {
+          "type": "item",
+          "settings": {
+            "show_icon": true,
+            "icon_bg": "#e5e7eb",
+            "title": "Flexibilität & Zeitersparnis",
+            "text": "Ob nachts, am Wochenende oder im laufenden Betrieb – wir arbeiten im \nHintergrund, ohne Ihre Abläufe zu stören.",
+            "subpoints": "",
+            "show_btn": true,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "shopify://pages/industrieservice-uber-uns",
+            "btn_bg": "#0b63c8",
+            "btn_text": "#ffffff"
+          }
+        },
+        "item_bEqLqK": {
+          "type": "item",
+          "settings": {
+            "show_icon": true,
+            "icon_bg": "#e5e7eb",
+            "title": "Individuelle Lösungen",
+            "text": "Statt Standards bieten wir maßgeschneiderte Konzepte – analysiert, geplant und \numgesetzt auf Basis Ihrer Ziele.",
+            "subpoints": "",
+            "show_btn": true,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "shopify://pages/industrieservice-uber-uns",
+            "btn_bg": "#0b63c8",
+            "btn_text": "#ffffff"
+          }
+        },
+        "item_43Ugy6": {
+          "type": "item",
+          "settings": {
+            "show_icon": true,
+            "icon_bg": "#e5e7eb",
+            "title": "Alles aus einer Hand",
+            "text": "Von der ersten Beratung bis zur Nachbetreuung erhalten Sie einen umfassenden \nService mit einem festen Ansprechpartner.",
+            "subpoints": "",
+            "show_btn": true,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "shopify://pages/industrieservice-uber-uns",
             "btn_bg": "#0b63c8",
             "btn_text": "#ffffff"
           }
@@ -339,14 +384,17 @@
       "block_order": [
         "item_mgWaYV",
         "item_49gWim",
-        "item_aTejJf"
+        "item_aTejJf",
+        "item_HbRVWe",
+        "item_bEqLqK",
+        "item_43Ugy6"
       ],
-      "name": "Qualitäten Hotspot",
+      "name": "Qualitäten Hotspot - Unser Qualitätsversprechen",
       "settings": {
-        "heading": "Qualitäten Hotspot",
+        "heading": "Unser Qualitätsversprechen",
         "intro": "<p>Kurzer Einleitungstext für den Qualitäten Hotspot.</p>",
         "color_scheme": "background-1",
-        "gap": 24,
+        "gap": 34,
         "cols_desktop": 3,
         "cols_tablet": 2,
         "show_icons": true,
