@@ -319,7 +319,7 @@
         "image_position": "right",
         "image_vertical_align": "start",
         "show_image": false,
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "section_padding_top": 80,
         "section_padding_bottom": 80,
         "title": "Über uns",
@@ -331,7 +331,7 @@
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
         "description": "<p>Wir unterstützen Ihr Kerngeschäft mit gründlicher, flexibler und leistungsstarker Dienstleistung, damit Sie sich auf Ihre Ziele konzentrieren können. Unsere motivierten und regelmäßig geschulten Mitarbeitenden sind das Herzstück unseres Erfolgs.  Gemeinsam nutzen wir Innovationen und nachhaltige Arbeitsmethoden, um Ausfallzeiten zu minimieren und die Umwelt zu schützen.</p><p><strong>Was uns antreibt</strong></p><p>Für uns gilt: <strong>Dienstleistung ist Vertrauenssache.</strong><br/>Deshalb sehen wir unsere Arbeit nicht als kurzfristigen Auftrag, sondern als <strong>langfristige Partnerschaft</strong>. Unsere Kunden verlassen sich darauf, dass wir nicht nur schnell reagieren, sondern vorausschauend denken und mitgestalten.</p><p></p><p></p>",
-        "text_color": "#6B7280",
+        "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_181375295.jpg",
         "image_border_radius": 12,
@@ -340,7 +340,7 @@
         "image_aspect_ratio": "4/3",
         "features_per_row": "2",
         "icon_size": 32,
-        "icon_color": "#34D399",
+        "icon_color": "#34d399",
         "feature_title_color": "#111827",
         "no_image_text_align": "left"
       }
@@ -352,7 +352,7 @@
         "image_position": "right",
         "image_vertical_align": "start",
         "show_image": true,
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "section_padding_top": 80,
         "section_padding_bottom": 80,
         "title": "",
@@ -373,7 +373,7 @@
         "image_aspect_ratio": "4/3",
         "features_per_row": "2",
         "icon_size": 32,
-        "icon_color": "#34D399",
+        "icon_color": "#34d399",
         "feature_title_color": "#111827",
         "no_image_text_align": "left"
       }
@@ -692,153 +692,6 @@
         "buttons_gap": 16
       }
     },
-    "sis_single_footer_JfUwth": {
-      "type": "sis-single-footer",
-      "blocks": {
-        "legal_link_HFRTW6": {
-          "type": "legal_link",
-          "settings": {
-            "label": "Impressum",
-            "url": ""
-          }
-        },
-        "legal_link_N9exQD": {
-          "type": "legal_link",
-          "settings": {
-            "label": "Datenschutz",
-            "url": ""
-          }
-        },
-        "legal_link_iUFY7L": {
-          "type": "legal_link",
-          "settings": {
-            "label": "AGBs",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "legal_link_HFRTW6",
-        "legal_link_N9exQD",
-        "legal_link_iUFY7L"
-      ],
-      "disabled": true,
-      "name": "SIS – Einzelfooter",
-      "settings": {
-        "title": "SIS Saar Industrie Service",
-        "contact_heading": "Kontakt",
-        "address_line_1": "Musterstraße 1, 12345 Musterstadt",
-        "address_line_2": "1",
-        "phone": "0123 / 456 789",
-        "email": "gebaeude@sis-saar.de",
-        "legal_heading": "Rechtliches",
-        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten.",
-        "bg_color": "#0f1621",
-        "text_color": "#cbd5e1",
-        "heading_color": "#ffffff",
-        "link_color": "#3b82f6",
-        "divider_color": "#1e293b"
-      }
-    },
-    "sis_footer_neu_DxNrq8": {
-      "type": "sis-footer-neu",
-      "blocks": {
-        "leistungen_link_DqckHf": {
-          "type": "leistungen_link",
-          "settings": {
-            "text": "Industrieservice",
-            "link": "shopify://pages/industrieservice-leistungen"
-          }
-        },
-        "leistungen_link_pNmqwJ": {
-          "type": "leistungen_link",
-          "settings": {
-            "text": "Gebäudeservice",
-            "link": "shopify://pages/gebaudeservice-leistungen"
-          }
-        },
-        "unternehmen_link_TBGpcW": {
-          "type": "unternehmen_link",
-          "settings": {
-            "text": "Kontakt",
-            "link": "shopify://pages/allgemeiner-kontakt"
-          }
-        },
-        "unternehmen_link_ta8ArV": {
-          "type": "unternehmen_link",
-          "settings": {
-            "text": "Karriere",
-            "link": "shopify://pages/gebaudeservice-karriere"
-          }
-        },
-        "kontakt_link_rYHJ66": {
-          "type": "kontakt_link",
-          "settings": {
-            "text": "Impressum",
-            "link": ""
-          }
-        },
-        "kontakt_link_LM6XBA": {
-          "type": "kontakt_link",
-          "settings": {
-            "text": "Datenschutz",
-            "link": ""
-          }
-        },
-        "partner_logo_hAcxK4": {
-          "type": "partner_logo",
-          "settings": {
-            "logo": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
-            "alt": "Partner",
-            "link": "",
-            "new_tab": true
-          }
-        },
-        "partner_logo_RqKDFc": {
-          "type": "partner_logo",
-          "settings": {
-            "logo": "shopify://shop_images/logo_Industrieservice_exact_v2.png",
-            "alt": "Partner",
-            "link": "",
-            "new_tab": true
-          }
-        }
-      },
-      "block_order": [
-        "leistungen_link_DqckHf",
-        "leistungen_link_pNmqwJ",
-        "unternehmen_link_TBGpcW",
-        "unternehmen_link_ta8ArV",
-        "kontakt_link_rYHJ66",
-        "kontakt_link_LM6XBA",
-        "partner_logo_hAcxK4",
-        "partner_logo_RqKDFc"
-      ],
-      "disabled": true,
-      "name": "SIS Footer NEU",
-      "settings": {
-        "background_color": "#111827",
-        "section_padding": 60,
-        "separator_color": "#374151",
-        "title_color": "#ffffff",
-        "title_font_size": 24,
-        "subtitle_color": "#d1d5db",
-        "subtitle_font_size": 18,
-        "text_color": "#9ca3af",
-        "text_font_size": 14,
-        "link_color": "#60a5fa",
-        "col1_title": "Leistungen",
-        "col2_title": "Unternehmen",
-        "col3_title": "Kontakt",
-        "col4_title": "Partner",
-        "contact_company": "SIS Saar",
-        "contact_address": "Musterstraße 1, 12345 Musterstadt",
-        "contact_phone": "0123 / 456 789",
-        "contact_email": "info@sis-saar.de",
-        "contact_hours": "Mo–Fr 8–17 Uhr",
-        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
-      }
-    },
     "sis_footer_neu_Kxjd4c": {
       "type": "sis-footer-neu",
       "blocks": {
@@ -966,8 +819,6 @@
     "highlights_icons_4mpBYK",
     "team_Vf9RQW",
     "custom_cta_block_EcaCpX",
-    "sis_single_footer_JfUwth",
-    "sis_footer_neu_DxNrq8",
     "sis_footer_neu_Kxjd4c"
   ]
 }
