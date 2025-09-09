@@ -24,7 +24,7 @@
         "back_text_color": "#374151",
         "back_hover_color": "#4ade80",
         "back_font_size": 16,
-        "logo": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
+        "logo": "shopify://shop_images/2025-SIS-Gebaeude.png",
         "logo_text": "Mein Shop",
         "logo_color": "#1e40af",
         "logo_font_size": 24,
@@ -81,9 +81,9 @@
         "service_card_lf_ngKVqM": {
           "type": "service_card_lf",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
+            "image": "shopify://shop_images/shutterstock_686341027_119a7489-a590-43e6-9961-72a0d914753c.jpg",
             "title": "Unterhaltsreinigung",
-            "text": "Kurze Beschreibung hier.",
+            "text": "für einen sauberen Auftritt Ihrer Geschäftsräume",
             "link_url": "shopify://pages/unterhaltsreinigung",
             "link_label": "Mehr erfahren →"
           }
@@ -91,8 +91,8 @@
         "service_card_lf_PXJaE6": {
           "type": "service_card_lf",
           "settings": {
-            "image": "shopify://shop_images/shutterstock_370492946.jpg",
-            "title": "Glas- / Lamellenreinigung",
+            "image": "shopify://shop_images/shutterstock_492241702.jpg",
+            "title": "Glasreinigung",
             "text": "Kurze Beschreibung hier.",
             "link_url": "shopify://pages/glas-und-lamellenreinigung",
             "link_label": "Mehr erfahren →"
@@ -101,8 +101,8 @@
         "service_card_lf_EqV6LD": {
           "type": "service_card_lf",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
-            "title": "Bauschlussreinigung",
+            "image": "shopify://shop_images/iStock-518586238.jpg",
+            "title": "Baubegleitende und Bauschluss- Reinigung",
             "text": "Kurze Beschreibung hier.",
             "link_url": "shopify://pages/bauschlussreinigung",
             "link_label": "Mehr erfahren →"
@@ -111,7 +111,17 @@
         "service_card_lf_nn8th7": {
           "type": "service_card_lf",
           "settings": {
-            "image": "shopify://shop_images/sis_location.png",
+            "image": "shopify://shop_images/shutterstock_672030043.jpg",
+            "title": "Reinraumreinigung",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "shopify://pages/sonderreinigung",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_finbgW": {
+          "type": "service_card_lf",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_346033838.jpg",
             "title": "Sonderreinigung",
             "text": "Kurze Beschreibung hier.",
             "link_url": "shopify://pages/sonderreinigung",
@@ -123,7 +133,8 @@
         "service_card_lf_ngKVqM",
         "service_card_lf_PXJaE6",
         "service_card_lf_EqV6LD",
-        "service_card_lf_nn8th7"
+        "service_card_lf_nn8th7",
+        "service_card_lf_finbgW"
       ],
       "name": "Leistung final",
       "settings": {
