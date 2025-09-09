@@ -217,7 +217,9 @@
         },
         "service_7c7A6L": {
           "type": "service",
+          "name": "Leistung Suche Block - Oldtimer Restauration",
           "settings": {
+            "image": "shopify://shop_images/shutterstock_917940.jpg",
             "title_html": "<p>Oldtimer Restauration</p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
@@ -227,7 +229,9 @@
         },
         "service_jrn8GJ": {
           "type": "service",
+          "name": "Leistung Suche Block - Abfallmanagement und innerbetriebliche Logistik",
           "settings": {
+            "image": "shopify://shop_images/shutterstock_1107691484.jpg",
             "title_html": "<p>Abfallmanagement und<br/>innerbetriebliche Logistik</p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
@@ -237,9 +241,11 @@
         },
         "service_x8djWD": {
           "type": "service",
+          "name": "Leistung Suche Block - Sonderarbeiten",
           "settings": {
+            "image": "shopify://shop_images/shutterstock_782845411.jpg",
             "title_html": "<p>Sonderarbeiten</p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "text_html": "<p>Lassen Sie uns gemeinsam eine Lösung für Ihre Herausforderung finden</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
             "button_link": ""
