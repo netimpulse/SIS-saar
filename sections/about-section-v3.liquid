@@ -1,14 +1,14 @@
 {% comment %}
-  Über Uns (Layout) – v3
+  Über Uns (Layout) – v3 final
   - Bild-Position: links / rechts / oben / unten
-  - Vertikale Ausrichtung (bei links/rechts): oben / mittig / unten
-  - Text-Ausrichtung wählbar, wenn Bild ausgeblendet ist
+  - Vertikale Ausrichtung: oben / mittig / unten
+  - Text-Ausrichtung, wenn Bild ausgeblendet ist
 {% endcomment %}
 
 {{ 'section-ueber-uns-layout-v3.css' | asset_url | stylesheet_tag }}
 
 <style>
-  #shopify-section-{{ section.id }}{
+  #shopify-section-{{ section.id }} {
     --background-color: {{ section.settings.background_color }};
     --section-padding-top: {{ section.settings.section_padding_top }}px;
     --section-padding-bottom: {{ section.settings.section_padding_bottom }}px;
@@ -31,28 +31,27 @@
     --icon-color: {{ section.settings.icon_color }};
     --feature-title-color: {{ section.settings.feature_title_color }};
 
-    /* Textausrichtung, wenn kein Bild gezeigt wird */
     --no-image-text-align: {{ section.settings.no_image_text_align }};
   }
 </style>
 
 {%- liquid
-  assign img_pos = section.settings.image_position  # left, right, top, bottom
-
+  assign img_pos = section.settings.image_position
   assign show_image = section.settings.show_image
-  assign has_image = section.settings.image != blank
+  assign has_image = false
+  if section.settings.image != blank
+    assign has_image = true
+  endif
   assign actually_show_image = false
   if show_image and has_image
     assign actually_show_image = true
   endif
 
-  # Titel: Richtext bevorzugt, sonst Fallback-Text
   assign title_html = section.settings.title_richtext
   if title_html == blank and section.settings.title != blank
     assign title_html = '<p>' | append: section.settings.title | append: '</p>'
   endif
 
-  # Untertitel: Richtext bevorzugt, sonst Fallback-Text
   assign subtitle_html = section.settings.subtitle_richtext
   if subtitle_html == blank and section.settings.subtitle != blank
     assign subtitle_html = '<p>' | append: section.settings.subtitle | append: '</p>'
@@ -71,7 +70,7 @@
       {% unless actually_show_image %} sis-about__grid--no-image{% endunless %}
     ">
 
-      {%- if actually_show_image -%}
+      {% if actually_show_image %}
         <div class="sis-about__image sis-about__image--valign-{{ section.settings.image_vertical_align }}">
           <div class="sis-about__image-wrapper">
             {% assign img = section.settings.image %}
@@ -83,7 +82,7 @@
               loading="lazy">
           </div>
         </div>
-      {%- endif -%}
+      {% endif %}
 
       <div class="sis-about__content">
         {% if title_html != blank %}
