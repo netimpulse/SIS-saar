@@ -54,20 +54,20 @@
       "type": "hero-building-section",
       "name": "Hero Building",
       "settings": {
-        "background_image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
+        "background_image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
         "enable_overlay": true,
         "overlay_color": "#000000",
         "overlay_opacity": 0.5,
-        "heading": "Reinigung von Lüftungskanälen",
-        "subheading": "",
-        "button_label": "Jetzt Angebot anfordern",
-        "button_link": "",
+        "heading": "Reinigung von Zu- und Abluftkanälen",
+        "subheading": "VDI 2052",
+        "button_label": "Jetzt Angebot anfragen",
+        "button_link": "shopify://pages/industrieservice-kontakt",
         "button_color": "#007acc",
         "button_text_color": "#ffffff",
         "button_radius": 4,
         "heading_color": "#ffffff",
         "text_color": "#f5f5f5",
-        "heading_size": 48,
+        "heading_size": 51,
         "text_size": 18,
         "font_family": "Arial, sans-serif",
         "font_bold": true,
@@ -81,25 +81,25 @@
         "showcase_item_CN3FLi": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>VDI 2052, VDI 6022</p>"
           }
         },
         "showcase_item_4qiKCe": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Foto-/ Videoinspektion</p>"
           }
         },
         "showcase_item_gmnHqc": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>rotierende Bürsten</p>"
           }
         },
         "showcase_item_wMDqgA": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Hygiene-Check und Desinfektion</p>"
           }
         }
       },
@@ -120,7 +120,7 @@
         "main_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
         "image_radius": 12,
         "image_position": "left",
-        "left_heading_html": "<p><strong>Zusätzliche Informationen</strong></p>",
+        "left_heading_html": "<p><strong>Reinigung von Zu- und Abluftkanälen in Ihren Küchen</strong></p>",
         "left_heading_align": "right",
         "left_heading_italic": false,
         "left_heading_weight": "700",
@@ -132,76 +132,74 @@
         "points_bg": "#ffffff",
         "points_border": "#e5e8ee",
         "points_btn_label": "Jetzt anfragen",
-        "points_btn_url": "",
+        "points_btn_url": "shopify://pages/industrieservice-kontakt",
         "points_btn_align": "left",
         "fallback_bullet_color": "#2b6cb0"
       }
     },
-    "about_section_v2_t3ejyA": {
+    "video_Cg8Ar8": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "Ein Kurzer Einblick: So gehen wir vor",
+        "heading_size": "h2",
+        "enable_video_looping": false,
+        "video": "shopify://files/videos/SIS Erklärfilm mUT.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/Titelbild_Video.png",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "about_section_v2_dWieTW": {
       "type": "about-section-v2",
       "blocks": {
-        "feature_rUeyxn": {
+        "feature_iBY7VL": {
           "type": "feature",
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
+            "icon_image": "shopify://shop_images/25327197-e14f-4df3-a683-b1e471aac8ae.png",
+            "feature_title": "Mehr Sicherheit",
+            "feature_description": ""
           }
         },
-        "feature_r47zeJ": {
+        "feature_JXHemR": {
           "type": "feature",
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        },
-        "feature_Cpczf4": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        },
-        "feature_PEJBtK": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
+            "feature_title": "Weniger Risiko",
+            "feature_description": ""
           }
         }
       },
       "block_order": [
-        "feature_rUeyxn",
-        "feature_r47zeJ",
-        "feature_Cpczf4",
-        "feature_PEJBtK"
+        "feature_iBY7VL",
+        "feature_JXHemR"
       ],
       "name": "Über Uns (Layout) – Neu",
       "settings": {
         "layout_direction": "text_left",
         "show_image": true,
         "background_color": "#ffffff",
-        "section_padding_top": 80,
-        "section_padding_bottom": 80,
+        "section_padding_top": 30,
+        "section_padding_bottom": 0,
         "title": "Über uns",
-        "title_richtext": "<p><strong>Über uns</strong></p>",
+        "title_richtext": "<p><strong>Lüftungsanlage reinigen - Warum?</strong></p>",
         "title_color": "#111827",
         "title_font_size": 32,
-        "subtitle": "Unsere Mission",
-        "subtitle_richtext": "<p>Unsere Mission</p>",
+        "subtitle": "",
+        "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Wir sind SIS Saar - ein innovatives Unternehmen mit zwei spezialisierten Geschäftsbereichen. Seit über zwei Jahrzehnten stehen wir für zuverlässige und hochwertige Serviceleistungen in der Region.</p><p>Unser Erfolgsrezept liegt in der Kombination aus langjähriger Erfahrung, modernster Technik und einem motivierten Team von Fachkräften. Jeder Mitarbeiter trägt dazu bei, dass wir unseren Kunden stets erstklassige Lösungen anbieten können.</p>",
+        "description": "<p>In gewerblichen Küchen gelten besondere Anforderungen an <br/>Lüftung, Hygiene und Sicherheit.<br/>Besonders die beim Kochen und-/oder Braten und Backen <br/>entstehenden Dämpfe und Dünste, sogenannte Wrasen, können <br/>Gerüche, Schadstoffe, Fettpartikel usw. beinhalten und sich in den <br/>Komponenten von Lüftungssystemen absetzen. Dies kann weitere <br/>Gefahren mit sich bringen, unter anderem Brandgefahr. <br/>Eine Lüftungsanlage muss diese belasteten Dämpfe abführen und <br/>für ausreichend Frischluftzufuhr sorgen, um eine gute Luftqualität, <br/>Temperaturkontrolle und sichere Arbeitsbedingungen in <br/>gewerblichen Küchen zu gewährleisten.<br/>Die Lebensdauer einer Anlage wird durch regelmäßige Reinigung <br/>gesteigert und das System sicherer, hygienischer und effizienter <br/>gemacht.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_370492946.jpg",
+        "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
         "image_border_radius": 12,
         "image_alt": "",
         "image_max_width": 85,
@@ -212,19 +210,99 @@
         "feature_title_color": "#111827"
       }
     },
-    "video_Cg8Ar8": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
+    "about_section_v2_t3ejyA": {
+      "type": "about-section-v2",
+      "blocks": {
+        "feature_rUeyxn": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Bessere Luftqualität und Hygiene",
+            "feature_description": "Potential für Schimmelbildung wird reduziert, negative Gerüche beseitigt,"
+          }
+        },
+        "feature_pBPkYA": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Beseititgung von Gesundheitsgefährdungen",
+            "feature_description": "durch Staub, Schmutz und Mikroben"
+          }
+        },
+        "feature_r47zeJ": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Reduzierte Brandrisiken",
+            "feature_description": "durch Beseitigung von Brandlasten (z.B. Fettablagerungen in den Abluftsystemen)"
+          }
+        },
+        "feature_Cpczf4": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Energieeinsparung und Effizienzsteigerung",
+            "feature_description": "Reduzierte Betriebskosten"
+          }
+        },
+        "feature_PEJBtK": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Verlängerung der Lebensdauer der Anlagen",
+            "feature_description": "Kosteneinsparung"
+          }
+        },
+        "feature_MxYCFC": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Einhaltung gesetzlicher Vorgaben, Richtlinien und Standards",
+            "feature_description": "Rechtssicherheit durch Nachweis einer hygienischen Wartung, Arbeitsschutz etc."
+          }
+        }
+      },
+      "block_order": [
+        "feature_rUeyxn",
+        "feature_pBPkYA",
+        "feature_r47zeJ",
+        "feature_Cpczf4",
+        "feature_PEJBtK",
+        "feature_MxYCFC"
+      ],
+      "name": "Über Uns (Layout) – Neu",
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "layout_direction": "text_left",
+        "show_image": false,
+        "background_color": "#ffffff",
+        "section_padding_top": 80,
+        "section_padding_bottom": 80,
+        "title": "",
+        "title_richtext": "<p><strong>Ihre Vorteile</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
         "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "text_color": "#6b7280",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "auto",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827"
       }
     },
     "custom_cta_block_Y6hmWD": {
@@ -561,8 +639,9 @@
     "main",
     "hero_building_section_xFPFdb",
     "leistung_showcase_haMeXH",
-    "about_section_v2_t3ejyA",
     "video_Cg8Ar8",
+    "about_section_v2_dWieTW",
+    "about_section_v2_t3ejyA",
     "custom_cta_block_Y6hmWD",
     "sis_single_footer_N4n9t3",
     "sis_footer_neu_mb4tRz",
