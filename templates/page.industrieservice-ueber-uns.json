@@ -97,20 +97,23 @@
       "blocks": {
         "badge_cVJ3YH": {
           "type": "badge",
+          "name": "Badge - 200+ Kunden",
           "settings": {
             "badge_text": "200+ Kunden"
           }
         },
         "badge_fdnJXL": {
           "type": "badge",
+          "name": "Badge - 150+ Beschäftigte",
           "settings": {
-            "badge_text": "50+ Mitarbeiter"
+            "badge_text": "150+ Beschäftigte"
           }
         },
         "badge_XKEfBY": {
           "type": "badge",
+          "name": "Badge - 20+ Jahre Erfahrung",
           "settings": {
-            "badge_text": "15+ Jahre Erfahrung"
+            "badge_text": "20+ Jahre Erfahrung"
           }
         },
         "stat_zgiyhn": {
@@ -193,7 +196,8 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "kurze Reaktionszeiten",
+            "icon_image": "shopify://shop_images/25327197-e14f-4df3-a683-b1e471aac8ae.png",
+            "feature_title": "✅ kurze Reaktionszeiten",
             "feature_description": ""
           }
         },
@@ -203,7 +207,7 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "langjährige Erfahrung",
+            "feature_title": "✅ langjährige Erfahrung",
             "feature_description": ""
           }
         },
@@ -213,7 +217,7 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "geschultes Personal",
+            "feature_title": "✅ geschultes Personal",
             "feature_description": ""
           }
         },
@@ -223,7 +227,7 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "beste Qualität",
+            "feature_title": "✅ beste Qualität",
             "feature_description": ""
           }
         }
