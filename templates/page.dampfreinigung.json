@@ -78,36 +78,36 @@
     "leistung_showcase_RzbwLn": {
       "type": "leistung-showcase",
       "blocks": {
+        "showcase_item_mcm349": {
+          "type": "showcase_item",
+          "settings": {
+            "text": "<p>hygienisch</p>"
+          }
+        },
         "showcase_item_ULztiQ": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Dampftemperatur ca. 180°C</p>"
           }
         },
         "showcase_item_UYJGdz": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>desinfizierend, antibakteriell</p>"
           }
         },
         "showcase_item_GwNjXd": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
-          }
-        },
-        "showcase_item_mcm349": {
-          "type": "showcase_item",
-          "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>umweltverträglich</p>"
           }
         }
       },
       "block_order": [
+        "showcase_item_mcm349",
         "showcase_item_ULztiQ",
         "showcase_item_UYJGdz",
-        "showcase_item_GwNjXd",
-        "showcase_item_mcm349"
+        "showcase_item_GwNjXd"
       ],
       "name": "Leistung Showcase",
       "settings": {
@@ -127,7 +127,7 @@
         "left_text": "<p>Eigener Textblock, der erscheint, wenn das Bild ausgeblendet ist.</p>",
         "bg_color": "#f6f8fb",
         "section_padding": 24,
-        "points_title": "Unsere Dienstleistungen:",
+        "points_title": "Vorteile",
         "points_as_card": true,
         "points_bg": "#ffffff",
         "points_border": "#e5e8ee",
