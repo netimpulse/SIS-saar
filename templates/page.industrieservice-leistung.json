@@ -99,7 +99,7 @@
           "type": "service",
           "settings": {
             "image": "shopify://shop_images/shutterstock_549798139.jpg",
-            "title_html": "<p><strong>Industrie und Maschinenreinigung</strong></p>",
+            "title_html": "<p><strong>Industrie- und Maschinenreinigung</strong></p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
@@ -109,7 +109,8 @@
         "service_qM4UjF": {
           "type": "service",
           "settings": {
-            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
+            "image": "shopify://shop_images/shutterstock_93443800.jpg",
+            "title_html": "<p><strong>Wartung und Instandhaltung</strong></p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
@@ -119,7 +120,8 @@
         "service_3EXgy7": {
           "type": "service",
           "settings": {
-            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
+            "image": "shopify://shop_images/shutterstock_160555946_Lueftung.jpg",
+            "title_html": "<p><strong>Raumlufttechnik</strong></p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
@@ -129,7 +131,8 @@
         "service_mtirNV": {
           "type": "service",
           "settings": {
-            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
+            "image": "shopify://shop_images/shutterstock_65689291.jpg",
+            "title_html": "<p><strong>Strahlarbeiten</strong></p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
@@ -139,7 +142,8 @@
         "service_7y4xhU": {
           "type": "service",
           "settings": {
-            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
+            "image": "shopify://shop_images/shutterstock_549798139.jpg",
+            "title_html": "<p>Montage, Demontage und<br/>Maschinenumzüge</p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
@@ -149,7 +153,8 @@
         "service_YUWEK3": {
           "type": "service",
           "settings": {
-            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
+            "image": "shopify://shop_images/shutterstock_785685529.jpg",
+            "title_html": "<p>Schweiß- und Richtarbeiten</p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
@@ -159,7 +164,81 @@
         "service_CmCLLj": {
           "type": "service",
           "settings": {
-            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
+            "image": "shopify://shop_images/shutterstock_547239928.jpg",
+            "title_html": "<p>(Hallen-) Bodenreinigung</p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_9AATdz": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_460822750.jpg",
+            "title_html": "<p><strong>(Neu-)Beschichtung von<br/>Bodenbelägen</strong></p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_qkkrgG": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_365570120.jpg",
+            "title_html": "<p>Hallen-/Decken-/und<br/>Konstruktionsreinigung</p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_qypYnd": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/Trockeneis_AA_2.jpg",
+            "title_html": "<p>Trockeneisstrahlen</p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_PyYp4e": {
+          "type": "service",
+          "settings": {
+            "title_html": "<p>Strahltechnik<br/>(Sand-/Soda-/Glasstrahlen, crushed glas)</p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_7c7A6L": {
+          "type": "service",
+          "settings": {
+            "title_html": "<p>Oldtimer Restauration</p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_jrn8GJ": {
+          "type": "service",
+          "settings": {
+            "title_html": "<p>Abfallmanagement und<br/>innerbetriebliche Logistik</p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_x8djWD": {
+          "type": "service",
+          "settings": {
+            "title_html": "<p>Sonderarbeiten</p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
@@ -174,7 +253,14 @@
         "service_mtirNV",
         "service_7y4xhU",
         "service_YUWEK3",
-        "service_CmCLLj"
+        "service_CmCLLj",
+        "service_9AATdz",
+        "service_qkkrgG",
+        "service_qypYnd",
+        "service_PyYp4e",
+        "service_7c7A6L",
+        "service_jrn8GJ",
+        "service_x8djWD"
       ],
       "name": "Leistung Suche Grid",
       "settings": {
