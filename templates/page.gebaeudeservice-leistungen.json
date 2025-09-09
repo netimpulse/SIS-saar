@@ -178,6 +178,7 @@
           "type": "service",
           "name": "Leistung Suche Block - Tatortreinigung / Zellenreinigung",
           "settings": {
+            "image": "shopify://shop_images/tatort-im-innenbereich-absperrband-ohne-erkennbaren-text.png",
             "title_html": "<p>Tatortreinigung / Zellenreinigung</p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "tag",
