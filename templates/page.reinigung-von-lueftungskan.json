@@ -111,13 +111,13 @@
       ],
       "name": "Leistung Showcase",
       "settings": {
-        "heading_html": "",
+        "heading_html": "<p>Unsere Dienstleistungen</p>",
         "heading_align": "left",
         "heading_italic": false,
         "heading_weight": "700",
-        "subtext": "",
-        "show_image": false,
-        "main_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
+        "subtext": "<p>test</p>",
+        "show_image": true,
+        "main_image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
         "image_radius": 12,
         "image_position": "left",
         "left_heading_html": "<p><strong>Reinigung von Zu- und Abluftkanälen in Ihren Küchen</strong></p>",
@@ -154,42 +154,73 @@
         "padding_bottom": 0
       }
     },
+    "about_section_v2_YLaRmg": {
+      "type": "about-section-v2",
+      "name": "Über Uns (Layout) – Neu",
+      "settings": {
+        "layout_direction": "text_left",
+        "show_image": false,
+        "background_color": "#ffffff",
+        "section_padding_top": 30,
+        "section_padding_bottom": 0,
+        "title": "Über uns",
+        "title_richtext": "<p><strong>Lüftungsanlage reinigen - Warum?</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "",
+        "text_color": "#6b7280",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "auto",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827"
+      }
+    },
     "about_section_v2_dWieTW": {
       "type": "about-section-v2",
       "blocks": {
-        "feature_iBY7VL": {
+        "feature_eyW8dj": {
           "type": "feature",
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "icon_image": "shopify://shop_images/25327197-e14f-4df3-a683-b1e471aac8ae.png",
             "feature_title": "Mehr Sicherheit",
             "feature_description": ""
           }
         },
-        "feature_JXHemR": {
+        "feature_jrD3Pf": {
           "type": "feature",
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
+            "icon_image": "shopify://shop_images/Titelbild_Video.png",
             "feature_title": "Weniger Risiko",
             "feature_description": ""
           }
         }
       },
       "block_order": [
-        "feature_iBY7VL",
-        "feature_JXHemR"
+        "feature_eyW8dj",
+        "feature_jrD3Pf"
       ],
       "name": "Über Uns (Layout) – Neu",
       "settings": {
-        "layout_direction": "text_left",
+        "layout_direction": "image_left",
         "show_image": true,
         "background_color": "#ffffff",
         "section_padding_top": 30,
         "section_padding_bottom": 0,
-        "title": "Über uns",
-        "title_richtext": "<p><strong>Lüftungsanlage reinigen - Warum?</strong></p>",
+        "title": "",
+        "title_richtext": "",
         "title_color": "#111827",
         "title_font_size": 32,
         "subtitle": "",
@@ -243,31 +274,6 @@
     },
     "about_section_v2_zD7QHa": {
       "type": "about-section-v2",
-      "blocks": {
-        "feature_fnzXnE": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "icon_image": "shopify://shop_images/25327197-e14f-4df3-a683-b1e471aac8ae.png",
-            "feature_title": "Mehr Sicherheit",
-            "feature_description": ""
-          }
-        },
-        "feature_tGPNGL": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Weniger Risiko",
-            "feature_description": ""
-          }
-        }
-      },
-      "block_order": [
-        "feature_fnzXnE",
-        "feature_tGPNGL"
-      ],
       "name": "Über Uns (Layout) – Neu",
       "settings": {
         "layout_direction": "text_left",
@@ -727,6 +733,7 @@
     "hero_building_section_xFPFdb",
     "leistung_showcase_haMeXH",
     "video_Cg8Ar8",
+    "about_section_v2_YLaRmg",
     "about_section_v2_dWieTW",
     "about_section_v2_KBkJj8",
     "about_section_v2_zD7QHa",
