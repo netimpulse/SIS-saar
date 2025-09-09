@@ -98,8 +98,8 @@
           "name": "Karriere-Kachel - Initiativbewerbung",
           "settings": {
             "title_html": "<p><strong>Initiativbewerbung willkommen!</strong></p>",
-            "desc_html": "<p>Aktuell keine passende Stelle ausgeschrieben? Kein Problem!<br/>Wir freuen uns immer über Bewerbungen von engagierten Fachkräften, die Lust haben, unser Team zu verstärken. <br/>Senden Sie uns gerne Ihre Initiativbewerbung.<br/><br/></p>",
-            "location_html": "<p>Saarbrücken</p>",
+            "desc_html": "<p>Aktuell keine passende Stelle ausgeschrieben? Kein Problem!<br/>Wir freuen uns immer über Bewerbungen von engagierten Fachkräften, die Lust haben, unser Team zu verstärken. <br/>Senden Sie uns gerne Ihre Initiativbewerbung.</p>",
+            "location_html": "",
             "time": "none",
             "badge_label": "",
             "badge_bg": "",
