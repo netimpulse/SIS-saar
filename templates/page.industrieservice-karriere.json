@@ -163,9 +163,9 @@
           "settings": {
             "show_icon": true,
             "icon_bg": "#e5e7eb",
-            "title": "Qualitäten Hotspot",
-            "text": "Kurzer, prägnanter Beschreibungstext für diesen Qualitäten Hotspot.",
-            "subpoints": "Erster Unterpunkt\nZweiter Unterpunkt",
+            "title": "Flexible Arbeitszeiten",
+            "text": "",
+            "subpoints": "",
             "show_btn": false,
             "btn_label": "Mehr erfahren",
             "btn_link": "",
@@ -178,9 +178,9 @@
           "settings": {
             "show_icon": true,
             "icon_bg": "#e5e7eb",
-            "title": "Qualitäten Hotspot",
-            "text": "Kurzer, prägnanter Beschreibungstext für diesen Qualitäten Hotspot.",
-            "subpoints": "Erster Unterpunkt\nZweiter Unterpunkt",
+            "title": "tarifliche Vergütung",
+            "text": "",
+            "subpoints": "",
             "show_btn": false,
             "btn_label": "Mehr erfahren",
             "btn_link": "",
@@ -193,9 +193,24 @@
           "settings": {
             "show_icon": true,
             "icon_bg": "#e5e7eb",
-            "title": "Qualitäten Hotspot",
-            "text": "Kurzer, prägnanter Beschreibungstext für diesen Qualitäten Hotspot.",
-            "subpoints": "Erster Unterpunkt\nZweiter Unterpunkt",
+            "title": "Multikulturelles Team",
+            "text": "",
+            "subpoints": "",
+            "show_btn": false,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "btn_bg": "#0b63c8",
+            "btn_text": "#ffffff"
+          }
+        },
+        "item_VqJXYX": {
+          "type": "item",
+          "settings": {
+            "show_icon": true,
+            "icon_bg": "#e5e7eb",
+            "title": "Multikulturelles Team",
+            "text": "",
+            "subpoints": "",
             "show_btn": false,
             "btn_label": "Mehr erfahren",
             "btn_link": "",
@@ -207,12 +222,13 @@
       "block_order": [
         "item_K3ff8g",
         "item_HkpcxK",
-        "item_EtMjft"
+        "item_EtMjft",
+        "item_VqJXYX"
       ],
       "name": "Qualitäten Hotspot",
       "settings": {
-        "heading": "Qualitäten Hotspot",
-        "intro": "<p>Kurzer Einleitungstext für den Qualitäten Hotspot.</p>",
+        "heading": "Wir bieten:",
+        "intro": "<p>Werde Teil unseres Teams</p>",
         "color_scheme": "background-1",
         "gap": 24,
         "cols_desktop": 3,
