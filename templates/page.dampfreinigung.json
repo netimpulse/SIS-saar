@@ -183,7 +183,7 @@
         "feature_LriAAc",
         "feature_f3dHdj"
       ],
-      "name": "Über Uns (Layout) – Neu",
+      "name": "Über Uns (Layout) – Neu - Dampfreinigung",
       "settings": {
         "layout_direction": "text_left",
         "show_image": true,
@@ -214,6 +214,7 @@
     },
     "video_Cg8Ar8": {
       "type": "video",
+      "disabled": true,
       "name": "t:sections.video.presets.name",
       "settings": {
         "heading": "",
