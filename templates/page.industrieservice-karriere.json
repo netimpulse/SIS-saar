@@ -312,6 +312,7 @@
         "team_member_bExWEQ",
         "team_member_R8t9ht"
       ],
+      "disabled": true,
       "name": "Team",
       "settings": {
         "background_color": "#ffffff",
