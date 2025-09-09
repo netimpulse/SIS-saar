@@ -94,7 +94,7 @@
           "type": "service",
           "name": "Leistung Suche Block - Ferienparks und Freizeitanlagen",
           "settings": {
-            "image": "shopify://shop_images/shutterstock_368560784.jpg",
+            "image": "shopify://shop_images/shutterstock_657542155.jpg",
             "title_html": "<p><strong>Reinigung von </strong>Ferien- und Freizeitanlagen</p>",
             "text_html": "<p>Ferienparks, Campingplätze</p>",
             "keywords": "Büro, täglich, flexibel",
@@ -135,10 +135,34 @@
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
-            "button_link": ""
+            "button_link": "shopify://pages/bauschlussreinigung"
           }
         },
         "service_xGVYNY": {
+          "type": "service",
+          "name": "Leistung Suche Block - Teppichreinigung",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_373423378.jpg",
+            "title_html": "<p>Teppichreinigung</p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_tkniVV": {
+          "type": "service",
+          "name": "Leistung Suche Block -  Grünschnittpflege und Gartenarbeiten",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_604150469.jpg",
+            "title_html": "<p>Grünschnittpflege und Gartenarbeiten</p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "tag",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_eVDjPU": {
           "type": "service",
           "settings": {
             "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
@@ -148,7 +172,7 @@
             "button_link": ""
           }
         },
-        "service_tkniVV": {
+        "service_TtBgAd": {
           "type": "service",
           "settings": {
             "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
@@ -166,9 +190,11 @@
         "service_FrKBPP",
         "service_J4tGfm",
         "service_xGVYNY",
-        "service_tkniVV"
+        "service_tkniVV",
+        "service_eVDjPU",
+        "service_TtBgAd"
       ],
-      "name": "Leistung Suche Grid",
+      "name": "Leistung Suche Grid - Leistungen Überblick",
       "settings": {
         "heading": "<p><strong>Unsere Leistungen auf einen Blick</strong></p>",
         "subheading": "",
