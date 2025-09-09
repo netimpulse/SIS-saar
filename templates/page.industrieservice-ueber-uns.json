@@ -126,8 +126,8 @@
           "type": "stat",
           "settings": {
             "emoji": "✅",
-            "title": "24/7",
-            "subtitle": "Notfallservice",
+            "title": "Qualität durch Leidenschaft",
+            "subtitle": "Sauberkeit ist für uns mehr als ein Ergebnis – es ist unser Anspruch an Perfektion.",
             "aria_label": "1"
           }
         },
@@ -135,8 +135,8 @@
           "type": "stat",
           "settings": {
             "emoji": "✅",
-            "title": "100%",
-            "subtitle": "Kundenzufriedenheit",
+            "title": "Menschen im Mittelpunkt",
+            "subtitle": "Unser Team ist unser größtes Kapital. Schulung, Sicherheit und Wertschätzung sind für uns selbstverständlich.",
             "aria_label": "1"
           }
         },
@@ -144,8 +144,17 @@
           "type": "stat",
           "settings": {
             "emoji": "🌱",
-            "title": "Nachhaltig",
-            "subtitle": "Zertifizierte Qualität",
+            "title": "Nachhaltigkeit im Blick",
+            "subtitle": "Moderne Verfahren, ressourcenschonendes Arbeiten und verantwortungsvoller Einsatz von Materialien sind für uns gelebte Praxis.",
+            "aria_label": "1"
+          }
+        },
+        "stat_pfTYcy": {
+          "type": "stat",
+          "settings": {
+            "emoji": "🌱",
+            "title": "Partnerschaft auf Augenhöhe",
+            "subtitle": "Wir hören zu, verstehen Bedürfnisse und entwickeln Lösungen, die wirklich passen.",
             "aria_label": "1"
           }
         }
@@ -157,7 +166,8 @@
         "stat_zgiyhn",
         "stat_gfmYxN",
         "stat_tfKQt3",
-        "stat_iffd3f"
+        "stat_iffd3f",
+        "stat_pfTYcy"
       ],
       "name": "Über uns – Erfahrung/Stats",
       "settings": {
@@ -235,7 +245,7 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Wir unterstützen Ihr Kerngeschäft mit gründlicher, flexibler und leistungsstarker Dienstleistung, damit Sie sich auf Ihre Ziele konzentrieren können. Unsere motivierten und regelmäßig geschulten Mitarbeitenden sind das Herzstück unseres Erfolgs.  Gemeinsam nutzen wir Innovationen und nachhaltige Arbeitsmethoden, um Ausfallzeiten zu minimieren und die Umwelt zu schützen.</p><p><strong>Was uns antreibt</strong></p><p>Für uns gilt: <strong>Dienstleistung ist Vertrauenssache.</strong><br/>Deshalb sehen wir unsere Arbeit nicht als kurzfristigen Auftrag, sondern als <strong>langfristige Partnerschaft</strong>. Unsere Kunden verlassen sich darauf, dass wir nicht nur schnell reagieren, sondern vorausschauend denken und mitgestalten.</p><p><strong>Unsere Werte</strong></p><ul><li><strong>Regional verwurzelt – überregional stark:</strong> Wir stehen für saarländische Verlässlichkeit mit professionellem      Anspruch.</li><li><strong>Qualität durch Leidenschaft:</strong><br/>     Sauberkeit ist für uns mehr als ein Ergebnis – es ist unser Anspruch an<br/>     Perfektion.</li><li><strong>Menschen im Mittelpunkt:</strong> Unser Team ist unser größtes Kapital. Schulung, Sicherheit und Wertschätzung sind für uns selbstverständlich.</li><li><strong>Nachhaltigkeit im Blick:</strong> Moderne Verfahren, ressourcenschonendes Arbeiten und verantwortungsvoller Einsatz von Materialien sind für uns gelebte Praxis.</li><li><strong>Partnerschaft auf Augenhöhe:</strong> Wir hören zu, verstehen Bedürfnisse und entwickeln Lösungen, die wirklich passen.</li></ul><p><strong>Warum SIS<br/>Saar-Industrie-Service GmbH?</strong></p><p><strong>Kompetenz, auf die sie sich verlassen können</strong><br/>Mit<br/> jahrelanger Erfahrung im Industrieservice bieten wir durchdachte, <br/>maßgeschneiderte Lösungen für höchste Anforderungen – zuverlässig, <br/>effizient und mit Blick fürs Detail.<br/><strong>Zuverlässigkeit & Qualität</strong><br/>Unsere Arbeit steht für nachhaltige Sauberkeit, Sicherheit und den <br/>langfristigen Werterhalt Ihrer Anlagen – professionell umgesetzt und <br/>lückenlos dokumentiert.<br/><strong>Regional stark – persönlich betreut</strong><br/>Kurze Wege, schnelle Reaktionszeiten, direkter Draht: Wir sind in Ihrer Nähe und für Sie da, wenn es darauf ankommt.<br/><br/><strong>Unser Qualitätsversprechen</strong></p><p><strong>Professionelle Ausführung</strong><br/>Jedes Projekt wird sorgfältig geplant und fachgerecht umgesetzt – effizient, gründlich und termintreu.<br/><strong>Erfahrenes Fachpersonal</strong><br/>Unsere geschulten Teams bringen Know-how und Branchenverständnis mit – und denken im Sinne Ihrer Abläufe mit.<br/><strong>Modernste Technik & Equipment</strong><br/>Wir setzen auf leistungsstarke, umweltschonende Reinigungsverfahren –abgestimmt auf Ihre spezifischen Anforderungen.<br/><strong>Flexibilität & Zeitersparnis</strong><br/>Ob nachts, am Wochenende oder im laufenden Betrieb – wir arbeiten im Hintergrund, ohne Ihre Abläufe zu stören.<br/><strong>Individuelle Lösungen</strong><br/>Statt Standards bieten wir maßgeschneiderte Konzepte – analysiert, geplant und umgesetzt auf Basis Ihrer Ziele.<br/><strong>Alles aus einer Hand</strong><br/>Von der ersten Beratung bis zur Nachbetreuung erhalten Sie einen umfassenden Service mit einem festen Ansprechpartner.<br/></p><h4>kurze Reaktionszeiten</h4><p>langjährige Erfahrung</p><h4>geschultes Personal</h4><p>beste Qualität</p>",
+        "description": "<p>Wir unterstützen Ihr Kerngeschäft mit gründlicher, flexibler und leistungsstarker Dienstleistung, damit Sie sich auf Ihre Ziele konzentrieren können. Unsere motivierten und regelmäßig geschulten Mitarbeitenden sind das Herzstück unseres Erfolgs.  Gemeinsam nutzen wir Innovationen und nachhaltige Arbeitsmethoden, um Ausfallzeiten zu minimieren und die Umwelt zu schützen.</p><p><strong>Was uns antreibt</strong></p><p>Für uns gilt: <strong>Dienstleistung ist Vertrauenssache.</strong><br/>Deshalb sehen wir unsere Arbeit nicht als kurzfristigen Auftrag, sondern als <strong>langfristige Partnerschaft</strong>. Unsere Kunden verlassen sich darauf, dass wir nicht nur schnell reagieren, sondern vorausschauend denken und mitgestalten.</p><p></p><p><strong>Warum SIS<br/>Saar-Industrie-Service GmbH?</strong></p><p><strong>Kompetenz, auf die sie sich verlassen können</strong><br/>Mit jahrelanger Erfahrung im Industrieservice bieten wir durchdachte, maßgeschneiderte Lösungen für höchste Anforderungen – zuverlässig, effizient und mit Blick fürs Detail.</p><p><br/><strong>Zuverlässigkeit & Qualität</strong><br/>Unsere Arbeit steht für nachhaltige Sauberkeit, Sicherheit und den <br/>langfristigen Werterhalt Ihrer Anlagen – professionell umgesetzt und <br/>lückenlos dokumentiert.</p><p><strong>Regional stark – persönlich betreut</strong><br/>Kurze Wege, schnelle Reaktionszeiten, direkter Draht: Wir sind in Ihrer Nähe und für Sie da, wenn es darauf ankommt.<br/><br/><strong>Unser Qualitätsversprechen</strong></p><p><strong>Professionelle Ausführung</strong><br/>Jedes Projekt wird sorgfältig geplant und fachgerecht umgesetzt – effizient, gründlich und termintreu.<br/><strong>Erfahrenes Fachpersonal</strong><br/>Unsere geschulten Teams bringen Know-how und Branchenverständnis mit – und denken im Sinne Ihrer Abläufe mit.<br/><strong>Modernste Technik & Equipment</strong><br/>Wir setzen auf leistungsstarke, umweltschonende Reinigungsverfahren –abgestimmt auf Ihre spezifischen Anforderungen.<br/><strong>Flexibilität & Zeitersparnis</strong><br/>Ob nachts, am Wochenende oder im laufenden Betrieb – wir arbeiten im Hintergrund, ohne Ihre Abläufe zu stören.<br/><strong>Individuelle Lösungen</strong><br/>Statt Standards bieten wir maßgeschneiderte Konzepte – analysiert, geplant und umgesetzt auf Basis Ihrer Ziele.<br/><strong>Alles aus einer Hand</strong><br/>Von der ersten Beratung bis zur Nachbetreuung erhalten Sie einen umfassenden Service mit einem festen Ansprechpartner.<br/></p><h4>kurze Reaktionszeiten</h4><p>langjährige Erfahrung</p><h4>geschultes Personal</h4><p>beste Qualität</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_370492946.jpg",
