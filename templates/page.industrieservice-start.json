@@ -92,6 +92,22 @@
         "btn2_text_hover": "#238b84"
       }
     },
+    "video_3tBQDe": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "<em>Wir stellen uns vor: Werfen Sie einen Blick auf unseren Imagefilm.</em>",
+        "heading_size": "h2",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/Titelbild_Video.png",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "leistung_final_7ciChN": {
       "type": "leistung-final",
       "blocks": {
@@ -686,6 +702,7 @@
     "sticky_header_KGw3Wt",
     "main",
     "hero_overlay_section_hdypDf",
+    "video_3tBQDe",
     "leistung_final_7ciChN",
     "amenities_hotspots_4fU76A",
     "text_mit_bild_button_PxGyff",
