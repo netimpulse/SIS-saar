@@ -64,20 +64,18 @@
         },
         "info_card_Ht4E9k": {
           "type": "info_card",
-          "disabled": true,
           "settings": {
-            "title": "Adresse",
-            "text": "<p>Straße 1<br/>12345 Stadt</p>",
-            "icon": "mail"
+            "title": "Telefon",
+            "text": "<p>+49 (0) 6898 / 16 90 900<br/><br/></p>",
+            "icon": "phone"
           }
         },
         "info_card_MrE36Q": {
           "type": "info_card",
-          "disabled": true,
           "settings": {
-            "title": "Adresse",
-            "text": "<p>Straße 1<br/>12345 Stadt</p>",
-            "icon": "clock"
+            "title": "E-Mail",
+            "text": "<p><a href=\"mailto:info@sissaar.de\">info@sissaar.de</a></p>",
+            "icon": "mail"
           }
         },
         "extra_field_NrfkGn": {
