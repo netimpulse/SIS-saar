@@ -115,6 +115,65 @@
         "feature_title_color": "#111827"
       }
     },
+    "about_section_v3_jYmwQj": {
+      "type": "about-section-v3",
+      "blocks": {
+        "feature_TMjb8k": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung"
+          }
+        },
+        "feature_mBU4U3": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung"
+          }
+        }
+      },
+      "block_order": [
+        "feature_TMjb8k",
+        "feature_mBU4U3"
+      ],
+      "name": "Über Uns (Layout) – v3",
+      "settings": {
+        "image_position": "right",
+        "image_vertical_align": "start",
+        "show_image": true,
+        "background_color": "#FFFFFF",
+        "section_padding_top": 80,
+        "section_padding_bottom": 80,
+        "title": "Über uns",
+        "title_richtext": "<p><strong>Über uns</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "Wer wir sind und was uns ausmacht",
+        "subtitle_richtext": "<p>Unsere Mission</p>",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<p>Unsere Wurzeln liegen im <strong>Saarland</strong>- und genau hier haben wir uns mit Herzblut darauf spezialisiert professionellen und  zukunftsfähigen Industrie- und Gebäudeservice anzubieten. </p><p>Seit mehr als zwei Jahrzehnten steht die SIS für zuverlässige und hochwertige Serviceleistungen in unterschiedlichen Branchen.</p><p>Unser Motto „Kompetenter Service aus erster Hand“ spiegelt sich in jeder Aufgabe wider. <br/></p><p>Die<a href=\"/pages/industrieservice-startseite\" title=\"Industrieservice Startseite\"> <strong>SIS Saar-Industrie-Service GmbH</strong></a> ist<br/>seit vielen Jahren Ihr Partner für anspruchsvolle Industriereinigung, Gebäudeservice und Strahltechnik. Was uns auszeichnet, ist die Kombination aus <strong>modernster Technik</strong> und einem <strong>eingespielten Team</strong>, welches auch dann Lösungen findet, wenn es besonders schwierig wird. Ob Maschinen, Hallen oder Spezialverfahren wie Trockeneisstrahlen oder Sandstrahlen – wir sorgen dafür, dass Anlagen zuverlässig laufen und Werte erhalten bleiben.</p><p>Mit der <a href=\"/pages/gebaudeservice-startseite\" title=\"Gebäudeservice Startseite\"><strong>SIS Saar Gebäudeservice GmbH</strong> </a>haben wir 2022 ein weiteres Standbein geschaffen: Hier bündeln wir unsere Kompetenz rund um <strong>Gebäudereinigung, Glasreinigung, Ferienparkreinigung und Sonderreinigung</strong>. Vom Büro bis zum Industriegebäude, von der Glasfassade bis zum Bauschluss – wir bringen Klarheit und Ordnung in Räume, in denen Menschen arbeiten und leben.</p>",
+        "text_color": "#121212",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/shutterstock_659179879.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "4/3",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34D399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "left"
+      }
+    },
     "kundenbewertung_tzkjqA": {
       "type": "Kundenbewertung",
       "blocks": {
@@ -450,6 +509,7 @@
     "sticky_header_mwbBwL",
     "split_showcase_DdJNLE",
     "about_section_v2_HMhTe6",
+    "about_section_v3_jYmwQj",
     "kundenbewertung_tzkjqA",
     "interactive_map_BWTdBe",
     "text_mit_bild_button_6UPhhG",
