@@ -121,11 +121,12 @@
         "review_FJeXGD": {
           "type": "review",
           "settings": {
-            "image_size": 80,
-            "person_name": "Max Mustermann",
+            "person_image": "shopify://shop_images/Logo_mitClaim_ZW.jpg",
+            "image_size": 70,
+            "person_name": "Martin Anstadt, Leitung Einkauf / Materialwirtschaft",
             "name_font": "sans_serif_n4",
             "name_font_size": 18,
-            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
+            "review_text": "<p>Die Firma SIS Saar-Industrie-Service GmbH ist schon lange unser Dienstleister für<br/>alle Industriereinigungen im Innen- und im Außenbereich. Wir sind in jeglicher Hinsicht sehr  zufrieden mit den getätigten Arbeiten von SIS Saar-Industrie-Service GmbH und sehen das Unternehmen zwischenzeitlich als zuverlässigen Partner im Bereich Dienstleistung Industriereinigungen in der Automotive Industrie. </p>",
             "text_font": "sans_serif_n4",
             "text_font_size": 16,
             "star_rating": 5
@@ -177,7 +178,6 @@
         "review_cUnGwJ",
         "review_QThjeR"
       ],
-      "disabled": true,
       "name": "Kundenbewertung",
       "settings": {
         "background_color": "#f9f9f9",
