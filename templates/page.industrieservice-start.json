@@ -105,16 +105,6 @@
             "link_label": "Mehr erfahren →"
           }
         },
-        "service_card_lf_cy6kq9": {
-          "type": "service_card_lf",
-          "settings": {
-            "image": "shopify://shop_images/shutterstock_93443800.jpg",
-            "title": "Wartung und Instandhaltung",
-            "text": "Wir sorgen dafür, dass Ihre Maschinen und Anlagen kontinuierlich betriebsbereit bleiben. Unser Service umfasst Inspektionen, Reparaturen, präventive Wartungsmaßnahmen und Dokumentation nach DIN-Standards.",
-            "link_url": "shopify://pages/fluidmanagement-wartung",
-            "link_label": "Mehr erfahren →"
-          }
-        },
         "service_card_lf_xLkKFw": {
           "type": "service_card_lf",
           "settings": {
@@ -132,6 +122,16 @@
             "title": "Reinigung von RLT Anlagen",
             "text": "Wir prüfen und reinigen Ihre Lüftungsanlagen, Zu- und Abluftrohre in Küchen und dokumentieren die Reinigungsergebnisse. Dabei richten wir uns nachd en VDI Richtlinien VDI 2052 und VDI 6022",
             "link_url": "shopify://pages/reinigung-von-luftungskanalen",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_cy6kq9": {
+          "type": "service_card_lf",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_93443800.jpg",
+            "title": "Wartung und Instandhaltung",
+            "text": "Wir sorgen dafür, dass Ihre Maschinen und Anlagen kontinuierlich betriebsbereit bleiben. Unser Service umfasst Inspektionen, Reparaturen, präventive Wartungsmaßnahmen und Dokumentation nach DIN-Standards.",
+            "link_url": "shopify://pages/fluidmanagement-wartung",
             "link_label": "Mehr erfahren →"
           }
         },
@@ -158,9 +158,9 @@
       },
       "block_order": [
         "service_card_lf_eGL7Px",
-        "service_card_lf_cy6kq9",
         "service_card_lf_xLkKFw",
         "service_card_lf_g4h43G",
+        "service_card_lf_cy6kq9",
         "service_card_lf_aiHyNR",
         "service_card_lf_L4KiFR"
       ],
