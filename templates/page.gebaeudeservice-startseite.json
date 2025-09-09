@@ -92,7 +92,7 @@
           "type": "service_card_lf",
           "settings": {
             "image": "shopify://shop_images/shutterstock_492241702.jpg",
-            "title": "Glasreinigung",
+            "title": "Glas-/ Rahmenreinigung",
             "text": "Kurze Beschreibung hier.",
             "link_url": "shopify://pages/glas-und-lamellenreinigung",
             "link_label": "Mehr erfahren →"
@@ -118,6 +118,16 @@
             "link_label": "Mehr erfahren →"
           }
         },
+        "service_card_lf_YdeX6B": {
+          "type": "service_card_lf",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_368560784.jpg",
+            "title": "Reinigung von Ferien- und Freizeitanlagen",
+            "text": "Wir lassen Ihre Ferienparks und Campingplätze in neuem Glanz erstrahlen.",
+            "link_url": "",
+            "link_label": "Mehr erfahren →"
+          }
+        },
         "service_card_lf_finbgW": {
           "type": "service_card_lf",
           "settings": {
@@ -134,6 +144,7 @@
         "service_card_lf_PXJaE6",
         "service_card_lf_EqV6LD",
         "service_card_lf_nn8th7",
+        "service_card_lf_YdeX6B",
         "service_card_lf_finbgW"
       ],
       "name": "Leistung final",
