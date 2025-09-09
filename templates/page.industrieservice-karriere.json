@@ -202,6 +202,54 @@
         "icon_radius": 1000
       }
     },
+    "custom_cta_block_YtgYiU": {
+      "type": "custom-cta-block",
+      "blocks": {
+        "button_eYbpUr": {
+          "type": "button",
+          "name": "Button - jetzt bewerben",
+          "settings": {
+            "label": "<p>jetzt bewerben</p>",
+            "link": "shopify://pages/industrieservice-kontakt",
+            "variant": "solid",
+            "text_color": "#ffffff",
+            "bg_color": "#0b132a",
+            "border_color": "#0b132a",
+            "hover_bg": "#111827",
+            "hover_text": "#ffffff",
+            "radius": 12,
+            "padding_x": 24,
+            "padding_y": 14,
+            "bold": true,
+            "offset_x": 0,
+            "offset_y": 0
+          }
+        }
+      },
+      "block_order": [
+        "button_eYbpUr"
+      ],
+      "name": "Custom CTA Block - Teil des Teams",
+      "settings": {
+        "heading": "<p><strong>Werde Teil unseres Teams</strong></p>",
+        "heading_size": 36,
+        "heading_bold": true,
+        "heading_color": "#0f172a",
+        "heading_font": "inherit",
+        "subheading": "<p>Werde Teil unseres Teams</p>",
+        "sub_size": 20,
+        "sub_bold": false,
+        "sub_color": "#475569",
+        "sub_font": "inherit",
+        "align": "center",
+        "content_max": 1000,
+        "pad_top": 64,
+        "pad_bottom": 64,
+        "use_gradient_bg": true,
+        "bg_gradient": "linear-gradient(180deg, rgba(241, 245, 249, 0.6), rgba(241, 245, 249, 0) 100%)",
+        "buttons_gap": 16
+      }
+    },
     "sis_single_footer_DNrhdy": {
       "type": "sis-single-footer",
       "blocks": {
@@ -528,6 +576,7 @@
     "main",
     "karriere_kacheln_nJHMAj",
     "qualitaeten_hotspot_LeFKxL",
+    "custom_cta_block_YtgYiU",
     "sis_single_footer_DNrhdy",
     "team_RkTwC6",
     "sis_footer_neu_md8EiT",
