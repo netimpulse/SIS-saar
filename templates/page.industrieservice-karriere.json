@@ -57,7 +57,7 @@
           "type": "career_tile",
           "settings": {
             "title_html": "<p><strong>Reinigungskraft (m/w/d)</strong></p>",
-            "desc_html": "<p>zuverlässige und erfahrene Reinigungskraft für Unterhaltsreinigung in Bürogebäuden</p>",
+            "desc_html": "<p>zuverlässige und erfahrene Reinigungskraft für Unterhaltsreinigung in Bürogebäuden gesucht</p>",
             "location_html": "<p>Homburg</p>",
             "time": "beides",
             "badge_label": "",
@@ -77,7 +77,7 @@
           "type": "career_tile",
           "settings": {
             "title_html": "<p><strong>Staplerfahrer (m/w/d)</strong></p>",
-            "desc_html": "<p>zur Verstärkung unseres Teams suchen wir ab sofort Erfahrung gewünscht, übertarifliche Entlohnung.</p>",
+            "desc_html": "<p>zur Verstärkung unseres Teams suchen wir ab sofort StaplerfahrerInnen. Erfahrung gewünscht, übertarifliche Entlohnung.</p>",
             "location_html": "<p>Wadern-Büschfeld</p>",
             "time": "beides",
             "badge_label": "",
@@ -93,33 +93,14 @@
             "card_bg": ""
           }
         },
-        "career_tile_JEGcxL": {
-          "type": "career_tile",
-          "settings": {
-            "title_html": "<p><strong>Reinigungskraft (m/w/d)</strong></p>",
-            "desc_html": "<p>Für die professionelle Gebäudereinigung in Bürogebäuden und öffentlichen Einrichtungen</p>",
-            "location_html": "<p>Saarbrücken</p>",
-            "time": "beides",
-            "badge_label": "",
-            "badge_bg": "",
-            "badge_text": "",
-            "details_html": "",
-            "details_toggle": "Details anzeigen",
-            "details_open": false,
-            "btn_label": "Jetzt bewerben",
-            "btn_url": "",
-            "btn_newtab": false,
-            "card_align": "left",
-            "card_bg": ""
-          }
-        },
         "career_tile_B3VqFi": {
           "type": "career_tile",
+          "name": "Karriere-Kachel - Initiativbewerbung",
           "settings": {
-            "title_html": "<p><strong>Reinigungskraft (m/w/d)</strong></p>",
-            "desc_html": "<p>Für die professionelle Gebäudereinigung in Bürogebäuden und öffentlichen Einrichtungen</p>",
+            "title_html": "<p><strong>Initiativbewerbung willkommen!</strong></p>",
+            "desc_html": "<p>Aktuell keine passende Stelle ausgeschrieben? Kein Problem!<br/>Wir freuen uns immer über Bewerbungen von engagierten Fachkräften, die Lust haben, unser Team zu verstärken. <br/>Senden Sie uns gerne Ihre Initiativbewerbung.<br/><br/></p>",
             "location_html": "<p>Saarbrücken</p>",
-            "time": "beides",
+            "time": "none",
             "badge_label": "",
             "badge_bg": "",
             "badge_text": "",
@@ -137,7 +118,6 @@
       "block_order": [
         "career_tile_RyURLw",
         "career_tile_LjGjVM",
-        "career_tile_JEGcxL",
         "career_tile_B3VqFi"
       ],
       "name": "Karriere-Kacheln",
