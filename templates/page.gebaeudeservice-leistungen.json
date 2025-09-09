@@ -130,7 +130,7 @@
           "type": "service",
           "name": "Leistung Suche Block - Baubegleitende und Bauschluss- Reinigung",
           "settings": {
-            "image": "shopify://shop_images/iStock-518586238.jpg",
+            "image": "shopify://shop_images/iStock-160738327.jpg",
             "title_html": "<p>Baubegleitende und Bauschluss- Reinigung</p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
@@ -197,6 +197,18 @@
             "button_label": "Mehr erfahren",
             "button_link": ""
           }
+        },
+        "service_YhK7Yn": {
+          "type": "service",
+          "name": "Leistung Suche Block - Hausmeistertätigkeiten",
+          "settings": {
+            "image": "shopify://shop_images/iStock-613749706.jpg",
+            "title_html": "<p>Sonderreinigung</p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "tag",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
@@ -209,7 +221,8 @@
         "service_tkniVV",
         "service_eVDjPU",
         "service_TtBgAd",
-        "service_V6MDEQ"
+        "service_V6MDEQ",
+        "service_YhK7Yn"
       ],
       "name": "Leistung Suche Grid - Leistungen Überblick",
       "settings": {
