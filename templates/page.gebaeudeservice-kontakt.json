@@ -57,12 +57,14 @@
           "type": "info_card",
           "settings": {
             "title": "Adresse",
-            "text": "<p>Straße 1<br/>12345 Stadt</p>",
-            "icon": "phone"
+            "text": "<p>SIS Saar Gebäudeservice GmbH<br/>Vorderster Berg 13<br/>66333 Völklingen<br/><br/></p>",
+            "icon": "mail",
+            "icon_image": "shopify://shop_images/office-location-icon-design-in-black-color-vector-removebg-preview.png"
           }
         },
         "info_card_Ht4E9k": {
           "type": "info_card",
+          "disabled": true,
           "settings": {
             "title": "Adresse",
             "text": "<p>Straße 1<br/>12345 Stadt</p>",
@@ -71,6 +73,7 @@
         },
         "info_card_MrE36Q": {
           "type": "info_card",
+          "disabled": true,
           "settings": {
             "title": "Adresse",
             "text": "<p>Straße 1<br/>12345 Stadt</p>",
