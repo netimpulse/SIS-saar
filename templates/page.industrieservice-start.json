@@ -167,7 +167,7 @@
       "name": "Leistung final",
       "settings": {
         "heading": "Unsere Leistungen",
-        "subtext": "Mit Leidenschaft für Ihren Erfolg.",
+        "subtext": "Mit Leidenschaft für gemeinsamen Erfolg.",
         "font_heading": "sans_serif_n4",
         "font_body": "sans_serif_n4",
         "heading_size": 36,
@@ -261,10 +261,10 @@
         "hotspot_FcjBaQ": {
           "type": "hotspot",
           "settings": {
-            "title": "Smart Home Features",
+            "title": "Küchenabluft",
             "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
-            "pos_x": 35,
-            "pos_y": 28,
+            "pos_x": 17,
+            "pos_y": 12,
             "dot_color": "#3ac47d",
             "panel_bg": "#4caf78",
             "panel_text": "#ffffff",
@@ -281,7 +281,7 @@
       ],
       "name": "Amenities Hotspots",
       "settings": {
-        "image": "shopify://shop_images/shutterstock_370492946.jpg",
+        "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
         "content_side": "right",
         "kicker": "Special Amenities!",
         "heading": "Special Amenities!",

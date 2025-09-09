@@ -223,6 +223,7 @@
     },
     "text_mit_bild_button_6UPhhG": {
       "type": "text-mit-bild-button",
+      "disabled": true,
       "name": "Text mit Bild",
       "settings": {
         "image_position": "left",
