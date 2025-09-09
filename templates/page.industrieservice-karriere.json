@@ -135,73 +135,6 @@
         "badge_text": "#065f46"
       }
     },
-    "qualitaeten_hotspot_LeFKxL": {
-      "type": "qualitaeten-hotspot",
-      "blocks": {
-        "item_K3ff8g": {
-          "type": "item",
-          "settings": {
-            "show_icon": true,
-            "icon_bg": "#e5e7eb",
-            "title": "👍 Flexible Arbeitszeiten",
-            "text": "",
-            "subpoints": "",
-            "show_btn": false,
-            "btn_label": "Mehr erfahren",
-            "btn_link": "",
-            "btn_bg": "#0b63c8",
-            "btn_text": "#ffffff"
-          }
-        },
-        "item_HkpcxK": {
-          "type": "item",
-          "settings": {
-            "show_icon": true,
-            "icon_bg": "#e5e7eb",
-            "title": "👍 tarifliche Vergütung",
-            "text": "",
-            "subpoints": "",
-            "show_btn": false,
-            "btn_label": "Mehr erfahren",
-            "btn_link": "",
-            "btn_bg": "#0b63c8",
-            "btn_text": "#ffffff"
-          }
-        },
-        "item_EtMjft": {
-          "type": "item",
-          "settings": {
-            "show_icon": true,
-            "icon_bg": "#e5e7eb",
-            "title": "👍 Multikulturelles Team",
-            "text": "",
-            "subpoints": "",
-            "show_btn": false,
-            "btn_label": "Mehr erfahren",
-            "btn_link": "",
-            "btn_bg": "#0b63c8",
-            "btn_text": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "item_K3ff8g",
-        "item_HkpcxK",
-        "item_EtMjft"
-      ],
-      "name": "Qualitäten Hotspot",
-      "settings": {
-        "heading": "Werde Teil unseres Teams",
-        "intro": "<p></p><p></p>",
-        "color_scheme": "background-1",
-        "gap": 24,
-        "cols_desktop": 3,
-        "cols_tablet": 2,
-        "show_icons": true,
-        "icon_size": 88,
-        "icon_radius": 1000
-      }
-    },
     "custom_cta_block_YtgYiU": {
       "type": "custom-cta-block",
       "blocks": {
@@ -575,7 +508,6 @@
     "sticky_header_NaNAWz",
     "main",
     "karriere_kacheln_nJHMAj",
-    "qualitaeten_hotspot_LeFKxL",
     "custom_cta_block_YtgYiU",
     "sis_single_footer_DNrhdy",
     "team_RkTwC6",
