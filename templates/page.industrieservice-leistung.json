@@ -54,7 +54,7 @@
       "type": "hero-overlay-section",
       "name": "Hero – Service Overlay",
       "settings": {
-        "bg_image": "shopify://shop_images/shutterstock_247962964.jpg",
+        "bg_image": "shopify://shop_images/shutterstock_536582824.jpg",
         "overlay_color": "#2baaa2",
         "overlay_opacity": 70,
         "section_height": 60,
@@ -64,7 +64,7 @@
         "heading_font": "system_ui_n4",
         "heading_size": 64,
         "heading_color": "#ffffff",
-        "text": "<p>Zwei spezialisierte Unternehmen unter einem Dach. Ihr Experte und Dienstleistungspartner auf höchstem Niveau.</p>",
+        "text": "<p>Zwei spezialisierte Unternehmen unter einem Dach. Ihre Experten und Dienstleistungspartner auf höchstem Niveau.</p>",
         "text_font": "system_ui_n4",
         "text_size": 20,
         "text_color": "#ffffff",
