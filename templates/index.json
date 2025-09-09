@@ -302,7 +302,7 @@
       ],
       "name": "Custom CTA Block",
       "settings": {
-        "heading": "<p>Bereit für professionellen Gebäudeservice?</p>",
+        "heading": "<p>Bereit für professionellen Service?</p>",
         "heading_size": 36,
         "heading_bold": true,
         "heading_color": "#121212",
