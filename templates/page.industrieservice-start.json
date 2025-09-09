@@ -274,6 +274,20 @@
             "open_by_default": false
           }
         },
+        "hotspot_ihd4Dm": {
+          "type": "hotspot",
+          "settings": {
+            "title": "Smart Home Features",
+            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
+            "pos_x": 35,
+            "pos_y": 28,
+            "dot_color": "#3ac47d",
+            "panel_bg": "#4caf78",
+            "panel_text": "#ffffff",
+            "panel_position": "top-left",
+            "open_by_default": false
+          }
+        },
         "hotspot_9x4KGX": {
           "type": "hotspot",
           "settings": {
@@ -293,6 +307,7 @@
         "hotspot_V3Ca3z",
         "hotspot_DwzydK",
         "hotspot_FcjBaQ",
+        "hotspot_ihd4Dm",
         "hotspot_9x4KGX"
       ],
       "name": "Amenities Hotspots",
