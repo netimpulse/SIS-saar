@@ -278,7 +278,7 @@
         "grid_gap": 20,
         "show_cta": true,
         "cta_label": "Mehr erfahren",
-        "cta_link": "",
+        "cta_link": "shopify://pages/reinigung-von-luftungskanalen",
         "button_style": "primary"
       }
     },
