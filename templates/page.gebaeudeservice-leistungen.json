@@ -128,8 +128,10 @@
         },
         "service_J4tGfm": {
           "type": "service",
+          "name": "Leistung Suche Block - Baubegleitende und Bauschluss- Reinigung",
           "settings": {
-            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
+            "image": "shopify://shop_images/iStock-518586238.jpg",
+            "title_html": "<p>Baubegleitende und Bauschluss- Reinigung</p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
