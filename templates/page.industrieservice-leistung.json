@@ -282,9 +282,9 @@
         "card_shadow": true,
         "grid_gap": 20,
         "show_cta": true,
-        "cta_label": "Mehr erfahren",
-        "cta_link": "shopify://pages/reinigung-von-luftungskanalen",
-        "button_style": "primary"
+        "cta_label": "jetzt Beratungstermin vereinbaren",
+        "cta_link": "shopify://pages/industrieservice-kontakt",
+        "button_style": "secondary"
       }
     },
     "qualitaeten_hotspot_7aUQfj": {
