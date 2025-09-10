@@ -118,7 +118,7 @@
         "image_vertical_align": "start",
         "show_image": true,
         "background_color": "#ffffff",
-        "section_padding_top": 80,
+        "section_padding_top": 25,
         "section_padding_bottom": 80,
         "title": "Über uns",
         "title_richtext": "<p><strong>Über uns</strong></p>",
