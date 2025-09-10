@@ -59,7 +59,7 @@
         "overlay_color": "#000000",
         "overlay_opacity": 0.5,
         "heading": "Glasreinigung",
-        "subheading": "Wir bieten erstklassige Reinigungs- und Facility Services für Unternehmen und Privatkunden.",
+        "subheading": "",
         "button_label": "Jetzt Angebot anfordern",
         "button_link": "",
         "button_color": "#007acc",
@@ -145,8 +145,8 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
+            "feature_title": "Wintergärten",
+            "feature_description": ""
           }
         },
         "feature_JkfCRY": {
@@ -154,34 +154,14 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        },
-        "feature_w7b8dp": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        },
-        "feature_3YEzgc": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
+            "feature_title": "Fassaden",
+            "feature_description": ""
           }
         }
       },
       "block_order": [
         "feature_x8mFhH",
-        "feature_JkfCRY",
-        "feature_w7b8dp",
-        "feature_3YEzgc"
+        "feature_JkfCRY"
       ],
       "name": "Über Uns (Layout) – Neu - Glasreinigung",
       "settings": {
@@ -235,26 +215,7 @@
           "type": "button",
           "settings": {
             "label": "<p>Kostenlose Beratung</p>",
-            "link": "",
-            "variant": "solid",
-            "text_color": "#ffffff",
-            "bg_color": "#0b132a",
-            "border_color": "#0b132a",
-            "hover_bg": "#111827",
-            "hover_text": "#ffffff",
-            "radius": 12,
-            "padding_x": 24,
-            "padding_y": 14,
-            "bold": true,
-            "offset_x": 0,
-            "offset_y": 0
-          }
-        },
-        "button_hfEK7p": {
-          "type": "button",
-          "settings": {
-            "label": "<p>Kostenlose Beratung</p>",
-            "link": "",
+            "link": "shopify://pages/gebaudeservice-kontakt",
             "variant": "solid",
             "text_color": "#ffffff",
             "bg_color": "#0b132a",
@@ -271,8 +232,7 @@
         }
       },
       "block_order": [
-        "button_LM9n93",
-        "button_hfEK7p"
+        "button_LM9n93"
       ],
       "name": "Custom CTA Block",
       "settings": {
