@@ -207,7 +207,7 @@
           "type": "info_card",
           "settings": {
             "title": "E-Mail",
-            "text": "<p>info@sissaar.de</p>",
+            "text": "<p><a href=\"mailto:info@sissaar.de\" title=\"mailto:info@sissaar.de\">info@sissaar.de</a></p>",
             "icon": "mail"
           }
         },
