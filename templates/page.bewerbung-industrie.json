@@ -77,21 +77,12 @@
             "text": "<p><a href=\"tel:%20+49%206898%2016%2090%20900\" title=\"tel:%20+49%206898%2016%2090%20900\">(+49) (0) 6898 16 90 900</a></p>",
             "icon": "phone"
           }
-        },
-        "info_card_hwFe4w": {
-          "type": "info_card",
-          "settings": {
-            "title": "Adresse",
-            "text": "<p>Straße 1<br>12345 Stadt</p>",
-            "icon": "map"
-          }
         }
       },
       "block_order": [
         "info_card_wMMTKL",
         "info_card_mHfAYw",
-        "info_card_nMCHqU",
-        "info_card_hwFe4w"
+        "info_card_nMCHqU"
       ],
       "name": "Kontaktbereich mit Formular- SIS Bewerbung",
       "settings": {
