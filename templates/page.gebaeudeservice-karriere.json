@@ -110,7 +110,7 @@
             "details_toggle": "Details anzeigen",
             "details_open": false,
             "btn_label": "Jetzt bewerben",
-            "btn_url": "shopify://pages/bewerbung-industrie",
+            "btn_url": "shopify://pages/bewerbung-gebaude",
             "btn_newtab": false,
             "card_align": "left",
             "card_bg": ""
@@ -130,7 +130,7 @@
             "details_toggle": "Details anzeigen",
             "details_open": false,
             "btn_label": "Jetzt bewerben",
-            "btn_url": "shopify://pages/bewerbung-industrie",
+            "btn_url": "shopify://pages/bewerbung-gebaude",
             "btn_newtab": false,
             "card_align": "left",
             "card_bg": ""
