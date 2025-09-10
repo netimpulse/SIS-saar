@@ -120,11 +120,11 @@
         "main_image": "shopify://shop_images/shutterstock_262821758.jpg",
         "image_radius": 12,
         "image_position": "left",
-        "left_heading_html": "<p><strong>Ausfälle vermeiden - Leistung sichern!</strong></p>",
+        "left_heading_html": "<p><strong>Ausfälle vermeiden -<br/>Leistung sichern! </strong></p>",
         "left_heading_align": "right",
         "left_heading_italic": false,
         "left_heading_weight": "700",
-        "left_text": "<p>Eigener Textblock, der erscheint, wenn das Bild ausgeblendet ist.</p>",
+        "left_text": "",
         "bg_color": "#f6f8fb",
         "section_padding": 24,
         "points_title": "Unsere Dienstleistungen:",
@@ -204,7 +204,7 @@
             "icon_type": "svg",
             "icon_svg": "",
             "feature_title": "Störungsbehebung",
-            "feature_description": "Kurze Beschreibung des Features."
+            "feature_description": "schnelle Reaktion"
           }
         },
         "feature_7UTE83": {
@@ -222,7 +222,7 @@
             "icon_type": "svg",
             "icon_svg": "",
             "feature_title": "Öl-/ Wasserwechsel",
-            "feature_description": "auch Filterwechsel"
+            "feature_description": "auch Filterwechsel und KSS"
           }
         },
         "feature_4EbXxz": {
@@ -230,8 +230,8 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Kühlschmierstoffe (KSS)",
-            "feature_description": "Kurze Beschreibung des Features."
+            "feature_title": "Messen, Kalibrieren",
+            "feature_description": "ausrichten und korrigieren"
           }
         }
       },
@@ -272,9 +272,10 @@
     },
     "video_Cg8Ar8": {
       "type": "video",
+      "disabled": true,
       "name": "t:sections.video.presets.name",
       "settings": {
-        "heading": "",
+        "heading": "SIS Social Clip Wartung Instandhaltung",
         "heading_size": "h1",
         "enable_video_looping": false,
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
