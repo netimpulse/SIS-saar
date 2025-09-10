@@ -139,12 +139,12 @@
     },
     "video_Cg8Ar8": {
       "type": "video",
+      "disabled": true,
       "name": "t:sections.video.presets.name",
       "settings": {
         "heading": "",
         "heading_size": "h2",
         "enable_video_looping": false,
-        "video": "shopify://files/videos/SIS Erklärfilm mUT.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "cover_image": "shopify://shop_images/Titelbild_Video.png",
         "description": "",
@@ -272,7 +272,7 @@
         "image_position": "right",
         "image_vertical_align": "center",
         "show_image": true,
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "section_padding_top": 20,
         "section_padding_bottom": 80,
         "title": "",
@@ -284,7 +284,7 @@
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
         "description": "<p>In gewerblichen Küchen gelten besondere Anforderungen an Lüftung, Hygiene und Sicherheit. Besonders die beim Kochen und-/oder Braten und Backen entstehenden Dämpfe und Dünste, sogenannte Wrasen, können Gerüche, Schadstoffe, Fettpartikel usw. beinhalten und sich in den Komponenten von Lüftungssystemen absetzen. Dies kann weitere Gefahren mit sich bringen, unter anderem Brandgefahr. Eine Lüftungsanlage muss diese belasteten Dämpfe abführen und für ausreichend Frischluftzufuhr sorgen, um eine gute Luftqualität, Temperaturkontrolle und sichere Arbeitsbedingungen in gewerblichen Küchen zu gewährleisten.<br/>Die Lebensdauer einer Anlage wird durch regelmäßige Reinigung gesteigert und das System sicherer, hygienischer und effizienter <br/>gemacht.</p>",
-        "text_color": "#6B7280",
+        "text_color": "#6b7280",
         "text_font_size": 18,
         "image_border_radius": 12,
         "image_alt": "",
@@ -292,7 +292,7 @@
         "image_aspect_ratio": "4/3",
         "features_per_row": "2",
         "icon_size": 32,
-        "icon_color": "#34D399",
+        "icon_color": "#34d399",
         "feature_title_color": "#111827",
         "no_image_text_align": "left"
       }
@@ -304,7 +304,7 @@
         "image_position": "right",
         "image_vertical_align": "center",
         "show_image": true,
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "section_padding_top": 20,
         "section_padding_bottom": 45,
         "title": "",
@@ -316,7 +316,7 @@
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
         "description": "<p>✅ Luftdichte <strong>Versiegelung </strong>aller Öffnungen, um eine Verbreitung der Verschmutzungen während des <br/>Reinigungsvorgangs zu verhindern</p><p>✅ <strong>Manuelle</strong>, <strong>mechanische </strong>oder <strong>chemische </strong>Reinigung, je nach Anlagentyp und Verschmutzungsgrad</p><p>✅ Einsatz von <strong>rotierenden Bürsten </strong>(systemgerecht angepasst) und Pressluft, um die Verunreinigungen zu lösen</p><p>✅ <strong>Absaugung </strong>der durch rotierende Bürsten und Druckluft gelösten Verschmutzungen aus den Kanälen</p><p>✅ <strong>Entfernung von Fremdkörpern</strong> sowie beschädigter oder loser Innendämmungen </p><p>✅ <strong>Demontage </strong>und im Anschluss der Reinigung <strong>Montage </strong>neuer, zur Verfügung gestellter, Filter</p><p>✅ <strong>Dokumentation </strong>durch Foto- oder Videoaufnahmen vor und nach der Reinigung </p><p>✅ Bei Bedarf anschließende gründliche <strong>Desinfektion </strong>der Lüftungskanäle, um einer zukünftigen Keimbildung <br/>vorzubeugen oder zu verzögern </p><p>✅ Auf Wunsch entnehmen wir Abklatschproben zur <strong>Laboranalyse </strong>– für einen dokumentierten Nachweis des <br/>hygienischen Zustands.</p>",
-        "text_color": "#6B7280",
+        "text_color": "#6b7280",
         "text_font_size": 18,
         "image_border_radius": 12,
         "image_alt": "",
@@ -324,7 +324,7 @@
         "image_aspect_ratio": "4/3",
         "features_per_row": "2",
         "icon_size": 32,
-        "icon_color": "#34D399",
+        "icon_color": "#34d399",
         "feature_title_color": "#111827",
         "no_image_text_align": "left"
       }
@@ -358,6 +358,81 @@
         "icon_size": 32,
         "icon_color": "#34d399",
         "feature_title_color": "#111827"
+      }
+    },
+    "slideshow_bMYEwg": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_XXx6m3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/vN-rohr_qauali.png",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_JqPGD6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Bild2.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_CMk6fd": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Bild2.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_XXx6m3",
+        "slide_JqPGD6",
+        "slide_CMk6fd"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 7,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow zu deiner Marke"
       }
     },
     "about_section_v2_i8kGTR": {
@@ -406,62 +481,6 @@
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/vN-rohr_qauali.png",
-        "image_border_radius": 12,
-        "image_alt": "",
-        "image_max_width": 85,
-        "image_aspect_ratio": "auto",
-        "features_per_row": "2",
-        "icon_size": 32,
-        "icon_color": "#34d399",
-        "feature_title_color": "#111827"
-      }
-    },
-    "about_section_v2_L4EMzX": {
-      "type": "about-section-v2",
-      "blocks": {
-        "feature_mTqXeM": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Mehr Sicherheit",
-            "feature_description": ""
-          }
-        },
-        "feature_7He7MR": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "icon_image": "shopify://shop_images/Titelbild_Video.png",
-            "feature_title": "Weniger Risiko",
-            "feature_description": ""
-          }
-        }
-      },
-      "block_order": [
-        "feature_mTqXeM",
-        "feature_7He7MR"
-      ],
-      "name": "Vorher-Nachher",
-      "settings": {
-        "layout_direction": "image_left",
-        "show_image": true,
-        "background_color": "#ffffff",
-        "section_padding_top": 30,
-        "section_padding_bottom": 20,
-        "title": "",
-        "title_richtext": "",
-        "title_color": "#111827",
-        "title_font_size": 32,
-        "subtitle": "",
-        "subtitle_richtext": "",
-        "subtitle_color": "#374151",
-        "subtitle_font_size": 20,
-        "description": "",
-        "text_color": "#6b7280",
-        "text_font_size": 18,
-        "image": "shopify://shop_images/Bild2.jpg",
         "image_border_radius": 12,
         "image_alt": "",
         "image_max_width": 85,
@@ -646,6 +665,38 @@
         "icon_size": 32,
         "icon_color": "#34d399",
         "feature_title_color": "#111827"
+      }
+    },
+    "about_section_v3_QHjnVq": {
+      "type": "about-section-v3",
+      "name": "Über Uns (Layout) – v3 - VDI 2052",
+      "settings": {
+        "image_position": "right",
+        "image_vertical_align": "center",
+        "show_image": true,
+        "background_color": "#ffffff",
+        "section_padding_top": 20,
+        "section_padding_bottom": 45,
+        "title": "",
+        "title_richtext": "<p><strong>VDI 2052</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<p>Die VDI 2052 ist eine Richtlinie, die von dem Verein Deutscher Ingenieure erstellt wurde und Anforderungen an Raumlufttechnische Anlagen für Küchen regelt. Sie gilt für gewerbliche Küchen mit einer Gesamtanschlussleistung ab 25kW der wärme- und feuchteabgebenden Geräte (z.B. Gargeräte, Spülmaschinen) und ist in drei Bereiche gegliedert. <br/>Im ersten Teil, Blatt 1, werden die allgemeinen Anforderungen an die Technik und den Betrieb von Küchenlüftungsanlagen bestimmt. Blatt 2 der Richtlinie beschäftigt sich mit dem Thema Reinigung und in VDI-T 2052 Blatt 3, werden die Inhalte für ein Schulungskonzept ausgearbeitet. </p><p>Die Richtlinie entspricht dem aktuellen technischen Standard und gilt in Verbindung<br/>mit DIN EN 13779 und DIN 18869. Sie gibt Vorgaben zu Luftführung und -Austausch, Luftqualität und Filterung, Hygiene, Brandschutz, Energieeffizienz, Inspektion und fachgerechte Reinigung und Wartung.</p><p>Zusätzlich sind in der VDI 2052 Blatt 2 konkrete Reinigungsintervalle für die verschiedenen Komponenten von Küchenlüftungsanlagen beschrieben. </p>",
+        "text_color": "#6b7280",
+        "text_font_size": 18,
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "4/3",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "left"
       }
     },
     "custom_cta_block_7jDMtP": {
@@ -968,10 +1019,11 @@
     "about_section_v3_TwMWej",
     "about_section_v3_FYy8t7",
     "about_section_v2_aMzgy4",
+    "slideshow_bMYEwg",
     "about_section_v2_i8kGTR",
-    "about_section_v2_L4EMzX",
     "about_experience_fUL8PE",
     "about_section_v2_t3ejyA",
+    "about_section_v3_QHjnVq",
     "custom_cta_block_7jDMtP",
     "sis_single_footer_N4n9t3",
     "sis_footer_neu_mb4tRz",
