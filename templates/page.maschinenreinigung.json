@@ -137,70 +137,60 @@
         "fallback_bullet_color": "#2b6cb0"
       }
     },
-    "about_section_v2_9MW9QW": {
-      "type": "about-section-v2",
+    "about_section_v3_zmQLa4": {
+      "type": "about-section-v3",
       "blocks": {
-        "feature_mUeXEt": {
+        "feature_UARMhb": {
           "type": "feature",
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Lebensmittelindustrie",
-            "feature_description": "Förderbänder, hygienisch"
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung"
           }
         },
-        "feature_jrNKzF": {
+        "feature_YE79CX": {
           "type": "feature",
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Ultraschallreinigung",
-            "feature_description": "schonend, schnell"
-          }
-        },
-        "feature_hxgafx": {
-          "type": "feature",
-          "disabled": true,
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "CNC-Maschinen",
+            "feature_title": "Feature Titel",
             "feature_description": "Kurze Beschreibung"
           }
         }
       },
       "block_order": [
-        "feature_mUeXEt",
-        "feature_jrNKzF",
-        "feature_hxgafx"
+        "feature_UARMhb",
+        "feature_YE79CX"
       ],
-      "name": "Über Uns (Layout) – Neu",
+      "name": "Über Uns (Layout) – v3 - Maschinenreinigung",
       "settings": {
-        "layout_direction": "image_left",
-        "show_image": false,
-        "background_color": "#f3f3f3",
-        "section_padding_top": 80,
+        "image_position": "right",
+        "image_vertical_align": "start",
+        "show_image": true,
+        "background_color": "#FFFFFF",
+        "section_padding_top": 30,
         "section_padding_bottom": 80,
-        "title": "Über uns",
-        "title_richtext": "<p><strong>Industrie- und Maschinenreinigung</strong></p>",
+        "title": "Maschinenreinigung",
+        "title_richtext": "<p><strong>Maschinenreinigung</strong></p>",
         "title_color": "#111827",
         "title_font_size": 32,
         "subtitle": "",
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Die SIS<br/>Saar-Industrie-Service GmbH bietet eine professionelle Reinigung Ihrer<br/>Industrieanlagen, Bearbeitungsmaschinen, Produktionsstätten, Lagerhallen und<br/>andere industrielle Einrichtungen. Zu diesem Zweck nutzen wir unser<br/>hochwertiges und modernes Equipment für eine optimale Dienstleistung.<br/>Zusätzlich führen wir an verschiedenen Maschinen gegebenenfalls Öl- und<br/>Wasserwechsel, sowie weitere Reinigungen durch, um ihnen einen Rundumservice zu<br/>gewährleisten. Diese Maßnahmen dienen nicht nur der reinen Sauberkeit, sondern<br/>auch der Werterhaltung der Maschinen und damit verbunden auch der<br/>Gewährleistung ihrer Produktivität. </p><p>Denn regelmäßige<br/>Reinigungen und Wartungen ihrer Produktionsmaschinen haben entsprechend höhere<br/>Maschinenlaufzeiten zur Folge.</p>",
-        "text_color": "#121212",
+        "description": "<p>Die SIS Saar-Industrie-Service GmbH bietet eine professionelle Reinigung Ihrer Industrieanlagen, Bearbeitungsmaschinen, Produktionsstätten, Lagerhallen und andere industrielle Einrichtungen. Zu diesem Zweck nutzen wir unser hochwertiges und modernes Equipment für eine optimale Dienstleistung. Zusätzlich führen wir an verschiedenen Maschinen gegebenenfalls Öl- und Wasserwechsel, sowie weitere Reinigungen durch, um ihnen einen Rundumservice zu gewährleisten. Diese Maßnahmen dienen nicht nur der reinen Sauberkeit, sondern auch der Werterhaltung der Maschinen und damit verbunden auch der Gewährleistung ihrer Produktivität. </p><p>Denn regelmäßige Reinigungen und Wartungen ihrer Produktionsmaschinen haben entsprechend höhere Maschinenlaufzeiten zur Folge.</p>",
+        "text_color": "#6B7280",
         "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_370492946.jpg",
         "image_border_radius": 12,
         "image_alt": "",
         "image_max_width": 85,
-        "image_aspect_ratio": "auto",
+        "image_aspect_ratio": "4/3",
         "features_per_row": "2",
         "icon_size": 32,
-        "icon_color": "#34d399",
-        "feature_title_color": "#111827"
+        "icon_color": "#34D399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "left"
       }
     },
     "video_Cg8Ar8": {
@@ -532,7 +522,7 @@
     "main",
     "hero_building_section_xFPFdb",
     "leistung_showcase_wAGpyg",
-    "about_section_v2_9MW9QW",
+    "about_section_v3_zmQLa4",
     "video_Cg8Ar8",
     "custom_cta_block_CeErgt",
     "sis_single_footer_N4n9t3",
