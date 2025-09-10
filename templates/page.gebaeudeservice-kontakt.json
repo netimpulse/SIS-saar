@@ -57,7 +57,7 @@
           "type": "info_card",
           "settings": {
             "title": "Adresse",
-            "text": "<p>SIS Saar Gebäudeservice GmbH<br/>Vorderster Berg 13<br/>66333 Völklingen<br/><br/></p>",
+            "text": "<p>SIS Saar Gebäudeservice GmbH<br/>Vorderster Berg 13<br/>D-66333 Völklingen<br/><br/></p>",
             "icon": "mail",
             "icon_image": "shopify://shop_images/office-location-icon-design-in-black-color-vector-removebg-preview.png"
           }
@@ -74,7 +74,7 @@
           "type": "info_card",
           "settings": {
             "title": "E-Mail",
-            "text": "<p><a href=\"mailto:info@sissaar.de\">info@sissaar.de</a></p>",
+            "text": "<p><a href=\"mailto:gebaeudeservice@sissaar.de\" title=\"mailto:gebaeudeservice@sissaar.de\">gebaeudeservice@sissaar.de</a></p>",
             "icon": "mail"
           }
         },
