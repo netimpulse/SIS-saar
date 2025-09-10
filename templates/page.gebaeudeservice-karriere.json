@@ -24,7 +24,7 @@
         "back_text_color": "#374151",
         "back_hover_color": "#4ade80",
         "back_font_size": 16,
-        "logo": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
+        "logo": "shopify://shop_images/2025-SIS-Gebaeude.png",
         "logo_text": "Mein Shop",
         "logo_color": "#1e40af",
         "logo_font_size": 24,
@@ -93,35 +93,15 @@
         "padding_bottom": 28
       }
     },
-    "karriere_kacheln_M9YEff": {
+    "karriere_kacheln_V8QD49": {
       "type": "karriere-kacheln",
       "blocks": {
-        "career_tile_rzDpNM": {
+        "career_tile_gyf3fL": {
           "type": "career_tile",
           "settings": {
             "title_html": "<p><strong>Reinigungskraft (m/w/d)</strong></p>",
-            "desc_html": "<p>Für die professionelle Gebäudereinigung in Bürogebäuden und öffentlichen Einrichtungen</p>",
-            "location_html": "<p>Saarbrücken</p>",
-            "time": "beides",
-            "badge_label": "",
-            "badge_bg": "",
-            "badge_text": "",
-            "details_html": "<p>Beispiel Text</p><p></p>",
-            "details_toggle": "Details anzeigen",
-            "details_open": false,
-            "btn_label": "Jetzt bewerben",
-            "btn_url": "shopify://pages/bewerbung-gebaude",
-            "btn_newtab": false,
-            "card_align": "left",
-            "card_bg": ""
-          }
-        },
-        "career_tile_76F84A": {
-          "type": "career_tile",
-          "settings": {
-            "title_html": "<p><strong>Reinigungskraft (m/w/d)</strong></p>",
-            "desc_html": "<p>Für die professionelle Gebäudereinigung in Bürogebäuden und öffentlichen Einrichtungen</p>",
-            "location_html": "<p>Saarbrücken</p>",
+            "desc_html": "<p>zuverlässige und erfahrene Reinigungskraft für Unterhaltsreinigung in Bürogebäuden gesucht</p>",
+            "location_html": "<p>Homburg</p>",
             "time": "beides",
             "badge_label": "",
             "badge_bg": "",
@@ -130,18 +110,18 @@
             "details_toggle": "Details anzeigen",
             "details_open": false,
             "btn_label": "Jetzt bewerben",
-            "btn_url": "shopify://pages/bewerbung-gebaude",
+            "btn_url": "shopify://pages/bewerbung-industrie",
             "btn_newtab": false,
             "card_align": "left",
             "card_bg": ""
           }
         },
-        "career_tile_GdxFnY": {
+        "career_tile_c97YTK": {
           "type": "career_tile",
           "settings": {
-            "title_html": "<p><strong>Reinigungskraft (m/w/d)</strong></p>",
-            "desc_html": "<p>Für die professionelle Gebäudereinigung in Bürogebäuden und öffentlichen Einrichtungen</p>",
-            "location_html": "<p>Saarbrücken</p>",
+            "title_html": "<p><strong>Staplerfahrer (m/w/d)</strong></p>",
+            "desc_html": "<p>zur Verstärkung unseres Teams suchen wir ab sofort StaplerfahrerInnen. Erfahrung gewünscht, übertarifliche Entlohnung.</p>",
+            "location_html": "<p>Wadern-Büschfeld</p>",
             "time": "beides",
             "badge_label": "",
             "badge_bg": "",
@@ -150,7 +130,28 @@
             "details_toggle": "Details anzeigen",
             "details_open": false,
             "btn_label": "Jetzt bewerben",
-            "btn_url": "shopify://pages/bewerbung-gebaude",
+            "btn_url": "shopify://pages/bewerbung-industrie",
+            "btn_newtab": false,
+            "card_align": "left",
+            "card_bg": ""
+          }
+        },
+        "career_tile_y7ztDE": {
+          "type": "career_tile",
+          "name": "Karriere-Kachel - Initiativbewerbung",
+          "settings": {
+            "title_html": "<p><strong>Initiativbewerbung willkommen!</strong></p>",
+            "desc_html": "<p>Aktuell keine passende Stelle ausgeschrieben? Kein Problem!<br/>Wir freuen uns immer über Bewerbungen von engagierten Fachkräften, die Lust haben, unser Team zu verstärken. <br/>Senden Sie uns gerne Ihre Initiativbewerbung.</p>",
+            "location_html": "",
+            "time": "none",
+            "badge_label": "",
+            "badge_bg": "",
+            "badge_text": "",
+            "details_html": "",
+            "details_toggle": "Details anzeigen",
+            "details_open": false,
+            "btn_label": "Jetzt bewerben",
+            "btn_url": "",
             "btn_newtab": false,
             "card_align": "left",
             "card_bg": ""
@@ -158,9 +159,9 @@
         }
       },
       "block_order": [
-        "career_tile_rzDpNM",
-        "career_tile_76F84A",
-        "career_tile_GdxFnY"
+        "career_tile_gyf3fL",
+        "career_tile_c97YTK",
+        "career_tile_y7ztDE"
       ],
       "name": "Karriere-Kacheln",
       "settings": {
@@ -177,13 +178,62 @@
         "badge_text": "#065f46"
       }
     },
+    "custom_cta_block_DTtCpC": {
+      "type": "custom-cta-block",
+      "blocks": {
+        "button_ADy9hb": {
+          "type": "button",
+          "name": "Button - jetzt bewerben",
+          "settings": {
+            "label": "<p>jetzt bewerben</p>",
+            "link": "shopify://pages/gebaudeservice-kontakt",
+            "variant": "solid",
+            "text_color": "#ffffff",
+            "bg_color": "#0b132a",
+            "border_color": "#0b132a",
+            "hover_bg": "#111827",
+            "hover_text": "#ffffff",
+            "radius": 12,
+            "padding_x": 24,
+            "padding_y": 14,
+            "bold": true,
+            "offset_x": 0,
+            "offset_y": 0
+          }
+        }
+      },
+      "block_order": [
+        "button_ADy9hb"
+      ],
+      "name": "Custom CTA Block - Teil des Teams",
+      "settings": {
+        "heading": "<p><strong>Werde Teil unseres Teams</strong></p>",
+        "heading_size": 36,
+        "heading_bold": true,
+        "heading_color": "#0f172a",
+        "heading_font": "inherit",
+        "subheading": "<p>✔ übertariflicher Entlohnung ✔ flexible Arbeitszeiten ✔ multikulturelles Team und vieles mehr. Jetzt bewerben 👍</p>",
+        "sub_size": 20,
+        "sub_bold": false,
+        "sub_color": "#475569",
+        "sub_font": "inherit",
+        "align": "center",
+        "content_max": 1000,
+        "pad_top": 64,
+        "pad_bottom": 64,
+        "use_gradient_bg": true,
+        "bg_gradient": "linear-gradient(180deg, rgba(241, 245, 249, 0.6), rgba(241, 245, 249, 0) 100%)",
+        "buttons_gap": 16
+      }
+    },
     "highlights_icons_trDdzm": {
       "type": "highlights-icons",
       "blocks": {
         "item_A6FrLz": {
           "type": "item",
           "settings": {
-            "icon_bg": "#e5e7eb",
+            "icon": "shopify://shop_images/Logo_mitClaim_ZW.jpg",
+            "icon_bg": "#ffffff",
             "title": "QUALITÄT",
             "text": "Kurzer, prägnanter Beschreibungstext für dieses Highlight.",
             "show_btn": true,
@@ -225,6 +275,7 @@
         "item_WXj8Kr",
         "item_7yrCbF"
       ],
+      "disabled": true,
       "name": "Highlights – Icons",
       "settings": {
         "heading": "Das bieten wir dir",
@@ -239,6 +290,7 @@
     },
     "text_mit_bild_button_LWeUiY": {
       "type": "text-mit-bild-button",
+      "disabled": true,
       "name": "Text mit Bild",
       "settings": {
         "image": "shopify://shop_images/shutterstock_370492946.jpg",
@@ -534,7 +586,8 @@
     "sticky_header_raFwfz",
     "hero_overlay_section_KdK9GH",
     "main",
-    "karriere_kacheln_M9YEff",
+    "karriere_kacheln_V8QD49",
+    "custom_cta_block_DTtCpC",
     "highlights_icons_trDdzm",
     "text_mit_bild_button_LWeUiY",
     "sis_single_footer_EkHzhy",
