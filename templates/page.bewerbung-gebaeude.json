@@ -24,42 +24,34 @@
           "type": "info_card",
           "settings": {
             "title": "Adresse",
-            "text": "<p>Straße 1<br/>12345 Stadt</p>",
-            "icon": "map"
+            "text": "<p>SIS Saar Gebäudeservice GmbH<br/>Vorderster Berg 13<br/>D-66333 Völklinen</p>",
+            "icon": "map",
+            "icon_image": "shopify://shop_images/office-location-icon-design-in-black-color-vector-removebg-preview.png"
           }
         },
         "info_card_iFtBFr": {
           "type": "info_card",
           "settings": {
-            "title": "Adresse",
-            "text": "<p>Straße 1<br/>12345 Stadt</p>",
-            "icon": "map"
+            "title": "E-Mail",
+            "text": "<p>gebaudeservice@sissaar.de</p>",
+            "icon": "mail"
           }
         },
         "info_card_bVjqiN": {
           "type": "info_card",
           "settings": {
-            "title": "Adresse",
-            "text": "<p>Straße 1<br/>12345 Stadt</p>",
-            "icon": "map"
-          }
-        },
-        "info_card_iaPaHw": {
-          "type": "info_card",
-          "settings": {
-            "title": "Adresse",
-            "text": "<p>Straße 1<br/>12345 Stadt</p>",
-            "icon": "map"
+            "title": "Telefon",
+            "text": "<p>(+49) (0) 6898 16 90 <a href=\"tel:%20+49%206898%2016%2090%20900\" title=\"tel:%20+49%206898%2016%2090%20900\">tel +4968981690900</a></p>",
+            "icon": "phone"
           }
         }
       },
       "block_order": [
         "info_card_FqXzUL",
         "info_card_iFtBFr",
-        "info_card_bVjqiN",
-        "info_card_iaPaHw"
+        "info_card_bVjqiN"
       ],
-      "name": "Kontaktbereich mit Formular",
+      "name": "Kontaktbereich mit Formular- GS Bewerbung",
       "settings": {
         "left_title": "Kontaktinformationen",
         "right_title": "Nachricht senden",

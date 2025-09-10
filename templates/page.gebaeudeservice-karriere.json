@@ -186,7 +186,7 @@
           "name": "Button - jetzt bewerben",
           "settings": {
             "label": "<p>jetzt bewerben</p>",
-            "link": "shopify://pages/gebaudeservice-kontakt",
+            "link": "shopify://pages/bewerbung-gebaude",
             "variant": "solid",
             "text_color": "#ffffff",
             "bg_color": "#0b132a",
