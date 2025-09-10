@@ -54,14 +54,14 @@
       "type": "hero-building-section",
       "name": "Hero Building",
       "settings": {
-        "background_image": "shopify://shop_images/shutterstock_686341027_119a7489-a590-43e6-9961-72a0d914753c.jpg",
+        "background_image": "shopify://shop_images/shutterstock_657542155.jpg",
         "enable_overlay": true,
         "overlay_color": "#000000",
         "overlay_opacity": 0.5,
-        "heading": "",
+        "heading": "Ferien- und Freizeitanlagen",
         "subheading": "",
         "button_label": "Jetzt Angebot anfordern",
-        "button_link": "",
+        "button_link": "shopify://pages/gebaudeservice-kontakt",
         "button_color": "#007acc",
         "button_text_color": "#ffffff",
         "button_radius": 4,
@@ -120,11 +120,11 @@
         "main_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
         "image_radius": 12,
         "image_position": "left",
-        "left_heading_html": "<p><strong>Unterhaltsreinigung</strong></p>",
+        "left_heading_html": "<p><strong>Ferienpark, Campingplätze, Anlagen</strong></p>",
         "left_heading_align": "right",
         "left_heading_italic": false,
         "left_heading_weight": "700",
-        "left_text": "<p>Eigener Textblock, der erscheint, wenn das Bild ausgeblendet ist.</p>",
+        "left_text": "<p>Wir reinigen Charlets und co.</p>",
         "bg_color": "#f6f8fb",
         "section_padding": 24,
         "points_title": "Unsere Dienstleistungen:",
@@ -231,25 +231,6 @@
     "custom_cta_block_Y6hmWD": {
       "type": "custom-cta-block",
       "blocks": {
-        "button_LM9n93": {
-          "type": "button",
-          "settings": {
-            "label": "<p>Kostenlose Beratung</p>",
-            "link": "",
-            "variant": "solid",
-            "text_color": "#ffffff",
-            "bg_color": "#0b132a",
-            "border_color": "#0b132a",
-            "hover_bg": "#111827",
-            "hover_text": "#ffffff",
-            "radius": 12,
-            "padding_x": 24,
-            "padding_y": 14,
-            "bold": true,
-            "offset_x": 0,
-            "offset_y": 0
-          }
-        },
         "button_hfEK7p": {
           "type": "button",
           "settings": {
@@ -271,7 +252,6 @@
         }
       },
       "block_order": [
-        "button_LM9n93",
         "button_hfEK7p"
       ],
       "name": "Custom CTA Block",
