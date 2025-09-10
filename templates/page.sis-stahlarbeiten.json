@@ -302,7 +302,7 @@
         "section_padding_top": 80,
         "section_padding_bottom": 80,
         "title": "",
-        "title_richtext": "<p><strong>Sand vs. Glasstrahlen</strong></p>",
+        "title_richtext": "<p><strong>Sand vs. Glasstrahlen - Strahlmedium</strong></p>",
         "title_color": "#111827",
         "title_font_size": 32,
         "subtitle": "",
@@ -355,6 +355,149 @@
         "icon_color": "#34D399",
         "feature_title_color": "#111827",
         "no_image_text_align": "center"
+      }
+    },
+    "about_section_v2_RbQb9j": {
+      "type": "about-section-v2",
+      "name": "Warum - vorher nachher bilder",
+      "settings": {
+        "layout_direction": "text_left",
+        "show_image": false,
+        "background_color": "#ffffff",
+        "section_padding_top": 30,
+        "section_padding_bottom": 0,
+        "title": "Über uns",
+        "title_richtext": "<p><strong>Vorher - Nachher Bilder</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "",
+        "text_color": "#6b7280",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "auto",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827"
+      }
+    },
+    "about_section_v2_kxjGWD": {
+      "type": "about-section-v2",
+      "blocks": {
+        "feature_pUFCcD": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Mehr Sicherheit",
+            "feature_description": ""
+          }
+        },
+        "feature_qeaBF6": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "icon_image": "shopify://shop_images/Titelbild_Video.png",
+            "feature_title": "Weniger Risiko",
+            "feature_description": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_pUFCcD",
+        "feature_qeaBF6"
+      ],
+      "name": "Vorher-Nachher",
+      "settings": {
+        "layout_direction": "image_left",
+        "show_image": true,
+        "background_color": "#ffffff",
+        "section_padding_top": 30,
+        "section_padding_bottom": 20,
+        "title": "",
+        "title_richtext": "",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "",
+        "text_color": "#6b7280",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/shutterstock_657636373.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "auto",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827"
+      }
+    },
+    "about_section_v2_9DYaHa": {
+      "type": "about-section-v2",
+      "blocks": {
+        "feature_zVtG3A": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Mehr Sicherheit",
+            "feature_description": ""
+          }
+        },
+        "feature_MeWHFV": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "icon_image": "shopify://shop_images/Titelbild_Video.png",
+            "feature_title": "Weniger Risiko",
+            "feature_description": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_zVtG3A",
+        "feature_MeWHFV"
+      ],
+      "name": "Vorher-Nachher",
+      "settings": {
+        "layout_direction": "text_left",
+        "show_image": true,
+        "background_color": "#ffffff",
+        "section_padding_top": 30,
+        "section_padding_bottom": 20,
+        "title": "",
+        "title_richtext": "",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "",
+        "text_color": "#6b7280",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/shutterstock_657611401.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "auto",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827"
       }
     },
     "video_Cg8Ar8": {
@@ -692,6 +835,9 @@
     "about_section_v3_8XYGe7",
     "about_section_v3_p7n9bw",
     "about_section_v3_gLk4ph",
+    "about_section_v2_RbQb9j",
+    "about_section_v2_kxjGWD",
+    "about_section_v2_9DYaHa",
     "video_Cg8Ar8",
     "custom_cta_block_3nzV4z",
     "sis_single_footer_N4n9t3",
