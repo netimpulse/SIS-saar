@@ -143,6 +143,119 @@
         "no_image_text_align": "left"
       }
     },
+    "partner_logos_khWdEB": {
+      "type": "partner-logos",
+      "blocks": {
+        "logo_4EzfTf": {
+          "type": "logo",
+          "name": "Partner-Logo - AMG",
+          "settings": {
+            "logo": "shopify://shop_images/2025_AMG_zugeschnitten_DA.png",
+            "alt": "Partner-Logo",
+            "link": "",
+            "custom_size": false,
+            "logo_height": 72
+          }
+        },
+        "logo_kz9yMD": {
+          "type": "logo",
+          "name": "Partner-Logo - Saarotec",
+          "settings": {
+            "logo": "shopify://shop_images/Logo_mitClaim_ZW.jpg",
+            "alt": "Partner-Logo",
+            "link": "",
+            "custom_size": false,
+            "logo_height": 72
+          }
+        },
+        "logo_9Vy7ja": {
+          "type": "logo",
+          "name": "Partner-Logo - SIS Gebäudeservice",
+          "settings": {
+            "logo": "shopify://shop_images/2025-SIS-Gebaeude.png",
+            "alt": "Partner-Logo",
+            "link": "",
+            "custom_size": false,
+            "logo_height": 72
+          }
+        },
+        "logo_CGgcEK": {
+          "type": "logo",
+          "name": "Partner-Logo - Bosch",
+          "settings": {
+            "logo": "shopify://shop_images/Bosch_symbol_logo_black_red.jpg",
+            "alt": "Partner-Logo - Bosch",
+            "link": "",
+            "custom_size": false,
+            "logo_height": 72
+          }
+        },
+        "logo_jaaaMQ": {
+          "type": "logo",
+          "name": "Partner-Logo - SIS Industrieservice",
+          "settings": {
+            "logo": "shopify://shop_images/2025-SIS.png",
+            "alt": "Partner-Logo",
+            "link": "",
+            "custom_size": false,
+            "logo_height": 72
+          }
+        },
+        "logo_3tm9GJ": {
+          "type": "logo",
+          "settings": {
+            "alt": "Partner-Logo",
+            "link": "",
+            "custom_size": false,
+            "logo_height": 72
+          }
+        },
+        "logo_TF3wAP": {
+          "type": "logo",
+          "settings": {
+            "alt": "Partner-Logo",
+            "link": "",
+            "custom_size": false,
+            "logo_height": 72
+          }
+        },
+        "logo_xC77Pm": {
+          "type": "logo",
+          "settings": {
+            "alt": "Partner-Logo",
+            "link": "",
+            "custom_size": false,
+            "logo_height": 72
+          }
+        }
+      },
+      "block_order": [
+        "logo_4EzfTf",
+        "logo_kz9yMD",
+        "logo_9Vy7ja",
+        "logo_CGgcEK",
+        "logo_jaaaMQ",
+        "logo_3tm9GJ",
+        "logo_TF3wAP",
+        "logo_xC77Pm"
+      ],
+      "name": "Partner-Logos (Grid)",
+      "settings": {
+        "eyebrow": "",
+        "eyebrow_marker": false,
+        "heading": "<p>Auszug unsere Referenzen</p>",
+        "subtext": "<p>Entdecken Sie einige der Unternehmen, die uns bereits vertrauen</p>",
+        "color_scheme": "background-1",
+        "gap": 24,
+        "cols_desktop": 4,
+        "cols_tablet": 3,
+        "show_dividers": true,
+        "logo_max_height": 72,
+        "gray_on": false,
+        "hover_opacity": 100,
+        "open_new": true
+      }
+    },
     "kundenbewertung_tzkjqA": {
       "type": "Kundenbewertung",
       "blocks": {
@@ -478,6 +591,7 @@
     "sticky_header_mwbBwL",
     "split_showcase_DdJNLE",
     "about_section_v3_jYmwQj",
+    "partner_logos_khWdEB",
     "kundenbewertung_tzkjqA",
     "interactive_map_BWTdBe",
     "text_mit_bild_button_6UPhhG",
