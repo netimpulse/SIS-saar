@@ -81,25 +81,25 @@
         "showcase_item_f7eG83": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Reinigung, Pflege und Reparatur</p>"
           }
         },
         "showcase_item_xVmQTt": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Wartung und Instandhaltung</p>"
           }
         },
         "showcase_item_pBkjAD": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Montage, Demontage und Maschinenumzüge</p>"
           }
         },
         "showcase_item_ybmNtt": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Schweiß- und Richtarbeiten</p>"
           }
         }
       },
@@ -117,10 +117,10 @@
         "heading_weight": "700",
         "subtext": "",
         "show_image": false,
-        "main_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
+        "main_image": "shopify://shop_images/shutterstock_262821758.jpg",
         "image_radius": 12,
         "image_position": "left",
-        "left_heading_html": "<p><strong>Zusätzliche Informationen</strong></p>",
+        "left_heading_html": "<p><strong>Ausfälle vermeiden - Leistung sichern!</strong></p>",
         "left_heading_align": "right",
         "left_heading_italic": false,
         "left_heading_weight": "700",
@@ -132,7 +132,7 @@
         "points_bg": "#ffffff",
         "points_border": "#e5e8ee",
         "points_btn_label": "Jetzt anfragen",
-        "points_btn_url": "",
+        "points_btn_url": "shopify://pages/industrieservice-kontakt",
         "points_btn_align": "left",
         "fallback_bullet_color": "#2b6cb0"
       }
