@@ -24,7 +24,7 @@
         "back_text_color": "#374151",
         "back_hover_color": "#4ade80",
         "back_font_size": 16,
-        "logo": "shopify://shop_images/logo_Industrieservice_exact_v2.png",
+        "logo": "shopify://shop_images/2025-SIS.png",
         "logo_text": "Mein Shop",
         "logo_color": "#1e40af",
         "logo_font_size": 24,
@@ -54,11 +54,11 @@
       "type": "hero-building-section",
       "name": "Hero Building",
       "settings": {
-        "background_image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
+        "background_image": "shopify://shop_images/shutterstock_93443800.jpg",
         "enable_overlay": true,
         "overlay_color": "#000000",
         "overlay_opacity": 0.5,
-        "heading": "Fluidmanagement & Wartung",
+        "heading": "Wartung und Instandhaltung",
         "subheading": "",
         "button_label": "Jetzt Angebot anfordern",
         "button_link": "",
@@ -137,6 +137,64 @@
         "fallback_bullet_color": "#2b6cb0"
       }
     },
+    "about_section_v3_tHWGk6": {
+      "type": "about-section-v3",
+      "blocks": {
+        "feature_zyh4Kd": {
+          "type": "feature",
+          "name": "Feature Punkt - Zuverlässigkeit",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Zuverlässigkeit",
+            "feature_description": "fehlerfreie Funktion sicherstellen"
+          }
+        },
+        "feature_6P4nze": {
+          "type": "feature",
+          "name": "Feature Punkt - Ausfallzeiten",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Ausfallzeiten minimieren",
+            "feature_description": "wirtschaftliche Schäden reduzieren"
+          }
+        }
+      },
+      "block_order": [
+        "feature_zyh4Kd",
+        "feature_6P4nze"
+      ],
+      "name": "Über Uns (Layout) – v3",
+      "settings": {
+        "image_position": "right",
+        "image_vertical_align": "center",
+        "show_image": true,
+        "background_color": "#FFFFFF",
+        "section_padding_top": 80,
+        "section_padding_bottom": 80,
+        "title": "",
+        "title_richtext": "<p><strong>Wartung und Instandhaltung</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<p>Maschinen, Gebäudetechnik und Produktionsanlagen sind langlebige Investitionsgüter mit oft hohen Anschaffungskosten. Dadurch ist das <strong>Erhalten, Reparieren </strong>sowie <strong>Überholen </strong>der Geräte und Anlagen von großer betriebswirtschaftlicher Bedeutung.</p><p>Regelmäßige Wartung stellt sicher, dass einmal angeschaffte Geräte über die geplante Lebensdauer und ggf. darüber hinaus, zuverlässig arbeiten und fehlerfrei funktionieren. Sie trägt dazu bei, Ausfälle zu vermeiden und wirtschaftliche Schäden zu reduzieren. Der routinemäßige Austausch von Verschleißteilen hält die Reparaturkosten niedrig und erhöht gleichzeitig die Gesamtverfügbarkeit der Anlage. Auch für die Betriebs- und Verkehrssicherheit der Maschinen ist eine vorausschauende Wartung zwingend notwendig. </p>",
+        "text_color": "#6B7280",
+        "text_font_size": 18,
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "auto",
+        "features_per_row": "2",
+        "icon_size": 34,
+        "icon_color": "#34D399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "left"
+      }
+    },
     "about_section_v2_g4aEdG": {
       "type": "about-section-v2",
       "blocks": {
@@ -198,7 +256,7 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Maschinen, Gebäudetechnik und Produktionsanlagen sind langlebige Investitionsgüter mit oft hohen Anschaffungskosten. Dadurch ist das Erhalten, Reparieren sowie Überholen der Geräte und Anlagen von großer betriebswirtschaftlicher Bedeutung.</p><p>Regelmäßige Wartung stellt sicher, dass einmal angeschaffte Geräte über die geplante Lebensdauer und ggf. darüber hinaus, zuverlässig arbeiten und fehlerfrei funktionieren. Sie trägt dazu bei, Ausfälle zu vermeiden und wirtschaftliche Schäden zu reduzieren. Der routinemäßige Austausch von Verschleißteilen hält die Reparaturkosten niedrig und erhöht gleichzeitig die Gesamtverfügbarkeit der Anlage. Auch für die Betriebs- und Verkehrssicherheit der Maschinen ist eine vorausschauende Wartung zwingend notwendig.</p><p></p><p>Unser Service für Sie:</p><p>* Leistung, Ausführungszeitraum und Turnus bzgl.  Inspektionen und Wartung basieren auf Ihren Angaben (z.B. anhand des Maschinenbezogenen Wartungsheftes)</p><p><br/>* Die Abrechnung der Leistungen erfolgt meist im Stundensatz, nach belegtem und von Ihnen genehmigtem Aufwand<br/><br/>* Voraussetzung für eine ordnungsgemäße Inspektion und Wartung der Maschinen ist eine Einweisung / Unterweisung unseres Fachpersonals durch die Ihre jeweilige Fachabteilung.</p>",
+        "description": "<p></p><p></p><p>Unser Service für Sie:</p><p>* Leistung, Ausführungszeitraum und Turnus bzgl.  Inspektionen und Wartung basieren auf Ihren Angaben (z.B. anhand des Maschinenbezogenen Wartungsheftes)</p><p><br/>* Die Abrechnung der Leistungen erfolgt meist im Stundensatz, nach belegtem und von Ihnen genehmigtem Aufwand<br/><br/>* Voraussetzung für eine ordnungsgemäße Inspektion und Wartung der Maschinen ist eine Einweisung / Unterweisung unseres Fachpersonals durch die Ihre jeweilige Fachabteilung.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_370492946.jpg",
@@ -561,6 +619,7 @@
     "main",
     "hero_building_section_xFPFdb",
     "leistung_showcase_WBCjDx",
+    "about_section_v3_tHWGk6",
     "about_section_v2_g4aEdG",
     "video_Cg8Ar8",
     "custom_cta_block_Y6hmWD",
