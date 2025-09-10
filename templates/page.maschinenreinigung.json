@@ -218,33 +218,14 @@
         "padding_bottom": 0
       }
     },
-    "custom_cta_block_Y6hmWD": {
+    "custom_cta_block_CeErgt": {
       "type": "custom-cta-block",
       "blocks": {
-        "button_LM9n93": {
+        "button_BUwrL7": {
           "type": "button",
           "settings": {
             "label": "<p>Kostenlose Beratung</p>",
-            "link": "",
-            "variant": "solid",
-            "text_color": "#ffffff",
-            "bg_color": "#0b132a",
-            "border_color": "#0b132a",
-            "hover_bg": "#111827",
-            "hover_text": "#ffffff",
-            "radius": 12,
-            "padding_x": 24,
-            "padding_y": 14,
-            "bold": true,
-            "offset_x": 0,
-            "offset_y": 0
-          }
-        },
-        "button_hfEK7p": {
-          "type": "button",
-          "settings": {
-            "label": "<p>Kostenlose Beratung</p>",
-            "link": "",
+            "link": "shopify://pages/industrieservice-kontakt",
             "variant": "solid",
             "text_color": "#ffffff",
             "bg_color": "#0b132a",
@@ -261,13 +242,12 @@
         }
       },
       "block_order": [
-        "button_LM9n93",
-        "button_hfEK7p"
+        "button_BUwrL7"
       ],
-      "name": "Custom CTA Block",
+      "name": "Custom CTA Block - prof. Service",
       "settings": {
-        "heading": "<p><strong>Bereit für professionellen Gebäudeservice?</strong></p>",
-        "heading_size": 40,
+        "heading": "<p><strong>Bereit für professionellen Service?</strong></p>",
+        "heading_size": 36,
         "heading_bold": true,
         "heading_color": "#0f172a",
         "heading_font": "inherit",
@@ -554,7 +534,7 @@
     "leistung_showcase_wAGpyg",
     "about_section_v2_9MW9QW",
     "video_Cg8Ar8",
-    "custom_cta_block_Y6hmWD",
+    "custom_cta_block_CeErgt",
     "sis_single_footer_N4n9t3",
     "sis_footer_neu_6MxmJM",
     "sis_footer_neu_J6mcDE"
