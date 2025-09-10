@@ -240,7 +240,7 @@
         "grid_gap": 20,
         "show_cta": true,
         "cta_label": "Mehr erfahren",
-        "cta_link": "shopify://pages/glas-und-lamellenreinigung",
+        "cta_link": "",
         "button_style": "primary"
       }
     },
@@ -298,6 +298,7 @@
         "item_4FnnFt",
         "item_hGAYEB"
       ],
+      "disabled": true,
       "name": "Qualitäten Hotspot",
       "settings": {
         "heading": "Qualitäten Hotspot",
