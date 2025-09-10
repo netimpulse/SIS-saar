@@ -17,7 +17,7 @@
         "padding_bottom": 28
       }
     },
-    "sticky_header_qndHEr": {
+    "sticky_header_C8dLgH": {
       "type": "sticky-header",
       "name": "Sticky header",
       "settings": {
@@ -32,7 +32,7 @@
         "back_text_color": "#374151",
         "back_hover_color": "#4ade80",
         "back_font_size": 16,
-        "logo": "shopify://shop_images/logo_Industrieservice_exact_v2.png",
+        "logo": "shopify://shop_images/2025-SIS.png",
         "logo_text": "Mein Shop",
         "logo_color": "#1e40af",
         "logo_font_size": 24,
@@ -57,24 +57,25 @@
           "type": "info_card",
           "settings": {
             "title": "Adresse",
-            "text": "<p>Straße 1<br>12345 Stadt</p>",
-            "icon": "map"
+            "text": "<p>SIS Saar - Industrie - Service GmbH<br/>Vorderster Berg 13<br/>D- 66333 Völklingen</p>",
+            "icon": "map",
+            "icon_image": "shopify://shop_images/office-location-icon-design-in-black-color-vector-removebg-preview.png"
           }
         },
         "info_card_mHfAYw": {
           "type": "info_card",
           "settings": {
-            "title": "Adresse",
-            "text": "<p>Straße 1<br>12345 Stadt</p>",
-            "icon": "map"
+            "title": "E-Mail",
+            "text": "<p><a href=\"mailto:bewerbung@sissaar.de\" title=\"mailto:bewerbung@sissaar.de\">bewerbung@sissaar.de</a></p>",
+            "icon": "mail"
           }
         },
         "info_card_nMCHqU": {
           "type": "info_card",
           "settings": {
-            "title": "Adresse",
-            "text": "<p>Straße 1<br>12345 Stadt</p>",
-            "icon": "map"
+            "title": "Telefon",
+            "text": "<p><a href=\"tel:%20+49%206898%2016%2090%20900\" title=\"tel:%20+49%206898%2016%2090%20900\">(+49) (0) 6898 16 90 900</a></p>",
+            "icon": "phone"
           }
         },
         "info_card_hwFe4w": {
@@ -92,7 +93,7 @@
         "info_card_nMCHqU",
         "info_card_hwFe4w"
       ],
-      "name": "Kontaktbereich mit Formular",
+      "name": "Kontaktbereich mit Formular- SIS Bewerbung",
       "settings": {
         "left_title": "Kontaktinformationen",
         "right_title": "Nachricht senden",
@@ -231,7 +232,7 @@
   },
   "order": [
     "main",
-    "sticky_header_qndHEr",
+    "sticky_header_C8dLgH",
     "contact_info_form_dVeyFV",
     "sis_footer_neu_W3U6Pb"
   ]
