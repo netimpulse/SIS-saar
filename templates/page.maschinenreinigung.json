@@ -193,19 +193,120 @@
         "no_image_text_align": "left"
       }
     },
-    "video_Cg8Ar8": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
+    "about_section_v3_xGiwpV": {
+      "type": "about-section-v3",
+      "blocks": {
+        "feature_wNwJEJ": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung"
+          }
+        },
+        "feature_4XLfXA": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung"
+          }
+        }
+      },
+      "block_order": [
+        "feature_wNwJEJ",
+        "feature_4XLfXA"
+      ],
+      "name": "Über Uns (Layout) – v3",
       "settings": {
-        "heading": "",
+        "image_position": "right",
+        "image_vertical_align": "center",
+        "show_image": true,
+        "background_color": "#FFFFFF",
+        "section_padding_top": 80,
+        "section_padding_bottom": 80,
+        "title": "Über uns",
+        "title_richtext": "<p><strong>Über uns</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "Unsere Mission",
+        "subtitle_richtext": "<p>Unsere Mission</p>",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<p>Wir sind SIS Saar – ein innovatives Unternehmen …</p>",
+        "text_color": "#6B7280",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/shutterstock_410354008.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "4/3",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34D399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "left"
+      }
+    },
+    "multirow_gcX3ch": {
+      "type": "multirow",
+      "blocks": {
+        "row_GRnRiK": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_262821758.jpg",
+            "caption": "Bildtext",
+            "heading": "Reihe",
+            "text": "<p>Kombiniere Text mit einem Bild, um den Fokus auf dein Produkt, deine Kollektion oder deinen Blog-Beitrag zu richten. Du kannst außerdem weitere Details über die Verfügbarkeit oder den Stil und sogar eine Bewertung hinzufügen.</p>",
+            "button_label": "Schaltflächenbeschriftung",
+            "button_link": ""
+          }
+        },
+        "row_DFiREP": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_726781549.jpg",
+            "caption": "Bildtext",
+            "heading": "Reihe",
+            "text": "<p>Kombiniere Text mit einem Bild, um den Fokus auf dein Produkt, deine Kollektion oder deinen Blog-Beitrag zu richten. Du kannst außerdem weitere Details über die Verfügbarkeit oder den Stil und sogar eine Bewertung hinzufügen.</p>",
+            "button_label": "Schaltflächenbeschriftung",
+            "button_link": ""
+          }
+        },
+        "row_UADn3W": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_328419737.jpg",
+            "caption": "Bildtext",
+            "heading": "Reihe",
+            "text": "<p>Kombiniere Text mit einem Bild, um den Fokus auf dein Produkt, deine Kollektion oder deinen Blog-Beitrag zu richten. Du kannst außerdem weitere Details über die Verfügbarkeit oder den Stil und sogar eine Bewertung hinzufügen.</p>",
+            "button_label": "Schaltflächenbeschriftung",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_GRnRiK",
+        "row_DFiREP",
+        "row_UADn3W"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
         "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "custom_cta_block_CeErgt": {
@@ -523,7 +624,8 @@
     "hero_building_section_xFPFdb",
     "leistung_showcase_wAGpyg",
     "about_section_v3_zmQLa4",
-    "video_Cg8Ar8",
+    "about_section_v3_xGiwpV",
+    "multirow_gcX3ch",
     "custom_cta_block_CeErgt",
     "sis_single_footer_N4n9t3",
     "sis_footer_neu_6MxmJM",
