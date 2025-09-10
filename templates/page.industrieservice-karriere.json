@@ -183,75 +183,6 @@
         "buttons_gap": 16
       }
     },
-    "contact_info_form_tDCB9a": {
-      "type": "contact-info-form",
-      "blocks": {
-        "info_card_439VGq": {
-          "type": "info_card",
-          "settings": {
-            "title": "Adresse",
-            "text": "<p>Straße 1<br/>12345 Stadt</p>",
-            "icon": "phone"
-          }
-        },
-        "info_card_9w9nwN": {
-          "type": "info_card",
-          "settings": {
-            "title": "Adresse",
-            "text": "<p>Straße 1<br/>12345 Stadt</p>",
-            "icon": "mail"
-          }
-        },
-        "info_card_bk9kRr": {
-          "type": "info_card",
-          "settings": {
-            "title": "Adresse",
-            "text": "<p>Straße 1<br/>12345 Stadt</p>",
-            "icon": "clock"
-          }
-        },
-        "extra_field_RFGyKA": {
-          "type": "extra_field",
-          "settings": {
-            "field_label": "Dienstleistung*",
-            "field_type": "select",
-            "options": "Gebäudeservice, Industrieservice, beides",
-            "placeholder": "Platzhalter",
-            "required": true,
-            "full_width": true
-          }
-        }
-      },
-      "block_order": [
-        "info_card_439VGq",
-        "info_card_9w9nwN",
-        "info_card_bk9kRr",
-        "extra_field_RFGyKA"
-      ],
-      "name": "Kontaktbereich mit Formular - Bewerbung",
-      "settings": {
-        "left_title": "Kontaktinformationen",
-        "right_title": "Nachricht senden",
-        "label_firstname": "Vorname *",
-        "ph_firstname": "Ihr Vorname",
-        "label_lastname": "Nachname *",
-        "ph_lastname": "Ihr Nachname",
-        "label_email": "E-Mail *",
-        "ph_email": "ihre.email@beispiel.de",
-        "label_phone": "Telefon",
-        "ph_phone": "Ihre Telefonnummer",
-        "label_company": "Unternehmen",
-        "ph_company": "Ihr Unternehmen",
-        "label_subject": "Betreff *",
-        "ph_subject": "Worum geht es?",
-        "label_message": "Nachricht *",
-        "ph_message": "Beschreiben Sie Ihr Anliegen...",
-        "consent_text": "<p>Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zu.</p>",
-        "consent_label": "Datenschutz zugestimmt",
-        "button_label": "Nachricht senden",
-        "success_text": "Danke für Ihre Nachricht! Wir melden uns bald."
-      }
-    },
     "sis_single_footer_DNrhdy": {
       "type": "sis-single-footer",
       "blocks": {
@@ -578,7 +509,6 @@
     "main",
     "karriere_kacheln_nJHMAj",
     "custom_cta_block_YtgYiU",
-    "contact_info_form_tDCB9a",
     "sis_single_footer_DNrhdy",
     "team_RkTwC6",
     "sis_footer_neu_md8EiT",

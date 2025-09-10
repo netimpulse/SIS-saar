@@ -198,32 +198,33 @@
           "type": "info_card",
           "settings": {
             "title": "Adresse",
-            "text": "<p>Straße 1<br>12345 Stadt</p>",
-            "icon": "map"
+            "text": "<p>Vorderster Berg 13<br/>D-66333 Völklingen</p>",
+            "icon": "map",
+            "icon_image": "shopify://shop_images/office-location-icon-design-in-black-color-vector-removebg-preview.png"
           }
         },
         "info_card_7H4cnx": {
           "type": "info_card",
           "settings": {
-            "title": "Adresse",
-            "text": "<p>Straße 1<br>12345 Stadt</p>",
-            "icon": "map"
+            "title": "E-Mail",
+            "text": "<p>info@sissaar.de</p>",
+            "icon": "mail"
           }
         },
         "info_card_XyeyNk": {
           "type": "info_card",
           "settings": {
-            "title": "Adresse",
-            "text": "<p>Straße 1<br>12345 Stadt</p>",
-            "icon": "map"
+            "title": "Telefon",
+            "text": "<p>06898 16 90 900</p>",
+            "icon": "phone"
           }
         },
         "info_card_tfrF9i": {
           "type": "info_card",
           "settings": {
-            "title": "Adresse",
-            "text": "<p>Straße 1<br>12345 Stadt</p>",
-            "icon": "map"
+            "title": "Öffnungszeiten",
+            "text": "<p>Mo - Fr. 08.00-16.00 Uhr<br/>und nach Vereinbarung</p>",
+            "icon": "clock"
           }
         }
       },
