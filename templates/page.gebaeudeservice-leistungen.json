@@ -200,11 +200,11 @@
         },
         "service_YhK7Yn": {
           "type": "service",
-          "name": "Leistung Suche Block - Hausmeistertätigkeiten",
+          "name": "Leistung Suche Block - Sonderreinigung",
           "settings": {
-            "image": "shopify://shop_images/iStock-613749706.jpg",
+            "image": "shopify://shop_images/shutterstock_181375295.jpg",
             "title_html": "<p>Sonderreinigung</p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "text_html": "<p>Wir b</p>",
             "keywords": "tag",
             "button_label": "Mehr erfahren",
             "button_link": ""

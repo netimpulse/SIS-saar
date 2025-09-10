@@ -46,7 +46,7 @@
       "type": "hero-building-section",
       "name": "Hero Building",
       "settings": {
-        "background_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_00_15_46_cleanup.png",
+        "background_image": "shopify://shop_images/shutterstock_558063712.jpg",
         "enable_overlay": true,
         "overlay_color": "#000000",
         "overlay_opacity": 0.5,
@@ -296,6 +296,7 @@
     },
     "text_mit_bild_button_QNXFL4": {
       "type": "text-mit-bild-button",
+      "disabled": true,
       "name": "Text mit Bild",
       "settings": {
         "image_position": "left",
@@ -327,6 +328,7 @@
     },
     "video_ajPc6F": {
       "type": "video",
+      "disabled": true,
       "name": "t:sections.video.presets.name",
       "settings": {
         "heading": "Video",
