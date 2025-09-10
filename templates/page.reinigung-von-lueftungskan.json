@@ -479,10 +479,10 @@
         "feature_title_color": "#111827"
       }
     },
-    "custom_cta_block_Y6hmWD": {
+    "custom_cta_block_7jDMtP": {
       "type": "custom-cta-block",
       "blocks": {
-        "button_LM9n93": {
+        "button_NBcHYf": {
           "type": "button",
           "settings": {
             "label": "<p>Kostenlose Beratung</p>",
@@ -500,36 +500,15 @@
             "offset_x": 0,
             "offset_y": 0
           }
-        },
-        "button_hfEK7p": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "label": "<p>Kostenlose Beratung</p>",
-            "link": "",
-            "variant": "solid",
-            "text_color": "#ffffff",
-            "bg_color": "#0b132a",
-            "border_color": "#0b132a",
-            "hover_bg": "#111827",
-            "hover_text": "#ffffff",
-            "radius": 12,
-            "padding_x": 24,
-            "padding_y": 14,
-            "bold": true,
-            "offset_x": 0,
-            "offset_y": 0
-          }
         }
       },
       "block_order": [
-        "button_LM9n93",
-        "button_hfEK7p"
+        "button_NBcHYf"
       ],
-      "name": "Custom CTA Block",
+      "name": "Custom CTA Block - prof. Service",
       "settings": {
-        "heading": "<p><strong>Bereit für professionellen Gebäudeservice?</strong></p>",
-        "heading_size": 40,
+        "heading": "<p><strong>Bereit für professionellen Service?</strong></p>",
+        "heading_size": 36,
         "heading_bold": true,
         "heading_color": "#0f172a",
         "heading_font": "inherit",
@@ -821,7 +800,7 @@
     "about_section_v2_zD7QHa",
     "about_experience_fUL8PE",
     "about_section_v2_t3ejyA",
-    "custom_cta_block_Y6hmWD",
+    "custom_cta_block_7jDMtP",
     "sis_single_footer_N4n9t3",
     "sis_footer_neu_mb4tRz",
     "sis_footer_neu_zJrWFj"
