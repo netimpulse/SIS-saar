@@ -61,7 +61,7 @@
         "heading": "Bauschlussreinigung",
         "subheading": "",
         "button_label": "Jetzt Angebot anfordern",
-        "button_link": "",
+        "button_link": "shopify://pages/gebaudeservice-kontakt",
         "button_color": "#007acc",
         "button_text_color": "#ffffff",
         "button_radius": 4,
@@ -137,59 +137,16 @@
         "fallback_bullet_color": "#2b6cb0"
       }
     },
-    "about_section_v2_JerFAY": {
-      "type": "about-section-v2",
-      "blocks": {
-        "feature_VCVnfh": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        },
-        "feature_TktWtN": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        },
-        "feature_UajWrq": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        },
-        "feature_ddNiAQ": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        }
-      },
-      "block_order": [
-        "feature_VCVnfh",
-        "feature_TktWtN",
-        "feature_UajWrq",
-        "feature_ddNiAQ"
-      ],
-      "name": "Über Uns (Layout) – Neu",
+    "about_section_v3_jCYigt": {
+      "type": "about-section-v3",
+      "name": "Über Uns (Layout) – v3",
       "settings": {
-        "layout_direction": "text_left",
+        "image_position": "right",
+        "image_vertical_align": "center",
         "show_image": true,
-        "background_color": "#ffffff",
-        "section_padding_top": 80,
-        "section_padding_bottom": 80,
+        "background_color": "#FFFFFF",
+        "section_padding_top": 25,
+        "section_padding_bottom": 25,
         "title": "",
         "title_richtext": "",
         "title_color": "#111827",
@@ -198,7 +155,71 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Sind die Handwerker mit ihren Arbeiten im Neu- oder Umbau fertig, beginnt unser Job.</p><p>Zu unserem Repertoire gehören sowohl die baubegleitende Reinigung als auch die Reinigung nach Abschluss der Baumaßnahmen.</p><p>Um ihren neuen Räumen nach den Bauarbeiten das gewünschte Aussehen zu verleihen, bieten wir alle Reinigungsarbeiten von der Glasreinigung bis zur Bodenbeschichtung.</p>",
+        "description": "<p>Auf jeder Baustelle herrscht Bewegung: Handwerker, Materialien, Maschinen – und damit auch jede Menge Schmutz, Staub und Rückstände. Ob Rohbau, Innenausbau oder der letzte Feinschliff vor der Übergabe – die baubegleitende und die Bauschlussreinigung sorgen dafür, dass am Ende nicht nur alles fertig, sondern auch wirklich bezugsbereit ist.</p>",
+        "text_color": "#6B7280",
+        "text_font_size": 18,
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "4/3",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34D399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "left"
+      }
+    },
+    "about_section_v3_F8BxLh": {
+      "type": "about-section-v3",
+      "name": "Über Uns (Layout) – v3",
+      "settings": {
+        "image_position": "right",
+        "image_vertical_align": "center",
+        "show_image": false,
+        "background_color": "#FFFFFF",
+        "section_padding_top": 25,
+        "section_padding_bottom": 25,
+        "title": "",
+        "title_richtext": "",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<p><strong>Baubegleitende Reinigung – was ist das?</strong><br/>Bereits während der Bauphase sorgen wir für regelmäßige Grobreinigungen. Ziel ist es, den Baufortschritt nicht zu behindern,  ondern zu erleichtern: Beseitigung von Bauschutt, Verpackungsmaterial, Staub</p><ul><li>Reinigung von Verkehrswegen und Arbeitsflächen</li><li>Sichtkontrolle für Bauleitung und Fachgewerke</li><li>Entsorgung nach Absprache</li></ul><p><strong>Bauschlussreinigung – der letzte Schliff vor dem Einzug</strong><br/>Nach der Fertigstellung des Bauprojekts folgt die gründliche Reinigung aller Oberflächen – mit dem Ziel, das Objekt in einem sauberen, präsentierbaren Zustand zu übergeben. Dazu gehören:</p><ul><li>Entfernung von Mörtelresten, Kleber, Farb- und Lackspritzern</li><li>Reinigung von Fenstern (inkl. Rahmen, Falzen und ggf. Schutzfolien)</li><li>Feuchtreinigung aller Böden, Türen, Zargen, Steckdosen, Heizkörper</li><li>Sanitär- und Küchenbereiche hygienisch aufbereiten</li><li>Staubfreie Übergabe inklusive Sichtprüfung</li></ul>",
+        "text_color": "#6B7280",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/shutterstock_210387985.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "4/3",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34D399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "left"
+      }
+    },
+    "about_section_v2_JerFAY": {
+      "type": "about-section-v2",
+      "name": "Über Uns (Layout) – Neu",
+      "settings": {
+        "layout_direction": "text_left",
+        "show_image": true,
+        "background_color": "#ffffff",
+        "section_padding_top": 25,
+        "section_padding_bottom": 25,
+        "title": "",
+        "title_richtext": "",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<p><strong>Warum ist das fachlich anspruchsvoll?</strong><br/>Weil man hier mit unterschiedlichsten Materialien und Verschmutzungen zu tun hat – oft auf empfindlichen Oberflächen. Acrylwannen, Edelstahl, lackierte Türen, Natursteinböden: Wer da mit dem falschen Mittel oder Werkzeug rangeht, kann mehr kaputt- als sauber machen. Deshalb arbeiten wir mit abgestimmten Reinigungsverfahren – und mit Leuten, die wissen, was sie tun.</p><p><strong>Wann lohnt sich das?</strong></p><ul><li>Bei Neubauten, Sanierungen, Umbauten oder Modernisierungen</li><li>Für Bauträger, Projektentwickler, Architekturbüros, Hausverwaltungen</li><li>Vor Übergabe an Mieter, Käufer oder Nutzer</li></ul><p></p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_210387985.jpg",
@@ -210,6 +231,62 @@
         "icon_size": 32,
         "icon_color": "#34d399",
         "feature_title_color": "#111827"
+      }
+    },
+    "about_section_v3_eEkPxm": {
+      "type": "about-section-v3",
+      "blocks": {
+        "feature_ETkrAJ": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung"
+          }
+        },
+        "feature_F34TAd": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung"
+          }
+        }
+      },
+      "block_order": [
+        "feature_ETkrAJ",
+        "feature_F34TAd"
+      ],
+      "name": "Über Uns (Layout) – v3",
+      "settings": {
+        "image_position": "right",
+        "image_vertical_align": "center",
+        "show_image": true,
+        "background_color": "#FFFFFF",
+        "section_padding_top": 15,
+        "section_padding_bottom": 30,
+        "title": "",
+        "title_richtext": "",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<p><strong>Unser Anspruch:</strong><br/>Keine halben Sachen. Kein „schnell drüberwischen“. Sondern ein Ergebnis, das sich sehen lassen kann – ohne dass man erst selbst nachwischen muss.</p>",
+        "text_color": "#6B7280",
+        "text_font_size": 18,
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "4/3",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34D399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "left"
       }
     },
     "custom_cta_block_Y6hmWD": {
@@ -526,7 +603,10 @@
     "main",
     "hero_building_section_xFPFdb",
     "leistung_showcase_gJ8Pfp",
+    "about_section_v3_jCYigt",
+    "about_section_v3_F8BxLh",
     "about_section_v2_JerFAY",
+    "about_section_v3_eEkPxm",
     "custom_cta_block_Y6hmWD",
     "sis_single_footer_N4n9t3",
     "sis_footer_neu_PVPUpg",
