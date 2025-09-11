@@ -249,6 +249,7 @@
       "blocks": {
         "service_jayyw7": {
           "type": "service",
+          "name": "Leistung Block - Unterhaltsreinigung",
           "settings": {
             "image": "shopify://shop_images/shutterstock_368560784.jpg",
             "title_html": "<p>Unterhaltsreinigung</p>",
@@ -260,6 +261,7 @@
         },
         "service_eGxGaa": {
           "type": "service",
+          "name": "Leistung Block - Reinigung von Ferien- und Freizeitanlagen",
           "settings": {
             "image": "shopify://shop_images/shutterstock_657542155.jpg",
             "title_html": "<p><strong>Reinigung von Ferien- und Freizeitanlagen</strong></p>",
@@ -271,6 +273,7 @@
         },
         "service_Kcpy9r": {
           "type": "service",
+          "name": "Leistung Block - Glas-/ Rahmenreinigung",
           "settings": {
             "image": "shopify://shop_images/shutterstock_492241702.jpg",
             "title_html": "<p><strong>Glas-/ Rahmenreinigung</strong></p>",
@@ -282,6 +285,7 @@
         },
         "service_qx63Jr": {
           "type": "service",
+          "name": "Leistung Block - Desinfektion und Dampfreinigung",
           "settings": {
             "image": "shopify://shop_images/shutterstock_119988076.jpg",
             "title_html": "<p><strong>Desinfektion und Dampfreinigung</strong></p>",
@@ -293,6 +297,7 @@
         },
         "service_y7FP4T": {
           "type": "service",
+          "name": "Leistung Block - Baubegleitende und Bauschluss- Reinigung",
           "settings": {
             "image": "shopify://shop_images/iStock-160738327.jpg",
             "title_html": "<p><strong>Baubegleitende und Bauschluss- Reinigung</strong></p>",
@@ -304,6 +309,7 @@
         },
         "service_egXbER": {
           "type": "service",
+          "name": "Leistung Block - Teppichreinigung",
           "settings": {
             "image": "shopify://shop_images/shutterstock_373423378.jpg",
             "title_html": "<p><strong>Teppichreinigung</strong></p>",
@@ -315,6 +321,7 @@
         },
         "service_fVA8yg": {
           "type": "service",
+          "name": "Leistung Block - Grünschnittpflege und Gartenarbeiten",
           "settings": {
             "image": "shopify://shop_images/shutterstock_604150469.jpg",
             "title_html": "<p><strong>Grünschnittpflege und Gartenarbeiten</strong></p>",
@@ -326,6 +333,7 @@
         },
         "service_T4MQb3": {
           "type": "service",
+          "name": "Leistung Block - Beschichtung von Bodenbelägen",
           "settings": {
             "image": "shopify://shop_images/shutterstock_460822750.jpg",
             "title_html": "<p><strong>Beschichtung von Bodenbelägen</strong></p>",
@@ -337,6 +345,7 @@
         },
         "service_tmm6m3": {
           "type": "service",
+          "name": "Leistung Block - Tatortreinigung / Zellenreinigung",
           "settings": {
             "image": "shopify://shop_images/tatort-im-innenbereich-absperrband-ohne-erkennbaren-text.png",
             "title_html": "<p><strong>Tatortreinigung / Zellenreinigung</strong></p>",
@@ -348,6 +357,7 @@
         },
         "service_bkfAtb": {
           "type": "service",
+          "name": "Leistung Block - Hausmeistertätigkeiten",
           "settings": {
             "image": "shopify://shop_images/shutterstock_432654235.jpg",
             "title_html": "<p><strong>Hausmeistertätigkeiten</strong></p>",
@@ -359,6 +369,7 @@
         },
         "service_tDfWQ8": {
           "type": "service",
+          "name": "Leistung Block - Sonderreinigung",
           "settings": {
             "title_html": "<p>Sonderreinigung</p>",
             "text_html": "<p>Lassen Sie uns gemeinsam eine Lösung für Ihre Herausforderung finden.</p>",
