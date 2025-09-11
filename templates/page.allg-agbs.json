@@ -257,12 +257,69 @@
         "button_label": "Nachricht senden",
         "success_text": "Danke für Ihre Nachricht! Wir melden uns bald."
       }
+    },
+    "about_section_v3_X8bBYH": {
+      "type": "about-section-v3",
+      "blocks": {
+        "feature_zytzcj": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung"
+          }
+        },
+        "feature_kY7gHy": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung"
+          }
+        }
+      },
+      "block_order": [
+        "feature_zytzcj",
+        "feature_kY7gHy"
+      ],
+      "name": "Über Uns (Layout) – v3",
+      "settings": {
+        "image_position": "right",
+        "image_vertical_align": "center",
+        "show_image": true,
+        "background_color": "#FFFFFF",
+        "section_padding_top": 80,
+        "section_padding_bottom": 80,
+        "title": "",
+        "title_richtext": "<p><strong>Allgemeine Geschäftsbedingungen</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "Unsere Mission",
+        "subtitle_richtext": "<p>Unsere Mission</p>",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<p>Wir sind SIS Saar – ein innovatives Unternehmen …</p>",
+        "text_color": "#6B7280",
+        "text_font_size": 18,
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "4/3",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34D399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "left"
+      }
     }
   },
   "order": [
     "main",
     "sticky_header_n9khEP",
     "leistungen_button_Didgg8",
-    "contact_info_form_qe4FUR"
+    "contact_info_form_qe4FUR",
+    "about_section_v3_X8bBYH"
   ]
 }
