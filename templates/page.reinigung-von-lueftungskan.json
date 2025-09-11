@@ -124,7 +124,7 @@
         "left_heading_align": "right",
         "left_heading_italic": false,
         "left_heading_weight": "700",
-        "left_text": "<p>z.B. RLT-Zentralgeräte mit Rotationswärmetauscher, Küchenabluftanlagen nach VDI 2052, Reinraum-Luftsysteme mit HEPA-Filter, Hallenlüftung mit Ölabscheidung </p>",
+        "left_text": "",
         "bg_color": "#f6f8fb",
         "section_padding": 24,
         "points_title": "Unsere Dienstleistungen:",
@@ -312,100 +312,8 @@
         "no_image_text_align": "left"
       }
     },
-    "about_section_v2_aMzgy4": {
-      "type": "about-section-v2",
-      "name": "Warum - vorher nachher bilder",
-      "settings": {
-        "layout_direction": "text_left",
-        "show_image": false,
-        "background_color": "#ffffff",
-        "section_padding_top": 30,
-        "section_padding_bottom": 0,
-        "title": "Über uns",
-        "title_richtext": "<p><strong>Vorher - Nachher Bilder</strong></p>",
-        "title_color": "#111827",
-        "title_font_size": 32,
-        "subtitle": "",
-        "subtitle_richtext": "",
-        "subtitle_color": "#374151",
-        "subtitle_font_size": 20,
-        "description": "",
-        "text_color": "#6b7280",
-        "text_font_size": 18,
-        "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
-        "image_border_radius": 12,
-        "image_alt": "",
-        "image_max_width": 85,
-        "image_aspect_ratio": "auto",
-        "features_per_row": "2",
-        "icon_size": 32,
-        "icon_color": "#34d399",
-        "feature_title_color": "#111827"
-      }
-    },
     "slideshow_bMYEwg": {
       "type": "slideshow",
-      "blocks": {
-        "slide_XXx6m3": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/vN-rohr_qauali.png",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_JqPGD6": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Bild2.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_CMk6fd": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Bild2.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_XXx6m3",
-        "slide_JqPGD6",
-        "slide_CMk6fd"
-      ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
@@ -416,62 +324,6 @@
         "image_behavior": "none",
         "show_text_below": true,
         "accessibility_info": "Slideshow zu deiner Marke"
-      }
-    },
-    "about_section_v2_i8kGTR": {
-      "type": "about-section-v2",
-      "blocks": {
-        "feature_DwVV4J": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Mehr Sicherheit",
-            "feature_description": ""
-          }
-        },
-        "feature_EtNPGP": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "icon_image": "shopify://shop_images/Titelbild_Video.png",
-            "feature_title": "Weniger Risiko",
-            "feature_description": ""
-          }
-        }
-      },
-      "block_order": [
-        "feature_DwVV4J",
-        "feature_EtNPGP"
-      ],
-      "name": "Vorher-Nachher",
-      "settings": {
-        "layout_direction": "image_left",
-        "show_image": true,
-        "background_color": "#ffffff",
-        "section_padding_top": 30,
-        "section_padding_bottom": 20,
-        "title": "",
-        "title_richtext": "",
-        "title_color": "#111827",
-        "title_font_size": 32,
-        "subtitle": "",
-        "subtitle_richtext": "",
-        "subtitle_color": "#374151",
-        "subtitle_font_size": 20,
-        "description": "",
-        "text_color": "#6b7280",
-        "text_font_size": 18,
-        "image": "shopify://shop_images/vN-rohr_qauali.png",
-        "image_border_radius": 12,
-        "image_alt": "",
-        "image_max_width": 85,
-        "image_aspect_ratio": "auto",
-        "features_per_row": "2",
-        "icon_size": 32,
-        "icon_color": "#34d399",
-        "feature_title_color": "#111827"
       }
     },
     "about_experience_fUL8PE": {
@@ -693,14 +545,14 @@
         "section_padding_top": 20,
         "section_padding_bottom": 45,
         "title": "",
-        "title_richtext": "<p><strong>Branchen</strong></p>",
+        "title_richtext": "<p><strong>Beispiele für Branchen</strong></p>",
         "title_color": "#111827",
         "title_font_size": 32,
         "subtitle": "",
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<h3>🏭 <strong>Industrie und Produktion</strong></h3><ul><li>Dachluftzentrale für eine Produktionshalle mit Außenluftansaugung, Filterung, Heizung, Wärmerückgewinnung und Zuluftverteilung<br/></li><li>Ölnebelabsaugung in der CNC-Fertigung mit Abscheidung und Aktivkohlefilter<br/></li><li>Hallenlüftung mit automatischer Sommer-/Winter-Umschaltung und CO₂-Sensorik<br/></li></ul><h3>🧪 <strong>Reinraumtechnik / Pharmazie</strong></h3><ul><li>RLT-Anlage mit HEPA-Filtern (H13/H14), Laminar-Flow-Modulen und Druckstufenkonzept<br/></li><li>Zuluftaufbereitung für Reinraumklasse ISO 7<br/></li><li>Temperatur- und feuchtegeregelte Zuluft in Laborbereichen mit Sicherheitsschleusen<br/></li></ul><h3>🧍 <strong>Büro- und Verwaltungsgebäude</strong></h3><ul><li>Zentrale Klimaanlage mit Wärmerückgewinnung und Einzelraumregelung<br/></li><li>RLT-Gerät mit Kreuzstrom-Wärmetauscher, adiabater Befeuchtung und CO₂-Sensorsteuerung<br/></li></ul><h3>🏥 <strong>Gesundheitswesen</strong></h3><ul><li>Hygienelufttechnik nach DIN 1946-4 für OP-Räume<br/></li><li>Unterdruck-RLT-Anlage für Isolierstationen mit HEPA-Filtration der Abluft<br/></li><li>Zentrale Klimaanlage mit hygienischer Befeuchtung (z. B. Dampf-Luftbefeuchter)<br/></li></ul><h3>🍽️ <strong>Gewerbliche Küche / Gastronomie</strong></h3><ul><li>Küchenabluftanlage mit Flammschutzfiltern, Dachventilator und Brandschutzklappen<br/></li><li>Kombinierte Zu-/Abluftanlage mit Wärmerückgewinnung und Deckenhauben<br/></li></ul><h3>🚛 <strong>Lager / Logistik</strong></h3><ul><li>RLT-Anlage für Hochregallager mit Temperatur- und Feuchteregelung<br/></li><li>Frischluftsystem für Logistikzentren zur Vermeidung von Wärmestau<br/></li></ul><h3>🏫 <strong>Schulen / öffentliche Gebäude</strong></h3><ul><li>zentrale RLT-Anlagen mit CO₂-gesteuerter Zuluftregelung<br/></li><li>RLT-Geräte mit Wärmerückgewinnung und Filterstufen zur Pandemievorsorge<br/></li></ul>",
+        "description": "<h3>🏭 Industrie und Produktion</h3><h3>🧍 Büro- und Verwaltungsgebäude</h3><h3>🍽️ Gewerbliche Küche / Gastronomie</h3><h3>🚛 Lager / Logistik</h3><h3>🏫 Schulen / öffentliche Gebäude<br/></h3>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image_border_radius": 12,
@@ -1032,9 +884,7 @@
     "about_section_v2_dWieTW",
     "about_section_v3_TwMWej",
     "about_section_v3_FYy8t7",
-    "about_section_v2_aMzgy4",
     "slideshow_bMYEwg",
-    "about_section_v2_i8kGTR",
     "about_experience_fUL8PE",
     "about_section_v2_t3ejyA",
     "about_section_v3_QHjnVq",
