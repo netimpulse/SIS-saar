@@ -92,86 +92,101 @@
         "btn2_text_hover": "#238b84"
       }
     },
-    "about_experience_whcfYC": {
-      "type": "about-experience",
+    "erfahrungen_stats_HhECRf": {
+      "type": "erfahrungen-stats",
       "blocks": {
-        "badge_GrfDn7": {
+        "badge_7pDibM": {
           "type": "badge",
           "settings": {
             "badge_text": "200+ Kunden"
           }
         },
-        "badge_P7areN": {
+        "badge_6xgjbp": {
           "type": "badge",
           "settings": {
-            "badge_text": "50+ Mitarbeiter"
+            "badge_text": "150+ Beschäftigte"
           }
         },
-        "badge_DJCgBQ": {
+        "badge_NH3gC3": {
           "type": "badge",
           "settings": {
-            "badge_text": "15+ Jahre Erfahrung"
+            "badge_text": "20+ Jahre Erfahrung"
           }
         },
-        "stat_YMHHDL": {
+        "stat_miXk9k": {
           "type": "stat",
           "settings": {
             "emoji": "✅",
-            "title": "ISO 9001",
-            "subtitle": "Zertifizierte Qualität",
-            "aria_label": "1"
+            "title": "Regional verwurzelt – überregional stark",
+            "subtitle": "Wir stehen für saarländische Verlässlichkeit mit professionellem Anspruch.",
+            "featured": false,
+            "aria_label": "Wert/Stat-Karte"
           }
         },
-        "stat_gwJA6a": {
+        "stat_mGrKzR": {
           "type": "stat",
           "settings": {
             "emoji": "✅",
-            "title": "ISO 9001",
-            "subtitle": "Zertifizierte Qualität",
-            "aria_label": "1"
+            "title": "Qualität durch Leidenschaft",
+            "subtitle": "Sauberkeit ist für uns mehr als ein Ergebnis – es ist unser Anspruch an Perfektion.",
+            "featured": false,
+            "aria_label": "Wert/Stat-Karte"
           }
         },
-        "stat_UeadTy": {
+        "stat_wgQNkq": {
           "type": "stat",
           "settings": {
             "emoji": "✅",
-            "title": "24/7",
-            "subtitle": "Notfallservice",
-            "aria_label": "1"
+            "title": "Menschen im Mittelpunkt",
+            "subtitle": "Schulung, Sicherheit und Wertschätzung sind für uns selbstverständlich.",
+            "featured": false,
+            "aria_label": "Wert/Stat-Karte"
           }
         },
-        "stat_cPLhLk": {
+        "stat_TXjBd9": {
           "type": "stat",
           "settings": {
-            "emoji": "✅",
-            "title": "100%",
-            "subtitle": "Kundenzufriedenheit",
-            "aria_label": "1"
+            "emoji": "🌱",
+            "title": "Nachhaltigkeit im Blick",
+            "subtitle": "Moderne, ressourcenschonende Verfahren für gelebte Praxis.",
+            "featured": false,
+            "aria_label": "Wert/Stat-Karte"
+          }
+        },
+        "stat_3wGerr": {
+          "type": "stat",
+          "settings": {
+            "emoji": "🤝",
+            "title": "Partnerschaft auf Augenhöhe",
+            "subtitle": "Wir hören zu, verstehen Bedürfnisse und liefern Lösungen, die passen.",
+            "featured": false,
+            "aria_label": "Wert/Stat-Karte"
           }
         }
       },
       "block_order": [
-        "badge_GrfDn7",
-        "badge_P7areN",
-        "badge_DJCgBQ",
-        "stat_YMHHDL",
-        "stat_gwJA6a",
-        "stat_UeadTy",
-        "stat_cPLhLk"
+        "badge_7pDibM",
+        "badge_6xgjbp",
+        "badge_NH3gC3",
+        "stat_miXk9k",
+        "stat_mGrKzR",
+        "stat_wgQNkq",
+        "stat_TXjBd9",
+        "stat_3wGerr"
       ],
-      "name": "Über uns – Erfahrung/Stats",
+      "name": "Erfahrungen • Stats",
       "settings": {
         "kicker": "Über 15 Jahre Erfahrung",
-        "heading": "Das macht uns aus",
-        "richtext": "<p>Als familiengeführtes Unternehmen legen wir Wert auf persönlichen Service und langfristige Kundenbeziehungen. Unser Team von über 50 qualifizierten Mitarbeitern sorgt täglich dafür, dass mehr als 200 zufriedene Kunden auf unsere Zuverlässigkeit vertrauen können.</p>",
-        "btn_label": "button",
-        "btn_link": "shopify://pages/blogs-gebaudeservice",
+        "heading": "<p>Unsere Werte</p>",
+        "richtext": "<p>Als familiengeführtes Unternehmen legen wir Wert auf persönlichen Service und langfristige Kundenbeziehungen. Unser Team von über 50 qualifizierten Mitarbeitenden sorgt täglich dafür, dass mehr als 200 zufriedene Kund:innen auf unsere Zuverlässigkeit vertrauen.</p>",
+        "btn_label": "Mehr über uns",
+        "btn_link": "",
         "btn_newtab": false,
         "bg_color": "#ffffff",
-        "card_bg": "#ffffff",
+        "card_bg": "#FFFFFF",
         "card_radius": 16,
         "text_color": "#111111",
-        "accent_color": "#22c55e"
+        "accent_color": "#22C55E"
       }
     },
     "about_section_v2_m7ztz9": {
@@ -697,7 +712,7 @@
     "sticky_header_9YqbYf",
     "main",
     "hero_overlay_section_Rk9gNP",
-    "about_experience_whcfYC",
+    "erfahrungen_stats_HhECRf",
     "about_section_v2_m7ztz9",
     "highlights_icons_4mpBYK",
     "team_ijJATC",
