@@ -241,14 +241,14 @@
         },
         "service_EpQxNt": {
           "type": "service",
-          "name": "Leistung Suche Block - Oldtimer Restauration",
+          "name": "Leistung Suche Block - KSS-ManagementRestauration",
           "settings": {
             "image": "shopify://shop_images/shutterstock_375261961.jpg",
             "title_html": "<p>KSS-Management</p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
-            "button_link": ""
+            "button_link": "shopify://pages/sis-kss-management"
           }
         },
         "service_jrn8GJ": {
@@ -521,8 +521,8 @@
         "show_search": true,
         "search_placeholder": "Leistungen oder Keywords suchen…",
         "badge_style": "solid",
-        "keyword_badge_bg": "#E6F0FF",
-        "keyword_badge_color": "#0F1C3F",
+        "keyword_badge_bg": "#e6f0ff",
+        "keyword_badge_color": "#0f1c3f",
         "card_bg": "#ffffff",
         "card_radius": 18,
         "card_shadow": true,
