@@ -98,36 +98,50 @@
         "service_card_lf_qpwgEk": {
           "type": "service_card_lf",
           "settings": {
+            "image": "shopify://shop_images/shutterstock_549798139.jpg",
             "title": "Industrie- und Maschinenreinigung",
             "text": "Kurze Beschreibung hier.",
-            "link_url": "",
+            "link_url": "shopify://pages/maschinenreinigung",
             "link_label": "Mehr erfahren →"
           }
         },
         "service_card_lf_d9TixX": {
           "type": "service_card_lf",
           "settings": {
+            "image": "shopify://shop_images/shutterstock_93443800.jpg",
             "title": "Wartung und Instandhaltung",
             "text": "Kurze Beschreibung hier.",
-            "link_url": "",
+            "link_url": "shopify://pages/fluidmanagement-wartung",
             "link_label": "Mehr erfahren →"
           }
         },
         "service_card_lf_mKWnNR": {
           "type": "service_card_lf",
           "settings": {
+            "image": "shopify://shop_images/shutterstock_65689291.jpg",
             "title": "Strahlarbeiten",
             "text": "Kurze Beschreibung hier.",
-            "link_url": "",
+            "link_url": "shopify://pages/sis-stahlarbeiten",
             "link_label": "Mehr erfahren →"
           }
         },
         "service_card_lf_JYah6a": {
           "type": "service_card_lf",
           "settings": {
+            "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
             "title": "Reinigung von Zu-und Abluft in gew. Küchen",
             "text": "Kurze Beschreibung hier.",
-            "link_url": "",
+            "link_url": "shopify://pages/sis-kuchen-rlt",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_W6C8d4": {
+          "type": "service_card_lf",
+          "settings": {
+            "image": "shopify://shop_images/Trockeneis_AA_3.jpg",
+            "title": "Trockeneisreinigung",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "shopify://pages/trockeneisstrahlen",
             "link_label": "Mehr erfahren →"
           }
         }
@@ -136,7 +150,8 @@
         "service_card_lf_qpwgEk",
         "service_card_lf_d9TixX",
         "service_card_lf_mKWnNR",
-        "service_card_lf_JYah6a"
+        "service_card_lf_JYah6a",
+        "service_card_lf_W6C8d4"
       ],
       "name": "Leistung final",
       "settings": {
@@ -159,7 +174,7 @@
         "card_link_size": 14,
         "card_link_bold": true,
         "card_link_italic": false,
-        "bg_color": "#F3F6F9",
+        "bg_color": "#f3f6f9",
         "text_color": "#222222",
         "accent_color": "#ff6a00",
         "card_bg": "#ffffff",
@@ -181,7 +196,7 @@
         "button_padding_y": 10,
         "button_margin_top": 28,
         "button_margin_bottom": 0,
-        "button_bg": "#8B8E93",
+        "button_bg": "#8b8e93",
         "button_text": "#ffffff",
         "button_hover_bg": "#6f7276",
         "button_hover_text": "#ffffff"
