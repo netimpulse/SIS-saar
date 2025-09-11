@@ -53,7 +53,7 @@
         "heading": "Gebäudeservice Lösungen für Ihre Immobilie",
         "subheading": "Wir bieten erstklassige Reinigungs- und Facility Services für Unternehmen und Privatkunden.",
         "button_label": "Jetzt Angebot anfordern",
-        "button_link": "",
+        "button_link": "shopify://pages/gebaudeservice-kontakt",
         "button_color": "#007acc",
         "button_text_color": "#ffffff",
         "button_radius": 4,
@@ -81,7 +81,7 @@
         "service_card_lf_ngKVqM": {
           "type": "service_card_lf",
           "settings": {
-            "image": "shopify://shop_images/shutterstock_686341027_119a7489-a590-43e6-9961-72a0d914753c.jpg",
+            "image": "shopify://shop_images/shutterstock_368560784.jpg",
             "title": "Unterhaltsreinigung",
             "text": "für einen sauberen Auftritt Ihrer Geschäftsräume",
             "link_url": "shopify://pages/unterhaltsreinigung",
