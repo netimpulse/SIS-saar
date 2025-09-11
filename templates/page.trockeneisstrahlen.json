@@ -54,7 +54,7 @@
       "type": "hero-building-section",
       "name": "Hero Building",
       "settings": {
-        "background_image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
+        "background_image": "shopify://shop_images/Trockeneis_AA_3.jpg",
         "enable_overlay": true,
         "overlay_color": "#000000",
         "overlay_opacity": 0.5,
@@ -201,7 +201,7 @@
         "description": "<p>Wir sind SIS Saar - ein innovatives Unternehmen mit zwei spezialisierten Geschäftsbereichen. Seit über zwei Jahrzehnten stehen wir für zuverlässige und hochwertige Serviceleistungen in der Region.</p><p>Unser Erfolgsrezept liegt in der Kombination aus langjähriger Erfahrung, modernster Technik und einem motivierten Team von Fachkräften. Jeder Mitarbeiter trägt dazu bei, dass wir unseren Kunden stets erstklassige Lösungen anbieten können.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_370492946.jpg",
+        "image": "shopify://shop_images/shutterstock_731614684.jpg",
         "image_border_radius": 12,
         "image_alt": "",
         "image_max_width": 85,
@@ -212,19 +212,136 @@
         "feature_title_color": "#111827"
       }
     },
-    "video_Cg8Ar8": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
+    "about_section_v3_E4EJpt": {
+      "type": "about-section-v3",
+      "blocks": {
+        "feature_RirRa3": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung"
+          }
+        },
+        "feature_a6LNPn": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung"
+          }
+        }
+      },
+      "block_order": [
+        "feature_RirRa3",
+        "feature_a6LNPn"
+      ],
+      "name": "Über Uns (Layout) – v3",
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "image_position": "bottom",
+        "image_vertical_align": "center",
+        "show_image": true,
+        "background_color": "#FFFFFF",
+        "section_padding_top": 80,
+        "section_padding_bottom": 80,
+        "title": "Über uns",
+        "title_richtext": "<p><strong>Über uns</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "Unsere Mission",
+        "subtitle_richtext": "<p>Unsere Mission</p>",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<p>Wir sind SIS Saar – ein innovatives Unternehmen …</p>",
+        "text_color": "#6B7280",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/shutterstock_1050808721.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "4/3",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34D399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "left"
+      }
+    },
+    "about_section_v2_t6LUfa": {
+      "type": "about-section-v2",
+      "blocks": {
+        "feature_QTXzFG": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung des Features."
+          }
+        },
+        "feature_T8rFDh": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung des Features."
+          }
+        },
+        "feature_r3pyKm": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung des Features."
+          }
+        },
+        "feature_yYHbXN": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung des Features."
+          }
+        }
+      },
+      "block_order": [
+        "feature_QTXzFG",
+        "feature_T8rFDh",
+        "feature_r3pyKm",
+        "feature_yYHbXN"
+      ],
+      "name": "Über Uns (Layout) – Neu",
+      "settings": {
+        "layout_direction": "text_left",
+        "show_image": true,
+        "background_color": "#ffffff",
+        "section_padding_top": 80,
+        "section_padding_bottom": 80,
+        "title": "Über uns",
+        "title_richtext": "<p><strong>Über uns</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "Unsere Mission",
+        "subtitle_richtext": "<p>Unsere Mission</p>",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<p>Wir sind SIS Saar - ein innovatives Unternehmen mit zwei spezialisierten Geschäftsbereichen. Seit über zwei Jahrzehnten stehen wir für zuverlässige und hochwertige Serviceleistungen in der Region.</p><p>Unser Erfolgsrezept liegt in der Kombination aus langjähriger Erfahrung, modernster Technik und einem motivierten Team von Fachkräften. Jeder Mitarbeiter trägt dazu bei, dass wir unseren Kunden stets erstklassige Lösungen anbieten können.</p>",
+        "text_color": "#6b7280",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/shutterstock_254519980.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "auto",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827"
       }
     },
     "custom_cta_block_Y6hmWD": {
@@ -562,7 +679,8 @@
     "hero_building_section_xFPFdb",
     "leistung_showcase_pDxJq9",
     "about_section_v2_b8VKY4",
-    "video_Cg8Ar8",
+    "about_section_v3_E4EJpt",
+    "about_section_v2_t6LUfa",
     "custom_cta_block_Y6hmWD",
     "sis_single_footer_N4n9t3",
     "sis_footer_neu_JVQEXT",
