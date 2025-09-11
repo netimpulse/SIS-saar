@@ -84,8 +84,8 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_368560784.jpg",
             "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
-            "text_html": "<p>Büro und Gebäude</p>",
-            "keywords": "Reinigung, Unterhaltsreinigung",
+            "text_html": "<p>für einen sauberen Auftritt Ihrer Geschäftsräume</p>",
+            "keywords": "Büro, sauber",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/unterhaltsreinigung"
           }
@@ -97,7 +97,7 @@
             "image": "shopify://shop_images/shutterstock_657542155.jpg",
             "title_html": "<p><strong>Reinigung von </strong>Ferien- und Freizeitanlagen</p>",
             "text_html": "<p>Ferienparks, Campingplätze</p>",
-            "keywords": "Büro, täglich, flexibel",
+            "keywords": "camping, saison, flexibel",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/gs-ferienparks"
           }

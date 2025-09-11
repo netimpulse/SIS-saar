@@ -81,25 +81,25 @@
         "showcase_item_YKfnRj": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Ferienhaus</p>"
           }
         },
         "showcase_item_Ba6nGP": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Campingplatz</p>"
           }
         },
         "showcase_item_Gefp9i": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Freizeitpark</p>"
           }
         },
         "showcase_item_AwWV6R": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Gastro und Kiosk</p>"
           }
         }
       },
@@ -117,14 +117,13 @@
         "heading_weight": "700",
         "subtext": "",
         "show_image": false,
-        "main_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
         "image_radius": 12,
         "image_position": "left",
         "left_heading_html": "<p><strong>Ferienpark, Campingplätze, Anlagen</strong></p>",
         "left_heading_align": "right",
         "left_heading_italic": false,
         "left_heading_weight": "700",
-        "left_text": "<p>Wir reinigen Charlets und co.</p>",
+        "left_text": "<p>Wer Urlaub macht, möchte sich wohlfühlen – und das geht nur, wenn alles sauber ist. </p>",
         "bg_color": "#f6f8fb",
         "section_padding": 24,
         "points_title": "Unsere Dienstleistungen:",
@@ -137,58 +136,70 @@
         "fallback_bullet_color": "#2b6cb0"
       }
     },
+    "about_section_v3_bEeKqp": {
+      "type": "about-section-v3",
+      "name": "Über Uns (Layout) – v3",
+      "settings": {
+        "image_position": "right",
+        "image_vertical_align": "center",
+        "show_image": true,
+        "background_color": "#FFFFFF",
+        "section_padding_top": 45,
+        "section_padding_bottom": 45,
+        "title": "",
+        "title_richtext": "",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<p>Egal ob Ferienhaus, Campingplatz oder Freizeitpark: Die Anforderungen an Reinigung und Hygiene sind hoch, die Zeitfenster oft knapp. Genau hier kommen wir ins Spiel. Bei der Reinigung von Ferienanlagen zählt vor allem eines: Zuverlässigkeit. Der Wechsel der Gäste erfolgt oft in engen Takten. Wir arbeiten mit festen Abläufen, abgestimmten Teams und klaren Zuständigkeiten - ohne Zeit zu verlieren.</p>",
+        "text_color": "#6B7280",
+        "text_font_size": 18,
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "4/3",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34D399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "left"
+      }
+    },
     "about_section_v2_i4Pndt": {
       "type": "about-section-v2",
       "blocks": {
-        "feature_n66MM9": {
+        "feature_3nWFMm": {
           "type": "feature",
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
+            "feature_title": "Zuverlässigkeit",
+            "feature_description": "verlässlich, gründlich"
           }
         },
-        "feature_RdyYqC": {
+        "feature_CGHJRD": {
           "type": "feature",
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        },
-        "feature_tDgaPG": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        },
-        "feature_Crc6Lp": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
+            "feature_title": "Geschwindigkeit",
+            "feature_description": "schnell und effektiv"
           }
         }
       },
       "block_order": [
-        "feature_n66MM9",
-        "feature_RdyYqC",
-        "feature_tDgaPG",
-        "feature_Crc6Lp"
+        "feature_3nWFMm",
+        "feature_CGHJRD"
       ],
       "name": "Über Uns (Layout) – Neu - Unterhaltsreinigung",
       "settings": {
         "layout_direction": "text_left",
         "show_image": true,
         "background_color": "#ffffff",
-        "section_padding_top": 80,
+        "section_padding_top": 25,
         "section_padding_bottom": 80,
         "title": "",
         "title_richtext": "",
@@ -198,10 +209,10 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Wer Urlaub macht, möchte sich wohlfühlen – und das geht nur, wenn alles sauber ist. Egal ob Ferienhaus, Campingplatz oder<br/>Freizeitpark: Die Anforderungen an Reinigung und Hygiene sind hoch, die Zeitfenster oft knapp. Genau hier kommen wir ins Spiel.</p><p><strong>Worum geht’s konkret?</strong><br/><br/>Wir übernehmen die Reinigung von:</p><ul><li>Ferienhäusern, Bungalows, Mobilheimen</li><li>Sanitäranlagen auf Campingplätzen (Duschen, Toiletten, Waschräume)</li><li>Gemeinschaftsräumen und Empfangsbereichen</li><li>Außenbereichen wie Grillplätzen oder Spielanlagen</li><li>Gastro- oder Kioskflächen (nach Absprache)</li></ul><p><strong>Was ist wichtig dabei?</strong><br/><br/>Bei der Reinigung von Ferienanlagen zählt vor allem eines: Zuverlässigkeit. Der<br/>Wechsel der Gäste erfolgt oft in engen Takten – keine Zeit für Improvisation.<br/>Wir arbeiten mit festen Abläufen, abgestimmten Teams und klaren<br/>Zuständigkeiten.<br/><br/>Außerdem reinigen wir nicht nur oberflächlich, sondern achten auf Details: von der sauberen Türklinke bis zum entkalkten Wasserhahn.</p><p><strong>Fachlich auf den Punkt gebracht:</strong><br/>Gerade in stark frequentierten Bereichen wie Duschräumen oder Küchen gelten hohe Hygienestandards. Wir setzen passende Reinigungsmittel ein – desinfizierend, aber materialschonend – und nutzen Verfahren wie Dampfreinigung oder Einwirkzeiten, wo nötig. Unsere Mitarbeitenden kennen die Abläufe bei An- und Abreise und wissen, wie man effizient, aber gründlich arbeitet.</p><p><strong>Und wenn’s mal mehr sein muss?</strong><br/>In der Hochsaison stocken wir auf, bei Bedarf auch kurzfristig. Ob Wochenendreinigung, tägliche Zwischenreinigung oder Grundreinigung am<br/>Saisonende – wir richten uns nach Ihrem Betrieb und nicht umgekehrt.</p>",
+        "description": "<p>Gerade in stark frequentierten Bereichen wie Duschräumen oder Küchen gelten hohe Hygienestandards. Wir setzen passende Reinigungsmittel ein – desinfizierend, aber materialschonend – und nutzen Verfahren wie Dampfreinigung oder Einwirkzeiten, wo nötig. Unsere Mitarbeitenden kennen die Abläufe bei An- und Abreise und wissen, wie man effizient, aber gründlich arbeitet.</p><p><strong>Und wenn’s mal mehr sein muss?</strong><br/>In der Hochsaison stocken wir auf, bei Bedarf auch kurzfristig. Ob Wochenendreinigung, tägliche Zwischenreinigung oder Grundreinigung am Saisonende – wir richten uns gerne nach Ihrem Betrieb.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_752459383.jpg",
+        "image": "shopify://shop_images/shutterstock_728697067.jpg",
         "image_border_radius": 12,
         "image_alt": "",
         "image_max_width": 85,
@@ -210,22 +221,6 @@
         "icon_size": 32,
         "icon_color": "#34d399",
         "feature_title_color": "#111827"
-      }
-    },
-    "video_Cg8Ar8": {
-      "type": "video",
-      "disabled": true,
-      "name": "t:sections.video.presets.name",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "custom_cta_block_Y6hmWD": {
@@ -542,8 +537,8 @@
     "main",
     "hero_building_section_xFPFdb",
     "leistung_showcase_9Y9rK6",
+    "about_section_v3_bEeKqp",
     "about_section_v2_i4Pndt",
-    "video_Cg8Ar8",
     "custom_cta_block_Y6hmWD",
     "sis_single_footer_N4n9t3",
     "sis_footer_neu_tdeFj6",
