@@ -1,112 +1,145 @@
-/* Erfahrungen • Stats — Layout & Karten */
-.es-section {
-  --es-gap: clamp(18px, 3vw, 28px);
-  --es-pad: clamp(18px, 2.8vw, 28px);
-  --es-card-pad: clamp(16px, 2.6vw, 24px);
-  --es-radius: var(--es-card-br, 16px);
+/* Erfahrungen • Stats — ruhiges, luftiges Layout  */
+/* ------------------------------------------------ */
+
+.es-section{
+  --es-gap: clamp(22px, 3.2vw, 32px);
+  --es-pad: clamp(28px, 4vw, 64px);
+  --es-card-pad: clamp(18px, 2.4vw, 26px);
+  --es-radius: var(--es-card-br, 18px);
   --es-text: var(--es-text-color, #0b1b13);
-  --es-accent: var(--es-accent-color, #1aa34a);
+  --es-accent: var(--es-accent-color, #16a34a);
   --es-bg: var(--es-bg-color, #f5f7f6);
   --es-card-bg: var(--es-card-bg-color, #fff);
-  background: var(--es-bg);
+  background:
+    radial-gradient(1200px 400px at 15% -10%, rgba(22,163,74,.06), transparent 60%),
+    var(--es-bg);
   color: var(--es-text);
 }
 
-.es-container {
-  max-width: 1200px;
+.es-container{
+  max-width: 1250px;
   margin: 0 auto;
-  padding: var(--es-pad) clamp(16px, 4vw, 32px);
+  padding: var(--es-pad) clamp(16px, 4vw, 36px);
 }
 
-.es-grid {
+/* Zwei Spalten – linke Spalte flexibel, rechte angenehm fixiert */
+.es-grid{
   display: grid;
-  grid-template-columns: 1.05fr 1fr;
-  gap: var(--es-gap);
+  grid-template-columns: minmax(420px, 1fr) minmax(560px, 680px);
+  gap: clamp(28px, 5vw, 48px);
   align-items: start;
 }
 
-/* Typo */
-.es-kicker {
+/* Typo links */
+.es-kicker{
   font-size: clamp(12px, 1.4vw, 14px);
   letter-spacing: .08em;
   text-transform: uppercase;
-  opacity: .75;
-  margin: 0 0 10px;
+  opacity:.7;
+  margin: 0 0 12px;
 }
-.es-heading {
-  font-size: clamp(30px, 4.4vw, 46px);
-  line-height: 1.12;
+.es-heading{
+  font-size: clamp(32px, 4.6vw, 48px);
+  line-height: 1.1;
   margin: 0 0 14px;
+  letter-spacing: -0.01em;
 }
-.es-richtext {
-  font-size: clamp(15px, 1.6vw, 18px);
-  line-height: 1.65;
-  opacity: .95;
+.es-richtext{
+  font-size: clamp(16px, 1.6vw, 18px);
+  line-height: 1.7;
+  opacity:.95;
+  max-width: 58ch;
 }
 
 /* Badges */
-.es-badges { display:flex; flex-wrap:wrap; gap:10px; margin:16px 0 20px; }
-.es-badge {
+.es-badges{ display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 22px; }
+.es-badge{
   display:inline-flex; align-items:center; gap:8px;
   padding:8px 12px; border-radius:999px;
-  background: rgba(34,197,94,.12);
-  color:#16a34a; font-weight:700; font-size:13px;
+  background: rgba(22,163,74,.12);
+  color:#16a34a;
+  font-weight:700; font-size:13px;
 }
 
 /* Button */
 .es-btn{
   display:inline-flex; align-items:center; justify-content:center;
-  padding:12px 16px; border-radius:999px;
+  padding:12px 18px; border-radius:999px;
   background:var(--es-accent); color:#fff; text-decoration:none;
-  font-weight:700; box-shadow:0 8px 18px rgba(0,0,0,.06);
-  transition:transform .12s ease, box-shadow .12s ease;
+  font-weight:700; box-shadow:0 10px 22px rgba(0,0,0,.06);
+  transition: transform .14s ease, box-shadow .14s ease;
 }
-.es-btn:hover{ transform:translateY(-1px); }
+.es-btn:hover{ transform: translateY(-1px); box-shadow:0 14px 26px rgba(0,0,0,.08); }
 
-/* Karten */
+/* Karten-Grid — Desktop bewusst 2 Spalten für mehr Luft (wie im Screenshot) */
 .es-cards{
-  display:grid; gap:var(--es-gap);
+  display:grid;
+  gap: clamp(18px, 2.6vw, 26px);
   grid-template-columns: repeat(2, minmax(0,1fr));
 }
-@media (min-width:1260px){
-  .es-cards{ grid-template-columns: repeat(3, minmax(0,1fr)); }
-}
-.es-card{
-  display:grid; grid-template-columns:auto 1fr; gap:14px;
-  align-items:start; background:var(--es-card-bg);
-  border-radius:var(--es-radius); padding:var(--es-card-pad);
-  box-shadow:0 1px 0 rgba(0,0,0,.04), 0 8px 24px rgba(0,0,0,.05);
-  min-height:146px;
-}
-.es-card:hover{ box-shadow:0 1px 0 rgba(0,0,0,.04), 0 12px 28px rgba(0,0,0,.07); }
-.es-card--featured{ outline:2px solid rgba(34,197,94,.5); }
 
-/* Icon */
+/* Karten */
+.es-card{
+  display:grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  align-items:start;
+  background: var(--es-card-bg);
+  border-radius: var(--es-radius);
+  padding: var(--es-card-pad);
+  border: 1px solid rgba(16,24,18,.06);
+  box-shadow:
+    0 1px 0 rgba(0,0,0,.03),
+    0 10px 28px rgba(0,0,0,.05);
+  min-height: 170px;                 /* einheitliche Höhe */
+  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+}
+.es-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(0,0,0,.07);
+  border-color: rgba(16,24,18,.10);
+}
+
+/* Optional hervorgehobene Karte */
+.es-card--featured{
+  border-color: rgba(22,163,74,.35);
+  box-shadow: 0 12px 34px rgba(22,163,74,.12), 0 1px 0 rgba(0,0,0,.03);
+}
+
+/* Icon-Badge */
 .es-card-icon{
-  width:26px; height:26px; border-radius:7px;
+  width: 28px; height: 28px;
+  border-radius: 8px;
   display:grid; place-items:center;
-  background: rgba(34,197,94,.14);
-  color:#16a34a; font-size:16px; line-height:1;
+  background: rgba(22,163,74,.14);
+  color:#16a34a;
+  font-size: 16px; line-height:1;
 }
 
 /* Inhalte */
 .es-card-title{
-  color:#0d7d3d; font-weight:800;
-  font-size:clamp(18px, 2.6vw, 22px); line-height:1.25;
-  margin:2px 0 6px;
+  color:#0d7d3d;
+  font-weight: 800;
+  font-size: clamp(18px, 2.6vw, 22px);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin: 2px 0 6px;
 }
 .es-card-subtitle{
-  font-size:clamp(13px, 1.6vw, 14px);
-  color:rgba(11,27,19,.7); line-height:1.5;
+  font-size: clamp(13px, 1.6vw, 14px);
+  color: rgba(11,27,19,.72);
+  line-height: 1.55;
+  max-width: 40ch;
 }
 
-/* Responsive */
-@media (max-width:980px){
-  .es-grid{ grid-template-columns:1fr; }
-  .es-cards{ grid-template-columns:1fr; }
+/* Breakpoints */
+@media (max-width: 1080px){
+  .es-grid{ grid-template-columns: 1fr; }
+  .es-cards{ grid-template-columns: 1fr; }
+  .es-card{ min-height: 0; }
 }
 
-/* Motion */
-@media (prefers-reduced-motion:reduce){
-  .es-btn{ transition:none; }
+/* Bewegung reduzieren */
+@media (prefers-reduced-motion: reduce){
+  .es-btn, .es-card{ transition:none; }
 }
