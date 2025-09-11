@@ -144,6 +144,16 @@
             "link_url": "shopify://pages/trockeneisstrahlen",
             "link_label": "Mehr erfahren →"
           }
+        },
+        "service_card_lf_zGECah": {
+          "type": "service_card_lf",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_328419737.jpg",
+            "title": "Montage, Demontage, Maschinenumzüge und Maschinenverschrottung",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "shopify://pages/sis-montage-demontage",
+            "link_label": "Mehr erfahren →"
+          }
         }
       },
       "block_order": [
@@ -151,7 +161,8 @@
         "service_card_lf_d9TixX",
         "service_card_lf_mKWnNR",
         "service_card_lf_JYah6a",
-        "service_card_lf_W6C8d4"
+        "service_card_lf_W6C8d4",
+        "service_card_lf_zGECah"
       ],
       "name": "Leistung final",
       "settings": {
