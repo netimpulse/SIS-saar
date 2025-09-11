@@ -1,0 +1,118 @@
+/* === Kundenbewertung – Karussell (neu) === */
+
+.kundenbewertung-karussell {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 60px; /* Platz für Pfeile */
+}
+
+.karussell-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.kundenbewertung-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 30px; /* Abstand zwischen Karten */
+}
+
+/* Karte */
+.review-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px 25px 30px;
+  text-align: center;
+
+  /* 3/2/1-Karten Layout über Media Queries */
+  flex: 0 0 calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+}
+
+.review-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.star-rating {
+  color: #ffc107;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.person-name {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.review-text p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* === Icon/Logo unten – vollständig sichtbar === */
+/* Container ist quadratisch; Bild passt sich EIN ohne Beschnitt */
+.person-image-wrap {
+  width: var(--kbv-img-size, 80px);
+  height: var(--kbv-img-size, 80px);
+  border-radius: 12px;           /* Quadrat mit leicht runden Ecken */
+  border: 1px solid rgba(0,0,0,.08);
+  background: #fff;
+  display: grid;
+  place-items: center;
+  margin-top: 20px;              /* Abstand zum Text */
+}
+
+.person-image-wrap.is-round {    /* optional runde Darstellung */
+  border-radius: 50%;
+}
+
+.person-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;           /* WICHTIG: vollständige Anzeige */
+  display: block;
+}
+
+/* Pfeile */
+.karussell-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) scale(1);
+  background-color: transparent;
+  border: none;
+  color: #555;
+  font-size: 45px;
+  font-weight: 300;
+  padding: 0 10px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s ease-in-out;
+}
+
+.karussell-button:hover {
+  color: #000;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prev-button { left: 10px; }
+.next-button { right: 10px; }
+
+/* === Responsive === */
+@media (max-width: 1024px){
+  .review-card { flex: 0 0 calc(50% - 20px); }
+  .karussell-button { font-size: 38px; }
+}
+
+@media (max-width: 700px){
+  .kundenbewertung-karussell { padding: 0 36px; }
+  .review-card { flex: 0 0 100%; }
+  .karussell-button { font-size: 34px; }
+}
