@@ -358,10 +358,34 @@
           "settings": {
             "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
             "title_html": "<p><strong>Reinigung von Zu-und Abluft in gew. Küchen</strong></p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "text_html": "<p>Wir reinigen Ihre Zu-und Abluftkanäle in gewerblichen Küchen</p>",
             "keywords": "VDI 2052, Hygiene, Luft, Küche",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/sis-kuchen-rlt"
+          }
+        },
+        "service_DzTDzd": {
+          "type": "service",
+          "name": "Leistung Block - Strahlarbeiten",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_65689291.jpg",
+            "title_html": "<p><strong>Strahlarbeiten</strong></p>",
+            "text_html": "<p>(Sand-/Soda-/Glasstrahlen, crushed glas)</p>",
+            "keywords": "Sand, Soda, Glas, crushed Glas",
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify://pages/sis-stahlarbeiten"
+          }
+        },
+        "service_TDd7pL": {
+          "type": "service",
+          "name": "Leistung Block - Montage, Demontage",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_328419737.jpg",
+            "title_html": "<p><strong>Montage, Demontage, Maschinenumzüge und Maschinenverschrottung</strong></p>",
+            "text_html": "<p>Sie planen einen Umbau Ihrer Anlagen? Neue Geräte wurden angeschafft und dafür müssen die alten weichen? Wir unterstützen Sie bei größeren und kleineren Aktionen</p>",
+            "keywords": "Verschrottung, Schlosser, Helfer, Umzug",
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify://pages/sis-montage-demontage"
           }
         }
       },
@@ -369,7 +393,9 @@
         "service_Up8i8H",
         "service_h9zhf3",
         "service_hc9rDT",
-        "service_DGz4MT"
+        "service_DGz4MT",
+        "service_DzTDzd",
+        "service_TDd7pL"
       ],
       "name": "Leistung Suche Grid v2",
       "settings": {
