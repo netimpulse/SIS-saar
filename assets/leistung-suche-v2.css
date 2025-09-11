@@ -6,7 +6,6 @@
   --card-radius: 18px;
   --gap: 20px;
 
-  /* Steuerung für Typografie */
   --title-fs: 20px;
   --title-lh: 1.25;
   --text-fs: 16px;
@@ -128,17 +127,34 @@ input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; a
 .tag--solid   { background: var(--badge-bg); color: var(--badge-color); border: 1px solid transparent; }
 .tag--outline { background: transparent;    color: var(--badge-color); border: 1px solid var(--badge-bg); }
 
-/* Button unten bündig */
-.btn {
-  display: inline-flex; align-items: center; justify-content: center;
-  padding: 12px 14px; border-radius: 10px; text-decoration: none; line-height: 1.1;
+/* Buttons unten bündig + gleiche Höhe */
+.btn,
+.service-card__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;              /* feste Höhe für alle Buttons */
+  padding: 0 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  line-height: 1.1;
   transition: transform .05s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+  box-sizing: border-box;
 }
-.btn--primary   { background: #111; color: #fff; }
-.btn--primary:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0,0,0,.15); }
-.btn--secondary { background: #f0f1f3; color: #111; }
-.btn--secondary:hover { background: #e7e8eb; }
-.btn--link { background: transparent; color: inherit; text-decoration: underline; padding: 0; }
+
+.btn--primary,
+.service-card__button.btn--primary { background: #111; color: #fff; }
+.btn--primary:hover,
+.service-card__button.btn--primary:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0,0,0,.15); }
+
+.btn--secondary,
+.service-card__button.btn--secondary { background: #f0f1f3; color: #111; }
+.btn--secondary:hover,
+.service-card__button.btn--secondary:hover { background: #e7e8eb; }
+
+.btn--link,
+.service-card__button.btn--link { background: transparent; color: inherit; text-decoration: underline; padding: 0; height: auto; }
 
 /* Mobil: mehr Lesbarkeit */
 @media (max-width: 640px){
