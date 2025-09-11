@@ -244,6 +244,163 @@
         "button_style": "primary"
       }
     },
+    "leistung_suche_grid_v2_baghyU": {
+      "type": "leistung-suche-grid-v2",
+      "blocks": {
+        "service_jayyw7": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_368560784.jpg",
+            "title_html": "<p>Unterhaltsreinigung</p>",
+            "text_html": "<p>für einen sauberen Auftritt Ihrer Geschäftsräume</p>",
+            "keywords": "Büro, sauber, Reinigung",
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify://pages/unterhaltsreinigung"
+          }
+        },
+        "service_eGxGaa": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_657542155.jpg",
+            "title_html": "<p><strong>Reinigung von Ferien- und Freizeitanlagen</strong></p>",
+            "text_html": "<p>Ferienparks, Campingplätze</p>",
+            "keywords": "camping, saison, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify://pages/gs-ferienparks"
+          }
+        },
+        "service_Kcpy9r": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_492241702.jpg",
+            "title_html": "<p><strong>Glas-/ Rahmenreinigung</strong></p>",
+            "text_html": "<p>Lamellenreinigung, wintergartenreinigung, Fassadenreinigung</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify://pages/glas-und-lamellenreinigung"
+          }
+        },
+        "service_qx63Jr": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_119988076.jpg",
+            "title_html": "<p><strong>Desinfektion und Dampfreinigung</strong></p>",
+            "text_html": "<p>wenn Sauberkeit alleine nicht ausreicht</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify://pages/dampfreinigung"
+          }
+        },
+        "service_y7FP4T": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/iStock-160738327.jpg",
+            "title_html": "<p><strong>Baubegleitende und Bauschluss- Reinigung</strong></p>",
+            "text_html": "",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify://pages/bauschlussreinigung"
+          }
+        },
+        "service_egXbER": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_373423378.jpg",
+            "title_html": "<p><strong>Teppichreinigung</strong></p>",
+            "text_html": "",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify://pages/gs-teppichreinigung"
+          }
+        },
+        "service_fVA8yg": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_604150469.jpg",
+            "title_html": "<p><strong>Grünschnittpflege und Gartenarbeiten</strong></p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_T4MQb3": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_460822750.jpg",
+            "title_html": "<p><strong>Beschichtung von Bodenbelägen</strong></p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_tmm6m3": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/tatort-im-innenbereich-absperrband-ohne-erkennbaren-text.png",
+            "title_html": "<p><strong>Tatortreinigung / Zellenreinigung</strong></p>",
+            "text_html": "<p>Hafträume, Treppenhäuser, Gewahrsamszellen, Sammelzellen, Dienstfahrzeuge</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_bkfAtb": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_432654235.jpg",
+            "title_html": "<p><strong>Hausmeistertätigkeiten</strong></p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_tDfWQ8": {
+          "type": "service",
+          "settings": {
+            "title_html": "<p>Sonderreinigung</p>",
+            "text_html": "<p>Lassen Sie uns gemeinsam eine Lösung für Ihre Herausforderung finden.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "service_jayyw7",
+        "service_eGxGaa",
+        "service_Kcpy9r",
+        "service_qx63Jr",
+        "service_y7FP4T",
+        "service_egXbER",
+        "service_fVA8yg",
+        "service_T4MQb3",
+        "service_tmm6m3",
+        "service_bkfAtb",
+        "service_tDfWQ8"
+      ],
+      "name": "Leistung Suche Grid v2",
+      "settings": {
+        "heading": "<p><strong>Unsere Leistungen</strong></p>",
+        "subheading": "<p>Mit <em>Leidenschaft</em> für Ihren Erfolg.</p>",
+        "text_align": "center",
+        "show_search": true,
+        "search_placeholder": "Leistungen oder Keywords suchen…",
+        "badge_style": "solid",
+        "keyword_badge_bg": "#E6F0FF",
+        "keyword_badge_color": "#0F1C3F",
+        "card_bg": "#ffffff",
+        "card_radius": 18,
+        "card_shadow": true,
+        "grid_gap": 20,
+        "show_cta": false,
+        "cta_label": "Mehr erfahren",
+        "cta_link": "",
+        "button_style": "primary"
+      }
+    },
     "qualitaeten_hotspot_HKLnY6": {
       "type": "qualitaeten-hotspot",
       "blocks": {
@@ -647,6 +804,7 @@
     "main",
     "hero_building_section_jFhK9K",
     "leistung_suche_grid_Ai9p6q",
+    "leistung_suche_grid_v2_baghyU",
     "qualitaeten_hotspot_HKLnY6",
     "leistung_showcase_Wq4Ytn",
     "custom_cta_block_xMcPbA",

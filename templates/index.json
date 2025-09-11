@@ -595,110 +595,6 @@
         "contact_hours": "Mo – Fr 8–16 Uhr",
         "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
-    },
-    "leistung_suche_grid_v2_TDCJa7": {
-      "type": "leistung-suche-grid-v2",
-      "blocks": {
-        "service_Qak3U4": {
-          "type": "service",
-          "settings": {
-            "title_html": "<p><strong>Unterhaltsreinigung und Fluidmanagement mmmmmmaaaaaaaaaa</strong></p>",
-            "text_html": "<p>Kurze Beschreibung hier.Kurze Beschreibung hier.Kurze Beschreibung hier.Kurze Beschreibung hier.Kurze Beschreibung hier.Kurze Beschreibung hier.Kurze Beschreibung hier.Kurze Beschreibung hier.vKurze Beschreibung hier.Kurze Beschreibung hier.Kurze Beschreibung hier.Kurze Beschreibung hier.Kurze Beschreibung hier.Kurze Beschreibung hier.Kurze Beschreibung hier.Kurze Beschreibung hier.Kurze Beschreibung hier.</p>",
-            "keywords": "Büro, täglich, flexibel",
-            "button_label": "Mehr erfahren",
-            "button_link": "shopify://pages/allgemeiner-kontakt"
-          }
-        },
-        "service_ykiECd": {
-          "type": "service",
-          "settings": {
-            "image": "shopify://shop_images/shutterstock_728697067.jpg",
-            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
-            "text_html": "<p>Kurze Beschreibung hier.Kurze Beschreibung hier.Kurze Beschreibung hier.Kurze Beschreibung hier.Kurze Beschreibung hier.Kurze Beschreibung hier.Kurze Beschreibung hier.</p>",
-            "keywords": "Büro, täglich, flexibel",
-            "button_label": "Mehr erfahren",
-            "button_link": "shopify://pages/bewerbung-gebaude"
-          }
-        },
-        "service_xciVxY": {
-          "type": "service",
-          "settings": {
-            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
-            "keywords": "Büro, täglich, flexibel",
-            "button_label": "Mehr erfahren",
-            "button_link": ""
-          }
-        },
-        "service_NBrGGx": {
-          "type": "service",
-          "settings": {
-            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
-            "keywords": "Büro, täglich, flexibel",
-            "button_label": "Mehr erfahren",
-            "button_link": ""
-          }
-        },
-        "service_aMCUbk": {
-          "type": "service",
-          "settings": {
-            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
-            "keywords": "Büro, täglich, flexibel",
-            "button_label": "Mehr erfahren",
-            "button_link": ""
-          }
-        },
-        "service_Dnctwk": {
-          "type": "service",
-          "settings": {
-            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
-            "keywords": "Büro, täglich, flexibel",
-            "button_label": "Mehr erfahren",
-            "button_link": ""
-          }
-        },
-        "service_iA4BiC": {
-          "type": "service",
-          "settings": {
-            "title_html": "<p><strong>Unterhaltsreinigung</strong></p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
-            "keywords": "Büro, täglich, flexibel",
-            "button_label": "Mehr erfahren",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "service_Qak3U4",
-        "service_ykiECd",
-        "service_xciVxY",
-        "service_NBrGGx",
-        "service_aMCUbk",
-        "service_Dnctwk",
-        "service_iA4BiC"
-      ],
-      "name": "Leistung Suche Grid v2",
-      "settings": {
-        "heading": "<p><strong>Unsere Leistungen</strong></p>",
-        "subheading": "<p>Mit <em>Leidenschaft</em> für Ihren Erfolg.</p>",
-        "text_align": "center",
-        "show_search": true,
-        "search_placeholder": "Leistungen oder Keywords suchen…",
-        "badge_style": "solid",
-        "keyword_badge_bg": "#E6F0FF",
-        "keyword_badge_color": "#0F1C3F",
-        "card_bg": "#ffffff",
-        "card_radius": 18,
-        "card_shadow": true,
-        "grid_gap": 20,
-        "show_cta": false,
-        "cta_label": "Mehr erfahren",
-        "cta_link": "",
-        "button_style": "primary"
-      }
     }
   },
   "order": [
@@ -710,7 +606,6 @@
     "interactive_map_BWTdBe",
     "text_mit_bild_button_6UPhhG",
     "custom_cta_block_UK3hyB",
-    "sis_footer_neu_g4D6E6",
-    "leistung_suche_grid_v2_TDCJa7"
+    "sis_footer_neu_g4D6E6"
   ]
 }
