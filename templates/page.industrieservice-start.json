@@ -92,6 +92,101 @@
         "btn2_text_hover": "#238b84"
       }
     },
+    "leistung_final_qMPzBK": {
+      "type": "leistung-final",
+      "blocks": {
+        "service_card_lf_qpwgEk": {
+          "type": "service_card_lf",
+          "settings": {
+            "title": "Industrie- und Maschinenreinigung",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_d9TixX": {
+          "type": "service_card_lf",
+          "settings": {
+            "title": "Wartung und Instandhaltung",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_mKWnNR": {
+          "type": "service_card_lf",
+          "settings": {
+            "title": "Strahlarbeiten",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "",
+            "link_label": "Mehr erfahren →"
+          }
+        },
+        "service_card_lf_JYah6a": {
+          "type": "service_card_lf",
+          "settings": {
+            "title": "Reinigung von Zu-und Abluft in gew. Küchen",
+            "text": "Kurze Beschreibung hier.",
+            "link_url": "",
+            "link_label": "Mehr erfahren →"
+          }
+        }
+      },
+      "block_order": [
+        "service_card_lf_qpwgEk",
+        "service_card_lf_d9TixX",
+        "service_card_lf_mKWnNR",
+        "service_card_lf_JYah6a"
+      ],
+      "name": "Leistung final",
+      "settings": {
+        "heading": "Unsere Leistungen",
+        "subtext": "Mit Leidenschaft für Ihren Erfolg.",
+        "font_heading": "sans_serif_n4",
+        "font_body": "sans_serif_n4",
+        "heading_size": 32,
+        "heading_bold": true,
+        "heading_italic": false,
+        "subtext_size": 16,
+        "subtext_bold": false,
+        "subtext_italic": false,
+        "card_title_size": 18,
+        "card_title_bold": true,
+        "card_title_italic": false,
+        "card_text_size": 14,
+        "card_text_bold": false,
+        "card_text_italic": false,
+        "card_link_size": 14,
+        "card_link_bold": true,
+        "card_link_italic": false,
+        "bg_color": "#F3F6F9",
+        "text_color": "#222222",
+        "accent_color": "#ff6a00",
+        "card_bg": "#ffffff",
+        "card_hover_bg": "#ffffff",
+        "card_radius": 12,
+        "card_hover_lift": 6,
+        "grid_gap": 20,
+        "section_padding": 24,
+        "show_button": true,
+        "button_label": "Mehr erfahren",
+        "button_url": "",
+        "button_align": "center",
+        "button_full_width": false,
+        "button_max_width": 420,
+        "button_font_size": 16,
+        "button_bold": true,
+        "button_italic": false,
+        "button_padding_x": 20,
+        "button_padding_y": 10,
+        "button_margin_top": 28,
+        "button_margin_bottom": 0,
+        "button_bg": "#8B8E93",
+        "button_text": "#ffffff",
+        "button_hover_bg": "#6f7276",
+        "button_hover_text": "#ffffff"
+      }
+    },
     "video_3tBQDe": {
       "type": "video",
       "name": "t:sections.video.presets.name",
@@ -596,6 +691,7 @@
     "sticky_header_KGw3Wt",
     "main",
     "hero_overlay_section_hdypDf",
+    "leistung_final_qMPzBK",
     "video_3tBQDe",
     "amenities_hotspots_4fU76A",
     "text_mit_bild_button_PxGyff",
