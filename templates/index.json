@@ -547,6 +547,15 @@
             "link": "shopify://pages/gebaudeservice-startseite",
             "new_tab": true
           }
+        },
+        "partner_logo_Pz4m8g": {
+          "type": "partner_logo",
+          "settings": {
+            "logo": "shopify://shop_images/2025-SIS.png",
+            "alt": "Partner Industrieservice GmbH",
+            "link": "shopify://pages/industrieservice-startseite",
+            "new_tab": true
+          }
         }
       },
       "block_order": [
@@ -560,7 +569,8 @@
         "kontakt_link_TwQexH",
         "kontakt_link_4pHeLi",
         "partner_logo_BJxkyi",
-        "partner_logo_8wRFJh"
+        "partner_logo_8wRFJh",
+        "partner_logo_Pz4m8g"
       ],
       "name": "SIS Footer NEU",
       "settings": {
@@ -578,11 +588,11 @@
         "col2_title": "Unternehmen",
         "col3_title": "Kontakt",
         "col4_title": "Partner",
-        "contact_company": "SIS Saar",
-        "contact_address": "Musterstraße 1, 12345 Musterstadt",
-        "contact_phone": "0123 / 456 789",
-        "contact_email": "info@sis-saar.de",
-        "contact_hours": "Mo–Fr 8–17 Uhr",
+        "contact_company": "SIS Saar- Industrie- Service GmbH und SIS Saar Gebäudeservice GmbH",
+        "contact_address": "Vorderster Berg 13,\n66333 Völklingen",
+        "contact_phone": "(+49) (0) 6898 1690 900",
+        "contact_email": "",
+        "contact_hours": "Mo – Fr 8–16 Uhr",
         "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
     }
