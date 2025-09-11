@@ -120,7 +120,7 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_65689291.jpg",
             "title": "Strahlarbeiten",
-            "text": "Kurze Beschreibung hier.",
+            "text": "Sand, Soda, Glas, crushed glass",
             "link_url": "shopify://pages/sis-stahlarbeiten",
             "link_label": "Mehr erfahren →"
           }
@@ -167,7 +167,7 @@
       "name": "Leistung final",
       "settings": {
         "heading": "Unsere Leistungen",
-        "subtext": "Mit Leidenschaft für Ihren Erfolg.",
+        "subtext": "Mit Leidenschaft für gemeinsamen Erfolg.",
         "font_heading": "sans_serif_n4",
         "font_body": "sans_serif_n4",
         "heading_size": 32,
@@ -195,8 +195,8 @@
         "grid_gap": 20,
         "section_padding": 24,
         "show_button": true,
-        "button_label": "Mehr erfahren",
-        "button_url": "",
+        "button_label": "Alle Leistungen im Überblick",
+        "button_url": "shopify://pages/industrieservice-leistungen",
         "button_align": "center",
         "button_full_width": false,
         "button_max_width": 420,
@@ -207,9 +207,9 @@
         "button_padding_y": 10,
         "button_margin_top": 28,
         "button_margin_bottom": 0,
-        "button_bg": "#8b8e93",
+        "button_bg": "#121212",
         "button_text": "#ffffff",
-        "button_hover_bg": "#6f7276",
+        "button_hover_bg": "#1e40af",
         "button_hover_text": "#ffffff"
       }
     },
