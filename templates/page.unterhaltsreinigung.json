@@ -199,9 +199,10 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Saubere Räume sind mehr als eine Visitenkarte – sie schaffen Struktur, wirken sich positiv aufs Arbeitsklima aus und sorgen für Werterhalt. Der saubere Auftritt eines Unternehmens und dessen Geschäftsräume sind eine wichtige Erfolgskomponente im Wettbewerb. <br/>Die Unterhaltsreinigung ist dabei die regelmäßige, planmäßige Pflege von Büro-, Verwaltungs- oder Gewerbeflächen. Ob täglich, wöchentlich oder in einem individuellen Turnus: Wir kümmern uns darum, dass alles läuft, ohne dass Sie daran denken müssen.</p><p><strong>Was gehört dazu?</strong><br/>Die Unterhaltsreinigung umfasst alle laufenden Reinigungsarbeiten, die in einem<br/>Gebäude regelmäßig anfallen. Dazu zählen zum Beispiel:</p><ul><li>Fußbodenreinigung (je nach Belag: feucht, trocken, maschinell)</li><li>Reinigung von Oberflächen wie Schreibtischen, Fensterbänken, Türen</li><li>Sanitärreinigung mit Nachfüllung von Verbrauchsmaterialien</li><li>Abfallentsorgung</li><li>Küchen- und Aufenthaltsbereiche reinigen</li></ul><p><strong>Fachlich gesehen:</strong><br/>Für eine effiziente und hygienisch saubere Reinigung verwenden wir geeignete Reinigungsmittel und -methoden, angepasst an Materialien und Nutzungsfrequenz. Dabei achten wir auf die Einhaltung von Hygienestandards, insbesondere in sensiblen Bereichen wie Sanitäranlagen oder Gemeinschaftsräumen. Unsere Mitarbeitenden sind geschult im Umgang mit verschiedenen Oberflächen, Reinigungschemie und der Auswahl der passenden Mikrofasertücher (Farbkodierung inklusive).</p>",
+        "description": "<p>Saubere Räume sind mehr als eine Visitenkarte – sie schaffen Struktur, wirken sich positiv aufs Arbeitsklima aus und sorgen für Werterhalt. Der saubere Auftritt eines Unternehmens und dessen Geschäftsräume sind eine wichtige Erfolgskomponente im Wettbewerb. <br/>Die Unterhaltsreinigung ist dabei die regelmäßige, planmäßige Pflege von Büro-, Verwaltungs- oder Gewerbeflächen. Ob täglich, wöchentlich oder in einem individuellen Turnus: Wir kümmern uns darum, dass alles läuft, ohne dass Sie daran denken müssen.</p><p><strong>Was gehört dazu?</strong><br/>Die Unterhaltsreinigung umfasst alle laufenden Reinigungsarbeiten, die in einem Gebäude regelmäßig anfallen. Dazu zählen zum Beispiel:</p><ul><li>Fußbodenreinigung (je nach Belag: feucht, trocken, maschinell)</li><li>Reinigung von Oberflächen wie Schreibtischen, Fensterbänken, Türen</li><li>Sanitärreinigung mit Nachfüllung von Verbrauchsmaterialien</li><li>Abfallentsorgung</li><li>Reinigung von Küchen- und Aufenthaltsbereichen</li></ul><p>Für eine effiziente und hygienisch saubere Reinigung verwenden wir geeignete Reinigungsmittel und -methoden, angepasst an Materialien und Nutzungsfrequenz. Dabei achten wir auf die Einhaltung von Hygienestandards, insbesondere in sensiblen Bereichen wie Sanitäranlagen oder Gemeinschaftsräumen. Unsere Mitarbeitenden sind geschult im Umgang mit verschiedenen Oberflächen, Reinigungsmaschinen und -chemie und der Auswahl passender Reinigungsutensilien (z.B. Farbkodierung Mikrofasertücher).</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
+        "image": "shopify://shop_images/shutterstock_152142911.jpg",
         "image_border_radius": 12,
         "image_alt": "",
         "image_max_width": 85,
@@ -215,37 +216,13 @@
     },
     "about_section_v2_i4Pndt": {
       "type": "about-section-v2",
-      "blocks": {
-        "feature_n66MM9": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "unauffällig",
-            "feature_description": ""
-          }
-        },
-        "feature_Crc6Lp": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "flexibel",
-            "feature_description": ""
-          }
-        }
-      },
-      "block_order": [
-        "feature_n66MM9",
-        "feature_Crc6Lp"
-      ],
       "name": "Über Uns (Layout) – Neu - Unterhaltsreinigung",
       "settings": {
         "layout_direction": "text_left",
         "show_image": true,
         "background_color": "#ffffff",
         "section_padding_top": 35,
-        "section_padding_bottom": 80,
+        "section_padding_bottom": 60,
         "title": "",
         "title_richtext": "",
         "title_color": "#111827",
@@ -254,10 +231,9 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p><strong>Typisch für uns:</strong><br/>Wir arbeiten unauffällig, zuverlässig und mit Blick fürs Detail. Wenn gewünscht, auch außerhalb Ihrer Öffnungszeiten. Unsere Teams sind eingespielt, und wenn doch mal was ist: Wir sind erreichbar und handeln – nicht vertrösten.</p>",
+        "description": "<p><strong>Typisch für uns:</strong><br/>Wir arbeiten <strong>unauffällig</strong>, zuverlässig und mit Blick fürs Detail. Wenn gewünscht, auch außerhalb Ihrer Öffnungszeiten. Unsere Teams sind eingespielt, <strong>flexibel</strong> und professionell</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_152142911.jpg",
         "image_border_radius": 12,
         "image_alt": "",
         "image_max_width": 85,
