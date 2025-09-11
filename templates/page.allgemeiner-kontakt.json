@@ -87,78 +87,7 @@
         "info_card_Ht4E9k",
         "extra_field_NrfkGn"
       ],
-      "disabled": true,
       "name": "Kontaktbereich mit Formular- allgemeiner Kontakt",
-      "settings": {
-        "left_title": "Kontaktinformationen",
-        "right_title": "Nachricht senden",
-        "label_firstname": "Vorname *",
-        "ph_firstname": "Ihr Vorname",
-        "label_lastname": "Nachname *",
-        "ph_lastname": "Ihr Nachname",
-        "label_email": "E-Mail *",
-        "ph_email": "ihre.email@beispiel.de",
-        "label_phone": "Telefon",
-        "ph_phone": "Ihre Telefonnummer",
-        "label_company": "Unternehmen",
-        "ph_company": "Ihr Unternehmen",
-        "label_subject": "Betreff *",
-        "ph_subject": "Worum geht es?",
-        "label_message": "Nachricht *",
-        "ph_message": "Beschreiben Sie Ihr Anliegen...",
-        "consent_text": "<p>Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zu.</p>",
-        "consent_label": "Datenschutz zugestimmt",
-        "button_label": "Nachricht senden",
-        "success_text": "Danke für Ihre Nachricht! Wir melden uns bald."
-      }
-    },
-    "contact_info_form_7jPGxN": {
-      "type": "contact-info-form",
-      "blocks": {
-        "info_card_QFfGFM": {
-          "type": "info_card",
-          "settings": {
-            "title": "Adresse",
-            "text": "<p>SIS Saar Gebäudeservice GmbH<br/>Vorderster Berg 13<br/>D-66333 Völklingen<br/><br/></p>",
-            "icon": "map",
-            "icon_image": "shopify://shop_images/office-location-icon-design-in-black-color-vector-removebg-preview.png"
-          }
-        },
-        "info_card_9Pghk9": {
-          "type": "info_card",
-          "settings": {
-            "title": "Telefon",
-            "text": "<p>+49 (0) 6898 / 16 90 900<br/><br/></p>",
-            "icon": "phone"
-          }
-        },
-        "info_card_tNi8fF": {
-          "type": "info_card",
-          "settings": {
-            "title": "Telefon",
-            "text": "<p>gebaeudeservice@sissaar.de<br/><br/></p>",
-            "icon": "mail"
-          }
-        },
-        "extra_field_PDyXBd": {
-          "type": "extra_field",
-          "settings": {
-            "field_label": "Dienstleistung*",
-            "field_type": "select",
-            "options": "Gebäudeservice, Industrieservice, beides",
-            "placeholder": "bitte auswählen",
-            "required": true,
-            "full_width": true
-          }
-        }
-      },
-      "block_order": [
-        "info_card_QFfGFM",
-        "info_card_9Pghk9",
-        "info_card_tNi8fF",
-        "extra_field_PDyXBd"
-      ],
-      "name": "Kontaktbereich mit Formular- GS",
       "settings": {
         "left_title": "Kontaktinformationen",
         "right_title": "Nachricht senden",
@@ -356,7 +285,6 @@
     "main",
     "sticky_header_atN6jW",
     "contact_info_form_tjiQNz",
-    "contact_info_form_7jPGxN",
     "sis_footer_cFcxeB",
     "sis_footer_neu_G3VJJT"
   ]
