@@ -57,7 +57,7 @@
           "type": "info_card",
           "settings": {
             "title": "Adresse",
-            "text": "<p>SIS Saar Gebäudeservice GmbH<br/>Vorderster Berg 13<br/>D-66333 Völklingen<br/><br/></p>",
+            "text": "<p>SIS Saar-Industrie-Service GmbH und SIS Saar Gebäudeservice GmbH<br/>Vorderster Berg 13<br/>D-66333 Völklingen<br/><br/></p>",
             "icon": "mail",
             "icon_image": "shopify://shop_images/office-location-icon-design-in-black-color-vector-removebg-preview.png"
           }
@@ -70,21 +70,13 @@
             "icon": "phone"
           }
         },
-        "info_card_MrE36Q": {
-          "type": "info_card",
-          "settings": {
-            "title": "E-Mail",
-            "text": "<p><a href=\"mailto:gebaeudeservice@sissaar.de\" title=\"mailto:gebaeudeservice@sissaar.de\">gebaeudeservice@sissaar.de</a></p>",
-            "icon": "mail"
-          }
-        },
         "extra_field_NrfkGn": {
           "type": "extra_field",
           "settings": {
             "field_label": "Dienstleistung*",
             "field_type": "select",
             "options": "Gebäudeservice, Industrieservice, beides",
-            "placeholder": "Platzhalter",
+            "placeholder": "bitte auswählen",
             "required": true,
             "full_width": true
           }
@@ -93,7 +85,6 @@
       "block_order": [
         "info_card_Utzr7H",
         "info_card_Ht4E9k",
-        "info_card_MrE36Q",
         "extra_field_NrfkGn"
       ],
       "name": "Kontaktbereich mit Formular",
