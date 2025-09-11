@@ -98,9 +98,9 @@
         "service_card_lf_qpwgEk": {
           "type": "service_card_lf",
           "settings": {
-            "image": "shopify://shop_images/shutterstock_549798139.jpg",
+            "image": "shopify://shop_images/shutterstock_344049572.jpg",
             "title": "Industrie- und Maschinenreinigung",
-            "text": "Kurze Beschreibung hier.",
+            "text": "Wir reinigen Ihre Industrieanlagen, Bearbeitungsmaschinen, Produktionsstätten, Lagerhallen und andere industrielle Einrichtungen professionell und sicher. Durch modernste Reinigungsverfahren entfernen wir Öl, Schmierstoffe, Metallabrieb und andere Rückstände, um Maschinenlaufzeiten zu verlängern und Produktionsausfälle zu minimieren.",
             "link_url": "shopify://pages/maschinenreinigung",
             "link_label": "Mehr erfahren →"
           }
@@ -110,7 +110,7 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_93443800.jpg",
             "title": "Wartung und Instandhaltung",
-            "text": "Kurze Beschreibung hier.",
+            "text": "Wir sorgen dafür, dass Ihre Maschinen und Anlagen kontinuierlich betriebsbereit bleiben. Unser Service umfasst Inspektionen, Reparaturen, präventive Wartungsmaßnahmen und Dokumentation.",
             "link_url": "shopify://pages/fluidmanagement-wartung",
             "link_label": "Mehr erfahren →"
           }
@@ -120,7 +120,7 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_65689291.jpg",
             "title": "Strahlarbeiten",
-            "text": "Sand, Soda, Glas, crushed glass",
+            "text": "Durch unterschiedliche Strahlverfahren entfernen wir Rost, Lack oder Verschmutzungen. Die Wahl des Strahlmediums beeinflusst dabei Oberflächenrauigkeit und Materialschonung. Wir strahlen z.B. mit Trockeneis, Sand, Soda, Glas und crushed glass.",
             "link_url": "shopify://pages/sis-stahlarbeiten",
             "link_label": "Mehr erfahren →"
           }
@@ -130,7 +130,7 @@
           "settings": {
             "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
             "title": "Reinigung von Zu-und Abluft in gew. Küchen",
-            "text": "Kurze Beschreibung hier.",
+            "text": "Wir prüfen und reinigen Ihre Lüftungsanlagen, Zu- und Abluftrohre in Küchen und dokumentieren die Reinigungsergebnisse. Dabei richten wir uns nach den VDI Richtlinien VDI 2052 und VDI 6022",
             "link_url": "shopify://pages/sis-kuchen-rlt",
             "link_label": "Mehr erfahren →"
           }
@@ -140,7 +140,7 @@
           "settings": {
             "image": "shopify://shop_images/Trockeneis_AA_3.jpg",
             "title": "Trockeneisreinigung",
-            "text": "Kurze Beschreibung hier.",
+            "text": "Viele Anlagen dürfen nicht mit Wasser und chemischen Reinigungsmitteln in Berührung kommen und stellen bei der Reinigung somit eine besondere Herausforderung dar. Trockeneisstrahlen stellt dabei eine besonders schonende Reinigungsmöglichkeit dar.",
             "link_url": "shopify://pages/trockeneisstrahlen",
             "link_label": "Mehr erfahren →"
           }
@@ -154,6 +154,16 @@
             "link_url": "shopify://pages/sis-montage-demontage",
             "link_label": "Mehr erfahren →"
           }
+        },
+        "service_card_lf_A8qgDj": {
+          "type": "service_card_lf",
+          "settings": {
+            "image": "shopify://shop_images/staplerfahrer-mit-schutzausr-stung-von-hinten-auf-stapler-der-einen-m-llcontainer-auf-einem-industriegel-nde-transportiert.png",
+            "title": "Abfallmanagement und innerbetriebliche Logistik",
+            "text": "Wir übernehmen für Sie die anfallenden Transporte innerhalb der Produktionslinien, egal ob mit Gabelstapler, Schlepper oder sonstigen Flurförderzeugen. Die Sortierung der Abfälle sowie optimierte Transportwege und Recyclingprozesse schützen Ressourcen, reduzieren Schäden und steigern die Effizienz von Lagerhaltung und Produktion.",
+            "link_url": "shopify://pages/sis-montage-demontage",
+            "link_label": "Mehr erfahren →"
+          }
         }
       },
       "block_order": [
@@ -162,7 +172,8 @@
         "service_card_lf_mKWnNR",
         "service_card_lf_JYah6a",
         "service_card_lf_W6C8d4",
-        "service_card_lf_zGECah"
+        "service_card_lf_zGECah",
+        "service_card_lf_A8qgDj"
       ],
       "name": "Leistung final",
       "settings": {
