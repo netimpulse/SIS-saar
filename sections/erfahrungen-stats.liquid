@@ -1,0 +1,124 @@
+{% comment %}
+  Erfahrungen • Stats (zweispaltig, mit Badges & Karten)
+{% endcomment %}
+
+{{ 'erfahrungen-stats.css' | asset_url | stylesheet_tag }}
+
+<section class="es-section"
+  style="
+    --es-bg-color: {{ section.settings.bg_color }};
+    --es-card-bg-color: {{ section.settings.card_bg }};
+    --es-card-br: {{ section.settings.card_radius }}px;
+    --es-text-color: {{ section.settings.text_color }};
+    --es-accent-color: {{ section.settings.accent_color }};
+  "
+>
+  <div class="es-container es-grid">
+    <!-- linke Spalte -->
+    <div>
+      {% if section.settings.kicker != blank %}
+        <p class="es-kicker">{{ section.settings.kicker }}</p>
+      {% endif %}
+      {% if section.settings.heading != blank %}
+        <h2 class="es-heading">{{ section.settings.heading }}</h2>
+      {% endif %}
+      {% if section.settings.richtext != blank %}
+        <div class="es-richtext rte">{{ section.settings.richtext }}</div>
+      {% endif %}
+
+      {%- assign badge_blocks = section.blocks | where: 'type', 'badge' -%}
+      {% if badge_blocks.size > 0 %}
+        <div class="es-badges" role="list">
+          {% for block in badge_blocks %}
+            <span class="es-badge" role="listitem" {{ block.shopify_attributes }}>
+              {{ block.settings.badge_text }}
+            </span>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if section.settings.btn_label != blank and section.settings.btn_link != blank %}
+        <a class="es-btn" href="{{ section.settings.btn_link }}" {% if section.settings.btn_newtab %}target="_blank" rel="noopener noreferrer"{% endif %}>
+          {{ section.settings.btn_label }}
+        </a>
+      {% endif %}
+    </div>
+
+    <!-- rechte Spalte: Karten -->
+    <div>
+      <div class="es-cards">
+        {%- assign stat_blocks = section.blocks | where: 'type', 'stat' -%}
+        {% for block in stat_blocks %}
+          {% render 'snippet-erfahrungen-stat-card',
+            emoji: block.settings.emoji,
+            title: block.settings.title,
+            subtitle: block.settings.subtitle,
+            featured: block.settings.featured,
+            aria_label: block.settings.aria_label,
+            block: block
+          %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Erfahrungen • Stats",
+  "tag": "section",
+  "class": "section-erfahrungen-stats",
+  "settings": [
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Über 15 Jahre Erfahrung" },
+    { "type": "text", "id": "heading", "label": "Überschrift", "default": "Unsere Werte" },
+    { "type": "richtext", "id": "richtext", "label": "Text", "default": "<p>Als familiengeführtes Unternehmen legen wir Wert auf persönlichen Service und langfristige Kundenbeziehungen. Unser Team von über 50 qualifizierten Mitarbeitenden sorgt täglich dafür, dass mehr als 200 zufriedene Kund:innen auf unsere Zuverlässigkeit vertrauen.</p>" },
+
+    { "type": "text", "id": "btn_label", "label": "Button-Text", "default": "Mehr über uns" },
+    { "type": "url", "id": "btn_link", "label": "Button-Link" },
+    { "type": "checkbox", "id": "btn_newtab", "label": "Link in neuem Tab öffnen", "default": false },
+
+    { "type": "color", "id": "bg_color", "label": "Hintergrund", "default": "#F3F8F5" },
+    { "type": "color", "id": "card_bg", "label": "Karten-Hintergrund", "default": "#FFFFFF" },
+    { "type": "range", "id": "card_radius", "min": 0, "max": 24, "step": 1, "unit": "px", "label": "Karten-Radius", "default": 16 },
+    { "type": "color", "id": "text_color", "label": "Textfarbe", "default": "#111111" },
+    { "type": "color", "id": "accent_color", "label": "Akzentfarbe", "default": "#22C55E" }
+  ],
+  "blocks": [
+    {
+      "type": "badge",
+      "name": "Badge",
+      "settings": [
+        { "type": "text", "id": "badge_text", "label": "Badge-Text", "default": "200+ Kunden" }
+      ]
+    },
+    {
+      "type": "stat",
+      "name": "Wert/Stat-Karte",
+      "limit": 9,
+      "settings": [
+        { "type": "text", "id": "emoji", "label": "Icon/Emoji", "default": "✅" },
+        { "type": "text", "id": "title", "label": "Titel", "default": "Qualität durch Leidenschaft" },
+        { "type": "text", "id": "subtitle", "label": "Untertitel", "default": "Sauberkeit ist für uns mehr als ein Ergebnis – es ist unser Anspruch an Perfektion." },
+        { "type": "checkbox", "id": "featured", "label": "Hervorheben (Umriss)", "default": false },
+        { "type": "text", "id": "aria_label", "label": "Beschriftung Screenreader", "default": "Wert/Stat-Karte" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Erfahrungen • Stats",
+      "blocks": [
+        { "type": "badge", "settings": { "badge_text": "200+ Kunden" } },
+        { "type": "badge", "settings": { "badge_text": "150+ Beschäftigte" } },
+        { "type": "badge", "settings": { "badge_text": "20+ Jahre Erfahrung" } },
+
+        { "type": "stat", "settings": { "emoji": "✅", "title": "Regional verwurzelt – überregional stark", "subtitle": "Wir stehen für saarländische Verlässlichkeit mit professionellem Anspruch.", "aria_label": "Regional verwurzelt – Karte" } },
+        { "type": "stat", "settings": { "emoji": "✅", "title": "Qualität durch Leidenschaft", "subtitle": "Sauberkeit ist für uns mehr als ein Ergebnis – es ist unser Anspruch an Perfektion.", "featured": true, "aria_label": "Qualität durch Leidenschaft – Karte" } },
+        { "type": "stat", "settings": { "emoji": "✅", "title": "Menschen im Mittelpunkt", "subtitle": "Schulung, Sicherheit und Wertschätzung sind für uns selbstverständlich.", "aria_label": "Menschen im Mittelpunkt – Karte" } },
+        { "type": "stat", "settings": { "emoji": "🌱", "title": "Nachhaltigkeit im Blick", "subtitle": "Moderne, ressourcenschonende Verfahren für gelebte Praxis.", "aria_label": "Nachhaltigkeit im Blick – Karte" } },
+        { "type": "stat", "settings": { "emoji": "🤝", "title": "Partnerschaft auf Augenhöhe", "subtitle": "Wir hören zu, verstehen Bedürfnisse und liefern Lösungen, die passen.", "aria_label": "Partnerschaft auf Augenhöhe – Karte" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
