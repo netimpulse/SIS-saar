@@ -423,6 +423,77 @@
             "button_label": "Mehr erfahren",
             "button_link": ""
           }
+        },
+        "service_BnANGW": {
+          "type": "service",
+          "name": "Leistung Block - Hallen-/Decken-/und Konstruktionsreinigung",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_365570120.jpg",
+            "title_html": "<p><strong>Hallen-/Decken-/und Konstruktionsreinigung</strong></p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify://pages/decken-wandreinigung"
+          }
+        },
+        "service_cWxTHy": {
+          "type": "service",
+          "name": "Leistung Block - Trockeneisstrahlen",
+          "settings": {
+            "image": "shopify://shop_images/Trockeneis_AA_2.jpg",
+            "title_html": "<p><strong>Trockeneisstrahlen</strong></p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify://pages/trockeneisstrahlen"
+          }
+        },
+        "service_r36UdF": {
+          "type": "service",
+          "name": "Leistung Block - Oldtimer Restauration",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_917940.jpg",
+            "title_html": "<p><strong>Oldtimer Restauration</strong></p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_4YkQjG": {
+          "type": "service",
+          "name": "Leistung Block - KSS-Management",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_375261961.jpg",
+            "title_html": "<p><strong>KSS-Management</strong></p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_98UN9G": {
+          "type": "service",
+          "name": "Leistung Block - Abfallmanagement und innerbetriebliche Logistik",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_1107691484.jpg",
+            "title_html": "<p><strong>Abfallmanagement undinnerbetriebliche Logistik</strong></p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
+        },
+        "service_4zzdYj": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_782845411.jpg",
+            "title_html": "<p><strong>Sonderarbeiten</strong></p>",
+            "text_html": "<p>Lassen Sie uns gemeinsam eine Lösung für Ihre Herausforderung finden</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
@@ -434,7 +505,13 @@
         "service_TDd7pL",
         "service_WnRUJA",
         "service_8gTfda",
-        "service_4XzgJG"
+        "service_4XzgJG",
+        "service_BnANGW",
+        "service_cWxTHy",
+        "service_r36UdF",
+        "service_4YkQjG",
+        "service_98UN9G",
+        "service_4zzdYj"
       ],
       "name": "Leistung Suche Grid v2",
       "settings": {
