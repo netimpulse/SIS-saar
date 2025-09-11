@@ -1,7 +1,7 @@
 {% comment %}
   Über Uns (Layout) – v3.2
-  - Höhe kann optional an vorherigen Abschnitt angepasst werden
-  - NEU: content_max_width steuert die Inhaltsbreite (Standard 920px)
+  - Breite: Content jetzt links bündig und bis 1180px (wie oben)
+  - Optional: Höhe an vorherigen Abschnitt angleichen
 {% endcomment %}
 
 {{ 'section-ueber-uns-layout-v3.css' | asset_url | stylesheet_tag }}
@@ -32,8 +32,8 @@
 
     --no-image-text-align: {{ section.settings.no_image_text_align }};
 
-    /* NEU: Inhaltsbreite */
-    --content-max-width: {{ section.settings.content_max_width | default: 920 }}px;
+    /* NEU: Inhaltsbreite (Standard 1180px = wie Container) */
+    --content-max-width: {{ section.settings.content_max_width | default: 1180 }}px;
   }
 </style>
 
@@ -96,7 +96,6 @@
         {% if title_html != blank %}
           <div class="sis-about__title rte--title">{{ title_html }}</div>
         {% endif %}
-
         {% if subtitle_html != blank %}
           <div class="sis-about__subtitle rte--subtitle">{{ subtitle_html }}</div>
         {% endif %}
@@ -175,8 +174,8 @@
   </div>
 </div>
 
-{%- comment -%} Höhe an vorherigen Abschnitt angleichen (optional) {%- endcomment -%}
 <script>
+/* Optional: Höhe an vorherigen Abschnitt angleichen */
 (function() {
   var enabled = {{ section.settings.match_prev_height | json }};
   if (!enabled) return;
@@ -261,15 +260,6 @@
     { "type": "range", "id": "image_border_radius", "label": "Bild Eckenrundung", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 12 },
     { "type": "text", "id": "image_alt", "label": "Bild Alt-Text" },
     { "type": "range", "id": "image_max_width", "label": "Bild max. Breite", "min": 40, "max": 100, "step": 5, "unit": "%", "default": 85 },
-    { "type": "select", "id": "image_aspect_ratio", "label": "Bild Seitenverhältnis",
-      "options": [
-        { "value": "auto", "label": "Automatisch" },
-        { "value": "16/9", "label": "16:9 (breit)" },
-        { "value": "4/3", "label": "4:3" },
-        { "value": "1/1", "label": "1:1 (quadratisch)" }
-      ],
-      "default": "4/3"
-    },
 
     { "type": "select", "id": "features_per_row", "label": "Elemente pro Zeile",
       "options": [ { "value": "1", "label": "1" }, { "value": "2", "label": "2" } ],
@@ -294,7 +284,7 @@
     { "type": "range", "id": "match_min_width", "label": "Nur anwenden ab Breite", "min": 0, "max": 1600, "step": 20, "unit": "px", "default": 992 },
 
     { "type": "header", "content": "Breite" },
-    { "type": "range", "id": "content_max_width", "label": "Inhaltsbreite (max.)", "min": 640, "max": 1100, "step": 10, "unit": "px", "default": 920 }
+    { "type": "range", "id": "content_max_width", "label": "Inhaltsbreite (max.)", "min": 640, "max": 1180, "step": 10, "unit": "px", "default": 1180 }
   ],
   "blocks": [
     {
