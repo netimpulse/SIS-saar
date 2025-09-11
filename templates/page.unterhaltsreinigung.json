@@ -214,15 +214,86 @@
         "no_image_text_align": "left"
       }
     },
-    "about_section_v2_i4Pndt": {
-      "type": "about-section-v2",
-      "name": "Über Uns (Layout) – Neu - Unterhaltsreinigung",
+    "about_section_v3_MnRaW8": {
+      "type": "about-section-v3",
+      "blocks": {
+        "feature_yTVaMK": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung"
+          }
+        },
+        "feature_zyP3M9": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung"
+          }
+        },
+        "feature_YGBNz6": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung"
+          }
+        }
+      },
+      "block_order": [
+        "feature_yTVaMK",
+        "feature_zyP3M9",
+        "feature_YGBNz6"
+      ],
+      "disabled": true,
+      "name": "Über Uns (Layout) – v3",
       "settings": {
-        "layout_direction": "text_left",
+        "image_position": "right",
+        "image_vertical_align": "start",
         "show_image": true,
         "background_color": "#ffffff",
-        "section_padding_top": 35,
-        "section_padding_bottom": 60,
+        "section_padding_top": 25,
+        "section_padding_bottom": 80,
+        "title": "Über uns",
+        "title_richtext": "<p><strong>Über uns</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "Wer wir sind und was uns ausmacht",
+        "subtitle_richtext": "<p>Wer wir sind und was uns ausmacht</p>",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<p>Unsere Wurzeln liegen im <strong>Saarland</strong>- und genau hier haben wir uns mit Herzblut darauf spezialisiert professionellen und  zukunftsfähigen Industrie- und Gebäudeservice anzubieten. Seit mehr als zwei Jahrzehnten steht die SIS für zuverlässige und hochwertige Serviceleistungen in unterschiedlichen Branchen. Unser Motto „Kompetenter Service aus erster Hand“ spiegelt sich in jeder Aufgabe wider. <br/></p><p>Die<a href=\"/pages/industrieservice-startseite\" title=\"Industrieservice Startseite\"> <strong>SIS Saar-Industrie-Service GmbH</strong></a> ist Ihr Partner für anspruchsvolle Industriereinigung, Gebäudeservice und Strahltechnik. Was uns auszeichnet, ist die Kombination aus <strong>modernster Technik</strong> und einem <strong>eingespielten Team</strong>, welches auch dann Lösungen findet, wenn es besonders schwierig wird. Ob Maschinen, Hallen oder Spezialverfahren wie Trockeneisstrahlen oder Sandstrahlen – wir sorgen dafür, dass Anlagen zuverlässig laufen und Werte erhalten bleiben.</p><p>Mit der <a href=\"/pages/gebaudeservice-startseite\" title=\"Gebäudeservice Startseite\"><strong>SIS Saar Gebäudeservice GmbH</strong> </a>haben wir 2022 ein weiteres Standbein geschaffen: Hier bündeln wir unsere Kompetenz rund um <strong>Gebäudereinigung, Glasreinigung, Ferienparkreinigung und Sonderreinigung</strong>. Vom Büro bis zum Industriegebäude, von der Glasfassade bis zum Bauschluss – wir bringen Klarheit und Ordnung in Räume, in denen Menschen arbeiten und leben.</p>",
+        "text_color": "#121212",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/shutterstock_659179879.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "4/3",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "left"
+      }
+    },
+    "about_section_v3_T7AWne": {
+      "type": "about-section-v3",
+      "name": "Über Uns (Layout) – v3",
+      "settings": {
+        "image_position": "right",
+        "image_vertical_align": "center",
+        "show_image": false,
+        "background_color": "#FFFFFF",
+        "section_padding_top": 80,
+        "section_padding_bottom": 80,
         "title": "",
         "title_richtext": "",
         "title_color": "#111827",
@@ -232,16 +303,17 @@
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
         "description": "<p><strong>Typisch für uns:</strong><br/>Wir arbeiten <strong>unauffällig</strong>, zuverlässig und mit Blick fürs Detail. Wenn gewünscht, auch außerhalb Ihrer Öffnungszeiten. Unsere Teams sind eingespielt, <strong>flexibel</strong> und professionell</p>",
-        "text_color": "#6b7280",
+        "text_color": "#6B7280",
         "text_font_size": 18,
         "image_border_radius": 12,
         "image_alt": "",
         "image_max_width": 85,
-        "image_aspect_ratio": "auto",
+        "image_aspect_ratio": "4/3",
         "features_per_row": "2",
         "icon_size": 32,
-        "icon_color": "#34d399",
-        "feature_title_color": "#111827"
+        "icon_color": "#34D399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "center"
       }
     },
     "custom_cta_block_Y6hmWD": {
@@ -559,7 +631,8 @@
     "hero_building_section_xFPFdb",
     "leistung_showcase_9Y9rK6",
     "about_section_v3_w6Xcht",
-    "about_section_v2_i4Pndt",
+    "about_section_v3_MnRaW8",
+    "about_section_v3_T7AWne",
     "custom_cta_block_Y6hmWD",
     "sis_single_footer_N4n9t3",
     "sis_footer_neu_tdeFj6",
