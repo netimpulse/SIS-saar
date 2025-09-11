@@ -92,6 +92,103 @@
         "btn2_text_hover": "#238b84"
       }
     },
+    "erfahrungen_stats_aCR3TH": {
+      "type": "erfahrungen-stats",
+      "blocks": {
+        "badge_iAHifG": {
+          "type": "badge",
+          "settings": {
+            "badge_text": "200+ Kunden"
+          }
+        },
+        "badge_cD7tNP": {
+          "type": "badge",
+          "settings": {
+            "badge_text": "150+ Beschäftigte"
+          }
+        },
+        "badge_UfVMDV": {
+          "type": "badge",
+          "settings": {
+            "badge_text": "20+ Jahre Erfahrung"
+          }
+        },
+        "stat_rWGNy9": {
+          "type": "stat",
+          "settings": {
+            "emoji": "✅",
+            "title": "Regional verwurzelt – überregional stark",
+            "subtitle": "Wir stehen für saarländische Verlässlichkeit mit professionellem Anspruch.",
+            "featured": false,
+            "aria_label": "Wert/Stat-Karte"
+          }
+        },
+        "stat_YDx4Qn": {
+          "type": "stat",
+          "settings": {
+            "emoji": "✅",
+            "title": "Qualität durch Leidenschaft",
+            "subtitle": "Sauberkeit ist für uns mehr als ein Ergebnis – es ist unser Anspruch an Perfektion.",
+            "featured": false,
+            "aria_label": "Wert/Stat-Karte"
+          }
+        },
+        "stat_HYnD7y": {
+          "type": "stat",
+          "settings": {
+            "emoji": "✅",
+            "title": "Menschen im Mittelpunkt",
+            "subtitle": "Schulung, Sicherheit und Wertschätzung sind für uns selbstverständlich.",
+            "featured": false,
+            "aria_label": "Wert/Stat-Karte"
+          }
+        },
+        "stat_jApDNg": {
+          "type": "stat",
+          "settings": {
+            "emoji": "🌱",
+            "title": "Nachhaltigkeit im Blick",
+            "subtitle": "Moderne, ressourcenschonende Verfahren für gelebte Praxis.",
+            "featured": false,
+            "aria_label": "Wert/Stat-Karte"
+          }
+        },
+        "stat_NnTRd7": {
+          "type": "stat",
+          "settings": {
+            "emoji": "🤝",
+            "title": "Partnerschaft auf Augenhöhe",
+            "subtitle": "Wir hören zu, verstehen Bedürfnisse und liefern Lösungen, die passen.",
+            "featured": false,
+            "aria_label": "Wert/Stat-Karte"
+          }
+        }
+      },
+      "block_order": [
+        "badge_iAHifG",
+        "badge_cD7tNP",
+        "badge_UfVMDV",
+        "stat_rWGNy9",
+        "stat_YDx4Qn",
+        "stat_HYnD7y",
+        "stat_jApDNg",
+        "stat_NnTRd7"
+      ],
+      "name": "Erfahrungen • Stats",
+      "settings": {
+        "kicker": "Über 15 Jahre Erfahrung",
+        "heading": "<p>Unsere Werte</p>",
+        "richtext": "<p>Als familiengeführtes Unternehmen legen wir Wert auf persönlichen Service und langfristige Kundenbeziehungen. Unser Team von über 50 qualifizierten Mitarbeitenden sorgt täglich dafür, dass mehr als 200 zufriedene Kund:innen auf unsere Zuverlässigkeit vertrauen.</p>",
+        "btn_label": "Mehr über uns",
+        "btn_link": "",
+        "btn_newtab": false,
+        "bg_color": "#ffffff",
+        "card_bg": "#FFFFFF",
+        "card_radius": 16,
+        "text_color": "#111111",
+        "accent_color": "#22C55E"
+      }
+    },
     "about_experience_PtnLUT": {
       "type": "about-experience",
       "blocks": {
@@ -791,6 +888,7 @@
     "sticky_header_XtXzjY",
     "main",
     "hero_overlay_section_Rk9gNP",
+    "erfahrungen_stats_aCR3TH",
     "about_experience_PtnLUT",
     "about_section_v2_YRVhnt",
     "about_section_v3_YePBYF",
