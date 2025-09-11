@@ -1,13 +1,8 @@
 {% comment %}
-  Über Uns (Layout) – v3.1
-  - Bild-Position:
-      • left / right  → Bild floatet, Text umfließt
-      • top / bottom  → Gestapelt (volle Breite)
-  - Vertikale Ausrichtung bei left/right = Einfügeposition im Text:
-      • start  → Bild direkt am Anfang des Textes
-      • center → Bild nach ca. der Hälfte der Absätze
-      • end    → Bild vor dem letzten Absatz
-  - Kein Bild → Textausrichtung wählbar
+  Über Uns (Layout) – v3.2
+  NEU:
+  - Option „Höhe an vorherigen Abschnitt angleichen“
+  - Offset & Mindestbreite steuerbar
 {% endcomment %}
 
 {{ 'section-ueber-uns-layout-v3.css' | asset_url | stylesheet_tag }}
@@ -68,7 +63,7 @@
   endif
 -%}
 
-<div class="sis-about-section">
+<div id="about-{{ section.id }}" class="sis-about-section">
   <div class="sis-about__container">
 
     <div class="
@@ -104,9 +99,6 @@
           <div class="sis-about__subtitle rte--subtitle">{{ subtitle_html }}</div>
         {% endif %}
 
-        {%- comment -%}
-          Beschreibung + ggf. Float-Bild an der richtigen Position einfügen
-        {%- endcomment -%}
         <div class="sis-about__description">
           {%- assign desc_html = section.settings.description -%}
 
@@ -128,7 +120,6 @@
             {%- if section.settings.image_vertical_align == 'start' -%}
               {{ float_markup }}
               {{ desc_html }}
-
             {%- else -%}
               {%- assign parts = desc_html | split: '</p>' -%}
               {%- assign total = parts | size -%}
@@ -137,7 +128,6 @@
               {%- else -%}
                 {%- assign insert_after = total | divided_by: 2 -%}
               {%- endif -%}
-
               {%- for part in parts -%}
                 {%- unless part == '' -%}
                   {{ part }}</p>
@@ -147,7 +137,6 @@
                 {%- endunless -%}
               {%- endfor -%}
             {%- endif -%}
-
           {%- else -%}
             {{ desc_html }}
           {%- endif -%}
@@ -184,16 +173,55 @@
   </div>
 </div>
 
+{%- comment -%}
+  JS: Höhe an vorherigen Abschnitt angleichen (optional)
+{%- endcomment -%}
+<script>
+(function() {
+  var enabled = {{ section.settings.match_prev_height | json }};
+  if (!enabled) return;
+
+  var minWidth = {{ section.settings.match_min_width | json }};
+  var offset = {{ section.settings.match_prev_height_offset | json }};
+
+  var root = document.getElementById('about-{{ section.id }}');
+  if (!root) return;
+
+  var grid = root.querySelector('.sis-about__grid');
+  if (!grid) return;
+
+  function findPrevSection(el){
+    var prev = el.previousElementSibling;
+    while(prev && prev.offsetHeight === 0){ prev = prev.previousElementSibling; }
+    return prev;
+  }
+
+  function apply() {
+    if (window.innerWidth < (minWidth || 0)) {
+      grid.style.removeProperty('--about-match-height');
+      return;
+    }
+    var prev = findPrevSection(root.parentElement || root);
+    if (!prev) return;
+    var h = prev.getBoundingClientRect().height - (offset || 0);
+    if (h > 0) grid.style.setProperty('--about-match-height', h + 'px');
+  }
+
+  apply();
+  window.addEventListener('load', apply);
+  window.addEventListener('resize', apply);
+  setTimeout(apply, 400);
+  setTimeout(apply, 1200);
+})();
+</script>
+
 {% schema %}
 {
   "name": "Über Uns (Layout) – v3",
   "tag": "section",
   "class": "section",
   "settings": [
-    {
-      "type": "select",
-      "id": "image_position",
-      "label": "Bild-Position",
+    { "type": "select", "id": "image_position", "label": "Bild-Position",
       "options": [
         { "value": "right", "label": "Text links, Bild rechts (Text umfließt Bild)" },
         { "value": "left",  "label": "Bild links, Text rechts (Text umfließt Bild)" },
@@ -202,10 +230,7 @@
       ],
       "default": "right"
     },
-    {
-      "type": "select",
-      "id": "image_vertical_align",
-      "label": "Ausrichtung bei links/rechts (Einfügeposition im Text)",
+    { "type": "select", "id": "image_vertical_align", "label": "Ausrichtung bei links/rechts (Einfügeposition im Text)",
       "options": [
         { "value": "start",  "label": "Oben (direkt am Anfang)" },
         { "value": "center", "label": "Mittig (nach ca. der Hälfte)" },
@@ -238,10 +263,7 @@
     { "type": "range", "id": "image_border_radius", "label": "Bild Eckenrundung", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 12 },
     { "type": "text", "id": "image_alt", "label": "Bild Alt-Text" },
     { "type": "range", "id": "image_max_width", "label": "Bild max. Breite", "min": 40, "max": 100, "step": 5, "unit": "%", "default": 85 },
-    {
-      "type": "select",
-      "id": "image_aspect_ratio",
-      "label": "Bild Seitenverhältnis",
+    { "type": "select", "id": "image_aspect_ratio", "label": "Bild Seitenverhältnis",
       "options": [
         { "value": "auto", "label": "Automatisch" },
         { "value": "16/9", "label": "16:9 (breit)" },
@@ -251,10 +273,7 @@
       "default": "4/3"
     },
 
-    {
-      "type": "select",
-      "id": "features_per_row",
-      "label": "Elemente pro Zeile",
+    { "type": "select", "id": "features_per_row", "label": "Elemente pro Zeile",
       "options": [ { "value": "1", "label": "1" }, { "value": "2", "label": "2" } ],
       "default": "2"
     },
@@ -262,17 +281,19 @@
     { "type": "color", "id": "icon_color", "label": "SVG-Icon Farbe", "default": "#34D399" },
     { "type": "color", "id": "feature_title_color", "label": "Feature Titel Farbe", "default": "#111827" },
 
-    {
-      "type": "select",
-      "id": "no_image_text_align",
-      "label": "Textausrichtung (kein Bild)",
+    { "type": "select", "id": "no_image_text_align", "label": "Textausrichtung (kein Bild)",
       "options": [
         { "value": "left", "label": "Links" },
         { "value": "center", "label": "Zentriert" },
         { "value": "right", "label": "Rechts" }
       ],
       "default": "left"
-    }
+    },
+
+    { "type": "header", "content": "Höhe angleichen" },
+    { "type": "checkbox", "id": "match_prev_height", "label": "Höhe an vorherigen Abschnitt angleichen", "default": true },
+    { "type": "range", "id": "match_prev_height_offset", "label": "Offset (Höhe abziehen/aufaddieren)", "min": -150, "max": 200, "step": 5, "unit": "px", "default": 0 },
+    { "type": "range", "id": "match_min_width", "label": "Nur anwenden ab Breite", "min": 0, "max": 1600, "step": 20, "unit": "px", "default": 992 }
   ],
   "blocks": [
     {
