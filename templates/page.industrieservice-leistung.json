@@ -313,6 +313,84 @@
         "button_style": "secondary"
       }
     },
+    "leistung_suche_grid_v2_64mKtE": {
+      "type": "leistung-suche-grid-v2",
+      "blocks": {
+        "service_Up8i8H": {
+          "type": "service",
+          "name": "Leistung Block - Industrie- und Maschinenreinigung",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_549798139.jpg",
+            "title_html": "<p><strong>Industrie- und Maschinenreinigung</strong></p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify://pages/maschinenreinigung"
+          }
+        },
+        "service_h9zhf3": {
+          "type": "service",
+          "name": "Leistung Block - Wartung und Instandhaltung",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_93443800.jpg",
+            "title_html": "<p><strong>Wartung und Instandhaltung</strong></p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify://pages/fluidmanagement-wartung"
+          }
+        },
+        "service_hc9rDT": {
+          "type": "service",
+          "name": "Leistung Block - Reinigung von RLT-Anlagen",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_160555946_Lueftung.jpg",
+            "title_html": "<p><strong>Reinigung von RLT-Anlagen</strong></p>",
+            "text_html": "<p>Wir reinigen Ihre Raumlufttechnischen Anlagen unterschiedlicher Art</p>",
+            "keywords": "VDI 6022, Hygiene, Luft, Produktionsstätten",
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify://pages/reinigung-von-luftungskanalen"
+          }
+        },
+        "service_DGz4MT": {
+          "type": "service",
+          "name": "Leistung Block - Reinigung von Zu-und Abluft in gew. Küchen",
+          "settings": {
+            "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
+            "title_html": "<p><strong>Reinigung von Zu-und Abluft in gew. Küchen</strong></p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "VDI 2052, Hygiene, Luft, Küche",
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify://pages/sis-kuchen-rlt"
+          }
+        }
+      },
+      "block_order": [
+        "service_Up8i8H",
+        "service_h9zhf3",
+        "service_hc9rDT",
+        "service_DGz4MT"
+      ],
+      "name": "Leistung Suche Grid v2",
+      "settings": {
+        "heading": "<p><strong>Unsere Leistungen</strong></p>",
+        "subheading": "<p>Mit <em>Leidenschaft</em> für Ihren Erfolg.</p>",
+        "text_align": "center",
+        "show_search": true,
+        "search_placeholder": "Leistungen oder Keywords suchen…",
+        "badge_style": "solid",
+        "keyword_badge_bg": "#E6F0FF",
+        "keyword_badge_color": "#0F1C3F",
+        "card_bg": "#ffffff",
+        "card_radius": 18,
+        "card_shadow": true,
+        "grid_gap": 20,
+        "show_cta": false,
+        "cta_label": "Mehr erfahren",
+        "cta_link": "",
+        "button_style": "primary"
+      }
+    },
     "qualitaeten_hotspot_7aUQfj": {
       "type": "qualitaeten-hotspot",
       "blocks": {
@@ -745,6 +823,7 @@
     "main",
     "hero_overlay_section_6beqpy",
     "leistung_suche_grid_CNDctg",
+    "leistung_suche_grid_v2_64mKtE",
     "qualitaeten_hotspot_7aUQfj",
     "custom_cta_block_Tf7gLb",
     "sis_single_footer_PEDkQY",
