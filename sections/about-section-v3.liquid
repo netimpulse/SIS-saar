@@ -1,8 +1,7 @@
 {% comment %}
   Über Uns (Layout) – v3.2
-  NEU:
-  - Option „Höhe an vorherigen Abschnitt angleichen“
-  - Offset & Mindestbreite steuerbar
+  - Höhe kann optional an vorherigen Abschnitt angepasst werden
+  - NEU: content_max_width steuert die Inhaltsbreite (Standard 920px)
 {% endcomment %}
 
 {{ 'section-ueber-uns-layout-v3.css' | asset_url | stylesheet_tag }}
@@ -32,6 +31,9 @@
     --feature-title-color: {{ section.settings.feature_title_color }};
 
     --no-image-text-align: {{ section.settings.no_image_text_align }};
+
+    /* NEU: Inhaltsbreite */
+    --content-max-width: {{ section.settings.content_max_width | default: 920 }}px;
   }
 </style>
 
@@ -173,9 +175,7 @@
   </div>
 </div>
 
-{%- comment -%}
-  JS: Höhe an vorherigen Abschnitt angleichen (optional)
-{%- endcomment -%}
+{%- comment -%} Höhe an vorherigen Abschnitt angleichen (optional) {%- endcomment -%}
 <script>
 (function() {
   var enabled = {{ section.settings.match_prev_height | json }};
@@ -195,7 +195,6 @@
     while(prev && prev.offsetHeight === 0){ prev = prev.previousElementSibling; }
     return prev;
   }
-
   function apply() {
     if (window.innerWidth < (minWidth || 0)) {
       grid.style.removeProperty('--about-match-height');
@@ -206,7 +205,6 @@
     var h = prev.getBoundingClientRect().height - (offset || 0);
     if (h > 0) grid.style.setProperty('--about-match-height', h + 'px');
   }
-
   apply();
   window.addEventListener('load', apply);
   window.addEventListener('resize', apply);
@@ -293,7 +291,10 @@
     { "type": "header", "content": "Höhe angleichen" },
     { "type": "checkbox", "id": "match_prev_height", "label": "Höhe an vorherigen Abschnitt angleichen", "default": true },
     { "type": "range", "id": "match_prev_height_offset", "label": "Offset (Höhe abziehen/aufaddieren)", "min": -150, "max": 200, "step": 5, "unit": "px", "default": 0 },
-    { "type": "range", "id": "match_min_width", "label": "Nur anwenden ab Breite", "min": 0, "max": 1600, "step": 20, "unit": "px", "default": 992 }
+    { "type": "range", "id": "match_min_width", "label": "Nur anwenden ab Breite", "min": 0, "max": 1600, "step": 20, "unit": "px", "default": 992 },
+
+    { "type": "header", "content": "Breite" },
+    { "type": "range", "id": "content_max_width", "label": "Inhaltsbreite (max.)", "min": 640, "max": 1100, "step": 10, "unit": "px", "default": 920 }
   ],
   "blocks": [
     {
