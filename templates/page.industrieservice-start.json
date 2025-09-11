@@ -108,127 +108,6 @@
         "padding_bottom": 36
       }
     },
-    "leistung_final_7ciChN": {
-      "type": "leistung-final",
-      "blocks": {
-        "service_card_lf_eGL7Px": {
-          "type": "service_card_lf",
-          "settings": {
-            "image": "shopify://shop_images/shutterstock_344049572.jpg",
-            "title": "Industrie- und Maschinenreinigung",
-            "text": "Unsere Spezialisten reinigen Ihre Industrieanlagen, Bearbeitungsmaschinen, Produktionsstätten, Lagerhallen und andere industrielle Einrichtungen professionell und sicher.\nDurch modernste Reinigungsverfahren entfernen wir Öl, Schmierstoffe, Metallabrieb und andere Rückstände, um Maschinenlaufzeiten zu verlängern und Produktionsausfälle zu minimieren.",
-            "link_url": "shopify://pages/maschinenreinigung",
-            "link_label": "Mehr erfahren →"
-          }
-        },
-        "service_card_lf_xLkKFw": {
-          "type": "service_card_lf",
-          "settings": {
-            "image": "shopify://shop_images/shutterstock_65689291.jpg",
-            "title": "Strahlarbetien",
-            "text": "Durch unterschiedliche Strahlverfahren entfernen wir Rost, Lack oder Verschmutzungen. Die Wahl des Strahlmediums beeinflusst dabei Oberflächenrauigkeit und Materialschonung. Wir strahlen z.B. mit Trockeneis, Glas, Sand und Soda",
-            "link_url": "shopify://pages/sis-stahlarbeiten",
-            "link_label": "Mehr erfahren →"
-          }
-        },
-        "service_card_lf_g4h43G": {
-          "type": "service_card_lf",
-          "settings": {
-            "image": "shopify://shop_images/iStock-96920072.jpg",
-            "title": "Reinigung von RLT Anlagen",
-            "text": "Wir prüfen und reinigen Ihre Lüftungsanlagen, Zu- und Abluftrohre in Küchen und dokumentieren die Reinigungsergebnisse. Dabei richten wir uns nachd en VDI Richtlinien VDI 2052 und VDI 6022",
-            "link_url": "shopify://pages/reinigung-von-luftungskanalen",
-            "link_label": "Mehr erfahren →"
-          }
-        },
-        "service_card_lf_cy6kq9": {
-          "type": "service_card_lf",
-          "settings": {
-            "image": "shopify://shop_images/shutterstock_93443800.jpg",
-            "title": "Wartung und Instandhaltung",
-            "text": "Wir sorgen dafür, dass Ihre Maschinen und Anlagen kontinuierlich betriebsbereit bleiben. Unser Service umfasst Inspektionen, Reparaturen, präventive Wartungsmaßnahmen und Dokumentation nach DIN-Standards.",
-            "link_url": "shopify://pages/fluidmanagement-wartung",
-            "link_label": "Mehr erfahren →"
-          }
-        },
-        "service_card_lf_aiHyNR": {
-          "type": "service_card_lf",
-          "settings": {
-            "image": "shopify://shop_images/staplerfahrer-mit-schutzausr-stung-von-hinten-auf-stapler-der-einen-m-llcontainer-auf-einem-industriegel-nde-transportiert.png",
-            "title": "Abfallmanagement und innerbetriebliche Logistik",
-            "text": "Wir übernehmen für Sie die anfallenden Transporte innerhalb der Produktionslinien, egal ob mit Gabelstapler, Schlepper oder sonstigen Flurförderzeugen. Die Sortierung der Abfälle sowie optimierte Transportwege und Recyclingprozesse schützen Ressourcen, reduzieren Schäden und steigern die Effizienz von Lagerhaltung und Produktion.",
-            "link_url": "shopify://pages/dampfreinigung",
-            "link_label": "Mehr erfahren →"
-          }
-        },
-        "service_card_lf_L4KiFR": {
-          "type": "service_card_lf",
-          "settings": {
-            "image": "shopify://shop_images/Trockeneis_AA_3.jpg",
-            "title": "Trockeneisstrahlen",
-            "text": "Viele Anlagen dürfen nicht mit Wasser und chemischen Reinigungsmitteln in Berührung kommen und stellen bei der Reinigung somit eine besondere Herausforderung dar. Trockeneisstrahlen stellt dabei eine besonders schonende Reinigungsmöglichkeit dar.",
-            "link_url": "shopify://pages/trockeneisstrahlen",
-            "link_label": "Mehr erfahren →"
-          }
-        }
-      },
-      "block_order": [
-        "service_card_lf_eGL7Px",
-        "service_card_lf_xLkKFw",
-        "service_card_lf_g4h43G",
-        "service_card_lf_cy6kq9",
-        "service_card_lf_aiHyNR",
-        "service_card_lf_L4KiFR"
-      ],
-      "name": "Leistung final",
-      "settings": {
-        "heading": "Unsere Leistungen",
-        "subtext": "Mit Leidenschaft für gemeinsamen Erfolg.",
-        "font_heading": "sans_serif_n4",
-        "font_body": "sans_serif_n4",
-        "heading_size": 36,
-        "heading_bold": true,
-        "heading_italic": false,
-        "subtext_size": 16,
-        "subtext_bold": false,
-        "subtext_italic": false,
-        "card_title_size": 18,
-        "card_title_bold": true,
-        "card_title_italic": false,
-        "card_text_size": 14,
-        "card_text_bold": false,
-        "card_text_italic": false,
-        "card_link_size": 14,
-        "card_link_bold": true,
-        "card_link_italic": false,
-        "bg_color": "#f3f6f9",
-        "text_color": "#222222",
-        "accent_color": "#22c55e",
-        "card_bg": "#ffffff",
-        "card_hover_bg": "#ffffff",
-        "card_radius": 12,
-        "card_hover_lift": 6,
-        "grid_gap": 20,
-        "section_padding": 24,
-        "show_button": true,
-        "button_label": "Alle Leistungen im Überblick",
-        "button_url": "shopify://pages/industrieservice-leistungen",
-        "button_align": "center",
-        "button_full_width": false,
-        "button_max_width": 420,
-        "button_font_size": 16,
-        "button_bold": true,
-        "button_italic": false,
-        "button_padding_x": 20,
-        "button_padding_y": 10,
-        "button_margin_top": 28,
-        "button_margin_bottom": 0,
-        "button_bg": "#000000",
-        "button_text": "#ffffff",
-        "button_hover_bg": "#22c55e",
-        "button_hover_text": "#ffffff"
-      }
-    },
     "amenities_hotspots_4fU76A": {
       "type": "amenities-hotspots",
       "blocks": {
@@ -718,7 +597,6 @@
     "main",
     "hero_overlay_section_hdypDf",
     "video_3tBQDe",
-    "leistung_final_7ciChN",
     "amenities_hotspots_4fU76A",
     "text_mit_bild_button_PxGyff",
     "custom_cta_block_e7jJM9",
