@@ -1,0 +1,158 @@
+/* Leistung Suche v2 — responsives Grid mit ausgerichteten Karteninhalten */
+.services-grid-section {
+  --badge-bg: #e6f0ff;
+  --badge-color: #0f1c3f;
+  --card-bg: #fff;
+  --card-radius: 18px;
+  --gap: 20px;
+
+  /* Steuerung für gleiche Höhen */
+  --title-fs: 20px;
+  --title-lh: 1.25;
+  --title-lines: 2; /* sichtbare Zeilen: 2 */
+  --text-fs: 16px;
+  --text-lh: 1.55;
+  --text-lines: 2;  /* sichtbare Zeilen: 2 */
+}
+
+.services-grid__inner { padding: 24px 0; }
+
+/* Ausrichtung */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* Header */
+.services-grid__header { margin-bottom: 20px; }
+.services-grid__title { font-size: clamp(22px, 2.2vw, 36px); font-weight: 700; }
+.services-grid__title p { margin: 0; }
+.services-grid__subtitle { opacity: .85; }
+.services-grid__subtitle p { margin: 0; }
+
+/* Suche */
+.services-grid__search {
+  position: relative;
+  max-width: 720px;
+  margin: 18px auto 26px;
+}
+.services-grid__search-input {
+  width: 100%;
+  border: 1px solid rgba(0,0,0,.12);
+  border-radius: 999px;
+  padding: 12px 44px 12px 16px;
+  font-size: 16px;
+  outline: none;
+  background: #fff;
+}
+input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; display: none; }
+.services-grid__search-input:focus { box-shadow: 0 0 0 3px rgba(38,132,255,.18); }
+.services-grid__clear {
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  border: 0; background: transparent; font-size: 22px; line-height: 1; cursor: pointer; padding: 2px 8px; opacity: .6;
+}
+.services-grid__clear:hover { opacity: 1; }
+
+/* Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--gap);
+}
+.services-grid[data-columns="2"] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 990px) {
+  .services-grid,
+  .services-grid[data-columns="2"] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .services-grid,
+  .services-grid[data-columns="2"] { grid-template-columns: 1fr; }
+}
+
+/* Karte */
+.service-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  box-shadow: var(--card-shadow, 0 8px 24px rgba(0,0,0,.08));
+  height: 100%;
+}
+
+/* Media oben */
+.service-card__media {
+  aspect-ratio: 4 / 3;             /* harmonischer auf Mobil & Desktop */
+  background: #f4f6f8;
+  overflow: hidden;
+}
+.service-card__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.service-card__placeholder { width: 100%; height: 100%; background: linear-gradient(135deg, #f1f1f1, #e7e7e7); }
+
+/* Body: Grid für sauberes Ausrichten */
+.service-card__body {
+  padding: 18px;
+  display: grid;
+  grid-template-rows:
+    minmax(calc(var(--title-lines) * var(--title-fs) * var(--title-lh)), auto)   /* Titel fixiert */
+    minmax(calc(var(--text-lines) * var(--text-fs) * var(--text-lh)), auto)      /* Text fixiert */
+    min-content                                                                      /* Tags */
+    1fr                                                                               /* Spacer füllt */
+    min-content;                                                                      /* Button immer unten */
+  gap: 10px;
+  height: 100%;
+}
+
+/* Richtext in Karten */
+.service-card__title {
+  font-size: var(--title-fs);
+  font-weight: 700;
+  line-height: var(--title-lh);
+  display: -webkit-box;
+  -webkit-line-clamp: var(--title-lines);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.service-card__title p { margin: 0; }
+
+.service-card__text {
+  font-size: var(--text-fs);
+  line-height: var(--text-lh);
+  opacity: .9;
+  display: -webkit-box;
+  -webkit-line-clamp: var(--text-lines);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.service-card__text p { margin: 0; }
+.service-card__text ul,
+.service-card__text ol { margin: .25em 0 .5em 1.2em; }
+
+/* Tags */
+.service-card__tags {
+  list-style: none;
+  margin: 2px 0 6px; padding: 0;
+  display: flex; flex-wrap: wrap; gap: 8px;
+}
+.tag { font-size: 13px; padding: 6px 10px; border-radius: 999px; white-space: nowrap; }
+.tag--solid   { background: var(--badge-bg); color: var(--badge-color); border: 1px solid transparent; }
+.tag--outline { background: transparent;    color: var(--badge-color); border: 1px solid var(--badge-bg); }
+
+/* Button unten bündig */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 12px 14px; border-radius: 10px; text-decoration: none; line-height: 1.1;
+  transition: transform .05s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+}
+.btn--primary   { background: #111; color: #fff; }
+.btn--primary:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0,0,0,.15); }
+.btn--secondary { background: #f0f1f3; color: #111; }
+.btn--secondary:hover { background: #e7e8eb; }
+.btn--link { background: transparent; color: inherit; text-decoration: underline; padding: 0; }
+
+/* Mobil: etwas mehr Lesbarkeit, aber Buttons bleiben bündig */
+@media (max-width: 640px){
+  .services-grid-section{
+    --title-lines: 2;
+    --text-lines: 3;
+  }
+}
