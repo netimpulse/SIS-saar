@@ -1,5 +1,7 @@
 {% comment %}
   Erfahrungen • Stats (zweispaltig, mit Badges & Karten)
+  - Letzte Karte volle Breite, wenn sie alleine steht
+  - Überschrift als Richtext
 {% endcomment %}
 
 {{ 'erfahrungen-stats.css' | asset_url | stylesheet_tag }}
@@ -19,9 +21,11 @@
       {% if section.settings.kicker != blank %}
         <p class="es-kicker">{{ section.settings.kicker }}</p>
       {% endif %}
+
       {% if section.settings.heading != blank %}
-        <h2 class="es-heading">{{ section.settings.heading }}</h2>
+        <div class="es-heading rte">{{ section.settings.heading }}</div>
       {% endif %}
+
       {% if section.settings.richtext != blank %}
         <div class="es-richtext rte">{{ section.settings.richtext }}</div>
       {% endif %}
@@ -63,6 +67,13 @@
   </div>
 </section>
 
+<style>
+/* Volle Breite für die letzte Karte, wenn sie alleine steht */
+.es-cards > .es-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+</style>
+
 {% schema %}
 {
   "name": "Erfahrungen • Stats",
@@ -70,7 +81,7 @@
   "class": "section-erfahrungen-stats",
   "settings": [
     { "type": "text", "id": "kicker", "label": "Kicker", "default": "Über 15 Jahre Erfahrung" },
-    { "type": "text", "id": "heading", "label": "Überschrift", "default": "Unsere Werte" },
+    { "type": "richtext", "id": "heading", "label": "Überschrift (Richtext)", "default": "<p>Unsere Werte</p>" },
     { "type": "richtext", "id": "richtext", "label": "Text", "default": "<p>Als familiengeführtes Unternehmen legen wir Wert auf persönlichen Service und langfristige Kundenbeziehungen. Unser Team von über 50 qualifizierten Mitarbeitenden sorgt täglich dafür, dass mehr als 200 zufriedene Kund:innen auf unsere Zuverlässigkeit vertrauen.</p>" },
 
     { "type": "text", "id": "btn_label", "label": "Button-Text", "default": "Mehr über uns" },
@@ -112,11 +123,11 @@
         { "type": "badge", "settings": { "badge_text": "150+ Beschäftigte" } },
         { "type": "badge", "settings": { "badge_text": "20+ Jahre Erfahrung" } },
 
-        { "type": "stat", "settings": { "emoji": "✅", "title": "Regional verwurzelt – überregional stark", "subtitle": "Wir stehen für saarländische Verlässlichkeit mit professionellem Anspruch.", "aria_label": "Regional verwurzelt – Karte" } },
-        { "type": "stat", "settings": { "emoji": "✅", "title": "Qualität durch Leidenschaft", "subtitle": "Sauberkeit ist für uns mehr als ein Ergebnis – es ist unser Anspruch an Perfektion.", "featured": true, "aria_label": "Qualität durch Leidenschaft – Karte" } },
-        { "type": "stat", "settings": { "emoji": "✅", "title": "Menschen im Mittelpunkt", "subtitle": "Schulung, Sicherheit und Wertschätzung sind für uns selbstverständlich.", "aria_label": "Menschen im Mittelpunkt – Karte" } },
-        { "type": "stat", "settings": { "emoji": "🌱", "title": "Nachhaltigkeit im Blick", "subtitle": "Moderne, ressourcenschonende Verfahren für gelebte Praxis.", "aria_label": "Nachhaltigkeit im Blick – Karte" } },
-        { "type": "stat", "settings": { "emoji": "🤝", "title": "Partnerschaft auf Augenhöhe", "subtitle": "Wir hören zu, verstehen Bedürfnisse und liefern Lösungen, die passen.", "aria_label": "Partnerschaft auf Augenhöhe – Karte" } }
+        { "type": "stat", "settings": { "emoji": "✅", "title": "Regional verwurzelt – überregional stark", "subtitle": "Wir stehen für saarländische Verlässlichkeit mit professionellem Anspruch." } },
+        { "type": "stat", "settings": { "emoji": "✅", "title": "Qualität durch Leidenschaft", "subtitle": "Sauberkeit ist für uns mehr als ein Ergebnis – es ist unser Anspruch an Perfektion.", "featured": true } },
+        { "type": "stat", "settings": { "emoji": "✅", "title": "Menschen im Mittelpunkt", "subtitle": "Schulung, Sicherheit und Wertschätzung sind für uns selbstverständlich." } },
+        { "type": "stat", "settings": { "emoji": "🌱", "title": "Nachhaltigkeit im Blick", "subtitle": "Moderne, ressourcenschonende Verfahren für gelebte Praxis." } },
+        { "type": "stat", "settings": { "emoji": "🤝", "title": "Partnerschaft auf Augenhöhe", "subtitle": "Wir hören zu, verstehen Bedürfnisse und liefern Lösungen, die passen." } }
       ]
     }
   ]
