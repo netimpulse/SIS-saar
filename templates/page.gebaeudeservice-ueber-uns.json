@@ -35,7 +35,7 @@
         "nav_hover_color": "#4ade80",
         "nav_font_size": 16,
         "button_text": "Kontakt",
-        "button_link": "shopify://pages/allgemeiner-kontakt",
+        "button_link": "shopify://pages/gebaudeservice-kontakt",
         "button_text_color": "#ffffff",
         "button_bg_color": "#4ade80",
         "button_hover_text_color": "#ffffff",
@@ -183,10 +183,10 @@
         "btn_link": "",
         "btn_newtab": false,
         "bg_color": "#ffffff",
-        "card_bg": "#FFFFFF",
+        "card_bg": "#ffffff",
         "card_radius": 16,
         "text_color": "#111111",
-        "accent_color": "#22C55E"
+        "accent_color": "#22c55e"
       }
     },
     "about_section_v2_m7ztz9": {

@@ -183,10 +183,10 @@
         "btn_link": "",
         "btn_newtab": false,
         "bg_color": "#ffffff",
-        "card_bg": "#FFFFFF",
+        "card_bg": "#ffffff",
         "card_radius": 16,
         "text_color": "#111111",
-        "accent_color": "#22C55E"
+        "accent_color": "#22c55e"
       }
     },
     "about_section_v2_YRVhnt": {
@@ -345,6 +345,66 @@
         "icon_color": "#34d399",
         "feature_title_color": "#111827",
         "no_image_text_align": "left"
+      }
+    },
+    "kachelview_kwibTj": {
+      "type": "kachelview",
+      "blocks": {
+        "stat_eVrG7E": {
+          "type": "stat",
+          "settings": {
+            "emoji": "",
+            "title": "Kurze Reaktionszeit",
+            "subtitle": "",
+            "featured": false,
+            "aria_label": "Kachel"
+          }
+        },
+        "stat_9pEpY7": {
+          "type": "stat",
+          "settings": {
+            "emoji": "✅",
+            "title": "langjährige Erfahrung",
+            "subtitle": "",
+            "featured": false,
+            "aria_label": "Kachel"
+          }
+        },
+        "stat_dPc6pQ": {
+          "type": "stat",
+          "settings": {
+            "emoji": "",
+            "title": "geschultes Personal",
+            "subtitle": "",
+            "featured": false,
+            "aria_label": "Kachel"
+          }
+        },
+        "stat_dFWrGb": {
+          "type": "stat",
+          "settings": {
+            "emoji": "✅",
+            "title": "beste Qualität",
+            "subtitle": "",
+            "featured": false,
+            "aria_label": "Kachel"
+          }
+        }
+      },
+      "block_order": [
+        "stat_eVrG7E",
+        "stat_9pEpY7",
+        "stat_dPc6pQ",
+        "stat_dFWrGb"
+      ],
+      "disabled": true,
+      "name": "Kachelview",
+      "settings": {
+        "bg_color": "#ffffff",
+        "card_bg": "#FFFFFF",
+        "card_radius": 16,
+        "text_color": "#111111",
+        "accent_color": "#ffffff"
       }
     },
     "about_section_v3_mUVrDy": {
@@ -796,6 +856,7 @@
     "erfahrungen_stats_aCR3TH",
     "about_section_v2_YRVhnt",
     "about_section_v3_YePBYF",
+    "kachelview_kwibTj",
     "about_section_v3_mUVrDy",
     "qualitaeten_hotspot_NRYkEG",
     "highlights_icons_4mpBYK",
