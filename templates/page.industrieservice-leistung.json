@@ -125,6 +125,18 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_160555946_Lueftung.jpg",
             "title_html": "<p><strong>Reinigung von RLT-Anlagen</strong></p>",
+            "text_html": "<p>Wir reinigen Ihre Raumlufttechnischen Anlagen unterschiedlicher Art</p>",
+            "keywords": "VDI 6022, Hygiene, Luft, Produktionsstätten",
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify://pages/reinigung-von-luftungskanalen"
+          }
+        },
+        "service_TjgEwQ": {
+          "type": "service",
+          "name": "Leistung Suche Block - Küche",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_160555946_Lueftung.jpg",
+            "title_html": "<p><strong>Reinigung von RLT-Anlagen</strong></p>",
             "text_html": "<p>Wir reinigen Ihre RLT-Anlagen sowie die Abluftkanäle in gewerblichen Küchen</p>",
             "keywords": "VDI 6022, VDI 2052, Hygiene, Luft, Küche",
             "button_label": "Mehr erfahren",
@@ -268,6 +280,7 @@
         "service_yAW4Lw",
         "service_qM4UjF",
         "service_3EXgy7",
+        "service_TjgEwQ",
         "service_mtirNV",
         "service_7y4xhU",
         "service_YUWEK3",
