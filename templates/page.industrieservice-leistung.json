@@ -387,6 +387,18 @@
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/sis-montage-demontage"
           }
+        },
+        "service_WnRUJA": {
+          "type": "service",
+          "name": "Leistung Block - Schweiß- und Richtarbeiten",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_785685529.jpg",
+            "title_html": "<p><strong>Schweiß- und Richtarbeiten</strong></p>",
+            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
@@ -395,7 +407,8 @@
         "service_hc9rDT",
         "service_DGz4MT",
         "service_DzTDzd",
-        "service_TDd7pL"
+        "service_TDd7pL",
+        "service_WnRUJA"
       ],
       "name": "Leistung Suche Grid v2",
       "settings": {
