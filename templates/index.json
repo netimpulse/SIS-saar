@@ -325,6 +325,62 @@
         "section_padding": 50
       }
     },
+    "kundenbewneu_mxGDEa": {
+      "type": "kundenbewneu",
+      "blocks": {
+        "review_VtGcrF": {
+          "type": "review",
+          "settings": {
+            "person_image": "shopify://shop_images/Logo_mitClaim_ZW.jpg",
+            "image_size": 100,
+            "person_name": "Martin Anstadt, Leitung Einkauf / Materialwirtschaft",
+            "name_font": "sans_serif_n4",
+            "name_font_size": 18,
+            "review_text": "<p>Die Firma SIS Saar-Industrie-Service GmbH ist schon lange unser Dienstleister füralle Industriereinigungen im Innen- und im Außenbereich. Wir sind in jeglicher Hinsicht sehr  zufrieden mit den getätigten Arbeiten von SIS Saar-Industrie-Service GmbH und sehen das Unternehmen zwischenzeitlich als zuverlässigen Partner im Bereich Dienstleistung Industriereinigungen in der Automotive Industrie. </p>",
+            "text_font": "sans_serif_n4",
+            "text_font_size": 16,
+            "star_rating": 5
+          }
+        },
+        "review_wN6Nnz": {
+          "type": "review",
+          "settings": {
+            "image_size": 100,
+            "person_name": "Max Mustermann",
+            "name_font": "sans_serif_n4",
+            "name_font_size": 18,
+            "review_text": "<p>Die Firma SIS Saar-Industrie-Service GmbH ist schon lange unser Dienstleister für<br/>alle Industriereinigungen im Innen- und im Außenbereich. Wir sind in jeglicher Hinsicht sehr  zufrieden mit den getätigten Arbeiten von SIS Saar-Industrie-Service GmbH und sehen das Unternehmen zwischenzeitlich als zuverlässigen Partner im Bereich Dienstleistung Industriereinigungen in der Automotive Industrie. </p>",
+            "text_font": "sans_serif_n4",
+            "text_font_size": 16,
+            "star_rating": 5
+          }
+        },
+        "review_DcmGqT": {
+          "type": "review",
+          "settings": {
+            "image_size": 100,
+            "person_name": "Max Mustermann",
+            "name_font": "sans_serif_n4",
+            "name_font_size": 18,
+            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
+            "text_font": "sans_serif_n4",
+            "text_font_size": 16,
+            "star_rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "review_VtGcrF",
+        "review_wN6Nnz",
+        "review_DcmGqT"
+      ],
+      "name": "KundenbewertungNeu",
+      "settings": {
+        "background_color": "#f9f9f9",
+        "section_padding": 50,
+        "gap_size": 30
+      }
+    },
     "interactive_map_BWTdBe": {
       "type": "interactive-map",
       "disabled": true,
@@ -603,6 +659,7 @@
     "about_section_v3_jYmwQj",
     "partner_logos_khWdEB",
     "kundenbewertung_tzkjqA",
+    "kundenbewneu_mxGDEa",
     "interactive_map_BWTdBe",
     "text_mit_bild_button_6UPhhG",
     "custom_cta_block_UK3hyB",
