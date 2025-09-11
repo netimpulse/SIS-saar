@@ -293,6 +293,7 @@
         "service_jrn8GJ",
         "service_x8djWD"
       ],
+      "disabled": true,
       "name": "Leistung Suche Grid",
       "settings": {
         "heading": "",
