@@ -54,14 +54,14 @@
       "type": "hero-building-section",
       "name": "Hero Building",
       "settings": {
-        "background_image": "shopify://shop_images/shutterstock_65689291.jpg",
+        "background_image": "shopify://shop_images/shutterstock_731614684.jpg",
         "enable_overlay": true,
         "overlay_color": "#000000",
         "overlay_opacity": 0.5,
-        "heading": "Stahlarbeiten",
+        "heading": "Monatge",
         "subheading": "",
         "button_label": "Jetzt Angebot anfordern",
-        "button_link": "",
+        "button_link": "shopify://pages/industrieservice-kontakt",
         "button_color": "#007acc",
         "button_text_color": "#ffffff",
         "button_radius": 4,
@@ -124,7 +124,7 @@
         "left_heading_align": "right",
         "left_heading_italic": false,
         "left_heading_weight": "700",
-        "left_text": "<p>Eigener Textblock, der erscheint, wenn das Bild ausgeblendet ist.</p>",
+        "left_text": "<p>Sie planen einen Umbau Ihrer Anlagen? Neue Geräte wurden angeschafft und dafür müssen die alten weichen? Wir unterstützen Sie bei größeren und kleineren Maschinenumzügen und liefern fachgerechte Montage und Demontage Ihrer Anlagen. Wir kümmern uns auf Wunsch auch um die Verschrottung Ihrer Maschinen bzw. stehen Ihnen mit Schlossern und weiteren Helfern zur Seite.</p>",
         "bg_color": "#ffffff",
         "section_padding": 24,
         "points_title": "Unsere Dienstleistungen:",
@@ -155,10 +155,10 @@
       ],
       "name": "Über Uns (Layout) – v3 - Sandstrahlen",
       "settings": {
-        "image_position": "right",
+        "image_position": "bottom",
         "image_vertical_align": "start",
         "show_image": true,
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "section_padding_top": 80,
         "section_padding_bottom": 80,
         "title": "",
@@ -170,7 +170,7 @@
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
         "description": "<p>Diese Reinigungsweise eignet sich besonders gut bei groben und festsitzenden Verschmutzungen wie beispielsweise<br/>Lackrückstände oder Korrosion. Dabei wird das zu reinigende Objekt mit feinen<br/>Sandkörnern bestrahlt, welche die Verschmutzungen abtragen. Hierbei kann man sowohl bei der Wahl des Mediums als auch bei der Körnung variieren, um<br/>verschiedene Ergebnisse zu erzielen. Wir haben im Hause eine eigene<br/>Strahlkabine mit modernster Strahl- und Absaugtechnik, deren Nutzung durch<br/>unseren Transportservice für Sie unkompliziert und günstig wird.</p><p>Effektiv bei groben Verschmutzungen</p>",
-        "text_color": "#6B7280",
+        "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_210427888_6916fb3d-f2ef-4451-86ef-fe1d9e2296c2.jpg",
         "image_border_radius": 12,
@@ -179,7 +179,7 @@
         "image_aspect_ratio": "4/3",
         "features_per_row": "1",
         "icon_size": 32,
-        "icon_color": "#34D399",
+        "icon_color": "#34d399",
         "feature_title_color": "#111827",
         "no_image_text_align": "left"
       }
@@ -217,7 +217,7 @@
         "image_position": "right",
         "image_vertical_align": "start",
         "show_image": true,
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "section_padding_top": 80,
         "section_padding_bottom": 80,
         "title": "",
@@ -229,7 +229,7 @@
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
         "description": "<p>Beim Sodastrahlen wird die Oberfläche des verschmutzten Werkstücks unter Hochdruck mit Soda (Natriumbikarbonat) bestrahlt. Hier entstehen Mini-Explosionen, die die Verschmutzung von der Oberfläche entfernen. So löst sich die Verschmutzung ohne größeren Abtrag am Werkstück. Sodastrahlen ist sowohl im Trocken-, als auch Nassstrahlverfahren möglich. Eine geringe Wassermenge sorgt für nahezu staubfreie Reinigung. Mit Sodastrahlen ist das Lösen von Verschmutzungen ohne größeren Abtrag möglich. Dieses Reinigungsverfahren ist für verschiedenste Oberflächen geeignet (z.B. Metall, Holz, Kunststoff, Gummi, Glas etc.)</p>",
-        "text_color": "#6B7280",
+        "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_555365941.jpg",
         "image_border_radius": 12,
@@ -238,55 +238,7 @@
         "image_aspect_ratio": "4/3",
         "features_per_row": "1",
         "icon_size": 32,
-        "icon_color": "#34D399",
-        "feature_title_color": "#111827",
-        "no_image_text_align": "left"
-      }
-    },
-    "about_section_v3_8XYGe7": {
-      "type": "about-section-v3",
-      "blocks": {
-        "feature_HLNxKL": {
-          "type": "feature",
-          "name": "Feature Punkt - Bodenmarkierung",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "✅ für Entfernung von Bodenmarkierungen auf Betonböden",
-            "feature_description": ""
-          }
-        }
-      },
-      "block_order": [
-        "feature_HLNxKL"
-      ],
-      "name": "Über Uns (Layout) – v3 - Glasstrahlen",
-      "settings": {
-        "image_position": "left",
-        "image_vertical_align": "start",
-        "show_image": true,
-        "background_color": "#FFFFFF",
-        "section_padding_top": 80,
-        "section_padding_bottom": 80,
-        "title": "",
-        "title_richtext": "<p><strong>Glasstrahlen</strong></p>",
-        "title_color": "#111827",
-        "title_font_size": 32,
-        "subtitle": "",
-        "subtitle_richtext": "",
-        "subtitle_color": "#374151",
-        "subtitle_font_size": 20,
-        "description": "<p>„Glasstrahlen ohne Staub“ Beim Glasstrahlen gibt es Glasperlen, also kleine Glaskügelchen, die als Strahlmedium eingesetzt werden und auch sogenanntes „crushed glas“, was aus winzig kleinen Glasscherben besteht. Dieses Crushed Glas als Strahlmittel ist grobkörniger und durch die scharfen, eckigen Kanten der zerbrochenen Glasteile, kann das Strahlmedium abrasiver wirken und festsitzende Verschmutzungen besser lösen. Das Crushed Glas wird zusammen mit Wasser und Korrosionsschutzmittel gemischt, um eine staubfreie, intensive Reinigung durchzuführen. Das beigemischte Korrosionsschutzmittel trägt dazu bei, dass die bestrahlten Metallteile und andere harten Oberflächen nicht mit der Umgebung reagieren und beschädigt werden. Dadurch kann im Anschluss an die Reinigung das behandelte Teil oder die behandelte Fläche besser nachbehandelt werden. Durch die abrasive Wirkung des Strahlmediums ist dieses Strahlverfahren jedoch nicht für alle Oberflächen geeignet. Gerne beraten wir Sie persönlich, was für Ihren Anwendungsfall das empfohlene Strahlgut ist, und führen die<br/>Arbeiten für Sie durch.  Unterschiedliche Körnungen erzielen verschiedene Glanzeffekte. Glasstrahlen ist vor allem bei der Oberflächenveredelung oder beim Entgraten zu empfehlen</p>",
-        "text_color": "#6B7280",
-        "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_427667125.jpg",
-        "image_border_radius": 12,
-        "image_alt": "",
-        "image_max_width": 85,
-        "image_aspect_ratio": "4/3",
-        "features_per_row": "1",
-        "icon_size": 32,
-        "icon_color": "#34D399",
+        "icon_color": "#34d399",
         "feature_title_color": "#111827",
         "no_image_text_align": "left"
       }
@@ -298,7 +250,7 @@
         "image_position": "top",
         "image_vertical_align": "center",
         "show_image": false,
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "section_padding_top": 80,
         "section_padding_bottom": 80,
         "title": "",
@@ -309,8 +261,8 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Diese beiden Methoden sind in ihrer Vorgehensweise und Anwendung grundsätzlich sehr ähnlich. Beide eignen sich besonders gut für grobe und festsitzende Verschmutzungen. Der Unterschied liegt hier nur im Strahlmedium und dessen Reaktion mit der Oberfläche. Während im ersten Fall<br/>Sandkörner zum Strahlen verwendet werden, sind im zweiten Fall beschleunigte Glasperlen oder Crushglas, die auf die Oberfläche auftreten. Durch diese abrasiven Verfahren kann allerdings auch ein gewisser Abtrag am Werkstück auftreten, daher ist Sand-/Glasstrahlen nicht für alle Anwendungsbereiche geeignet.</p>",
-        "text_color": "#6B7280",
+        "description": "<p>Diese beiden Methoden sind in ihrer Vorgehensweise und Anwendung grundsätzlich</p>",
+        "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_427667125.jpg",
         "image_border_radius": 12,
@@ -319,7 +271,7 @@
         "image_aspect_ratio": "4/3",
         "features_per_row": "1",
         "icon_size": 32,
-        "icon_color": "#34D399",
+        "icon_color": "#34d399",
         "feature_title_color": "#111827",
         "no_image_text_align": "center"
       }
@@ -331,7 +283,7 @@
         "image_position": "top",
         "image_vertical_align": "start",
         "show_image": true,
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "section_padding_top": 80,
         "section_padding_bottom": 80,
         "title": "",
@@ -343,7 +295,7 @@
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
         "description": "",
-        "text_color": "#6B7280",
+        "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_420833395_f08fa48e-93d6-404c-8da5-80e6417fb104.jpg",
         "image_border_radius": 12,
@@ -352,7 +304,7 @@
         "image_aspect_ratio": "4/3",
         "features_per_row": "1",
         "icon_size": 32,
-        "icon_color": "#34D399",
+        "icon_color": "#34d399",
         "feature_title_color": "#111827",
         "no_image_text_align": "center"
       }
@@ -434,62 +386,6 @@
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_657636373.jpg",
-        "image_border_radius": 12,
-        "image_alt": "",
-        "image_max_width": 85,
-        "image_aspect_ratio": "auto",
-        "features_per_row": "2",
-        "icon_size": 32,
-        "icon_color": "#34d399",
-        "feature_title_color": "#111827"
-      }
-    },
-    "about_section_v2_9DYaHa": {
-      "type": "about-section-v2",
-      "blocks": {
-        "feature_zVtG3A": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Mehr Sicherheit",
-            "feature_description": ""
-          }
-        },
-        "feature_MeWHFV": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "icon_image": "shopify://shop_images/Titelbild_Video.png",
-            "feature_title": "Weniger Risiko",
-            "feature_description": ""
-          }
-        }
-      },
-      "block_order": [
-        "feature_zVtG3A",
-        "feature_MeWHFV"
-      ],
-      "name": "Vorher-Nachher",
-      "settings": {
-        "layout_direction": "text_left",
-        "show_image": true,
-        "background_color": "#ffffff",
-        "section_padding_top": 30,
-        "section_padding_bottom": 20,
-        "title": "",
-        "title_richtext": "",
-        "title_color": "#111827",
-        "title_font_size": 32,
-        "subtitle": "",
-        "subtitle_richtext": "",
-        "subtitle_color": "#374151",
-        "subtitle_font_size": 20,
-        "description": "",
-        "text_color": "#6b7280",
-        "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_657611401.jpg",
         "image_border_radius": 12,
         "image_alt": "",
         "image_max_width": 85,
@@ -832,12 +728,10 @@
     "leistung_showcase_wAGpyg",
     "about_section_v3_RGqFVA",
     "about_section_v3_nAxpQE",
-    "about_section_v3_8XYGe7",
     "about_section_v3_p7n9bw",
     "about_section_v3_gLk4ph",
     "about_section_v2_RbQb9j",
     "about_section_v2_kxjGWD",
-    "about_section_v2_9DYaHa",
     "video_Cg8Ar8",
     "custom_cta_block_3nzV4z",
     "sis_single_footer_N4n9t3",

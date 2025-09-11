@@ -161,10 +161,10 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_549798139.jpg",
             "title_html": "<p>Montage, Demontage, Maschinenumzüge und Maschinenverschrottung</p>",
-            "text_html": "<p>Sie planen einen Umbau Ihrer Anlagen? Neue Geräte wurden angeschafft und dafür müssen die alten weichen? Wir unterstützen Sie bei größeren und kleineren Maschinenumzügen und liefern fachgerechte Montage und Demontage Ihrer Anlagen. Wir kümmern uns auf Wunsch auch um die Verschrottung Ihrer Maschinen bzw. stehen Ihnen mit Schlossern und weiteren Helfern zur Seite.</p>",
+            "text_html": "<p>Sie planen einen Umbau Ihrer Anlagen? Neue Geräte wurden angeschafft und dafür müssen die alten weichen? Wir unterstützen Sie bei größeren und kleineren Aktionen</p>",
             "keywords": "Verschrottung, Schlosser, Helfer, Umzug",
             "button_label": "Mehr erfahren",
-            "button_link": ""
+            "button_link": "shopify://pages/sis-montage-demontage"
           }
         },
         "service_YUWEK3": {
