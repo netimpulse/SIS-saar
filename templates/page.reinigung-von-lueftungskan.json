@@ -291,6 +291,39 @@
         "section_padding_top": 20,
         "section_padding_bottom": 45,
         "title": "",
+        "title_richtext": "<p><strong>Auszug unserer Leistungen<br/></strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<p><em>.<br/>Sichtprüfung und Dokumentation des hygienischen </em><em><strong>Anlagenzustands</strong></em></p><p><em><strong>Fachgerechte </strong></em><em>Reinigung von Filtern, Ventilatoren, Wärmetauschern, Tropfenabscheidern, Kondensatwannen etc.</em></p><p><em><strong>Manuelle</strong></em><em>, </em><em><strong>mechanische </strong></em><em>oder </em><em><strong>chemische </strong></em><em>Reinigung, je nach Anlagentyp und Verschmutzungsgrad</em></p><p><em>Einsatz von </em><em><strong>rotierenden Bürsten </strong></em><em>(systemgerecht angepasst) und Pressluft, um die Verunreinigungen zu lösen</em></p><p><em><strong>Entfernung von Fremdkörpern</strong></em><em> wie Staub und Ablagerungen in Luftführungskanälen</em></p><p><em>Bei Bedarf </em><em><strong>Desinfektion</strong></em><em>smaßnahmen (z.B. bei mikrobieller Belastung) </em></p><p><em><strong>Dokumentation </strong></em><em>durch Foto- oder Videoaufnahmen vor und nach der Reinigung<br/></em></p><p>Gerne führen wir auch eine Hygiene-Erstinspektion durch und erstellen ein individuelles Reinigungskonzept für Ihre RLT - Anlage.</p>",
+        "text_color": "#6b7280",
+        "text_font_size": 18,
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "4/3",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "center"
+      }
+    },
+    "about_section_v3_xqD4zk": {
+      "type": "about-section-v3",
+      "disabled": true,
+      "name": "Über Uns (Layout) – v3 - Auszug Leistungen",
+      "settings": {
+        "image_position": "right",
+        "image_vertical_align": "center",
+        "show_image": true,
+        "background_color": "#ffffff",
+        "section_padding_top": 20,
+        "section_padding_bottom": 45,
+        "title": "",
         "title_richtext": "<p><strong>Auszug unserer Leistungen</strong></p>",
         "title_color": "#111827",
         "title_font_size": 32,
@@ -298,7 +331,7 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>✅ Sichtprüfung und Dokumentation des hygienischen <strong>Anlagenzustands</strong></p><p>✅ <strong>Fachgerechte </strong>Reinigung von Filtern, Ventilatoren, Wärmetauschern, Tropfenabscheidern, Kondensatwannen etc.</p><p>✅ <strong>Manuelle</strong>, <strong>mechanische </strong>oder <strong>chemische </strong>Reinigung, je nach Anlagentyp und Verschmutzungsgrad</p><p>✅ Einsatz von <strong>rotierenden Bürsten </strong>(systemgerecht angepasst) und Pressluft, um die Verunreinigungen zu lösen</p><p>✅ <strong>Entfernung von Fremdkörpern</strong> wie Staub und Ablagerungen in Luftführungskanälen</p><p>✅ Bei Bedarf <strong>Desinfektion</strong>smaßnahmen (z.B. bei mikrobieller Belastung) </p><p>✅ <strong>Dokumentation </strong>durch Foto- oder Videoaufnahmen vor und nach der Reinigung<br/></p><p>Gerne führen wir auch eine Hygiene-Erstinspektion durch und erstellen ein individuelles Reinigungskonzept<br/>für Ihre RLT - Anlage.</p>",
+        "description": "<p></p><p>✅ Sichtprüfung und Dokumentation des hygienischen <strong>Anlagenzustands</strong></p><p>✅ <strong>Fachgerechte </strong>Reinigung von Filtern, Ventilatoren, Wärmetauschern, Tropfenabscheidern, Kondensatwannen etc.</p><p>✅ <strong>Manuelle</strong>, <strong>mechanische </strong>oder <strong>chemische </strong>Reinigung, je nach Anlagentyp und Verschmutzungsgrad</p><p>✅ Einsatz von <strong>rotierenden Bürsten </strong>(systemgerecht angepasst) und Pressluft, um die Verunreinigungen zu lösen</p><p>✅ <strong>Entfernung von Fremdkörpern</strong> wie Staub und Ablagerungen in Luftführungskanälen</p><p>✅ Bei Bedarf <strong>Desinfektion</strong>smaßnahmen (z.B. bei mikrobieller Belastung) </p><p>✅ <strong>Dokumentation </strong>durch Foto- oder Videoaufnahmen vor und nach der Reinigung<br/></p><p>Gerne führen wir auch eine Hygiene-Erstinspektion durch und erstellen ein individuelles Reinigungskonzept für Ihre RLT - Anlage.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image_border_radius": 12,
@@ -392,6 +425,7 @@
         "stat_wNTYhz",
         "stat_JQFhdt"
       ],
+      "disabled": true,
       "name": "Ihre Vorteile – Erfahrung/Stats",
       "settings": {
         "kicker": "",
@@ -409,8 +443,39 @@
     },
     "about_section_v2_t3ejyA": {
       "type": "about-section-v2",
+      "name": "Ihre Vorteile Features",
+      "settings": {
+        "layout_direction": "text_left",
+        "show_image": false,
+        "background_color": "#ffffff",
+        "section_padding_top": 50,
+        "section_padding_bottom": 50,
+        "title": "",
+        "title_richtext": "<p><strong>Ihre Vorteile</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "",
+        "text_color": "#6b7280",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "auto",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827"
+      }
+    },
+    "about_section_v2_GARtaw": {
+      "type": "about-section-v2",
       "blocks": {
-        "feature_rUeyxn": {
+        "feature_dtKXfT": {
           "type": "feature",
           "settings": {
             "icon_type": "svg",
@@ -419,7 +484,7 @@
             "feature_description": "Potential für Schimmelbildung wird reduziert, negative Gerüche beseitigt,"
           }
         },
-        "feature_pBPkYA": {
+        "feature_tzXUhx": {
           "type": "feature",
           "settings": {
             "icon_type": "svg",
@@ -428,7 +493,7 @@
             "feature_description": "durch Staub, Schmutz und Mikroben"
           }
         },
-        "feature_r47zeJ": {
+        "feature_zGHNtc": {
           "type": "feature",
           "settings": {
             "icon_type": "svg",
@@ -437,7 +502,7 @@
             "feature_description": "durch Beseitigung von Brandlasten (z.B. Fettablagerungen in den Abluftsystemen)"
           }
         },
-        "feature_Cpczf4": {
+        "feature_9VXdx9": {
           "type": "feature",
           "settings": {
             "icon_type": "svg",
@@ -446,7 +511,7 @@
             "feature_description": "Reduzierte Betriebskosten"
           }
         },
-        "feature_PEJBtK": {
+        "feature_tDcx8y": {
           "type": "feature",
           "settings": {
             "icon_type": "svg",
@@ -455,7 +520,7 @@
             "feature_description": "Kosteneinsparung"
           }
         },
-        "feature_MxYCFC": {
+        "feature_f7f6xb": {
           "type": "feature",
           "settings": {
             "icon_type": "svg",
@@ -466,13 +531,14 @@
         }
       },
       "block_order": [
-        "feature_rUeyxn",
-        "feature_pBPkYA",
-        "feature_r47zeJ",
-        "feature_Cpczf4",
-        "feature_PEJBtK",
-        "feature_MxYCFC"
+        "feature_dtKXfT",
+        "feature_tzXUhx",
+        "feature_zGHNtc",
+        "feature_9VXdx9",
+        "feature_tDcx8y",
+        "feature_f7f6xb"
       ],
+      "disabled": true,
       "name": "Ihre Vorteile Features",
       "settings": {
         "layout_direction": "text_left",
@@ -502,6 +568,87 @@
         "feature_title_color": "#111827"
       }
     },
+    "kachelview_DfEMD4": {
+      "type": "kachelview",
+      "blocks": {
+        "stat_qQYazp": {
+          "type": "stat",
+          "settings": {
+            "emoji": "",
+            "title": "Bessere Luftqualität und Hygiene",
+            "subtitle": "Potential für Schimmelbildung wird reduziert, negative Gerüche beseitigt,",
+            "featured": false,
+            "aria_label": "Kachel"
+          }
+        },
+        "stat_ciBfyk": {
+          "type": "stat",
+          "settings": {
+            "emoji": "",
+            "title": "Beseititgung von Gesundheitsgefährdungen",
+            "subtitle": "durch Staub, Schmutz und Mikroben",
+            "featured": false,
+            "aria_label": "Kachel"
+          }
+        },
+        "stat_H8LfRk": {
+          "type": "stat",
+          "settings": {
+            "emoji": "",
+            "title": "Reduzierte Brandrisiken",
+            "subtitle": "durch Beseitigung von Brandlasten (z.B. Fettablagerungen in den Abluftsystemen)",
+            "featured": false,
+            "aria_label": "Kachel"
+          }
+        },
+        "stat_4kTHjR": {
+          "type": "stat",
+          "settings": {
+            "emoji": "",
+            "title": "Energieeinsparung und Effizienzsteigerung",
+            "subtitle": "Reduzierte Betriebskosten",
+            "featured": false,
+            "aria_label": "Kachel"
+          }
+        },
+        "stat_HcbUaq": {
+          "type": "stat",
+          "settings": {
+            "emoji": "",
+            "title": "Verlängerung der Lebensdauer der Anlagen",
+            "subtitle": "Kosteneinsparung",
+            "featured": false,
+            "aria_label": "Kachel"
+          }
+        },
+        "stat_aemwyP": {
+          "type": "stat",
+          "settings": {
+            "emoji": "",
+            "title": "Einhaltung gesetzlicher Vorgaben, Richtlinien und Standards",
+            "subtitle": "Rechtssicherheit durch Nachweis einer hygienischen Wartung, Arbeitsschutz etc.",
+            "featured": false,
+            "aria_label": "Kachel"
+          }
+        }
+      },
+      "block_order": [
+        "stat_qQYazp",
+        "stat_ciBfyk",
+        "stat_H8LfRk",
+        "stat_4kTHjR",
+        "stat_HcbUaq",
+        "stat_aemwyP"
+      ],
+      "name": "Kachelview",
+      "settings": {
+        "bg_color": "#F3F8F5",
+        "card_bg": "#FFFFFF",
+        "card_radius": 16,
+        "text_color": "#111111",
+        "accent_color": "#22C55E"
+      }
+    },
     "about_section_v3_QHjnVq": {
       "type": "about-section-v3",
       "name": "Über Uns (Layout) – v3 - VDI 2052",
@@ -520,7 +667,7 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Die VDI 6022 ist</p>",
+        "description": "<p></p><p>Die <strong>VDI 6022</strong> ist die zentrale Richtlinie für Hygiene in <strong>raumlufttechnischen Anlagen (RLT-Anlagen)</strong> und <strong>Luftbefeuchtern</strong>. Sie legt verbindliche Anforderungen an Planung, Betrieb, Inspektion und Reinigung fest, um dauerhaft eine gesunde Raumluftqualität sicherzustellen.</p><p>Zu den wichtigsten Hygieneanforderungen gehören:</p><ul><li>regelmäßige <strong>Inspektion, Wartung und Reinigung</strong> aller Anlagenteile<br/></li><li>hygienische Ausführung von <strong>Filtern, Luftbefeuchtern und Luftkanälen</strong><br/></li><li>Vorbeugung gegen <strong>Keime, Schimmel und Schadstoffe</strong><br/></li><li>lückenlose <strong>Dokumentation</strong> der Maßnahmen</li></ul><p><br/>Die <strong>VDI 6022</strong> unterscheidet zwischen Kategorie A und B. Fachkräfte mit <strong>Kategorie A</strong> dürfen gesetzlich vorgeschriebene Hygieneinspektionen durchführen und dokumentieren, während <strong>Kategorie B</strong> für Reinigungs- und Wartungsarbeiten qualifiziert. So wird sichergestellt, dass alle Maßnahmen an raumlufttechnischen Anlagen fachgerecht und nach höchsten Hygieneanforderungen erfolgen.</p><p>Eine Reinigung nach VDI 6022 schützt nachweislich die Gesundheit, verbessert das Raumklima, sorgt für Energieeffizienz und stellt die Einhaltung gesetzlicher Vorgaben sicher.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image_border_radius": 12,
@@ -536,6 +683,157 @@
     },
     "about_section_v3_ULVX9g": {
       "type": "about-section-v3",
+      "blocks": {
+        "feature_Fn9UUV": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "🏭 Industrie und Produktion",
+            "feature_description": ""
+          }
+        },
+        "feature_4RTHgy": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "🧍 Büro- und Verwaltungsgebäude",
+            "feature_description": ""
+          }
+        },
+        "feature_xWHPye": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "🍽️ Gewerbliche Küche / Gastronomie",
+            "feature_description": ""
+          }
+        },
+        "feature_zttQpb": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "🚛 Lager / Logistik",
+            "feature_description": ""
+          }
+        },
+        "feature_WHggnj": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "🏫 Schulen / Kindergärten öffentliche Gebäude",
+            "feature_description": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_Fn9UUV",
+        "feature_4RTHgy",
+        "feature_xWHPye",
+        "feature_zttQpb",
+        "feature_WHggnj"
+      ],
+      "name": "Über Uns (Layout) – v3 - VDI 2052",
+      "settings": {
+        "image_position": "left",
+        "image_vertical_align": "center",
+        "show_image": false,
+        "background_color": "#ffffff",
+        "section_padding_top": 20,
+        "section_padding_bottom": 45,
+        "title": "",
+        "title_richtext": "<p><strong>Einige Bedarfsbranchen im Überblick</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "",
+        "text_color": "#6b7280",
+        "text_font_size": 18,
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "4/3",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "center"
+      }
+    },
+    "about_section_v3_43xXtz": {
+      "type": "about-section-v3",
+      "blocks": {
+        "feature_xMyEEa": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "🏭 Industrie und Produktion",
+            "feature_description": ""
+          }
+        },
+        "feature_gX4X34": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "🧍 Büro- und Verwaltungsgebäude",
+            "feature_description": ""
+          }
+        },
+        "feature_JbAdbG": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "🍽️ Gewerbliche Küche / Gastronomie",
+            "feature_description": ""
+          }
+        },
+        "feature_E7WWBT": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "🚛 Lager / Logistik",
+            "feature_description": ""
+          }
+        },
+        "feature_jr8c6t": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "🏫 Schulen / öffentliche Gebäude",
+            "feature_description": ""
+          }
+        },
+        "feature_UiRXYq": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung"
+          }
+        }
+      },
+      "block_order": [
+        "feature_xMyEEa",
+        "feature_gX4X34",
+        "feature_JbAdbG",
+        "feature_E7WWBT",
+        "feature_jr8c6t",
+        "feature_UiRXYq"
+      ],
+      "disabled": true,
       "name": "Über Uns (Layout) – v3 - VDI 2052",
       "settings": {
         "image_position": "right",
@@ -884,11 +1182,15 @@
     "about_section_v2_dWieTW",
     "about_section_v3_TwMWej",
     "about_section_v3_FYy8t7",
+    "about_section_v3_xqD4zk",
     "slideshow_bMYEwg",
     "about_experience_fUL8PE",
     "about_section_v2_t3ejyA",
+    "about_section_v2_GARtaw",
+    "kachelview_DfEMD4",
     "about_section_v3_QHjnVq",
     "about_section_v3_ULVX9g",
+    "about_section_v3_43xXtz",
     "custom_cta_block_7jDMtP",
     "sis_single_footer_N4n9t3",
     "sis_footer_neu_mb4tRz",

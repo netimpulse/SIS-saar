@@ -401,7 +401,7 @@
       "name": "Kachelview",
       "settings": {
         "bg_color": "#ffffff",
-        "card_bg": "#FFFFFF",
+        "card_bg": "#ffffff",
         "card_radius": 16,
         "text_color": "#111111",
         "accent_color": "#ffffff"
@@ -847,6 +847,65 @@
         "contact_hours": "Mo–Fr 8–17 Uhr",
         "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
+    },
+    "kachelview_gECbxU": {
+      "type": "kachelview",
+      "blocks": {
+        "stat_CxcAQM": {
+          "type": "stat",
+          "settings": {
+            "emoji": "✅",
+            "title": "Kachel 1",
+            "subtitle": "Beschreibung 1",
+            "featured": false,
+            "aria_label": "Kachel"
+          }
+        },
+        "stat_g44e69": {
+          "type": "stat",
+          "settings": {
+            "emoji": "✅",
+            "title": "Kachel 2",
+            "subtitle": "Beschreibung 2",
+            "featured": false,
+            "aria_label": "Kachel"
+          }
+        },
+        "stat_VRNrQK": {
+          "type": "stat",
+          "settings": {
+            "emoji": "✅",
+            "title": "Kachel 3",
+            "subtitle": "Beschreibung 3",
+            "featured": false,
+            "aria_label": "Kachel"
+          }
+        },
+        "stat_44hVth": {
+          "type": "stat",
+          "settings": {
+            "emoji": "✅",
+            "title": "Kachel 3",
+            "subtitle": "Beschreibung 3",
+            "featured": false,
+            "aria_label": "Kachel"
+          }
+        }
+      },
+      "block_order": [
+        "stat_CxcAQM",
+        "stat_g44e69",
+        "stat_VRNrQK",
+        "stat_44hVth"
+      ],
+      "name": "Kachelview",
+      "settings": {
+        "bg_color": "#F3F8F5",
+        "card_bg": "#FFFFFF",
+        "card_radius": 16,
+        "text_color": "#111111",
+        "accent_color": "#22C55E"
+      }
     }
   },
   "order": [
@@ -862,6 +921,7 @@
     "highlights_icons_4mpBYK",
     "team_Vf9RQW",
     "custom_cta_block_dYKCrA",
-    "sis_footer_neu_Kxjd4c"
+    "sis_footer_neu_Kxjd4c",
+    "kachelview_gECbxU"
   ]
 }

@@ -516,8 +516,8 @@
       ],
       "name": "Leistung Suche Grid v2",
       "settings": {
-        "heading": "<p><strong>Unsere Leistungen</strong></p>",
-        "subheading": "<p>Mit <em>Leidenschaft</em> für Ihren Erfolg.</p>",
+        "heading": "<h1><strong>Unsere Leistungen</strong></h1>",
+        "subheading": "<h3>Mit <em>Leidenschaft</em> für Ihren Erfolg.</h3>",
         "text_align": "center",
         "show_search": true,
         "search_placeholder": "Leistungen oder Keywords suchen…",
@@ -641,14 +641,14 @@
       ],
       "name": "Qualitäten Hotspot - Unser Qualitätsversprechen",
       "settings": {
-        "heading": "Unser Qualitätsversprechen",
-        "intro": "<p>Kurzer Einleitungstext für den Qualitäten Hotspot.</p>",
+        "heading": "",
+        "intro": "<h1><strong>Unser Qualitätsversprechen</strong></h1>",
         "color_scheme": "background-1",
         "gap": 34,
         "cols_desktop": 3,
         "cols_tablet": 2,
         "show_icons": true,
-        "icon_size": 88,
+        "icon_size": 100,
         "icon_radius": 1000
       }
     },
@@ -694,7 +694,7 @@
         "content_max": 1000,
         "pad_top": 64,
         "pad_bottom": 64,
-        "use_gradient_bg": true,
+        "use_gradient_bg": false,
         "bg_gradient": "linear-gradient(180deg, rgba(241, 245, 249, 0.6), rgba(241, 245, 249, 0) 100%)",
         "buttons_gap": 16
       }
