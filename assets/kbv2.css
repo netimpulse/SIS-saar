@@ -64,13 +64,26 @@
 }
 
 /* ---- Bild: rechteckig, einheitliche Höhe, ohne Zuschnitt ---- */
-.person-image {
-  border-radius: 8px;         /* statt rund */
-  object-fit: contain;        /* komplette Grafik sichtbar */
-  display: block;
-  margin-top: 20px;           /* Abstand nach oben zum Text */
-  background: #fff;           /* neutraler Hintergrund bei Letterboxing */
+/* Rahmen für Person/Logo – sorgt für gleiche optische Position */
+.person-box {
+  display: flex;
+  align-items: flex-end;   /* Bild nach unten ausrichten */
+  justify-content: center; /* zentrieren */
+  margin-top: 20px;
 }
+
+/* Bild bleibt rechteckig, vollständig sichtbar */
+.person-box .person-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center bottom; /* wichtigen Teil unten ausrichten */
+  border-radius: 8px;
+  display: block;
+}
+
 /* -------------------------------------------------------------- */
 
 /* === ANPASSUNG START: Schlichtes Pfeil-Design === */
