@@ -1,0 +1,61 @@
+{{ 'kbneu2.css' | asset_url | stylesheet_tag }}
+
+<div class="kb2-sec" style="background-color: {{ section.settings.background_color }}; padding: {{ section.settings.section_padding }}px 0;">
+  <div class="kb2-car" data-gap="{{ section.settings.gap_size }}">
+    <button class="kb2-arrow kb2-prev" aria-label="Zurück">❮</button>
+
+    <div class="kb2-view" aria-roledescription="carousel">
+      <div class="kb2-track" role="list">
+        {% for block in section.blocks %}
+          {% render 'snip_revneu2', block: block %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <button class="kb2-arrow kb2-next" aria-label="Weiter">❯</button>
+  </div>
+</div>
+
+<script src="{{ 'kbneu2.js' | asset_url }}" defer="defer"></script>
+
+{% schema %}
+{
+  "name": "KundenbewNeu v2",
+  "settings": [
+    { "type": "color", "id": "background_color", "label": "Hintergrundfarbe", "default": "#f9f9f9" },
+    { "type": "range", "id": "section_padding", "min": 20, "max": 100, "step": 5, "unit": "px", "label": "Abstand (Größe des Blocks)", "default": 50 },
+    { "type": "range", "id": "gap_size", "min": 10, "max": 60, "step": 5, "unit": "px", "label": "Abstand zwischen Karten", "default": 30 },
+    { "type": "range", "id": "clamp_lines", "min": 2, "max": 4, "step": 1, "label": "Sichtbare Zeilen vor „Mehr erfahren“", "default": 3 }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Bewertung",
+      "settings": [
+        { "type": "image_picker", "id": "person_image", "label": "Icon/Logo (quadratisch empfohlen)" },
+        { "type": "range", "id": "image_size", "min": 60, "max": 180, "step": 10, "unit": "px", "label": "Icon-Größe", "default": 100 },
+        { "type": "text", "id": "person_name", "label": "Name / Funktion", "default": "Max Mustermann" },
+        { "type": "font_picker", "id": "name_font", "label": "Schriftart des Namens", "default": "helvetica_n4" },
+        { "type": "range", "id": "name_font_size", "min": 14, "max": 30, "step": 1, "unit": "px", "label": "Schriftgröße des Namens", "default": 18 },
+        { "type": "richtext", "id": "review_text", "label": "Bewertungstext", "default": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>" },
+        { "type": "font_picker", "id": "text_font", "label": "Schriftart des Textes", "default": "helvetica_n4" },
+        { "type": "range", "id": "text_font_size", "min": 12, "max": 24, "step": 1, "unit": "px", "label": "Schriftgröße des Textes", "default": 16 },
+        { "type": "range", "id": "star_rating", "min": 1, "max": 5, "step": 1, "label": "Sternebewertung", "default": 5 }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "KundenbewNeu v2",
+      "blocks": [ { "type": "review" }, { "type": "review" }, { "type": "review" }, { "type": "review" } ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+:root{
+  --kb2-gap: {{ section.settings.gap_size | default: 30 }}px;
+  --kb2-clamp: {{ section.settings.clamp_lines | default: 3 }};
+}
+{% endstylesheet %}
