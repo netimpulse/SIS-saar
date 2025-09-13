@@ -82,7 +82,6 @@
 }
 
 /* ===== Mobile Drawer (rechts) ===== */
-/* Body fix: kein Scrollen im Hintergrund, aber innerer Drawer darf scrollen */
 html.no-scroll{ overflow:hidden; }
 
 /* Overlay */
@@ -99,21 +98,35 @@ html.no-scroll{ overflow:hidden; }
 /* Drawer-Panel */
 .custom-header__drawer{
   position:fixed; top:0; right:0;
-  height:100vh;          /* Fallback */
-  height:100svh;         /* iOS 16+ */
-  height:100dvh;         /* moderne Browser */
+  height:100vh; height:100svh; height:100dvh;
   width:min(86vw, 380px);
   background:var(--header-bg-color);
   box-shadow:-8px 0 24px rgba(0,0,0,.12);
-  transform:translateX(100%);
-  transition:transform .3s ease;
+  transform:translate3d(105%,0,0);
+  transition:transform .3s ease, visibility .3s ease;
   z-index:1001;
   display:flex; flex-direction:column;
-  padding:24px 24px 0;   /* unten 0 – Footer übernimmt das Padding */
-  overflow:hidden;       /* Inhalt scrollt in der Liste */
+  padding:24px 24px 0;
+  overflow:hidden;
+  visibility:hidden;
+  pointer-events:none;
 }
+
 .custom-header-section.is-drawer-open .custom-header__drawer{
-  transform:translateX(0);
+  transform:translate3d(0,0,0);
+  visibility:visible;
+  pointer-events:auto;
+}
+
+.custom-header__drawer[aria-hidden="true"]{
+  transform:translate3d(105%,0,0) !important;
+  visibility:hidden !important;
+  pointer-events:none !important;
+}
+.custom-header__drawer[aria-hidden="false"]{
+  transform:translate3d(0,0,0) !important;
+  visibility:visible !important;
+  pointer-events:auto !important;
 }
 
 /* Drawer Kopf */
@@ -127,7 +140,7 @@ html.no-scroll{ overflow:hidden; }
 .custom-header__drawer-nav{
   flex:1 1 auto;
   display:flex; flex-direction:column; gap:8px;
-  padding:12px 0 24px;   /* Platz nach unten */
+  padding:12px 0 24px;
   overflow:auto;
   -webkit-overflow-scrolling:touch;
 }
@@ -141,11 +154,11 @@ html.no-scroll{ overflow:hidden; }
 .custom-header__drawer-link:hover{ color:var(--nav-hover-color); }
 .custom-header__drawer-link.active{ color:var(--nav-hover-color); }
 
-/* STICKY CTA unten – immer sichtbar, mit Safe-Area-Padding */
+/* STICKY CTA unten */
 .custom-header__drawer-cta{
   position:sticky; bottom:0;
   background:var(--header-bg-color);
-  margin-top:0;          /* nicht mehr auto – Sticky übernimmt */
+  margin-top:0;
   padding:12px 0 calc(12px + env(safe-area-inset-bottom, 0));
   border-top:1px solid rgba(0,0,0,.06);
   box-shadow:0 -4px 10px rgba(0,0,0,.04);
