@@ -99,10 +99,49 @@
       </a>
     {% endif %}
 
-    <!-- Optional: Burger (ohne Funktion) -->
-    <button class="custom-header__mobile-toggle" aria-label="Menü öffnen">
+    <!-- Burger-Button (mit ARIA) -->
+    <button class="custom-header__mobile-toggle"
+            aria-label="Menü öffnen"
+            aria-controls="mobile-drawer-{{ section.id }}"
+            aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
+
+    <!-- Overlay -->
+    <div class="custom-header__overlay" data-drawer-overlay hidden></div>
+
+    <!-- Mobile Drawer (rechts) -->
+    <aside id="mobile-drawer-{{ section.id }}"
+           class="custom-header__drawer"
+           aria-hidden="true"
+           tabindex="-1">
+      <div class="custom-header__drawer-header">
+        <p class="custom-header__drawer-title">{{ section.settings.logo_text | default: shop.name }}</p>
+        <button class="custom-header__drawer-close" aria-label="Menü schließen">
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="custom-header__drawer-nav" role="navigation" aria-label="Mobile Navigation">
+        {%- for link in section.settings.menu.links -%}
+          <a href="{{ link.url }}" class="custom-header__drawer-link {% if link.active %}active{% endif %}">
+            {{ link.title }}
+          </a>
+        {%- endfor -%}
+      </nav>
+
+      {%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
+        <div class="custom-header__drawer-cta">
+          <a href="{{ section.settings.button_link }}" class="custom-header__contact-btn" style="width:100%; text-align:center;">
+            {{ section.settings.button_text }}
+          </a>
+        </div>
+      {%- endif -%}
+    </aside>
+
   </div>
 </header>
 
@@ -125,6 +164,46 @@
     setOffsets();
     window.addEventListener('resize', setOffsets);
     if('ResizeObserver' in window) new ResizeObserver(setOffsets).observe(header);
+  })();
+</script>
+
+<script>
+  (function(){
+    var header = document.getElementById('sticky-header-{{ section.id }}');
+    if(!header) return;
+
+    var toggle  = header.querySelector('.custom-header__mobile-toggle');
+    var drawer  = document.getElementById('mobile-drawer-{{ section.id }}');
+    var overlay = header.querySelector('[data-drawer-overlay]');
+    var closeBtn = header.querySelector('.custom-header__drawer-close');
+
+    function openDrawer(){
+      if(!drawer) return;
+      header.classList.add('is-drawer-open');
+      drawer.setAttribute('aria-hidden', 'false');
+      toggle && toggle.setAttribute('aria-expanded','true');
+      overlay && (overlay.hidden = false);
+      document.documentElement.classList.add('no-scroll');
+      setTimeout(function(){ drawer.focus(); }, 10);
+    }
+
+    function closeDrawer(){
+      if(!drawer) return;
+      header.classList.remove('is-drawer-open');
+      drawer.setAttribute('aria-hidden', 'true');
+      toggle && toggle.setAttribute('aria-expanded','false');
+      document.documentElement.classList.remove('no-scroll');
+      setTimeout(function(){ overlay && (overlay.hidden = true); }, 300);
+    }
+
+    toggle && toggle.addEventListener('click', function(e){
+      e.preventDefault();
+      if (header.classList.contains('is-drawer-open')) { closeDrawer(); } else { openDrawer(); }
+    });
+
+    overlay && overlay.addEventListener('click', closeDrawer);
+    closeBtn && closeBtn.addEventListener('click', closeDrawer);
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeDrawer(); });
   })();
 </script>
 
@@ -174,4 +253,3 @@
   "presets": [{ "name": "Sticky header" }]
 }
 {% endschema %}
-
