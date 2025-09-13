@@ -1,0 +1,547 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "sticky_header_mWiXqk": {
+      "type": "sticky-header",
+      "name": "Sticky header",
+      "settings": {
+        "background_color": "#ffffff",
+        "padding_vertical": 16,
+        "padding_horizontal": 24,
+        "logo_height": 40,
+        "back_link": "",
+        "back_label": "Zurück",
+        "back_font": "system_ui_n4",
+        "back_font_bold": false,
+        "back_text_color": "#374151",
+        "back_hover_color": "#4ade80",
+        "back_font_size": 16,
+        "logo": "shopify://shop_images/2025-SIS-Gebaeude.png",
+        "logo_text": "Mein Shop",
+        "logo_color": "#1e40af",
+        "logo_font_size": 24,
+        "menu": "geb-udeservice",
+        "nav_font": "system_ui_n4",
+        "nav_font_bold": false,
+        "nav_text_color": "#374151",
+        "nav_hover_color": "#4ade80",
+        "nav_font_size": 16,
+        "button_text": "Kontakt",
+        "button_link": "shopify://pages/allgemeiner-kontakt",
+        "button_text_color": "#ffffff",
+        "button_bg_color": "#4ade80",
+        "button_hover_text_color": "#ffffff",
+        "button_hover_bg_color": "#22c55e"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "hero_building_section_xFPFdb": {
+      "type": "hero-building-section",
+      "name": "Hero Building",
+      "settings": {
+        "background_image": "shopify://shop_images/shutterstock_657542155.jpg",
+        "enable_overlay": true,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0.5,
+        "heading": "Ferien- und Freizeitanlagen",
+        "subheading": "",
+        "button_label": "Jetzt Angebot anfordern",
+        "button_link": "shopify://pages/gebaudeservice-kontakt",
+        "button_color": "#007acc",
+        "button_text_color": "#ffffff",
+        "button_radius": 4,
+        "heading_color": "#ffffff",
+        "text_color": "#f5f5f5",
+        "heading_size": 48,
+        "text_size": 18,
+        "font_family": "Arial, sans-serif",
+        "font_bold": true,
+        "font_italic": false,
+        "text_alignment": "left"
+      }
+    },
+    "leistung_showcase_9Y9rK6": {
+      "type": "leistung-showcase",
+      "blocks": {
+        "showcase_item_YKfnRj": {
+          "type": "showcase_item",
+          "settings": {
+            "text": "<p>Ferienhaus</p>"
+          }
+        },
+        "showcase_item_Ba6nGP": {
+          "type": "showcase_item",
+          "settings": {
+            "text": "<p>Campingplatz</p>"
+          }
+        },
+        "showcase_item_Gefp9i": {
+          "type": "showcase_item",
+          "settings": {
+            "text": "<p>Freizeitpark</p>"
+          }
+        },
+        "showcase_item_AwWV6R": {
+          "type": "showcase_item",
+          "settings": {
+            "text": "<p>Gastro und Kiosk</p>"
+          }
+        }
+      },
+      "block_order": [
+        "showcase_item_YKfnRj",
+        "showcase_item_Ba6nGP",
+        "showcase_item_Gefp9i",
+        "showcase_item_AwWV6R"
+      ],
+      "name": "Leistung Showcase",
+      "settings": {
+        "heading_html": "",
+        "heading_align": "left",
+        "heading_italic": false,
+        "heading_weight": "700",
+        "subtext": "",
+        "show_image": false,
+        "image_radius": 12,
+        "image_position": "left",
+        "left_heading_html": "<p><strong>Ferienpark, Campingplätze, Anlagen</strong></p>",
+        "left_heading_align": "right",
+        "left_heading_italic": false,
+        "left_heading_weight": "700",
+        "left_text": "<p>Wer Urlaub macht, möchte sich wohlfühlen – und das geht nur, wenn alles sauber ist. </p>",
+        "bg_color": "#f6f8fb",
+        "section_padding": 24,
+        "points_title": "Unsere Dienstleistungen:",
+        "points_as_card": true,
+        "points_bg": "#ffffff",
+        "points_border": "#e5e8ee",
+        "points_btn_label": "Jetzt anfragen",
+        "points_btn_url": "shopify://pages/allgemeiner-kontakt",
+        "points_btn_align": "left",
+        "fallback_bullet_color": "#2b6cb0"
+      }
+    },
+    "about_section_v3_bEeKqp": {
+      "type": "about-section-v3",
+      "name": "Über Uns (Layout) – v3",
+      "settings": {
+        "image_position": "right",
+        "image_vertical_align": "center",
+        "show_image": true,
+        "background_color": "#FFFFFF",
+        "section_padding_top": 45,
+        "section_padding_bottom": 45,
+        "title": "",
+        "title_richtext": "",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<p>Egal ob Ferienhaus, Campingplatz oder Freizeitpark: Die Anforderungen an Reinigung und Hygiene sind hoch, die Zeitfenster oft knapp. Genau hier kommen wir ins Spiel. Bei der Reinigung von Ferienanlagen zählt vor allem eines: Zuverlässigkeit. Der Wechsel der Gäste erfolgt oft in engen Takten. Wir arbeiten mit festen Abläufen, abgestimmten Teams und klaren Zuständigkeiten - ohne Zeit zu verlieren.</p>",
+        "text_color": "#6B7280",
+        "text_font_size": 18,
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "4/3",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34D399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "left"
+      }
+    },
+    "about_section_v2_i4Pndt": {
+      "type": "about-section-v2",
+      "blocks": {
+        "feature_3nWFMm": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Zuverlässigkeit",
+            "feature_description": "verlässlich, gründlich"
+          }
+        },
+        "feature_CGHJRD": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Geschwindigkeit",
+            "feature_description": "schnell und effektiv"
+          }
+        }
+      },
+      "block_order": [
+        "feature_3nWFMm",
+        "feature_CGHJRD"
+      ],
+      "name": "Über Uns (Layout) – Neu - Unterhaltsreinigung",
+      "settings": {
+        "layout_direction": "text_left",
+        "show_image": true,
+        "background_color": "#ffffff",
+        "section_padding_top": 25,
+        "section_padding_bottom": 80,
+        "title": "",
+        "title_richtext": "",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<p>Gerade in stark frequentierten Bereichen wie Duschräumen oder Küchen gelten hohe Hygienestandards. Wir setzen passende Reinigungsmittel ein – desinfizierend, aber materialschonend – und nutzen Verfahren wie Dampfreinigung oder Einwirkzeiten, wo nötig. Unsere Mitarbeitenden kennen die Abläufe bei An- und Abreise und wissen, wie man effizient, aber gründlich arbeitet.</p><p><strong>Und wenn’s mal mehr sein muss?</strong><br/>In der Hochsaison stocken wir auf, bei Bedarf auch kurzfristig. Ob Wochenendreinigung, tägliche Zwischenreinigung oder Grundreinigung am Saisonende – wir richten uns gerne nach Ihrem Betrieb.</p>",
+        "text_color": "#6b7280",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/shutterstock_728697067.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "auto",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827"
+      }
+    },
+    "custom_cta_block_Y6hmWD": {
+      "type": "custom-cta-block",
+      "blocks": {
+        "button_hfEK7p": {
+          "type": "button",
+          "settings": {
+            "label": "<p>Kostenlose Beratung</p>",
+            "link": "",
+            "variant": "solid",
+            "text_color": "#ffffff",
+            "bg_color": "#0b132a",
+            "border_color": "#0b132a",
+            "hover_bg": "#111827",
+            "hover_text": "#ffffff",
+            "radius": 12,
+            "padding_x": 24,
+            "padding_y": 14,
+            "bold": true,
+            "offset_x": 0,
+            "offset_y": 0
+          }
+        }
+      },
+      "block_order": [
+        "button_hfEK7p"
+      ],
+      "name": "Custom CTA Block",
+      "settings": {
+        "heading": "<p><strong>Bereit für professionellen Gebäudeservice?</strong></p>",
+        "heading_size": 40,
+        "heading_bold": true,
+        "heading_color": "#0f172a",
+        "heading_font": "inherit",
+        "subheading": "<p>Kontaktieren Sie uns für ein unverbindliches Beratungsgespräch und ein individuelles Angebot für Ihre Anforderungen.</p>",
+        "sub_size": 20,
+        "sub_bold": false,
+        "sub_color": "#475569",
+        "sub_font": "inherit",
+        "align": "center",
+        "content_max": 1000,
+        "pad_top": 64,
+        "pad_bottom": 64,
+        "use_gradient_bg": true,
+        "bg_gradient": "linear-gradient(180deg, rgba(241, 245, 249, 0.6), rgba(241, 245, 249, 0) 100%)",
+        "buttons_gap": 16
+      }
+    },
+    "sis_single_footer_N4n9t3": {
+      "type": "sis-single-footer",
+      "blocks": {
+        "legal_link_77kEdN": {
+          "type": "legal_link",
+          "settings": {
+            "label": "Impressum",
+            "url": ""
+          }
+        },
+        "legal_link_ANKwbq": {
+          "type": "legal_link",
+          "settings": {
+            "label": "Datenschutz",
+            "url": ""
+          }
+        },
+        "legal_link_nfcPaJ": {
+          "type": "legal_link",
+          "settings": {
+            "label": "AGBs",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "legal_link_77kEdN",
+        "legal_link_ANKwbq",
+        "legal_link_nfcPaJ"
+      ],
+      "disabled": true,
+      "name": "SIS – Einzelfooter",
+      "settings": {
+        "title": "SIS Saar Gebäude Service",
+        "contact_heading": "Kontakt",
+        "address_line_1": "Musterstraße 1, 12345 Musterstadt",
+        "address_line_2": "1",
+        "phone": "0123 / 456 789",
+        "email": "gebaeude@sis-saar.de",
+        "legal_heading": "Rechtliches",
+        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten.",
+        "bg_color": "#0f1621",
+        "text_color": "#cbd5e1",
+        "heading_color": "#ffffff",
+        "link_color": "#3b82f6",
+        "divider_color": "#1e293b"
+      }
+    },
+    "sis_footer_neu_tdeFj6": {
+      "type": "sis-footer-neu",
+      "blocks": {
+        "leistungen_link_8cnDRy": {
+          "type": "leistungen_link",
+          "settings": {
+            "text": "Industrieservice",
+            "link": "shopify://pages/industrieservice-leistungen"
+          }
+        },
+        "leistungen_link_ed7WaU": {
+          "type": "leistungen_link",
+          "settings": {
+            "text": "Gebäudeservice",
+            "link": "shopify://pages/gebaudeservice-leistungen"
+          }
+        },
+        "unternehmen_link_kd49Jp": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Kontakt",
+            "link": "shopify://pages/allgemeiner-kontakt"
+          }
+        },
+        "unternehmen_link_MFxXgk": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Karriere",
+            "link": "shopify://pages/gebaudeservice-karriere"
+          }
+        },
+        "kontakt_link_gmmG6y": {
+          "type": "kontakt_link",
+          "settings": {
+            "text": "Impressum",
+            "link": ""
+          }
+        },
+        "kontakt_link_fw6F7i": {
+          "type": "kontakt_link",
+          "settings": {
+            "text": "Datenschutz",
+            "link": ""
+          }
+        },
+        "partner_logo_FVHfLx": {
+          "type": "partner_logo",
+          "settings": {
+            "logo": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
+            "alt": "Partner",
+            "link": "",
+            "new_tab": true
+          }
+        },
+        "partner_logo_4hAYkM": {
+          "type": "partner_logo",
+          "settings": {
+            "logo": "shopify://shop_images/logo_Industrieservice_exact_v2.png",
+            "alt": "Partner",
+            "link": "",
+            "new_tab": true
+          }
+        }
+      },
+      "block_order": [
+        "leistungen_link_8cnDRy",
+        "leistungen_link_ed7WaU",
+        "unternehmen_link_kd49Jp",
+        "unternehmen_link_MFxXgk",
+        "kontakt_link_gmmG6y",
+        "kontakt_link_fw6F7i",
+        "partner_logo_FVHfLx",
+        "partner_logo_4hAYkM"
+      ],
+      "disabled": true,
+      "name": "SIS Footer NEU",
+      "settings": {
+        "background_color": "#111827",
+        "section_padding": 60,
+        "separator_color": "#374151",
+        "title_color": "#ffffff",
+        "title_font_size": 24,
+        "subtitle_color": "#d1d5db",
+        "subtitle_font_size": 18,
+        "text_color": "#9ca3af",
+        "text_font_size": 14,
+        "link_color": "#60a5fa",
+        "col1_title": "Leistungen",
+        "col2_title": "Unternehmen",
+        "col3_title": "Kontakt",
+        "col4_title": "Partner",
+        "contact_company": "SIS Saar",
+        "contact_address": "Musterstraße 1, 12345 Musterstadt",
+        "contact_phone": "0123 / 456 789",
+        "contact_email": "info@sis-saar.de",
+        "contact_hours": "Mo–Fr 8–17 Uhr",
+        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
+      }
+    },
+    "sis_footer_neu_HTUabb": {
+      "type": "sis-footer-neu",
+      "blocks": {
+        "leistungen_link_7GMhGa": {
+          "type": "leistungen_link",
+          "disabled": true,
+          "settings": {
+            "text": "Industrieservice",
+            "link": "shopify://pages/industrieservice-leistungen"
+          }
+        },
+        "leistungen_link_dYwdFe": {
+          "type": "leistungen_link",
+          "settings": {
+            "text": "Gebäudeservice",
+            "link": "shopify://pages/gebaudeservice-leistungen"
+          }
+        },
+        "unternehmen_link_6yJEAc": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Kontakt",
+            "link": "shopify://pages/allgemeiner-kontakt"
+          }
+        },
+        "unternehmen_link_nRPjEp": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Karriere",
+            "link": "shopify://pages/gebaudeservice-karriere"
+          }
+        },
+        "unternehmen_link_DqMCjk": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Unsere Partner",
+            "link": "shopify://pages/partner"
+          }
+        },
+        "unternehmen_link_VU3NLV": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Downloads",
+            "link": "shopify://pages/downloads"
+          }
+        },
+        "kontakt_link_eqeNRc": {
+          "type": "kontakt_link",
+          "disabled": true,
+          "settings": {
+            "text": "Impressum Industrieservice",
+            "link": ""
+          }
+        },
+        "kontakt_link_wWzWPB": {
+          "type": "kontakt_link",
+          "settings": {
+            "text": "Impressum Gebäudeservice",
+            "link": ""
+          }
+        },
+        "kontakt_link_6B36Gw": {
+          "type": "kontakt_link",
+          "settings": {
+            "text": "Datenschutz",
+            "link": ""
+          }
+        },
+        "partner_logo_YqQbjR": {
+          "type": "partner_logo",
+          "settings": {
+            "logo": "shopify://shop_images/2025_AMG_zugeschnitten_DA.png",
+            "alt": "Partner",
+            "link": "",
+            "new_tab": true
+          }
+        }
+      },
+      "block_order": [
+        "leistungen_link_7GMhGa",
+        "leistungen_link_dYwdFe",
+        "unternehmen_link_6yJEAc",
+        "unternehmen_link_nRPjEp",
+        "unternehmen_link_DqMCjk",
+        "unternehmen_link_VU3NLV",
+        "kontakt_link_eqeNRc",
+        "kontakt_link_wWzWPB",
+        "kontakt_link_6B36Gw",
+        "partner_logo_YqQbjR"
+      ],
+      "name": "SIS Footer NEU",
+      "settings": {
+        "background_color": "#111827",
+        "section_padding": 60,
+        "separator_color": "#374151",
+        "title_color": "#ffffff",
+        "title_font_size": 24,
+        "subtitle_color": "#d1d5db",
+        "subtitle_font_size": 18,
+        "text_color": "#9ca3af",
+        "text_font_size": 14,
+        "link_color": "#60a5fa",
+        "col1_title": "Leistungen",
+        "col2_title": "Unternehmen",
+        "col3_title": "Kontakt",
+        "col4_title": "Partner",
+        "contact_company": "SIS Saar Gebäudeservice",
+        "contact_address": "Musterstraße 1, 12345 Musterstadt",
+        "contact_phone": "0123 / 456 789",
+        "contact_email": "info@sis-saar.de",
+        "contact_hours": "Mo–Fr 8–17 Uhr",
+        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
+      }
+    }
+  },
+  "order": [
+    "sticky_header_mWiXqk",
+    "main",
+    "hero_building_section_xFPFdb",
+    "leistung_showcase_9Y9rK6",
+    "about_section_v3_bEeKqp",
+    "about_section_v2_i4Pndt",
+    "custom_cta_block_Y6hmWD",
+    "sis_single_footer_N4n9t3",
+    "sis_footer_neu_tdeFj6",
+    "sis_footer_neu_HTUabb"
+  ]
+}
