@@ -84,6 +84,46 @@
         "right_button_link": "shopify://pages/gebaudeservice-startseite"
       }
     },
+    "split_show_handy_nkKeqP": {
+      "type": "split-show-handy",
+      "name": "Split Showcase",
+      "settings": {
+        "heading": "Ihr Partner für professionelle Service-Lösungen",
+        "heading_color": "#121212",
+        "heading_font_size": 36,
+        "subheading": "<p>Zwei spezialisierte Unternehmen unter einem Dach - für Gebäude- und Industrieservice auf höchstem Niveau.</p>",
+        "subheading_color": "#454545",
+        "subheading_font_size": 18,
+        "box_bg_color": "#f5f5f5",
+        "box_corner_radius": 12,
+        "overlay_color": "linear-gradient(#0000004D, #00000080)",
+        "overlay_hover_color": "linear-gradient(#0000001A, #00000066)",
+        "text_color": "#FFFFFF",
+        "icon_size": 48,
+        "title_size": 24,
+        "description_size": 16,
+        "button_bg_color": "rgba(255, 255, 255, 0.1)",
+        "button_border_color": "rgba(255, 255, 255, 0.3)",
+        "button_hover_bg_color": "rgba(255, 255, 255, 0.2)",
+        "button_hover_border_color": "rgba(255, 255, 255, 0.5)",
+        "left_content_x": 50,
+        "left_content_y": 50,
+        "right_content_x": 50,
+        "right_content_y": 50,
+        "left_image": "shopify://shop_images/shutterstock_549798139.jpg",
+        "left_hover_image": "shopify://shop_images/shutterstock_549798139.jpg",
+        "left_icon": "",
+        "left_title": "GEBÄUDE SERVICE",
+        "left_description": "Facility Management, Reinigung und Hausmeisterservice",
+        "left_button_text": "Mehr erfahren",
+        "left_button_link": "",
+        "right_icon": "",
+        "right_title": "INDUSTRIE SERVICE",
+        "right_description": "Anlagenwartung, Reparatur und Industriedienstleistungen",
+        "right_button_text": "Mehr erfahren",
+        "right_button_link": ""
+      }
+    },
     "about_section_v3_jYmwQj": {
       "type": "about-section-v3",
       "blocks": {
@@ -600,6 +640,7 @@
   "order": [
     "sticky_header_mwbBwL",
     "split_showcase_DdJNLE",
+    "split_show_handy_nkKeqP",
     "about_section_v3_jYmwQj",
     "partner_logos_khWdEB",
     "kundenbewertung_tzkjqA",
