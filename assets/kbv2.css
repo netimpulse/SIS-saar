@@ -24,10 +24,12 @@
   text-align: center;
   /* Sorgt dafür, dass 3 Karten sichtbar sind und berücksichtigt den 'gap' */
   flex: 0 0 calc(33.333% - 20px);
+  min-width: 0;                 /* verhindert, dass die Karte wegen Inhaltsbreite wächst */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .review-content {
@@ -35,6 +37,7 @@
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
+  width: 100%;
 }
 
 .star-rating {
@@ -48,44 +51,41 @@
   font-weight: bold;
 }
 
+.review-text {
+  width: 100%;
+  /* langer Text bricht um, ohne die Karte breiter zu machen */
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 .review-text p {
   margin: 0;
   line-height: 1.6;
 }
 
-/* --------- BILD-ANPASSUNG (rechteckig, nicht abgeschnitten) --------- */
+/* ---- Bild: rechteckig, einheitliche Höhe, ohne Zuschnitt ---- */
 .person-image {
-  border-radius: 8px;          /* statt rund */
-  object-fit: contain;         /* komplette Grafik sichtbar */
+  border-radius: 8px;         /* statt rund */
+  object-fit: contain;        /* komplette Grafik sichtbar */
   display: block;
-  width: 100%;
-  height: auto;                /* keine fixe Höhe -> keine Beschneidung */
-  margin-top: 20px;            /* Abstand nach oben zum Text */
-  max-width: none;             /* Breite wird inline gesetzt */
+  margin-top: 20px;           /* Abstand nach oben zum Text */
+  background: #fff;           /* neutraler Hintergrund bei Letterboxing */
 }
-/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
 
 /* === ANPASSUNG START: Schlichtes Pfeil-Design === */
-
 .karussell-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%) scale(1);
-  
-  /* Hintergrund und Rahmen wurden entfernt */
   background-color: transparent;
   border: none;
-
-  /* Pfeil-Farbe, -Größe und -Dicke angepasst */
   color: #555;
   font-size: 45px;
   font-weight: 300;
-  
   padding: 0 10px;
   cursor: pointer;
   z-index: 10;
-  
-  /* Sanfter Übergang für den Hover-Effekt */
   transition: all 0.2s ease-in-out;
 }
 
@@ -93,13 +93,8 @@
   color: #000;
   transform: translateY(-50%) scale(1.1);
 }
-
 /* === ANPASSUNG ENDE === */
 
-.prev-button {
-  left: 10px;
-}
+.prev-button { left: 10px; }
+.next-button { right: 10px; }
 
-.next-button {
-  right: 10px;
-}
