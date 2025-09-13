@@ -159,7 +159,7 @@
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
-            "button_link": ""
+            "button_link": "shopify://pages/gs-grunschnittpflege"
           }
         },
         "service_T4MQb3": {
@@ -231,8 +231,8 @@
         "show_search": true,
         "search_placeholder": "Leistungen oder Keywords suchen…",
         "badge_style": "solid",
-        "keyword_badge_bg": "#E6F0FF",
-        "keyword_badge_color": "#0F1C3F",
+        "keyword_badge_bg": "#e6f0ff",
+        "keyword_badge_color": "#0f1c3f",
         "card_bg": "#ffffff",
         "card_radius": 18,
         "card_shadow": true,
