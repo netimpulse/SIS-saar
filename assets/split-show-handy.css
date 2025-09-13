@@ -50,7 +50,6 @@
   padding:40px;
   overflow:hidden;
   transition:transform .3s ease;
-  /* sichere Touch-Targets */
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -78,7 +77,7 @@
   z-index:2; transition:background .3s ease;
 }
 
-/* Inhalt (Desktop standard: absolut per Variablen) */
+/* Inhalt */
 .sc-content{
   position:absolute;
   z-index:3;
@@ -104,10 +103,10 @@
   transition:all .3s ease;
   backdrop-filter:blur(5px);
   -webkit-backdrop-filter:blur(5px);
-  min-height:44px; /* ergonomisches Tap-Target */
+  min-height:44px;
 }
 
-/* Bewegungsreduktion respektieren */
+/* Bewegungsreduktion */
 @media (prefers-reduced-motion: reduce){
   .sc-box, .sc-image, .sc-content{ transition:none !important; }
 }
@@ -117,20 +116,17 @@
   .sc-grid{ grid-template-columns:1fr; gap:25px; }
 
   .sc-box{
-    /* dynamische Höhe: wächst mit Viewport, aber nicht zu klein/groß */
     height:clamp(320px, 56vw, 420px);
     padding:24px;
     display:flex; flex-direction:column; justify-content:flex-end;
   }
 
-  /* Inhalt unten links, lesefreundlich */
   .sc-content{
     position:relative;
     left:auto; top:auto; transform:none;
     width:100%; max-width:100%; text-align:left;
   }
 
-  /* Overlay leicht stärker für Lesbarkeit */
   .sc-box::before{ background:linear-gradient(to top, rgba(0,0,0,.55), rgba(0,0,0,.15)) !important; }
 
   .sc-icon-wrapper{ margin:0 0 12px 0; }
@@ -144,4 +140,21 @@
   .sc-title{ font-size: clamp(18px, 5.6vw, 22px); }
   .sc-description{ font-size: clamp(14px, 4.3vw, 16px); margin-bottom:18px; }
   .sc-button{ width:auto; padding:12px 18px; }
+}
+
+/* ==== HOVER AUF TOUCH-GERÄTEN HART DEAKTIVIEREN ==== */
+@media (hover: none), (pointer: coarse) {
+  .sc-box-link:hover .sc-box{ transform:none !important; }
+  .sc-box-link:hover .sc-image--default{ opacity:1 !important; }
+  .sc-box-link:hover .sc-image--hover{ opacity:0 !important; }
+  .sc-box-link:hover .sc-content{ transform:none !important; }
+
+  .sc-box-link:active .sc-box,
+  .sc-box-link:focus .sc-box{ transform:none !important; }
+  .sc-box-link:active .sc-image--default,
+  .sc-box-link:focus .sc-image--default{ opacity:1 !important; }
+  .sc-box-link:active .sc-image--hover,
+  .sc-box-link:focus .sc-image--hover{ opacity:0 !important; }
+  .sc-box-link:active .sc-content,
+  .sc-box-link:focus .sc-content{ transform:none !important; }
 }
