@@ -20,6 +20,7 @@
       src="{{ block.settings.person_image | image_url: width: block.settings.image_size }}"
       alt="{{ block.settings.person_name }}"
       class="person-image"
-      style="width: {{ block.settings.image_size }}px; height: auto;">
+      style="width: {{ block.settings.image_size }}px; height: {{ block.settings.image_size }}px;">
   {% endif %}
 </div>
+
