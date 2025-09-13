@@ -54,11 +54,11 @@
       "type": "hero-building-section",
       "name": "Hero Building",
       "settings": {
-        "background_image": "shopify://shop_images/shutterstock_65689291.jpg",
+        "background_image": "shopify://shop_images/tatort-im-innenbereich-absperrband-ohne-erkennbaren-text.png",
         "enable_overlay": true,
         "overlay_color": "#000000",
         "overlay_opacity": 0.5,
-        "heading": "Stahlarbeiten",
+        "heading": "Tatortreinigung",
         "subheading": "",
         "button_label": "Jetzt Angebot anfordern",
         "button_link": "",
