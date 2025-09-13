@@ -5,28 +5,18 @@ document.addEventListener('DOMContentLoaded', function () {
   const container = carousel.querySelector('.kundenbewertung-container');
   const prevButton = carousel.querySelector('.prev-button');
   const nextButton = carousel.querySelector('.next-button');
-
-  if (!container || !prevButton || !nextButton) {
-    return;
-  }
+  if (!container || !prevButton || !nextButton) return;
 
   const items = Array.from(container.children);
   const itemsCount = items.length;
 
-  // Karussell nur initialisieren, wenn es mehr Karten als sichtbar gibt
-  if (itemsCount <= 3) {
-    prevButton.style.display = 'none';
-    nextButton.style.display = 'none';
-    return;
-  }
-
-  // Verbessert: Liest den Abstand dynamisch aus dem CSS
+  // Immer initialisieren – auch wenn <= 3 Items vorhanden sind
   const gap = parseFloat(getComputedStyle(container).gap) || 30;
 
-  // Klone die Elemente für den "unendlichen" Effekt
+  // Klone für Endlos-Effekt
   items.forEach(item => {
     const clone = item.cloneNode(true);
-    clone.setAttribute('aria-hidden', 'true'); // Wichtig für Barrierefreiheit
+    clone.setAttribute('aria-hidden', 'true');
     container.appendChild(clone);
   });
 
@@ -34,9 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
   let isTransitioning = false;
 
   function moveCarousel(instant = false) {
-    const itemWidth = items[0].offsetWidth + gap;
+    const first = container.children[0];
+    const itemWidth = first.getBoundingClientRect().width + gap;
     const offset = -currentIndex * itemWidth;
-    
     container.style.transition = instant ? 'none' : 'transform 0.5s ease-in-out';
     container.style.transform = `translateX(${offset}px)`;
   }
@@ -44,13 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
   function handleTransitionEnd() {
     isTransitioning = false;
 
-    // Wenn am Ende der geklonten Liste, springe ohne Animation zum Anfang
     if (currentIndex >= itemsCount) {
       currentIndex = 0;
       moveCarousel(true);
     }
-
-    // Wenn vor dem Anfang der Liste, springe ohne Animation zum Ende
     if (currentIndex < 0) {
       currentIndex = itemsCount - 1;
       moveCarousel(true);
@@ -60,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
   function shiftItems(direction) {
     if (isTransitioning) return;
     isTransitioning = true;
-    
     currentIndex += direction;
     moveCarousel();
   }
@@ -68,4 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
   container.addEventListener('transitionend', handleTransitionEnd);
   nextButton.addEventListener('click', () => shiftItems(1));
   prevButton.addEventListener('click', () => shiftItems(-1));
+
+  // Initiale Position setzen
+  moveCarousel(true);
 });
