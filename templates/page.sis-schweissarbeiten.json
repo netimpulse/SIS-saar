@@ -54,11 +54,11 @@
       "type": "hero-building-section",
       "name": "Hero Building",
       "settings": {
-        "background_image": "shopify://shop_images/Trockeneis_AA_3.jpg",
+        "background_image": "shopify://shop_images/shutterstock_269021891.jpg",
         "enable_overlay": true,
         "overlay_color": "#000000",
         "overlay_opacity": 0.5,
-        "heading": "Schweißarbeiten",
+        "heading": "Schweiß- und Richtarbeiten",
         "subheading": "",
         "button_label": "Jetzt Angebot anfordern",
         "button_link": "",
