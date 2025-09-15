@@ -1,10 +1,8 @@
-{% comment %}
-  Custom Section: Media + Richtext mit Galerie
-{% endcomment %}
-
 {{ 'custom-media-richtext.css' | asset_url | stylesheet_tag }}
 
-<section id="media-richtext-{{ section.id }}" class="cmr cmr--section">
+<section id="media-richtext-{{ section.id }}"
+         class="cmr cmr--section"
+         style="--cmr-heading-size: {{ section.settings.heading_size_px }}px;">
   <div class="cmr__inner page-width">
     {%- if section.settings.section_heading != blank -%}
       <div class="cmr__header rte">
@@ -58,13 +56,23 @@
 
 {% schema %}
 {
-  "name": "Richtext Galerie",
+  "name": "⚙️ Media Galerie",
   "settings": [
     {
       "type": "richtext",
       "id": "section_heading",
       "label": "Überschrift (Richtext)",
       "default": "<h2>Sand vs. Glasstrahlen – Strahlmedium</h2>"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_px",
+      "label": "Überschrift: Größe in Pixel",
+      "min": 16,
+      "max": 80,
+      "step": 1,
+      "unit": "px",
+      "default": 40
     },
     {
       "type": "richtext",
