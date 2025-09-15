@@ -2,7 +2,7 @@
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 60px; /* Mehr Platz für die Pfeile */
+  padding: 0 60px; /* großzügig für Desktop-Pfeile */
 }
 
 .karussell-viewport {
@@ -13,7 +13,7 @@
 .kundenbewertung-container {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  gap: 30px; /* Lücke zwischen den Karten */
+  gap: 30px; /* Desktop-Lücke zwischen Karten */
 }
 
 .review-card {
@@ -22,9 +22,9 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 25px;
   text-align: center;
-  /* Sorgt dafür, dass 3 Karten sichtbar sind und berücksichtigt den 'gap' */
+  /* 3 Karten auf Desktop */
   flex: 0 0 calc(33.333% - 20px);
-  min-width: 0;                 /* verhindert, dass die Karte wegen Inhaltsbreite wächst */
+  min-width: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,7 +53,6 @@
 
 .review-text {
   width: 100%;
-  /* langer Text bricht um, ohne die Karte breiter zu machen */
   overflow-wrap: anywhere;
   word-break: break-word;
 }
@@ -63,30 +62,26 @@
   line-height: 1.6;
 }
 
-/* ---- Bild: rechteckig, einheitliche Höhe, ohne Zuschnitt ---- */
-/* Rahmen für Person/Logo – sorgt für gleiche optische Position */
+/* Bild/Logo */
 .person-box {
   display: flex;
-  align-items: flex-end;   /* Bild nach unten ausrichten */
-  justify-content: center; /* zentrieren */
+  align-items: flex-end;
+  justify-content: center;
   margin-top: 20px;
 }
 
-/* Bild bleibt rechteckig, vollständig sichtbar */
 .person-box .person-image {
   max-width: 100%;
   max-height: 100%;
   width: auto;
   height: auto;
   object-fit: contain;
-  object-position: center bottom; /* wichtigen Teil unten ausrichten */
+  object-position: center bottom;
   border-radius: 8px;
   display: block;
 }
 
-/* -------------------------------------------------------------- */
-
-/* === ANPASSUNG START: Schlichtes Pfeil-Design === */
+/* Pfeile */
 .karussell-button {
   position: absolute;
   top: 50%;
@@ -106,8 +101,34 @@
   color: #000;
   transform: translateY(-50%) scale(1.1);
 }
-/* === ANPASSUNG ENDE === */
 
 .prev-button { left: 10px; }
 .next-button { right: 10px; }
+
+/* -------------------- Responsiv -------------------- */
+/* <= 1024px: 2 Karten, kleinere Abstände/Pfeile */
+@media (max-width: 1024px) {
+  .kundenbewertung-karussell { padding: 0 46px; }
+  .kundenbewertung-container { gap: 20px; }
+  .review-card { flex: 0 0 calc(50% - 10px); padding: 22px; }
+  .karussell-button { font-size: 38px; }
+}
+
+/* <= 700px: 1 Karte, kompakter */
+@media (max-width: 700px) {
+  .kundenbewertung-karussell { padding: 0 36px; }
+  .kundenbewertung-container { gap: 14px; }
+  .review-card { flex: 0 0 100%; padding: 18px; }
+  .star-rating { font-size: 20px; margin-bottom: 8px; }
+  .person-name { margin-bottom: 8px; }
+  .review-text p { line-height: 1.55; }
+  .karussell-button { font-size: 32px; }
+}
+
+/* Sehr kleine Screens: Pfeile näher an den Rand */
+@media (max-width: 380px) {
+  .prev-button { left: 4px; }
+  .next-button { right: 4px; }
+}
+
 
