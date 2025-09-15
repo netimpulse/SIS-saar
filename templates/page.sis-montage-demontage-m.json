@@ -276,124 +276,41 @@
         "no_image_text_align": "center"
       }
     },
-    "about_section_v3_gLk4ph": {
-      "type": "about-section-v3",
-      "name": "Über Uns (Layout) – v3 - Bild",
-      "settings": {
-        "image_position": "top",
-        "image_vertical_align": "start",
-        "show_image": true,
-        "background_color": "#ffffff",
-        "section_padding_top": 80,
-        "section_padding_bottom": 80,
-        "title": "",
-        "title_richtext": "",
-        "title_color": "#111827",
-        "title_font_size": 32,
-        "subtitle": "",
-        "subtitle_richtext": "",
-        "subtitle_color": "#374151",
-        "subtitle_font_size": 20,
-        "description": "",
-        "text_color": "#6b7280",
-        "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_420833395_f08fa48e-93d6-404c-8da5-80e6417fb104.jpg",
-        "image_border_radius": 12,
-        "image_alt": "",
-        "image_max_width": 85,
-        "image_aspect_ratio": "4/3",
-        "features_per_row": "1",
-        "icon_size": 32,
-        "icon_color": "#34d399",
-        "feature_title_color": "#111827",
-        "no_image_text_align": "center"
-      }
-    },
-    "about_section_v2_RbQb9j": {
-      "type": "about-section-v2",
-      "name": "Warum - vorher nachher bilder",
-      "settings": {
-        "layout_direction": "text_left",
-        "show_image": false,
-        "background_color": "#ffffff",
-        "section_padding_top": 30,
-        "section_padding_bottom": 0,
-        "title": "Über uns",
-        "title_richtext": "<p><strong>Vorher - Nachher Bilder</strong></p>",
-        "title_color": "#111827",
-        "title_font_size": 32,
-        "subtitle": "",
-        "subtitle_richtext": "",
-        "subtitle_color": "#374151",
-        "subtitle_font_size": 20,
-        "description": "",
-        "text_color": "#6b7280",
-        "text_font_size": 18,
-        "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
-        "image_border_radius": 12,
-        "image_alt": "",
-        "image_max_width": 85,
-        "image_aspect_ratio": "auto",
-        "features_per_row": "2",
-        "icon_size": 32,
-        "icon_color": "#34d399",
-        "feature_title_color": "#111827"
-      }
-    },
-    "about_section_v2_kxjGWD": {
-      "type": "about-section-v2",
+    "custom_media_richtext_PP4kNN": {
+      "type": "custom-media-richtext",
       "blocks": {
-        "feature_pUFCcD": {
-          "type": "feature",
+        "media_row_YA4ddi": {
+          "type": "media_row",
           "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Mehr Sicherheit",
-            "feature_description": ""
+            "image": "shopify://shop_images/shutterstock_420833395_f08fa48e-93d6-404c-8da5-80e6417fb104.jpg",
+            "alt": "Bild",
+            "image_side": "left",
+            "title": "<h3>Titel der Reihe</h3>",
+            "text": "<p>Hier steht der beschreibende Text zur jeweiligen Medienreihe.</p>",
+            "show_divider": false
           }
         },
-        "feature_qeaBF6": {
-          "type": "feature",
+        "media_row_f88dXL": {
+          "type": "media_row",
           "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "icon_image": "shopify://shop_images/Titelbild_Video.png",
-            "feature_title": "Weniger Risiko",
-            "feature_description": ""
+            "image": "shopify://shop_images/shutterstock_657636373.jpg",
+            "alt": "Bild",
+            "image_side": "right",
+            "title": "<h3>Titel der Reihe</h3>",
+            "text": "<p>Hier steht der beschreibende Text zur jeweiligen Medienreihe.</p>",
+            "show_divider": false
           }
         }
       },
       "block_order": [
-        "feature_pUFCcD",
-        "feature_qeaBF6"
+        "media_row_YA4ddi",
+        "media_row_f88dXL"
       ],
-      "name": "Vorher-Nachher",
+      "name": "Media + Richtext + Galerie",
       "settings": {
-        "layout_direction": "image_left",
-        "show_image": true,
-        "background_color": "#ffffff",
-        "section_padding_top": 30,
-        "section_padding_bottom": 20,
-        "title": "",
-        "title_richtext": "",
-        "title_color": "#111827",
-        "title_font_size": 32,
-        "subtitle": "",
-        "subtitle_richtext": "",
-        "subtitle_color": "#374151",
-        "subtitle_font_size": 20,
-        "description": "",
-        "text_color": "#6b7280",
-        "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_657636373.jpg",
-        "image_border_radius": 12,
-        "image_alt": "",
-        "image_max_width": 85,
-        "image_aspect_ratio": "auto",
-        "features_per_row": "2",
-        "icon_size": 32,
-        "icon_color": "#34d399",
-        "feature_title_color": "#111827"
+        "section_heading": "<h3>Vorher – Nachher Bilder</h3>",
+        "section_subheading": "<p>Diese beiden Methoden sind in ihrer Vorgehensweise und Anwendung grundsätzlich ...</p>",
+        "gallery_heading": "<h3>Vorher – Nachher Bilder</h3>"
       }
     },
     "video_Cg8Ar8": {
@@ -729,9 +646,7 @@
     "about_section_v3_RGqFVA",
     "about_section_v3_nAxpQE",
     "about_section_v3_p7n9bw",
-    "about_section_v3_gLk4ph",
-    "about_section_v2_RbQb9j",
-    "about_section_v2_kxjGWD",
+    "custom_media_richtext_PP4kNN",
     "video_Cg8Ar8",
     "custom_cta_block_3nzV4z",
     "sis_single_footer_N4n9t3",
