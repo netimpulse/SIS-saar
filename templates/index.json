@@ -256,26 +256,27 @@
         "open_new": true
       }
     },
-    "kundenbewertung_tzkjqA": {
-      "type": "Kundenbewertung",
+    "kbv2_section_dBbUd6": {
+      "type": "kbv2-section",
       "blocks": {
-        "review_FJeXGD": {
+        "review_FBA3E4": {
           "type": "review",
           "settings": {
-            "person_image": "shopify://shop_images/Logo_mitClaim_ZW.jpg",
-            "image_size": 70,
-            "person_name": "Martin Anstadt, Leitung Einkauf / Materialwirtschaft",
+            "person_image": "shopify://shop_images/shutterstock_432654235.jpg",
+            "image_size": 80,
+            "person_name": "Max Mustermann",
             "name_font": "sans_serif_n4",
             "name_font_size": 18,
-            "review_text": "<p>Die Firma SIS Saar-Industrie-Service GmbH ist schon lange unser Dienstleister für<br/>alle Industriereinigungen im Innen- und im Außenbereich. Wir sind in jeglicher Hinsicht sehr  zufrieden mit den getätigten Arbeiten von SIS Saar-Industrie-Service GmbH und sehen das Unternehmen zwischenzeitlich als zuverlässigen Partner im Bereich Dienstleistung Industriereinigungen in der Automotive Industrie. </p>",
+            "review_text": "<p>Wir sind in <br/>jeglicher Hinsicht sehr  zufrieden mit den getätigten Arbeiten von SIS <br/>Saar-Industrie-Service GmbH</p>",
             "text_font": "sans_serif_n4",
             "text_font_size": 16,
             "star_rating": 5
           }
         },
-        "review_9YC7yy": {
+        "review_mbJez6": {
           "type": "review",
           "settings": {
+            "person_image": "shopify://shop_images/shutterstock_93443800.jpg",
             "image_size": 80,
             "person_name": "Max Mustermann",
             "name_font": "sans_serif_n4",
@@ -286,9 +287,10 @@
             "star_rating": 5
           }
         },
-        "review_cUnGwJ": {
+        "review_HiaFd4": {
           "type": "review",
           "settings": {
+            "person_image": "shopify://shop_images/shutterstock_181375295.jpg",
             "image_size": 80,
             "person_name": "Max Mustermann",
             "name_font": "sans_serif_n4",
@@ -299,7 +301,21 @@
             "star_rating": 5
           }
         },
-        "review_QThjeR": {
+        "review_QUcz3t": {
+          "type": "review",
+          "settings": {
+            "person_image": "shopify://shop_images/shutterstock_775834834.jpg",
+            "image_size": 80,
+            "person_name": "Max Mustermann",
+            "name_font": "sans_serif_n4",
+            "name_font_size": 18,
+            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
+            "text_font": "sans_serif_n4",
+            "text_font_size": 16,
+            "star_rating": 5
+          }
+        },
+        "review_8w9pQr": {
           "type": "review",
           "settings": {
             "image_size": 80,
@@ -314,10 +330,11 @@
         }
       },
       "block_order": [
-        "review_FJeXGD",
-        "review_9YC7yy",
-        "review_cUnGwJ",
-        "review_QThjeR"
+        "review_FBA3E4",
+        "review_mbJez6",
+        "review_HiaFd4",
+        "review_QUcz3t",
+        "review_8w9pQr"
       ],
       "name": "Kundenbewertung",
       "settings": {
@@ -602,7 +619,7 @@
     "split_show_handy_nkKeqP",
     "about_section_v3_jYmwQj",
     "partner_logos_khWdEB",
-    "kundenbewertung_tzkjqA",
+    "kbv2_section_dBbUd6",
     "interactive_map_BWTdBe",
     "text_mit_bild_button_6UPhhG",
     "custom_cta_block_UK3hyB",
