@@ -473,7 +473,7 @@
           "type": "leistungen_link",
           "settings": {
             "text": "Gebäudeservice",
-            "link": "shopify://pages/gebaudeservice-leistungen"
+            "link": "shopify://pages/gebaeudeservice-leistungen"
           }
         },
         "unternehmen_link_grWJG9": {
@@ -573,7 +573,7 @@
           "disabled": true,
           "settings": {
             "text": "Gebäudeservice",
-            "link": "shopify://pages/gebaudeservice-leistungen"
+            "link": "shopify://pages/gebaeudeservice-leistungen"
           }
         },
         "unternehmen_link_7kDnLg": {
