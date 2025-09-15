@@ -155,7 +155,7 @@
       ],
       "name": "Über Uns (Layout) – v3 - Sandstrahlen",
       "settings": {
-        "image_position": "bottom",
+        "image_position": "right",
         "image_vertical_align": "start",
         "show_image": true,
         "background_color": "#ffffff",
@@ -245,6 +245,7 @@
     },
     "about_section_v3_p7n9bw": {
       "type": "about-section-v3",
+      "disabled": true,
       "name": "Über Uns (Layout) – v3 - Sand vs Glas",
       "settings": {
         "image_position": "top",
@@ -308,7 +309,8 @@
       ],
       "name": "Media + Richtext + Galerie",
       "settings": {
-        "section_heading": "<h3>Vorher – Nachher Bilder</h3>",
+        "section_heading": "<h3><strong>Vorher – Nachher Bilder</strong></h3>",
+        "heading_size_px": 32,
         "section_subheading": "<p>Diese beiden Methoden sind in ihrer Vorgehensweise und Anwendung grundsätzlich ...</p>",
         "gallery_heading": "<h3>Vorher – Nachher Bilder</h3>"
       }
