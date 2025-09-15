@@ -69,7 +69,7 @@
         "text_size": 20,
         "text_color": "#ffffff",
         "btn1_text": "Mehr über unsere Services",
-        "btn1_link": "shopify://pages/gebaeudeservice-leistungen",
+        "btn1_link": "shopify://pages/sis-saar-gebaeudeservice-leistungen",
         "btn1_font": "system_ui_n4",
         "btn1_font_size": 16,
         "btn1_padding_x": 28,
@@ -508,7 +508,7 @@
           "type": "leistungen_link",
           "settings": {
             "text": "Gebäudeservice",
-            "link": "shopify://pages/gebaeudeservice-leistungen"
+            "link": "shopify://pages/sis-saar-gebaeudeservice-leistungen"
           }
         },
         "unternehmen_link_cHc4Pd": {
@@ -608,7 +608,7 @@
           "type": "leistungen_link",
           "settings": {
             "text": "Gebäudeservice",
-            "link": "shopify://pages/gebaeudeservice-leistungen"
+            "link": "shopify://pages/sis-saar-gebaeudeservice-leistungen"
           }
         },
         "unternehmen_link_xCHGRk": {

@@ -179,7 +179,7 @@
         "section_padding": 24,
         "show_button": true,
         "button_label": "Alle Leistungen im Überblick",
-        "button_url": "shopify://pages/gebaeudeservice-leistungen",
+        "button_url": "shopify://pages/sis-saar-gebaeudeservice-leistungen",
         "button_align": "center",
         "button_full_width": false,
         "button_max_width": 420,
@@ -418,7 +418,7 @@
           "type": "leistungen_link",
           "settings": {
             "text": "Gebäudeservice",
-            "link": "shopify://pages/gebaeudeservice-leistungen"
+            "link": "shopify://pages/sis-saar-gebaeudeservice-leistungen"
           }
         },
         "unternehmen_link_F6WDXP": {
@@ -526,7 +526,7 @@
           "type": "leistungen_link",
           "settings": {
             "text": "Gebäudeservice",
-            "link": "shopify://pages/gebaeudeservice-leistungen"
+            "link": "shopify://pages/sis-saar-gebaeudeservice-leistungen"
           }
         },
         "unternehmen_link_DWUcj6": {
