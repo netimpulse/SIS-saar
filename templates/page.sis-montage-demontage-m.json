@@ -216,7 +216,7 @@
       "settings": {
         "image_position": "right",
         "image_vertical_align": "start",
-        "show_image": true,
+        "show_image": false,
         "background_color": "#ffffff",
         "section_padding_top": 80,
         "section_padding_bottom": 80,
