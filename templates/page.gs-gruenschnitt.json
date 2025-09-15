@@ -215,7 +215,7 @@
           "type": "leistungen_link",
           "settings": {
             "text": "Gebäudeservice",
-            "link": "shopify://pages/gebaeudeservice-leistungen"
+            "link": "shopify://pages/sis-saar-gebaeudeservice-leistungen"
           }
         },
         "unternehmen_link_gyR3bd": {
