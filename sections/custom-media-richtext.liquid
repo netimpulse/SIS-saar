@@ -1,0 +1,165 @@
+{% comment %}
+  Custom Section: Media + Richtext mit Galerie
+{% endcomment %}
+
+{{ 'custom-media-richtext.css' | asset_url | stylesheet_tag }}
+
+<section id="media-richtext-{{ section.id }}" class="cmr cmr--section">
+  <div class="cmr__inner page-width">
+    {%- if section.settings.section_heading != blank -%}
+      <div class="cmr__header rte">
+        {{ section.settings.section_heading }}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.section_subheading != blank -%}
+      <div class="cmr__subheader rte">
+        {{ section.settings.section_subheading }}
+      </div>
+    {%- endif -%}
+
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'media_row' -%}
+          {% render 'media-row', block: block, section_id: section.id %}
+        {%- endcase -%}
+    {%- endfor -%}
+
+    {%- assign gallery_blocks = section.blocks | where: 'type', 'gallery_item' -%}
+    {%- if gallery_blocks.size > 0 -%}
+      {%- if section.settings.gallery_heading != blank -%}
+        <div class="cmr__gallery-header rte">
+          {{ section.settings.gallery_heading }}
+        </div>
+      {%- endif -%}
+
+      <div class="cmr__gallery" role="list">
+        {%- for block in gallery_blocks -%}
+          <figure class="cmr__gallery-item" role="listitem" {{ block.shopify_attributes }}>
+            {%- if block.settings.image != blank -%}
+              {{ block.settings.image
+                | image_url: width: 1500
+                | image_tag: loading: 'lazy', sizes: '(min-width: 990px) 33vw, 100vw', alt: block.settings.alt | escape
+              }}
+            {%- else -%}
+              <div class="cmr__placeholder"></div>
+            {%- endif -%}
+            {%- if block.settings.caption != blank -%}
+              <figcaption class="cmr__caption rte">
+                {{ block.settings.caption }}
+              </figcaption>
+            {%- endif -%}
+          </figure>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Richtext Galerie",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "section_heading",
+      "label": "Überschrift (Richtext)",
+      "default": "<h2>Sand vs. Glasstrahlen – Strahlmedium</h2>"
+    },
+    {
+      "type": "richtext",
+      "id": "section_subheading",
+      "label": "Untertitel / Einleitung (Richtext)",
+      "default": "<p>Diese beiden Methoden sind in ihrer Vorgehensweise und Anwendung grundsätzlich ...</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "gallery_heading",
+      "label": "Galerie-Überschrift (Richtext)",
+      "default": "<h3>Vorher – Nachher Bilder</h3>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "media_row",
+      "name": "Medienreihe",
+      "limit": 50,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Bild"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Alternativtext (Barrierefreiheit)",
+          "default": "Bild"
+        },
+        {
+          "type": "select",
+          "id": "image_side",
+          "label": "Bildseite",
+          "default": "left",
+          "options": [
+            { "value": "left", "label": "Links" },
+            { "value": "right", "label": "Rechts" }
+          ]
+        },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Titel (Richtext)",
+          "default": "<h3>Titel der Reihe</h3>"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text (Richtext)",
+          "default": "<p>Hier steht der beschreibende Text zur jeweiligen Medienreihe.</p>"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_divider",
+          "label": "Trennlinie unterhalb anzeigen",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "gallery_item",
+      "name": "Galerie-Bild",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Bild"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Alternativtext",
+          "default": "Galeriebild"
+        },
+        {
+          "type": "richtext",
+          "id": "caption",
+          "label": "Bildunterschrift (Richtext)",
+          "default": "<p>Beschreibung oder Vorher/Nachher-Hinweis.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Media + Richtext + Galerie",
+      "category": "Abschnitte",
+      "blocks": [
+        { "type": "media_row" },
+        { "type": "gallery_item" },
+        { "type": "gallery_item" }
+      ]
+    }
+  ]
+}
+{% endschema %}
