@@ -3,7 +3,11 @@
   Übergaben: block, section_id
 {%- endcomment -%}
 
-{%- assign image_on_right = block.settings.image_side == 'right' -%}
+{%- assign image_on_right = false -%}
+{%- if block.settings.image_side == 'right' -%}
+  {%- assign image_on_right = true -%}
+{%- endif -%}
+
 <div class="cmr__row {% if image_on_right %}cmr__row--reverse{% endif %}" {{ block.shopify_attributes }}>
   <div class="cmr__media">
     {%- if block.settings.image != blank -%}
