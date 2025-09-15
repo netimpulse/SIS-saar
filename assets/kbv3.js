@@ -10,7 +10,6 @@
 
     const originals = Array.from(container.children);
     const itemsCount = originals.length;
-    const gap = parseFloat(getComputedStyle(container).gap) || 30;
 
     // Endlos-Klone (nur einmal)
     originals.forEach(item => {
@@ -22,9 +21,15 @@
     let currentIndex = 0;
     let isTransitioning = false;
 
+    // Gap dynamisch lesen (ändert sich über Media Queries)
+    function getGap() {
+      const g = parseFloat(getComputedStyle(container).gap);
+      return isNaN(g) ? 0 : g;
+    }
+
     function itemWidth() {
       const first = container.children[0];
-      return first ? first.getBoundingClientRect().width + gap : 0;
+      return first ? first.getBoundingClientRect().width + getGap() : 0;
     }
 
     function moveCarousel(instant = false) {
@@ -51,17 +56,51 @@
       moveCarousel();
     }
 
-    // Listeners (pro Instanz)
+    // Click-Listener
     container.addEventListener('transitionend', handleTransitionEnd);
     nextButton.addEventListener('click', e => { e.preventDefault(); shiftItems(1); });
     prevButton.addEventListener('click', e => { e.preventDefault(); shiftItems(-1); });
 
-    // Re-Layout bei Resize (z. B. Breakpoints)
+    // Resize: Layout neu berechnen
     let resizeTO;
     window.addEventListener('resize', () => {
       clearTimeout(resizeTO);
-      resizeTO = setTimeout(() => moveCarousel(true), 100);
+      resizeTO = setTimeout(() => moveCarousel(true), 120);
     });
+
+    /* ---- Touch/Swipe für Mobile ---- */
+    let touchStartX = 0;
+    let touchMoveX = 0;
+    let touching = false;
+
+    function onTouchStart(e) {
+      touching = true;
+      touchStartX = (e.touches ? e.touches[0].clientX : e.clientX);
+      touchMoveX = touchStartX;
+    }
+    function onTouchMove(e) {
+      if (!touching) return;
+      touchMoveX = (e.touches ? e.touches[0].clientX : e.clientX);
+    }
+    function onTouchEnd() {
+      if (!touching) return;
+      const dx = touchMoveX - touchStartX;
+      const threshold = 40; // minimaler Wischweg
+      if (Math.abs(dx) > threshold) {
+        shiftItems(dx < 0 ? 1 : -1);
+      }
+      touching = false;
+    }
+
+    const viewport = root.querySelector('.karussell-viewport') || container;
+    viewport.addEventListener('touchstart', onTouchStart, { passive: true });
+    viewport.addEventListener('touchmove', onTouchMove, { passive: true });
+    viewport.addEventListener('touchend', onTouchEnd);
+    // optional: Maus-swipe (z. B. auf Tablets mit Maus)
+    viewport.addEventListener('mousedown', onTouchStart);
+    viewport.addEventListener('mousemove', onTouchMove);
+    viewport.addEventListener('mouseup', onTouchEnd);
+    viewport.addEventListener('mouseleave', onTouchEnd);
 
     // Startposition setzen
     moveCarousel(true);
@@ -84,3 +123,4 @@
     section.querySelectorAll('.kundenbewertung-karussell').forEach(initCarousel);
   });
 })();
+
