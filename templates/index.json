@@ -81,7 +81,7 @@
         "right_title": "GEBÄUDE SERVICE",
         "right_description": "Facility Management, Reinigung und Hausmeisterservice",
         "right_button_text": "Mehr erfahren",
-        "right_button_link": "shopify://pages/gebaudeservice-startseite"
+        "right_button_link": "shopify://pages/gebaeudeservice"
       }
     },
     "about_section_v3_jYmwQj": {
@@ -561,7 +561,7 @@
           "settings": {
             "logo": "shopify://shop_images/2025-SIS-Gebaeude.png",
             "alt": "Partner Gebäudeservice GmbH",
-            "link": "shopify://pages/gebaudeservice-startseite",
+            "link": "shopify://pages/gebaeudeservice",
             "new_tab": true
           }
         },
