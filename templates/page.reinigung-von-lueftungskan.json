@@ -120,7 +120,7 @@
         "main_image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
         "image_radius": 12,
         "image_position": "left",
-        "left_heading_html": "<p><strong>Frische Luft - Gesunde Räume</strong></p>",
+        "left_heading_html": "<p><strong>Saubere Luft - Gesunde Räume</strong></p>",
         "left_heading_align": "right",
         "left_heading_italic": false,
         "left_heading_weight": "700",
