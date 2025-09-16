@@ -120,7 +120,7 @@
         "main_image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
         "image_radius": 12,
         "image_position": "left",
-        "left_heading_html": "<p><strong>Reinigung verschiedener Anlagen</strong></p>",
+        "left_heading_html": "<p><strong>Frische Luft - Gesunde Räume</strong></p>",
         "left_heading_align": "right",
         "left_heading_italic": false,
         "left_heading_weight": "700",
@@ -166,6 +166,38 @@
         "icon_size": 32,
         "icon_color": "#34d399",
         "feature_title_color": "#111827"
+      }
+    },
+    "about_section_v3_TwMWej": {
+      "type": "about-section-v3",
+      "name": "Über Uns (Layout) – v3",
+      "settings": {
+        "image_position": "right",
+        "image_vertical_align": "center",
+        "show_image": true,
+        "background_color": "#ffffff",
+        "section_padding_top": 20,
+        "section_padding_bottom": 80,
+        "title": "",
+        "title_richtext": "",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<p>Dachluftzentralen sind zentrale Bestandteile raumlufttechnischer Anlagen und versorgen Produktions- und Aufenthaltsbereiche<br/>mit konditionierter Zuluft. Um die hygienische Qualität der Luft sicherzustellen und den einwandfreien Betrieb zu gewährleisten, schreibt z.B. die VDI 6022 regelmäßige Inspektionen und Reinigungen dieser Anlagen vor.</p><p>Relevante Anlagenteile sind dabei zum Beispiel Filterstufen, Wärmetauscher, Tropfenabscheider, Kondensatwannen und -abläufe, Zuluft- und Abluftventilatoren, Schalldämpfer, Klappen, Luftführungskanäle etc.</p><p><strong>Typische Belastungen:</strong><br/>In industriellen und gewerblichen Umgebungen lagern sich im Betrieb Staub, Fasern, Aerosole, Ölnebel und mikrobiologische Kontaminationen in den Komponenten der Anlage ab. Ohne regelmäßige Reinigung steigt nicht nur der Energieverbrauch – auch die Luftqualität leidet, und es besteht das Risiko hygienischer Mängel.</p>",
+        "text_color": "#6b7280",
+        "text_font_size": 18,
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "4/3",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "left"
       }
     },
     "about_section_v2_dWieTW": {
@@ -222,62 +254,6 @@
         "icon_size": 32,
         "icon_color": "#34d399",
         "feature_title_color": "#111827"
-      }
-    },
-    "about_section_v3_TwMWej": {
-      "type": "about-section-v3",
-      "blocks": {
-        "feature_4Rencb": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung"
-          }
-        },
-        "feature_BwTNpP": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung"
-          }
-        }
-      },
-      "block_order": [
-        "feature_4Rencb",
-        "feature_BwTNpP"
-      ],
-      "name": "Über Uns (Layout) – v3",
-      "settings": {
-        "image_position": "right",
-        "image_vertical_align": "center",
-        "show_image": true,
-        "background_color": "#ffffff",
-        "section_padding_top": 20,
-        "section_padding_bottom": 80,
-        "title": "",
-        "title_richtext": "",
-        "title_color": "#111827",
-        "title_font_size": 32,
-        "subtitle": "",
-        "subtitle_richtext": "",
-        "subtitle_color": "#374151",
-        "subtitle_font_size": 20,
-        "description": "<p>Dachluftzentralen sind zentrale Bestandteile raumlufttechnischer Anlagen und versorgen Produktions- und Aufenthaltsbereiche<br/>mit konditionierter Zuluft. Um die hygienische Qualität der Luft sicherzustellen und den einwandfreien Betrieb zu gewährleisten, schreibt z.B. die VDI 6022 regelmäßige Inspektionen und Reinigungen dieser Anlagen vor.</p><p>Relevante Anlagenteile sind dabei zum Beispiel Filterstufen, Wärmetauscher, Tropfenabscheider, Kondensatwannen und -abläufe, Zuluft- und Abluftventilatoren, Schalldämpfer, Klappen, Luftführungskanäle etc.</p><p><strong>Typische Belastungen:</strong><br/>In industriellen und gewerblichen Umgebungen lagern sich im Betrieb Staub, Fasern, Aerosole, Ölnebel und mikrobiologische Kontaminationen in den Komponenten der Anlage ab. Ohne regelmäßige Reinigung steigt nicht nur der Energieverbrauch – auch die Luftqualität leidet, und es besteht das Risiko hygienischer Mängel.</p>",
-        "text_color": "#6b7280",
-        "text_font_size": 18,
-        "image_border_radius": 12,
-        "image_alt": "",
-        "image_max_width": 85,
-        "image_aspect_ratio": "4/3",
-        "features_per_row": "2",
-        "icon_size": 32,
-        "icon_color": "#34d399",
-        "feature_title_color": "#111827",
-        "no_image_text_align": "left"
       }
     },
     "about_section_v3_FYy8t7": {
@@ -642,11 +618,11 @@
       ],
       "name": "Kachelview",
       "settings": {
-        "bg_color": "#F3F8F5",
-        "card_bg": "#FFFFFF",
+        "bg_color": "#f3f8f5",
+        "card_bg": "#ffffff",
         "card_radius": 16,
         "text_color": "#111111",
-        "accent_color": "#22C55E"
+        "accent_color": "#22c55e"
       }
     },
     "about_section_v3_QHjnVq": {
@@ -1179,8 +1155,8 @@
     "hero_building_section_xFPFdb",
     "leistung_showcase_haMeXH",
     "about_section_v2_YLaRmg",
-    "about_section_v2_dWieTW",
     "about_section_v3_TwMWej",
+    "about_section_v2_dWieTW",
     "about_section_v3_FYy8t7",
     "about_section_v3_xqD4zk",
     "slideshow_bMYEwg",
