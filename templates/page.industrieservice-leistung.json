@@ -323,7 +323,7 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_549798139.jpg",
             "title_html": "<p><strong>Industrie- und Maschinenreinigung</strong></p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "text_html": "<p>Wir reinigen Ihre Industrieanlagen, Bearbeitungsmaschinen, Produktionsstätten, Lagerhallen und andere industrielle Einrichtungen professionell und sicher. Durch modernste Reinigungsverfahren entfernen wir Öl, Schmierstoffe, Metallabrieb und andere Rückstände, um Maschinenlaufzeiten zu verlängern und Produktionsausfälle zu minimieren.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/maschinenreinigung"
@@ -335,7 +335,7 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_93443800.jpg",
             "title_html": "<p><strong>Wartung und Instandhaltung</strong></p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "text_html": "<p>Wir sorgen dafür, dass Ihre Maschinen und Anlagen kontinuierlich betriebsbereit bleiben. Unser Service umfasst Inspektionen, Reparaturen, präventive Wartungsmaßnahmen und Dokumentation.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/fluidmanagement-wartung"
@@ -359,7 +359,7 @@
           "settings": {
             "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
             "title_html": "<p><strong>Reinigung von Zu-und Abluft in gew. Küchen</strong></p>",
-            "text_html": "<p>Wir reinigen Ihre Zu-und Abluftkanäle in gewerblichen Küchen</p>",
+            "text_html": "<p>Wir reinigen Ihre Zu-und Abluftkanäle in gewerblichen Küchen gem. VDI 2052 und dokumentieren die Ergebnisse.</p>",
             "keywords": "VDI 2052, Hygiene, Luft, Küche",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/sis-kuchen-rlt"
@@ -371,7 +371,7 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_65689291.jpg",
             "title_html": "<p><strong>Strahlarbeiten</strong></p>",
-            "text_html": "<p>(Sand-/Soda-/Glasstrahlen, crushed glas)</p>",
+            "text_html": "<p>Durch unterschiedliche Strahlverfahren entfernen wir Rost, Lack oder Verschmutzungen. Die Wahl des Strahlmediums beeinflusst dabei Oberflächenrauigkeit und Materialschonung. Wir strahlen z.B. mit Trockeneis, Sand, Soda, Glas und crushed glass.</p>",
             "keywords": "Sand, Soda, Glas, crushed Glas",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/sis-stahlarbeiten"
@@ -443,7 +443,7 @@
           "settings": {
             "image": "shopify://shop_images/Trockeneis_AA_2.jpg",
             "title_html": "<p><strong>Trockeneisstrahlen</strong></p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "text_html": "<p>Viele Anlagen dürfen nicht mit Wasser und chemischen Reinigungsmitteln in Berührung kommen und stellen bei der Reinigung somit eine besondere Herausforderung dar. Trockeneisstrahlen stellt dabei eine besonders schonende Reinigungsmöglichkeit dar.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/trockeneisstrahlen"
@@ -477,9 +477,9 @@
           "type": "service",
           "name": "Leistung Block - Abfallmanagement und innerbetriebliche Logistik",
           "settings": {
-            "image": "shopify://shop_images/shutterstock_1107691484.jpg",
+            "image": "shopify://shop_images/staplerfahrer-mit-schutzausr-stung-von-hinten-auf-stapler-der-einen-m-llcontainer-auf-einem-industriegel-nde-transportiert.png",
             "title_html": "<p><strong>Abfallmanagement undinnerbetriebliche Logistik</strong></p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "text_html": "<p>Wir übernehmen für Sie die anfallenden Transporte innerhalb der Produktionslinien, egal ob mit Gabelstapler, Schlepper oder sonstigen Flurförderzeugen. Die Sortierung der Abfälle sowie optimierte Transportwege und Recyclingprozesse schützen Ressourcen, reduzieren Schäden und steigern die Effizienz von Lagerhaltung und Produktion.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/sis-abfallmanagement-und-innerbetriebliche-logistik"
