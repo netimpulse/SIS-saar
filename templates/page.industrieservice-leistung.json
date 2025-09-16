@@ -324,7 +324,7 @@
             "image": "shopify://shop_images/shutterstock_549798139.jpg",
             "title_html": "<p><strong>Industrie- und Maschinenreinigung</strong></p>",
             "text_html": "<p>Wir reinigen Ihre Industrieanlagen, Bearbeitungsmaschinen, Produktionsstätten, Lagerhallen und andere industrielle Einrichtungen professionell und sicher. Durch modernste Reinigungsverfahren entfernen wir Öl, Schmierstoffe, Metallabrieb und andere Rückstände, um Maschinenlaufzeiten zu verlängern und Produktionsausfälle zu minimieren.</p>",
-            "keywords": "Büro, täglich, flexibel",
+            "keywords": "CNC, Öl, flexibel",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/maschinenreinigung"
           }
@@ -336,7 +336,7 @@
             "image": "shopify://shop_images/shutterstock_93443800.jpg",
             "title_html": "<p><strong>Wartung und Instandhaltung</strong></p>",
             "text_html": "<p>Wir sorgen dafür, dass Ihre Maschinen und Anlagen kontinuierlich betriebsbereit bleiben. Unser Service umfasst Inspektionen, Reparaturen, präventive Wartungsmaßnahmen und Dokumentation.</p>",
-            "keywords": "Büro, täglich, flexibel",
+            "keywords": "Verschleiß, Korrosion, Justage, Störungsbehebung",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/fluidmanagement-wartung"
           }
@@ -517,7 +517,7 @@
       "name": "Leistung Suche Grid v2",
       "settings": {
         "heading": "<h1><strong>Unsere Leistungen</strong></h1>",
-        "subheading": "<h3>Mit <em>Leidenschaft</em> für Ihren Erfolg.</h3>",
+        "subheading": "<h3>Mit Leidenschaft für gemeinsamen Erfolg.</h3>",
         "text_align": "center",
         "show_search": true,
         "search_placeholder": "Leistungen oder Keywords suchen…",

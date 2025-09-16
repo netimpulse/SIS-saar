@@ -321,6 +321,7 @@
         "hotspot_ihd4Dm",
         "hotspot_9x4KGX"
       ],
+      "disabled": true,
       "name": "Amenities Hotspots",
       "settings": {
         "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",

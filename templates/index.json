@@ -200,33 +200,6 @@
             "custom_size": false,
             "logo_height": 72
           }
-        },
-        "logo_3tm9GJ": {
-          "type": "logo",
-          "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
-          }
-        },
-        "logo_TF3wAP": {
-          "type": "logo",
-          "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
-          }
-        },
-        "logo_xC77Pm": {
-          "type": "logo",
-          "settings": {
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
-          }
         }
       },
       "block_order": [
@@ -234,10 +207,7 @@
         "logo_kz9yMD",
         "logo_9Vy7ja",
         "logo_CGgcEK",
-        "logo_jaaaMQ",
-        "logo_3tm9GJ",
-        "logo_TF3wAP",
-        "logo_xC77Pm"
+        "logo_jaaaMQ"
       ],
       "name": "Partner-Logos (Grid)",
       "settings": {
@@ -262,7 +232,7 @@
         "review_FBA3E4": {
           "type": "review",
           "settings": {
-            "person_image": "shopify://shop_images/shutterstock_432654235.jpg",
+            "person_image": "shopify://shop_images/Logo_mitClaim_ZW.jpg",
             "image_size": 80,
             "person_name": "Martin Anstadt, Leitung Einkauf / Materialwirtschaft",
             "name_font": "sans_serif_n4",
@@ -276,7 +246,7 @@
         "review_mbJez6": {
           "type": "review",
           "settings": {
-            "person_image": "shopify://shop_images/shutterstock_93443800.jpg",
+            "person_image": "shopify://shop_images/Bosch_symbol_logo_black_red.jpg",
             "image_size": 80,
             "person_name": "Max Mustermann",
             "name_font": "sans_serif_n4",
@@ -290,7 +260,7 @@
         "review_HiaFd4": {
           "type": "review",
           "settings": {
-            "person_image": "shopify://shop_images/shutterstock_181375295.jpg",
+            "person_image": "shopify://shop_images/2025_AMG_zugeschnitten_DA.png",
             "image_size": 80,
             "person_name": "Max Mustermann",
             "name_font": "sans_serif_n4",
@@ -304,20 +274,7 @@
         "review_QUcz3t": {
           "type": "review",
           "settings": {
-            "person_image": "shopify://shop_images/shutterstock_775834834.jpg",
-            "image_size": 80,
-            "person_name": "Max Mustermann",
-            "name_font": "sans_serif_n4",
-            "name_font_size": 18,
-            "review_text": "<p>Eine tolle Erfahrung! Ich bin sehr zufrieden mit dem Produkt und dem Service.</p>",
-            "text_font": "sans_serif_n4",
-            "text_font_size": 16,
-            "star_rating": 5
-          }
-        },
-        "review_8w9pQr": {
-          "type": "review",
-          "settings": {
+            "person_image": "shopify://shop_images/2025-SIS.png",
             "image_size": 80,
             "person_name": "Max Mustermann",
             "name_font": "sans_serif_n4",
@@ -333,8 +290,7 @@
         "review_FBA3E4",
         "review_mbJez6",
         "review_HiaFd4",
-        "review_QUcz3t",
-        "review_8w9pQr"
+        "review_QUcz3t"
       ],
       "name": "Kundenbewertung",
       "settings": {
