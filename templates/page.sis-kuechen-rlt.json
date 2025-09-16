@@ -243,30 +243,6 @@
     },
     "about_section_v3_TwMWej": {
       "type": "about-section-v3",
-      "blocks": {
-        "feature_4Rencb": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung"
-          }
-        },
-        "feature_BwTNpP": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung"
-          }
-        }
-      },
-      "block_order": [
-        "feature_4Rencb",
-        "feature_BwTNpP"
-      ],
       "name": "Über Uns (Layout) – v3",
       "settings": {
         "image_position": "right",
@@ -418,8 +394,107 @@
     },
     "about_experience_fUL8PE": {
       "type": "about-experience",
+      "disabled": true,
+      "name": "Ihre Vorteile – Erfahrung/Stats",
+      "settings": {
+        "kicker": "",
+        "heading": "Ihre Vorteile",
+        "richtext": "",
+        "btn_label": "",
+        "btn_link": "",
+        "btn_newtab": false,
+        "bg_color": "#ffffff",
+        "card_bg": "#ffffff",
+        "card_radius": 16,
+        "text_color": "#111111",
+        "accent_color": "#22c55e"
+      }
+    },
+    "kachelview_LiAaeD": {
+      "type": "kachelview",
       "blocks": {
-        "stat_yW9hdt": {
+        "stat_4Tgbam": {
+          "type": "stat",
+          "settings": {
+            "emoji": "",
+            "title": "Bessere Luftqualität und Hygiene",
+            "subtitle": "Potential für Schimmelbildung wird reduziert, negative Gerüche beseitigt,",
+            "featured": false,
+            "aria_label": "Kachel"
+          }
+        },
+        "stat_wE3cEG": {
+          "type": "stat",
+          "settings": {
+            "emoji": "",
+            "title": "Beseititgung von Gesundheitsgefährdungen",
+            "subtitle": "durch Staub, Schmutz und Mikroben",
+            "featured": false,
+            "aria_label": "Kachel"
+          }
+        },
+        "stat_eppTfR": {
+          "type": "stat",
+          "settings": {
+            "emoji": "",
+            "title": "Reduzierte Brandrisiken",
+            "subtitle": "durch Beseitigung von Brandlasten (z.B. Fettablagerungen in den Abluftsystemen)",
+            "featured": false,
+            "aria_label": "Kachel"
+          }
+        },
+        "stat_ezEzbn": {
+          "type": "stat",
+          "settings": {
+            "emoji": "",
+            "title": "Energieeinsparung und Effizienzsteigerung",
+            "subtitle": "Reduzierte Betriebskosten",
+            "featured": false,
+            "aria_label": "Kachel"
+          }
+        },
+        "stat_aYaif7": {
+          "type": "stat",
+          "settings": {
+            "emoji": "",
+            "title": "Verlängerung der Lebensdauer der Anlagen",
+            "subtitle": "Kosteneinsparung",
+            "featured": false,
+            "aria_label": "Kachel"
+          }
+        },
+        "stat_37Fbcx": {
+          "type": "stat",
+          "settings": {
+            "emoji": "",
+            "title": "Einhaltung gesetzlicher Vorgaben, Richtlinien und Standards",
+            "subtitle": "Rechtssicherheit durch Nachweis einer hygienischen Wartung, Arbeitsschutz etc.",
+            "featured": false,
+            "aria_label": "Kachel"
+          }
+        }
+      },
+      "block_order": [
+        "stat_4Tgbam",
+        "stat_wE3cEG",
+        "stat_eppTfR",
+        "stat_ezEzbn",
+        "stat_aYaif7",
+        "stat_37Fbcx"
+      ],
+      "name": "Kachelview",
+      "settings": {
+        "bg_color": "#f3f8f5",
+        "card_bg": "#ffffff",
+        "card_radius": 16,
+        "text_color": "#111111",
+        "accent_color": "#22c55e"
+      }
+    },
+    "about_experience_KNTxfr": {
+      "type": "about-experience",
+      "blocks": {
+        "stat_fbg84N": {
           "type": "stat",
           "settings": {
             "emoji": "✅",
@@ -428,7 +503,7 @@
             "aria_label": "1"
           }
         },
-        "stat_jPmEMF": {
+        "stat_PhfpQc": {
           "type": "stat",
           "settings": {
             "emoji": "✅",
@@ -437,7 +512,7 @@
             "aria_label": "1"
           }
         },
-        "stat_KrPi3x": {
+        "stat_a7jxBJ": {
           "type": "stat",
           "settings": {
             "emoji": "✅",
@@ -446,7 +521,7 @@
             "aria_label": "1"
           }
         },
-        "stat_XrLF9Y": {
+        "stat_CBHgMp": {
           "type": "stat",
           "settings": {
             "emoji": "🌱",
@@ -455,7 +530,7 @@
             "aria_label": "1"
           }
         },
-        "stat_wNTYhz": {
+        "stat_AwxyxF": {
           "type": "stat",
           "settings": {
             "emoji": "✅",
@@ -464,7 +539,7 @@
             "aria_label": "1"
           }
         },
-        "stat_JQFhdt": {
+        "stat_GPaeXm": {
           "type": "stat",
           "settings": {
             "emoji": "✅",
@@ -475,13 +550,14 @@
         }
       },
       "block_order": [
-        "stat_yW9hdt",
-        "stat_jPmEMF",
-        "stat_KrPi3x",
-        "stat_XrLF9Y",
-        "stat_wNTYhz",
-        "stat_JQFhdt"
+        "stat_fbg84N",
+        "stat_PhfpQc",
+        "stat_a7jxBJ",
+        "stat_CBHgMp",
+        "stat_AwxyxF",
+        "stat_GPaeXm"
       ],
+      "disabled": true,
       "name": "Ihre Vorteile – Erfahrung/Stats",
       "settings": {
         "kicker": "",
@@ -563,6 +639,7 @@
         "feature_PEJBtK",
         "feature_MxYCFC"
       ],
+      "disabled": true,
       "name": "Ihre Vorteile Features",
       "settings": {
         "layout_direction": "text_left",
@@ -946,6 +1023,8 @@
     "about_section_v2_aMzgy4",
     "about_section_v2_i8kGTR",
     "about_experience_fUL8PE",
+    "kachelview_LiAaeD",
+    "about_experience_KNTxfr",
     "about_section_v2_t3ejyA",
     "about_section_v3_QHjnVq",
     "custom_cta_block_7jDMtP",
