@@ -159,8 +159,8 @@
         "image_vertical_align": "start",
         "show_image": true,
         "background_color": "#ffffff",
-        "section_padding_top": 80,
-        "section_padding_bottom": 80,
+        "section_padding_top": 20,
+        "section_padding_bottom": 40,
         "title": "",
         "title_richtext": "<p><strong>Sandstrahlen</strong></p>",
         "title_color": "#111827",
@@ -286,7 +286,7 @@
             "image": "shopify://shop_images/shutterstock_420833395_f08fa48e-93d6-404c-8da5-80e6417fb104.jpg",
             "alt": "Bild",
             "image_side": "left",
-            "title": "<h3>Titel der Reihe</h3>",
+            "title": "<h3>Vorher</h3>",
             "text": "<p>Hier steht der beschreibende Text zur jeweiligen Medienreihe.</p>",
             "show_divider": false
           }
@@ -297,7 +297,7 @@
             "image": "shopify://shop_images/shutterstock_657636373.jpg",
             "alt": "Bild",
             "image_side": "right",
-            "title": "<h3>Titel der Reihe</h3>",
+            "title": "<h3>Nachher</h3>",
             "text": "<p>Hier steht der beschreibende Text zur jeweiligen Medienreihe.</p>",
             "show_divider": false
           }
