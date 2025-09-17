@@ -81,25 +81,25 @@
         "showcase_item_meLqq6": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>festes CO2</p>"
           }
         },
         "showcase_item_N7BEna": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Verschmutzung erkaltet bei -78°C</p>"
           }
         },
         "showcase_item_FaFVXQ": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>keine Sekundärabfälle</p>"
           }
         },
         "showcase_item_xdGxW3": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Anwendung in Lebensmittelverarbeitungsanlagen</p>"
           }
         }
       },
@@ -120,11 +120,11 @@
         "main_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
         "image_radius": 12,
         "image_position": "left",
-        "left_heading_html": "<p><strong>Zusätzliche Informationen</strong></p>",
+        "left_heading_html": "<p><strong>Umweltfreundliche Reinigungsmethode</strong></p>",
         "left_heading_align": "right",
         "left_heading_italic": false,
         "left_heading_weight": "700",
-        "left_text": "<p>Eigener Textblock, der erscheint, wenn das Bild ausgeblendet ist.</p>",
+        "left_text": "<p>Sauber und sicher, ganz ohne Wasser oder Chemiekalien</p>",
         "bg_color": "#f6f8fb",
         "section_padding": 24,
         "points_title": "Unsere Dienstleistungen:",
