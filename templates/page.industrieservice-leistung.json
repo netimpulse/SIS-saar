@@ -324,7 +324,7 @@
             "image": "shopify://shop_images/shutterstock_549798139.jpg",
             "title_html": "<p><strong>Industrie- und Maschinenreinigung</strong></p>",
             "text_html": "<p>Wir reinigen Ihre Industrieanlagen, Bearbeitungsmaschinen, Produktionsstätten, Lagerhallen und andere industrielle Einrichtungen professionell und sicher. Durch modernste Reinigungsverfahren entfernen wir Öl, Schmierstoffe, Metallabrieb und andere Rückstände, um Maschinenlaufzeiten zu verlängern und Produktionsausfälle zu minimieren.</p>",
-            "keywords": "CNC, Öl, flexibel",
+            "keywords": "CNC, Anlagen, Öl, flexibel",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/maschinenreinigung"
           }
@@ -336,7 +336,7 @@
             "image": "shopify://shop_images/shutterstock_93443800.jpg",
             "title_html": "<p><strong>Wartung und Instandhaltung</strong></p>",
             "text_html": "<p>Wir sorgen dafür, dass Ihre Maschinen und Anlagen kontinuierlich betriebsbereit bleiben. Unser Service umfasst Inspektionen, Reparaturen, präventive Wartungsmaßnahmen und Dokumentation.</p>",
-            "keywords": "Verschleiß, Korrosion, Justage, Störungsbehebung",
+            "keywords": "Verschleiß, Korrosion, Justage, Störungsbehebung, Filter",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/fluidmanagement-wartung"
           }
@@ -347,8 +347,8 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_65689291.jpg",
             "title_html": "<p><strong>Strahlarbeiten</strong></p>",
-            "text_html": "<p>Durch unterschiedliche Strahlverfahren entfernen wir Rost, Lack oder Verschmutzungen. Die Wahl des Strahlmediums beeinflusst dabei Oberflächenrauigkeit und Materialschonung. Wir strahlen unter anderem mit Trockeneis, Sand, Soda, Glas und crushed glass.</p>",
-            "keywords": "Sand, Soda, Glas, crushed Glas",
+            "text_html": "<p>Durch unterschiedliche Strahlverfahren entfernen wir Rost, Lack oder Verschmutzungen von unterschiedlichen Flächen, z.B. Kunststoff, Metall oder auch Holz. Die Wahl des Strahlmediums beeinflusst dabei Oberflächenrauigkeit und Materialschonung. Wir strahlen unter anderem mit Trockeneis, Sand, Soda, Glas und crushed glass.</p>",
+            "keywords": "Holz, Sand, Soda, Glas, crushed Glas",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/sis-stahlarbeiten"
           }
@@ -360,7 +360,7 @@
             "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
             "title_html": "<p><strong>Reinigung von Zu-und Abluft in gew. Küchen</strong></p>",
             "text_html": "<p>Wir reinigen Ihre Zu-und Abluftkanäle in gewerblichen Küchen gem. VDI 2052 und dokumentieren die Ergebnisse.</p>",
-            "keywords": "VDI 2052, Hygiene, Luft, Küche",
+            "keywords": "VDI 2052, Hygiene, Luft, Fett, Filter",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/sis-kuchen-rlt"
           }
@@ -371,8 +371,8 @@
           "settings": {
             "image": "shopify://shop_images/Trockeneis_AA_3.jpg",
             "title_html": "<p><strong>Trockeneisreinigung</strong></p>",
-            "text_html": "<p>Viele Anlagen dürfen nicht mit Wasser und chemischen Reinigungsmitteln in Berührung kommen und stellen bei der Reinigung somit eine besondere Herausforderung dar. Trockeneisstrahlen stellt dabei eine besonders schonende Reinigungsmöglichkeit dar.</p>",
-            "keywords": "Lebensmittelanlage, festes CO2,",
+            "text_html": "<p>Viele Anlagen dürfen nicht mit Wasser und chemischen Reinigungsmitteln in Berührung kommen und stellen bei der Reinigung somit eine besondere Herausforderung dar. Trockeneisstrahlen bietet dabei eine besonders schonende Reinigungsmöglichkeit.</p>",
+            "keywords": "Lebensmittelanlage, festes CO2, -78°C, nicht abrasiv, Gießerei",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/trockeneisstrahlen"
           }
@@ -394,9 +394,9 @@
           "name": "Leistung Block - Abfallmanagement und innerbetriebliche Logistik",
           "settings": {
             "image": "shopify://shop_images/staplerfahrer-mit-schutzausr-stung-von-hinten-auf-stapler-der-einen-m-llcontainer-auf-einem-industriegel-nde-transportiert.png",
-            "title_html": "<p><strong>Abfallmanagement undinnerbetriebliche Logistik</strong></p>",
+            "title_html": "<p><strong>Abfallmanagement und innerbetriebliche Logistik</strong></p>",
             "text_html": "<p>Wir übernehmen für Sie die anfallenden Transporte innerhalb der Produktionslinien, egal ob mit Gabelstapler, Schlepper oder sonstigen Flurförderzeugen. Die Sortierung der Abfälle sowie optimierte Transportwege und Recyclingprozesse schützen Ressourcen, reduzieren Schäden und steigern die Effizienz von Lagerhaltung und Produktion.</p>",
-            "keywords": "Büro, täglich, flexibel",
+            "keywords": "Transport, Recycling, flexibel",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/sis-abfallmanagement-und-innerbetriebliche-logistik"
           }
@@ -408,7 +408,7 @@
             "image": "shopify://shop_images/shutterstock_160555946_Lueftung.jpg",
             "title_html": "<p><strong>Reinigung von RLT-Anlagen</strong></p>",
             "text_html": "<p>Wir reinigen Ihre Raumlufttechnischen Anlagen unterschiedlicher Art</p>",
-            "keywords": "VDI 6022, Hygiene, Luft, Wäremtauscher, DLZ, Produktionsstätten, Wanne",
+            "keywords": "VDI 6022, Hygiene, Luft, Wäremtauscher, DLZ, Produktionsstätten, Filter, Wanne",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/reinigung-von-luftungskanalen"
           }
@@ -418,9 +418,9 @@
           "name": "Leistung Block - Schweiß- und Richtarbeiten",
           "settings": {
             "image": "shopify://shop_images/shutterstock_785685529.jpg",
-            "title_html": "<p><strong>Schweiß- und Richtarbeiten</strong></p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
-            "keywords": "Büro, täglich, flexibel",
+            "title_html": "<p><strong>Schweiß - und Richtarbeiten</strong></p>",
+            "text_html": "<p>Wir arbeiten an verschiedenen Konstruktionen, Bauteilen und Rammschutzanlagen etc. Dabei korrigieren wir Verformungen, richten Metallstrukuren aus und tauschen und justieren Rollen.<br/><br/></p>",
+            "keywords": "Rollen, Justierung, Unfallschäden",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/sis-schweissarbeiten"
           }
