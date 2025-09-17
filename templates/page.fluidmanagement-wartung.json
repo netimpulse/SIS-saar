@@ -188,7 +188,7 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Maschinen, Gebäudetechnik und Produktionsanlagen sind langlebige Investitionsgüter mit oft hohen Anschaffungskosten. Dadurch ist das <strong>Erhalten, Reparieren </strong>sowie <strong>Überholen </strong>der Geräte und Anlagen von großer betriebswirtschaftlicher Bedeutung.</p><p>Regelmäßige Wartung stellt sicher, dass einmal angeschaffte Geräte über die geplante Lebensdauer und ggf. darüber hinaus, zuverlässig arbeiten und fehlerfrei funktionieren. Sie trägt dazu bei, Ausfälle zu vermeiden und wirtschaftliche Schäden zu reduzieren. Der routinemäßige Austausch von Verschleißteilen hält die Reparaturkosten niedrig und erhöht gleichzeitig die Gesamtverfügbarkeit der Anlage. Auch für die Betriebs- und Verkehrssicherheit der Maschinen ist eine vorausschauende Wartung zwingend notwendig. </p>",
+        "description": "<p>Maschinen, Gebäudetechnik und Produktionsanlagen sind langlebige Investitionsgüter mit oft hohen Anschaffungskosten. Dadurch ist das <strong>Erhalten, Reparieren </strong>sowie <strong>Überholen </strong>der Geräte und Anlagen von großer betriebswirtschaftlicher Bedeutung.</p><p>Die Instandhaltung ist der Überbegriff für alle Arbeitsschritte, die die Funktionsfähigkeit von Maschinen und Anlagen gewährleisten sollen. Die Instandhaltung beinhaltet somit die Inspektion, Wartung und Instandsetzung. </p><p>Regelmäßige Wartung stellt sicher, dass einmal angeschaffte Geräte über die geplante Lebensdauer und ggf. darüber hinaus, zuverlässig arbeiten und fehlerfrei funktionieren. Sie trägt dazu bei, Ausfälle zu vermeiden und wirtschaftliche Schäden zu reduzieren. Der routinemäßige Austausch von Verschleißteilen hält die Reparaturkosten niedrig und erhöht gleichzeitig die Gesamtverfügbarkeit der Anlage. Auch für die Betriebs- und Verkehrssicherheit der Maschinen ist eine vorausschauende Wartung zwingend notwendig. </p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image_border_radius": 12,
@@ -300,25 +300,6 @@
     "custom_cta_block_Y6hmWD": {
       "type": "custom-cta-block",
       "blocks": {
-        "button_LM9n93": {
-          "type": "button",
-          "settings": {
-            "label": "<p>Kostenlose Beratung</p>",
-            "link": "",
-            "variant": "solid",
-            "text_color": "#ffffff",
-            "bg_color": "#0b132a",
-            "border_color": "#0b132a",
-            "hover_bg": "#111827",
-            "hover_text": "#ffffff",
-            "radius": 12,
-            "padding_x": 24,
-            "padding_y": 14,
-            "bold": true,
-            "offset_x": 0,
-            "offset_y": 0
-          }
-        },
         "button_hfEK7p": {
           "type": "button",
           "settings": {
@@ -340,7 +321,6 @@
         }
       },
       "block_order": [
-        "button_LM9n93",
         "button_hfEK7p"
       ],
       "name": "Custom CTA Block",
