@@ -24,7 +24,7 @@
         "back_text_color": "#374151",
         "back_hover_color": "#4ade80",
         "back_font_size": 16,
-        "logo": "shopify://shop_images/logo_Industrieservice_exact_v2.png",
+        "logo": "shopify://shop_images/2025-SIS.png",
         "logo_text": "Mein Shop",
         "logo_color": "#1e40af",
         "logo_font_size": 24,
@@ -58,7 +58,7 @@
         "enable_overlay": true,
         "overlay_color": "#000000",
         "overlay_opacity": 0.5,
-        "heading": "Trockeneisstrahlen",
+        "heading": "Trockeneisreinigung",
         "subheading": "",
         "button_label": "Jetzt Angebot anfordern",
         "button_link": "",
@@ -145,8 +145,8 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
+            "feature_title": "keine Schäden an mechanischen oder elektronischen Teilen",
+            "feature_description": ""
           }
         },
         "feature_fjemdh": {
@@ -154,8 +154,8 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
+            "feature_title": "Reinigung ohne Demontage möglich",
+            "feature_description": ""
           }
         },
         "feature_TjJGAt": {
@@ -163,8 +163,8 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
+            "feature_title": "nicht scheuernd, entzündbar oder leitend",
+            "feature_description": ""
           }
         },
         "feature_PAdgey": {
@@ -172,8 +172,8 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
+            "feature_title": "umweltfreundlich",
+            "feature_description": "recycletes CO2"
           }
         }
       },
@@ -190,15 +190,15 @@
         "background_color": "#ffffff",
         "section_padding_top": 80,
         "section_padding_bottom": 80,
-        "title": "Über uns",
-        "title_richtext": "<p><strong>Über uns</strong></p>",
+        "title": "Trockeneisstrahlen",
+        "title_richtext": "<p><strong>Trockeneisstrahlen</strong></p>",
         "title_color": "#111827",
         "title_font_size": 32,
-        "subtitle": "Unsere Mission",
-        "subtitle_richtext": "<p>Unsere Mission</p>",
+        "subtitle": "",
+        "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Wir sind SIS Saar - ein innovatives Unternehmen mit zwei spezialisierten Geschäftsbereichen. Seit über zwei Jahrzehnten stehen wir für zuverlässige und hochwertige Serviceleistungen in der Region.</p><p>Unser Erfolgsrezept liegt in der Kombination aus langjähriger Erfahrung, modernster Technik und einem motivierten Team von Fachkräften. Jeder Mitarbeiter trägt dazu bei, dass wir unseren Kunden stets erstklassige Lösungen anbieten können.</p>",
+        "description": "<p>Trockeneisstrahlen verzichtet auf \"harte\" Schleifmittel, welche die Oberfläche abreiben und beschädigen. Stattdessen wird das Trockeneis (festes CO2) mit Hochdruck auf die Oberfläche geschossen. Hierbei erkaltet die Verschmutzung bei bis zu -78°C und wird durch den nachfolgenden Luftstrom gelöst. Es handelt sich um ein rückstandsloses Verfahren, da das Trockeneis in der Atmosphäre sublimiert, also vom festen direkt in den gasförmigen <br/>Aggregatzustand geht. </p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_731614684.jpg",
@@ -243,7 +243,7 @@
         "image_position": "bottom",
         "image_vertical_align": "center",
         "show_image": true,
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "section_padding_top": 80,
         "section_padding_bottom": 80,
         "title": "Über uns",
@@ -255,7 +255,7 @@
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
         "description": "<p>Wir sind SIS Saar – ein innovatives Unternehmen …</p>",
-        "text_color": "#6B7280",
+        "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_1050808721.jpg",
         "image_border_radius": 12,
@@ -264,7 +264,7 @@
         "image_aspect_ratio": "4/3",
         "features_per_row": "2",
         "icon_size": 32,
-        "icon_color": "#34D399",
+        "icon_color": "#34d399",
         "feature_title_color": "#111827",
         "no_image_text_align": "left"
       }
