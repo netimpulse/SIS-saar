@@ -111,7 +111,7 @@
       ],
       "name": "Leistung Showcase",
       "settings": {
-        "heading_html": "<p>Unsere Dienstleistungen</p>",
+        "heading_html": "",
         "heading_align": "left",
         "heading_italic": false,
         "heading_weight": "700",
@@ -120,11 +120,11 @@
         "main_image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
         "image_radius": 12,
         "image_position": "left",
-        "left_heading_html": "<p><strong>Reinigung von Zu- und Abluftkanälen in Ihren Küchen</strong></p>",
+        "left_heading_html": "<p><strong> Zu - und Abluftkanäle in Küchen</strong></p>",
         "left_heading_align": "right",
         "left_heading_italic": false,
         "left_heading_weight": "700",
-        "left_text": "<p>Eigener Textblock, der erscheint, wenn das Bild ausgeblendet ist.</p>",
+        "left_text": "<p>Mehr Sicherheit - Weniger Risiko</p>",
         "bg_color": "#f6f8fb",
         "section_padding": 24,
         "points_title": "Unsere Dienstleistungen:",
@@ -185,72 +185,16 @@
         "feature_title_color": "#111827"
       }
     },
-    "about_section_v2_dWieTW": {
-      "type": "about-section-v2",
-      "blocks": {
-        "feature_eyW8dj": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Mehr Sicherheit",
-            "feature_description": ""
-          }
-        },
-        "feature_jrD3Pf": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "icon_image": "shopify://shop_images/Titelbild_Video.png",
-            "feature_title": "Weniger Risiko",
-            "feature_description": ""
-          }
-        }
-      },
-      "block_order": [
-        "feature_eyW8dj",
-        "feature_jrD3Pf"
-      ],
-      "name": "mehr Sciherheit weniger Risiko",
-      "settings": {
-        "layout_direction": "image_left",
-        "show_image": true,
-        "background_color": "#ffffff",
-        "section_padding_top": 30,
-        "section_padding_bottom": 20,
-        "title": "",
-        "title_richtext": "",
-        "title_color": "#111827",
-        "title_font_size": 32,
-        "subtitle": "",
-        "subtitle_richtext": "",
-        "subtitle_color": "#374151",
-        "subtitle_font_size": 20,
-        "description": "",
-        "text_color": "#6b7280",
-        "text_font_size": 18,
-        "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
-        "image_border_radius": 12,
-        "image_alt": "",
-        "image_max_width": 85,
-        "image_aspect_ratio": "auto",
-        "features_per_row": "2",
-        "icon_size": 32,
-        "icon_color": "#34d399",
-        "feature_title_color": "#111827"
-      }
-    },
     "about_section_v3_TwMWej": {
       "type": "about-section-v3",
       "name": "Über Uns (Layout) – v3",
       "settings": {
         "image_position": "right",
-        "image_vertical_align": "center",
+        "image_vertical_align": "start",
         "show_image": true,
         "background_color": "#ffffff",
         "section_padding_top": 20,
-        "section_padding_bottom": 80,
+        "section_padding_bottom": 40,
         "title": "",
         "title_richtext": "",
         "title_color": "#111827",
@@ -259,9 +203,10 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>In gewerblichen Küchen gelten besondere Anforderungen an Lüftung, Hygiene und Sicherheit. Besonders die beim Kochen und-/oder Braten und Backen entstehenden Dämpfe und Dünste, sogenannte Wrasen, können Gerüche, Schadstoffe, Fettpartikel usw. beinhalten und sich in den Komponenten von Lüftungssystemen absetzen. Dies kann weitere Gefahren mit sich bringen, unter anderem Brandgefahr. Eine Lüftungsanlage muss diese belasteten Dämpfe abführen und für ausreichend Frischluftzufuhr sorgen, um eine gute Luftqualität, Temperaturkontrolle und sichere Arbeitsbedingungen in gewerblichen Küchen zu gewährleisten.<br/>Die Lebensdauer einer Anlage wird durch regelmäßige Reinigung gesteigert und das System sicherer, hygienischer und effizienter <br/>gemacht.</p>",
+        "description": "<p>In gewerblichen Küchen gelten besondere Anforderungen an Lüftung, Hygiene und Sicherheit. Besonders die beim Kochen und-/oder Braten und Backen entstehenden Dämpfe und Dünste, sogenannte Wrasen, können Gerüche, Schadstoffe, Fettpartikel usw. beinhalten und sich in den Komponenten von Lüftungssystemen absetzen. Dies kann weitere Gefahren mit sich bringen, unter anderem Brandgefahr. Eine Lüftungsanlage muss diese belasteten Dämpfe abführen und für ausreichend Frischluftzufuhr sorgen, um eine gute Luftqualität, Temperaturkontrolle und sichere Arbeitsbedingungen in gewerblichen Küchen zu gewährleisten.<br/>Die Lebensdauer einer Anlage wird durch regelmäßige Reinigung gesteigert und das System sicherer, hygienischer und effizienter gemacht.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
+        "image": "shopify://shop_images/2025-09-17_10_47_35-SIS_Shop_SIS-saar_main_anpassen_Shopify_Mozilla_Firefox.png",
         "image_border_radius": 12,
         "image_alt": "",
         "image_max_width": 85,
@@ -277,8 +222,8 @@
       "type": "about-section-v3",
       "name": "Über Uns (Layout) – v3 - Auszug Leistungen",
       "settings": {
-        "image_position": "right",
-        "image_vertical_align": "center",
+        "image_position": "left",
+        "image_vertical_align": "start",
         "show_image": true,
         "background_color": "#ffffff",
         "section_padding_top": 20,
@@ -291,9 +236,10 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>✅ Luftdichte <strong>Versiegelung </strong>aller Öffnungen, um eine Verbreitung der Verschmutzungen während des <br/>Reinigungsvorgangs zu verhindern</p><p>✅ <strong>Manuelle</strong>, <strong>mechanische </strong>oder <strong>chemische </strong>Reinigung, je nach Anlagentyp und Verschmutzungsgrad</p><p>✅ Einsatz von <strong>rotierenden Bürsten </strong>(systemgerecht angepasst)  um die Verunreinigungen zu lösen</p><p>✅ <strong>Absaugung </strong>der durch rotierende Bürsten gelösten Verschmutzungen aus den Kanälen</p><p>✅ <strong>Demontage </strong>und im Anschluss der Reinigung <strong>Montage </strong>neuer, zur Verfügung gestellter, Filter</p><p>✅ <strong>Dokumentation </strong>durch Foto- oder Videoaufnahmen vor und nach der Reinigung </p><p>✅ Bei Bedarf anschließende gründliche <strong>Desinfektion </strong>der Lüftungskanäle, um einer zukünftigen Keimbildung <br/>vorzubeugen oder zu verzögern </p><p>✅ Auf Wunsch entnehmen wir Abklatschproben zur <strong>Laboranalyse </strong>– für einen dokumentierten Nachweis des <br/>hygienischen Zustands.</p>",
+        "description": "<p>✅ Luftdichte <strong>Versiegelung </strong>aller Öffnungen, um eine Verbreitung der Verschmutzungen während des Reinigungsvorgangs zu verhindern</p><p>✅ <strong>Manuelle</strong>, <strong>mechanische </strong>oder <strong>chemische </strong>Reinigung, je nach Anlagentyp und Verschmutzungsgrad</p><p>✅ Einsatz von <strong>rotierenden Bürsten </strong>(systemgerecht angepasst)  um die Verunreinigungen zu lösen</p><p>✅ <strong>Absaugung </strong>der durch rotierende Bürsten gelösten Verschmutzungen aus den Kanälen</p><p>✅ <strong>Demontage </strong>und im Anschluss der Reinigung <strong>Montage </strong>neuer, zur Verfügung gestellter, Filter</p><p>✅ <strong>Dokumentation </strong>durch Foto- oder Videoaufnahmen vor und nach der Reinigung </p><p>✅ Bei Bedarf anschließende gründliche <strong>Desinfektion </strong>der Lüftungskanäle, um einer zukünftigen Keimbildung vorzubeugen oder zu verzögern </p><p>✅ Auf Wunsch entnehmen wir Abklatschproben zur <strong>Laboranalyse </strong>– für einen dokumentierten Nachweis des hygienischen Zustands.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
+        "image": "shopify://shop_images/2025-09-17_10_22_18-iStock_Photos_Datei-Explorer.png",
         "image_border_radius": 12,
         "image_alt": "",
         "image_max_width": 85,
@@ -336,60 +282,71 @@
         "feature_title_color": "#111827"
       }
     },
-    "about_section_v2_i8kGTR": {
-      "type": "about-section-v2",
+    "custom_media_richtext_MJnYPk": {
+      "type": "custom-media-richtext",
       "blocks": {
-        "feature_DwVV4J": {
-          "type": "feature",
+        "media_row_f4Y4NR": {
+          "type": "media_row",
+          "disabled": true,
           "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Mehr Sicherheit",
-            "feature_description": ""
+            "image": "shopify://shop_images/shutterstock_555365941.jpg",
+            "alt": "Bild",
+            "image_side": "left",
+            "title": "<h3>Vorher</h3>",
+            "text": "<p>ungereinigter Filter einer Küchenabluftanlage</p>",
+            "show_divider": true
           }
         },
-        "feature_EtNPGP": {
-          "type": "feature",
+        "media_row_U7gU7M": {
+          "type": "media_row",
+          "disabled": true,
           "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "icon_image": "shopify://shop_images/Titelbild_Video.png",
-            "feature_title": "Weniger Risiko",
-            "feature_description": ""
+            "image": "shopify://shop_images/shutterstock_555365941.jpg",
+            "alt": "Bild",
+            "image_side": "right",
+            "title": "<h3>Nachher</h3>",
+            "text": "<p>gereinigter Filter einer Küchenabluftanlage</p>",
+            "show_divider": true
+          }
+        },
+        "gallery_item_ThLmN9": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Bild_2025-02-27_um_16.56.57_d304b748.jpg",
+            "alt": "Galeriebild",
+            "caption": "<p>Beschreibung oder Vorher/Nachher-Hinweis.</p>"
+          }
+        },
+        "gallery_item_bYjJeA": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Bild_2025-02-27_um_17.10.39_dc764405.jpg",
+            "alt": "Galeriebild",
+            "caption": "<p>Beschreibung oder Vorher/Nachher-Hinweis.</p>"
+          }
+        },
+        "gallery_item_7fYYMe": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Bild_2025-02-27_um_17.15.54_b420a0ec.jpg",
+            "alt": "Galeriebild",
+            "caption": "<p>Beschreibung oder Vorher/Nachher-Hinweis.</p>"
           }
         }
       },
       "block_order": [
-        "feature_DwVV4J",
-        "feature_EtNPGP"
+        "media_row_f4Y4NR",
+        "media_row_U7gU7M",
+        "gallery_item_ThLmN9",
+        "gallery_item_bYjJeA",
+        "gallery_item_7fYYMe"
       ],
-      "name": "Vorher-Nachher",
+      "name": "Media + Richtext + Galerie",
       "settings": {
-        "layout_direction": "image_left",
-        "show_image": true,
-        "background_color": "#ffffff",
-        "section_padding_top": 30,
-        "section_padding_bottom": 20,
-        "title": "",
-        "title_richtext": "",
-        "title_color": "#111827",
-        "title_font_size": 32,
-        "subtitle": "",
-        "subtitle_richtext": "",
-        "subtitle_color": "#374151",
-        "subtitle_font_size": 20,
-        "description": "",
-        "text_color": "#6b7280",
-        "text_font_size": 18,
-        "image": "shopify://shop_images/25327197-e14f-4df3-a683-b1e471aac8ae.png",
-        "image_border_radius": 12,
-        "image_alt": "",
-        "image_max_width": 85,
-        "image_aspect_ratio": "auto",
-        "features_per_row": "2",
-        "icon_size": 32,
-        "icon_color": "#34d399",
-        "feature_title_color": "#111827"
+        "section_heading": "",
+        "heading_size_px": 40,
+        "section_subheading": "",
+        "gallery_heading": ""
       }
     },
     "about_experience_fUL8PE": {
@@ -1017,11 +974,10 @@
     "leistung_showcase_haMeXH",
     "video_Cg8Ar8",
     "about_section_v2_YLaRmg",
-    "about_section_v2_dWieTW",
     "about_section_v3_TwMWej",
     "about_section_v3_FYy8t7",
     "about_section_v2_aMzgy4",
-    "about_section_v2_i8kGTR",
+    "custom_media_richtext_MJnYPk",
     "about_experience_fUL8PE",
     "kachelview_LiAaeD",
     "about_experience_KNTxfr",
