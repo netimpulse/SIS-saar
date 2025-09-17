@@ -99,7 +99,7 @@
         "showcase_item_dDDewh": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>Oldtimerrestauration</p>"
+            "text": "<p>Holzbearbeitung</p>"
           }
         }
       },
@@ -159,8 +159,8 @@
         "image_vertical_align": "center",
         "show_image": true,
         "background_color": "#ffffff",
-        "section_padding_top": 80,
-        "section_padding_bottom": 80,
+        "section_padding_top": 25,
+        "section_padding_bottom": 50,
         "title": "",
         "title_richtext": "<p><strong>Sandstrahlen</strong></p>",
         "title_color": "#111827",
@@ -169,7 +169,7 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Diese Reinigungsweise eignet sich besonders gut bei groben und festsitzenden Verschmutzungen wie beispielsweise Lackrückstände oder Korrosion. Dabei wird das zu reinigende Objekt mit feinen Sandkörnern bestrahlt, welche die Verschmutzungen abtragen. Hierbei kann man sowohl bei der Wahl des Mediums als auch bei der Körnung variieren, um verschiedene Ergebnisse zu erzielen. Wir haben im Hause eine eigene Strahlkabine mit modernster Strahl- und Absaugtechnik, deren Nutzung durch<br/>unseren Transportservice für Sie unkompliziert und günstig wird.</p>",
+        "description": "<p>Diese Reinigungsweise eignet sich besonders gut bei groben und festsitzenden Verschmutzungen, wie beispielsweise Lackrückstände oder Korrosion. Dabei wird das zu reinigende Objekt mit feinen Sandkörnern bestrahlt, welche die Verschmutzungen abtragen. Hierbei kann man sowohl bei der Wahl des Mediums als auch bei der Körnung variieren, um verschiedene Ergebnisse zu erzielen. Wir haben im Hause eine eigene Strahlkabine mit modernster Strahl- und Absaugtechnik, deren Nutzung durch unseren Transportservice für Sie unkompliziert und günstig wird.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_210427888_6916fb3d-f2ef-4451-86ef-fe1d9e2296c2.jpg",
@@ -230,36 +230,36 @@
             "show_divider": true
           }
         },
-        "gallery_item_mDpVB6": {
+        "gallery_item_BJrUYM": {
           "type": "gallery_item",
           "settings": {
-            "image": "shopify://shop_images/shutterstock_657611401.jpg",
+            "image": "shopify://shop_images/IMG_8260.jpg",
             "alt": "Galeriebild",
-            "caption": "<p><strong>Werkstück</strong></p>"
-          }
-        },
-        "gallery_item_WMA6Cj": {
-          "type": "gallery_item",
-          "settings": {
-            "image": "shopify://shop_images/shutterstock_657636373.jpg",
-            "alt": "Galeriebild",
-            "caption": "<p>Beschreibung oder Vorher/Nachher-Hinweis.</p>"
+            "caption": "<p>Sandgranulatstrahlen einer Holzfassade</p>"
           }
         },
         "gallery_item_zqkt6V": {
           "type": "gallery_item",
           "settings": {
-            "image": "shopify://shop_images/shutterstock_657636373.jpg",
+            "image": "shopify://shop_images/Glasstrahlen_im_Nassstrahlverfahren.jpg",
             "alt": "Galeriebild",
-            "caption": "<p>Beschreibung oder Vorher/Nachher-Hinweis.</p>"
+            "caption": "<p><strong>Glasstrahlen eines Zylinderkopfdeckels</strong></p>"
+          }
+        },
+        "gallery_item_mDpVB6": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_657611401.jpg",
+            "alt": "Galeriebild",
+            "caption": "<p><strong>Sodastrahlen einer Motorabdeckung</strong></p>"
           }
         }
       },
       "block_order": [
         "media_row_G3P4kA",
-        "gallery_item_mDpVB6",
-        "gallery_item_WMA6Cj",
-        "gallery_item_zqkt6V"
+        "gallery_item_BJrUYM",
+        "gallery_item_zqkt6V",
+        "gallery_item_mDpVB6"
       ],
       "name": "Media + Richtext + Galerie",
       "settings": {
@@ -292,13 +292,23 @@
             "feature_description": ""
           }
         },
+        "feature_JcGEXY": {
+          "type": "feature",
+          "name": "Feature Punkt - Entgraten",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "✅ Lackentfernung",
+            "feature_description": ""
+          }
+        },
         "feature_HLNxKL": {
           "type": "feature",
           "name": "Feature Punkt - Bodenmarkierung",
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "✅ für Entfernung von Bodenmarkierungen auf Betonböden",
+            "feature_title": "✅ Entfernung von Bodenmarkierungen auf Betonböden",
             "feature_description": ""
           }
         }
@@ -306,13 +316,14 @@
       "block_order": [
         "feature_nEKNm9",
         "feature_U3RGdU",
+        "feature_JcGEXY",
         "feature_HLNxKL"
       ],
       "name": "Über Uns (Layout) – v3 - Glasstrahlen",
       "settings": {
-        "image_position": "top",
+        "image_position": "left",
         "image_vertical_align": "center",
-        "show_image": true,
+        "show_image": false,
         "background_color": "#ffffff",
         "section_padding_top": 80,
         "section_padding_bottom": 80,
@@ -320,11 +331,11 @@
         "title_richtext": "<p><strong>Glasstrahlen</strong></p>",
         "title_color": "#111827",
         "title_font_size": 32,
-        "subtitle": "„Glasstrahlen ohne Staub“",
+        "subtitle": "",
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Für das Glasstrahlen verwendet man das Strahlmedium Glas: entweder Glas<strong>perlen</strong>, also kleine Glaskügelchen oder sogenanntes „crushed glas“, was aus winzig kleinen Glas<strong>scherben</strong> besteht. Dieses Crushed Glas als Strahlmittel ist grobkörniger und durch die scharfen, eckigen Kanten der zerbrochenen Glasteile, kann das Strahlmedium abrasiver wirken und festsitzende Verschmutzungen besser lösen. Das Crushed Glas wird zusammen mit Wasser und Korrosionsschutzmittel gemischt, um eine staubfreie, intensive Reinigung durchzuführen. Das beigemischte Korrosionsschutzmittel trägt dazu bei, dass die bestrahlten Metallteile und andere harten Oberflächen nicht mit der Umgebung reagieren und beschädigt werden. Dadurch kann im Anschluss an die Reinigung das behandelte Teil oder die behandelte Fläche besser nachbehandelt werden. Durch die abrasive Wirkung des Strahlmediums ist dieses Strahlverfahren jedoch nicht für alle Oberflächen geeignet. Gerne beraten wir Sie persönlich, was für Ihren Anwendungsfall das empfohlene Strahlgut ist, und führen die Arbeiten für Sie durch.  Unterschiedliche Körnungen erzielen verschiedene Glanzeffekte.</p>",
+        "description": "<p>Für das Glasstrahlen verwendet man das Strahlmedium Glas: entweder Glas<strong>perlen</strong>, also kleine Glaskügelchen oder sogenanntes „crushed glas“, was aus winzig kleinen Glas<strong>scherben</strong> besteht. Während die Glasperlen normalerweise für die Bearbeitung auf Edelstahlflächen oder die mattierung von Oberflächen (z.B. als Vorbereitung für Lackierarbeiten) genutzt wird, verwendet man crushed glass aufgrund seiner grobkörnigen, scharfen und eckigen Kanten für abrasivere Reinigungstechniken und festsitzende Verschmutzungen. </p><p><em><strong>Glasstrahlen ist auch staubfrei möglich</strong></em><strong><br/></strong>Das Crushed Glas kann zusammen mit Wasser und Korrosionsschutzmittel gemischt werden, um eine staubfreie, intensive Reinigung durchzuführen. Das beigemischte Korrosionsschutzmittel trägt dazu bei, dass die bestrahlten Metallteile und andere harten Oberflächen nicht mit der Umgebung reagieren und beschädigt werden. Dadurch kann im Anschluss an die Reinigung das behandelte Teil oder die behandelte Fläche besser weiterverarbeitet werden. Durch die abrasive Wirkung des Strahlmediums ist dieses Strahlverfahren jedoch <strong>nicht für alle Oberflächen geeignet</strong>. Gerne beraten wir Sie persönlich, was für Ihren Anwendungsfall das empfohlene Strahlgut ist, und führen die Arbeiten für Sie durch.  Unterschiedliche Körnungen erzielen verschiedene Glanzeffekte.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_427667125.jpg",
@@ -373,8 +384,8 @@
         "image_vertical_align": "center",
         "show_image": true,
         "background_color": "#ffffff",
-        "section_padding_top": 80,
-        "section_padding_bottom": 80,
+        "section_padding_top": 30,
+        "section_padding_bottom": 50,
         "title": "",
         "title_richtext": "<p><strong>Sodastrahlen</strong></p>",
         "title_color": "#111827",
@@ -383,7 +394,7 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Beim Sodastrahlen wird die Oberfläche des verschmutzten Werkstücks unter Hochdruck mit Soda (Natriumbikarbonat) bestrahlt. Hier entstehen Mini-Explosionen, die die Verschmutzung von der Oberfläche entfernen. So löst sich die Verschmutzung ohne größeren Abtrag am Werkstück. Sodastrahlen ist sowohl im Trocken-, als auch Nassstrahlverfahren möglich. Eine geringe Wassermenge sorgt für nahezu staubfreie Reinigung. Mit Sodastrahlen ist das Lösen von Verschmutzungen ohne größeren Abtrag möglich. Dieses Reinigungsverfahren ist für verschiedenste Oberflächen geeignet (z.B. Metall, Holz, Kunststoff, Gummi, Glas etc.)</p>",
+        "description": "<p>Beim Sodastrahlen wird die Oberfläche des verschmutzten Werkstücks unter Hochdruck mit Soda (Natriumbikarbonat) bestrahlt. Hier entstehen Mini-Explosionen, die die Verschmutzung von der Oberfläche entfernen. So löst sich die Verschmutzung ohne größeren Abtrag am Werkstück. Sodastrahlen ist sowohl im Trocken-, als auch Nassstrahlverfahren möglich. Eine geringe Wassermenge sorgt für nahezu staubfreie Reinigung. Mit Sodastrahlen ist das Lösen von Verschmutzungen ohne größeren Abtrag möglich. Dieses Reinigungsverfahren ist für verschiedenste Oberflächen geeignet z.B. Metall, Holz, Kunststoff, Gummi, Glas etc.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_555365941.jpg",
@@ -396,22 +407,6 @@
         "icon_color": "#34d399",
         "feature_title_color": "#111827",
         "no_image_text_align": "left"
-      }
-    },
-    "video_Cg8Ar8": {
-      "type": "video",
-      "disabled": true,
-      "name": "t:sections.video.presets.name",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "custom_cta_block_3nzV4z": {
@@ -442,7 +437,7 @@
       ],
       "name": "Custom CTA Block - prof. Service",
       "settings": {
-        "heading": "<p><strong>Bereit für professionellen Service?</strong></p>",
+        "heading": "<p><strong>Bereit für professionellen Strahlservice?</strong></p>",
         "heading_size": 36,
         "heading_bold": true,
         "heading_color": "#0f172a",
@@ -733,7 +728,6 @@
     "custom_media_richtext_HBgGnm",
     "about_section_v3_8XYGe7",
     "about_section_v3_nAxpQE",
-    "video_Cg8Ar8",
     "custom_cta_block_3nzV4z",
     "sis_single_footer_N4n9t3",
     "sis_footer_neu_6MxmJM",
