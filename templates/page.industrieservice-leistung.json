@@ -54,7 +54,7 @@
       "type": "hero-overlay-section",
       "name": "Hero – Service Overlay",
       "settings": {
-        "bg_image": "shopify://shop_images/shutterstock_536582824.jpg",
+        "bg_image": "shopify://shop_images/2025-09-17_08_22_53-Clipboard_b5d708f4-2bf5-401a-8d08-79128ab3c237.png",
         "overlay_color": "#2baaa2",
         "overlay_opacity": 70,
         "section_height": 60,
@@ -348,7 +348,7 @@
             "image": "shopify://shop_images/shutterstock_160555946_Lueftung.jpg",
             "title_html": "<p><strong>Reinigung von RLT-Anlagen</strong></p>",
             "text_html": "<p>Wir reinigen Ihre Raumlufttechnischen Anlagen unterschiedlicher Art</p>",
-            "keywords": "VDI 6022, Hygiene, Luft, Produktionsstätten",
+            "keywords": "VDI 6022, Hygiene, Luft, Wäremtauscher, DLZ, Produktionsstätten, Wanne",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/reinigung-von-luftungskanalen"
           }
@@ -516,7 +516,7 @@
       ],
       "name": "Leistung Suche Grid v2",
       "settings": {
-        "heading": "<h1><strong>Unsere Leistungen</strong></h1>",
+        "heading": "",
         "subheading": "<h3>Mit Leidenschaft für gemeinsamen Erfolg.</h3>",
         "text_align": "center",
         "show_search": true,
