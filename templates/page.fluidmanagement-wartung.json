@@ -222,7 +222,7 @@
             "icon_type": "svg",
             "icon_svg": "",
             "feature_title": "Inspektion und Funktionsprüfung",
-            "feature_description": "auch Austausch von z.B. Pneupatikleitungen"
+            "feature_description": "auch Austausch von z.B. Pneumatikleitungen"
           }
         },
         "feature_BKpAXw": {
@@ -325,7 +325,7 @@
       ],
       "name": "Custom CTA Block",
       "settings": {
-        "heading": "<p><strong>Bereit für professionellen Gebäudeservice?</strong></p>",
+        "heading": "<p><strong>Bereit für professionellen Industrieservice?</strong></p>",
         "heading_size": 40,
         "heading_bold": true,
         "heading_color": "#0f172a",
