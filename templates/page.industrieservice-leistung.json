@@ -341,16 +341,16 @@
             "button_link": "shopify://pages/fluidmanagement-wartung"
           }
         },
-        "service_hc9rDT": {
+        "service_DzTDzd": {
           "type": "service",
-          "name": "Leistung Block - Reinigung von RLT-Anlagen",
+          "name": "Leistung Block - Strahlarbeiten",
           "settings": {
-            "image": "shopify://shop_images/shutterstock_160555946_Lueftung.jpg",
-            "title_html": "<p><strong>Reinigung von RLT-Anlagen</strong></p>",
-            "text_html": "<p>Wir reinigen Ihre Raumlufttechnischen Anlagen unterschiedlicher Art</p>",
-            "keywords": "VDI 6022, Hygiene, Luft, Wäremtauscher, DLZ, Produktionsstätten, Wanne",
+            "image": "shopify://shop_images/shutterstock_65689291.jpg",
+            "title_html": "<p><strong>Strahlarbeiten</strong></p>",
+            "text_html": "<p>Durch unterschiedliche Strahlverfahren entfernen wir Rost, Lack oder Verschmutzungen. Die Wahl des Strahlmediums beeinflusst dabei Oberflächenrauigkeit und Materialschonung. Wir strahlen unter anderem mit Trockeneis, Sand, Soda, Glas und crushed glass.</p>",
+            "keywords": "Sand, Soda, Glas, crushed Glas",
             "button_label": "Mehr erfahren",
-            "button_link": "shopify://pages/reinigung-von-luftungskanalen"
+            "button_link": "shopify://pages/sis-stahlarbeiten"
           }
         },
         "service_DGz4MT": {
@@ -365,16 +365,16 @@
             "button_link": "shopify://pages/sis-kuchen-rlt"
           }
         },
-        "service_DzTDzd": {
+        "service_cWxTHy": {
           "type": "service",
-          "name": "Leistung Block - Strahlarbeiten",
+          "name": "Leistung Block - Trockeneisstrahlen",
           "settings": {
-            "image": "shopify://shop_images/shutterstock_65689291.jpg",
-            "title_html": "<p><strong>Strahlarbeiten</strong></p>",
-            "text_html": "<p>Durch unterschiedliche Strahlverfahren entfernen wir Rost, Lack oder Verschmutzungen. Die Wahl des Strahlmediums beeinflusst dabei Oberflächenrauigkeit und Materialschonung. Wir strahlen z.B. mit Trockeneis, Sand, Soda, Glas und crushed glass.</p>",
-            "keywords": "Sand, Soda, Glas, crushed Glas",
+            "image": "shopify://shop_images/Trockeneis_AA_3.jpg",
+            "title_html": "<p><strong>Trockeneisreinigung</strong></p>",
+            "text_html": "<p>Viele Anlagen dürfen nicht mit Wasser und chemischen Reinigungsmitteln in Berührung kommen und stellen bei der Reinigung somit eine besondere Herausforderung dar. Trockeneisstrahlen stellt dabei eine besonders schonende Reinigungsmöglichkeit dar.</p>",
+            "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
-            "button_link": "shopify://pages/sis-stahlarbeiten"
+            "button_link": "shopify://pages/trockeneisstrahlen"
           }
         },
         "service_TDd7pL": {
@@ -387,6 +387,30 @@
             "keywords": "Verschrottung, Schlosser, Helfer, Umzug",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/sis-montage-demontage"
+          }
+        },
+        "service_98UN9G": {
+          "type": "service",
+          "name": "Leistung Block - Abfallmanagement und innerbetriebliche Logistik",
+          "settings": {
+            "image": "shopify://shop_images/staplerfahrer-mit-schutzausr-stung-von-hinten-auf-stapler-der-einen-m-llcontainer-auf-einem-industriegel-nde-transportiert.png",
+            "title_html": "<p><strong>Abfallmanagement undinnerbetriebliche Logistik</strong></p>",
+            "text_html": "<p>Wir übernehmen für Sie die anfallenden Transporte innerhalb der Produktionslinien, egal ob mit Gabelstapler, Schlepper oder sonstigen Flurförderzeugen. Die Sortierung der Abfälle sowie optimierte Transportwege und Recyclingprozesse schützen Ressourcen, reduzieren Schäden und steigern die Effizienz von Lagerhaltung und Produktion.</p>",
+            "keywords": "Büro, täglich, flexibel",
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify://pages/sis-abfallmanagement-und-innerbetriebliche-logistik"
+          }
+        },
+        "service_hc9rDT": {
+          "type": "service",
+          "name": "Leistung Block - Reinigung von RLT-Anlagen",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_160555946_Lueftung.jpg",
+            "title_html": "<p><strong>Reinigung von RLT-Anlagen</strong></p>",
+            "text_html": "<p>Wir reinigen Ihre Raumlufttechnischen Anlagen unterschiedlicher Art</p>",
+            "keywords": "VDI 6022, Hygiene, Luft, Wäremtauscher, DLZ, Produktionsstätten, Wanne",
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify://pages/reinigung-von-luftungskanalen"
           }
         },
         "service_WnRUJA": {
@@ -437,18 +461,6 @@
             "button_link": "shopify://pages/decken-wandreinigung"
           }
         },
-        "service_cWxTHy": {
-          "type": "service",
-          "name": "Leistung Block - Trockeneisstrahlen",
-          "settings": {
-            "image": "shopify://shop_images/Trockeneis_AA_2.jpg",
-            "title_html": "<p><strong>Trockeneisstrahlen</strong></p>",
-            "text_html": "<p>Viele Anlagen dürfen nicht mit Wasser und chemischen Reinigungsmitteln in Berührung kommen und stellen bei der Reinigung somit eine besondere Herausforderung dar. Trockeneisstrahlen stellt dabei eine besonders schonende Reinigungsmöglichkeit dar.</p>",
-            "keywords": "Büro, täglich, flexibel",
-            "button_label": "Mehr erfahren",
-            "button_link": "shopify://pages/trockeneisstrahlen"
-          }
-        },
         "service_r36UdF": {
           "type": "service",
           "name": "Leistung Block - Oldtimer Restauration",
@@ -473,18 +485,6 @@
             "button_link": "shopify://pages/sis-kss-management"
           }
         },
-        "service_98UN9G": {
-          "type": "service",
-          "name": "Leistung Block - Abfallmanagement und innerbetriebliche Logistik",
-          "settings": {
-            "image": "shopify://shop_images/staplerfahrer-mit-schutzausr-stung-von-hinten-auf-stapler-der-einen-m-llcontainer-auf-einem-industriegel-nde-transportiert.png",
-            "title_html": "<p><strong>Abfallmanagement undinnerbetriebliche Logistik</strong></p>",
-            "text_html": "<p>Wir übernehmen für Sie die anfallenden Transporte innerhalb der Produktionslinien, egal ob mit Gabelstapler, Schlepper oder sonstigen Flurförderzeugen. Die Sortierung der Abfälle sowie optimierte Transportwege und Recyclingprozesse schützen Ressourcen, reduzieren Schäden und steigern die Effizienz von Lagerhaltung und Produktion.</p>",
-            "keywords": "Büro, täglich, flexibel",
-            "button_label": "Mehr erfahren",
-            "button_link": "shopify://pages/sis-abfallmanagement-und-innerbetriebliche-logistik"
-          }
-        },
         "service_4zzdYj": {
           "type": "service",
           "settings": {
@@ -500,18 +500,18 @@
       "block_order": [
         "service_Up8i8H",
         "service_h9zhf3",
-        "service_hc9rDT",
-        "service_DGz4MT",
         "service_DzTDzd",
+        "service_DGz4MT",
+        "service_cWxTHy",
         "service_TDd7pL",
+        "service_98UN9G",
+        "service_hc9rDT",
         "service_WnRUJA",
         "service_8gTfda",
         "service_4XzgJG",
         "service_BnANGW",
-        "service_cWxTHy",
         "service_r36UdF",
         "service_4YkQjG",
-        "service_98UN9G",
         "service_4zzdYj"
       ],
       "name": "Leistung Suche Grid v2",
