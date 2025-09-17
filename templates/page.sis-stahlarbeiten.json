@@ -184,65 +184,6 @@
         "no_image_text_align": "left"
       }
     },
-    "about_section_v3_nAxpQE": {
-      "type": "about-section-v3",
-      "blocks": {
-        "feature_xdd4jE": {
-          "type": "feature",
-          "name": "Feature Punkt - alle oberfl",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "✅  Geeignet für nahezu alle Oberflächen",
-            "feature_description": ""
-          }
-        },
-        "feature_pJCaxJ": {
-          "type": "feature",
-          "name": "Feature Punkt - Verträglich",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "✅  Verträglichkeit mit Mensch und Natur",
-            "feature_description": ""
-          }
-        }
-      },
-      "block_order": [
-        "feature_xdd4jE",
-        "feature_pJCaxJ"
-      ],
-      "name": "Über Uns (Layout) – v3 - Sandstrahlen",
-      "settings": {
-        "image_position": "top",
-        "image_vertical_align": "center",
-        "show_image": true,
-        "background_color": "#ffffff",
-        "section_padding_top": 80,
-        "section_padding_bottom": 80,
-        "title": "",
-        "title_richtext": "<p><strong>Sodastrahlen</strong></p>",
-        "title_color": "#111827",
-        "title_font_size": 32,
-        "subtitle": "",
-        "subtitle_richtext": "",
-        "subtitle_color": "#374151",
-        "subtitle_font_size": 20,
-        "description": "<p>Beim Sodastrahlen wird die Oberfläche des verschmutzten Werkstücks unter Hochdruck mit Soda (Natriumbikarbonat) bestrahlt. Hier entstehen Mini-Explosionen, die die Verschmutzung von der Oberfläche entfernen. So löst sich die Verschmutzung ohne größeren Abtrag am Werkstück. Sodastrahlen ist sowohl im Trocken-, als auch Nassstrahlverfahren möglich. Eine geringe Wassermenge sorgt für nahezu staubfreie Reinigung. Mit Sodastrahlen ist das Lösen von Verschmutzungen ohne größeren Abtrag möglich. Dieses Reinigungsverfahren ist für verschiedenste Oberflächen geeignet (z.B. Metall, Holz, Kunststoff, Gummi, Glas etc.)</p>",
-        "text_color": "#6b7280",
-        "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_555365941.jpg",
-        "image_border_radius": 12,
-        "image_alt": "",
-        "image_max_width": 85,
-        "image_aspect_ratio": "4/3",
-        "features_per_row": "1",
-        "icon_size": 32,
-        "icon_color": "#34d399",
-        "feature_title_color": "#111827",
-        "no_image_text_align": "left"
-      }
-    },
     "about_section_v3_8XYGe7": {
       "type": "about-section-v3",
       "blocks": {
@@ -307,6 +248,65 @@
         "image_max_width": 85,
         "image_aspect_ratio": "4/3",
         "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "left"
+      }
+    },
+    "about_section_v3_nAxpQE": {
+      "type": "about-section-v3",
+      "blocks": {
+        "feature_xdd4jE": {
+          "type": "feature",
+          "name": "Feature Punkt - alle oberfl",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "✅  Geeignet für nahezu alle Oberflächen",
+            "feature_description": ""
+          }
+        },
+        "feature_pJCaxJ": {
+          "type": "feature",
+          "name": "Feature Punkt - Verträglich",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "✅  Verträglichkeit mit Mensch und Natur",
+            "feature_description": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_xdd4jE",
+        "feature_pJCaxJ"
+      ],
+      "name": "Über Uns (Layout) – v3 - Sodastrahlen",
+      "settings": {
+        "image_position": "top",
+        "image_vertical_align": "center",
+        "show_image": true,
+        "background_color": "#ffffff",
+        "section_padding_top": 80,
+        "section_padding_bottom": 80,
+        "title": "",
+        "title_richtext": "<p><strong>Sodastrahlen</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<p>Beim Sodastrahlen wird die Oberfläche des verschmutzten Werkstücks unter Hochdruck mit Soda (Natriumbikarbonat) bestrahlt. Hier entstehen Mini-Explosionen, die die Verschmutzung von der Oberfläche entfernen. So löst sich die Verschmutzung ohne größeren Abtrag am Werkstück. Sodastrahlen ist sowohl im Trocken-, als auch Nassstrahlverfahren möglich. Eine geringe Wassermenge sorgt für nahezu staubfreie Reinigung. Mit Sodastrahlen ist das Lösen von Verschmutzungen ohne größeren Abtrag möglich. Dieses Reinigungsverfahren ist für verschiedenste Oberflächen geeignet (z.B. Metall, Holz, Kunststoff, Gummi, Glas etc.)</p>",
+        "text_color": "#6b7280",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/shutterstock_555365941.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "4/3",
+        "features_per_row": "1",
         "icon_size": 32,
         "icon_color": "#34d399",
         "feature_title_color": "#111827",
@@ -729,10 +729,10 @@
     "hero_building_section_xFPFdb",
     "leistung_showcase_wAGpyg",
     "about_section_v3_RGqFVA",
-    "about_section_v3_nAxpQE",
-    "about_section_v3_8XYGe7",
     "about_section_v2_RbQb9j",
     "custom_media_richtext_HBgGnm",
+    "about_section_v3_8XYGe7",
+    "about_section_v3_nAxpQE",
     "video_Cg8Ar8",
     "custom_cta_block_3nzV4z",
     "sis_single_footer_N4n9t3",
