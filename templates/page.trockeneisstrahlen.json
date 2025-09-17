@@ -288,21 +288,217 @@
         "feature_title_color": "#111827"
       }
     },
+    "about_section_v3_WEBtxM": {
+      "type": "about-section-v3",
+      "blocks": {
+        "feature_NgVP4g": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "🔧 Industrie & Maschinenbau",
+            "feature_description": "Reinigung von Produktionsanlagen, Maschinen und WerkzeugenEntfernung von Ölen, Fetten, Schmutz, SpänenIdeal, weil keine Demontage nötig ist und Elektronik nicht beschädigt wird"
+          }
+        },
+        "feature_9gwDb6": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "🚗 Automobil- & Zulieferindustrie",
+            "feature_description": "Formen- und Werkzeugreinigung im Spritzguss / DruckgussEntfernen von Schweißrückständen, Lack, KleberReinigung von Motor- und Antriebsteilen"
+          }
+        },
+        "feature_kVyHYP": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "📦 Lebensmittel- & Getränkeindustrie",
+            "feature_description": "Hygienische Reinigung von Förderbändern, Backöfen, AbfüllanlagenRückstandsfreie Entfernung von Fetten, Eiweiß, ZuckerVorteil: keine Chemikalien, keine Wasserreste"
+          }
+        },
+        "feature_g7JH8g": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "🏭 Kunststoff- & Gummiindustrie",
+            "feature_description": "Formenreinigung (z. B. Spritzguss-, Reifenformen)Entfernt Trennmittel, Farb- und Materialreste"
+          }
+        },
+        "feature_w47x6B": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "✈️ Luft- & Raumfahrt",
+            "feature_description": "Reinigung empfindlicher Triebwerks- oder Flugzeugkomponenten, Farbentfernung ohne Materialabtrag, Schonend für Alu- und Carbonbauteile"
+          }
+        },
+        "feature_GD3rDB": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "🖥️ Elektronik & Elektrotechnik",
+            "feature_description": "Reinigung von Schaltschränken, Leiterplatten, GeneratorenEntfernt Staub, Flussmittelreste oder Öle ohne Kurzschlussrisiko"
+          }
+        },
+        "feature_ww8YyC": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "🏗️ Bau & Sanierung",
+            "feature_description": "Entfernung von Graffiti, Farbe, SchimmelReinigung von Holzbalken, Fassaden, DenkmälernSanierung nach Brand- oder Wasserschäden"
+          }
+        },
+        "feature_LX3egq": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "🚂 Transport & Logistik",
+            "feature_description": "Reinigung von Waggons, Containern, Lkw-AufbautenEntfernt Öl, Bremsstaub, Lack oder Beläge"
+          }
+        }
+      },
+      "block_order": [
+        "feature_NgVP4g",
+        "feature_9gwDb6",
+        "feature_kVyHYP",
+        "feature_g7JH8g",
+        "feature_w47x6B",
+        "feature_GD3rDB",
+        "feature_ww8YyC",
+        "feature_LX3egq"
+      ],
+      "disabled": true,
+      "name": "Über Uns (Layout) – v3 - Bredarfsbranchen",
+      "settings": {
+        "image_position": "left",
+        "image_vertical_align": "center",
+        "show_image": false,
+        "background_color": "#ffffff",
+        "section_padding_top": 20,
+        "section_padding_bottom": 45,
+        "title": "",
+        "title_richtext": "<p><strong>Einige Einsatzbranchen im Überblick</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "",
+        "text_color": "#6b7280",
+        "text_font_size": 18,
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "4/3",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "center"
+      }
+    },
     "custom_media_richtext_eKaTX3": {
       "type": "custom-media-richtext",
       "blocks": {
-        "media_row_Rxf7eK": {
+        "media_row_DbygEg": {
           "type": "media_row",
           "settings": {
+            "image": "shopify://shop_images/shutterstock_731614684.jpg",
             "alt": "Bild",
             "image_side": "left",
-            "title": "<h3>Einsatzbereiche</h3>",
-            "text": "<p>Trockeneis lässt sich in vielen Bereichen einsetzen, Lebensmittelfrostung und Transport aber auch Reinigung,</p><p>Wasserempfindliche Stellen, kein Problem, Trockeneis sublimiert und hinterlässt nur die gelöste Verschmutzung</p>",
+            "title": "<h2><strong>🔧 Industrie & Maschinenbau</strong></h2><h2></h2>",
+            "text": "<p></p><ul><li>Reinigung von <strong>Produktionsanlagen</strong>, Maschinen und Werkzeugen</li><li>Entfernung von <strong>Ölen, Fetten, Schmutz, Spänen</strong></li><li>Ideal, weil <strong>keine Demontage</strong> nötig ist und Elektronik nicht beschädigt wird</li></ul>",
+            "show_divider": true
+          }
+        },
+        "media_row_Tyi97X": {
+          "type": "media_row",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_442742170.jpg",
+            "alt": "Bild",
+            "image_side": "left",
+            "title": "<h2>🚗 <strong>Automobil- & Zulieferindustrie</strong></h2>",
+            "text": "<p></p><ul><li>Formen- und Werkzeugreinigung im <strong>Spritzguss / Druckguss</strong></li><li>Entfernen von <strong>Schweißrückständen, Lack, Kleber</strong></li><li>Reinigung von <strong>Motor- und Antriebsteilen</strong></li></ul>",
+            "show_divider": true
+          }
+        },
+        "media_row_LjceA8": {
+          "type": "media_row",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_254519980.jpg",
+            "alt": "Bild",
+            "image_side": "left",
+            "title": "<h2><br/>📦 <strong>Lebensmittel- & Getränkeindustrie</strong></h2>",
+            "text": "<p></p><ul><li>Hygienische Reinigung von <strong>Förderbändern, Backöfen, Abfüllanlagen</strong></li><li>Rückstandsfreie Entfernung von <strong>Fetten, Eiweiß, Zucker</strong></li><li>Vorteil: <strong>keine Chemikalien, keine Wasserreste</strong></li></ul>",
+            "show_divider": true
+          }
+        },
+        "media_row_yrpczw": {
+          "type": "media_row",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_555365941.jpg",
+            "alt": "Bild",
+            "image_side": "left",
+            "title": "<h2><br/>🏭 <strong>Kunststoff- & Gummiindustrie</strong></h2>",
+            "text": "<p></p><ul><li>Formenreinigung (z. B. <strong>Spritzguss-, Reifenformen</strong>)</li><li>Entfernt <strong>Trennmittel, Farb- und Materialreste</strong></li></ul>",
+            "show_divider": true
+          }
+        },
+        "media_row_mH3V3N": {
+          "type": "media_row",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_726781549.jpg",
+            "alt": "Bild",
+            "image_side": "left",
+            "title": "<h2><br/>✈️ <strong>Luft- & Raumfahrt</strong></h2>",
+            "text": "<p></p><ul><li>Reinigung empfindlicher <strong>Triebwerks- oder Flugzeugkomponenten</strong></li><li><strong>Farbentfernung</strong> ohne Materialabtrag</li><li>Schonend für <strong>Alu- und Carbonbauteile</strong></li></ul>",
+            "show_divider": true
+          }
+        },
+        "media_row_bUcfUT": {
+          "type": "media_row",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_1050808721.jpg",
+            "alt": "Bild",
+            "image_side": "left",
+            "title": "<h2><br/>🖥️ <strong>Elektronik & Elektrotechnik</strong></h2>",
+            "text": "<p></p><ul><li>Reinigung von <strong>Schaltschränken, Leiterplatten, Generatoren</strong></li><li>Entfernt Staub, Flussmittelreste oder Öle <strong>ohne Kurzschlussrisiko</strong></li></ul>",
+            "show_divider": true
+          }
+        },
+        "media_row_a9Qht6": {
+          "type": "media_row",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_210387985.jpg",
+            "alt": "Bild",
+            "image_side": "left",
+            "title": "<h2>🏗️ <strong>Bau & Sanierung</strong></h2>",
+            "text": "<p></p><ul><li>Entfernung von <strong>Graffiti, Farbe, Schimmel</strong></li><li>Reinigung von <strong>Holzbalken, Fassaden, Denkmälern</strong></li><li>Sanierung nach <strong>Brand- oder Wasserschäden</strong></li></ul>",
+            "show_divider": true
+          }
+        },
+        "media_row_fJwzpD": {
+          "type": "media_row",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_529683889.jpg",
+            "alt": "Bild",
+            "image_side": "left",
+            "title": "<h2>🚂 <strong>Transport & Logistik</strong></h2>",
+            "text": "<p></p><ul><li>Reinigung von <strong>Waggons, Containern, Lkw-Aufbauten</strong></li><li>Entfernt Öl, Bremsstaub, Lack oder Beläge</li></ul>",
             "show_divider": true
           }
         },
         "gallery_item_AWtpxP": {
           "type": "gallery_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/shutterstock_726781549.jpg",
             "alt": "Galeriebild",
@@ -311,14 +507,43 @@
         },
         "gallery_item_xJijJC": {
           "type": "gallery_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/shutterstock_1050808721.jpg",
             "alt": "Galeriebild",
-            "caption": "<p>Beschreibung oder Vorher/Nachher-Hinweis.</p>"
+            "caption": "<p>Wasserempfindliche Stellen, kein Problem, Trockeneis sublimiert und hinterlässt nur die gelöste Verschmutzung</p>"
           }
         },
         "gallery_item_jg6Fkw": {
           "type": "gallery_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_254519980.jpg",
+            "alt": "Galeriebild",
+            "caption": "<p>Beschreibung oder Vorher/Nachher-Hinweis.</p>"
+          }
+        },
+        "gallery_item_cUk9hf": {
+          "type": "gallery_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_254519980.jpg",
+            "alt": "Galeriebild",
+            "caption": "<p>Beschreibung oder Vorher/Nachher-Hinweis.</p>"
+          }
+        },
+        "gallery_item_4akjeR": {
+          "type": "gallery_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_254519980.jpg",
+            "alt": "Galeriebild",
+            "caption": "<p>Beschreibung oder Vorher/Nachher-Hinweis.</p>"
+          }
+        },
+        "gallery_item_dt7TWQ": {
+          "type": "gallery_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/shutterstock_254519980.jpg",
             "alt": "Galeriebild",
@@ -327,10 +552,20 @@
         }
       },
       "block_order": [
-        "media_row_Rxf7eK",
+        "media_row_DbygEg",
+        "media_row_Tyi97X",
+        "media_row_LjceA8",
+        "media_row_yrpczw",
+        "media_row_mH3V3N",
+        "media_row_bUcfUT",
+        "media_row_a9Qht6",
+        "media_row_fJwzpD",
         "gallery_item_AWtpxP",
         "gallery_item_xJijJC",
-        "gallery_item_jg6Fkw"
+        "gallery_item_jg6Fkw",
+        "gallery_item_cUk9hf",
+        "gallery_item_4akjeR",
+        "gallery_item_dt7TWQ"
       ],
       "name": "Media + Richtext + Galerie",
       "settings": {
@@ -676,6 +911,7 @@
     "leistung_showcase_pDxJq9",
     "about_section_v3_E4EJpt",
     "about_section_v2_b8VKY4",
+    "about_section_v3_WEBtxM",
     "custom_media_richtext_eKaTX3",
     "custom_cta_block_Y6hmWD",
     "sis_single_footer_N4n9t3",
