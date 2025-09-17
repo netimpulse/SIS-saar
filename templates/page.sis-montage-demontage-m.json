@@ -81,33 +81,26 @@
         "showcase_item_XBpUEd": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>innerbetrieblich und außerbetrieblich</p>"
           }
         },
         "showcase_item_TUTxLE": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Helfer Schlossertätigkeiten</p>"
           }
         },
         "showcase_item_dDDewh": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
-          }
-        },
-        "showcase_item_qyzi4A": {
-          "type": "showcase_item",
-          "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Maschinenverschrottung</p>"
           }
         }
       },
       "block_order": [
         "showcase_item_XBpUEd",
         "showcase_item_TUTxLE",
-        "showcase_item_dDDewh",
-        "showcase_item_qyzi4A"
+        "showcase_item_dDDewh"
       ],
       "name": "Leistung Showcase",
       "settings": {
@@ -120,7 +113,7 @@
         "main_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
         "image_radius": 12,
         "image_position": "left",
-        "left_heading_html": "<p><strong>Zusätzliche Informationen</strong></p>",
+        "left_heading_html": "<p><strong>Montage, Demontage und Maschinenumzüge</strong></p>",
         "left_heading_align": "right",
         "left_heading_italic": false,
         "left_heading_weight": "700",
@@ -137,110 +130,83 @@
         "fallback_bullet_color": "#2b6cb0"
       }
     },
-    "about_section_v3_RGqFVA": {
-      "type": "about-section-v3",
+    "about_section_v2_tTigi6": {
+      "type": "about-section-v2",
       "blocks": {
-        "feature_zPneNV": {
+        "feature_hptaJX": {
           "type": "feature",
+          "name": "Feature Punkt - Störungsbehebung",
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "✅  Effektiv bei groben Verschmutzungen",
-            "feature_description": ""
-          }
-        }
-      },
-      "block_order": [
-        "feature_zPneNV"
-      ],
-      "name": "Über Uns (Layout) – v3 - Sandstrahlen",
-      "settings": {
-        "image_position": "right",
-        "image_vertical_align": "start",
-        "show_image": true,
-        "background_color": "#ffffff",
-        "section_padding_top": 20,
-        "section_padding_bottom": 40,
-        "title": "",
-        "title_richtext": "<p><strong>Sandstrahlen</strong></p>",
-        "title_color": "#111827",
-        "title_font_size": 32,
-        "subtitle": "",
-        "subtitle_richtext": "",
-        "subtitle_color": "#374151",
-        "subtitle_font_size": 20,
-        "description": "<p>Diese Reinigungsweise eignet sich besonders gut bei groben und festsitzenden Verschmutzungen wie beispielsweise<br/>Lackrückstände oder Korrosion. Dabei wird das zu reinigende Objekt mit feinen<br/>Sandkörnern bestrahlt, welche die Verschmutzungen abtragen. Hierbei kann man sowohl bei der Wahl des Mediums als auch bei der Körnung variieren, um<br/>verschiedene Ergebnisse zu erzielen. Wir haben im Hause eine eigene<br/>Strahlkabine mit modernster Strahl- und Absaugtechnik, deren Nutzung durch<br/>unseren Transportservice für Sie unkompliziert und günstig wird.</p><p>Effektiv bei groben Verschmutzungen</p>",
-        "text_color": "#6b7280",
-        "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_210427888_6916fb3d-f2ef-4451-86ef-fe1d9e2296c2.jpg",
-        "image_border_radius": 12,
-        "image_alt": "",
-        "image_max_width": 85,
-        "image_aspect_ratio": "4/3",
-        "features_per_row": "1",
-        "icon_size": 32,
-        "icon_color": "#34d399",
-        "feature_title_color": "#111827",
-        "no_image_text_align": "left"
-      }
-    },
-    "about_section_v3_nAxpQE": {
-      "type": "about-section-v3",
-      "blocks": {
-        "feature_xdd4jE": {
-          "type": "feature",
-          "name": "Feature Punkt - alle oberfl",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "✅  Geeignet für nahezu alle Oberflächen",
-            "feature_description": ""
+            "feature_title": "Störungsbehebung",
+            "feature_description": "schnelle Reaktion"
           }
         },
-        "feature_pJCaxJ": {
+        "feature_xAEELW": {
           "type": "feature",
-          "name": "Feature Punkt - Verträglich",
+          "name": "Feature Punkt - Inspektion und Funktionsprüfung",
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "✅  Verträglichkeit mit Mensch und Natur",
-            "feature_description": ""
+            "feature_title": "Inspektion und Funktionsprüfung",
+            "feature_description": "auch Austausch von z.B. Pneupatikleitungen"
+          }
+        },
+        "feature_gYkGiQ": {
+          "type": "feature",
+          "name": "Feature Punkt - Öl-/ Wasserwechsel",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Öl-/ Wasserwechsel",
+            "feature_description": "auch Filterwechsel und KSS"
+          }
+        },
+        "feature_wQdMHG": {
+          "type": "feature",
+          "name": "Feature Punkt - Messen, Kalibrieren",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Messen, Kalibrieren",
+            "feature_description": "ausrichten und korrigieren"
           }
         }
       },
       "block_order": [
-        "feature_xdd4jE",
-        "feature_pJCaxJ"
+        "feature_hptaJX",
+        "feature_xAEELW",
+        "feature_gYkGiQ",
+        "feature_wQdMHG"
       ],
-      "name": "Über Uns (Layout) – v3 - Sandstrahlen",
+      "name": "Über Uns (Layout) – Neu",
       "settings": {
-        "image_position": "right",
-        "image_vertical_align": "start",
-        "show_image": false,
+        "layout_direction": "text_left",
+        "show_image": true,
         "background_color": "#ffffff",
-        "section_padding_top": 80,
+        "section_padding_top": 25,
         "section_padding_bottom": 80,
         "title": "",
-        "title_richtext": "<p><strong>Sodastrahlen</strong></p>",
+        "title_richtext": "<p><strong>Unser Service für Sie</strong></p>",
         "title_color": "#111827",
         "title_font_size": 32,
         "subtitle": "",
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Beim Sodastrahlen wird die Oberfläche des verschmutzten Werkstücks unter Hochdruck mit Soda (Natriumbikarbonat) bestrahlt. Hier entstehen Mini-Explosionen, die die Verschmutzung von der Oberfläche entfernen. So löst sich die Verschmutzung ohne größeren Abtrag am Werkstück. Sodastrahlen ist sowohl im Trocken-, als auch Nassstrahlverfahren möglich. Eine geringe Wassermenge sorgt für nahezu staubfreie Reinigung. Mit Sodastrahlen ist das Lösen von Verschmutzungen ohne größeren Abtrag möglich. Dieses Reinigungsverfahren ist für verschiedenste Oberflächen geeignet (z.B. Metall, Holz, Kunststoff, Gummi, Glas etc.)</p>",
+        "description": "<p>Wir übernehmen die fachgerechte Demontage und den Wiederaufbau Ihrer Anlagen und kümmern uns um Ihre innerbetrieblichen und außerbetrieblichen Maschinenumzüge. Wir</p><p></p><p>Auf Wunsch stellen wir Ihnen Helfer für Schlosser- und Elektrikertätigkeiten zur Verfügung. dabei bieten wir Ihnen unter anderem:</p><p><strong>Leistungen im Überblick</strong></p><ul><li><strong>Demontage</strong><br/>Abbau von Maschinen und Anlagen in einzelnen Baugruppen. Dabei werden Verbindungselemente fachgerecht gelöst und Bauteile für Transport oder Entsorgung vorbereitet.<br/></li><li><strong>Maschinenumzüge</strong><br/>Umsetzung von Maschinen innerhalb einer Produktionsstätte oder an andere Standorte. Dies umfasst Zerlegen, Transportieren, Aufstellen und Ausrichten.<br/></li><li><strong>Maschinenverschrottung</strong><br/>Rückbau und Zerkleinern von Altmaschinen. Materialien wie Stahl, Guss oder Elektronik werden getrennt und der fachgerechten Entsorgung bzw. dem Recycling zugeführt.<br/></li><li><strong>Schlossertätigkeiten</strong><br/>Metallbearbeitung im Rahmen von Montage- und Demontagearbeiten, z. B. Anpassen, Schneiden oder Verschweißen von Bauteilen.<br/></li><li><strong>Elektrikertätigkeiten (Helfertätigkeiten)</strong><br/>Unterstützung bei einfachen elektrotechnischen Arbeiten wie Abklemmen, Kabelziehen oder Vorbereiten für Fachpersonal.</li></ul><p></p><p><br/>✅ Wechsel von Filter\u0002elementen, <br/>✅ Einfetten & Abschmieren von beweglichen Teilen<br/>✅ Visuelle Prüfung <br/>✅ Leckageortung <br/>✅ Türverriegelungen auf Funktionalität prüfen<br/>✅ Prüfung von Flüssigkeiten und Ölständen<br/>✅ Prüfung von Verschraubungen <br/>(Anzugsdrehmoment)<br/>✅ Spezielle Aufgaben gem. Wartungsplan</p><p><br/> Austausch von defekter<br/>Beleuchtung<br/>✓ Prüfung von Elektromotoren<br/><br/><br/></p><p><br/> Prüfung von Schutzmechanismen<br/><br/></p><p><br/>Wir übernehmen die regelmäßige, fachgerechte Wartung Ihrer Anlagen für Sie.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_555365941.jpg",
+        "image": "shopify://shop_images/shutterstock_370492946.jpg",
         "image_border_radius": 12,
         "image_alt": "",
         "image_max_width": 85,
-        "image_aspect_ratio": "4/3",
-        "features_per_row": "1",
+        "image_aspect_ratio": "auto",
+        "features_per_row": "2",
         "icon_size": 32,
         "icon_color": "#34d399",
-        "feature_title_color": "#111827",
-        "no_image_text_align": "left"
+        "feature_title_color": "#111827"
       }
     },
     "about_section_v3_p7n9bw": {
@@ -275,44 +241,6 @@
         "icon_color": "#34d399",
         "feature_title_color": "#111827",
         "no_image_text_align": "center"
-      }
-    },
-    "custom_media_richtext_PP4kNN": {
-      "type": "custom-media-richtext",
-      "blocks": {
-        "media_row_YA4ddi": {
-          "type": "media_row",
-          "settings": {
-            "image": "shopify://shop_images/shutterstock_420833395_f08fa48e-93d6-404c-8da5-80e6417fb104.jpg",
-            "alt": "Bild",
-            "image_side": "left",
-            "title": "<h3>Vorher</h3>",
-            "text": "<p>Hier steht der beschreibende Text zur jeweiligen Medienreihe.</p>",
-            "show_divider": false
-          }
-        },
-        "media_row_f88dXL": {
-          "type": "media_row",
-          "settings": {
-            "image": "shopify://shop_images/shutterstock_657636373.jpg",
-            "alt": "Bild",
-            "image_side": "right",
-            "title": "<h3>Nachher</h3>",
-            "text": "<p>Hier steht der beschreibende Text zur jeweiligen Medienreihe.</p>",
-            "show_divider": false
-          }
-        }
-      },
-      "block_order": [
-        "media_row_YA4ddi",
-        "media_row_f88dXL"
-      ],
-      "name": "Media + Richtext + Galerie",
-      "settings": {
-        "section_heading": "<h3><strong>Vorher – Nachher Bilder</strong></h3>",
-        "heading_size_px": 32,
-        "section_subheading": "<p>Diese beiden Methoden sind in ihrer Vorgehensweise und Anwendung grundsätzlich ...</p>",
-        "gallery_heading": "<h3>Vorher – Nachher Bilder</h3>"
       }
     },
     "video_Cg8Ar8": {
@@ -645,10 +573,8 @@
     "main",
     "hero_building_section_xFPFdb",
     "leistung_showcase_wAGpyg",
-    "about_section_v3_RGqFVA",
-    "about_section_v3_nAxpQE",
+    "about_section_v2_tTigi6",
     "about_section_v3_p7n9bw",
-    "custom_media_richtext_PP4kNN",
     "video_Cg8Ar8",
     "custom_cta_block_3nzV4z",
     "sis_single_footer_N4n9t3",
