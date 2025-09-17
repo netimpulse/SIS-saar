@@ -61,7 +61,7 @@
         "heading": "Strahlservice",
         "subheading": "",
         "button_label": "Jetzt Angebot anfordern",
-        "button_link": "",
+        "button_link": "shopify://pages/industrieservice-kontakt",
         "button_color": "#007acc",
         "button_text_color": "#ffffff",
         "button_radius": 4,
