@@ -128,7 +128,7 @@
         "subtitle_richtext": "<p>Wer wir sind und was uns ausmacht</p>",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Unsere Wurzeln liegen im <strong>Saarland</strong>- und genau hier haben wir uns mit Herzblut darauf spezialisiert professionellen und  zukunftsfähigen Industrie- und Gebäudeservice anzubieten. Seit mehr als zwei Jahrzehnten steht die SIS für zuverlässige und hochwertige Serviceleistungen in unterschiedlichen Branchen. Unser Motto „Kompetenter Service aus erster Hand“ spiegelt sich in jeder Aufgabe wider. <br/></p><p>Die<a href=\"/pages/industrieservice-startseite\" title=\"Industrieservice Startseite\"> <strong>SIS Saar-Industrie-Service GmbH</strong></a> ist Ihr Partner für anspruchsvolle Industriereinigung, Gebäudeservice und Strahltechnik. Was uns auszeichnet, ist die Kombination aus <strong>modernster Technik</strong> und einem <strong>eingespielten Team</strong>, welches auch dann Lösungen findet, wenn es besonders schwierig wird. Ob Maschinen, Hallen oder Spezialverfahren wie Trockeneisstrahlen oder Sandstrahlen – wir sorgen dafür, dass Anlagen zuverlässig laufen und Werte erhalten bleiben.</p><p>Mit der <a href=\"/pages/gebaudeservice-startseite\" title=\"Gebäudeservice Startseite\"><strong>SIS Saar Gebäudeservice GmbH</strong> </a>haben wir 2022 ein weiteres Standbein geschaffen: Hier bündeln wir unsere Kompetenz rund um <strong>Gebäudereinigung, Glasreinigung, Ferienparkreinigung und Sonderreinigung</strong>. Vom Büro bis zum Industriegebäude, von der Glasfassade bis zum Bauschluss – wir bringen Klarheit und Ordnung in Räume, in denen Menschen arbeiten und leben.</p>",
+        "description": "<p>Unsere Wurzeln liegen im <strong>Saarland</strong>. Genau hier haben wir uns mit Herzblut darauf spezialisiert, professionellen und  zukunftsfähigen Industrie- und Gebäudeservice anzubieten. Seit mehr als zwei Jahrzehnten steht die <em>SIS </em>für zuverlässige und hochwertige Serviceleistungen in unterschiedlichen Branchen. Unser Motto „<strong>Kompetenter Service aus erster Hand</strong>“ spiegelt sich in jeder Aufgabe wider. <br/></p><p>Die<a href=\"/pages/industrieservice-startseite\" title=\"Industrieservice Startseite\"> <strong>SIS Saar-Industrie-Service GmbH</strong></a> ist Ihr Partner für anspruchsvolle Industriereinigung, Wartung und Strahltechnik. Was uns auszeichnet, ist die Kombination aus <strong>modernster Technik</strong> und einem <strong>eingespielten Team</strong>, welches auch dann Lösungen findet, wenn es besonders schwierig wird. Ob Maschinen, Hallen oder Spezialverfahren wie Trockeneisstrahlen oder Sandstrahlen – wir sorgen dafür, dass Anlagen zuverlässig laufen und Werte erhalten bleiben.</p><p>Mit der <a href=\"/pages/gebaudeservice-startseite\" title=\"Gebäudeservice Startseite\"><strong>SIS Saar Gebäudeservice GmbH</strong> </a>haben wir 2022 ein weiteres Standbein geschaffen: Hier bündeln wir unsere Kompetenz rund um <strong>Gebäudereinigung, Glasreinigung, Ferienparkreinigung und Sonderreinigung</strong>. Vom Büro bis zum Industriegebäude, von der Glasfassade bis zum Bauschluss – wir bringen Klarheit und Ordnung in Räume, in denen Menschen arbeiten und leben.</p>",
         "text_color": "#121212",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_659179879.jpg",
@@ -189,25 +189,13 @@
             "custom_size": false,
             "logo_height": 72
           }
-        },
-        "logo_jaaaMQ": {
-          "type": "logo",
-          "name": "Partner-Logo - SIS Industrieservice",
-          "settings": {
-            "logo": "shopify://shop_images/2025-SIS.png",
-            "alt": "Partner-Logo",
-            "link": "",
-            "custom_size": false,
-            "logo_height": 72
-          }
         }
       },
       "block_order": [
         "logo_4EzfTf",
         "logo_kz9yMD",
         "logo_9Vy7ja",
-        "logo_CGgcEK",
-        "logo_jaaaMQ"
+        "logo_CGgcEK"
       ],
       "name": "Partner-Logos (Grid)",
       "settings": {
@@ -292,6 +280,7 @@
         "review_HiaFd4",
         "review_QUcz3t"
       ],
+      "disabled": true,
       "name": "Kundenbewertung",
       "settings": {
         "background_color": "#f9f9f9",
@@ -503,12 +492,12 @@
             "link": ""
           }
         },
-        "partner_logo_BJxkyi": {
+        "partner_logo_Pz4m8g": {
           "type": "partner_logo",
           "settings": {
-            "logo": "shopify://shop_images/2025_AMG_zugeschnitten_DA.png",
-            "alt": "Partner AMG Tech GmbH",
-            "link": "https://www.trockeneis.saarland/",
+            "logo": "shopify://shop_images/2025-SIS.png",
+            "alt": "Partner Industrieservice GmbH",
+            "link": "shopify://pages/industrieservice-startseite",
             "new_tab": true
           }
         },
@@ -521,12 +510,12 @@
             "new_tab": true
           }
         },
-        "partner_logo_Pz4m8g": {
+        "partner_logo_BJxkyi": {
           "type": "partner_logo",
           "settings": {
-            "logo": "shopify://shop_images/2025-SIS.png",
-            "alt": "Partner Industrieservice GmbH",
-            "link": "shopify://pages/industrieservice-startseite",
+            "logo": "shopify://shop_images/2025_AMG_zugeschnitten_DA.png",
+            "alt": "Partner AMG Tech GmbH",
+            "link": "https://www.trockeneis.saarland/",
             "new_tab": true
           }
         }
@@ -541,9 +530,9 @@
         "kontakt_link_F9KkVU",
         "kontakt_link_TwQexH",
         "kontakt_link_4pHeLi",
-        "partner_logo_BJxkyi",
+        "partner_logo_Pz4m8g",
         "partner_logo_8wRFJh",
-        "partner_logo_Pz4m8g"
+        "partner_logo_BJxkyi"
       ],
       "name": "SIS Footer NEU",
       "settings": {
