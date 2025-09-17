@@ -305,7 +305,7 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p><em>Sichtprüfung und Dokumentation des hygienischen </em><em><strong>Anlagenzustands</strong></em></p><p><em><strong>Fachgerechte </strong></em><em>Reinigung von Filtern, Ventilatoren, Wärmetauschern, Tropfenabscheidern, Kondensatwannen etc.</em></p><p><em><strong>Manuelle</strong></em><em>, </em><em><strong>mechanische </strong></em><em>oder </em><em><strong>chemische </strong></em><em>Reinigung, je nach Anlagentyp und Verschmutzungsgrad</em></p><p><em>Einsatz von </em><em><strong>rotierenden Bürsten </strong></em><em>(systemgerecht angepasst) und Pressluft, um die Verunreinigungen zu lösen</em></p><p><em><strong>Entfernung von Fremdkörpern</strong></em><em> wie Staub und Ablagerungen in Luftführungskanälen</em></p><p><em>Bei Bedarf </em><em><strong>Desinfektion</strong></em><em>smaßnahmen (z.B. bei mikrobieller Belastung) </em></p><p><em><strong>Dokumentation </strong></em><em>durch Foto- oder Videoaufnahmen vor und nach der Reinigung<br/></em></p><p>Gerne führen wir auch eine Hygiene-Erstinspektion durch und erstellen ein individuelles Reinigungskonzept für Ihre Raumlufttechnische Anlage.</p>",
+        "description": "<p>✅ <em>Sichtprüfung und Dokumentation des hygienischen </em><em><strong>Anlagenzustands</strong></em></p><p>✅ <em><strong>Fachgerechte </strong></em><em>Reinigung von Filtern, Ventilatoren, Wärmetauschern, Tropfenabscheidern, Kondensatwannen etc.</em></p><p>✅ <em><strong>Manuelle</strong></em><em>, </em><em><strong>mechanische </strong></em><em>oder </em><em><strong>chemische </strong></em><em>Reinigung, je nach Anlagentyp und Verschmutzungsgrad</em></p><p>✅ <em>Einsatz von </em><em><strong>rotierenden Bürsten </strong></em><em>(systemgerecht angepasst) und Pressluft, um die Verunreinigungen zu lösen</em></p><p>✅ <em><strong>Entfernung von Fremdkörpern</strong></em><em> wie Staub und Ablagerungen in Luftführungskanälen</em></p><p>✅ <em>Bei Bedarf </em><em><strong>Desinfektion</strong></em><em>smaßnahmen (z.B. bei mikrobieller Belastung) </em></p><p>✅ <em><strong>Dokumentation </strong></em><em>durch Foto- oder Videoaufnahmen vor und nach der Reinigung<br/></em></p><p>Gerne führen wir auch eine Hygiene-Erstinspektion durch und erstellen ein individuelles Reinigungskonzept für Ihre Raumlufttechnische Anlage.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image_border_radius": 12,
@@ -364,6 +364,104 @@
         "image_behavior": "none",
         "show_text_below": true,
         "accessibility_info": "Slideshow zu deiner Marke"
+      }
+    },
+    "about_section_v2_pyLLNW": {
+      "type": "about-section-v2",
+      "name": "Warum - vorher nachher bilder",
+      "settings": {
+        "layout_direction": "text_left",
+        "show_image": false,
+        "background_color": "#ffffff",
+        "section_padding_top": 30,
+        "section_padding_bottom": 0,
+        "title": "Über uns",
+        "title_richtext": "<p><strong>Vorher - Nachher Bilder</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "",
+        "text_color": "#6b7280",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "auto",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827"
+      }
+    },
+    "custom_media_richtext_9HjMKq": {
+      "type": "custom-media-richtext",
+      "blocks": {
+        "media_row_LRpemH": {
+          "type": "media_row",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_555365941.jpg",
+            "alt": "Bild",
+            "image_side": "left",
+            "title": "<h3>Vorher</h3>",
+            "text": "<p>ungereinigter Filter einer Küchenabluftanlage</p>",
+            "show_divider": true
+          }
+        },
+        "media_row_nPEiwD": {
+          "type": "media_row",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_555365941.jpg",
+            "alt": "Bild",
+            "image_side": "right",
+            "title": "<h3>Nachher</h3>",
+            "text": "<p>gereinigter Filter einer Küchenabluftanlage</p>",
+            "show_divider": true
+          }
+        },
+        "gallery_item_rnQakM": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Bild_2025-02-27_um_16.56.57_d304b748.jpg",
+            "alt": "Galeriebild",
+            "caption": "<p>Lüftungskanal Vorher/Nachher</p>"
+          }
+        },
+        "gallery_item_P6aeYH": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/9.jpg",
+            "alt": "Galeriebild",
+            "caption": "<p>Staubablagerung in Rohr</p>"
+          }
+        },
+        "gallery_item_79x6aT": {
+          "type": "gallery_item",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Bild_2025-02-27_um_17.15.54_b420a0ec.jpg",
+            "alt": "Galeriebild",
+            "caption": "<p>Filter Vorher/Nachher</p>"
+          }
+        }
+      },
+      "block_order": [
+        "media_row_LRpemH",
+        "media_row_nPEiwD",
+        "gallery_item_rnQakM",
+        "gallery_item_P6aeYH",
+        "gallery_item_79x6aT"
+      ],
+      "name": "Media + Richtext + Galerie",
+      "settings": {
+        "section_heading": "",
+        "heading_size_px": 40,
+        "section_subheading": "",
+        "gallery_heading": ""
       }
     },
     "about_experience_fUL8PE": {
@@ -455,7 +553,7 @@
         "layout_direction": "text_left",
         "show_image": false,
         "background_color": "#ffffff",
-        "section_padding_top": 35,
+        "section_padding_top": 45,
         "section_padding_bottom": 35,
         "title": "",
         "title_richtext": "<p><strong>Ihre Vorteile</strong></p>",
@@ -656,6 +754,37 @@
         "accent_color": "#22c55e"
       }
     },
+    "about_section_v2_azXaPJ": {
+      "type": "about-section-v2",
+      "name": "Ihre Vorteile Features",
+      "settings": {
+        "layout_direction": "text_left",
+        "show_image": false,
+        "background_color": "#ffffff",
+        "section_padding_top": 30,
+        "section_padding_bottom": 15,
+        "title": "",
+        "title_richtext": "<p><strong>VDI 6022</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "",
+        "text_color": "#6b7280",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/GastroKueche_iStock-1128232946.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "auto",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827"
+      }
+    },
     "about_section_v3_QHjnVq": {
       "type": "about-section-v3",
       "name": "Über Uns (Layout) – v3 - VDI 6022",
@@ -667,7 +796,7 @@
         "section_padding_top": 20,
         "section_padding_bottom": 45,
         "title": "",
-        "title_richtext": "<p><strong>VDI 6022</strong></p>",
+        "title_richtext": "",
         "title_color": "#111827",
         "title_font_size": 32,
         "subtitle": "",
@@ -1202,10 +1331,13 @@
     "about_section_v3_FYy8t7",
     "about_section_v3_xqD4zk",
     "slideshow_bMYEwg",
+    "about_section_v2_pyLLNW",
+    "custom_media_richtext_9HjMKq",
     "about_experience_fUL8PE",
     "about_section_v2_t3ejyA",
     "about_section_v2_GARtaw",
     "kachelview_DfEMD4",
+    "about_section_v2_azXaPJ",
     "about_section_v3_QHjnVq",
     "about_section_v3_ULVX9g",
     "about_section_v3_43xXtz",
