@@ -130,64 +130,17 @@
         "fallback_bullet_color": "#2b6cb0"
       }
     },
-    "about_section_v2_tTigi6": {
-      "type": "about-section-v2",
-      "blocks": {
-        "feature_hptaJX": {
-          "type": "feature",
-          "name": "Feature Punkt - Störungsbehebung",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Störungsbehebung",
-            "feature_description": "schnelle Reaktion"
-          }
-        },
-        "feature_xAEELW": {
-          "type": "feature",
-          "name": "Feature Punkt - Inspektion und Funktionsprüfung",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Inspektion und Funktionsprüfung",
-            "feature_description": "auch Austausch von z.B. Pneupatikleitungen"
-          }
-        },
-        "feature_gYkGiQ": {
-          "type": "feature",
-          "name": "Feature Punkt - Öl-/ Wasserwechsel",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Öl-/ Wasserwechsel",
-            "feature_description": "auch Filterwechsel und KSS"
-          }
-        },
-        "feature_wQdMHG": {
-          "type": "feature",
-          "name": "Feature Punkt - Messen, Kalibrieren",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Messen, Kalibrieren",
-            "feature_description": "ausrichten und korrigieren"
-          }
-        }
-      },
-      "block_order": [
-        "feature_hptaJX",
-        "feature_xAEELW",
-        "feature_gYkGiQ",
-        "feature_wQdMHG"
-      ],
-      "name": "Über Uns (Layout) – Neu",
+    "about_section_v3_GJxghp": {
+      "type": "about-section-v3",
+      "name": "Über Uns (Layout) – v3",
       "settings": {
-        "layout_direction": "text_left",
+        "image_position": "right",
+        "image_vertical_align": "center",
         "show_image": true,
-        "background_color": "#ffffff",
-        "section_padding_top": 25,
-        "section_padding_bottom": 80,
-        "title": "",
+        "background_color": "#FFFFFF",
+        "section_padding_top": 10,
+        "section_padding_bottom": 30,
+        "title": "Unser Service für Sie",
         "title_richtext": "<p><strong>Unser Service für Sie</strong></p>",
         "title_color": "#111827",
         "title_font_size": 32,
@@ -195,68 +148,18 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Wir übernehmen die fachgerechte Demontage und den Wiederaufbau Ihrer Anlagen und kümmern uns um Ihre innerbetrieblichen und außerbetrieblichen Maschinenumzüge. Wir</p><p></p><p>Auf Wunsch stellen wir Ihnen Helfer für Schlosser- und Elektrikertätigkeiten zur Verfügung. dabei bieten wir Ihnen unter anderem:</p><p><strong>Leistungen im Überblick</strong></p><ul><li><strong>Demontage</strong><br/>Abbau von Maschinen und Anlagen in einzelnen Baugruppen. Dabei werden Verbindungselemente fachgerecht gelöst und Bauteile für Transport oder Entsorgung vorbereitet.<br/></li><li><strong>Maschinenumzüge</strong><br/>Umsetzung von Maschinen innerhalb einer Produktionsstätte oder an andere Standorte. Dies umfasst Zerlegen, Transportieren, Aufstellen und Ausrichten.<br/></li><li><strong>Maschinenverschrottung</strong><br/>Rückbau und Zerkleinern von Altmaschinen. Materialien wie Stahl, Guss oder Elektronik werden getrennt und der fachgerechten Entsorgung bzw. dem Recycling zugeführt.<br/></li><li><strong>Schlossertätigkeiten</strong><br/>Metallbearbeitung im Rahmen von Montage- und Demontagearbeiten, z. B. Anpassen, Schneiden oder Verschweißen von Bauteilen.<br/></li><li><strong>Elektrikertätigkeiten (Helfertätigkeiten)</strong><br/>Unterstützung bei einfachen elektrotechnischen Arbeiten wie Abklemmen, Kabelziehen oder Vorbereiten für Fachpersonal.</li></ul><p></p><p><br/>✅ Wechsel von Filter\u0002elementen, <br/>✅ Einfetten & Abschmieren von beweglichen Teilen<br/>✅ Visuelle Prüfung <br/>✅ Leckageortung <br/>✅ Türverriegelungen auf Funktionalität prüfen<br/>✅ Prüfung von Flüssigkeiten und Ölständen<br/>✅ Prüfung von Verschraubungen <br/>(Anzugsdrehmoment)<br/>✅ Spezielle Aufgaben gem. Wartungsplan</p><p><br/> Austausch von defekter<br/>Beleuchtung<br/>✓ Prüfung von Elektromotoren<br/><br/><br/></p><p><br/> Prüfung von Schutzmechanismen<br/><br/></p><p><br/>Wir übernehmen die regelmäßige, fachgerechte Wartung Ihrer Anlagen für Sie.</p>",
-        "text_color": "#6b7280",
+        "description": "<p>Wir übernehmen die fachgerechte Demontage und den Wiederaufbau Ihrer Anlagen und kümmern uns um Ihre innerbetrieblichen und außerbetrieblichen Maschinenumzüge. </p><p>Auf Wunsch stellen wir Ihnen Helfer für Schlosser- und Elektrikertätigkeiten zur Verfügung. dabei bieten wir Ihnen unter anderem:</p><p><strong>Demontage</strong><br/>Abbau von Maschinen und Anlagen in einzelnen Baugruppen. Dabei werden Verbindungselemente fachgerecht gelöst und Bauteile für Transport oder Entsorgung vorbereitet.<br/><br/><strong>Maschinenumzüge</strong><br/>Umsetzung von Maschinen innerhalb einer Produktionsstätte oder an andere Standorte. Dies umfasst Zerlegen, Transportieren, Aufstellen und Ausrichten.<br/><br/><strong>Maschinenverschrottung</strong><br/>Rückbau und Zerkleinern von Altmaschinen. Materialien wie Stahl, Guss oder Elektronik werden getrennt und der fachgerechten Entsorgung bzw. dem Recycling zugeführt.<br/><br/><strong>Schlossertätigkeiten</strong><br/>Metallbearbeitung im Rahmen von Montage- und Demontagearbeiten, z. B. Anpassen, Schneiden oder Verschweißen von Bauteilen.<br/><br/><strong>Elektrikertätigkeiten (Helfertätigkeiten)</strong><br/>Unterstützung bei einfachen elektrotechnischen Arbeiten wie Abklemmen, Kabelziehen oder Vorbereiten für Fachpersonal.</p>",
+        "text_color": "#6B7280",
         "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_370492946.jpg",
-        "image_border_radius": 12,
-        "image_alt": "",
-        "image_max_width": 85,
-        "image_aspect_ratio": "auto",
-        "features_per_row": "2",
-        "icon_size": 32,
-        "icon_color": "#34d399",
-        "feature_title_color": "#111827"
-      }
-    },
-    "about_section_v3_p7n9bw": {
-      "type": "about-section-v3",
-      "disabled": true,
-      "name": "Über Uns (Layout) – v3 - Sand vs Glas",
-      "settings": {
-        "image_position": "top",
-        "image_vertical_align": "center",
-        "show_image": false,
-        "background_color": "#ffffff",
-        "section_padding_top": 80,
-        "section_padding_bottom": 80,
-        "title": "",
-        "title_richtext": "<p><strong>Sand vs. Glasstrahlen - Strahlmedium</strong></p>",
-        "title_color": "#111827",
-        "title_font_size": 32,
-        "subtitle": "",
-        "subtitle_richtext": "",
-        "subtitle_color": "#374151",
-        "subtitle_font_size": 20,
-        "description": "<p>Diese beiden Methoden sind in ihrer Vorgehensweise und Anwendung grundsätzlich</p>",
-        "text_color": "#6b7280",
-        "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_427667125.jpg",
         "image_border_radius": 12,
         "image_alt": "",
         "image_max_width": 85,
         "image_aspect_ratio": "4/3",
-        "features_per_row": "1",
+        "features_per_row": "2",
         "icon_size": 32,
-        "icon_color": "#34d399",
+        "icon_color": "#34D399",
         "feature_title_color": "#111827",
-        "no_image_text_align": "center"
-      }
-    },
-    "video_Cg8Ar8": {
-      "type": "video",
-      "disabled": true,
-      "name": "t:sections.video.presets.name",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "no_image_text_align": "left"
       }
     },
     "custom_cta_block_3nzV4z": {
@@ -304,153 +207,6 @@
         "use_gradient_bg": true,
         "bg_gradient": "linear-gradient(180deg, rgba(241, 245, 249, 0.6), rgba(241, 245, 249, 0) 100%)",
         "buttons_gap": 16
-      }
-    },
-    "sis_single_footer_N4n9t3": {
-      "type": "sis-single-footer",
-      "blocks": {
-        "legal_link_77kEdN": {
-          "type": "legal_link",
-          "settings": {
-            "label": "Impressum",
-            "url": ""
-          }
-        },
-        "legal_link_ANKwbq": {
-          "type": "legal_link",
-          "settings": {
-            "label": "Datenschutz",
-            "url": ""
-          }
-        },
-        "legal_link_nfcPaJ": {
-          "type": "legal_link",
-          "settings": {
-            "label": "AGBs",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "legal_link_77kEdN",
-        "legal_link_ANKwbq",
-        "legal_link_nfcPaJ"
-      ],
-      "disabled": true,
-      "name": "SIS – Einzelfooter",
-      "settings": {
-        "title": "SIS Saar Gebäude Service",
-        "contact_heading": "Kontakt",
-        "address_line_1": "Musterstraße 1, 12345 Musterstadt",
-        "address_line_2": "1",
-        "phone": "0123 / 456 789",
-        "email": "gebaeude@sis-saar.de",
-        "legal_heading": "Rechtliches",
-        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten.",
-        "bg_color": "#0f1621",
-        "text_color": "#cbd5e1",
-        "heading_color": "#ffffff",
-        "link_color": "#3b82f6",
-        "divider_color": "#1e293b"
-      }
-    },
-    "sis_footer_neu_6MxmJM": {
-      "type": "sis-footer-neu",
-      "blocks": {
-        "leistungen_link_NjfxWx": {
-          "type": "leistungen_link",
-          "settings": {
-            "text": "Industrieservice",
-            "link": "shopify://pages/industrieservice-leistungen"
-          }
-        },
-        "leistungen_link_3kGkPT": {
-          "type": "leistungen_link",
-          "settings": {
-            "text": "Gebäudeservice",
-            "link": "shopify://pages/sis-saar-gebaeudeservice-leistungen"
-          }
-        },
-        "unternehmen_link_m43cWJ": {
-          "type": "unternehmen_link",
-          "settings": {
-            "text": "Kontakt",
-            "link": "shopify://pages/allgemeiner-kontakt"
-          }
-        },
-        "unternehmen_link_KWYFKL": {
-          "type": "unternehmen_link",
-          "settings": {
-            "text": "Karriere",
-            "link": "shopify://pages/gebaudeservice-karriere"
-          }
-        },
-        "kontakt_link_LAnRcA": {
-          "type": "kontakt_link",
-          "settings": {
-            "text": "Impressum",
-            "link": ""
-          }
-        },
-        "kontakt_link_McWGRy": {
-          "type": "kontakt_link",
-          "settings": {
-            "text": "Datenschutz",
-            "link": ""
-          }
-        },
-        "partner_logo_N8YaM4": {
-          "type": "partner_logo",
-          "settings": {
-            "logo": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
-            "alt": "Partner",
-            "link": "",
-            "new_tab": true
-          }
-        },
-        "partner_logo_9eprBm": {
-          "type": "partner_logo",
-          "settings": {
-            "logo": "shopify://shop_images/logo_Industrieservice_exact_v2.png",
-            "alt": "Partner",
-            "link": "",
-            "new_tab": true
-          }
-        }
-      },
-      "block_order": [
-        "leistungen_link_NjfxWx",
-        "leistungen_link_3kGkPT",
-        "unternehmen_link_m43cWJ",
-        "unternehmen_link_KWYFKL",
-        "kontakt_link_LAnRcA",
-        "kontakt_link_McWGRy",
-        "partner_logo_N8YaM4",
-        "partner_logo_9eprBm"
-      ],
-      "disabled": true,
-      "name": "SIS Footer NEU",
-      "settings": {
-        "background_color": "#111827",
-        "section_padding": 60,
-        "separator_color": "#374151",
-        "title_color": "#ffffff",
-        "title_font_size": 24,
-        "subtitle_color": "#d1d5db",
-        "subtitle_font_size": 18,
-        "text_color": "#9ca3af",
-        "text_font_size": 14,
-        "link_color": "#60a5fa",
-        "col1_title": "Leistungen",
-        "col2_title": "Unternehmen",
-        "col3_title": "Kontakt",
-        "col4_title": "Partner",
-        "contact_company": "SIS Saar",
-        "contact_address": "Musterstraße 1, 12345 Musterstadt",
-        "contact_phone": "0123 / 456 789",
-        "contact_email": "info@sis-saar.de",
-        "contact_hours": "Mo–Fr 8–17 Uhr",
-        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
     },
     "sis_footer_neu_J6mcDE": {
@@ -573,12 +329,8 @@
     "main",
     "hero_building_section_xFPFdb",
     "leistung_showcase_wAGpyg",
-    "about_section_v2_tTigi6",
-    "about_section_v3_p7n9bw",
-    "video_Cg8Ar8",
+    "about_section_v3_GJxghp",
     "custom_cta_block_3nzV4z",
-    "sis_single_footer_N4n9t3",
-    "sis_footer_neu_6MxmJM",
     "sis_footer_neu_J6mcDE"
   ]
 }
