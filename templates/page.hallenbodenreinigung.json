@@ -54,7 +54,7 @@
       "type": "hero-building-section",
       "name": "Hero Building",
       "settings": {
-        "background_image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
+        "background_image": "shopify://shop_images/shutterstock_547239928.jpg",
         "enable_overlay": true,
         "overlay_color": "#000000",
         "overlay_opacity": 0.5,
@@ -212,21 +212,6 @@
         "feature_title_color": "#111827"
       }
     },
-    "video_Cg8Ar8": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "custom_cta_block_Y6hmWD": {
       "type": "custom-cta-block",
       "blocks": {
@@ -275,7 +260,7 @@
       ],
       "name": "Custom CTA Block",
       "settings": {
-        "heading": "<p><strong>Bereit für professionellen Gebäudeservice?</strong></p>",
+        "heading": "<p><strong>Bereit für professionellen Service?</strong></p>",
         "heading_size": 40,
         "heading_bold": true,
         "heading_color": "#0f172a",
@@ -562,7 +547,6 @@
     "hero_building_section_xFPFdb",
     "leistung_showcase_7Yq3XN",
     "about_section_v2_bc7YQQ",
-    "video_Cg8Ar8",
     "custom_cta_block_Y6hmWD",
     "sis_single_footer_N4n9t3",
     "sis_footer_neu_kXD8wq",
