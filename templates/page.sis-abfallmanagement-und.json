@@ -54,7 +54,7 @@
       "type": "hero-building-section",
       "name": "Hero Building",
       "settings": {
-        "background_image": "shopify://shop_images/shutterstock_328419737.jpg",
+        "background_image": "shopify://shop_images/staplerfahrer-mit-schutzausr-stung-von-hinten-auf-stapler-der-einen-m-llcontainer-auf-einem-industriegel-nde-transportiert.png",
         "enable_overlay": true,
         "overlay_color": "#000000",
         "overlay_opacity": 0.5,
@@ -81,33 +81,26 @@
         "showcase_item_XBpUEd": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>innerbetriebliche Transporte</p>"
           }
         },
         "showcase_item_TUTxLE": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Recycling</p>"
           }
         },
         "showcase_item_dDDewh": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
-          }
-        },
-        "showcase_item_qyzi4A": {
-          "type": "showcase_item",
-          "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>optimierte Wege</p>"
           }
         }
       },
       "block_order": [
         "showcase_item_XBpUEd",
         "showcase_item_TUTxLE",
-        "showcase_item_dDDewh",
-        "showcase_item_qyzi4A"
+        "showcase_item_dDDewh"
       ],
       "name": "Leistung Showcase",
       "settings": {
@@ -120,11 +113,11 @@
         "main_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
         "image_radius": 12,
         "image_position": "left",
-        "left_heading_html": "<p><strong>Zusätzliche Informationen</strong></p>",
+        "left_heading_html": "<p>Effektive Transporte - <br/>smartes Recycling</p>",
         "left_heading_align": "right",
         "left_heading_italic": false,
         "left_heading_weight": "700",
-        "left_text": "<p>Sie planen einen Umbau Ihrer Anlagen? Neue Geräte wurden angeschafft und dafür müssen die alten weichen? Wir unterstützen Sie bei größeren und kleineren Maschinenumzügen und liefern fachgerechte Montage und Demontage Ihrer Anlagen. Wir kümmern uns auf Wunsch auch um die Verschrottung Ihrer Maschinen bzw. stehen Ihnen mit Schlossern und weiteren Helfern zur Seite.</p>",
+        "left_text": "",
         "bg_color": "#ffffff",
         "section_padding": 24,
         "points_title": "Unsere Dienstleistungen:",
@@ -139,37 +132,23 @@
     },
     "about_section_v3_RGqFVA": {
       "type": "about-section-v3",
-      "blocks": {
-        "feature_zPneNV": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "✅  Effektiv bei groben Verschmutzungen",
-            "feature_description": ""
-          }
-        }
-      },
-      "block_order": [
-        "feature_zPneNV"
-      ],
       "name": "Über Uns (Layout) – v3 - Sandstrahlen",
       "settings": {
         "image_position": "right",
         "image_vertical_align": "start",
         "show_image": true,
         "background_color": "#ffffff",
-        "section_padding_top": 80,
-        "section_padding_bottom": 80,
+        "section_padding_top": 20,
+        "section_padding_bottom": 30,
         "title": "",
-        "title_richtext": "<p><strong>Sandstrahlen</strong></p>",
+        "title_richtext": "<p><strong>Unser Service für Sie</strong></p>",
         "title_color": "#111827",
         "title_font_size": 32,
         "subtitle": "",
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Diese Reinigungsweise eignet sich besonders gut bei groben und festsitzenden Verschmutzungen wie beispielsweise<br/>Lackrückstände oder Korrosion. Dabei wird das zu reinigende Objekt mit feinen<br/>Sandkörnern bestrahlt, welche die Verschmutzungen abtragen. Hierbei kann man sowohl bei der Wahl des Mediums als auch bei der Körnung variieren, um<br/>verschiedene Ergebnisse zu erzielen. Wir haben im Hause eine eigene<br/>Strahlkabine mit modernster Strahl- und Absaugtechnik, deren Nutzung durch<br/>unseren Transportservice für Sie unkompliziert und günstig wird.</p><p>Effektiv bei groben Verschmutzungen</p>",
+        "description": "<h3><strong>Innerbetriebliche Transporte</strong></h3><p>Wir übernehmen für Sie sämtliche Transporte innerhalb der Produktionslinien – zuverlässig und flexibel. Ob mit Gabelstapler, Schlepper oder anderen Flurförderzeugen: Wir sorgen für reibungslose Abläufe und eine schnelle Versorgung Ihrer Fertigung.</p><h3><strong>Abfallmanagement & Recycling</strong></h3><p>Nachhaltigkeit beginnt im Detail. Wir kümmern uns um die fachgerechte Sortierung von Abfällen  und die Optimierung von Recyclingprozessen. So schützen wir wertvolle Ressourcen, senken Entsorgungskosten und tragen aktiv zu Ihrer Umweltbilanz bei.</p><h3><strong>Optimierte Transportwege</strong></h3><p>Effizienz ist planbar: Durch durchdachte Routen und optimierte Transportwege reduzieren wir unnötige Fahrten, minimieren Transportrisiken, vermeiden Schäden und steigern die Produktivität in Lager und Produktion.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_210427888_6916fb3d-f2ef-4451-86ef-fe1d9e2296c2.jpg",
