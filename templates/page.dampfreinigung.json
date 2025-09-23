@@ -157,11 +157,21 @@
             "feature_title": "geruchsneutral",
             "feature_description": ""
           }
+        },
+        "feature_VcBAH7": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "umweltverträglich",
+            "feature_description": ""
+          }
         }
       },
       "block_order": [
         "feature_wUHKYW",
-        "feature_XnEeHJ"
+        "feature_XnEeHJ",
+        "feature_VcBAH7"
       ],
       "name": "Über Uns (Layout) – v3",
       "settings": {
@@ -179,7 +189,7 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>In manchen Bereichen reicht eine normale Reinigung nicht aus. Wo Keime, Bakterien oder Viren ein Problem darstellen – etwa in Sanitäranlagen, Gemeinschaftsräumen oder nach besonderen Vorfällen – braucht es mehr. Unsere Desinfektions - und Dampfreinigungsverfahren kommen genau dann zum Einsatz, wenn es wirklich hygienisch sauber sein muss.<strong> </strong></p><p><strong>Desinfektion:</strong> gezielte Keimreduktion auf Oberflächen – z. B. in WC-Anlagen, Aufenthaltsräumen, Küchen, Sportstätten oder nach einem Krankheitsfall.</p><p><strong>Dampfreinigung:</strong> hygienische Tiefenreinigung ganz ohne aggressive Chemie – ideal für fugenreiche Oberflächen, Küchenbereiche, textile Böden oder schwer erreichbare Ecken.</p><p>Besonders bei erhöhten Hygieneanforderungen z. B. in Kindergärten, Fitnessstudios, Arztpraxen oder nach Wasserschäden, Schimmel- oder Schädlingsbefall sowie als Ergänzung zur klassischen Unterhaltsreinigung ist die Dampfreinigung und Desinfektion sinnvoll.</p><p><strong>Wie funktioniert’s?</strong><br/>Bei der <strong>Desinfektion</strong> setzen wir geprüfte, gelistete Mittel ein – je nach Bedarf als Wisch-, Sprüh- oder Vernebelungsverfahren. Die <strong>Dampfreinigung</strong> erfolgt mit Hochtemperaturdampf (über 150 °C), der Schmutz, Fett und Mikroorganismen löst – ganz ohne Chemie, rückstandsfrei und geruchsneutral.</p>",
+        "description": "<p>In manchen Bereichen reicht eine normale Reinigung nicht aus. Wo Keime, Bakterien oder Viren ein Problem darstellen – etwa in Sanitäranlagen, Gemeinschaftsräumen oder nach besonderen Vorfällen (z.B. Wasserschaden,Schimmel etc. ) – braucht es mehr. Unsere Desinfektions - und Dampfreinigungsverfahren kommen genau dann zum Einsatz. Die Reinigung mit Heißdampf genießt die großen Vorteile einer porentiefen und besonders hygienischen Reinigung, besonders bei schwer zugänglichen Stellen. Diese besondere Reinigungskraft ergibt sich durch die Dampftemperaturen von ca. 180°C. Durch die hohen Temperaturen entsteht eine antibakterielle und desinfizierende Wirkung an der gereinigten Fläche. In der Regel ist anschließend kein weiterer Einsatz von chemischen Reinigungsmitteln notwendig, weshalb man bei dieser Methode von einem besonders umweltverträglichen Reinigungsverfahren sprechen kann.</p><p><strong>Desinfektion:</strong> gezielte Keimreduktion auf Oberflächen – z. B. in WC-Anlagen, Aufenthaltsräumen, Küchen, Sportstätten oder nach einem Krankheitsfall. Hier setzen wir auf geprüfte, gelistete Mittel – je nach Bedarf als Wisch-, Sprüh- oder Vernebelungsverfahren. </p><p><strong>Dampfreinigung:</strong> hygienische Tiefenreinigung ganz ohne aggressive Chemie – ideal für fugenreiche Oberflächen, Küchenbereiche, textile Böden oder schwer erreichbare Ecken. Hier setzen wir auf Hochtemperaturdampf (über 150 °C), der Schmutz, Fett und Mikroorganismen löst – ganz ohne Chemie, rückstandsfrei und geruchsneutral.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/iStock-611791236.jpg",
@@ -192,71 +202,6 @@
         "icon_color": "#34d399",
         "feature_title_color": "#111827",
         "no_image_text_align": "left"
-      }
-    },
-    "about_section_v2_hzwUtN": {
-      "type": "about-section-v2",
-      "blocks": {
-        "feature_UPmYTg": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "antibakteriell",
-            "feature_description": ""
-          }
-        },
-        "feature_GUifft": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "umweltverträglich",
-            "feature_description": ""
-          }
-        },
-        "feature_LriAAc": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "desinfizierend",
-            "feature_description": ""
-          }
-        }
-      },
-      "block_order": [
-        "feature_UPmYTg",
-        "feature_GUifft",
-        "feature_LriAAc"
-      ],
-      "name": "Über Uns (Layout) – Neu - Dampfreinigung",
-      "settings": {
-        "layout_direction": "text_left",
-        "show_image": true,
-        "background_color": "#ffffff",
-        "section_padding_top": 30,
-        "section_padding_bottom": 30,
-        "title": "",
-        "title_richtext": "",
-        "title_color": "#111827",
-        "title_font_size": 32,
-        "subtitle": "",
-        "subtitle_richtext": "",
-        "subtitle_color": "#374151",
-        "subtitle_font_size": 20,
-        "description": "<p>Die Reinigung mit Heißdampf genießt die großen Vorteile einer porentiefen und besonders hygienischen Reinigung, besonders bei schwer zugänglichen Stellen. Diese besondere Reinigungskraft ergibt sich durch die Dampftemperaturen von ca. 180°C. Durch die hohen Temperaturen entsteht eine antibakterielle und desinfizierende Wirkung an der gereinigten Fläche. In der Regel ist anschließend kein weiterer Einsatz von chemischen Reinigungsmitteln notwendig, weshalb man bei dieser Methode von einem besonders umweltverträglichen Reinigungsverfahren sprechen kann.</p><p>In manchen Bereichen reicht eine normale Reinigung nicht aus. Wo Keime, Bakterien oder Viren ein Problem darstellen – etwa in Sanitäranlagen, Gemeinschaftsräumen oder nach besonderen Vorfällen – braucht es mehr. Unsere Desinfektions - und Dampfreinigungsverfahren kommen genau dann zum Einsatz, wenn es wirklich hygienisch sauber sein muss.<strong> </strong></p><p><strong>Desinfektion:</strong> gezielte Keimreduktion auf Oberflächen – z. B. in WC-Anlagen, Aufenthaltsräumen, Küchen, Sportstätten oder nach einem Krankheitsfall.</p><p><strong>Dampfreinigung:</strong> hygienische Tiefenreinigung ganz ohne aggressive Chemie – ideal für fugenreiche Oberflächen, Küchenbereiche, textile Böden oder schwer erreichbare Ecken.</p><p>Besonders bei erhöhten Hygieneanforderungen z. B. in Kindergärten, Fitnessstudios, Arztpraxen oder nach Wasserschäden, Schimmel- oder Schädlingsbefall sowie als Ergänzung zur klassischen Unterhaltsreinigung ist die Dampfreinigung und Desinfektion sinnvoll.</p><p><strong>Wie funktioniert’s?</strong><br/>Bei der <strong>Desinfektion</strong> setzen wir geprüfte, gelistete Mittel ein – je nach Bedarf als Wisch-, Sprüh- oder Vernebelungsverfahren. Die <strong>Dampfreinigung</strong> erfolgt mit Hochtemperaturdampf (über 150 °C), der Schmutz, Fett und Mikroorganismen löst – ganz ohne Chemie, rückstandsfrei und geruchsneutral.</p>",
-        "text_color": "#6b7280",
-        "text_font_size": 18,
-        "image": "shopify://shop_images/iStock-611791236.jpg",
-        "image_border_radius": 12,
-        "image_alt": "",
-        "image_max_width": 85,
-        "image_aspect_ratio": "auto",
-        "features_per_row": "2",
-        "icon_size": 32,
-        "icon_color": "#34d399",
-        "feature_title_color": "#111827"
       }
     },
     "custom_cta_block_Y6hmWD": {
@@ -574,7 +519,6 @@
     "hero_building_section_xFPFdb",
     "leistung_showcase_RzbwLn",
     "about_section_v3_tJMCnj",
-    "about_section_v2_hzwUtN",
     "custom_cta_block_Y6hmWD",
     "sis_single_footer_N4n9t3",
     "sis_footer_neu_qKpJ9Q",
