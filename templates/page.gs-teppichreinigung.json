@@ -87,13 +87,7 @@
         "showcase_item_Ba6nGP": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>Campingplatz</p>"
-          }
-        },
-        "showcase_item_Gefp9i": {
-          "type": "showcase_item",
-          "settings": {
-            "text": "<p>Freizeitpark</p>"
+            "text": "<p>Hotel</p>"
           }
         },
         "showcase_item_AwWV6R": {
@@ -106,7 +100,6 @@
       "block_order": [
         "showcase_item_YKfnRj",
         "showcase_item_Ba6nGP",
-        "showcase_item_Gefp9i",
         "showcase_item_AwWV6R"
       ],
       "name": "Leistung Showcase",
@@ -154,7 +147,7 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Teppichböden sind gemütlich, trittsicher, schallabsorbierend – und echte Schmutzmagneten. Staub, Sand, Straßenschmutz, Flecken, Feuchtigkeit: All das setzt sich in den Fasern fest, auch wenn regelmäßig gesaugt wird. Eine professionelle Teppichreinigung geht tiefer – und sorgt nicht nur für mehr Sauberkeit, sondern auch für längere Lebensdauer. Je nach Material, Nutzung und Verschmutzungsgrad wählen wir die passende Reinigungsmethode:</p><ul><li><strong>Shampoonierung:</strong><br/>     maschinelles Einschäumen mit rotierenden Bürsten – ideal für synthetische Teppiche oder starke Verschmutzung</li><li><strong>Sprühextraktion:</strong><br/>     Ausspülen mit heißem Wasser und sofortigem Absaugen – besonders gründlich bei tiefsitzendem Schmutz</li><li><strong>Trockenreinigung:</strong> <br/>für empfindliche Teppiche oder dort, wo schnelle Begehbarkeit gefragt ist</li><li><strong>Fleckentfernung:</strong><br/>     punktuelle Behandlung bei Kaffee-, Tinten-, Öl- oder anderen Flecken</li></ul><p><strong>Wann lohnt sich eine Teppichreinigung?</strong><br/>Bei sichtbaren Laufspuren oder Verfärbungen,  bei Gerüchen (z. B. Nikotin, Haustiere), in stark frequentierten Bereichen (Eingänge, Flure, Büros), als regelmäßige Pflege – idealerweise jährlich oder halbjährlich</p><p><strong>Was ist dabei zu beachten?</strong><br/>Nicht jeder Teppich verträgt jede Methode. Textilfasern, Trägermaterialien, Kleber, Farbechtheit – all das prüfen wir vorab, damit nichts beschädigt wird. Und: Je nach Verfahren kann der Teppich nach wenigen Stunden wieder begehbar sein, bei manchen braucht es etwas mehr Zeit zum Trocknen.</p><p><strong>Fachlich sauber, nicht nur optisch</strong><br/>Professionelle Teppichreinigung entfernt nicht nur sichtbaren Schmutz, sondern auch Feinpartikel, Milben, Allergene und Keime. Gerade in Büros, Arztpraxen oder Schulen ist das ein hygienischer Pluspunkt. </p>",
+        "description": "<p>Teppichböden sind gemütlich, trittsicher, schallabsorbierend – und echte Schmutzmagneten. Staub, Sand, Straßenschmutz, Flecken, Feuchtigkeit: All das setzt sich in den Fasern fest, auch wenn regelmäßig gesaugt wird. Eine professionelle Teppichreinigung geht tiefer – und sorgt nicht nur für mehr Sauberkeit, sondern auch für längere Lebensdauer. Je nach Material, Nutzung und Verschmutzungsgrad wählen wir die passende Reinigungsmethode:</p><ul><li><strong>Shampoonierung:</strong> maschinelles Einschäumen mit rotierenden Bürsten – ideal für synthetische Teppiche oder starke Verschmutzung</li><li><strong>Sprühextraktion:</strong> Ausspülen mit heißem Wasser und sofortigem Absaugen – besonders gründlich bei tiefsitzendem Schmutz</li><li><strong>Trockenreinigung:</strong>  für empfindliche Teppiche oder dort, wo schnelle Begehbarkeit gefragt ist</li><li><strong>Fleckentfernung:</strong>      punktuelle Behandlung bei Kaffee-, Tinten-, Öl- oder anderen Flecken</li></ul><p><strong>Wann lohnt sich eine Teppichreinigung?</strong><br/>Bei sichtbaren Laufspuren oder Verfärbungen,  bei Gerüchen (z. B. Nikotin, Haustiere), in stark frequentierten Bereichen (Eingänge, Flure, Büros), als regelmäßige Pflege – idealerweise jährlich oder halbjährlich</p><p><strong>Was ist dabei zu beachten?</strong><br/>Nicht jeder Teppich verträgt jede Methode. Textilfasern, Trägermaterialien, Kleber, Farbechtheit – all das prüfen wir vorab, damit nichts beschädigt wird. Und: Je nach Verfahren kann der Teppich nach wenigen Stunden wieder begehbar sein, bei manchen braucht es etwas mehr Zeit zum Trocknen.</p><p><strong>Fachlich sauber, nicht nur optisch</strong><br/>Professionelle Teppichreinigung entfernt nicht nur sichtbaren Schmutz, sondern auch Feinpartikel, Milben, Allergene und Keime. Gerade in Büros, Arztpraxen oder Schulen ist das ein hygienischer Pluspunkt. </p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image_border_radius": 12,
@@ -166,61 +159,6 @@
         "icon_color": "#34d399",
         "feature_title_color": "#111827",
         "no_image_text_align": "left"
-      }
-    },
-    "about_section_v2_i4Pndt": {
-      "type": "about-section-v2",
-      "blocks": {
-        "feature_3nWFMm": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Zuverlässigkeit",
-            "feature_description": "verlässlich, gründlich"
-          }
-        },
-        "feature_CGHJRD": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Geschwindigkeit",
-            "feature_description": "schnell und effektiv"
-          }
-        }
-      },
-      "block_order": [
-        "feature_3nWFMm",
-        "feature_CGHJRD"
-      ],
-      "name": "Über Uns (Layout) – Neu - Unterhaltsreinigung",
-      "settings": {
-        "layout_direction": "text_left",
-        "show_image": true,
-        "background_color": "#ffffff",
-        "section_padding_top": 25,
-        "section_padding_bottom": 80,
-        "title": "",
-        "title_richtext": "",
-        "title_color": "#111827",
-        "title_font_size": 32,
-        "subtitle": "",
-        "subtitle_richtext": "",
-        "subtitle_color": "#374151",
-        "subtitle_font_size": 20,
-        "description": "<p>Gerade in stark frequentierten Bereichen wie Duschräumen oder Küchen gelten hohe Hygienestandards. Wir setzen passende Reinigungsmittel ein – desinfizierend, aber materialschonend – und nutzen Verfahren wie Dampfreinigung oder Einwirkzeiten, wo nötig. Unsere Mitarbeitenden kennen die Abläufe bei An- und Abreise und wissen, wie man effizient, aber gründlich arbeitet.</p><p><strong>Und wenn’s mal mehr sein muss?</strong><br/>In der Hochsaison stocken wir auf, bei Bedarf auch kurzfristig. Ob Wochenendreinigung, tägliche Zwischenreinigung oder Grundreinigung am Saisonende – wir richten uns gerne nach Ihrem Betrieb.</p>",
-        "text_color": "#6b7280",
-        "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_728697067.jpg",
-        "image_border_radius": 12,
-        "image_alt": "",
-        "image_max_width": 85,
-        "image_aspect_ratio": "auto",
-        "features_per_row": "2",
-        "icon_size": 32,
-        "icon_color": "#34d399",
-        "feature_title_color": "#111827"
       }
     },
     "custom_cta_block_Y6hmWD": {
@@ -538,7 +476,6 @@
     "hero_building_section_xFPFdb",
     "leistung_showcase_9Y9rK6",
     "about_section_v3_bEeKqp",
-    "about_section_v2_i4Pndt",
     "custom_cta_block_Y6hmWD",
     "sis_single_footer_N4n9t3",
     "sis_footer_neu_tdeFj6",
