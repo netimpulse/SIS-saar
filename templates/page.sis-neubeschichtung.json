@@ -78,16 +78,28 @@
     "leistung_showcase_pDxJq9": {
       "type": "leistung-showcase",
       "blocks": {
-        "showcase_item_meLqq6": {
-          "type": "showcase_item",
-          "settings": {
-            "text": "<p>Tiefenreinigung</p>"
-          }
-        },
         "showcase_item_N7BEna": {
           "type": "showcase_item",
           "settings": {
             "text": "<p>Grundreinigung</p>"
+          }
+        },
+        "showcase_item_AfUzqW": {
+          "type": "showcase_item",
+          "settings": {
+            "text": "<p>Ausbesserung kleiner Risse</p>"
+          }
+        },
+        "showcase_item_meLqq6": {
+          "type": "showcase_item",
+          "settings": {
+            "text": "<p>Neutralisierung</p>"
+          }
+        },
+        "showcase_item_cfEEw9": {
+          "type": "showcase_item",
+          "settings": {
+            "text": "<p>Beschichtungsmaterial</p>"
           }
         },
         "showcase_item_FaFVXQ": {
@@ -104,8 +116,10 @@
         }
       },
       "block_order": [
-        "showcase_item_meLqq6",
         "showcase_item_N7BEna",
+        "showcase_item_AfUzqW",
+        "showcase_item_meLqq6",
+        "showcase_item_cfEEw9",
         "showcase_item_FaFVXQ",
         "showcase_item_W6BXCB"
       ],
