@@ -479,8 +479,8 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_375261961.jpg",
             "title_html": "<p><strong>KSS-Management</strong></p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
-            "keywords": "Büro, täglich, flexibel",
+            "text_html": "<p>Ob Einzelmessung, turnusmäßige Wartung oder Komplettreinigung – wir kümmern uns um Ihre Kühlschmierstoffsysteme mit Fachkompetenz, modernster Messtechnik und einem hohen Qualitätsanspruch. </p>",
+            "keywords": "messen, Kühlschmierstoff, Dosierung",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/sis-kss-management"
           }
