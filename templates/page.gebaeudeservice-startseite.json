@@ -219,14 +219,14 @@
         "hotspot_YGhMHC": {
           "type": "hotspot",
           "settings": {
-            "title": "Fenster Reinigung",
-            "text": "<p>Professionelle Fenstereinigung - dein Garant für strahlende Ergebnisse!</p>",
+            "title": "Glasreinigung",
+            "text": "",
             "pos_x": 7,
             "pos_y": 40,
             "dot_color": "#3ac47d",
             "panel_bg": "#4caf78",
             "panel_text": "#ffffff",
-            "panel_position": "top-left",
+            "panel_position": "top-right",
             "open_by_default": false
           }
         },
@@ -283,9 +283,9 @@
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
         "content_side": "left",
-        "kicker": "Sis Saar",
-        "heading": "Gebäudeservice",
-        "body": "<p>Beispiel Text </p>",
+        "kicker": "",
+        "heading": "SIS  Saar Gebäudeservice GmbH",
+        "body": "",
         "heading_font": "poppins_n4",
         "heading_size": 44,
         "heading_weight": "700",
