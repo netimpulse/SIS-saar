@@ -127,6 +127,7 @@
         },
         "service_card_lf_nn8th7": {
           "type": "service_card_lf",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/shutterstock_672030043.jpg",
             "title": "Reinraumreinigung",
