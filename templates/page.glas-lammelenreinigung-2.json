@@ -139,36 +139,12 @@
     },
     "about_section_v3_XJ3DUb": {
       "type": "about-section-v3",
-      "blocks": {
-        "feature_Y4E4xn": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung"
-          }
-        },
-        "feature_DnnmWY": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung"
-          }
-        }
-      },
-      "block_order": [
-        "feature_Y4E4xn",
-        "feature_DnnmWY"
-      ],
       "name": "Über Uns (Layout) – v3",
       "settings": {
         "image_position": "right",
         "image_vertical_align": "center",
         "show_image": true,
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "section_padding_top": 80,
         "section_padding_bottom": 80,
         "title": "",
@@ -179,8 +155,8 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Fenster sind nicht nur Lichtquelle, sondern auch Aushängeschild – besonders in gewerblich oder öffentlich genutzten Gebäuden.<br/>Saubere Scheiben, gepflegte Rahmen, keine Schlieren: Das sieht man nicht nur, das fühlt man auch. Unsere Glas- und Rahmenreinigung umfasst alle Arbeiten rund um transparente Flächen – innen wie außen.</p><p><strong>Was wird gereinigt?</strong><br/>Wir übernehmen die Reinigung von:</p><ul><li>Einfach- und Doppelverglasungen (auch in großer Höhe)</li><li>Fensterrahmen aus Holz, Kunststoff oder Aluminium</li><li>Glastüren, Trennwände, Oberlichter</li><li>Wintergärten</li><li>Glasfassaden</li><li>Lamellen und Jalousien (innen und außen)</li></ul><p><strong>Wie gehen wir vor?</strong><br/>Je nach Verschmutzungsgrad, Glasart und Zugänglichkeit arbeiten wir manuell oder maschinell – mit professionellen Abziehern, Teleskopstangen, Reinwassersystemen oder, wo nötig, auch mit Leiter und Arbeitsbühne. Bei der Rahmenreinigung achten wir auf materialverträgliche Mittel – damit Dichtungen nicht spröde werden und Lackierungen keinen Schaden nehmen.</p>",
-        "text_color": "#6B7280",
+        "description": "<p>Fenster sind Lichtquelle und auch Aushängeschild – besonders in gewerblich oder öffentlich genutzten Gebäuden.<br/>Saubere Scheiben, gepflegte Rahmen, keine Schlieren: Das sieht man nicht nur, das fühlt man auch. Unsere Glas- und Rahmenreinigung umfasst alle Arbeiten rund um transparente Flächen – innen wie außen.</p><p><strong>Was wird gereinigt?</strong><br/>Wir übernehmen die Reinigung von:</p><ul><li>Einfach- und Doppelverglasungen (auch in großer Höhe)</li><li>Fensterrahmen aus Holz, Kunststoff oder Aluminium</li><li>Glastüren, Trennwände, Oberlichter</li><li>Wintergärten</li><li>Glasfassaden</li><li>Lamellen und Jalousien (innen und außen)</li></ul><p><strong>Wie gehen wir vor?</strong><br/>Je nach Verschmutzungsgrad, Glasart und Zugänglichkeit arbeiten wir manuell oder maschinell – mit professionellen Abziehern, Teleskopstangen, Reinwassersystemen oder, wo nötig, auch mit Leiter und Arbeitsbühne. Bei der Rahmenreinigung achten wir auf materialverträgliche Mittel – damit Dichtungen nicht spröde werden und Lackierungen keinen Schaden nehmen.</p>",
+        "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_207255694.jpg",
         "image_border_radius": 12,
@@ -189,43 +165,19 @@
         "image_aspect_ratio": "4/3",
         "features_per_row": "2",
         "icon_size": 32,
-        "icon_color": "#34D399",
+        "icon_color": "#34d399",
         "feature_title_color": "#111827",
         "no_image_text_align": "left"
       }
     },
     "about_section_v3_xGURR6": {
       "type": "about-section-v3",
-      "blocks": {
-        "feature_3N9grw": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung"
-          }
-        },
-        "feature_DNt6JL": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung"
-          }
-        }
-      },
-      "block_order": [
-        "feature_3N9grw",
-        "feature_DNt6JL"
-      ],
       "name": "Über Uns (Layout) – v3",
       "settings": {
         "image_position": "right",
         "image_vertical_align": "center",
         "show_image": false,
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "section_padding_top": 35,
         "section_padding_bottom": 80,
         "title": "",
@@ -236,8 +188,8 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p><strong>Und die Lamellen?</strong><br/>Lamellen- und Jalousienreinigung ist ein Thema für sich: Hier setzen sich Staub, Pollen, Abgase und Fett ab – oft jahrelang. Wir reinigen diese gründlich, ohne sie zu beschädigen, egal ob manuell, mit Dampfreinigern oder speziellem Lamellenwaschgerät.</p><p><strong>Wintergartenreinigung? Gerne.</strong><br/>Ein Wintergarten ist schön – solange man nicht selbst aufs Dach steigen muss. Wir übernehmen die vollständige Reinigung inklusive Glasdach, Träger und Entwässerung. Sicher, gründlich und materialschonend.</p><p><strong>Fassadenreinigung – mehr als nur Optik</strong><br/>Algen, Staub, Umweltbelastung: Fassaden verlieren mit der Zeit an Ausstrahlung. Je nach Material – z. B. Glas, Metall, Kunststoff oder Putz – reinigen wir mit entsprechenden Methoden: von der schonenden Hochdruckreinigung bis zur chemisch unterstützten Tiefenreinigung. </p>",
-        "text_color": "#6B7280",
+        "description": "<p><strong>Lamellen</strong><br/>Lamellen- und Jalousienreinigung ist ein Thema für sich: Hier setzen sich Staub, Pollen, Abgase und Fett ab – oft jahrelang. Wir reinigen diese gründlich, ohne sie zu beschädigen, egal ob manuell, mit Dampfreinigern oder speziellem Lamellenwaschgerät.</p><p><strong>Wintergartenreinigung</strong><br/>Ein Wintergarten ist schön – solange man nicht selbst aufs Dach steigen muss. Wir übernehmen die vollständige Reinigung inklusive Glasdach, Träger und Entwässerung. Sicher, gründlich und materialschonend.</p><p><strong>Fassadenreinigung </strong><br/>Algen, Staub, Umweltbelastung: Fassaden verlieren mit der Zeit an Ausstrahlung. Je nach Material – z. B. Glas, Metall, Kunststoff oder Putz – reinigen wir mit entsprechenden Methoden: von der schonenden Hochdruckreinigung bis zur chemisch unterstützten Tiefenreinigung. </p>",
+        "text_color": "#6b7280",
         "text_font_size": 18,
         "image_border_radius": 12,
         "image_alt": "",
@@ -245,7 +197,7 @@
         "image_aspect_ratio": "4/3",
         "features_per_row": "2",
         "icon_size": 32,
-        "icon_color": "#34D399",
+        "icon_color": "#34d399",
         "feature_title_color": "#111827",
         "no_image_text_align": "left"
       }
