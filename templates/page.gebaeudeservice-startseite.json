@@ -148,9 +148,9 @@
         "service_card_lf_finbgW": {
           "type": "service_card_lf",
           "settings": {
-            "image": "shopify://shop_images/shutterstock_346033838.jpg",
+            "image": "shopify://shop_images/shutterstock_181375295.jpg",
             "title": "Sonderreinigung",
-            "text": "gemeinsam finden wir eine Lösung für Ihre Herausforderung",
+            "text": "Lassen Sie uns gemeinsam eine Lösung für Ihre Herausforderung finden.",
             "link_url": "shopify://pages/sonderreinigung",
             "link_label": "Mehr erfahren →"
           }

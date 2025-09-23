@@ -42,37 +42,54 @@
         "button_hover_bg_color": "#22c55e"
       }
     },
+    "hero_overlay_section_UwVhGn": {
+      "type": "hero-overlay-section",
+      "name": "Hero – Service Overlay",
+      "settings": {
+        "bg_image": "shopify://shop_images/2025-09-23_12_41_45-shutterstock_138092369_jpg_afb56f8a-071b-4914-a841-efb9cd290a3c.png",
+        "overlay_color": "#2baaa2",
+        "overlay_opacity": 70,
+        "section_height": 60,
+        "section_height_mobile": 40,
+        "content_max_width": 760,
+        "heading": "Gebäudeservice                                        Lösungen für Ihre Immobilie",
+        "heading_font": "system_ui_n4",
+        "heading_size": 64,
+        "heading_color": "#ffffff",
+        "text": "<p>Wir bieten erstklassige Reinigungs - und Facility Services für Unternehmen und Privatkunden</p>",
+        "text_font": "system_ui_n4",
+        "text_size": 20,
+        "text_color": "#ffffff",
+        "btn1_text": "Mehr über unsere Services",
+        "btn1_link": "shopify://pages/industrieservice-leistungen",
+        "btn1_font": "system_ui_n4",
+        "btn1_font_size": 16,
+        "btn1_padding_x": 28,
+        "btn1_padding_y": 14,
+        "btn1_radius": 10,
+        "btn1_bg": "#2baaa2",
+        "btn1_bg_hover": "#238b84",
+        "btn1_text_color": "#ffffff",
+        "btn1_text_hover": "#ffffff",
+        "btn2_text": "JETZT ANRUFEN",
+        "btn2_link": "shopify://pages/allgemeiner-kontakt",
+        "btn2_font": "system_ui_n4",
+        "btn2_font_size": 16,
+        "btn2_padding_x": 24,
+        "btn2_padding_y": 14,
+        "btn2_radius": 10,
+        "btn2_bg": "#ffffff",
+        "btn2_bg_hover": "#e6e6e6",
+        "btn2_text_color": "#2baaa2",
+        "btn2_text_hover": "#238b84"
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
-      }
-    },
-    "hero_building_section_jFhK9K": {
-      "type": "hero-building-section",
-      "name": "Hero Building",
-      "settings": {
-        "background_image": "shopify://shop_images/shutterstock_558063712.jpg",
-        "enable_overlay": true,
-        "overlay_color": "#000000",
-        "overlay_opacity": 0.5,
-        "heading": "Gebäudeservice – Moderne Lösungen für Ihre Immobilie",
-        "subheading": "Wir bieten erstklassige Reinigungs- und Facility Services für Unternehmen und Privatkunden.",
-        "button_label": "Jetzt Angebot anfordern",
-        "button_link": "",
-        "button_color": "#007acc",
-        "button_text_color": "#ffffff",
-        "button_radius": 4,
-        "heading_color": "#ffffff",
-        "text_color": "#f5f5f5",
-        "heading_size": 48,
-        "text_size": 18,
-        "font_family": "Arial, sans-serif",
-        "font_bold": true,
-        "font_italic": false,
-        "text_alignment": "left"
       }
     },
     "leistung_suche_grid_v2_baghyU": {
@@ -108,7 +125,7 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_492241702.jpg",
             "title_html": "<p><strong>Glas-/ Rahmenreinigung</strong></p>",
-            "text_html": "<p>Lamellenreinigung, wintergartenreinigung, Fassadenreinigung</p>",
+            "text_html": "<p>Lamellenreinigung, Wintergartenreinigung, Fassadenreinigung</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/glas-und-lamellenreinigung"
@@ -156,7 +173,7 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_604150469.jpg",
             "title_html": "<p><strong>Grünschnittpflege und Gartenarbeiten</strong></p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "text_html": "",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/gs-grunschnittpflege"
@@ -168,7 +185,7 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_460822750.jpg",
             "title_html": "<p><strong>Beschichtung von Bodenbelägen</strong></p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "text_html": "",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/gs-beschichtung-von-bodenbelagen"
@@ -180,8 +197,8 @@
           "settings": {
             "image": "shopify://shop_images/tatort-im-innenbereich-absperrband-ohne-erkennbaren-text.png",
             "title_html": "<p><strong>Tatortreinigung / Zellenreinigung</strong></p>",
-            "text_html": "<p>Hafträume, Treppenhäuser, Gewahrsamszellen, Sammelzellen, Dienstfahrzeuge</p>",
-            "keywords": "Büro, täglich, flexibel",
+            "text_html": "",
+            "keywords": "Hafträume, Treppenhäuser, Gewahrsamszellen, Sammelzellen, Dienstfahrzeuge",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/gs-tatortreinigung"
           }
@@ -192,7 +209,7 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_432654235.jpg",
             "title_html": "<p><strong>Hausmeistertätigkeiten</strong></p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
+            "text_html": "",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/sis-saar-gebaeudeservice-leistungen-hausmeistertaetigkeiten"
@@ -202,9 +219,10 @@
           "type": "service",
           "name": "Leistung Block - Sonderreinigung",
           "settings": {
+            "image": "shopify://shop_images/shutterstock_181375295.jpg",
             "title_html": "<p>Sonderreinigung</p>",
             "text_html": "<p>Lassen Sie uns gemeinsam eine Lösung für Ihre Herausforderung finden.</p>",
-            "keywords": "Büro, täglich, flexibel",
+            "keywords": "Leistungsverzeichnis, Turnus, flexibel",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/sis-saar-gebaeudeservice-leistungen-sonderreinigung"
           }
@@ -226,7 +244,7 @@
       "name": "Leistung Suche Grid v2",
       "settings": {
         "heading": "<p><strong>Unsere Leistungen</strong></p>",
-        "subheading": "<p>Mit <em>Leidenschaft</em> für Ihren Erfolg.</p>",
+        "subheading": "<p>Mit Leidenschaft für gemeinsamen Erfolg.</p>",
         "text_align": "center",
         "show_search": true,
         "search_placeholder": "Leistungen oder Keywords suchen…",
@@ -813,8 +831,8 @@
   },
   "order": [
     "sticky_header_trVgjG",
+    "hero_overlay_section_UwVhGn",
     "main",
-    "hero_building_section_jFhK9K",
     "leistung_suche_grid_v2_baghyU",
     "leistung_suche_grid_Ai9p6q",
     "qualitaeten_hotspot_HKLnY6",
