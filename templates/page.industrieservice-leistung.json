@@ -467,7 +467,7 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_917940.jpg",
             "title_html": "<p><strong>Oldtimer Restauration</strong></p>",
-            "text_html": "<p>Wir arbeiten mit erfahrenen PArtnern um Ihren Oldtimer wieder fit zu machen</p>",
+            "text_html": "<p>Wir arbeiten mit erfahrenen Partnern zusammen, damit Ihr Oldtimer wieder rund läuft.</p>",
             "keywords": "Strahlservice, Lackierarbeiten, flexibel",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/sis-oldtimerrestauration"
@@ -557,7 +557,7 @@
           "type": "item",
           "settings": {
             "show_icon": true,
-            "icon": "shopify://shop_images/shutterstock_423092626.jpg",
+            "icon": "shopify://shop_images/shutterstock_424584634.jpg",
             "icon_bg": "#ffffff",
             "title": "Erfahrenes Fachpersonal",
             "text": "Unsere geschulten Teams bringen Know-how und Branchenverständnis mit – und \ndenken im Sinne Ihrer Abläufe mit.",
