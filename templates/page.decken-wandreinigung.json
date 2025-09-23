@@ -81,33 +81,26 @@
         "showcase_item_TUGdzH": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Stahlkostruktion</p>"
           }
         },
         "showcase_item_bbVDXV": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Sicherheit</p>"
           }
         },
         "showcase_item_Xm4mdx": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
-          }
-        },
-        "showcase_item_pr79Ax": {
-          "type": "showcase_item",
-          "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Sauberkeit</p>"
           }
         }
       },
       "block_order": [
         "showcase_item_TUGdzH",
         "showcase_item_bbVDXV",
-        "showcase_item_Xm4mdx",
-        "showcase_item_pr79Ax"
+        "showcase_item_Xm4mdx"
       ],
       "name": "Leistung Showcase",
       "settings": {
