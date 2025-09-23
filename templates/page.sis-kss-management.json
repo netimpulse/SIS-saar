@@ -310,8 +310,8 @@
         "image_vertical_align": "center",
         "show_image": true,
         "background_color": "#ffffff",
-        "section_padding_top": 80,
-        "section_padding_bottom": 80,
+        "section_padding_top": 50,
+        "section_padding_bottom": 50,
         "title": "",
         "title_richtext": "<p><strong>KSS Service</strong></p>",
         "title_color": "#111827",
@@ -376,7 +376,7 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p><br/>✅ <strong>Professionelle KSS-Messung </strong> <br/>Wir führen präzise Analysen Ihrer KSS-Systeme durch, um die Qualität und Sicherheit der eingesetzten Medien sicherzustellen. Dabei prüfen wir unter anderem: </p><ul><li><strong>Konzentration des Kühlschmierstoffs</strong> zur Sicherstellung einer optimalen Schmierleistung und Korrosionsschutzwirkung. </li><li><strong>pH-Wert</strong> zur Beurteilung biologischer Stabilität und möglicher mikrobiologischer Belastungen. </li><li><strong>Nitrit-Gehalt</strong> als Indikator für eine mögliche mikrobiologische Zersetzung des KSS. </li><li><strong>Wasserqualität</strong>, z. B. Härte und Leitfähigkeit, um Ablagerungen oder chemische Reaktionen vorzubeugen.</li></ul><p>Alle Messergebnisse werden <strong>transparent dokumentiert</strong> und auf Wunsch digital zur Verfügung gestellt – inklusive Handlungsempfehlungen bei Abweichungen vom Soll-Zustand. </p><p>✅ <strong>Fachgerechte KSS-Nachdosierung</strong> <br/>Sinkt die Konzentration Ihres KSS-Systems unter den optimalen Wert, dosieren wir den Kühlschmierstoff fachgerecht nach – unter Berücksichtigung der bestehenden Anlagenbedingungen und gemäß Herstellerangaben. Ziel ist es, das Emulsionsverhältnis exakt einzustellen, um Leistung und Standzeit Ihrer Maschinen zu maximieren und gleichzeitig biologische Risiken zu minimieren. </p><p> </p><p>✅ <strong>KSS-Komplettwechsel mit Systemreinigung</strong> </p><p>Ist ein kompletter Austausch des Kühlschmierstoffes erforderlich – z. B. bei starker Verschmutzung, Geruchsbildung oder Bakterienbefall – übernehmen wir den gesamten Ablauf für Sie: </p><ul><li><strong>Entleerung</strong> des bestehenden Kühlschmierstoffsystems inklusive fachgerechter Entsorgung </li><li><strong>Reinigung der KSS-Behälter, Maschineninnenräume und aller relevanten Anlagenbereiche</strong> </li><li>Entfernung von Ablagerungen, Spänen, Ölresten und mikrobiologischen Rückständen </li><li><strong>Bodenreinigung</strong> im direkten Maschinenumfeld – für einen rundum hygienischen Arbeitsbereich </li><li><strong>Wiederbefüllung mit frischem KSS-Konzentrat</strong> nach Herstellervorgaben und anschließende Erstmessung zur Freigabe </li></ul><p>Diese Maßnahme verbessert nicht nur die Prozesssicherheit, sondern verlängert auch deutlich die Standzeit Ihrer Kühlschmierstoffe. </p><p> </p><p>✅ <strong>Reinigung und Pflege Ihrer KSS-Tanks</strong> </p><p>Auch außerhalb eines Komplettwechsels empfiehlt sich eine regelmäßige Reinigung der KSS-Tanks, um Späne, Ablagerungen und Rückstände zu entfernen, die den Umlauf des Kühlschmierstoffs behindern oder das System biologisch belasten können. Unsere Leistungen umfassen: </p><ul><li><strong>Mechanische und manuelle Reinigung</strong> der Tankinnenräume und schwer zugänglichen Bereiche </li><li><strong>Absaugung von Altmedien, Ölen und Ablagerungen</strong> </li><li>Entfernung von <strong>Fett, leicht anhaftenden Schmutzstoffen</strong> sowie Emulsionsresten </li><li><strong>Reinigung der Bodenflächen</strong> rund um die Maschine zur Minimierung von Rutschgefahren und Arbeitsrisiken </li></ul><p>Die Reinigung erfolgt schonend, effizient und unter Berücksichtigung aller sicherheitsrelevanten Aspekte. </p>",
+        "description": "<p>✅ <strong>Professionelle KSS-Messung </strong> <br/>Wir führen präzise Analysen Ihrer KSS-Systeme durch, um die Qualität und Sicherheit der eingesetzten Medien sicherzustellen. Dabei prüfen wir unter anderem: </p><ul><li><strong>Konzentration des Kühlschmierstoffs</strong> zur Sicherstellung einer optimalen Schmierleistung und Korrosionsschutzwirkung. </li><li><strong>pH-Wert</strong> zur Beurteilung biologischer Stabilität und möglicher mikrobiologischer Belastungen. </li><li><strong>Nitrit-Gehalt</strong> als Indikator für eine mögliche mikrobiologische Zersetzung des KSS. </li><li><strong>Wasserqualität</strong>, z. B. Härte und Leitfähigkeit, um Ablagerungen oder chemische Reaktionen vorzubeugen.</li></ul><p>Alle Messergebnisse werden <strong>transparent dokumentiert</strong> und auf Wunsch digital zur Verfügung gestellt – inklusive Handlungsempfehlungen bei Abweichungen vom Soll-Zustand. </p><p>✅ <strong>Fachgerechte KSS-Nachdosierung</strong> <br/>Sinkt die Konzentration Ihres KSS-Systems unter den optimalen Wert, dosieren wir den Kühlschmierstoff fachgerecht nach – unter Berücksichtigung der bestehenden Anlagenbedingungen und gemäß Herstellerangaben. Ziel ist es, das Emulsionsverhältnis exakt einzustellen, um Leistung und Standzeit Ihrer Maschinen zu maximieren und gleichzeitig biologische Risiken zu minimieren. </p><p>✅ <strong>KSS-Komplettwechsel mit Systemreinigung</strong> <br/>Ist ein kompletter Austausch des Kühlschmierstoffes erforderlich – z. B. bei starker Verschmutzung, Geruchsbildung oder Bakterienbefall – übernehmen wir den gesamten Ablauf für Sie: </p><ul><li><strong>Entleerung</strong> des bestehenden Kühlschmierstoffsystems inklusive fachgerechter Entsorgung </li><li><strong>Reinigung der KSS-Behälter, Maschineninnenräume und aller relevanten Anlagenbereiche</strong> </li><li>Entfernung von Ablagerungen, Spänen, Ölresten und mikrobiologischen Rückständen </li><li><strong>Bodenreinigung</strong> im direkten Maschinenumfeld – für einen rundum hygienischen Arbeitsbereich </li><li><strong>Wiederbefüllung mit frischem KSS-Konzentrat</strong> nach Herstellervorgaben und anschließende Erstmessung zur Freigabe </li></ul><p>Diese Maßnahme verbessert nicht nur die Prozesssicherheit, sondern verlängert auch deutlich die Standzeit Ihrer Kühlschmierstoffe. </p><p>✅ <strong>Reinigung und Pflege Ihrer KSS-Tanks</strong> <br/>Auch außerhalb eines Komplettwechsels empfiehlt sich eine regelmäßige Reinigung der KSS-Tanks, um Späne, Ablagerungen und Rückstände zu entfernen, die den Umlauf des Kühlschmierstoffs behindern oder das System biologisch belasten können. Unsere Leistungen umfassen: </p><ul><li><strong>Mechanische und manuelle Reinigung</strong> der Tankinnenräume und schwer zugänglichen Bereiche </li><li><strong>Absaugung von Altmedien, Ölen und Ablagerungen</strong> </li><li>Entfernung von <strong>Fett, leicht anhaftenden Schmutzstoffen</strong> sowie Emulsionsresten </li><li><strong>Reinigung der Bodenflächen</strong> rund um die Maschine zur Minimierung von Rutschgefahren und Arbeitsrisiken </li></ul><p>Die Reinigung erfolgt schonend, effizient und unter Berücksichtigung aller sicherheitsrelevanten Aspekte. </p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image_border_radius": 12,
@@ -390,128 +390,25 @@
         "no_image_text_align": "left"
       }
     },
-    "about_section_v2_iGDKRR": {
-      "type": "about-section-v2",
-      "blocks": {
-        "feature_ejA4R8": {
-          "type": "feature",
-          "name": "Feature Punkt - Störungsbehebung",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Störungsbehebung",
-            "feature_description": "schnelle Reaktion"
-          }
-        },
-        "feature_pU7GTk": {
-          "type": "feature",
-          "name": "Feature Punkt - Inspektion und Funktionsprüfung",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Inspektion und Funktionsprüfung",
-            "feature_description": "auch Austausch von z.B. Pneupatikleitungen"
-          }
-        },
-        "feature_Lq9fUL": {
-          "type": "feature",
-          "name": "Feature Punkt - Öl-/ Wasserwechsel",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Öl-/ Wasserwechsel",
-            "feature_description": "auch Filterwechsel und KSS"
-          }
-        },
-        "feature_TtkwwL": {
-          "type": "feature",
-          "name": "Feature Punkt - Messen, Kalibrieren",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Messen, Kalibrieren",
-            "feature_description": "ausrichten und korrigieren"
-          }
-        }
-      },
-      "block_order": [
-        "feature_ejA4R8",
-        "feature_pU7GTk",
-        "feature_Lq9fUL",
-        "feature_TtkwwL"
-      ],
-      "name": "Über Uns (Layout) – Neu",
-      "settings": {
-        "layout_direction": "text_left",
-        "show_image": true,
-        "background_color": "#ffffff",
-        "section_padding_top": 25,
-        "section_padding_bottom": 80,
-        "title": "",
-        "title_richtext": "<p><strong>Unser Service für Sie</strong></p>",
-        "title_color": "#111827",
-        "title_font_size": 32,
-        "subtitle": "",
-        "subtitle_richtext": "",
-        "subtitle_color": "#374151",
-        "subtitle_font_size": 20,
-        "description": "<p>✅ <strong>Professionelle KSS-Messung </strong> <br/>Wir führen präzise Analysen Ihrer KSS-Systeme durch, um die Qualität und Sicherheit der eingesetzten Medien sicherzustellen. Dabei prüfen wir unter anderem: </p><ul><li><strong>Konzentration des Kühlschmierstoffs</strong> zur Sicherstellung einer optimalen Schmierleistung und Korrosionsschutzwirkung. </li><li><strong>pH-Wert</strong> zur Beurteilung biologischer Stabilität und möglicher mikrobiologischer Belastungen. </li><li><strong>Nitrit-Gehalt</strong> als Indikator für eine mögliche mikrobiologische Zersetzung des KSS. </li><li><strong>Wasserqualität</strong>, z. B. Härte und Leitfähigkeit, um Ablagerungen oder chemische Reaktionen vorzubeugen.</li></ul><p>Alle Messergebnisse werden <strong>transparent dokumentiert</strong> und auf Wunsch digital zur Verfügung gestellt – inklusive Handlungsempfehlungen bei Abweichungen vom Soll-Zustand. </p><p>✅ <strong>Fachgerechte KSS-Nachdosierung</strong> <br/>Sinkt die Konzentration Ihres KSS-Systems unter den optimalen Wert, dosieren wir den Kühlschmierstoff fachgerecht nach – unter Berücksichtigung der bestehenden Anlagenbedingungen und gemäß Herstellerangaben. Ziel ist es, das Emulsionsverhältnis exakt einzustellen, um Leistung und Standzeit Ihrer Maschinen zu maximieren und gleichzeitig biologische Risiken zu minimieren. </p><p> </p><p>✅ <strong>KSS-Komplettwechsel mit Systemreinigung</strong> </p><p>Ist ein kompletter Austausch des Kühlschmierstoffes erforderlich – z. B. bei starker Verschmutzung, Geruchsbildung oder Bakterienbefall – übernehmen wir den gesamten Ablauf für Sie: </p><ul><li><strong>Entleerung</strong> des bestehenden Kühlschmierstoffsystems inklusive fachgerechter Entsorgung </li><li><strong>Reinigung der KSS-Behälter, Maschineninnenräume und aller relevanten Anlagenbereiche</strong> </li><li>Entfernung von Ablagerungen, Spänen, Ölresten und mikrobiologischen Rückständen </li><li><strong>Bodenreinigung</strong> im direkten Maschinenumfeld – für einen rundum hygienischen Arbeitsbereich </li><li><strong>Wiederbefüllung mit frischem KSS-Konzentrat</strong> nach Herstellervorgaben und anschließende Erstmessung zur Freigabe </li></ul><p>Diese Maßnahme verbessert nicht nur die Prozesssicherheit, sondern verlängert auch deutlich die Standzeit Ihrer Kühlschmierstoffe. </p><p> </p><p>✅ <strong>Reinigung und Pflege Ihrer KSS-Tanks</strong> </p><p>Auch außerhalb eines Komplettwechsels empfiehlt sich eine regelmäßige Reinigung der KSS-Tanks, um Späne, Ablagerungen und Rückstände zu entfernen, die den Umlauf des Kühlschmierstoffs behindern oder das System biologisch belasten können. Unsere Leistungen umfassen: </p><ul><li><strong>Mechanische und manuelle Reinigung</strong> der Tankinnenräume und schwer zugänglichen Bereiche </li><li><strong>Absaugung von Altmedien, Ölen und Ablagerungen</strong> </li><li>Entfernung von <strong>Fett, leicht anhaftenden Schmutzstoffen</strong> sowie Emulsionsresten </li><li><strong>Reinigung der Bodenflächen</strong> rund um die Maschine zur Minimierung von Rutschgefahren und Arbeitsrisiken </li></ul><p>Die Reinigung erfolgt schonend, effizient und unter Berücksichtigung aller sicherheitsrelevanten Aspekte. </p>",
-        "text_color": "#6b7280",
-        "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_646891957.jpg",
-        "image_border_radius": 12,
-        "image_alt": "",
-        "image_max_width": 85,
-        "image_aspect_ratio": "auto",
-        "features_per_row": "2",
-        "icon_size": 32,
-        "icon_color": "#34d399",
-        "feature_title_color": "#111827"
-      }
-    },
     "about_section_v3_jQreNi": {
       "type": "about-section-v3",
-      "blocks": {
-        "feature_ynVUga": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung"
-          }
-        },
-        "feature_xpC98c": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung"
-          }
-        }
-      },
-      "block_order": [
-        "feature_ynVUga",
-        "feature_xpC98c"
-      ],
       "name": "Über Uns (Layout) – v3",
       "settings": {
         "image_position": "right",
         "image_vertical_align": "center",
         "show_image": true,
         "background_color": "#ffffff",
-        "section_padding_top": 80,
-        "section_padding_bottom": 80,
+        "section_padding_top": 25,
+        "section_padding_bottom": 25,
         "title": "",
-        "title_richtext": "<p><strong>KSS Service</strong></p>",
+        "title_richtext": "",
         "title_color": "#111827",
         "title_font_size": 32,
         "subtitle": "",
-        "subtitle_richtext": "",
+        "subtitle_richtext": "<p><strong>Warum ist ein TRGS-611-konformer KSS-Service wichtig?</strong></p>",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p><strong>Warum TRGS-611-konformer KSS-Service wichtig ist</strong> </p><p>Die TRGS 611 gibt klare Regelungen vor, um Gesundheitsrisiken durch Kühlschmierstoffe zu vermeiden. Besonders wichtig sind dabei: </p><ul><li><strong>Vermeidung mikrobiologischer Belastungen</strong>, die zu Hauterkrankungen oder Atemwegsproblemen führen können </li><li><strong>Verlängerung der KSS-Standzeit</strong> durch richtige Pflege und Überwachung </li><li><strong>Sicherstellung des Arbeitsschutzes</strong> für Mitarbeitende in der Fertigung </li><li><strong>Reduzierung von Maschinenstillständen</strong> durch frühzeitige Erkennung kritischer Zustände </li></ul><p> </p><p><strong>Ihr zuverlässiger Partner für KSS-Service</strong> </p><p>Ob Einzelmessung, turnusmäßige Wartung oder Komplettreinigung – wir kümmern uns um Ihre Kühlschmierstoffsysteme mit Fachkompetenz, modernster Messtechnik und einem hohen Qualitätsanspruch. </p><p>📞 Kontaktieren Sie uns jetzt für ein individuelles Angebot oder zur Terminvereinbarung – wir beraten Sie gerne persönlich! </p><p> <br/>✅ Reinigungsarbeiten, <br/>✅ Einfetten / Abschmieren,<br/>✅ Überprüfung von Einstellungen, <br/>✅ Erfassen von Messwerten, <br/>✅ Wechsel von Filterelementen etc.<br/><br/>Wir übernehmen die regelmäßige, fachgerechte Wartung Ihrer Anlagen für Sie.</p>",
+        "description": "<p>Die TRGS 611 gibt klare Regelungen vor, um Gesundheitsrisiken durch Kühlschmierstoffe zu vermeiden. Besonders wichtig sind dabei: </p><ul><li><strong>Vermeidung mikrobiologischer Belastungen</strong>, die zu Hauterkrankungen oder Atemwegsproblemen führen können </li><li><strong>Verlängerung der KSS-Standzeit</strong> durch richtige Pflege und Überwachung </li><li><strong>Sicherstellung des Arbeitsschutzes</strong> für Mitarbeitende in der Fertigung </li><li><strong>Reduzierung von Maschinenstillständen</strong> durch frühzeitige Erkennung kritischer Zustände </li></ul>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image_border_radius": 12,
@@ -534,7 +431,6 @@
     "leistungen_button_Didgg8",
     "about_section_v3_J4Vb8T",
     "about_section_v3_Qj98fY",
-    "about_section_v2_iGDKRR",
     "about_section_v3_jQreNi"
   ]
 }
