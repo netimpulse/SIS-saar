@@ -61,7 +61,7 @@
         "heading": "Dampfreinigung",
         "subheading": "",
         "button_label": "Jetzt Angebot anfordern",
-        "button_link": "",
+        "button_link": "shopify://pages/gebaudeservice-kontakt",
         "button_color": "#007acc",
         "button_text_color": "#ffffff",
         "button_radius": 4,
@@ -120,11 +120,11 @@
         "main_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
         "image_radius": 12,
         "image_position": "left",
-        "left_heading_html": "<p><strong>Zusätzliche Informationen</strong></p>",
+        "left_heading_html": "<p><strong>Mit Hitze porentief sauber</strong></p>",
         "left_heading_align": "right",
         "left_heading_italic": false,
         "left_heading_weight": "700",
-        "left_text": "<p>Eigener Textblock, der erscheint, wenn das Bild ausgeblendet ist.</p>",
+        "left_text": "<p>hygienisch und gut für besonders schwer zugängliche Stellen</p>",
         "bg_color": "#f6f8fb",
         "section_padding": 24,
         "points_title": "Vorteile",
@@ -137,6 +137,63 @@
         "fallback_bullet_color": "#2b6cb0"
       }
     },
+    "about_section_v3_tJMCnj": {
+      "type": "about-section-v3",
+      "blocks": {
+        "feature_wUHKYW": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "rückstandsfrei",
+            "feature_description": ""
+          }
+        },
+        "feature_XnEeHJ": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "geruchsneutral",
+            "feature_description": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_wUHKYW",
+        "feature_XnEeHJ"
+      ],
+      "name": "Über Uns (Layout) – v3",
+      "settings": {
+        "image_position": "right",
+        "image_vertical_align": "start",
+        "show_image": true,
+        "background_color": "#ffffff",
+        "section_padding_top": 30,
+        "section_padding_bottom": 30,
+        "title": "",
+        "title_richtext": "",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<p>In manchen Bereichen reicht eine normale Reinigung nicht aus. Wo Keime, Bakterien oder Viren ein Problem darstellen – etwa in Sanitäranlagen, Gemeinschaftsräumen oder nach besonderen Vorfällen – braucht es mehr. Unsere Desinfektions - und Dampfreinigungsverfahren kommen genau dann zum Einsatz, wenn es wirklich hygienisch sauber sein muss.<strong> </strong></p><p><strong>Desinfektion:</strong> gezielte Keimreduktion auf Oberflächen – z. B. in WC-Anlagen, Aufenthaltsräumen, Küchen, Sportstätten oder nach einem Krankheitsfall.</p><p><strong>Dampfreinigung:</strong> hygienische Tiefenreinigung ganz ohne aggressive Chemie – ideal für fugenreiche Oberflächen, Küchenbereiche, textile Böden oder schwer erreichbare Ecken.</p><p>Besonders bei erhöhten Hygieneanforderungen z. B. in Kindergärten, Fitnessstudios, Arztpraxen oder nach Wasserschäden, Schimmel- oder Schädlingsbefall sowie als Ergänzung zur klassischen Unterhaltsreinigung ist die Dampfreinigung und Desinfektion sinnvoll.</p><p><strong>Wie funktioniert’s?</strong><br/>Bei der <strong>Desinfektion</strong> setzen wir geprüfte, gelistete Mittel ein – je nach Bedarf als Wisch-, Sprüh- oder Vernebelungsverfahren. Die <strong>Dampfreinigung</strong> erfolgt mit Hochtemperaturdampf (über 150 °C), der Schmutz, Fett und Mikroorganismen löst – ganz ohne Chemie, rückstandsfrei und geruchsneutral.</p>",
+        "text_color": "#6b7280",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/iStock-611791236.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "4/3",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "left"
+      }
+    },
     "about_section_v2_hzwUtN": {
       "type": "about-section-v2",
       "blocks": {
@@ -145,8 +202,8 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
+            "feature_title": "antibakteriell",
+            "feature_description": ""
           }
         },
         "feature_GUifft": {
@@ -154,8 +211,8 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
+            "feature_title": "umweltverträglich",
+            "feature_description": ""
           }
         },
         "feature_LriAAc": {
@@ -163,25 +220,15 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        },
-        "feature_f3dHdj": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
+            "feature_title": "desinfizierend",
+            "feature_description": ""
           }
         }
       },
       "block_order": [
         "feature_UPmYTg",
         "feature_GUifft",
-        "feature_LriAAc",
-        "feature_f3dHdj"
+        "feature_LriAAc"
       ],
       "name": "Über Uns (Layout) – Neu - Dampfreinigung",
       "settings": {
@@ -198,7 +245,7 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Die Reinigung mit Heißdampf genießt die großen Vorteile einer porentiefen und besonders hygienischen Reinigung, besonders bei schwer zugänglichen Stellen. Diese besondere Reinigungskraft ergibt sich durch die Dampftemperaturen von ca. 180°C. Durch die hohen Temperaturen entsteht eine antibakterielle und desinfizierende Wirkung an der gereinigten Fläche. In der Regel ist anschließend kein weiterer Einsatz von chemischen Reinigungsmitteln notwendig, weshalb man bei dieser Methode von einem besonders umweltverträglichen Reinigungsverfahren sprechen kann.</p>",
+        "description": "<p>Die Reinigung mit Heißdampf genießt die großen Vorteile einer porentiefen und besonders hygienischen Reinigung, besonders bei schwer zugänglichen Stellen. Diese besondere Reinigungskraft ergibt sich durch die Dampftemperaturen von ca. 180°C. Durch die hohen Temperaturen entsteht eine antibakterielle und desinfizierende Wirkung an der gereinigten Fläche. In der Regel ist anschließend kein weiterer Einsatz von chemischen Reinigungsmitteln notwendig, weshalb man bei dieser Methode von einem besonders umweltverträglichen Reinigungsverfahren sprechen kann.</p><p>In manchen Bereichen reicht eine normale Reinigung nicht aus. Wo Keime, Bakterien oder Viren ein Problem darstellen – etwa in Sanitäranlagen, Gemeinschaftsräumen oder nach besonderen Vorfällen – braucht es mehr. Unsere Desinfektions - und Dampfreinigungsverfahren kommen genau dann zum Einsatz, wenn es wirklich hygienisch sauber sein muss.<strong> </strong></p><p><strong>Desinfektion:</strong> gezielte Keimreduktion auf Oberflächen – z. B. in WC-Anlagen, Aufenthaltsräumen, Küchen, Sportstätten oder nach einem Krankheitsfall.</p><p><strong>Dampfreinigung:</strong> hygienische Tiefenreinigung ganz ohne aggressive Chemie – ideal für fugenreiche Oberflächen, Küchenbereiche, textile Böden oder schwer erreichbare Ecken.</p><p>Besonders bei erhöhten Hygieneanforderungen z. B. in Kindergärten, Fitnessstudios, Arztpraxen oder nach Wasserschäden, Schimmel- oder Schädlingsbefall sowie als Ergänzung zur klassischen Unterhaltsreinigung ist die Dampfreinigung und Desinfektion sinnvoll.</p><p><strong>Wie funktioniert’s?</strong><br/>Bei der <strong>Desinfektion</strong> setzen wir geprüfte, gelistete Mittel ein – je nach Bedarf als Wisch-, Sprüh- oder Vernebelungsverfahren. Die <strong>Dampfreinigung</strong> erfolgt mit Hochtemperaturdampf (über 150 °C), der Schmutz, Fett und Mikroorganismen löst – ganz ohne Chemie, rückstandsfrei und geruchsneutral.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/iStock-611791236.jpg",
@@ -210,62 +257,6 @@
         "icon_size": 32,
         "icon_color": "#34d399",
         "feature_title_color": "#111827"
-      }
-    },
-    "about_section_v3_tJMCnj": {
-      "type": "about-section-v3",
-      "blocks": {
-        "feature_wUHKYW": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung"
-          }
-        },
-        "feature_XnEeHJ": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung"
-          }
-        }
-      },
-      "block_order": [
-        "feature_wUHKYW",
-        "feature_XnEeHJ"
-      ],
-      "name": "Über Uns (Layout) – v3",
-      "settings": {
-        "image_position": "right",
-        "image_vertical_align": "center",
-        "show_image": true,
-        "background_color": "#FFFFFF",
-        "section_padding_top": 30,
-        "section_padding_bottom": 80,
-        "title": "",
-        "title_richtext": "",
-        "title_color": "#111827",
-        "title_font_size": 32,
-        "subtitle": "",
-        "subtitle_richtext": "",
-        "subtitle_color": "#374151",
-        "subtitle_font_size": 20,
-        "description": "<p>In manchen Bereichen reicht eine normale Reinigung nicht aus. Wo Keime, Bakterien oder Viren ein Problem darstellen – etwa in Sanitäranlagen, Gemeinschaftsräumen oder nach besonderen Vorfällen – braucht es mehr als Eimer und Lappen. Unsere Desinfektions- und Dampfreinigungsverfahren kommen genau dann zum Einsatz, wenn es wirklich hygienisch sauber sein muss.<strong> <br/><br/>Was bedeutet das genau?</strong></p><ul><li><strong>Desinfektion:</strong> gezielte Keimreduktion auf Oberflächen – z. B. in WC-Anlagen, Aufenthaltsräumen, Küchen, Sportstätten oder nach einem Krankheitsfall.</li><li><strong>Dampfreinigung:</strong> hygienische Tiefenreinigung ganz ohne aggressive Chemie – ideal für fugenreiche Oberflächen, Küchenbereiche, textile Böden oder schwer erreichbare Ecken.</li></ul><p><strong>Wann macht das Sinn?</strong></p><ul><li>Bei erhöhten Hygieneanforderungen (z. B. in Kindergärten, Fitnessstudios, Arztpraxen)</li><li>Nach Wasserschäden, Schimmel oder Schädlingsbefall</li><li>Bei saisonalen Grippewellen oder anderen Infektionsrisiken</li><li>Als Ergänzung zur klassischen Unterhaltsreinigung</li></ul><p><strong>Wie funktioniert’s?</strong><br/>Bei der <strong>Desinfektion</strong> setzen wir geprüfte, gelistete Mittel ein – je nach Bedarf als Wisch-, Sprüh- oder Vernebelungsverfahren.<br/><br/>Die <strong>Dampfreinigung</strong> erfolgt mit Hochtemperaturdampf (über 150 °C), der Schmutz, Fett und Mikroorganismen löst – ganz ohne Chemie, rückstandsfrei und geruchsneutral.</p><p><strong>Typisch für uns:</strong><br/>Wir arbeiten nicht einfach „drauflos“, sondern analysieren vorher, welche Methode sinnvoll ist – und wo. Dabei berücksichtigen wir sowohl bauliche Gegebenheiten als auch Materialverträglichkeit und Ihre betrieblichen Abläufe.</p>",
-        "text_color": "#6B7280",
-        "text_font_size": 18,
-        "image_border_radius": 12,
-        "image_alt": "",
-        "image_max_width": 85,
-        "image_aspect_ratio": "4/3",
-        "features_per_row": "2",
-        "icon_size": 32,
-        "icon_color": "#34D399",
-        "feature_title_color": "#111827",
-        "no_image_text_align": "left"
       }
     },
     "custom_cta_block_Y6hmWD": {
@@ -582,8 +573,8 @@
     "main",
     "hero_building_section_xFPFdb",
     "leistung_showcase_RzbwLn",
-    "about_section_v2_hzwUtN",
     "about_section_v3_tJMCnj",
+    "about_section_v2_hzwUtN",
     "custom_cta_block_Y6hmWD",
     "sis_single_footer_N4n9t3",
     "sis_footer_neu_qKpJ9Q",
