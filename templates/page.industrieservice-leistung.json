@@ -467,8 +467,8 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_917940.jpg",
             "title_html": "<p><strong>Oldtimer Restauration</strong></p>",
-            "text_html": "<p>Kurze Beschreibung hier.</p>",
-            "keywords": "Büro, täglich, flexibel",
+            "text_html": "<p>Wir arbeiten mit erfahrenen PArtnern um Ihren Oldtimer wieder fit zu machen</p>",
+            "keywords": "Strahlservice, Lackierarbeiten, flexibel",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/sis-oldtimerrestauration"
           }
