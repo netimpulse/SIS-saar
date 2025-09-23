@@ -116,7 +116,7 @@
         "stat_rWGNy9": {
           "type": "stat",
           "settings": {
-            "emoji": "✅",
+            "emoji": "🌳",
             "title": "Regional verwurzelt – überregional stark",
             "subtitle": "Wir stehen für saarländische Verlässlichkeit mit professionellem Anspruch.",
             "featured": false,
@@ -126,7 +126,7 @@
         "stat_YDx4Qn": {
           "type": "stat",
           "settings": {
-            "emoji": "✅",
+            "emoji": "⭐",
             "title": "Qualität durch Leidenschaft",
             "subtitle": "Sauberkeit ist für uns mehr als ein Ergebnis – es ist unser Anspruch an Perfektion.",
             "featured": false,
@@ -136,7 +136,7 @@
         "stat_HYnD7y": {
           "type": "stat",
           "settings": {
-            "emoji": "✅",
+            "emoji": "👤",
             "title": "Menschen im Mittelpunkt",
             "subtitle": "Schulung, Sicherheit und Wertschätzung sind für uns selbstverständlich.",
             "featured": false,
@@ -176,9 +176,9 @@
       ],
       "name": "Erfahrungen • Stats",
       "settings": {
-        "kicker": "Über 15 Jahre Erfahrung",
+        "kicker": "Über 20 Jahre Erfahrung",
         "heading": "<p>Unsere Werte</p>",
-        "richtext": "<p>Als familiengeführtes Unternehmen legen wir Wert auf persönlichen Service und langfristige Kundenbeziehungen. Unser Team von über 50 qualifizierten Mitarbeitenden sorgt täglich dafür, dass mehr als 200 zufriedene Kund:innen auf unsere Zuverlässigkeit vertrauen.</p>",
+        "richtext": "<p>Als familiengeführtes Unternehmen legen wir Wert auf persönlichen Service und langfristige Kundenbeziehungen. Unser Team von über 150 qualifizierten Mitarbeitenden sorgt täglich dafür, dass mehr als 200 zufriedene KundInnen auf unsere Zuverlässigkeit vertrauen.</p>",
         "btn_label": "Mehr über uns",
         "btn_link": "",
         "btn_newtab": false,
@@ -322,8 +322,8 @@
         "image_vertical_align": "start",
         "show_image": false,
         "background_color": "#ffffff",
-        "section_padding_top": 80,
-        "section_padding_bottom": 80,
+        "section_padding_top": 20,
+        "section_padding_bottom": 30,
         "title": "Über uns",
         "title_richtext": "<p><strong>Über uns</strong></p>",
         "title_color": "#111827",
@@ -415,8 +415,8 @@
         "image_vertical_align": "start",
         "show_image": true,
         "background_color": "#f3f3f3",
-        "section_padding_top": 80,
-        "section_padding_bottom": 80,
+        "section_padding_top": 20,
+        "section_padding_bottom": 40,
         "title": "",
         "title_richtext": "<p><strong>Warum SIS<br/>Saar-Industrie-Service GmbH?</strong></p>",
         "title_color": "#111827",
@@ -900,11 +900,11 @@
       ],
       "name": "Kachelview",
       "settings": {
-        "bg_color": "#F3F8F5",
-        "card_bg": "#FFFFFF",
+        "bg_color": "#f3f8f5",
+        "card_bg": "#ffffff",
         "card_radius": 16,
         "text_color": "#111111",
-        "accent_color": "#22C55E"
+        "accent_color": "#22c55e"
       }
     }
   },
