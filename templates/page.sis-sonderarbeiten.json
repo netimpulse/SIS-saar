@@ -24,7 +24,7 @@
         "back_text_color": "#374151",
         "back_hover_color": "#4ade80",
         "back_font_size": 16,
-        "logo": "shopify://shop_images/logo_Industrieservice_exact_v2.png",
+        "logo": "shopify://shop_images/2025-SIS.png",
         "logo_text": "Mein Shop",
         "logo_color": "#1e40af",
         "logo_font_size": 24,
@@ -61,7 +61,7 @@
         "heading": "Sonderarbeiten",
         "subheading": "",
         "button_label": "Jetzt Angebot anfordern",
-        "button_link": "",
+        "button_link": "shopify://pages/industrieservice-kontakt",
         "button_color": "#007acc",
         "button_text_color": "#ffffff",
         "button_radius": 4,
@@ -347,25 +347,6 @@
     "custom_cta_block_Y6hmWD": {
       "type": "custom-cta-block",
       "blocks": {
-        "button_LM9n93": {
-          "type": "button",
-          "settings": {
-            "label": "<p>Kostenlose Beratung</p>",
-            "link": "",
-            "variant": "solid",
-            "text_color": "#ffffff",
-            "bg_color": "#0b132a",
-            "border_color": "#0b132a",
-            "hover_bg": "#111827",
-            "hover_text": "#ffffff",
-            "radius": 12,
-            "padding_x": 24,
-            "padding_y": 14,
-            "bold": true,
-            "offset_x": 0,
-            "offset_y": 0
-          }
-        },
         "button_hfEK7p": {
           "type": "button",
           "settings": {
@@ -387,12 +368,11 @@
         }
       },
       "block_order": [
-        "button_LM9n93",
         "button_hfEK7p"
       ],
       "name": "Custom CTA Block",
       "settings": {
-        "heading": "<p><strong>Bereit für professionellen Gebäudeservice?</strong></p>",
+        "heading": "<p><strong>Bereit für professionellen Service?</strong></p>",
         "heading_size": 40,
         "heading_bold": true,
         "heading_color": "#0f172a",
