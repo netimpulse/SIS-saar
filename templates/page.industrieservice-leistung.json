@@ -431,8 +431,8 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_547239928.jpg",
             "title_html": "<p><strong>(Hallen-) Bodenreinigung</strong></p>",
-            "text_html": "<p>Unsere professionelle Bodenreinigung schützt vor Verschleiß, erhöht die Sicherheit und senkt langfristig Kosten. Durch den Einsatz moderner Reinigungstechniken und Maschinen sowie passender Versiegelungen lassen sich selbst stark beanspruchte Böden jahrelang erhalten – ohne teuren Austausch.<br/><br/></p><p>Industrie und Produktion, Lebensmittelindustrie, Werkstatt und Kfz-Betrieb, öffentliche Gebäude und Gesundheitseinrichtungen, Gastronomie und Hotellerie, </p>",
-            "keywords": "Büro, täglich, flexibel",
+            "text_html": "<p>Unsere professionelle Bodenreinigung schützt vor Verschleiß, erhöht die Sicherheit und senkt langfristig Kosten. Durch den Einsatz moderner Reinigungstechniken und Maschinen sowie passender Versiegelungen lassen sich selbst stark beanspruchte Böden jahrelang erhalten – ohne teuren Austausch.</p>",
+            "keywords": "Industrie, Produktion, Lebensmittelindustrie, öffentliche Gebäude, Gesundheitseinrichtungen",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/hallenbodenreinigung"
           }

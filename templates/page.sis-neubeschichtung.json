@@ -87,7 +87,7 @@
         "showcase_item_N7BEna": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>Grundierung</p>"
+            "text": "<p>Grundreinigung</p>"
           }
         },
         "showcase_item_FaFVXQ": {
@@ -95,12 +95,19 @@
           "settings": {
             "text": "<p>Versiegelung</p>"
           }
+        },
+        "showcase_item_W6BXCB": {
+          "type": "showcase_item",
+          "settings": {
+            "text": "<p>Gumminoppenbelag</p>"
+          }
         }
       },
       "block_order": [
         "showcase_item_meLqq6",
         "showcase_item_N7BEna",
-        "showcase_item_FaFVXQ"
+        "showcase_item_FaFVXQ",
+        "showcase_item_W6BXCB"
       ],
       "name": "Leistung Showcase",
       "settings": {
