@@ -81,33 +81,26 @@
         "showcase_item_meLqq6": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Lackarbeiten</p>"
           }
         },
         "showcase_item_N7BEna": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Strahlservice</p>"
           }
         },
         "showcase_item_FaFVXQ": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
-          }
-        },
-        "showcase_item_xdGxW3": {
-          "type": "showcase_item",
-          "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Motor- und Getriebe</p>"
           }
         }
       },
       "block_order": [
         "showcase_item_meLqq6",
         "showcase_item_N7BEna",
-        "showcase_item_FaFVXQ",
-        "showcase_item_xdGxW3"
+        "showcase_item_FaFVXQ"
       ],
       "name": "Leistung Showcase",
       "settings": {
@@ -124,7 +117,7 @@
         "left_heading_align": "right",
         "left_heading_italic": false,
         "left_heading_weight": "700",
-        "left_text": "<p>Eigener Textblock, der erscheint, wenn das Bild ausgeblendet ist.</p>",
+        "left_text": "<p>mit Präzision, Fachwissen und Liebe zum Detail</p>",
         "bg_color": "#f6f8fb",
         "section_padding": 24,
         "points_title": "Unsere Dienstleistungen:",
