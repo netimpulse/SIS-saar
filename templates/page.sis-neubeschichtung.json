@@ -219,69 +219,24 @@
     },
     "about_section_v2_t6LUfa": {
       "type": "about-section-v2",
-      "blocks": {
-        "feature_QTXzFG": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        },
-        "feature_T8rFDh": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        },
-        "feature_r3pyKm": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        },
-        "feature_yYHbXN": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        }
-      },
-      "block_order": [
-        "feature_QTXzFG",
-        "feature_T8rFDh",
-        "feature_r3pyKm",
-        "feature_yYHbXN"
-      ],
       "name": "Über Uns (Layout) – Neu",
       "settings": {
         "layout_direction": "text_left",
         "show_image": true,
         "background_color": "#ffffff",
-        "section_padding_top": 80,
-        "section_padding_bottom": 80,
-        "title": "Über uns",
-        "title_richtext": "<p><strong>Über uns</strong></p>",
+        "section_padding_top": 35,
+        "section_padding_bottom": 35,
+        "title": "",
+        "title_richtext": "<p><strong>Warum mit uns?</strong></p>",
         "title_color": "#111827",
         "title_font_size": 32,
-        "subtitle": "Unsere Mission",
-        "subtitle_richtext": "<p>Unsere Mission</p>",
+        "subtitle": "",
+        "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Wir sind SIS Saar - ein innovatives Unternehmen mit zwei spezialisierten Geschäftsbereichen. Seit über zwei Jahrzehnten stehen wir für zuverlässige und hochwertige Serviceleistungen in der Region.</p><p>Unser Erfolgsrezept liegt in der Kombination aus langjähriger Erfahrung, modernster Technik und einem motivierten Team von Fachkräften. Jeder Mitarbeiter trägt dazu bei, dass wir unseren Kunden stets erstklassige Lösungen anbieten können.</p>",
+        "description": "<p>Mit <strong>über 20 Jahren Erfahrung</strong> in der<strong> Industrie- und Gebäudereinigung</strong> wissen wir, worauf es ankommt: </p><p>✔ <strong>Individuelle Beratung</strong> - Wir analysieren Ihren Boden und empfehlen das <strong>passende System</strong>.<br/>✔ <strong>Schnelle Umsetzung</strong> – Minimale Betriebsunterbrechung (oft <strong>innerhalb von 24–48 Std. nutzbar</strong>). <br/>✔ <strong>Langfristige Kostenersparnis</strong> – Kein teurer Bodenaustausch, <strong>bis zu 70 % günstiger</strong> als Neuböden. <br/>✔ <strong>Zertifizierte Qualität</strong> – Wir arbeiten mit <strong>Markenprodukten</strong> und garantieren<strong> fachgerechte Verarbeitung</strong>.</p><p> </p><p><strong>Welche Lösung passt zu Ihnen? Wir beraten Sie gerne!</strong></p><p>Sie sind unsicher, welches System für Ihren Boden das richtige ist? <strong>Wir helfen Ihnen bei der Entscheidung!</strong></p><p></p><p><strong>Ihre Investition in einen langlebigen Boden beginnt hier – wir freuen uns auf Ihre Anfrage!</strong></p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_254519980.jpg",
         "image_border_radius": 12,
         "image_alt": "",
         "image_max_width": 85,
