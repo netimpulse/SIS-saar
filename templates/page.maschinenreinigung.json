@@ -250,65 +250,6 @@
         "no_image_text_align": "left"
       }
     },
-    "multirow_gcX3ch": {
-      "type": "multirow",
-      "blocks": {
-        "row_GRnRiK": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/shutterstock_262821758.jpg",
-            "caption": "Bildtext",
-            "heading": "Reihe",
-            "text": "<p>Kombiniere Text mit einem Bild, um den Fokus auf dein Produkt, deine Kollektion oder deinen Blog-Beitrag zu richten. Du kannst außerdem weitere Details über die Verfügbarkeit oder den Stil und sogar eine Bewertung hinzufügen.</p>",
-            "button_label": "Schaltflächenbeschriftung",
-            "button_link": ""
-          }
-        },
-        "row_DFiREP": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/shutterstock_726781549.jpg",
-            "caption": "Bildtext",
-            "heading": "Reihe",
-            "text": "<p>Kombiniere Text mit einem Bild, um den Fokus auf dein Produkt, deine Kollektion oder deinen Blog-Beitrag zu richten. Du kannst außerdem weitere Details über die Verfügbarkeit oder den Stil und sogar eine Bewertung hinzufügen.</p>",
-            "button_label": "Schaltflächenbeschriftung",
-            "button_link": ""
-          }
-        },
-        "row_UADn3W": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/shutterstock_328419737.jpg",
-            "caption": "Bildtext",
-            "heading": "Reihe",
-            "text": "<p>Kombiniere Text mit einem Bild, um den Fokus auf dein Produkt, deine Kollektion oder deinen Blog-Beitrag zu richten. Du kannst außerdem weitere Details über die Verfügbarkeit oder den Stil und sogar eine Bewertung hinzufügen.</p>",
-            "button_label": "Schaltflächenbeschriftung",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "row_GRnRiK",
-        "row_DFiREP",
-        "row_UADn3W"
-      ],
-      "name": "t:sections.multirow.presets.name",
-      "settings": {
-        "image_height": "medium",
-        "desktop_image_width": "medium",
-        "image_layout": "alternate-left",
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "custom_cta_block_CeErgt": {
       "type": "custom-cta-block",
       "blocks": {
@@ -625,7 +566,6 @@
     "leistung_showcase_wAGpyg",
     "about_section_v3_zmQLa4",
     "about_section_v3_xGiwpV",
-    "multirow_gcX3ch",
     "custom_cta_block_CeErgt",
     "sis_single_footer_N4n9t3",
     "sis_footer_neu_6MxmJM",
