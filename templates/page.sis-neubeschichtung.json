@@ -81,33 +81,26 @@
         "showcase_item_meLqq6": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Tiefenreinigung</p>"
           }
         },
         "showcase_item_N7BEna": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Grundierung</p>"
           }
         },
         "showcase_item_FaFVXQ": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
-          }
-        },
-        "showcase_item_xdGxW3": {
-          "type": "showcase_item",
-          "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Versiegelung</p>"
           }
         }
       },
       "block_order": [
         "showcase_item_meLqq6",
         "showcase_item_N7BEna",
-        "showcase_item_FaFVXQ",
-        "showcase_item_xdGxW3"
+        "showcase_item_FaFVXQ"
       ],
       "name": "Leistung Showcase",
       "settings": {
@@ -120,11 +113,11 @@
         "main_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
         "image_radius": 12,
         "image_position": "left",
-        "left_heading_html": "<p><strong>Zusätzliche Informationen</strong></p>",
+        "left_heading_html": "<p><strong>Bodenversieglung und - Beschichtung</strong></p>",
         "left_heading_align": "right",
         "left_heading_italic": false,
         "left_heading_weight": "700",
-        "left_text": "<p>Eigener Textblock, der erscheint, wenn das Bild ausgeblendet ist.</p>",
+        "left_text": "<p>für abgenutzte Betonböden, empfindliche Natursteinflächen, stark beanspruchte Lagerhallen und mehr.</p>",
         "bg_color": "#f6f8fb",
         "section_padding": 24,
         "points_title": "Unsere Dienstleistungen:",
@@ -139,69 +132,25 @@
     },
     "about_section_v2_b8VKY4": {
       "type": "about-section-v2",
-      "blocks": {
-        "feature_aMnJcL": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        },
-        "feature_fjemdh": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        },
-        "feature_TjJGAt": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        },
-        "feature_PAdgey": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        }
-      },
-      "block_order": [
-        "feature_aMnJcL",
-        "feature_fjemdh",
-        "feature_TjJGAt",
-        "feature_PAdgey"
-      ],
       "name": "Über Uns (Layout) – Neu",
       "settings": {
         "layout_direction": "text_left",
         "show_image": true,
         "background_color": "#ffffff",
-        "section_padding_top": 80,
-        "section_padding_bottom": 80,
+        "section_padding_top": 20,
+        "section_padding_bottom": 25,
         "title": "",
-        "title_richtext": "<p><strong>Bodenversiegelung & Beschichtung</strong></p>",
+        "title_richtext": "",
         "title_color": "#111827",
         "title_font_size": 32,
         "subtitle": "",
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Ob abgenutzte Betonböden, empfindliche Natursteinflächen oder stark beanspruchte Lagerhallen – mit unserer professionellen Bodenreinigung, Versiegelung und Beschichtung verlängern wir die Lebensdauer Ihrer Böden kostengünstig, nachhaltig und ohne aufwendigen Austausch.</p>",
+        "description": "<p>Ob abgenutzte Betonböden, empfindliche Natursteinflächen oder stark beanspruchte Lagerhallen – mit unserer professionellen Bodenreinigung, Versiegelung und Beschichtung verlängern wir die Lebensdauer Ihrer Böden kostengünstig, nachhaltig und ohne aufwendigen Austausch. Wir bieten <strong>zwei Systeme</strong> an, die je nach Anforderung gewählt werden können:</p><ol><li><em><strong>Bona Resilient System</strong></em><em> </em>– Die <strong>elastische Premium-Lösung</strong> für extreme Belastungen.</li><li><strong>Klassische Bodenversiegelung & -beschichtung</strong> – <strong>Bewährte Systeme</strong> für Standardanforderungen.</li></ol>",
         "text_color": "#6b7280",
         "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_731614684.jpg",
+        "image": "shopify://shop_images/shutterstock_129427808.jpg",
         "image_border_radius": 12,
         "image_alt": "",
         "image_max_width": 85,
@@ -241,23 +190,22 @@
       "name": "Über Uns (Layout) – v3",
       "settings": {
         "image_position": "bottom",
-        "image_vertical_align": "center",
+        "image_vertical_align": "start",
         "show_image": true,
         "background_color": "#ffffff",
-        "section_padding_top": 80,
-        "section_padding_bottom": 80,
-        "title": "Über uns",
-        "title_richtext": "<p><strong>Über uns</strong></p>",
+        "section_padding_top": 30,
+        "section_padding_bottom": 30,
+        "title": "",
+        "title_richtext": "",
         "title_color": "#111827",
         "title_font_size": 32,
-        "subtitle": "Unsere Mission",
-        "subtitle_richtext": "<p>Unsere Mission</p>",
+        "subtitle": "",
+        "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Wir sind SIS Saar – ein innovatives Unternehmen …</p>",
+        "description": "<p><strong>1. Bona Resilient System – Elastisch, rissüberbrückend und extrem belastbar</strong></p><p><strong>Ideal für: <br/></strong>✔ <strong>Böden mit Rissen oder Bewegungen</strong> (z. B. in Altbauten, Produktionshallen). <br/>✔ <strong>Hohe mechanische Belastung</strong> (Gabelstapler, schwere Maschinen, Vibrationen). <br/>✔ <strong>Chemische Beständigkeit</strong> (Öle, Säuren, Reinigungsmittel in Werkstätten oder Lebensmittelbetrieben). <br/>✔ <strong>Nachhaltige Alternative zum Bodenaustausch</strong> – spart <strong>bis zu 50 % der Kosten</strong>.</p><p><strong>Einsatzbereiche und  geeignete Böden</strong></p><p><strong>Bodenart: Beton<br/></strong>typische Probleme: Risse, Staubbildung, Abrieb<br/>Lösung mit Bona Resillient: Elastische Versiegelung, rissüberbrückend (bis 0,5 mm)<br/>Branchenbeispiele: Lagerhallen, Logistikzentren, Werkstätten</p><p><strong>Estrich<br/></strong>Unebenheiten, mangelnde Haltbarkeit<br/>Glatte, hochbelastbare Oberfläche<br/>Ausstellungsflächen, Produktionsbereiche</p><p><strong>Naturstein<br/></strong>Porosität, Fleckenempfindlichkeit<br/>Schutz vor Feuchtigkeit & Chemikalien<br/>Foyers, Gastronomie, öffentliche Gebäude</p><p><strong>Altböden<br/></strong>Sanierungsbedarf, teurer Austausch<br/>Überarbeitung statt Neubau – ressourcenschonend<br/>Bestandsgebäude, Denkmalschutz</p><p><strong>Ablauf und Vorteile im Vergleich zu Neuböden<br/></strong>✅ <strong>Schnell & kostengünstig</strong> – Kein Abriss, keine Entsorgungskosten. <br/>✅ <strong>Langlebig</strong> – <strong>10–15 Jahre Haltbarkeit</strong> (bei Standard-Beschichtungen: 5–10 Jahre). <br/>✅ <strong>Nachhaltig</strong> – <strong>Kein Materialverschwendung</strong>, geringerer CO₂-Fußabdruck. <br/>✅ <strong>Flexibel</strong> – Passt sich Untergrundbewegungen an, <strong>reißt nicht</strong>.</p><p></p><p><strong>2. Klassische Bodenversiegelung und -beschichtung – Bewährte Lösungen für Standardanforderungen</strong></p><p>Falls keine extremen Belastungen vorliegen, bieten wir <strong>hochwertige Alternativen</strong> mit <strong>Epoxidharz, Polyurethan (PU) oder Acryl</strong> – individuell auf Ihren Boden abgestimmt.</p><p><strong>Welches System für welchen Boden?</strong></p><p><strong>Epoxidharz<br/></strong>Chemieindustrie, Lebensmittelbetriebe<br/>Chemikalienbeständig, nahtlos, hygienisch<br/>8–12 Jahre</p><p><strong>Polyurethan (PU)</strong><br/>Lagerhallen, Verkehrsflächen<br/>Abriebfest, UV-beständig, elastisch<br/>7–10 Jahre</p><p><strong>Acryl<br/></strong>Leichte Belastung (z.B. Büros, Showrooms)<br/>Schnell trocknend, kostengünstig<br/>3–5 Jahre</p><p><strong>Silikat-Versiegelung<br/></strong>Mineralische Böden (Beton, Naturstein)<br/>Diffusionsoffen, für feuchte Räume geeignet<br/>5–8 Jahre</p><p><strong>Ablauf der klassischen Beschichtung<br/>Reinigung & Vorbereitung<br/></strong>- Hochdruckreinigung, Schleifen, Entfetten.<br/>- Risssanierung (falls nötig).</p><p><strong>Grundierung  <br/></strong>Haftvermittler für bessere Verbindung.</p><p><strong>Beschichtung (1–3 Schichten) <br/></strong>Farbige Gestaltungsmöglichkeiten (RAL-Töne, Sicherheitsmarkierungen).</p><p><strong>Versiegelung und Aushärtung </strong></p><ul><li>Schutzschicht für zusätzliche Haltbarkeit.</li></ul><p></p><p></p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_1050808721.jpg",
         "image_border_radius": 12,
         "image_alt": "",
         "image_max_width": 85,
