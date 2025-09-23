@@ -81,31 +81,24 @@
         "showcase_item_ggGhAP": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
-          }
-        },
-        "showcase_item_pJwFdE": {
-          "type": "showcase_item",
-          "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Feucht - und Trockenreinigung</p>"
           }
         },
         "showcase_item_yzJtU7": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Einsatz Maschinen</p>"
           }
         },
         "showcase_item_34cJgQ": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Versiegelung</p>"
           }
         }
       },
       "block_order": [
         "showcase_item_ggGhAP",
-        "showcase_item_pJwFdE",
         "showcase_item_yzJtU7",
         "showcase_item_34cJgQ"
       ],
@@ -145,8 +138,8 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
+            "feature_title": "Nass - und Trockensauger",
+            "feature_description": ""
           }
         },
         "feature_D8kPPw": {
@@ -154,8 +147,8 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
+            "feature_title": "Aufsitzputzmaschine",
+            "feature_description": ""
           }
         },
         "feature_QEgtLt": {
@@ -201,7 +194,7 @@
         "description": "<p>Unsere professionelle Bodenreinigung schützt vor Verschleiß, erhöht die Sicherheit und senkt langfristig Kosten. Durch den Einsatz moderner Reinigungstechniken und Maschinen sowie passender Versiegelungen lassen sich selbst stark beanspruchte Böden jahrelang erhalten – ohne teuren Austausch.<br/></p><p>Branchenbeispiele: Industrie- und Produktion, Lebensmittelindustrie, Werkstatt und Kfz-Betrieb, öffentliche Gebäude und Gesundheitseinrichtungen, Gastronomie und Hotellerie, etc.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_370492946.jpg",
+        "image": "shopify://shop_images/iStock-521231977.jpg",
         "image_border_radius": 12,
         "image_alt": "",
         "image_max_width": 85,
