@@ -81,33 +81,26 @@
         "showcase_item_XBpUEd": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Grünschnitt und Beetpflege</p>"
           }
         },
         "showcase_item_TUTxLE": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Laubarbeiten</p>"
           }
         },
         "showcase_item_dDDewh": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
-          }
-        },
-        "showcase_item_qyzi4A": {
-          "type": "showcase_item",
-          "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Entsorgung</p>"
           }
         }
       },
       "block_order": [
         "showcase_item_XBpUEd",
         "showcase_item_TUTxLE",
-        "showcase_item_dDDewh",
-        "showcase_item_qyzi4A"
+        "showcase_item_dDDewh"
       ],
       "name": "Leistung Showcase",
       "settings": {
