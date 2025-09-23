@@ -61,7 +61,7 @@
         "heading": "Tatortreinigung",
         "subheading": "",
         "button_label": "Jetzt Angebot anfordern",
-        "button_link": "",
+        "button_link": "shopify://pages/gebaudeservice-kontakt",
         "button_color": "#007acc",
         "button_text_color": "#ffffff",
         "button_radius": 4,
@@ -73,6 +73,67 @@
         "font_bold": true,
         "font_italic": false,
         "text_alignment": "left"
+      }
+    },
+    "leistung_showcase_CLVhGT": {
+      "type": "leistung-showcase",
+      "blocks": {
+        "showcase_item_Ny3RFQ": {
+          "type": "showcase_item",
+          "settings": {
+            "text": "<p>Ferienhaus</p>"
+          }
+        },
+        "showcase_item_R8ggtM": {
+          "type": "showcase_item",
+          "settings": {
+            "text": "<p>Campingplatz</p>"
+          }
+        },
+        "showcase_item_KnADPm": {
+          "type": "showcase_item",
+          "settings": {
+            "text": "<p>Freizeitpark</p>"
+          }
+        },
+        "showcase_item_48YmyR": {
+          "type": "showcase_item",
+          "settings": {
+            "text": "<p>Gastro und Kiosk</p>"
+          }
+        }
+      },
+      "block_order": [
+        "showcase_item_Ny3RFQ",
+        "showcase_item_R8ggtM",
+        "showcase_item_KnADPm",
+        "showcase_item_48YmyR"
+      ],
+      "name": "Leistung Showcase",
+      "settings": {
+        "heading_html": "",
+        "heading_align": "left",
+        "heading_italic": false,
+        "heading_weight": "700",
+        "subtext": "",
+        "show_image": false,
+        "image_radius": 12,
+        "image_position": "left",
+        "left_heading_html": "<p><strong>Sanierung statt Austausch</strong></p>",
+        "left_heading_align": "right",
+        "left_heading_italic": false,
+        "left_heading_weight": "700",
+        "left_text": "<p>Bodenbeläge müssen viel aushalten: tägliche Nutzung, Nässe, Schmutz, Möbel, Absätze, Rollen. Daher ist es langfristig günstiger den Boden zu schützen als diesen zu ersetzen.</p>",
+        "bg_color": "#f6f8fb",
+        "section_padding": 24,
+        "points_title": "Unsere Dienstleistungen:",
+        "points_as_card": true,
+        "points_bg": "#ffffff",
+        "points_border": "#e5e8ee",
+        "points_btn_label": "Jetzt anfragen",
+        "points_btn_url": "shopify://pages/allgemeiner-kontakt",
+        "points_btn_align": "left",
+        "fallback_bullet_color": "#2b6cb0"
       }
     },
     "about_section_v3_WhenwC": {
@@ -129,6 +190,53 @@
         "icon_color": "#34D399",
         "feature_title_color": "#111827",
         "no_image_text_align": "left"
+      }
+    },
+    "custom_cta_block_3B3dwT": {
+      "type": "custom-cta-block",
+      "blocks": {
+        "button_7LnNJK": {
+          "type": "button",
+          "settings": {
+            "label": "<p>Kostenlose Beratung</p>",
+            "link": "",
+            "variant": "solid",
+            "text_color": "#ffffff",
+            "bg_color": "#0b132a",
+            "border_color": "#0b132a",
+            "hover_bg": "#111827",
+            "hover_text": "#ffffff",
+            "radius": 12,
+            "padding_x": 24,
+            "padding_y": 14,
+            "bold": true,
+            "offset_x": 0,
+            "offset_y": 0
+          }
+        }
+      },
+      "block_order": [
+        "button_7LnNJK"
+      ],
+      "name": "Custom CTA Block",
+      "settings": {
+        "heading": "<p><strong>Bereit für professionellen Service?</strong></p>",
+        "heading_size": 40,
+        "heading_bold": true,
+        "heading_color": "#0f172a",
+        "heading_font": "inherit",
+        "subheading": "<p>Kontaktieren Sie uns für ein unverbindliches Beratungsgespräch und ein individuelles Angebot für Ihre Anforderungen.</p>",
+        "sub_size": 20,
+        "sub_bold": false,
+        "sub_color": "#475569",
+        "sub_font": "inherit",
+        "align": "center",
+        "content_max": 1000,
+        "pad_top": 64,
+        "pad_bottom": 64,
+        "use_gradient_bg": true,
+        "bg_gradient": "linear-gradient(180deg, rgba(241, 245, 249, 0.6), rgba(241, 245, 249, 0) 100%)",
+        "buttons_gap": 16
       }
     },
     "sis_footer_neu_idwbgf": {
@@ -250,7 +358,9 @@
     "sticky_header_mWiXqk",
     "main",
     "hero_building_section_xFPFdb",
+    "leistung_showcase_CLVhGT",
     "about_section_v3_WhenwC",
+    "custom_cta_block_3B3dwT",
     "sis_footer_neu_idwbgf"
   ]
 }
