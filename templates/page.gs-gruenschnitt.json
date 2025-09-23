@@ -148,20 +148,10 @@
             "feature_title": "regelmäßig, saisonal oder auf Abruf",
             "feature_description": ""
           }
-        },
-        "feature_pARiQh": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung"
-          }
         }
       },
       "block_order": [
-        "feature_qjnFih",
-        "feature_pARiQh"
+        "feature_qjnFih"
       ],
       "name": "Über Uns (Layout) – v3",
       "settings": {
