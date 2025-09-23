@@ -442,7 +442,7 @@
           "name": "Leistung Block - (Neu-)Beschichtung von Bodenbelägen",
           "settings": {
             "image": "shopify://shop_images/shutterstock_460822750.jpg",
-            "title_html": "<p><strong>(Neu-)Beschichtung vonBodenbelägen</strong></p>",
+            "title_html": "<p><strong>(Neu-)Beschichtung von Bodenbelägen</strong></p>",
             "text_html": "<p>Kurze Beschreibung hier.</p>",
             "keywords": "Büro, täglich, flexibel",
             "button_label": "Mehr erfahren",
