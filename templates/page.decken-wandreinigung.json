@@ -120,11 +120,11 @@
         "main_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
         "image_radius": 12,
         "image_position": "left",
-        "left_heading_html": "<p><strong>Zusätzliche Informationen</strong></p>",
+        "left_heading_html": "<p><strong>Bessere Funktionalität und <br/>mehr  Sicherheit </strong></p>",
         "left_heading_align": "right",
         "left_heading_italic": false,
         "left_heading_weight": "700",
-        "left_text": "<p>Eigener Textblock, der erscheint, wenn das Bild ausgeblendet ist.</p>",
+        "left_text": "<p>Wir entfernen Schmutz und Ablagerungen und sorgen für bessere Funktionalität und Sicherheit Ihrer Konstruktionen</p>",
         "bg_color": "#ffffff",
         "section_padding": 24,
         "points_title": "Unsere Dienstleistungen:",
@@ -140,22 +140,13 @@
     "about_section_v2_MByG7g": {
       "type": "about-section-v2",
       "blocks": {
-        "feature_7Vhy43": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        },
         "feature_xMtepy": {
           "type": "feature",
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
+            "feature_title": "Brandschutz",
+            "feature_description": ""
           }
         },
         "feature_n3ybDn": {
@@ -163,45 +154,34 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        },
-        "feature_pWqdKe": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
+            "feature_title": "Langlebigkeit",
+            "feature_description": ""
           }
         }
       },
       "block_order": [
-        "feature_7Vhy43",
         "feature_xMtepy",
-        "feature_n3ybDn",
-        "feature_pWqdKe"
+        "feature_n3ybDn"
       ],
       "name": "Über Uns (Layout) – Neu",
       "settings": {
         "layout_direction": "text_left",
-        "show_image": false,
+        "show_image": true,
         "background_color": "#ffffff",
         "section_padding_top": 80,
         "section_padding_bottom": 80,
         "title": "",
-        "title_richtext": "<p><strong>Lüftungsanlage reinigen – Warum?</strong></p>",
+        "title_richtext": "<p><strong>Warum ist die Reinigung so wichtig?</strong></p>",
         "title_color": "#111827",
         "title_font_size": 32,
         "subtitle": "",
-        "subtitle_richtext": "<p>In gewerblichen Küchen gelten besondere Anforderungen an Lüftung, Hygiene und Sicherheit. Besonders die beim Kochen und-/oder Braten und Backen entstehenden Dämpfe und Dünste, sogenannte Wrasen, können Gerüche, Schadstoffe, Fettpartikel usw. beinhalten und sich in den Komponenten von Lüftungssystemen absetzen. Dies kann weitere Gefahren mit sich bringen, unter anderem Brandgefahr. <br/>Eine Lüftungsanlage muss diese belasteten Dämpfe abführen und für ausreichend Frischluftzufuhr sorgen, um eine gute Luftqualität, Temperaturkontrolle und sichere Arbeitsbedingungen in gewerblichen Küchen zu gewährleisten.</p><p>Die Lebensdauer einer Anlage wird durch regelmäßige Reinigung gesteigert und das System sicherer, hygienischer und effizienter <br/>gemacht.</p><p><strong><br/>Regelungen und Vorschriften</strong><br/>Für gewerbliche Küchen gelten unterschiedliche Normen, Richtlinien und Vorgaben, unter anderem die DGUV Regel 110-002 „Arbeiten in Küchenbetrieben“, die <strong>VDI 2052 </strong>„Raumlufttechnische Anlagen für Küchen“ sowie das Arbeitsschutzgesetzt (ArbSchG). Beim Betreiben von Zu- und Abluftanlagen gilt es Hygienemaßnahmen, Brandschutzmaßnahmen, sowie technische und organisatorische Anforderungen zu beachten und Risiken zu minimieren. Dies dient dem vorbeugenden Brandschutz, der Betriebssicherheit, dem Arbeitsschutz und der Hygiene in gewerblichen Küchen und Gemeinschaftsverpflegungen Bei Nichteinhaltung der Vorschriften können rechtliche, versicherungsschutztechnische und sicherheitstechnische Konsequenzen folgen<br/><br/><strong>VDI 2052</strong><br/>Die VDI 2052 ist eine Richtlinie, die von dem Verein Deutscher Ingenieure erstellt wurde und Anforderungen an Raumlufttechnische Anlagen für Küchen regelt. Sie gilt für gewerbliche Küchen mit einer Gesamtanschlussleistung ab <br/>25kW der wärme- und feuchteabgebenden Geräte (z.B. Gargeräte, Spülmaschinen) und ist in drei Bereiche gegliedert. <br/>Im ersten Teil, Blatt 1, werden die allgemeinen Anforderungen an die Technik und den Betrieb von Küchenlüftungsanlagen bestimmt. Blatt 2 der Richtlinie beschäftigt sich mit dem Thema Reinigung und in VDI-MT 2052 Blatt 3, werden die Inhalte für ein Schulungskonzept ausgearbeitet.<br/>Die Richtlinie entspricht dem aktuellen technischen Standard und gilt in Verbindung mit DIN EN 13779 und DIN 18869. Sie gibt Vorgaben zu Luftführung und -Austausch, Luftqualität und Filterung, Hygiene, Brandschutz, Energieeffizienz, Inspektion und fachgerechte Reinigung und Wartung.<br/>Zusätzlich sind in der VDI 2052 Blatt 2 konkrete Reinigungsintervalle für die verschiedenen Komponenten von <br/>Küchenlüftungsanlagen beschrieben.<br/><br/><br/><strong>Ihre Vorteile</strong><br/>• Bessere Luftqualität und Hygiene<br/>• Potential für Schimmelbildung wird reduziert<br/>• Beseitigung von negativen Gerüchen<br/>• Beseitigung von Gesundheitsgefährdungen durch Staub, Schmutz, Mikroben<br/>• Reduzierte Brandrisiken<br/>• durch Beseitigung von Brandlasten (z.B. Fettablagerungen in den Abluftsystemen)<br/>• Energieeinsparung und Effizienzsteigerung<br/>• Reduzierte Betriebskosten <br/>• Verlängerung der Lebensdauer der Anlagen<br/>• Einhaltung gesetzlicher Vorgaben, Richtlinien und Standards<br/>• Rechtssicherheit durch Nachweis einer hygienischen Wartung<br/>• Arbeitsschutz etc.<br/><br/><strong>Auszug unserer Leistungen</strong><br/>• Luftdichte Versiegelung aller Öffnungen, um eine Verbreitung der Verschmutzungen während des Reinigungsvorgangs zu verhindern<br/>• Manuelle, mechanische oder chemische Reinigung, je nach Anlagentyp und Verschmutzungsgrad<br/>• Einsatz von rotierenden Bürsten (systemgerecht angepasst) und Pressluft, um die Verunreinigungen zu lösen<br/>• Absaugung der durch rotierende Bürsten und Druckluft gelösten Verschmutzungen aus den Kanälen<br/>• Entfernung von Fremdkörpern sowie beschädigter oder loser Innendämmungen <br/>• Demontage und im Anschluss der Reinigung Montage neuer, zur Verfügung gestellter, Filter<br/>• Dokumentation durch Foto- oder Videoaufnahmen vor und nach der Reinigung <br/>• Bei Bedarf anschließende gründliche Desinfektion der Lüftungskanäle, um einer zukünftigen Keimbildung vorzubeugen oder zu verzögern <br/>• Auf Wunsch entnehmen wir Abklatschproben zur Laboranalyse – für einen dokumentierten Nachweis des <br/>hygienischen Zustands</p><p><br/><strong>So läuft die Zusammenarbeit mit uns ab</strong><br/>1.  Vorbereitung und  Inspektion:</p><p>2. Durchführung der Reinigung:</p><p>3. Dokumentation und Übergabe</p><p><strong>Vorher / Nachher Bilder</strong></p>",
+        "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Wir sind SIS Saar - ein innovatives Unternehmen mit zwei spezialisierten Geschäftsbereichen. Seit über zwei Jahrzehnten stehen wir für zuverlässige und hochwertige Serviceleistungen in der Region.</p><p>Unser Erfolgsrezept liegt in der Kombination aus langjähriger Erfahrung, modernster Technik und einem motivierten Team von Fachkräften. Jeder Mitarbeiter trägt dazu bei, dass wir unseren Kunden stets erstklassige Lösungen anbieten können.</p>",
+        "description": "<p>Mit der Zeit setzen sich Staub, Fett, Öl oder Korrosionsrückstände auf Decken, Trägern und Stahlkonstruktionen fest – nicht nur ein optisches Problem, sondern auch ein Risiko für Sicherheit, Hygiene und die Langlebigkeit Ihrer Anlagen.   Ablagerungen auf Decken oder Trägern können die Brandsicherheit beeinträchtigen oder die Statik belasten, besonders wenn sie die Wirksamkeit von Brandschutzbeschichtungen mindern. <br/>Bei Metallkonstruktionen beschleunigen Schmutz und Feuchtigkeit die Korrosion – eine regelmäßige Reinigung schützt daher nicht nur vor Rost, sondern bereitet Oberflächen auch optimal für Beschichtungen oder Konservierungsmaßnahmen vor.  In Lebensmittelbetrieben, Lagerhallen oder Produktionsstätten ist Staub zudem ein Hygienerisiko, das wir mit trockenen, nassen oder strahlbasierten Verfahren gezielt angehen.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_370492946.jpg",
+        "image": "shopify://shop_images/iStock-517679880.jpg",
         "image_border_radius": 12,
         "image_alt": "",
         "image_max_width": 85,
@@ -212,43 +192,9 @@
         "feature_title_color": "#111827"
       }
     },
-    "video_Cg8Ar8": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "custom_cta_block_Y6hmWD": {
       "type": "custom-cta-block",
       "blocks": {
-        "button_LM9n93": {
-          "type": "button",
-          "settings": {
-            "label": "<p>Kostenlose Beratung</p>",
-            "link": "",
-            "variant": "solid",
-            "text_color": "#ffffff",
-            "bg_color": "#0b132a",
-            "border_color": "#0b132a",
-            "hover_bg": "#111827",
-            "hover_text": "#ffffff",
-            "radius": 12,
-            "padding_x": 24,
-            "padding_y": 14,
-            "bold": true,
-            "offset_x": 0,
-            "offset_y": 0
-          }
-        },
         "button_hfEK7p": {
           "type": "button",
           "settings": {
@@ -270,12 +216,11 @@
         }
       },
       "block_order": [
-        "button_LM9n93",
         "button_hfEK7p"
       ],
       "name": "Custom CTA Block",
       "settings": {
-        "heading": "<p><strong>Bereit für professionellen Gebäudeservice?</strong></p>",
+        "heading": "<p><strong>Bereit für professionellen Service?</strong></p>",
         "heading_size": 40,
         "heading_bold": true,
         "heading_color": "#0f172a",
@@ -562,7 +507,6 @@
     "hero_building_section_xFPFdb",
     "leistung_showcase_UxTBDy",
     "about_section_v2_MByG7g",
-    "video_Cg8Ar8",
     "custom_cta_block_Y6hmWD",
     "sis_single_footer_N4n9t3",
     "sis_footer_neu_mBQqwe",
