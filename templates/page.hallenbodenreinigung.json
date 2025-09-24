@@ -138,7 +138,7 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Nass - und Trockensauger",
+            "feature_title": "✅ Nass - und Trockensauger",
             "feature_description": ""
           }
         },
@@ -147,34 +147,14 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Aufsitzputzmaschine",
+            "feature_title": "✅ Aufsitzputzmaschine",
             "feature_description": ""
-          }
-        },
-        "feature_QEgtLt": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
-          }
-        },
-        "feature_xeyhUW": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung des Features."
           }
         }
       },
       "block_order": [
         "feature_Lkfkx6",
-        "feature_D8kPPw",
-        "feature_QEgtLt",
-        "feature_xeyhUW"
+        "feature_D8kPPw"
       ],
       "name": "Über Uns (Layout) – Neu",
       "settings": {
