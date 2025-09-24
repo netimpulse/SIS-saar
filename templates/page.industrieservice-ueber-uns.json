@@ -128,7 +128,7 @@
           "settings": {
             "emoji": "⭐",
             "title": "Qualität durch Leidenschaft",
-            "subtitle": "Sauberkeit ist für uns mehr als ein Ergebnis – es ist unser Anspruch an Perfektion.",
+            "subtitle": "Sauberkeit ist für uns mehr als ein Standard – sie ist unsere Überzeugung.",
             "featured": false,
             "aria_label": "Wert/Stat-Karte"
           }
@@ -332,7 +332,7 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Wir unterstützen Ihr Kerngeschäft mit gründlicher, flexibler und leistungsstarker Dienstleistung, damit Sie sich auf Ihre Ziele konzentrieren können. Unsere motivierten und regelmäßig geschulten Mitarbeitenden sind das Herzstück unseres Erfolgs.  Gemeinsam nutzen wir Innovationen und nachhaltige Arbeitsmethoden, um Ausfallzeiten zu minimieren und die Umwelt zu schützen.</p><p><strong>Was uns antreibt</strong></p><p>Für uns gilt: <strong>Dienstleistung ist Vertrauenssache.</strong><br/>Deshalb sehen wir unsere Arbeit nicht als kurzfristigen Auftrag, sondern als <strong>langfristige Partnerschaft</strong>. Unsere Kunden verlassen sich darauf, dass wir nicht nur schnell reagieren, sondern vorausschauend denken und mitgestalten.</p><p></p><p></p>",
+        "description": "<p>Wir unterstützen Ihr Kerngeschäft mit gründlicher, flexibler und leistungsstarker Dienstleistung, damit Sie sich auf Ihre Ziele konzentrieren können. Unsere motivierten und regelmäßig geschulten Mitarbeitenden sind das Herzstück unseres Erfolgs.  Gemeinsam nutzen wir Innovationen und nachhaltige Arbeitsmethoden, um Ausfallzeiten zu minimieren und die Umwelt zu schützen.</p><p>Für uns gilt: <strong>Dienstleistung ist Vertrauenssache.</strong><br/>Deshalb sehen wir unsere Arbeit nicht als kurzfristigen Auftrag, sondern als <strong>langfristige Partnerschaft</strong>. Unsere Kunden verlassen sich darauf, dass wir nicht nur schnell reagieren, sondern vorausschauend denken und mitgestalten.</p><p></p><p></p>",
         "text_color": "#121212",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_181375295.jpg",
@@ -425,7 +425,7 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p><strong>Kompetenz, auf die sie sich verlassen können</strong><br/>Mit jahrelanger Erfahrung im Industrieservice bieten wir durchdachte, maßgeschneiderte Lösungen für höchste Anforderungen – zuverlässig, effizient und mit Blick fürs Detail.</p><p><strong>Zuverlässigkeit & Qualität</strong><br/>Unsere Arbeit steht für nachhaltige Sauberkeit, Sicherheit und den <br/>langfristigen Werterhalt Ihrer Anlagen – professionell umgesetzt und <br/>lückenlos dokumentiert.</p><p><strong>Regional stark – persönlich betreut</strong><br/>Kurze Wege, schnelle Reaktionszeiten, direkter Draht: Wir sind in Ihrer Nähe und für Sie da, wenn es darauf ankommt.<br/><br/></p>",
+        "description": "<p><strong>Kompetenz, auf die sie sich verlassen können</strong><br/>Mit jahrelanger Erfahrung im Industrie- und Gebäudeservice bieten wir durchdachte, maßgeschneiderte Lösungen für höchste Anforderungen – zuverlässig, effizient und mit Blick fürs Detail.</p><p><strong>Zuverlässigkeit & Qualität</strong><br/>Unsere Arbeit steht für nachhaltige Sauberkeit, Sicherheit und den <br/>langfristigen Werterhalt Ihrer Anlagen – professionell umgesetzt und <br/>lückenlos dokumentiert.</p><p><strong>Regional stark – persönlich betreut</strong><br/>Kurze Wege, schnelle Reaktionszeiten, direkter Draht: Wir sind in Ihrer Nähe und für Sie da, wenn es darauf ankommt.<br/><br/></p>",
         "text_color": "#121212",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_782845411.jpg",
@@ -524,7 +524,7 @@
             "show_icon": true,
             "icon_bg": "#e5e7eb",
             "title": "Alles aus einer Hand",
-            "text": "Von der ersten Beratung bis zur Nachbetreuung erhalten Sie einen umfassenden Service mit einem festen Ansprechpartner.",
+            "text": "Von der ersten Beratung bis zur Nachbetreuung erhalten Sie einen umfassenden Service mit konkreten Ansprechpartnern",
             "subpoints": "",
             "show_btn": false,
             "btn_label": "Mehr erfahren",
