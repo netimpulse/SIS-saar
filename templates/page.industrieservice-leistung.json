@@ -50,21 +50,21 @@
         "padding_bottom": 28
       }
     },
-    "hero_overlay_section_6beqpy": {
+    "hero_overlay_section_JbVrjR": {
       "type": "hero-overlay-section",
       "name": "Hero – Service Overlay",
       "settings": {
-        "bg_image": "shopify://shop_images/2025-09-17_08_22_53-Clipboard_b5d708f4-2bf5-401a-8d08-79128ab3c237.png",
+        "bg_image": "shopify://shop_images/sis2025-09-24_11_01_34-shutterstock_536582824_jpg_338456ba-db1b-4684-9cbb-f661455d34f3.png",
         "overlay_color": "#2baaa2",
         "overlay_opacity": 70,
         "section_height": 60,
         "section_height_mobile": 40,
         "content_max_width": 760,
-        "heading": "Ihr Partner für professionelle Service-Lösungen",
+        "heading": "Ihr Partner für die Industrie",
         "heading_font": "system_ui_n4",
         "heading_size": 64,
         "heading_color": "#ffffff",
-        "text": "",
+        "text": "<p>Wir sind Ihre Experten und Dienstleistungspartner auf höchstem Niveau.</p>",
         "text_font": "system_ui_n4",
         "text_size": 20,
         "text_color": "#ffffff",
@@ -79,7 +79,7 @@
         "btn1_bg_hover": "#238b84",
         "btn1_text_color": "#ffffff",
         "btn1_text_hover": "#ffffff",
-        "btn2_text": "Kontakt aufnehmen",
+        "btn2_text": "JETZT ANRUFEN",
         "btn2_link": "shopify://pages/allgemeiner-kontakt",
         "btn2_font": "system_ui_n4",
         "btn2_font_size": 16,
@@ -964,7 +964,7 @@
   "order": [
     "sticky_header_mnpjhg",
     "main",
-    "hero_overlay_section_6beqpy",
+    "hero_overlay_section_JbVrjR",
     "leistung_suche_grid_CNDctg",
     "leistung_suche_grid_v2_64mKtE",
     "qualitaeten_hotspot_7aUQfj",
