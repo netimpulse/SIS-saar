@@ -95,19 +95,12 @@
           "settings": {
             "text": "<p>Lamellen</p>"
           }
-        },
-        "showcase_item_NjWdc7": {
-          "type": "showcase_item",
-          "settings": {
-            "text": "<p>hier steht ein text</p>"
-          }
         }
       },
       "block_order": [
         "showcase_item_TjDYGm",
         "showcase_item_aqzUP4",
-        "showcase_item_JDPAMK",
-        "showcase_item_NjWdc7"
+        "showcase_item_JDPAMK"
       ],
       "name": "Leistung Showcase",
       "settings": {
