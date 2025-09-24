@@ -202,7 +202,7 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "keine Schäden an mechanischen oder elektronischen Teilen",
+            "feature_title": "✅ keine Schäden an mechanischen oder elektronischen Teilen",
             "feature_description": ""
           }
         },
@@ -211,7 +211,7 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Reinigung ohne Demontage möglich",
+            "feature_title": "✅ Reinigung ohne Demontage möglich",
             "feature_description": ""
           }
         },
@@ -220,7 +220,7 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "nicht scheuernd, entzündbar oder leitend",
+            "feature_title": "✅ nicht scheuernd, entzündbar oder leitend",
             "feature_description": ""
           }
         },
@@ -229,7 +229,7 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "umweltfreundlich",
+            "feature_title": "✅ umweltfreundlich",
             "feature_description": "recycletes CO2"
           }
         },
@@ -238,7 +238,7 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "nicht abrasiv",
+            "feature_title": "✅ nicht abrasiv",
             "feature_description": ""
           }
         },
@@ -247,7 +247,7 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "keine Sekundärabfälle",
+            "feature_title": "✅ keine Sekundärabfälle",
             "feature_description": ""
           }
         }
