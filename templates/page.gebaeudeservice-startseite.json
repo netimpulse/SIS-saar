@@ -235,7 +235,7 @@
           "type": "hotspot",
           "settings": {
             "title": "Teppichreinigung",
-            "text": "<p>Reinigen, Auffrischen, Verwöhnen - Teppichpflege mit Leidenschaft.</p>",
+            "text": "",
             "pos_x": 62,
             "pos_y": 84,
             "dot_color": "#4ade80",
@@ -248,8 +248,8 @@
         "hotspot_7PGJ9X": {
           "type": "hotspot",
           "settings": {
-            "title": "Büroreinigung",
-            "text": "<p>Kurze Beschreibung zu diesem Punkt.</p>",
+            "title": "Oberflächenreinigung",
+            "text": "",
             "pos_x": 27,
             "pos_y": 63,
             "dot_color": "#3ac47d",
