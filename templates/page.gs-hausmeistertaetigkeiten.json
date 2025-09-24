@@ -144,7 +144,7 @@
         "image_vertical_align": "center",
         "show_image": true,
         "background_color": "#ffffff",
-        "section_padding_top": 30,
+        "section_padding_top": 20,
         "section_padding_bottom": 30,
         "title": "",
         "title_richtext": "<p><strong>Unser Service</strong></p>",
