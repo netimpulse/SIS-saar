@@ -185,7 +185,7 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p><strong>Grundreinigung</strong>: Zuerst wird der Boden tiefengereinigt, um alte Pflegemittel, Schmutz und Fett zu entfernen – sonst haftet die neue Schicht nicht richtig.<br/><br/><strong>Neutralisierung</strong>: Reste der Grundreinigers aufnehmen damit er die Beschichtung nicht aufnimmt Der Boden wird pH-neutral vorbereitet.<br/><br/><strong>Beschichtung</strong>: Je nach Belag und Nutzung tragen wir mehrere dünne Schichten auf – gleichmäßig, streifenfrei und mit der richtigen Trocknungszeit.<br/><br/><strong>Pflegehinweis</strong>: Wir geben Hinweise zur laufenden Unterhaltsreinigung, damit die Beschichtung möglichst lange hält.</p>",
+        "description": "<p>✅ <strong>Grundreinigung</strong>: Zuerst wird der Boden tiefengereinigt, um alte Pflegemittel, Schmutz und Fett zu entfernen – sonst haftet die neue Schicht nicht richtig.<br/><br/>✅ <strong>Neutralisierung</strong>: Reste der Grundreinigers aufnehmen damit er die Beschichtung nicht aufnimmt Der Boden wird pH-neutral vorbereitet.<br/><br/>✅ <strong>Beschichtung</strong>: Je nach Belag und Nutzung tragen wir mehrere dünne Schichten auf – gleichmäßig, streifenfrei und mit der richtigen Trocknungszeit.<br/><br/>✅ <strong>Pflegehinweis</strong>: Wir geben Hinweise zur laufenden Unterhaltsreinigung, damit die Beschichtung möglichst lange hält.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_423092626.jpg",
@@ -207,7 +207,7 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Zuverlässigkeit",
+            "feature_title": "✅ Zuverlässigkeit",
             "feature_description": "verlässlich, gründlich"
           }
         },
@@ -216,7 +216,7 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Geschwindigkeit",
+            "feature_title": "✅ Geschwindigkeit",
             "feature_description": "schnell und effektiv"
           }
         },
@@ -225,15 +225,25 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "kostengünstiger",
-            "feature_description": "als Austausch des Belags"
+            "feature_title": "✅ kostengünstig",
+            "feature_description": "Austausch des Belags nicht nötig"
+          }
+        },
+        "feature_XrUnqb": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "✅ umweltverträglich",
+            "feature_description": "Bodenbelag bleibt erhalten"
           }
         }
       },
       "block_order": [
         "feature_q7e7ha",
         "feature_WN4LJc",
-        "feature_hhcg7X"
+        "feature_hhcg7X",
+        "feature_XrUnqb"
       ],
       "name": "Über Uns (Layout) – Neu - Unterhaltsreinigung",
       "settings": {
@@ -243,11 +253,11 @@
         "section_padding_top": 25,
         "section_padding_bottom": 80,
         "title": "",
-        "title_richtext": "",
+        "title_richtext": "<p><strong>Wann ist das besonders sinnvoll?</strong></p>",
         "title_color": "#111827",
         "title_font_size": 32,
         "subtitle": "",
-        "subtitle_richtext": "<p><strong>Wann ist das besonders sinnvoll?</strong></p>",
+        "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
         "description": "<p>Bei sichtbaren Gebrauchsspuren auf elastischen Böden oder nach einer Grundreinigung als Schutzmaßnahme sowie in stark frequentierten Bereichen (z. B. Flure, Eingänge, Gemeinschaftsräume). Aber auch vor der Neuvermietung oder Umnutzung von Räumen kann die Bodenbeschichtung sehr sinnvoll sein.</p>",
