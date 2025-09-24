@@ -600,7 +600,7 @@
         "kontakt_link_RqEDPq",
         "partner_logo_RETFWL"
       ],
-      "name": "SIS Footer NEU",
+      "name": "SIS Footer NEU - GS",
       "settings": {
         "background_color": "#111827",
         "section_padding": 60,
@@ -615,12 +615,12 @@
         "col1_title": "Leistungen",
         "col2_title": "Unternehmen",
         "col3_title": "Kontakt",
-        "col4_title": "Partner",
-        "contact_company": "SIS Saar Gebäudeservice",
-        "contact_address": "Musterstraße 1, 12345 Musterstadt",
-        "contact_phone": "0123 / 456 789",
-        "contact_email": "info@sis-saar.de",
-        "contact_hours": "Mo–Fr 8–17 Uhr",
+        "col4_title": "",
+        "contact_company": "SIS Saar Gebäudeservice GmbH",
+        "contact_address": "Vorderster Berg 13, 66333 Völklingen",
+        "contact_phone": "06898 / 16 90 900",
+        "contact_email": "info@gebaeudeservice.de",
+        "contact_hours": "",
         "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
     }
