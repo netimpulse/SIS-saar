@@ -177,7 +177,7 @@
       "name": "Erfahrungen • Stats",
       "settings": {
         "kicker": "Über 20 Jahre Erfahrung",
-        "heading": "<p>Unsere Werte</p>",
+        "heading": "<p><strong>Unsere Werte</strong></p>",
         "richtext": "<p>Als familiengeführtes Unternehmen legen wir Wert auf persönlichen Service und langfristige Kundenbeziehungen. Unser Team von über 150 qualifizierten Mitarbeitenden sorgt täglich dafür, dass mehr als 200 zufriedene KundInnen auf unsere Zuverlässigkeit vertrauen.</p>",
         "btn_label": "Mehr über uns",
         "btn_link": "",
@@ -278,7 +278,7 @@
           "settings": {
             "icon_type": "image",
             "icon_svg": "",
-            "feature_title": "Kurze Reaktionszeit",
+            "feature_title": "✅ Kurze Reaktionszeit",
             "feature_description": ""
           }
         },
@@ -287,7 +287,7 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "langjährige Erfahrung",
+            "feature_title": "✅ langjährige Erfahrung",
             "feature_description": ""
           }
         },
@@ -296,7 +296,7 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "geschultes Personal",
+            "feature_title": "✅ geschultes Personal",
             "feature_description": ""
           }
         },
@@ -305,7 +305,7 @@
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "beste Qualität",
+            "feature_title": "✅ beste Qualität",
             "feature_description": ""
           }
         }
