@@ -58,7 +58,7 @@
         "enable_overlay": true,
         "overlay_color": "#000000",
         "overlay_opacity": 0.5,
-        "heading": "Maschinenreinigung",
+        "heading": "Industrie- und Maschinenreinigung",
         "subheading": "",
         "button_label": "Jetzt Angebot anfordern",
         "button_link": "shopify://pages/industrieservice-kontakt",
@@ -120,11 +120,11 @@
         "main_image": "shopify://shop_images/ChatGPT_Image_29._Juli_2025_20_41_34_cleanup.png",
         "image_radius": 12,
         "image_position": "left",
-        "left_heading_html": "<p><strong>Zusätzliche Informationen</strong></p>",
+        "left_heading_html": "<p>Industrie - und Maschinenreinigung</p>",
         "left_heading_align": "right",
         "left_heading_italic": false,
         "left_heading_weight": "700",
-        "left_text": "<p>Eigener Textblock, der erscheint, wenn das Bild ausgeblendet ist.</p>",
+        "left_text": "<p>Für nahezu alle Industriebereiche – von der Lebensmittel- und Pharmaindustrie über die Automobil- und Metallverarbeitung bis hin zu Energie- und Chemiebetrieben.</p>",
         "bg_color": "#ffffff",
         "section_padding": 24,
         "points_title": "Unsere Dienstleistungen:",
@@ -137,55 +137,76 @@
         "fallback_bullet_color": "#2b6cb0"
       }
     },
-    "about_section_v3_zmQLa4": {
+    "about_section_v3_L3KcJH": {
       "type": "about-section-v3",
       "blocks": {
-        "feature_UARMhb": {
+        "feature_tJ4Jh9": {
           "type": "feature",
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "✅ Feature Titel",
-            "feature_description": "Kurze Beschreibung"
+            "feature_title": "Minimaler Maschinenstillstand",
+            "feature_description": "je nach Verfahren >50% weniger Ausfallzeit, mehr Maschinenlaufzeit"
           }
         },
-        "feature_YE79CX": {
+        "feature_3gxcqQ": {
           "type": "feature",
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung"
+            "feature_title": "Längere Lebensdauer",
+            "feature_description": "Werteerhalt, Produktivität, Einsatzbereitschaft"
+          }
+        },
+        "feature_FVLKW3": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Mehr Sicherheit",
+            "feature_description": "keine Brand und Unfallrisiken durch Verschmutzung"
+          }
+        },
+        "feature_AHkrKA": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "Kosteneinsparung",
+            "feature_description": "geringerer Energieverbrauch, weniger Reparaturen"
           }
         }
       },
       "block_order": [
-        "feature_UARMhb",
-        "feature_YE79CX"
+        "feature_tJ4Jh9",
+        "feature_3gxcqQ",
+        "feature_FVLKW3",
+        "feature_AHkrKA"
       ],
-      "name": "Über Uns (Layout) – v3 - Maschinenreinigung",
+      "name": "Über Uns (Layout) – v3-Industriereinigung",
       "settings": {
         "image_position": "right",
         "image_vertical_align": "start",
         "show_image": true,
         "background_color": "#ffffff",
-        "section_padding_top": 30,
-        "section_padding_bottom": 80,
-        "title": "Maschinenreinigung",
-        "title_richtext": "<p><strong>Maschinenreinigung</strong></p>",
+        "section_padding_top": 20,
+        "section_padding_bottom": 20,
+        "title": "",
+        "title_richtext": "<p><strong>Industriereinigung</strong></p>",
         "title_color": "#111827",
         "title_font_size": 32,
         "subtitle": "",
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Die SIS Saar-Industrie-Service GmbH bietet eine professionelle Reinigung Ihrer Industrieanlagen, Bearbeitungsmaschinen, Produktionsstätten, Lagerhallen und andere industrielle Einrichtungen. Zu diesem Zweck nutzen wir unser hochwertiges und modernes Equipment für eine optimale Dienstleistung. Zusätzlich führen wir an verschiedenen Maschinen gegebenenfalls Öl- und Wasserwechsel, sowie weitere Reinigungen durch, um ihnen einen Rundumservice zu gewährleisten. Diese Maßnahmen dienen nicht nur der reinen Sauberkeit, sondern auch der Werterhaltung der Maschinen und damit verbunden auch der Gewährleistung ihrer Produktivität. </p><p>Denn regelmäßige Reinigungen und Wartungen ihrer Produktionsmaschinen haben entsprechend höhere Maschinenlaufzeiten zur Folge.</p>",
+        "description": "<p>Die SIS Saar Industrie Service GmbH reinigt Ihre Industrieanlagen, Bearbeitungsmaschinen, Produktionsstätten, Lagerhallen und andere technischen Einrichtungen professionell und sicher. Durch modernste Reinigungsverfahren entfernen wir Öl, Schmierstoffe, Metallabrieb und andere Rückstände, um Maschinenlaufzeiten zu verlängern und Produktionsausfälle zu minimieren.</p><p></p><p>Teilewaschmaschinen & Bearbeitungsanlagen</p><p>CNC-Maschinen und Bearbeitungszentren</p><p>Produktionshallen, Förderbäner </p><p>Böden, Decken und Markierungen</p><p>Rolltore, Fassaden & Photovoltaik</p><p>Schaltschrank- & Führungsschienen</p><p></p><p>Kontaktiren Sie uns gerne, dann besprechen wir Ihre Anforderugnen gemeinsam</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
+        "image": "shopify://shop_images/shutterstock_1049740148.jpg",
         "image_border_radius": 12,
         "image_alt": "",
         "image_max_width": 85,
-        "image_aspect_ratio": "4/3",
+        "image_aspect_ratio": "auto",
         "features_per_row": "2",
         "icon_size": 32,
         "icon_color": "#34d399",
@@ -219,30 +240,30 @@
         "feature_wNwJEJ",
         "feature_4XLfXA"
       ],
-      "name": "Über Uns (Layout) – v3",
+      "name": "Über Uns (Layout) – v3-Silos und Behälter",
       "settings": {
         "image_position": "right",
-        "image_vertical_align": "center",
+        "image_vertical_align": "start",
         "show_image": true,
         "background_color": "#ffffff",
-        "section_padding_top": 80,
-        "section_padding_bottom": 80,
-        "title": "Über uns",
-        "title_richtext": "<p><strong>Über uns</strong></p>",
+        "section_padding_top": 20,
+        "section_padding_bottom": 20,
+        "title": "",
+        "title_richtext": "<p><strong>Silos und Behälter</strong></p>",
         "title_color": "#111827",
         "title_font_size": 32,
-        "subtitle": "Unsere Mission",
-        "subtitle_richtext": "<p>Unsere Mission</p>",
+        "subtitle": "",
+        "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Wir sind SIS Saar – ein innovatives Unternehmen …</p>",
+        "description": "<p>Im Rahmen der Reinigung und Instandhaltung von Silos und Behältern werden die Innen- und Außenbereiche von Ablagerungen wie Kreidestaub-Rückstände oder sonstige leicht anhaftende Verschmutzungen beseitigt. Dazu gehören die Reinigung von z.B. Rohrleitungen, Stahlträgerkonstruktionen, Motoren, Filterkästen, Geländern sowie Kabel- und Leitungsführungen im Umliegenden Bereich. Auch die Bodenflächen im unmittelbaren Umfeld der Anlagen werden in die Reinigungsarbeiten einbezogen, um eine vollständige Hygiene und Sicherheit zu gewährleisten.<br/>Ein besonderer Fokus liegt auf der Innenreinigung von Silos, die je nach Anforderung mit Hochdruckreinigung (HDR) und speziellen Desinfektionsverfahren für die Innenwände durchgeführt wird. Die Silos können dabei unterschiedliche Höhen (z.B. 9m, 18 Meter) und Tiefen bzw. Durchmesser aufweisen, was den Einsatz von besonderen Sicherheitsmaßnahmen erfordert. Wir arbeiten daher mit unterschiedlichen Systemen, z.B. ein Dreibein-Rettungssystemen mit Seilwinden und besonderer persönlicher Schutzausrüstung (PSA), um die Sicherheit und Gesundheit bei der Arbeit sicherzustellen.</p><p><br/>Zusätzlich zu den klassischen Reinigungsarbeiten können auch Sandstrahlarbeiten an den Außenflächen durchgeführt werden, um z.B. oberflächliche Lack- und Rostrückstände zu entfernen und die Oberflächen für weitere Beschichtungen vorzubereiten. Hierfür kommen mobile Strahlanlagen zum Einsatz, die eine flexible und effiziente Bearbeitung ermöglichen. Bei Arbeiten in größeren Höhen werden Hubarbeitsbühnen genutzt, um den Zugang zu den entsprechenden Bereichen zu gewährleisten.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
-        "image": "shopify://shop_images/shutterstock_410354008.jpg",
+        "image": "shopify://shop_images/shutterstock_228505726.jpg",
         "image_border_radius": 12,
         "image_alt": "",
         "image_max_width": 85,
-        "image_aspect_ratio": "4/3",
+        "image_aspect_ratio": "auto",
         "features_per_row": "2",
         "icon_size": 32,
         "icon_color": "#34d399",
@@ -564,7 +585,7 @@
     "main",
     "hero_building_section_xFPFdb",
     "leistung_showcase_wAGpyg",
-    "about_section_v3_zmQLa4",
+    "about_section_v3_L3KcJH",
     "about_section_v3_xGiwpV",
     "custom_cta_block_CeErgt",
     "sis_single_footer_N4n9t3",
