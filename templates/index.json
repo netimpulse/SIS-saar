@@ -454,11 +454,12 @@
           "type": "unternehmen_link",
           "settings": {
             "text": "Karriere",
-            "link": "shopify://pages/gebaudeservice-karriere"
+            "link": "shopify://pages/industrieservice-karriere"
           }
         },
         "unternehmen_link_JpjtgE": {
           "type": "unternehmen_link",
+          "disabled": true,
           "settings": {
             "text": "Unsere Partner",
             "link": "shopify://pages/partner"
@@ -552,9 +553,9 @@
         "col4_title": "Partner",
         "contact_company": "SIS Saar- Industrie- Service GmbH und SIS Saar Gebäudeservice GmbH",
         "contact_address": "Vorderster Berg 13,\n66333 Völklingen",
-        "contact_phone": "(+49) (0) 6898 1690 900",
+        "contact_phone": "(+49) (0) 6898 16 90 900",
         "contact_email": "",
-        "contact_hours": "Mo – Fr 8–16 Uhr",
+        "contact_hours": "",
         "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
     }
