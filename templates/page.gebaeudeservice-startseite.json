@@ -510,97 +510,100 @@
         "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
     },
-    "sis_footer_neu_W3ixnA": {
+    "sis_footer_neu_XYgyQL": {
       "type": "sis-footer-neu",
       "blocks": {
-        "leistungen_link_ANawyy": {
-          "type": "leistungen_link",
-          "disabled": true,
-          "settings": {
-            "text": "Industrieservice",
-            "link": "shopify://pages/industrieservice-leistungen"
-          }
-        },
-        "leistungen_link_iMgpUt": {
+        "leistungen_link_cLHmrd": {
           "type": "leistungen_link",
           "settings": {
             "text": "Gebäudeservice",
             "link": "shopify://pages/sis-saar-gebaeudeservice-leistungen"
           }
         },
-        "unternehmen_link_DWUcj6": {
+        "unternehmen_link_c7Lwdb": {
           "type": "unternehmen_link",
           "settings": {
             "text": "Kontakt",
-            "link": "shopify://pages/allgemeiner-kontakt"
+            "link": "shopify://pages/gebaudeservice-kontakt"
           }
         },
-        "unternehmen_link_NVUwKb": {
+        "unternehmen_link_XAB3Tj": {
           "type": "unternehmen_link",
           "settings": {
             "text": "Karriere",
             "link": "shopify://pages/gebaudeservice-karriere"
           }
         },
-        "unternehmen_link_CQkBFQ": {
+        "unternehmen_link_XRMjFa": {
           "type": "unternehmen_link",
+          "disabled": true,
           "settings": {
             "text": "Unsere Partner",
             "link": "shopify://pages/partner"
           }
         },
-        "unternehmen_link_7MxXj4": {
+        "unternehmen_link_4kPVdg": {
           "type": "unternehmen_link",
           "settings": {
             "text": "Downloads",
             "link": "shopify://pages/downloads"
           }
         },
-        "kontakt_link_DcqXHJ": {
-          "type": "kontakt_link",
-          "disabled": true,
-          "settings": {
-            "text": "Impressum Industrieservice",
-            "link": ""
-          }
-        },
-        "kontakt_link_W6KtT3": {
+        "kontakt_link_kAWWjA": {
           "type": "kontakt_link",
           "settings": {
             "text": "Impressum Gebäudeservice",
             "link": "shopify://pages/gebaudeservice-impressum"
           }
         },
-        "kontakt_link_RqEDPq": {
+        "kontakt_link_6CdRj4": {
           "type": "kontakt_link",
           "settings": {
             "text": "Datenschutz",
             "link": ""
           }
         },
-        "partner_logo_RETFWL": {
+        "partner_logo_YckYce": {
+          "type": "partner_logo",
+          "settings": {
+            "logo": "shopify://shop_images/2025-SIS.png",
+            "alt": "Partner Industrieservice GmbH",
+            "link": "shopify://pages/industrieservice-startseite",
+            "new_tab": true
+          }
+        },
+        "partner_logo_RwiBdj": {
+          "type": "partner_logo",
+          "settings": {
+            "logo": "shopify://shop_images/2025-SIS-Gebaeude.png",
+            "alt": "Partner Gebäudeservice GmbH",
+            "link": "shopify://pages/sis-saar-gebaeudeservice",
+            "new_tab": true
+          }
+        },
+        "partner_logo_daf6NA": {
           "type": "partner_logo",
           "settings": {
             "logo": "shopify://shop_images/2025_AMG_zugeschnitten_DA.png",
-            "alt": "Partner",
-            "link": "",
+            "alt": "Partner AMG Tech GmbH",
+            "link": "https://www.trockeneis.saarland/",
             "new_tab": true
           }
         }
       },
       "block_order": [
-        "leistungen_link_ANawyy",
-        "leistungen_link_iMgpUt",
-        "unternehmen_link_DWUcj6",
-        "unternehmen_link_NVUwKb",
-        "unternehmen_link_CQkBFQ",
-        "unternehmen_link_7MxXj4",
-        "kontakt_link_DcqXHJ",
-        "kontakt_link_W6KtT3",
-        "kontakt_link_RqEDPq",
-        "partner_logo_RETFWL"
+        "leistungen_link_cLHmrd",
+        "unternehmen_link_c7Lwdb",
+        "unternehmen_link_XAB3Tj",
+        "unternehmen_link_XRMjFa",
+        "unternehmen_link_4kPVdg",
+        "kontakt_link_kAWWjA",
+        "kontakt_link_6CdRj4",
+        "partner_logo_YckYce",
+        "partner_logo_RwiBdj",
+        "partner_logo_daf6NA"
       ],
-      "name": "SIS Footer NEU - GS",
+      "name": "SIS Footer NEU - Gebäudeservice",
       "settings": {
         "background_color": "#111827",
         "section_padding": 60,
@@ -615,10 +618,10 @@
         "col1_title": "Leistungen",
         "col2_title": "Unternehmen",
         "col3_title": "Kontakt",
-        "col4_title": "",
+        "col4_title": "Partner",
         "contact_company": "SIS Saar Gebäudeservice GmbH",
-        "contact_address": "Vorderster Berg 13, 66333 Völklingen",
-        "contact_phone": "06898 / 16 90 900",
+        "contact_address": "Vorderster Berg 13,\n66333 Völklingen",
+        "contact_phone": "(+49) (0) 6898 16 90 900",
         "contact_email": "info@gebaeudeservice.de",
         "contact_hours": "",
         "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
@@ -633,6 +636,6 @@
     "amenities_hotspots_tap6zf",
     "custom_cta_block_PhfGkC",
     "sis_footer_neu_EhzGDM",
-    "sis_footer_neu_W3ixnA"
+    "sis_footer_neu_XYgyQL"
   ]
 }
