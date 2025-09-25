@@ -81,25 +81,31 @@
         "showcase_item_XBpUEd": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Bearbeitungsmaschinen, Teilewaschmaschinen</p>"
           }
         },
         "showcase_item_TUTxLE": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Hallenkrane, Schienen, Kostruktionen</p>"
           }
         },
         "showcase_item_dDDewh": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Förderbänder</p>"
           }
         },
         "showcase_item_qyzi4A": {
           "type": "showcase_item",
           "settings": {
-            "text": "<p>hier steht ein text</p>"
+            "text": "<p>Silos und Behälter</p>"
+          }
+        },
+        "showcase_item_6XgPpp": {
+          "type": "showcase_item",
+          "settings": {
+            "text": "<p>Rolltore/Industrietore, Fassaden</p>"
           }
         }
       },
@@ -107,7 +113,8 @@
         "showcase_item_XBpUEd",
         "showcase_item_TUTxLE",
         "showcase_item_dDDewh",
-        "showcase_item_qyzi4A"
+        "showcase_item_qyzi4A",
+        "showcase_item_6XgPpp"
       ],
       "name": "Leistung Showcase",
       "settings": {
@@ -192,14 +199,14 @@
         "section_padding_top": 20,
         "section_padding_bottom": 20,
         "title": "",
-        "title_richtext": "<p><strong>Industriereinigung</strong></p>",
+        "title_richtext": "<p><strong>Industrie - und Maschinenreinigung</strong></p>",
         "title_color": "#111827",
         "title_font_size": 32,
         "subtitle": "",
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Die SIS Saar Industrie Service GmbH reinigt Ihre Industrieanlagen, Bearbeitungsmaschinen, Produktionsstätten, Lagerhallen und andere technischen Einrichtungen professionell und sicher. Durch modernste Reinigungsverfahren entfernen wir Öl, Schmierstoffe, Metallabrieb und andere Rückstände, um Maschinenlaufzeiten zu verlängern und Produktionsausfälle zu minimieren.</p><p></p><p>Teilewaschmaschinen & Bearbeitungsanlagen</p><p>CNC-Maschinen und Bearbeitungszentren</p><p>Produktionshallen, Förderbäner </p><p>Böden, Decken und Markierungen</p><p>Rolltore, Fassaden & Photovoltaik</p><p>Schaltschrank- & Führungsschienen</p><p></p><p>Kontaktiren Sie uns gerne, dann besprechen wir Ihre Anforderugnen gemeinsam</p>",
+        "description": "<p>Die SIS Saar Industrie Service GmbH reinigt Ihre Industrieanlagen, Bearbeitungsmaschinen, Produktionsstätten, Lagerhallen und andere technischen Einrichtungen professionell und sicher. Durch modernste Reinigungsverfahren entfernen wir Öl, Schmierstoffe, Metallabrieb und andere Rückstände, um Maschinenlaufzeiten zu verlängern und Produktionsausfälle zu minimieren.</p><p></p><p>✅ Teilewaschmaschinen & Bearbeitungsanlagen<br/>✅ CNC-Maschinen und Bearbeitungszentren<br/>✅ Produktionshallen, Förderbäner<br/>✅ Böden, Decken und Markierungen<br/>✅ Rolltore, Fassaden & Photovoltaik<br/>✅ Schaltschrank- & Führungsschienen</p><p></p><p> Kontaktiren Sie uns gerne - Gemeinsam besprechen wir Ihre Anforderugnen und erstellen Ihnen ein individuelles Angebot.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_1049740148.jpg",
@@ -216,30 +223,6 @@
     },
     "about_section_v3_xGiwpV": {
       "type": "about-section-v3",
-      "blocks": {
-        "feature_wNwJEJ": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung"
-          }
-        },
-        "feature_4XLfXA": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "Feature Titel",
-            "feature_description": "Kurze Beschreibung"
-          }
-        }
-      },
-      "block_order": [
-        "feature_wNwJEJ",
-        "feature_4XLfXA"
-      ],
       "name": "Über Uns (Layout) – v3-Silos und Behälter",
       "settings": {
         "image_position": "right",
@@ -256,7 +239,7 @@
         "subtitle_richtext": "",
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
-        "description": "<p>Im Rahmen der Reinigung und Instandhaltung von Silos und Behältern werden die Innen- und Außenbereiche von Ablagerungen wie Kreidestaub-Rückstände oder sonstige leicht anhaftende Verschmutzungen beseitigt. Dazu gehören die Reinigung von z.B. Rohrleitungen, Stahlträgerkonstruktionen, Motoren, Filterkästen, Geländern sowie Kabel- und Leitungsführungen im Umliegenden Bereich. Auch die Bodenflächen im unmittelbaren Umfeld der Anlagen werden in die Reinigungsarbeiten einbezogen, um eine vollständige Hygiene und Sicherheit zu gewährleisten.<br/>Ein besonderer Fokus liegt auf der Innenreinigung von Silos, die je nach Anforderung mit Hochdruckreinigung (HDR) und speziellen Desinfektionsverfahren für die Innenwände durchgeführt wird. Die Silos können dabei unterschiedliche Höhen (z.B. 9m, 18 Meter) und Tiefen bzw. Durchmesser aufweisen, was den Einsatz von besonderen Sicherheitsmaßnahmen erfordert. Wir arbeiten daher mit unterschiedlichen Systemen, z.B. ein Dreibein-Rettungssystemen mit Seilwinden und besonderer persönlicher Schutzausrüstung (PSA), um die Sicherheit und Gesundheit bei der Arbeit sicherzustellen.</p><p><br/>Zusätzlich zu den klassischen Reinigungsarbeiten können auch Sandstrahlarbeiten an den Außenflächen durchgeführt werden, um z.B. oberflächliche Lack- und Rostrückstände zu entfernen und die Oberflächen für weitere Beschichtungen vorzubereiten. Hierfür kommen mobile Strahlanlagen zum Einsatz, die eine flexible und effiziente Bearbeitung ermöglichen. Bei Arbeiten in größeren Höhen werden Hubarbeitsbühnen genutzt, um den Zugang zu den entsprechenden Bereichen zu gewährleisten.</p>",
+        "description": "<p>Im Rahmen der Reinigung und Instandhaltung von Silos und Behältern werden die Innen- und Außenbereiche von Ablagerungen wie Kreidestaub-Rückstände oder sonstige leicht anhaftende Verschmutzungen beseitigt. Dazu gehören die Reinigung von z.B. Rohrleitungen, Stahlträgerkonstruktionen, Motoren, Filterkästen, Geländern sowie Kabel- und Leitungsführungen im Umliegenden Bereich. Auch die Bodenflächen im unmittelbaren Umfeld der Anlagen werden in die Reinigungsarbeiten einbezogen, um eine vollständige Hygiene und Sicherheit zu gewährleisten.<br/>Ein besonderer Fokus liegt auf der Innenreinigung von Silos, die je nach Anforderung mit Hochdruckreinigung (HDR) und speziellen Desinfektionsverfahren für die Innenwände durchgeführt wird. Die Silos können dabei unterschiedliche Höhen (z.B. 9m, 18 Meter) und Tiefen bzw. Durchmesser aufweisen, was den Einsatz von besonderen Sicherheitsmaßnahmen erfordert. Wir arbeiten daher mit unterschiedlichen Systemen, z.B. ein Dreibein-Rettungssystemen mit Seilwinden und besonderer persönlicher Schutzausrüstung (PSA), um die Sicherheit und Gesundheit bei der Arbeit sicherzustellen.</p><p>Zusätzlich zu den klassischen Reinigungsarbeiten können auch Sandstrahlarbeiten an den Außenflächen durchgeführt werden, um z.B. oberflächliche Lack- und Rostrückstände zu entfernen und die Oberflächen für weitere Beschichtungen vorzubereiten. Hierfür kommen mobile Strahlanlagen zum Einsatz, die eine flexible und effiziente Bearbeitung ermöglichen. Bei Arbeiten in größeren Höhen werden Hubarbeitsbühnen genutzt, um den Zugang zu den entsprechenden Bereichen zu gewährleisten.</p>",
         "text_color": "#6b7280",
         "text_font_size": 18,
         "image": "shopify://shop_images/shutterstock_228505726.jpg",
