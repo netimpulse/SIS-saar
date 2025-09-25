@@ -82,7 +82,7 @@
         "download_cVTVn7": {
           "type": "download",
           "settings": {
-            "title": "ISO 9001",
+            "title": "ISO 9001: 2015",
             "date": "11.09.2023",
             "file_url": "",
             "tags": "Zertifikat, ISO, 9001"
@@ -91,43 +91,16 @@
         "download_7Uq3dW": {
           "type": "download",
           "settings": {
-            "title": "ISO 9001",
+            "title": "WHG - Zertifikat",
             "date": "11.09.2023",
             "file_url": "",
             "tags": "Zertifikat, ISO, 9001"
           }
         },
-        "download_GRfgxq": {
+        "download_KXFVMF": {
           "type": "download",
           "settings": {
-            "title": "ISO 9001",
-            "date": "11.09.2023",
-            "file_url": "",
-            "tags": "Zertifikat, ISO, 9001"
-          }
-        },
-        "download_DgDJ8A": {
-          "type": "download",
-          "settings": {
-            "title": "ISO 9001",
-            "date": "11.09.2023",
-            "file_url": "",
-            "tags": "Zertifikat, ISO, 9001"
-          }
-        },
-        "download_69riFF": {
-          "type": "download",
-          "settings": {
-            "title": "ISO 9001",
-            "date": "11.09.2023",
-            "file_url": "",
-            "tags": "Zertifikat, ISO, 9001"
-          }
-        },
-        "download_ApEzt4": {
-          "type": "download",
-          "settings": {
-            "title": "ISO 9001",
+            "title": "AMS der BG Bau",
             "date": "11.09.2023",
             "file_url": "",
             "tags": "Zertifikat, ISO, 9001"
@@ -137,10 +110,7 @@
       "block_order": [
         "download_cVTVn7",
         "download_7Uq3dW",
-        "download_GRfgxq",
-        "download_DgDJ8A",
-        "download_69riFF",
-        "download_ApEzt4"
+        "download_KXFVMF"
       ],
       "name": "Downloads / Zertifikate (DLX)",
       "settings": {
@@ -153,7 +123,7 @@
         "heading_align": "center",
         "heading_weight": 700,
         "heading_style": "normal",
-        "show_search": true,
+        "show_search": false,
         "search_placeholder": "Suchen… (Titel oder Tags, z. B. ISO, VDI, Brandschutz)",
         "search_hint": "Tipp: Mehrere Tags mit Komma trennen – z. B. “ISO, 9001”",
         "hover_color": "#e6f4ff"
