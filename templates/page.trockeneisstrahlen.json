@@ -169,8 +169,8 @@
         "image_vertical_align": "start",
         "show_image": true,
         "background_color": "#ffffff",
-        "section_padding_top": 80,
-        "section_padding_bottom": 80,
+        "section_padding_top": 40,
+        "section_padding_bottom": 40,
         "title": "",
         "title_richtext": "<p><strong>Trockeneisstrahlen</strong></p><p></p>",
         "title_color": "#111827",
@@ -269,6 +269,36 @@
         "section_padding_bottom": 80,
         "title": "Trockeneisstrahlen",
         "title_richtext": "<p><strong>Vorteile</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "",
+        "text_color": "#6b7280",
+        "text_font_size": 18,
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "auto",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827"
+      }
+    },
+    "about_section_v2_A4pNwi": {
+      "type": "about-section-v2",
+      "name": "Über Uns (Layout) – Neu Vorteile",
+      "settings": {
+        "layout_direction": "text_left",
+        "show_image": true,
+        "background_color": "#ffffff",
+        "section_padding_top": 20,
+        "section_padding_bottom": 0,
+        "title": "",
+        "title_richtext": "<p><strong>Branchen</strong></p>",
         "title_color": "#111827",
         "title_font_size": 32,
         "subtitle": "",
@@ -414,7 +444,7 @@
             "image": "shopify://shop_images/shutterstock_731614684.jpg",
             "alt": "Bild",
             "image_side": "left",
-            "title": "<h2><strong>🔧 Industrie & Maschinenbau</strong></h2><h2></h2>",
+            "title": "<h2><strong>🔧 Industrie & Maschinenbau</strong></h2>",
             "text": "<p></p><ul><li>Reinigung von <strong>Produktionsanlagen</strong>, Maschinen und Werkzeugen</li><li>Entfernung von <strong>Ölen, Fetten, Schmutz, Spänen</strong></li><li>Ideal, weil <strong>keine Demontage</strong> nötig ist und Elektronik nicht beschädigt wird</li></ul>",
             "show_divider": true
           }
@@ -424,7 +454,7 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_442742170.jpg",
             "alt": "Bild",
-            "image_side": "left",
+            "image_side": "right",
             "title": "<h2>🚗 <strong>Automobil- & Zulieferindustrie</strong></h2>",
             "text": "<p></p><ul><li>Formen- und Werkzeugreinigung im <strong>Spritzguss / Druckguss</strong></li><li>Entfernen von <strong>Schweißrückständen, Lack, Kleber</strong></li><li>Reinigung von <strong>Motor- und Antriebsteilen</strong></li></ul>",
             "show_divider": true
@@ -436,7 +466,7 @@
             "image": "shopify://shop_images/shutterstock_254519980.jpg",
             "alt": "Bild",
             "image_side": "left",
-            "title": "<h2><br/>📦 <strong>Lebensmittel- & Getränkeindustrie</strong></h2>",
+            "title": "<h2>📦 <strong>Lebensmittel- & Getränkeindustrie</strong></h2>",
             "text": "<p></p><ul><li>Hygienische Reinigung von <strong>Förderbändern, Backöfen, Abfüllanlagen</strong></li><li>Rückstandsfreie Entfernung von <strong>Fetten, Eiweiß, Zucker</strong></li><li>Vorteil: <strong>keine Chemikalien, keine Wasserreste</strong></li></ul>",
             "show_divider": true
           }
@@ -444,10 +474,10 @@
         "media_row_yrpczw": {
           "type": "media_row",
           "settings": {
-            "image": "shopify://shop_images/shutterstock_555365941.jpg",
+            "image": "shopify://shop_images/shutterstock_442349785.jpg",
             "alt": "Bild",
-            "image_side": "left",
-            "title": "<h2><br/>🏭 <strong>Kunststoff- & Gummiindustrie</strong></h2>",
+            "image_side": "right",
+            "title": "<h2>🏭 <strong>Kunststoff- & Gummiindustrie</strong></h2>",
             "text": "<p></p><ul><li>Formenreinigung (z. B. <strong>Spritzguss-, Reifenformen</strong>)</li><li>Entfernt <strong>Trennmittel, Farb- und Materialreste</strong></li></ul>",
             "show_divider": true
           }
@@ -458,7 +488,7 @@
             "image": "shopify://shop_images/shutterstock_726781549.jpg",
             "alt": "Bild",
             "image_side": "left",
-            "title": "<h2><br/>✈️ <strong>Luft- & Raumfahrt</strong></h2>",
+            "title": "<h2>✈️ <strong>Luft- & Raumfahrt</strong></h2>",
             "text": "<p></p><ul><li>Reinigung empfindlicher <strong>Triebwerks- oder Flugzeugkomponenten</strong></li><li><strong>Farbentfernung</strong> ohne Materialabtrag</li><li>Schonend für <strong>Alu- und Carbonbauteile</strong></li></ul>",
             "show_divider": true
           }
@@ -468,8 +498,8 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_1050808721.jpg",
             "alt": "Bild",
-            "image_side": "left",
-            "title": "<h2><br/>🖥️ <strong>Elektronik & Elektrotechnik</strong></h2>",
+            "image_side": "right",
+            "title": "<h2> 🖥️ <strong>Elektronik & Elektrotechnik</strong></h2>",
             "text": "<p></p><ul><li>Reinigung von <strong>Schaltschränken, Leiterplatten, Generatoren</strong></li><li>Entfernt Staub, Flussmittelreste oder Öle <strong>ohne Kurzschlussrisiko</strong></li></ul>",
             "show_divider": true
           }
@@ -490,8 +520,8 @@
           "settings": {
             "image": "shopify://shop_images/shutterstock_529683889.jpg",
             "alt": "Bild",
-            "image_side": "left",
-            "title": "<h2>🚂 <strong>Transport & Logistik</strong></h2>",
+            "image_side": "right",
+            "title": "<h2><strong> 🚂 Transport & Logistik</strong></h2>",
             "text": "<p></p><ul><li>Reinigung von <strong>Waggons, Containern, Lkw-Aufbauten</strong></li><li>Entfernt Öl, Bremsstaub, Lack oder Beläge</li></ul>",
             "show_divider": true
           }
@@ -891,6 +921,7 @@
     "leistung_showcase_pDxJq9",
     "about_section_v3_E4EJpt",
     "about_section_v2_b8VKY4",
+    "about_section_v2_A4pNwi",
     "about_section_v3_WEBtxM",
     "custom_media_richtext_eKaTX3",
     "custom_cta_block_Y6hmWD",
