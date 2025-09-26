@@ -155,8 +155,8 @@
       ],
       "name": "Über Uns (Layout) – v3 - Sandstrahlen",
       "settings": {
-        "image_position": "left",
-        "image_vertical_align": "center",
+        "image_position": "right",
+        "image_vertical_align": "start",
         "show_image": true,
         "background_color": "#ffffff",
         "section_padding_top": 25,
@@ -220,18 +220,40 @@
       "blocks": {
         "media_row_G3P4kA": {
           "type": "media_row",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/shutterstock_657636373.jpg",
+            "image": "shopify://shop_images/IMG_8260.jpg",
             "alt": "Bild",
             "image_side": "left",
-            "title": "",
+            "title": "<p><strong>Sandgranulatstrahlen einer Holzfassade</strong></p>",
             "text": "",
-            "show_divider": true
+            "show_divider": false
+          }
+        },
+        "media_row_LqDW6j": {
+          "type": "media_row",
+          "settings": {
+            "image": "shopify://shop_images/Glasstrahlen_im_Nassstrahlverfahren.jpg",
+            "alt": "Bild",
+            "image_side": "right",
+            "title": "<p><strong>Glasstrahlen eines Zylinderkopfdeckels</strong></p>",
+            "text": "",
+            "show_divider": false
+          }
+        },
+        "media_row_QxLJbY": {
+          "type": "media_row",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_657611401.jpg",
+            "alt": "Bild",
+            "image_side": "left",
+            "title": "<p><strong>Sodastrahlen einer Motorabdeckung</strong></p>",
+            "text": "",
+            "show_divider": false
           }
         },
         "gallery_item_BJrUYM": {
           "type": "gallery_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/IMG_8260.jpg",
             "alt": "Galeriebild",
@@ -240,6 +262,7 @@
         },
         "gallery_item_zqkt6V": {
           "type": "gallery_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Glasstrahlen_im_Nassstrahlverfahren.jpg",
             "alt": "Galeriebild",
@@ -248,6 +271,7 @@
         },
         "gallery_item_mDpVB6": {
           "type": "gallery_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/shutterstock_657611401.jpg",
             "alt": "Galeriebild",
@@ -257,6 +281,8 @@
       },
       "block_order": [
         "media_row_G3P4kA",
+        "media_row_LqDW6j",
+        "media_row_QxLJbY",
         "gallery_item_BJrUYM",
         "gallery_item_zqkt6V",
         "gallery_item_mDpVB6"
