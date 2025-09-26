@@ -263,7 +263,7 @@
       "name": "Über Uns (Layout) – Neu Vorteile",
       "settings": {
         "layout_direction": "text_left",
-        "show_image": true,
+        "show_image": false,
         "background_color": "#ffffff",
         "section_padding_top": 45,
         "section_padding_bottom": 80,
@@ -278,6 +278,7 @@
         "description": "",
         "text_color": "#6b7280",
         "text_font_size": 18,
+        "image": "shopify://shop_images/IMG_9236.jpg",
         "image_border_radius": 12,
         "image_alt": "",
         "image_max_width": 85,
@@ -288,133 +289,44 @@
         "feature_title_color": "#111827"
       }
     },
-    "about_section_v2_A4pNwi": {
-      "type": "about-section-v2",
-      "name": "Über Uns (Layout) – Neu Vorteile",
-      "settings": {
-        "layout_direction": "text_left",
-        "show_image": true,
-        "background_color": "#ffffff",
-        "section_padding_top": 20,
-        "section_padding_bottom": 0,
-        "title": "",
-        "title_richtext": "<p><strong>Branchen</strong></p>",
-        "title_color": "#111827",
-        "title_font_size": 32,
-        "subtitle": "",
-        "subtitle_richtext": "",
-        "subtitle_color": "#374151",
-        "subtitle_font_size": 20,
-        "description": "",
-        "text_color": "#6b7280",
-        "text_font_size": 18,
-        "image_border_radius": 12,
-        "image_alt": "",
-        "image_max_width": 85,
-        "image_aspect_ratio": "auto",
-        "features_per_row": "2",
-        "icon_size": 32,
-        "icon_color": "#34d399",
-        "feature_title_color": "#111827"
-      }
-    },
-    "about_section_v3_WEBtxM": {
+    "about_section_v3_EMFjnT": {
       "type": "about-section-v3",
       "blocks": {
-        "feature_NgVP4g": {
+        "feature_3Jp6X7": {
           "type": "feature",
+          "disabled": true,
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "🔧 Industrie & Maschinenbau",
-            "feature_description": "Reinigung von Produktionsanlagen, Maschinen und WerkzeugenEntfernung von Ölen, Fetten, Schmutz, SpänenIdeal, weil keine Demontage nötig ist und Elektronik nicht beschädigt wird"
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung"
           }
         },
-        "feature_9gwDb6": {
+        "feature_qQ4Btj": {
           "type": "feature",
+          "disabled": true,
           "settings": {
             "icon_type": "svg",
             "icon_svg": "",
-            "feature_title": "🚗 Automobil- & Zulieferindustrie",
-            "feature_description": "Formen- und Werkzeugreinigung im Spritzguss / DruckgussEntfernen von Schweißrückständen, Lack, KleberReinigung von Motor- und Antriebsteilen"
-          }
-        },
-        "feature_kVyHYP": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "📦 Lebensmittel- & Getränkeindustrie",
-            "feature_description": "Hygienische Reinigung von Förderbändern, Backöfen, AbfüllanlagenRückstandsfreie Entfernung von Fetten, Eiweiß, ZuckerVorteil: keine Chemikalien, keine Wasserreste"
-          }
-        },
-        "feature_g7JH8g": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "🏭 Kunststoff- & Gummiindustrie",
-            "feature_description": "Formenreinigung (z. B. Spritzguss-, Reifenformen)Entfernt Trennmittel, Farb- und Materialreste"
-          }
-        },
-        "feature_w47x6B": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "✈️ Luft- & Raumfahrt",
-            "feature_description": "Reinigung empfindlicher Triebwerks- oder Flugzeugkomponenten, Farbentfernung ohne Materialabtrag, Schonend für Alu- und Carbonbauteile"
-          }
-        },
-        "feature_GD3rDB": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "🖥️ Elektronik & Elektrotechnik",
-            "feature_description": "Reinigung von Schaltschränken, Leiterplatten, GeneratorenEntfernt Staub, Flussmittelreste oder Öle ohne Kurzschlussrisiko"
-          }
-        },
-        "feature_ww8YyC": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "🏗️ Bau & Sanierung",
-            "feature_description": "Entfernung von Graffiti, Farbe, SchimmelReinigung von Holzbalken, Fassaden, DenkmälernSanierung nach Brand- oder Wasserschäden"
-          }
-        },
-        "feature_LX3egq": {
-          "type": "feature",
-          "settings": {
-            "icon_type": "svg",
-            "icon_svg": "",
-            "feature_title": "🚂 Transport & Logistik",
-            "feature_description": "Reinigung von Waggons, Containern, Lkw-AufbautenEntfernt Öl, Bremsstaub, Lack oder Beläge"
+            "feature_title": "Feature Titel",
+            "feature_description": "Kurze Beschreibung"
           }
         }
       },
       "block_order": [
-        "feature_NgVP4g",
-        "feature_9gwDb6",
-        "feature_kVyHYP",
-        "feature_g7JH8g",
-        "feature_w47x6B",
-        "feature_GD3rDB",
-        "feature_ww8YyC",
-        "feature_LX3egq"
+        "feature_3Jp6X7",
+        "feature_qQ4Btj"
       ],
-      "disabled": true,
-      "name": "Über Uns (Layout) – v3 - Bredarfsbranchen",
+      "name": "bugfix css - block ",
       "settings": {
-        "image_position": "left",
+        "image_position": "right",
         "image_vertical_align": "center",
-        "show_image": false,
-        "background_color": "#ffffff",
-        "section_padding_top": 20,
-        "section_padding_bottom": 45,
+        "show_image": true,
+        "background_color": "#FFFFFF",
+        "section_padding_top": 0,
+        "section_padding_bottom": 0,
         "title": "",
-        "title_richtext": "<p><strong>Einige Einsatzbranchen im Überblick</strong></p>",
+        "title_richtext": "",
         "title_color": "#111827",
         "title_font_size": 32,
         "subtitle": "",
@@ -422,7 +334,7 @@
         "subtitle_color": "#374151",
         "subtitle_font_size": 20,
         "description": "",
-        "text_color": "#6b7280",
+        "text_color": "#6B7280",
         "text_font_size": 18,
         "image_border_radius": 12,
         "image_alt": "",
@@ -430,9 +342,9 @@
         "image_aspect_ratio": "4/3",
         "features_per_row": "2",
         "icon_size": 32,
-        "icon_color": "#34d399",
+        "icon_color": "#34D399",
         "feature_title_color": "#111827",
-        "no_image_text_align": "center"
+        "no_image_text_align": "left"
       }
     },
     "custom_media_richtext_eKaTX3": {
@@ -921,8 +833,7 @@
     "leistung_showcase_pDxJq9",
     "about_section_v3_E4EJpt",
     "about_section_v2_b8VKY4",
-    "about_section_v2_A4pNwi",
-    "about_section_v3_WEBtxM",
+    "about_section_v3_EMFjnT",
     "custom_media_richtext_eKaTX3",
     "custom_cta_block_Y6hmWD",
     "sis_single_footer_N4n9t3",
