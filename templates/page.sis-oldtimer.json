@@ -232,244 +232,100 @@
         "buttons_gap": 16
       }
     },
-    "sis_single_footer_N4n9t3": {
-      "type": "sis-single-footer",
-      "blocks": {
-        "legal_link_77kEdN": {
-          "type": "legal_link",
-          "settings": {
-            "label": "Impressum",
-            "url": ""
-          }
-        },
-        "legal_link_ANKwbq": {
-          "type": "legal_link",
-          "settings": {
-            "label": "Datenschutz",
-            "url": ""
-          }
-        },
-        "legal_link_nfcPaJ": {
-          "type": "legal_link",
-          "settings": {
-            "label": "AGBs",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "legal_link_77kEdN",
-        "legal_link_ANKwbq",
-        "legal_link_nfcPaJ"
-      ],
-      "disabled": true,
-      "name": "SIS – Einzelfooter",
-      "settings": {
-        "title": "SIS Saar Gebäude Service",
-        "contact_heading": "Kontakt",
-        "address_line_1": "Musterstraße 1, 12345 Musterstadt",
-        "address_line_2": "1",
-        "phone": "0123 / 456 789",
-        "email": "gebaeude@sis-saar.de",
-        "legal_heading": "Rechtliches",
-        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten.",
-        "bg_color": "#0f1621",
-        "text_color": "#cbd5e1",
-        "heading_color": "#ffffff",
-        "link_color": "#3b82f6",
-        "divider_color": "#1e293b"
-      }
-    },
-    "sis_footer_neu_JVQEXT": {
+    "sis_footer_neu_Wj6M7T": {
       "type": "sis-footer-neu",
       "blocks": {
-        "leistungen_link_w48zqx": {
+        "leistungen_link_Wbhjqk": {
           "type": "leistungen_link",
           "settings": {
             "text": "Industrieservice",
             "link": "shopify://pages/industrieservice-leistungen"
           }
         },
-        "leistungen_link_kawdCe": {
-          "type": "leistungen_link",
-          "settings": {
-            "text": "Gebäudeservice",
-            "link": "shopify://pages/sis-saar-gebaeudeservice-leistungen"
-          }
-        },
-        "unternehmen_link_grWJG9": {
+        "unternehmen_link_GpkzAy": {
           "type": "unternehmen_link",
           "settings": {
             "text": "Kontakt",
             "link": "shopify://pages/allgemeiner-kontakt"
           }
         },
-        "unternehmen_link_x8rf8h": {
+        "unternehmen_link_cGLFPV": {
           "type": "unternehmen_link",
           "settings": {
             "text": "Karriere",
-            "link": "shopify://pages/gebaudeservice-karriere"
+            "link": "shopify://pages/industrieservice-karriere"
           }
         },
-        "kontakt_link_XqfD8G": {
-          "type": "kontakt_link",
-          "settings": {
-            "text": "Impressum",
-            "link": ""
-          }
-        },
-        "kontakt_link_Wjc7Dd": {
-          "type": "kontakt_link",
-          "settings": {
-            "text": "Datenschutz",
-            "link": ""
-          }
-        },
-        "partner_logo_BPBmWD": {
-          "type": "partner_logo",
-          "settings": {
-            "logo": "shopify://shop_images/logo_Gebaeudeservice_exact_v2.png",
-            "alt": "Partner",
-            "link": "",
-            "new_tab": true
-          }
-        },
-        "partner_logo_jDgUdM": {
-          "type": "partner_logo",
-          "settings": {
-            "logo": "shopify://shop_images/logo_Industrieservice_exact_v2.png",
-            "alt": "Partner",
-            "link": "",
-            "new_tab": true
-          }
-        }
-      },
-      "block_order": [
-        "leistungen_link_w48zqx",
-        "leistungen_link_kawdCe",
-        "unternehmen_link_grWJG9",
-        "unternehmen_link_x8rf8h",
-        "kontakt_link_XqfD8G",
-        "kontakt_link_Wjc7Dd",
-        "partner_logo_BPBmWD",
-        "partner_logo_jDgUdM"
-      ],
-      "disabled": true,
-      "name": "SIS Footer NEU",
-      "settings": {
-        "background_color": "#111827",
-        "section_padding": 60,
-        "separator_color": "#374151",
-        "title_color": "#ffffff",
-        "title_font_size": 24,
-        "subtitle_color": "#d1d5db",
-        "subtitle_font_size": 18,
-        "text_color": "#9ca3af",
-        "text_font_size": 14,
-        "link_color": "#60a5fa",
-        "col1_title": "Leistungen",
-        "col2_title": "Unternehmen",
-        "col3_title": "Kontakt",
-        "col4_title": "Partner",
-        "contact_company": "SIS Saar",
-        "contact_address": "Musterstraße 1, 12345 Musterstadt",
-        "contact_phone": "0123 / 456 789",
-        "contact_email": "info@sis-saar.de",
-        "contact_hours": "Mo–Fr 8–17 Uhr",
-        "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
-      }
-    },
-    "sis_footer_neu_NGXVkY": {
-      "type": "sis-footer-neu",
-      "blocks": {
-        "leistungen_link_47Mgqf": {
-          "type": "leistungen_link",
-          "settings": {
-            "text": "Industrieservice",
-            "link": "shopify://pages/industrieservice-leistungen"
-          }
-        },
-        "leistungen_link_wJg7Mb": {
-          "type": "leistungen_link",
+        "unternehmen_link_nDAHUr": {
+          "type": "unternehmen_link",
           "disabled": true,
-          "settings": {
-            "text": "Gebäudeservice",
-            "link": "shopify://pages/sis-saar-gebaeudeservice-leistungen"
-          }
-        },
-        "unternehmen_link_7kDnLg": {
-          "type": "unternehmen_link",
-          "settings": {
-            "text": "Kontakt",
-            "link": "shopify://pages/allgemeiner-kontakt"
-          }
-        },
-        "unternehmen_link_fjqJgw": {
-          "type": "unternehmen_link",
-          "settings": {
-            "text": "Karriere",
-            "link": "shopify://pages/gebaudeservice-karriere"
-          }
-        },
-        "unternehmen_link_VDUxqz": {
-          "type": "unternehmen_link",
           "settings": {
             "text": "Unsere Partner",
             "link": "shopify://pages/partner"
           }
         },
-        "unternehmen_link_dUmkrh": {
+        "unternehmen_link_xbyReR": {
           "type": "unternehmen_link",
           "settings": {
             "text": "Downloads",
             "link": "shopify://pages/downloads"
           }
         },
-        "kontakt_link_PfyWQi": {
+        "kontakt_link_9Q4yNX": {
           "type": "kontakt_link",
           "settings": {
             "text": "Impressum Industrieservice",
-            "link": ""
+            "link": "shopify://pages/industrieservice-impressum"
           }
         },
-        "kontakt_link_WrcRkB": {
-          "type": "kontakt_link",
-          "disabled": true,
-          "settings": {
-            "text": "Impressum Gebäudeservice",
-            "link": ""
-          }
-        },
-        "kontakt_link_PCt7TU": {
+        "kontakt_link_8QmJD9": {
           "type": "kontakt_link",
           "settings": {
             "text": "Datenschutz",
             "link": ""
           }
         },
-        "partner_logo_NjW3YC": {
+        "partner_logo_3Dz3bh": {
+          "type": "partner_logo",
+          "settings": {
+            "logo": "shopify://shop_images/2025-SIS.png",
+            "alt": "Partner Industrieservice GmbH",
+            "link": "shopify://pages/industrieservice-startseite",
+            "new_tab": true
+          }
+        },
+        "partner_logo_akPqdG": {
+          "type": "partner_logo",
+          "settings": {
+            "logo": "shopify://shop_images/2025-SIS-Gebaeude.png",
+            "alt": "Partner Gebäudeservice GmbH",
+            "link": "shopify://pages/sis-saar-gebaeudeservice",
+            "new_tab": true
+          }
+        },
+        "partner_logo_ecRnND": {
           "type": "partner_logo",
           "settings": {
             "logo": "shopify://shop_images/2025_AMG_zugeschnitten_DA.png",
-            "alt": "Partner",
-            "link": "",
+            "alt": "Partner AMG Tech GmbH",
+            "link": "https://www.trockeneis.saarland/",
             "new_tab": true
           }
         }
       },
       "block_order": [
-        "leistungen_link_47Mgqf",
-        "leistungen_link_wJg7Mb",
-        "unternehmen_link_7kDnLg",
-        "unternehmen_link_fjqJgw",
-        "unternehmen_link_VDUxqz",
-        "unternehmen_link_dUmkrh",
-        "kontakt_link_PfyWQi",
-        "kontakt_link_WrcRkB",
-        "kontakt_link_PCt7TU",
-        "partner_logo_NjW3YC"
+        "leistungen_link_Wbhjqk",
+        "unternehmen_link_GpkzAy",
+        "unternehmen_link_cGLFPV",
+        "unternehmen_link_nDAHUr",
+        "unternehmen_link_xbyReR",
+        "kontakt_link_9Q4yNX",
+        "kontakt_link_8QmJD9",
+        "partner_logo_3Dz3bh",
+        "partner_logo_akPqdG",
+        "partner_logo_ecRnND"
       ],
-      "name": "SIS Footer NEU",
+      "name": "SIS Footer NEU- Industrieservice",
       "settings": {
         "background_color": "#111827",
         "section_padding": 60,
@@ -485,11 +341,11 @@
         "col2_title": "Unternehmen",
         "col3_title": "Kontakt",
         "col4_title": "Partner",
-        "contact_company": "SIS Saar Industrieservice",
-        "contact_address": "Musterstraße 1, 12345 Musterstadt",
-        "contact_phone": "0123 / 456 789",
-        "contact_email": "info@sis-saar.de",
-        "contact_hours": "Mo–Fr 8–17 Uhr",
+        "contact_company": "SIS Saar - Industrie - Service GmbH",
+        "contact_address": "Vorderster Berg 13,\n66333 Völklingen",
+        "contact_phone": "(+49) (0) 6898 16 90 900",
+        "contact_email": "info@sissaar.de",
+        "contact_hours": "",
         "copyright_text": "© 2024 SIS Saar. Alle Rechte vorbehalten."
       }
     }
@@ -501,8 +357,6 @@
     "leistung_showcase_pDxJq9",
     "about_section_v2_b8VKY4",
     "custom_cta_block_HNbL7T",
-    "sis_single_footer_N4n9t3",
-    "sis_footer_neu_JVQEXT",
-    "sis_footer_neu_NGXVkY"
+    "sis_footer_neu_Wj6M7T"
   ]
 }
