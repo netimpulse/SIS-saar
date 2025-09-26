@@ -18,7 +18,7 @@
         "padding_horizontal": 24,
         "logo_height": 40,
         "back_link": "",
-        "back_label": "Zurück",
+        "back_label": "",
         "back_font": "system_ui_n4",
         "back_font_bold": false,
         "back_text_color": "#374151",
