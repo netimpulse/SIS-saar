@@ -258,6 +258,39 @@
         "no_image_text_align": "left"
       }
     },
+    "about_section_v3_AjbzpE": {
+      "type": "about-section-v3",
+      "name": "Über Uns (Layout) – v3",
+      "settings": {
+        "image_position": "right",
+        "image_vertical_align": "start",
+        "show_image": true,
+        "background_color": "#f3f3f3",
+        "section_padding_top": 20,
+        "section_padding_bottom": 40,
+        "title": "",
+        "title_richtext": "<p><strong>Warum wir?</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<p><strong>Kompetenz, auf die sie sich verlassen können</strong><br/>Mit jahrelanger Erfahrung im Industrie- und Gebäudeservice bieten wir durchdachte, maßgeschneiderte Lösungen für höchste Anforderungen – zuverlässig, effizient und mit Blick fürs Detail.</p><p><strong>Zuverlässigkeit & Qualität</strong><br/>Unsere Arbeit steht für nachhaltige Sauberkeit, Sicherheit und den <br/>langfristigen Werterhalt Ihrer Anlagen – professionell umgesetzt und <br/>lückenlos dokumentiert.</p><p><strong>Regional stark – persönlich betreut</strong><br/>Kurze Wege, schnelle Reaktionszeiten, direkter Draht: Wir sind in Ihrer Nähe und für Sie da, wenn es darauf ankommt.<br/><br/></p>",
+        "text_color": "#121212",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/shutterstock_782845411.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "4/3",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "left"
+      }
+    },
     "about_section_v3_jYmwQj": {
       "type": "about-section-v3",
       "blocks": {
@@ -740,6 +773,7 @@
     "split_show_handy_nkKeqP",
     "erfahrungen_stats_XfeLhM",
     "about_section_v3_npbxcG",
+    "about_section_v3_AjbzpE",
     "about_section_v3_jYmwQj",
     "partner_logos_khWdEB",
     "kbv2_section_dBbUd6",
