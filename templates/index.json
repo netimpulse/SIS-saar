@@ -84,6 +84,103 @@
         "right_button_link": "shopify://pages/sis-saar-gebaeudeservice"
       }
     },
+    "erfahrungen_stats_XfeLhM": {
+      "type": "erfahrungen-stats",
+      "blocks": {
+        "badge_RgPCRK": {
+          "type": "badge",
+          "settings": {
+            "badge_text": "200+ Kunden"
+          }
+        },
+        "badge_MarTX8": {
+          "type": "badge",
+          "settings": {
+            "badge_text": "150+ Beschäftigte"
+          }
+        },
+        "badge_hp9ePa": {
+          "type": "badge",
+          "settings": {
+            "badge_text": "20+ Jahre Erfahrung"
+          }
+        },
+        "stat_hTry6B": {
+          "type": "stat",
+          "settings": {
+            "emoji": "🌳",
+            "title": "Regional verwurzelt – überregional stark",
+            "subtitle": "Wir stehen für saarländische Verlässlichkeit mit professionellem Anspruch.",
+            "featured": false,
+            "aria_label": "Wert/Stat-Karte"
+          }
+        },
+        "stat_r9MnXW": {
+          "type": "stat",
+          "settings": {
+            "emoji": "⭐",
+            "title": "Qualität durch Leidenschaft",
+            "subtitle": "Sauberkeit ist für uns mehr als ein Standard – sie ist unsere Überzeugung.",
+            "featured": false,
+            "aria_label": "Wert/Stat-Karte"
+          }
+        },
+        "stat_pRNn3z": {
+          "type": "stat",
+          "settings": {
+            "emoji": "👤",
+            "title": "Menschen im Mittelpunkt",
+            "subtitle": "Schulung, Sicherheit und Wertschätzung sind für uns selbstverständlich.",
+            "featured": false,
+            "aria_label": "Wert/Stat-Karte"
+          }
+        },
+        "stat_a7dwQK": {
+          "type": "stat",
+          "settings": {
+            "emoji": "🌱",
+            "title": "Nachhaltigkeit im Blick",
+            "subtitle": "Moderne, ressourcenschonende Verfahren für gelebte Praxis.",
+            "featured": false,
+            "aria_label": "Wert/Stat-Karte"
+          }
+        },
+        "stat_XawFH7": {
+          "type": "stat",
+          "settings": {
+            "emoji": "🤝",
+            "title": "Partnerschaft auf Augenhöhe",
+            "subtitle": "Wir hören zu, verstehen Bedürfnisse und liefern Lösungen, die passen.",
+            "featured": false,
+            "aria_label": "Wert/Stat-Karte"
+          }
+        }
+      },
+      "block_order": [
+        "badge_RgPCRK",
+        "badge_MarTX8",
+        "badge_hp9ePa",
+        "stat_hTry6B",
+        "stat_r9MnXW",
+        "stat_pRNn3z",
+        "stat_a7dwQK",
+        "stat_XawFH7"
+      ],
+      "name": "Erfahrungen • Stats",
+      "settings": {
+        "kicker": "Über 20 Jahre Erfahrung",
+        "heading": "<p><strong>Unsere Werte</strong></p>",
+        "richtext": "<p>Als familiengeführtes Unternehmen legen wir Wert auf persönlichen Service und langfristige Kundenbeziehungen. Unser Team von über 150 qualifizierten Mitarbeitenden sorgt täglich dafür, dass mehr als 200 zufriedene KundInnen auf unsere Zuverlässigkeit vertrauen.</p>",
+        "btn_label": "Mehr über uns",
+        "btn_link": "",
+        "btn_newtab": false,
+        "bg_color": "#ffffff",
+        "card_bg": "#ffffff",
+        "card_radius": 16,
+        "text_color": "#111111",
+        "accent_color": "#22c55e"
+      }
+    },
     "about_section_v3_jYmwQj": {
       "type": "about-section-v3",
       "blocks": {
@@ -112,6 +209,7 @@
         "feature_TMjb8k",
         "feature_mBU4U3"
       ],
+      "disabled": true,
       "name": "Über Uns (Layout) – v3",
       "settings": {
         "image_position": "right",
@@ -563,6 +661,7 @@
   "order": [
     "sticky_header_mwbBwL",
     "split_show_handy_nkKeqP",
+    "erfahrungen_stats_XfeLhM",
     "about_section_v3_jYmwQj",
     "partner_logos_khWdEB",
     "kbv2_section_dBbUd6",
