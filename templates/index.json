@@ -181,6 +181,83 @@
         "accent_color": "#22c55e"
       }
     },
+    "about_section_v3_npbxcG": {
+      "type": "about-section-v3",
+      "blocks": {
+        "feature_pET4g7": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "image",
+            "icon_svg": "",
+            "feature_title": "✅ Kurze Reaktionszeit",
+            "feature_description": ""
+          }
+        },
+        "feature_TPVVmr": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "✅ langjährige Erfahrung",
+            "feature_description": ""
+          }
+        },
+        "feature_XN9XQD": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "✅ geschultes Personal",
+            "feature_description": ""
+          }
+        },
+        "feature_QeXmpp": {
+          "type": "feature",
+          "settings": {
+            "icon_type": "svg",
+            "icon_svg": "",
+            "feature_title": "✅ beste Qualität",
+            "feature_description": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_pET4g7",
+        "feature_TPVVmr",
+        "feature_XN9XQD",
+        "feature_QeXmpp"
+      ],
+      "name": "Über Uns (Layout) – v3",
+      "settings": {
+        "image_position": "right",
+        "image_vertical_align": "start",
+        "show_image": false,
+        "background_color": "#ffffff",
+        "section_padding_top": 20,
+        "section_padding_bottom": 30,
+        "title": "Über uns",
+        "title_richtext": "<p><strong>Über uns</strong></p>",
+        "title_color": "#111827",
+        "title_font_size": 32,
+        "subtitle": "",
+        "subtitle_richtext": "",
+        "subtitle_color": "#374151",
+        "subtitle_font_size": 20,
+        "description": "<p>Wir unterstützen Ihr Kerngeschäft mit gründlicher, flexibler und leistungsstarker Dienstleistung, damit Sie sich auf Ihre Ziele konzentrieren können. Unsere motivierten und regelmäßig geschulten Mitarbeitenden sind das Herzstück unseres Erfolgs.  Gemeinsam nutzen wir Innovationen und nachhaltige Arbeitsmethoden, um Ausfallzeiten zu minimieren und die Umwelt zu schützen.</p><p>Für uns gilt: <strong>Dienstleistung ist Vertrauenssache.</strong><br/>Deshalb sehen wir unsere Arbeit nicht als kurzfristigen Auftrag, sondern als <strong>langfristige Partnerschaft</strong>. Unsere Kunden verlassen sich darauf, dass wir nicht nur schnell reagieren, sondern vorausschauend denken und mitgestalten.</p><p></p><p></p>",
+        "text_color": "#121212",
+        "text_font_size": 18,
+        "image": "shopify://shop_images/shutterstock_181375295.jpg",
+        "image_border_radius": 12,
+        "image_alt": "",
+        "image_max_width": 85,
+        "image_aspect_ratio": "4/3",
+        "features_per_row": "2",
+        "icon_size": 32,
+        "icon_color": "#34d399",
+        "feature_title_color": "#111827",
+        "no_image_text_align": "left"
+      }
+    },
     "about_section_v3_jYmwQj": {
       "type": "about-section-v3",
       "blocks": {
@@ -662,6 +739,7 @@
     "sticky_header_mwbBwL",
     "split_show_handy_nkKeqP",
     "erfahrungen_stats_XfeLhM",
+    "about_section_v3_npbxcG",
     "about_section_v3_jYmwQj",
     "partner_logos_khWdEB",
     "kbv2_section_dBbUd6",
