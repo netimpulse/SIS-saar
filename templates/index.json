@@ -147,6 +147,7 @@
         },
         "stat_XawFH7": {
           "type": "stat",
+          "disabled": true,
           "settings": {
             "emoji": "🤝",
             "title": "Partnerschaft auf Augenhöhe",
