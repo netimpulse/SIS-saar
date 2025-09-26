@@ -777,8 +777,15 @@
         "unternehmen_link_JyWGQA": {
           "type": "unternehmen_link",
           "settings": {
-            "text": "Karriere",
+            "text": "Karriere Indistrieservice",
             "link": "shopify://pages/industrieservice-karriere"
+          }
+        },
+        "unternehmen_link_irzEdq": {
+          "type": "unternehmen_link",
+          "settings": {
+            "text": "Karriere Gebäudeservice",
+            "link": "shopify://pages/gebaudeservice-karriere"
           }
         },
         "unternehmen_link_JpjtgE": {
@@ -850,6 +857,7 @@
         "leistungen_link_8rcNd6",
         "unternehmen_link_8EkMEt",
         "unternehmen_link_JyWGQA",
+        "unternehmen_link_irzEdq",
         "unternehmen_link_JpjtgE",
         "unternehmen_link_GetrT3",
         "kontakt_link_F9KkVU",
