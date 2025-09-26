@@ -23,6 +23,7 @@
   display: grid;
   gap: var(--jobs-gap, 24px);
   grid-template-columns: 1fr;
+  align-items: stretch; /* NEU: gleiche Höhe für Karten */
 }
 
 @media (min-width: 768px) {
@@ -47,6 +48,10 @@
     box-shadow .25s ease,
     transform .25s ease,
     border-color .25s ease;
+
+  /* NEU: Flexbox für Button-Positionierung */
+  display: flex;
+  flex-direction: column;
 }
 
 /* Hover-/Focus-Effekt: leichtes Anheben + stärkerer Schatten */
@@ -90,6 +95,8 @@
   text-decoration: none;
   transition: transform .06s ease;
   border: 1px solid transparent;
+  margin-top: auto;       /* NEU: schiebt Button ans Kartenende */
+  align-self: flex-start; /* bleibt linksbündig */
 }
 .job-button:hover { transform: translateY(-1px); }
 
