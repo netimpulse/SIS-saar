@@ -291,6 +291,121 @@
         "no_image_text_align": "left"
       }
     },
+    "qualitaeten_hotspot_W3KCxY": {
+      "type": "qualitaeten-hotspot",
+      "blocks": {
+        "item_CJKgU6": {
+          "type": "item",
+          "settings": {
+            "show_icon": true,
+            "icon_bg": "#e5e7eb",
+            "title": "Professionelle Ausführung",
+            "text": "Jedes Projekt wird sorgfältig geplant und fachgerecht umgesetzt – effizient, gründlich und termintreu.",
+            "subpoints": "",
+            "show_btn": false,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "btn_bg": "#0b63c8",
+            "btn_text": "#ffffff"
+          }
+        },
+        "item_MAhPjC": {
+          "type": "item",
+          "settings": {
+            "show_icon": true,
+            "icon_bg": "#e5e7eb",
+            "title": "Erfahrenes Fachpersonal",
+            "text": "Unsere geschulten Teams bringen Know-how und Branchenverständnis mit – und denken im Sinne Ihrer Abläufe mit.",
+            "subpoints": "",
+            "show_btn": false,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "btn_bg": "#0b63c8",
+            "btn_text": "#ffffff"
+          }
+        },
+        "item_hVhTtW": {
+          "type": "item",
+          "settings": {
+            "show_icon": true,
+            "icon_bg": "#e5e7eb",
+            "title": "Technik & Equipment",
+            "text": "Wir setzen auf leistungsstarke, umweltschonende Reinigungsverfahren –abgestimmt auf Ihre Anforderungen.",
+            "subpoints": "",
+            "show_btn": false,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "btn_bg": "#0b63c8",
+            "btn_text": "#ffffff"
+          }
+        },
+        "item_4Edwyj": {
+          "type": "item",
+          "settings": {
+            "show_icon": true,
+            "icon_bg": "#e5e7eb",
+            "title": "Flexibilität & Zeitersparnis",
+            "text": "Ob nachts, am Wochenende oder im laufenden Betrieb – wir arbeiten im Hintergrund, und das ohne Ihre Abläufe zu stören.",
+            "subpoints": "",
+            "show_btn": false,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "btn_bg": "#0b63c8",
+            "btn_text": "#ffffff"
+          }
+        },
+        "item_ykQETf": {
+          "type": "item",
+          "settings": {
+            "show_icon": true,
+            "icon_bg": "#e5e7eb",
+            "title": "Individuelle Lösungen",
+            "text": "Statt Standards bieten wir maßgeschneiderte Konzepte – analysiert, geplant und umgesetzt auf Basis Ihrer Ziele.",
+            "subpoints": "",
+            "show_btn": false,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "btn_bg": "#0b63c8",
+            "btn_text": "#ffffff"
+          }
+        },
+        "item_H7nEEf": {
+          "type": "item",
+          "settings": {
+            "show_icon": true,
+            "icon_bg": "#e5e7eb",
+            "title": "Alles aus einer Hand",
+            "text": "Von der ersten Beratung bis zur Nachbetreuung erhalten Sie einen umfassenden Service mit konkreten Ansprechpartnern",
+            "subpoints": "",
+            "show_btn": false,
+            "btn_label": "Mehr erfahren",
+            "btn_link": "",
+            "btn_bg": "#0b63c8",
+            "btn_text": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "item_CJKgU6",
+        "item_MAhPjC",
+        "item_hVhTtW",
+        "item_4Edwyj",
+        "item_ykQETf",
+        "item_H7nEEf"
+      ],
+      "name": "Qualitäten Hotspot",
+      "settings": {
+        "heading": "Unser Qualitätsversprechen",
+        "intro": "<p></p><p></p>",
+        "color_scheme": "background-1",
+        "gap": 24,
+        "cols_desktop": 3,
+        "cols_tablet": 2,
+        "show_icons": true,
+        "icon_size": 88,
+        "icon_radius": 1000
+      }
+    },
     "about_section_v3_jYmwQj": {
       "type": "about-section-v3",
       "blocks": {
@@ -774,6 +889,7 @@
     "erfahrungen_stats_XfeLhM",
     "about_section_v3_npbxcG",
     "about_section_v3_AjbzpE",
+    "qualitaeten_hotspot_W3KCxY",
     "about_section_v3_jYmwQj",
     "partner_logos_khWdEB",
     "kbv2_section_dBbUd6",
