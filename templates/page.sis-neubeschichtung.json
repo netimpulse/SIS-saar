@@ -265,7 +265,7 @@
           "type": "button",
           "settings": {
             "label": "<p>Kostenlose Beratung</p>",
-            "link": "",
+            "link": "shopify://pages/industrieservice-kontakt",
             "variant": "solid",
             "text_color": "#ffffff",
             "bg_color": "#0b132a",
