@@ -551,29 +551,10 @@
     "custom_cta_block_xMcPbA": {
       "type": "custom-cta-block",
       "blocks": {
-        "button_ABc8g3": {
-          "type": "button",
-          "settings": {
-            "label": "<p>Über uns</p>",
-            "link": "",
-            "variant": "solid",
-            "text_color": "#ffffff",
-            "bg_color": "#0b132a",
-            "border_color": "#0b132a",
-            "hover_bg": "#111827",
-            "hover_text": "#ffffff",
-            "radius": 12,
-            "padding_x": 24,
-            "padding_y": 14,
-            "bold": true,
-            "offset_x": 0,
-            "offset_y": 0
-          }
-        },
         "button_ALFWjf": {
           "type": "button",
           "settings": {
-            "label": "<p>Kontakt</p>",
+            "label": "<p>Kostenlose Beratung</p>",
             "link": "shopify://pages/gebaudeservice-kontakt",
             "variant": "solid",
             "text_color": "#ffffff",
@@ -591,7 +572,6 @@
         }
       },
       "block_order": [
-        "button_ABc8g3",
         "button_ALFWjf"
       ],
       "name": "Custom CTA Block",

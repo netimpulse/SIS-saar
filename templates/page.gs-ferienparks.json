@@ -230,7 +230,7 @@
           "type": "button",
           "settings": {
             "label": "<p>Kostenlose Beratung</p>",
-            "link": "",
+            "link": "shopify://pages/gebaudeservice-kontakt",
             "variant": "solid",
             "text_color": "#ffffff",
             "bg_color": "#0b132a",
@@ -251,7 +251,7 @@
       ],
       "name": "Custom CTA Block",
       "settings": {
-        "heading": "<p><strong>Bereit für professionellen Gebäudeservice?</strong></p>",
+        "heading": "<p><strong>Bereit für professionellen Service?</strong></p>",
         "heading_size": 40,
         "heading_bold": true,
         "heading_color": "#0f172a",
