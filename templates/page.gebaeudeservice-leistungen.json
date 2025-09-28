@@ -167,18 +167,6 @@
             "button_link": "shopify://pages/gs-teppichreinigung"
           }
         },
-        "service_fVA8yg": {
-          "type": "service",
-          "name": "Leistung Block - Grünschnittpflege und Gartenarbeiten",
-          "settings": {
-            "image": "shopify://shop_images/shutterstock_604150469.jpg",
-            "title_html": "<p><strong>Grünschnittpflege und Gartenarbeiten</strong></p>",
-            "text_html": "",
-            "keywords": "saisonal, Hecken, Abruf, Beet",
-            "button_label": "Mehr erfahren",
-            "button_link": "shopify://pages/gs-grunschnittpflege"
-          }
-        },
         "service_T4MQb3": {
           "type": "service",
           "name": "Leistung Block - Beschichtung von Bodenbelägen",
@@ -189,6 +177,18 @@
             "keywords": "Gumminoppen, Farbanpassung, PVC, Neutralisierung, Grundierung",
             "button_label": "Mehr erfahren",
             "button_link": "shopify://pages/gs-beschichtung-von-bodenbelagen"
+          }
+        },
+        "service_fVA8yg": {
+          "type": "service",
+          "name": "Leistung Block - Grünschnittpflege und Gartenarbeiten",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_604150469.jpg",
+            "title_html": "<p><strong>Grünschnittpflege und Gartenarbeiten</strong></p>",
+            "text_html": "",
+            "keywords": "saisonal, Hecken, Abruf, Beet",
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify://pages/gs-grunschnittpflege"
           }
         },
         "service_tmm6m3": {
@@ -235,8 +235,8 @@
         "service_qx63Jr",
         "service_y7FP4T",
         "service_egXbER",
-        "service_fVA8yg",
         "service_T4MQb3",
+        "service_fVA8yg",
         "service_tmm6m3",
         "service_bkfAtb",
         "service_tDfWQ8"
