@@ -223,7 +223,7 @@
           "type": "info_card",
           "settings": {
             "title": "Öffnungszeiten",
-            "text": "<p>Mo - Fr. 08.00-16.00 Uhr<br/>und nach Vereinbarung</p>",
+            "text": "<p>Mo - Do. 08.00-16.00 Uhr, Fr. 08.00-14.00 Uhr<br/>und nach Vereinbarung</p>",
             "icon": "clock"
           }
         }
