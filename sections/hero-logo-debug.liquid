@@ -1,7 +1,7 @@
 {% comment %}
-  HERO – LOGO (Desktop rechts, Mobil OHNE Logo – DOM-only-on-desktop)
-  • Desktop (>=1025px): Logo wird per JS ins DOM eingefügt (rechts absolut)
-  • Mobile/Tablet (<=1024px): Logo existiert nicht im DOM → kann nicht angezeigt werden
+  HERO – LOGO (Desktop rechts, Mobile steuerbar)
+  • Desktop (>=1025px): Logo rechts absolut
+  • Mobile/Tablet (<=1024px): Per Toggle in den Einstellungen ein/aus
 {% endcomment %}
 
 {%- liquid
@@ -11,35 +11,6 @@
 -%}
 
 <section id="{{ sid }}" style="position:relative;width:100%;overflow:hidden;">
-  <!-- Kritische Styles -->
-  <style>
-    /* Mobile Layout */
-    #{{ sid }} .btn-row { justify-content:center !important; }
-    #{{ sid }} h1, #{{ sid }} .rte { text-align:center; margin:0 auto; }
-    #{{ sid }} .hero-inner {
-      min-height: {{ section.settings.section_height_mobile }}vh !important;
-      padding: 48px 0 !important;
-    }
-
-    /* Desktop Layout */
-    @media (min-width: 1025px){
-      #{{ sid }} .btn-row { justify-content:flex-start !important; }
-      #{{ sid }} h1, #{{ sid }} .rte { text-align:left; margin:0; }
-      #{{ sid }} .hero-inner {
-        min-height: {{ section.settings.section_height }}vh !important;
-        padding: 80px 0 !important;
-      }
-      /* Falls Logo vorhanden ist, so positionieren (nur Wirkung, wenn JS es eingefügt hat) */
-      #{{ sid }} .logo-desktop {
-        position:absolute; top:50%; right:0;
-        transform:translate(calc(0% - {{ section.settings.logo_offset_x }}%), calc(-50% - {{ section.settings.logo_offset_y }}%));
-        z-index:2; pointer-events:none; background:transparent;
-        max-width: {{ section.settings.logo_max_width }}px; padding: {{ section.settings.logo_padding }}px;
-      }
-      #{{ sid }} .logo-desktop img { display:block; width:100%; height:auto; }
-    }
-  </style>
-
   <!-- Hintergrund -->
   <div style="
       position:absolute;inset:0;z-index:0;
@@ -61,7 +32,16 @@
     <div style="width:100%;max-width: {{ section.settings.content_max_width }}px; margin:0 auto;">
       <div style="width:100%;max-width:900px;text-align:left;">
 
-        {% comment %} KEIN mobiles Logo im Markup! {% endcomment %}
+        {%- comment -%} Mobiles Logo (wird via Setting/CSS ein- bzw. ausgeblendet) {%- endcomment -%}
+        {% if section.settings.logo_image != blank %}
+          <div class="logo-mobile" style="display:none; margin-bottom:24px; text-align:center;">
+            <img
+              src="{{ section.settings.logo_image | image_url: width: 800 }}"
+              alt="{{ section.settings.logo_alt | escape | default: 'Logo' }}"
+              loading="lazy"
+              style="max-width:{{ section.settings.logo_mobile_max_width }}px;width:100%;height:auto;">
+          </div>
+        {% endif %}
 
         {% if section.settings.heading != blank %}
           <h1 style="
@@ -81,7 +61,7 @@
           </div>
         {% endif %}
 
-        <!-- Buttons im Container -->
+        <!-- Buttons -->
         <div style="margin-top:24px;">
           <div class="btn-row" style="display:inline-flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:flex-start;">
             {% if section.settings.btn1_text != blank %}
@@ -101,52 +81,58 @@
       </div>
     </div>
 
-    {% comment %}
-      Desktop-Logo wird NICHT im HTML ausgeliefert.
-      Es wird unten via JS NUR auf ≥1025px erzeugt & eingefügt.
-    {% endcomment %}
-    <div class="logo-desktop-anchor" style="position:absolute; inset:0; pointer-events:none;"></div>
+    {%- comment -%} Desktop-Logo (rechts absolut) {%- endcomment -%}
+    {% if section.settings.logo_image != blank %}
+      <div class="logo-desktop"
+           style="display:none; position:absolute; top:50%; right:0;
+                  transform:translate(calc(0% - {{ section.settings.logo_offset_x }}%), calc(-50% - {{ section.settings.logo_offset_y }}%));
+                  z-index:2; pointer-events:none; background:transparent;
+                  max-width: {{ section.settings.logo_max_width }}px; padding: {{ section.settings.logo_padding }}px;">
+        <img
+          src="{{ section.settings.logo_image | image_url: width: 1600 }}"
+          alt="{{ section.settings.logo_alt | escape | default: 'Logo' }}"
+          loading="lazy"
+          style="display:block;width:100%;height:auto;">
+      </div>
+    {% endif %}
   </div>
 
-  <!-- JS: Fügt das Logo NUR auf Desktop (>=1025px) ein -->
-  {% if section.settings.logo_image != blank %}
-  <script>
-    (function(){
-      var root = document.getElementById({{ sid | json }});
-      if(!root) return;
-      var anchor = root.querySelector('.logo-desktop-anchor');
-      var mq = window.matchMedia('(min-width: 1025px)');
-      var logoEl = null;
+  <!-- Responsive + Toggle -->
+  <style>
+    /* MOBILE/TABLET ≤1024px */
+    #{{ sid }} .btn-row { justify-content:center !important; }
+    #{{ sid }} h1, #{{ sid }} .rte { text-align:center; margin:0 auto; }
+    #{{ sid }} .hero-inner {
+      min-height: {{ section.settings.section_height_mobile }}vh !important;
+      padding: 48px 0 !important;
+    }
+    /* Desktop-Logo auf Mobile immer aus */
+    #{{ sid }} .logo-desktop { display:none !important; position:static !important; transform:none !important; }
 
-      function mountLogo(){
-        if(logoEl || !anchor) return;
-        logoEl = document.createElement('div');
-        logoEl.className = 'logo-desktop';
-        logoEl.setAttribute('aria-hidden', 'true');
-        logoEl.innerHTML =
-          '<img src="{{ section.settings.logo_image | image_url: width: 1600 | escape }}" ' +
-          'alt="{{ section.settings.logo_alt | escape | default: "Logo" }}" loading="lazy">';
-        anchor.appendChild(logoEl);
+    /* Mobiles Logo per Setting ein-/ausblenden */
+    {% if section.settings.show_logo_mobile %}
+      #{{ sid }} .logo-mobile { display:block !important; margin-bottom:24px !important; }
+    {% else %}
+      #{{ sid }} .logo-mobile { display:none !important; }
+    {% endif %}
+
+    /* DESKTOP ≥1025px */
+    @media (min-width: 1025px){
+      #{{ sid }} .btn-row { justify-content:flex-start !important; }
+      #{{ sid }} h1, #{{ sid }} .rte { text-align:left; margin:0; }
+      #{{ sid }} .hero-inner {
+        min-height: {{ section.settings.section_height }}vh !important;
+        padding: 80px 0 !important;
       }
-      function unmountLogo(){
-        if(logoEl && logoEl.parentNode){ logoEl.parentNode.removeChild(logoEl); }
-        logoEl = null;
-      }
-      function apply(e){
-        if(mq.matches){ mountLogo(); } else { unmountLogo(); }
-      }
-      apply();
-      if (mq.addEventListener) mq.addEventListener('change', apply);
-      else mq.addListener(apply);
-      window.addEventListener('resize', apply);
-    })();
-  </script>
-  {% endif %}
+      #{{ sid }} .logo-desktop { display:block !important; position:absolute !important; }
+      #{{ sid }} .logo-mobile  { display:none !important; } /* Mobile-Logo auf Desktop aus */
+    }
+  </style>
 </section>
 
 {% schema %}
 {
-  "name": "Hero – Logo (Desktop rechts, Mobil ohne Logo)",
+  "name": "Hero – Logo (Desktop rechts, Mobile Toggle)",
   "tag": "section",
   "class": "section",
   "settings": [
@@ -166,16 +152,20 @@
     { "type": "range", "id": "text_size", "min": 12, "max": 40, "step": 1, "unit": "px", "label": "Textgröße", "default": 20 },
     { "type": "color", "id": "text_color", "label": "Textfarbe", "default": "#FFFFFF" },
 
-    { "type": "header", "content": "Logo (nur Desktop)" },
+    { "type": "header", "content": "Logo" },
     { "type": "image_picker", "id": "logo_image", "label": "Logo-Bild" },
     { "type": "text", "id": "logo_alt", "label": "Alt-Text", "default": "Logo" },
     { "type": "range", "id": "logo_max_width", "label": "Max. Logo-Breite Desktop (px)", "min": 120, "max": 900, "step": 10, "unit": "px", "default": 420 },
     { "type": "range", "id": "logo_padding", "label": "Innenabstand Desktop (px)", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 0 },
     { "type": "range", "id": "logo_offset_x", "label": "X-Versatz Desktop nach links (%)", "min": 0, "max": 20, "step": 1, "unit": "%", "default": 4 },
-    { "type": "range", "id": "logo_offset_y", "label": "Y-Versatz Desktop nach oben/unten (%)", "min": -20, "max": 20, "step": 1, "unit": "%", "default": 0 }
+    { "type": "range", "id": "logo_offset_y", "label": "Y-Versatz Desktop nach oben/unten (%)", "min": -20, "max": 20, "step": 1, "unit": "%", "default": 0 },
+    { "type": "range", "id": "logo_mobile_max_width", "label": "Max. Logo-Breite Mobil (px)", "min": 80, "max": 320, "step": 5, "unit": "px", "default": 150 },
+
+    { "type": "header", "content": "Mobile Anzeige" },
+    { "type": "checkbox", "id": "show_logo_mobile", "label": "Logo auf Mobile anzeigen", "default": false }
   ],
   "presets": [
-    { "name": "Hero – Logo (Desktop rechts, Mobil ohne Logo)" }
+    { "name": "Hero – Logo (Desktop rechts, Mobile Toggle)" }
   ]
 }
 {% endschema %}
