@@ -749,7 +749,7 @@
           "disabled": true,
           "settings": {
             "text": "Gebäudeservice",
-            "link": "shopify://pages/sis-saar-gebaeudeservice-leistungen"
+            "link": "shopify://pages/gebaeudeservice-leistungen"
           }
         },
         "unternehmen_link_T3NxXc": {
