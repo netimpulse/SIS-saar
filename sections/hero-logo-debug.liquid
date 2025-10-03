@@ -1,8 +1,7 @@
 {% comment %}
   HERO – LOGO DEBUG (Standalone)
-  • Keine Snippets notwendig
-  • Buttons im Container
-  • Logo rechts, auf Mobil automatisch ausgeblendet
+  • Logo rechts (Desktop)
+  • Logo über Überschrift (Mobil)
 {% endcomment %}
 
 {%- liquid
@@ -31,7 +30,18 @@
       min-height: {{ section.settings.section_height }}vh; padding: 80px 0;
     ">
     <div style="width:100%;max-width: {{ section.settings.content_max_width }}px; margin:0 auto;">
-      <div style="width:100%;max-width:900px;">
+      <div style="width:100%;max-width:900px;text-align:left;">
+
+        <!-- Logo für Mobil (sichtbar nur bis 768px) -->
+        {% if section.settings.logo_image != blank %}
+          <div class="hero-logo-mobile-only" style="display:none; margin-bottom:24px; text-align:center;">
+            <img src="{{ section.settings.logo_image | image_url: width: 800 }}"
+                 alt="{{ section.settings.logo_alt | escape | default: 'Logo' }}"
+                 loading="lazy"
+                 style="max-width:200px;width:100%;height:auto;">
+          </div>
+        {% endif %}
+
         {% if section.settings.heading != blank %}
           <h1 style="
               margin:0 0 12px;line-height:1.1;
@@ -50,7 +60,7 @@
           </div>
         {% endif %}
 
-        <!-- Buttons im Container -->
+        <!-- Buttons -->
         <div style="margin-top:24px;">
           <div style="display:inline-flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:flex-start;">
             {% if section.settings.btn1_text != blank %}
@@ -79,7 +89,7 @@
     </div>
 
     {% if section.settings.logo_image != blank %}
-      <!-- Rechtes Logo, auf Mobil ausgeblendet -->
+      <!-- Rechtes Logo nur Desktop -->
       <div class="hero-logo-desktop-only"
            style="
              position:absolute;top:50%;right:0;
@@ -95,28 +105,22 @@
     {% endif %}
   </div>
 
-  <!-- Mobile Styles -->
+  <!-- Responsive -->
   <style>
     @media (max-width: 768px){
-      /* Logo auf Handy ausblenden */
-      #{{ sid }} .hero-logo-desktop-only {
-        display: none !important;
-      }
-      /* Buttons zentrieren auf Handy */
-      #{{ sid }} div[style*="display:inline-flex"] {
-        justify-content: center !important;
-      }
+      #{{ sid }} .hero-logo-desktop-only { display:none !important; }
+      #{{ sid }} .hero-logo-mobile-only { display:block !important; }
+      #{{ sid }} div[style*="display:inline-flex"] { justify-content:center !important; }
+      #{{ sid }} h1 { text-align:center; }
+      #{{ sid }} .rte { text-align:center; margin:0 auto; }
     }
   </style>
 </section>
 
 {% schema %}
 {
-  "name": "Hero – Logo Debug (Standalone, Logo Desktop only)",
-  "tag": "section",
-  "class": "section",
+  "name": "Hero – Logo Debug (Logo mobil über Heading)",
   "settings": [
-    { "type": "header", "content": "Hintergrund & Layout" },
     { "type": "image_picker", "id": "bg_image", "label": "Hintergrundbild" },
     { "type": "color", "id": "overlay_color", "label": "Overlay-Farbe", "default": "#2BAAA2" },
     { "type": "range", "id": "overlay_opacity", "label": "Overlay-Deckkraft", "min": 0, "max": 100, "step": 1, "unit": "%", "default": 70 },
@@ -124,7 +128,6 @@
     { "type": "range", "id": "section_height_mobile", "label": "Höhe (Mobil, vh)", "min": 30, "max": 100, "step": 5, "unit": "vh", "default": 40 },
     { "type": "range", "id": "content_max_width", "label": "Inhaltsbreite (px)", "min": 480, "max": 1200, "step": 10, "unit": "px", "default": 760 },
 
-    { "type": "header", "content": "Überschrift & Text" },
     { "type": "text", "id": "heading", "label": "Titel", "default": "Ihre Partner für professionelle Service-Lösungen" },
     { "type": "range", "id": "heading_size", "min": 20, "max": 100, "step": 1, "unit": "px", "label": "Titelgröße", "default": 64 },
     { "type": "color", "id": "heading_color", "label": "Titelfarbe", "default": "#FFFFFF" },
@@ -132,7 +135,6 @@
     { "type": "range", "id": "text_size", "min": 12, "max": 40, "step": 1, "unit": "px", "label": "Textgröße", "default": 20 },
     { "type": "color", "id": "text_color", "label": "Textfarbe", "default": "#FFFFFF" },
 
-    { "type": "header", "content": "Buttons" },
     { "type": "text", "id": "btn1_text", "label": "Button 1 – Text", "default": "Mehr über unsere Services" },
     { "type": "url", "id": "btn1_link", "label": "Button 1 – Link" },
     { "type": "color", "id": "btn1_bg", "label": "Button 1 – Hintergrund", "default": "#2BAAA2" },
@@ -143,7 +145,6 @@
     { "type": "color", "id": "btn2_bg", "label": "Button 2 – Hintergrund", "default": "#FFFFFF" },
     { "type": "color", "id": "btn2_text_color", "label": "Button 2 – Textfarbe", "default": "#2BAAA2" },
 
-    { "type": "header", "content": "Rechtes Logo" },
     { "type": "image_picker", "id": "logo_image", "label": "Logo-Bild" },
     { "type": "text", "id": "logo_alt", "label": "Alt-Text", "default": "Logo" },
     { "type": "range", "id": "logo_max_width", "label": "Max. Logo-Breite (px)", "min": 120, "max": 900, "step": 10, "unit": "px", "default": 420 },
@@ -152,7 +153,7 @@
     { "type": "range", "id": "logo_offset_y", "label": "Y-Versatz nach oben/unten (%)", "min": -20, "max": 20, "step": 1, "unit": "%", "default": 0 }
   ],
   "presets": [
-    { "name": "Hero – Logo Debug (Standalone)" }
+    { "name": "Hero – Logo Debug (Mobil über Heading)" }
   ]
 }
 {% endschema %}
