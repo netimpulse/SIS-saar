@@ -1,14 +1,12 @@
 <div class="hero-overlay__actions">
   {%- if btn1_text != blank -%}
-    <a class="hero-overlay__btn hero-overlay__btn--1"
-       href="{{ btn1_link | default: '#' }}">
+    <a class="hero-overlay__btn hero-overlay__btn--1" href="{{ btn1_link | default: '#' }}">
       {{ btn1_text }}
     </a>
   {%- endif -%}
 
   {%- if btn2_text != blank -%}
-    <a class="hero-overlay__btn hero-overlay__btn--2"
-       href="{{ btn2_link | default: '#' }}">
+    <a class="hero-overlay__btn hero-overlay__btn--2" href="{{ btn2_link | default: '#' }}">
       {{ btn2_text }}
     </a>
   {%- endif -%}
