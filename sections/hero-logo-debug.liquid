@@ -1,9 +1,9 @@
 {% comment %}
-  HERO – LOGO DEBUG (Standalone, garantiertes Mobile-Verhalten)
-  • Desktop (>1024px): Logo rechts im festen, transparenten Container
-  • Mobile/Tablet (<=1024px): Desktop-Logo aus, mobiles Logo VOR der Überschrift
+  HERO – LOGO DEBUG (Optimiert)
+  • Desktop (>1024px): Logo rechts, absolut
+  • Mobile/Tablet (<=1024px): Desktop-Logo AUS, mobiles Logo VOR der Überschrift AN
   • Buttons im Container
-  • Keine Snippets / keine externe CSS nötig (alles inline)
+  • Keine externen Snippets/CSS nötig (alles inline)
 {% endcomment %}
 
 {%- liquid
@@ -27,20 +27,21 @@
     "></div>
 
   <!-- Inhalt -->
-  <div style="
+  <div class="hero-inner" style="
       position:relative;z-index:2;display:flex;align-items:center;
       min-height: {{ section.settings.section_height }}vh; padding: 80px 0;
     ">
     <div style="width:100%;max-width: {{ section.settings.content_max_width }}px; margin:0 auto;">
       <div style="width:100%;max-width:900px;text-align:left;">
 
-        {%- comment -%} MOBILES LOGO (im Content, wird per MQ/JS sichtbar) {%- endcomment -%}
+        {%- comment -%} MOBILES LOGO (steht VOR der Überschrift) {%- endcomment -%}
         {% if section.settings.logo_image != blank %}
           <div class="logo-mobile" style="display:none; margin-bottom:24px; text-align:center;">
-            <img src="{{ section.settings.logo_image | image_url: width: 800 }}"
-                 alt="{{ section.settings.logo_alt | escape | default: 'Logo' }}"
-                 loading="lazy"
-                 style="max-width:{{ section.settings.logo_mobile_max_width }}px;width:100%;height:auto;">
+            <img
+              src="{{ section.settings.logo_image | image_url: width: 800 }}"
+              alt="{{ section.settings.logo_alt | escape | default: 'Logo' }}"
+              loading="lazy"
+              style="max-width:{{ section.settings.logo_mobile_max_width }}px;width:100%;height:auto;">
           </div>
         {% endif %}
 
@@ -82,67 +83,33 @@
       </div>
     </div>
 
-    {%- comment -%} DESKTOP-LOGO (rechts absolut) {%- endcomment -%}
+    {%- comment -%} DESKTOP-LOGO (rechts, absolut) {%- endcomment -%}
     {% if section.settings.logo_image != blank %}
       <div class="logo-desktop"
            style="position:absolute;top:50%;right:0;transform:translate(calc(0% - {{ section.settings.logo_offset_x }}%), calc(-50% - {{ section.settings.logo_offset_y }}%));z-index:2;pointer-events:none;background:transparent;max-width: {{ section.settings.logo_max_width }}px; padding: {{ section.settings.logo_padding }}px;">
-        <img src="{{ section.settings.logo_image | image_url: width: 1600 }}"
-             alt="{{ section.settings.logo_alt | escape | default: 'Logo' }}"
-             loading="lazy"
-             style="display:block;width:100%;height:auto;">
+        <img
+          src="{{ section.settings.logo_image | image_url: width: 1600 }}"
+          alt="{{ section.settings.logo_alt | escape | default: 'Logo' }}"
+          loading="lazy"
+          style="display:block;width:100%;height:auto;">
       </div>
     {% endif %}
   </div>
 
-  <!-- Harte Responsive-Umschaltung -->
+  <!-- Harte Responsive-Umschaltung (ohne JS, garantiert) -->
   <style>
-    /* Sicherer Breakpoint: bis 1024px Mobile-Logo AN, Desktop-Logo AUS */
+    /* Bis 1024px: mobiles Logo AN (vor der H1), Desktop-Logo AUS */
     @media (max-width: 1024px){
-      #{{ sid }} .logo-desktop { 
-        display:none !important; 
-        position: static !important; 
-        transform: none !important; 
-      }
-      #{{ sid }} .logo-mobile  { 
-        display:block !important; 
-        margin-bottom: 24px !important; 
-      }
-      /* Auf Handy Buttons & Text zentrieren */
+      #{{ sid }} .logo-desktop { display:none !important; }
+      #{{ sid }} .logo-mobile  { display:block !important; margin-bottom:24px !important; }
       #{{ sid }} .btn-row { justify-content:center !important; }
       #{{ sid }} h1, #{{ sid }} .rte { text-align:center; margin:0 auto; }
+      #{{ sid }} .hero-inner {
+        min-height: {{ section.settings.section_height_mobile }}vh !important;
+        padding: 48px 0 !important;
+      }
     }
   </style>
-
-  <!-- JS-Fallback: falls externe CSS danach lädt, erzwingt der Script die Sichtbarkeit -->
-  <script>
-    (function(){
-      var root = document.getElementById({{ sid | json }});
-      if(!root) return;
-      var desktop = root.querySelector('.logo-desktop');
-      var mobile  = root.querySelector('.logo-mobile');
-
-      function apply(){
-        var isMobile = window.matchMedia('(max-width: 1024px)').matches;
-        if (desktop){
-          desktop.style.setProperty('display', isMobile ? 'none' : '', 'important');
-          desktop.style.setProperty('position', isMobile ? 'static' : 'absolute', 'important');
-          desktop.style.setProperty('transform', isMobile ? 'none' : desktop.getAttribute('data-transform') || '', 'important');
-        }
-        if (mobile){
-          mobile.style.setProperty('display', isMobile ? 'block' : 'none', 'important');
-        }
-      }
-
-      /* ursprüngliche Transform sichern */
-      if (desktop) desktop.setAttribute('data-transform', 'translate(calc(0% - {{ section.settings.logo_offset_x }}%), calc(-50% - {{ section.settings.logo_offset_y }}%))');
-
-      apply();
-      var mq = window.matchMedia('(max-width: 1024px)');
-      if (mq.addEventListener) mq.addEventListener('change', apply);
-      else mq.addListener(apply);
-      window.addEventListener('resize', apply);
-    })();
-  </script>
 </section>
 
 {% schema %}
