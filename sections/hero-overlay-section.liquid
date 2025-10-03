@@ -1,6 +1,6 @@
 {% comment %}
-  Hero-Section mit Hintergrundbild, farbigem Overlay, linkem Textblock
-  und zwei Buttons mit Hover-Farben.
+  Hero-Section mit Hintergrundbild, farbigem Overlay,
+  linkem Textblock, zwei Buttons und optionalem Logo rechts.
 {% endcomment %}
 
 {{ 'hero-overlay.css' | asset_url | stylesheet_tag }}
@@ -78,21 +78,35 @@
   <div class="hero-overlay__inner">
     <div class="page-width">
       <div class="hero-overlay__content">
-        {%- if section.settings.heading != blank -%}
-          <h1 class="hero-overlay__heading">{{ section.settings.heading | escape }}</h1>
-        {%- endif -%}
+        
+        <!-- Textblock links -->
+        <div class="hero-overlay__textblock">
+          {%- if section.settings.heading != blank -%}
+            <h1 class="hero-overlay__heading">{{ section.settings.heading | escape }}</h1>
+          {%- endif -%}
 
-        {%- if section.settings.text != blank -%}
-          <div class="hero-overlay__text rte">{{ section.settings.text }}</div>
-        {%- endif -%}
+          {%- if section.settings.text != blank -%}
+            <div class="hero-overlay__text rte">{{ section.settings.text }}</div>
+          {%- endif -%}
 
-        {%- render 'hero-double-buttons',
-          section_id: sid,
-          btn1_text: section.settings.btn1_text,
-          btn1_link: section.settings.btn1_link,
-          btn2_text: section.settings.btn2_text,
-          btn2_link: section.settings.btn2_link
-        -%}
+          {%- render 'hero-double-buttons',
+            section_id: sid,
+            btn1_text: section.settings.btn1_text,
+            btn1_link: section.settings.btn1_link,
+            btn2_text: section.settings.btn2_text,
+            btn2_link: section.settings.btn2_link
+          -%}
+        </div>
+
+        <!-- Logo rechts -->
+        <div class="hero-overlay__logo">
+          {% if section.settings.logo_image != blank %}
+            <img src="{{ section.settings.logo_image | image_url: width: 600 }}"
+                 alt="Hero Logo"
+                 loading="lazy">
+          {% endif %}
+        </div>
+
       </div>
     </div>
   </div>
@@ -100,7 +114,7 @@
 
 {% schema %}
 {
-  "name": "Hero – Bild mit Buttons",
+  "name": "Hero – Bild mit Overlay, Buttons & Logo",
   "tag": "section",
   "class": "section",
   "settings": [
@@ -110,7 +124,7 @@
     { "type": "range", "id": "overlay_opacity", "label": "Overlay-Deckkraft", "min": 0, "max": 100, "step": 1, "unit": "%", "default": 70 },
     { "type": "range", "id": "section_height", "label": "Höhe (Desktop, in vh)", "min": 40, "max": 100, "step": 5, "unit": "vh", "default": 60 },
     { "type": "range", "id": "section_height_mobile", "label": "Höhe (Mobil, in vh)", "min": 30, "max": 100, "step": 5, "unit": "vh", "default": 40 },
-    { "type": "range", "id": "content_max_width", "label": "Inhaltsbreite", "min": 480, "max": 1200, "step": 10, "unit": "px", "default": 760 },
+    { "type": "range", "id": "content_max_width", "label": "Inhaltsbreite", "min": 480, "max": 1200, "step": 10, "unit": "px", "default": 960 },
 
     { "type": "header", "content": "Überschrift" },
     { "type": "text", "id": "heading", "label": "Titel", "default": "Ihre Partner für professionelle Service-Lösungen" },
@@ -148,10 +162,13 @@
     { "type": "color", "id": "btn2_bg", "label": "Hintergrund", "default": "#ffffff" },
     { "type": "color", "id": "btn2_bg_hover", "label": "Hintergrund (Hover)", "default": "#e6e6e6" },
     { "type": "color", "id": "btn2_text_color", "label": "Textfarbe", "default": "#2baaa2" },
-    { "type": "color", "id": "btn2_text_hover", "label": "Textfarbe (Hover)", "default": "#238b84" }
+    { "type": "color", "id": "btn2_text_hover", "label": "Textfarbe (Hover)", "default": "#238b84" },
+
+    { "type": "header", "content": "Logo rechts" },
+    { "type": "image_picker", "id": "logo_image", "label": "Logo-Bild" }
   ],
   "presets": [
-    { "name": "Hero – Service Overlay", "category": "Bild" }
+    { "name": "Hero – Service Overlay mit Logo", "category": "Bild" }
   ]
 }
 {% endschema %}
