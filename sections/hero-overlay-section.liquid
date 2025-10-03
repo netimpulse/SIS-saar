@@ -1,7 +1,6 @@
 {% comment %}
-  Hero-Section mit Hintergrundbild, farbigem Overlay,
-  linkem Textblock, zwei Buttons und optionalem Logo
-  in einem festen, transparenten Container rechts-mittig.
+  Hero-Section mit Hintergrundbild, Overlay,
+  linkem Textblock, Buttons und optionalem Logo rechts.
 {% endcomment %}
 
 {{ 'hero-overlay.css' | asset_url | stylesheet_tag }}
@@ -13,7 +12,6 @@
 -%}
 
 <style>
-  /* Bereichsspezifische Styles (werden per-Section gesetzt) */
   #{{ sid }} .hero-overlay__inner {
     --hero-height: {{ section.settings.section_height }}vh;
     --hero-height-mobile: {{ section.settings.section_height_mobile }}vh;
@@ -36,38 +34,6 @@
     font-size: {{ section.settings.text_size }}px;
     color: {{ section.settings.text_color }};
   }
-
-  /* Button 1 */
-  #{{ sid }} .hero-overlay__btn--1 {
-    background-color: {{ section.settings.btn1_bg }};
-    color: {{ section.settings.btn1_text_color }};
-    font-family: {{ section.settings.btn1_font.family }}, {{ section.settings.btn1_font.fallback_families }};
-    font-weight: {{ section.settings.btn1_font.weight }};
-    font-style: {{ section.settings.btn1_font.style }};
-    font-size: {{ section.settings.btn1_font_size }}px;
-    border-radius: {{ section.settings.btn1_radius }}px;
-    padding: {{ section.settings.btn1_padding_y }}px {{ section.settings.btn1_padding_x }}px;
-  }
-  #{{ sid }} .hero-overlay__btn--1:hover {
-    background-color: {{ section.settings.btn1_bg_hover }};
-    color: {{ section.settings.btn1_text_hover | default: section.settings.btn1_text_color }};
-  }
-
-  /* Button 2 */
-  #{{ sid }} .hero-overlay__btn--2 {
-    background-color: {{ section.settings.btn2_bg }};
-    color: {{ section.settings.btn2_text_color }};
-    font-family: {{ section.settings.btn2_font.family }}, {{ section.settings.btn2_font.fallback_families }};
-    font-weight: {{ section.settings.btn2_font.weight }};
-    font-style: {{ section.settings.btn2_font.style }};
-    font-size: {{ section.settings.btn2_font_size }}px;
-    border-radius: {{ section.settings.btn2_radius }}px;
-    padding: {{ section.settings.btn2_padding_y }}px {{ section.settings.btn2_padding_x }}px;
-  }
-  #{{ sid }} .hero-overlay__btn--2:hover {
-    background-color: {{ section.settings.btn2_bg_hover }};
-    color: {{ section.settings.btn2_text_hover | default: section.settings.btn2_text_color }};
-  }
 </style>
 
 <section id="{{ sid }}" class="hero-overlay">
@@ -78,7 +44,7 @@
 
   <div class="hero-overlay__inner">
     <div class="page-width">
-      <!-- Linker Inhalt (wie vorher: eine Spalte) -->
+      <!-- Linker Bereich -->
       <div class="hero-overlay__content">
         {%- if section.settings.heading != blank -%}
           <h1 class="hero-overlay__heading">{{ section.settings.heading | escape }}</h1>
@@ -98,10 +64,7 @@
       </div>
     </div>
 
-    {%- comment -%}
-      Fester, transparenter Logo-Container (beeinflusst Layout nicht).
-      Sitzt rechts-mittig innerhalb der Section.
-    {%- endcomment -%}
+    <!-- Rechtes Logo -->
     {% if section.settings.logo_image != blank %}
       <div class="hero-overlay__logo-abs"
            style="
@@ -148,28 +111,10 @@
     { "type": "header", "content": "Button 1" },
     { "type": "text", "id": "btn1_text", "label": "Text", "default": "Mehr über unsere Services" },
     { "type": "url", "id": "btn1_link", "label": "Link" },
-    { "type": "font_picker", "id": "btn1_font", "label": "Schriftart", "default": "system-ui" },
-    { "type": "range", "id": "btn1_font_size", "min": 10, "max": 36, "step": 1, "unit": "px", "label": "Schriftgröße", "default": 16 },
-    { "type": "range", "id": "btn1_padding_x", "min": 8, "max": 48, "step": 1, "unit": "px", "label": "Padding X", "default": 28 },
-    { "type": "range", "id": "btn1_padding_y", "min": 6, "max": 24, "step": 1, "unit": "px", "label": "Padding Y", "default": 14 },
-    { "type": "range", "id": "btn1_radius", "min": 0, "max": 32, "step": 1, "unit": "px", "label": "Eckenradius", "default": 10 },
-    { "type": "color", "id": "btn1_bg", "label": "Hintergrund", "default": "#2BAAA2" },
-    { "type": "color", "id": "btn1_bg_hover", "label": "Hintergrund (Hover)", "default": "#238B84" },
-    { "type": "color", "id": "btn1_text_color", "label": "Textfarbe", "default": "#FFFFFF" },
-    { "type": "color", "id": "btn1_text_hover", "label": "Textfarbe (Hover)", "default": "#FFFFFF" },
 
     { "type": "header", "content": "Button 2" },
     { "type": "text", "id": "btn2_text", "label": "Text", "default": "JETZT ANRUFEN" },
     { "type": "url", "id": "btn2_link", "label": "Link" },
-    { "type": "font_picker", "id": "btn2_font", "label": "Schriftart", "default": "system-ui" },
-    { "type": "range", "id": "btn2_font_size", "min": 10, "max": 36, "step": 1, "unit": "px", "label": "Schriftgröße", "default": 16 },
-    { "type": "range", "id": "btn2_padding_x", "min": 8, "max": 48, "step": 1, "unit": "px", "label": "Padding X", "default": 24 },
-    { "type": "range", "id": "btn2_padding_y", "min": 6, "max": 24, "step": 1, "unit": "px", "label": "Padding Y", "default": 14 },
-    { "type": "range", "id": "btn2_radius", "min": 0, "max": 32, "step": 1, "unit": "px", "label": "Eckenradius", "default": 10 },
-    { "type": "color", "id": "btn2_bg", "label": "Hintergrund", "default": "#FFFFFF" },
-    { "type": "color", "id": "btn2_bg_hover", "label": "Hintergrund (Hover)", "default": "#E6E6E6" },
-    { "type": "color", "id": "btn2_text_color", "label": "Textfarbe", "default": "#2BAAA2" },
-    { "type": "color", "id": "btn2_text_hover", "label": "Textfarbe (Hover)", "default": "#238B84" },
 
     { "type": "header", "content": "Rechtes Logo (fester Container)" },
     { "type": "image_picker", "id": "logo_image", "label": "Logo-Bild" },
