@@ -1,4 +1,73 @@
-/* --- Rechtes Logo im festen transparenten Container --- */
+/* === Hero Overlay (global styles) === */
+.hero-overlay {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-overlay__bg {
+  position: absolute;
+  inset: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.hero-overlay__shade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.hero-overlay__inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  min-height: var(--hero-height, 60vh);
+  padding: var(--section-padding, 80px 0);
+}
+
+.hero-overlay__content {
+  width: 100%;
+  max-width: var(--content-max-width, 900px);
+}
+
+.hero-overlay__heading {
+  margin: 0 0 12px;
+  line-height: 1.1;
+}
+
+.hero-overlay__text {
+  margin: 0;
+  line-height: 1.5;
+  max-width: 60ch;
+}
+
+.hero-overlay__actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-overlay__btn {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.05s ease;
+  border-radius: var(--btn-radius, 10px);
+  padding: var(--btn-padding-y, 14px) var(--btn-padding-x, 24px);
+}
+
+.hero-overlay__btn:active {
+  transform: translateY(1px);
+}
+
+/* --- Rechtes Logo im festen, transparenten Container (absolute Position) --- */
 .hero-overlay__logo-abs {
   position: absolute;
   top: 50%;
@@ -6,19 +75,30 @@
   transform: translate(calc(0% - var(--logo-offset-x, 0%)),
                       calc(-50% - var(--logo-offset-y, 0%)));
   z-index: 2;
-  pointer-events: none;       /* blockiert keine Klicks auf Buttons links */
-  background: transparent;    /* Container durchsichtig */
+  pointer-events: none;      /* blockiert keine Klicks auf Content links */
+  background: transparent;   /* Container ist durchsichtig */
   max-width: var(--logo-maxw, 420px);
   padding: var(--logo-pad, 0px);
 }
+
 .hero-overlay__logo-abs img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* Mobile: Logo unterhalb, zentriert */
+/* === Mobile Adjustments === */
 @media (max-width: 768px) {
+  .hero-overlay__inner {
+    min-height: var(--hero-height-mobile, 40vh);
+    padding: var(--section-padding-mobile, 48px 0);
+  }
+
+  .hero-overlay__content {
+    text-align: center;
+  }
+
+  /* Logo auf Mobil nicht absolut, sondern unter dem Content */
   .hero-overlay__logo-abs {
     position: static;
     transform: none;
