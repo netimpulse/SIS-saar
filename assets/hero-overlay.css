@@ -64,15 +64,16 @@
 }
 .hero-overlay__btn:active { transform: translateY(1px); }
 
-/* --- Fester, transparenter Logo-Container rechts-mittig (absolute) --- */
+/* --- Rechtes Logo im festen Container --- */
 .hero-overlay__logo-abs {
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translate(calc(0% - var(--logo-offset-x, 0%)), calc(-50% - var(--logo-offset-y, 0%)));
+  transform: translate(calc(0% - var(--logo-offset-x, 0%)),
+                      calc(-50% - var(--logo-offset-y, 0%)));
   z-index: 2;
-  pointer-events: none;     /* blockiert keine Clicks auf Content */
-  background: transparent;  /* Container ist durchsichtig */
+  pointer-events: none;
+  background: transparent;  /* Container durchsichtig */
   max-width: var(--logo-maxw, 420px);
   padding: var(--logo-pad, 0px);
 }
@@ -82,7 +83,7 @@
   height: auto;
 }
 
-/* Mobile: Logo unterhalb, zentriert (optional) */
+/* Mobile: Logo unterhalb */
 @media (max-width: 768px) {
   .hero-overlay__inner {
     min-height: var(--hero-height-mobile, 40vh);
