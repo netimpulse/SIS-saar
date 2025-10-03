@@ -1,9 +1,8 @@
 {% comment %}
   HERO – LOGO DEBUG (Standalone)
   • Keine Snippets notwendig
-  • Keine externe CSS-Datei nötig
-  • Buttons im Container mit Inline-Styles
-  • Logo rechts im transparenten, absolut positionierten Container
+  • Buttons im Container
+  • Logo rechts, auf Mobil automatisch ausgeblendet
 {% endcomment %}
 
 {%- liquid
@@ -51,7 +50,7 @@
           </div>
         {% endif %}
 
-        <!-- Buttons im Container (INLINE-STYLES) -->
+        <!-- Buttons im Container -->
         <div style="margin-top:24px;">
           <div style="display:inline-flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:flex-start;">
             {% if section.settings.btn1_text != blank %}
@@ -80,13 +79,14 @@
     </div>
 
     {% if section.settings.logo_image != blank %}
-      <!-- Rechtes Logo im festen, transparenten Container -->
-      <div style="
-            position:absolute;top:50%;right:0;
-            transform:translate(calc(0% - {{ section.settings.logo_offset_x }}%), calc(-50% - {{ section.settings.logo_offset_y }}%));
-            z-index:2;pointer-events:none;background:transparent;
-            max-width: {{ section.settings.logo_max_width }}px; padding: {{ section.settings.logo_padding }}px;
-          ">
+      <!-- Rechtes Logo, auf Mobil ausgeblendet -->
+      <div class="hero-logo-desktop-only"
+           style="
+             position:absolute;top:50%;right:0;
+             transform:translate(calc(0% - {{ section.settings.logo_offset_x }}%), calc(-50% - {{ section.settings.logo_offset_y }}%));
+             z-index:2;pointer-events:none;background:transparent;
+             max-width: {{ section.settings.logo_max_width }}px; padding: {{ section.settings.logo_padding }}px;
+           ">
         <img src="{{ section.settings.logo_image | image_url: width: 1600 }}"
              alt="{{ section.settings.logo_alt | escape | default: 'Logo' }}"
              loading="lazy"
@@ -98,26 +98,21 @@
   <!-- Mobile Styles -->
   <style>
     @media (max-width: 768px){
-      #{{ sid }} .inner-mobile {}
-      #{{ sid }} { }
-      #{{ sid }} .hero-mobile-center { text-align:center; }
-      /* Logo auf Mobil unter den Content holen */
-      #{{ sid }} > div[style*="position:absolute"][style*="right:0"] {
-        position: static !important;
-        transform: none !important;
-        margin: 24px auto 0 !important;
-        pointer-events: auto !important;
-        max-width: min(70vw, {{ section.settings.logo_max_width }}px) !important;
+      /* Logo auf Handy ausblenden */
+      #{{ sid }} .hero-logo-desktop-only {
+        display: none !important;
       }
-      /* Buttons zentrieren auf Mobil */
-      #{{ sid }} div[style*="display:inline-flex"] { justify-content: center !important; }
+      /* Buttons zentrieren auf Handy */
+      #{{ sid }} div[style*="display:inline-flex"] {
+        justify-content: center !important;
+      }
     }
   </style>
 </section>
 
 {% schema %}
 {
-  "name": "Hero – Logo Debug (Standalone)",
+  "name": "Hero – Logo Debug (Standalone, Logo Desktop only)",
   "tag": "section",
   "class": "section",
   "settings": [
