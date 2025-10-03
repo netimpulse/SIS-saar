@@ -896,6 +896,33 @@
       "type": "hero-logo-debug",
       "name": "Hero – Logo Debug",
       "settings": {
+        "overlay_color": "#2baaa2",
+        "overlay_opacity": 70,
+        "section_height": 60,
+        "section_height_mobile": 40,
+        "content_max_width": 760,
+        "heading": "Ihre Partner für professionelle Service-Lösungen",
+        "heading_size": 64,
+        "heading_color": "#ffffff",
+        "text": "<p>Zwei spezialisierte Unternehmen unter einem Dach. Ihr Experte und Dienstleistungspartner auf höchstem Niveau.</p>",
+        "text_size": 20,
+        "text_color": "#ffffff",
+        "btn1_text": "Mehr über unsere Services",
+        "btn1_link": "",
+        "btn2_text": "Kontakt aufnehmen",
+        "btn2_link": "",
+        "logo_image": "shopify://shop_images/2025-SIS-Gebaeude_84d2e9ab-9e77-4ef4-8a40-4793e65f0593.png",
+        "logo_alt": "Logo",
+        "logo_max_width": 120,
+        "logo_padding": 0,
+        "logo_offset_x": 0,
+        "logo_offset_y": -20
+      }
+    },
+    "hero_logo_debug_xmFgGV": {
+      "type": "hero-logo-debug",
+      "name": "Hero – Logo Debug",
+      "settings": {
         "overlay_color": "#2BAAA2",
         "overlay_opacity": 70,
         "section_height": 60,
@@ -934,6 +961,7 @@
     "text_mit_bild_button_6UPhhG",
     "custom_cta_block_UK3hyB",
     "sis_footer_neu_g4D6E6",
-    "hero_logo_debug_kHnzH6"
+    "hero_logo_debug_kHnzH6",
+    "hero_logo_debug_xmFgGV"
   ]
 }
