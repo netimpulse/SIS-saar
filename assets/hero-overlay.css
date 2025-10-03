@@ -62,18 +62,19 @@
   border-radius: var(--btn-radius, 10px);
   padding: var(--btn-padding-y, 14px) var(--btn-padding-x, 24px);
 }
-
 .hero-overlay__btn:active { transform: translateY(1px); }
 
-/* --- Absolutes Logo rechts-mittig --- */
+/* --- Fester, transparenter Logo-Container rechts-mittig (absolute) --- */
 .hero-overlay__logo-abs {
   position: absolute;
   top: 50%;
   right: 0;
   transform: translate(calc(0% - var(--logo-offset-x, 0%)), calc(-50% - var(--logo-offset-y, 0%)));
-  z-index: 2;           /* über dem Overlay-Content */
-  pointer-events: none; /* verhindert Klickblockade auf Buttons links */
+  z-index: 2;
+  pointer-events: none;     /* blockiert keine Clicks auf Content */
+  background: transparent;  /* Container ist durchsichtig */
   max-width: var(--logo-maxw, 420px);
+  padding: var(--logo-pad, 0px);
 }
 .hero-overlay__logo-abs img {
   display: block;
@@ -81,20 +82,18 @@
   height: auto;
 }
 
-/* Mobile: Logo kleiner & unterhalb (optional) */
+/* Mobile: Logo unterhalb, zentriert (optional) */
 @media (max-width: 768px) {
   .hero-overlay__inner {
     min-height: var(--hero-height-mobile, 40vh);
     padding: var(--section-padding-mobile, 48px 0);
   }
+  .hero-overlay__content { text-align: center; }
   .hero-overlay__logo-abs {
-    position: static;         /* nicht absolut auf Mobil */
+    position: static;
     transform: none;
     margin: 24px auto 0;
-    max-width: min(70vw, var(--logo-maxw, 420px));
     pointer-events: auto;
-  }
-  .hero-overlay__content {
-    text-align: center;
+    max-width: min(70vw, var(--logo-maxw, 420px));
   }
 }
