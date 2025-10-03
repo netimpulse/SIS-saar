@@ -1,6 +1,6 @@
 {% comment %}
   Hero-Section mit Hintergrundbild, Overlay,
-  linkem Textblock, Buttons und optionalem Logo rechts.
+  linkem Textblock, Buttons und optionalem Logo rechts im transparenten Container
 {% endcomment %}
 
 {{ 'hero-overlay.css' | asset_url | stylesheet_tag }}
@@ -44,7 +44,6 @@
 
   <div class="hero-overlay__inner">
     <div class="page-width">
-      <!-- Linker Bereich -->
       <div class="hero-overlay__content">
         {%- if section.settings.heading != blank -%}
           <h1 class="hero-overlay__heading">{{ section.settings.heading | escape }}</h1>
@@ -64,7 +63,6 @@
       </div>
     </div>
 
-    <!-- Rechtes Logo -->
     {% if section.settings.logo_image != blank %}
       <div class="hero-overlay__logo-abs"
            style="
