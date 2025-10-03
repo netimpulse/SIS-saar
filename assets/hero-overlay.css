@@ -59,13 +59,11 @@
   cursor: pointer;
   line-height: 1;
   transition: background-color 0.2s ease, color 0.2s ease, transform 0.05s ease;
-  border-radius: var(--btn-radius, 10px);
-  padding: var(--btn-padding-y, 14px) var(--btn-padding-x, 24px);
+  border-radius: 10px;
+  padding: 14px 24px;
 }
 
-.hero-overlay__btn:active {
-  transform: translateY(1px);
-}
+.hero-overlay__btn:active { transform: translateY(1px); }
 
 /* --- Rechtes Logo im festen, transparenten Container (absolute Position) --- */
 .hero-overlay__logo-abs {
@@ -80,25 +78,19 @@
   max-width: var(--logo-maxw, 420px);
   padding: var(--logo-pad, 0px);
 }
-
 .hero-overlay__logo-abs img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* === Mobile Adjustments === */
+/* Mobile: Logo unten, zentriert */
 @media (max-width: 768px) {
   .hero-overlay__inner {
     min-height: var(--hero-height-mobile, 40vh);
-    padding: var(--section-padding-mobile, 48px 0);
+    padding: 48px 0;
   }
-
-  .hero-overlay__content {
-    text-align: center;
-  }
-
-  /* Logo auf Mobil nicht absolut, sondern unter dem Content */
+  .hero-overlay__content { text-align: center; }
   .hero-overlay__logo-abs {
     position: static;
     transform: none;
