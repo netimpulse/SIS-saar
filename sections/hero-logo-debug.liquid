@@ -1,11 +1,9 @@
 {% comment %}
-  HERO – LOGO (Desktop rechts, Mobile steuerbar)
-  • Desktop (>=1025px): Logo rechts absolut
-  • Mobile/Tablet (<=1024px): Per Toggle in den Einstellungen ein/aus
+  HERO – LOGO (Desktop rechts, Mobile optional per Setting)
 {% endcomment %}
 
 {%- liquid
-  assign sid = 'hero-logo-debug--' | append: section.id
+  assign sid = 'hero-logo-toggle--' | append: section.id
   assign bg_image = section.settings.bg_image
   assign overlay_alpha = section.settings.overlay_opacity | divided_by: 100.0
 -%}
@@ -32,9 +30,9 @@
     <div style="width:100%;max-width: {{ section.settings.content_max_width }}px; margin:0 auto;">
       <div style="width:100%;max-width:900px;text-align:left;">
 
-        {%- comment -%} Mobiles Logo (wird via Setting/CSS ein- bzw. ausgeblendet) {%- endcomment -%}
-        {% if section.settings.logo_image != blank %}
-          <div class="logo-mobile" style="display:none; margin-bottom:24px; text-align:center;">
+        {% comment %} Mobiles Logo, per Setting gesteuert {% endcomment %}
+        {% if section.settings.logo_image != blank and section.settings.show_logo_mobile %}
+          <div class="logo-mobile" style="margin-bottom:24px; text-align:center;">
             <img
               src="{{ section.settings.logo_image | image_url: width: 800 }}"
               alt="{{ section.settings.logo_alt | escape | default: 'Logo' }}"
@@ -81,7 +79,7 @@
       </div>
     </div>
 
-    {%- comment -%} Desktop-Logo (rechts absolut) {%- endcomment -%}
+    {% comment %} Desktop-Logo {% endcomment %}
     {% if section.settings.logo_image != blank %}
       <div class="logo-desktop"
            style="display:none; position:absolute; top:50%; right:0;
@@ -97,7 +95,7 @@
     {% endif %}
   </div>
 
-  <!-- Responsive + Toggle -->
+  <!-- Responsive Styles -->
   <style>
     /* MOBILE/TABLET ≤1024px */
     #{{ sid }} .btn-row { justify-content:center !important; }
@@ -106,15 +104,7 @@
       min-height: {{ section.settings.section_height_mobile }}vh !important;
       padding: 48px 0 !important;
     }
-    /* Desktop-Logo auf Mobile immer aus */
-    #{{ sid }} .logo-desktop { display:none !important; position:static !important; transform:none !important; }
-
-    /* Mobiles Logo per Setting ein-/ausblenden */
-    {% if section.settings.show_logo_mobile %}
-      #{{ sid }} .logo-mobile { display:block !important; margin-bottom:24px !important; }
-    {% else %}
-      #{{ sid }} .logo-mobile { display:none !important; }
-    {% endif %}
+    #{{ sid }} .logo-desktop { display:none !important; }
 
     /* DESKTOP ≥1025px */
     @media (min-width: 1025px){
@@ -125,14 +115,14 @@
         padding: 80px 0 !important;
       }
       #{{ sid }} .logo-desktop { display:block !important; position:absolute !important; }
-      #{{ sid }} .logo-mobile  { display:none !important; } /* Mobile-Logo auf Desktop aus */
+      #{{ sid }} .logo-mobile  { display:none !important; } /* Sicherstellen, dass Mobile-Logo auf Desktop aus ist */
     }
   </style>
 </section>
 
 {% schema %}
 {
-  "name": "Hero – Logo (Desktop rechts, Mobile Toggle)",
+  "name": "Hero – Logo (Desktop rechts, Mobile optional)",
   "tag": "section",
   "class": "section",
   "settings": [
@@ -152,6 +142,16 @@
     { "type": "range", "id": "text_size", "min": 12, "max": 40, "step": 1, "unit": "px", "label": "Textgröße", "default": 20 },
     { "type": "color", "id": "text_color", "label": "Textfarbe", "default": "#FFFFFF" },
 
+    { "type": "header", "content": "Buttons" },
+    { "type": "text", "id": "btn1_text", "label": "Button 1 – Text", "default": "Mehr über unsere Services" },
+    { "type": "url", "id": "btn1_link", "label": "Button 1 – Link" },
+    { "type": "color", "id": "btn1_bg", "label": "Button 1 – Hintergrund", "default": "#2BAAA2" },
+    { "type": "color", "id": "btn1_text_color", "label": "Button 1 – Textfarbe", "default": "#FFFFFF" },
+    { "type": "text", "id": "btn2_text", "label": "Button 2 – Text", "default": "Kontakt aufnehmen" },
+    { "type": "url", "id": "btn2_link", "label": "Button 2 – Link" },
+    { "type": "color", "id": "btn2_bg", "label": "Button 2 – Hintergrund", "default": "#FFFFFF" },
+    { "type": "color", "id": "btn2_text_color", "label": "Button 2 – Textfarbe", "default": "#2BAAA2" },
+
     { "type": "header", "content": "Logo" },
     { "type": "image_picker", "id": "logo_image", "label": "Logo-Bild" },
     { "type": "text", "id": "logo_alt", "label": "Alt-Text", "default": "Logo" },
@@ -165,7 +165,7 @@
     { "type": "checkbox", "id": "show_logo_mobile", "label": "Logo auf Mobile anzeigen", "default": false }
   ],
   "presets": [
-    { "name": "Hero – Logo (Desktop rechts, Mobile Toggle)" }
+    { "name": "Hero – Logo (Desktop rechts, Mobile optional)" }
   ]
 }
 {% endschema %}
