@@ -32,14 +32,6 @@
 .hero-overlay__content {
   width: 100%;
   max-width: var(--content-max-width, 900px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 32px;
-}
-
-.hero-overlay__textblock {
-  flex: 1;
 }
 
 .hero-overlay__heading {
@@ -73,29 +65,36 @@
 
 .hero-overlay__btn:active { transform: translateY(1px); }
 
-/* Logo rechts */
-.hero-overlay__logo {
-  flex: 0 0 auto;
-  max-width: 320px;
+/* --- Absolutes Logo rechts-mittig --- */
+.hero-overlay__logo-abs {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(calc(0% - var(--logo-offset-x, 0%)), calc(-50% - var(--logo-offset-y, 0%)));
+  z-index: 2;           /* über dem Overlay-Content */
+  pointer-events: none; /* verhindert Klickblockade auf Buttons links */
+  max-width: var(--logo-maxw, 420px);
 }
-
-.hero-overlay__logo img {
+.hero-overlay__logo-abs img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
-/* Mobile */
+/* Mobile: Logo kleiner & unterhalb (optional) */
 @media (max-width: 768px) {
   .hero-overlay__inner {
     min-height: var(--hero-height-mobile, 40vh);
     padding: var(--section-padding-mobile, 48px 0);
   }
-  .hero-overlay__content {
-    flex-direction: column;
-    text-align: center;
+  .hero-overlay__logo-abs {
+    position: static;         /* nicht absolut auf Mobil */
+    transform: none;
+    margin: 24px auto 0;
+    max-width: min(70vw, var(--logo-maxw, 420px));
+    pointer-events: auto;
   }
-  .hero-overlay__logo {
-    margin-top: 20px;
+  .hero-overlay__content {
+    text-align: center;
   }
 }
