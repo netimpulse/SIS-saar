@@ -1,6 +1,9 @@
 {% comment %}
-  Hero-Section mit Hintergrundbild, Overlay,
-  linkem Textblock, Buttons und optionalem Logo rechts im transparenten Container
+  Hero-Section mit Hintergrundbild & Overlay,
+  linkem Textblock (Heading, Text, Buttons)
+  + Logo rechts im festen, transparenten Container.
+
+  HINWEIS: Logo kann entweder über die Section-Settings ODER über einen Block gesetzt werden.
 {% endcomment %}
 
 {{ 'hero-overlay.css' | asset_url | stylesheet_tag }}
@@ -9,9 +12,25 @@
   assign sid = 'hero-overlay--' | append: section.id
   assign bg_image = section.settings.bg_image
   assign overlay_alpha = section.settings.overlay_opacity | divided_by: 100.0
+
+  comment
+    Logo-Quelle priorisieren: Section-Setting > Block (erstes Block-Logo)
+  endcomment
+  assign logo_img = section.settings.logo_image
+  assign logo_alt = section.settings.logo_alt
+  if logo_img == blank
+    for block in section.blocks
+      if block.type == 'logo_right' and block.settings.block_logo_image != blank
+        assign logo_img = block.settings.block_logo_image
+        assign logo_alt = block.settings.block_logo_alt
+        break
+      endif
+    endfor
+  endif
 -%}
 
 <style>
+  /* Bereichsspezifische (scoped) Variablen */
   #{{ sid }} .hero-overlay__inner {
     --hero-height: {{ section.settings.section_height }}vh;
     --hero-height-mobile: {{ section.settings.section_height_mobile }}vh;
@@ -33,6 +52,38 @@
     font-style: {{ section.settings.text_font.style }};
     font-size: {{ section.settings.text_size }}px;
     color: {{ section.settings.text_color }};
+  }
+
+  /* Button 1 */
+  #{{ sid }} .hero-overlay__btn--1 {
+    background-color: {{ section.settings.btn1_bg }};
+    color: {{ section.settings.btn1_text_color }};
+    font-family: {{ section.settings.btn1_font.family }}, {{ section.settings.btn1_font.fallback_families }};
+    font-weight: {{ section.settings.btn1_font.weight }};
+    font-style: {{ section.settings.btn1_font.style }};
+    font-size: {{ section.settings.btn1_font_size }}px;
+    border-radius: {{ section.settings.btn1_radius }}px;
+    padding: {{ section.settings.btn1_padding_y }}px {{ section.settings.btn1_padding_x }}px;
+  }
+  #{{ sid }} .hero-overlay__btn--1:hover {
+    background-color: {{ section.settings.btn1_bg_hover }};
+    color: {{ section.settings.btn1_text_hover | default: section.settings.btn1_text_color }};
+  }
+
+  /* Button 2 */
+  #{{ sid }} .hero-overlay__btn--2 {
+    background-color: {{ section.settings.btn2_bg }};
+    color: {{ section.settings.btn2_text_color }};
+    font-family: {{ section.settings.btn2_font.family }}, {{ section.settings.btn2_font.fallback_families }};
+    font-weight: {{ section.settings.btn2_font.weight }};
+    font-style: {{ section.settings.btn2_font.style }};
+    font-size: {{ section.settings.btn2_font_size }}px;
+    border-radius: {{ section.settings.btn2_radius }}px;
+    padding: {{ section.settings.btn2_padding_y }}px {{ section.settings.btn2_padding_x }}px;
+  }
+  #{{ sid }} .hero-overlay__btn--2:hover {
+    background-color: {{ section.settings.btn2_bg_hover }};
+    color: {{ section.settings.btn2_text_hover | default: section.settings.btn2_text_color }};
   }
 </style>
 
@@ -63,7 +114,7 @@
       </div>
     </div>
 
-    {% if section.settings.logo_image != blank %}
+    {%- if logo_img != blank -%}
       <div class="hero-overlay__logo-abs"
            style="
              --logo-maxw: {{ section.settings.logo_max_width }}px;
@@ -72,17 +123,17 @@
              --logo-offset-y: {{ section.settings.logo_offset_y }}%;
            ">
         <img
-          src="{{ section.settings.logo_image | image_url: width: 1200 }}"
-          alt="{{ section.settings.logo_alt | escape | default: 'Logo' }}"
+          src="{{ logo_img | image_url: width: 1600 }}"
+          alt="{{ logo_alt | escape | default: 'Logo' }}"
           loading="lazy">
       </div>
-    {% endif %}
+    {%- endif -%}
   </div>
 </section>
 
 {% schema %}
 {
-  "name": "Hero – Service Overlay (mit Logo rechts)",
+  "name": "Hero – Service Overlay (Logo rechts)",
   "tag": "section",
   "class": "section",
   "settings": [
@@ -95,32 +146,41 @@
     { "type": "range", "id": "content_max_width", "label": "Inhaltsbreite", "min": 480, "max": 1200, "step": 10, "unit": "px", "default": 760 },
 
     { "type": "header", "content": "Überschrift" },
-    { "type": "text", "id": "heading", "label": "Titel", "default": "Ihr Partner für die Industrie" },
+    { "type": "text", "id": "heading", "label": "Titel", "default": "Ihre Partner für professionelle Service-Lösungen" },
     { "type": "font_picker", "id": "heading_font", "label": "Schriftart", "default": "system-ui" },
     { "type": "range", "id": "heading_size", "min": 20, "max": 100, "step": 1, "unit": "px", "label": "Schriftgröße", "default": 64 },
     { "type": "color", "id": "heading_color", "label": "Farbe", "default": "#FFFFFF" },
 
     { "type": "header", "content": "Untertitel / Text" },
-    { "type": "richtext", "id": "text", "label": "Text", "default": "<p>Wir sind Ihre Experten und Dienstleistungspartner auf höchstem Niveau.</p>" },
+    { "type": "richtext", "id": "text", "label": "Text", "default": "<p>Zwei spezialisierte Unternehmen unter einem Dach. Ihr Experte und Dienstleistungspartner auf höchstem Niveau.</p>" },
     { "type": "font_picker", "id": "text_font", "label": "Schriftart", "default": "system-ui" },
     { "type": "range", "id": "text_size", "min": 12, "max": 40, "step": 1, "unit": "px", "label": "Schriftgröße", "default": 20 },
     { "type": "color", "id": "text_color", "label": "Farbe", "default": "#FFFFFF" },
 
-    { "type": "header", "content": "Button 1" },
-    { "type": "text", "id": "btn1_text", "label": "Text", "default": "Mehr über unsere Services" },
-    { "type": "url", "id": "btn1_link", "label": "Link" },
+    { "type": "header", "content": "Buttons" },
+    { "type": "text", "id": "btn1_text", "label": "Button 1 – Text", "default": "Mehr über unsere Services" },
+    { "type": "url", "id": "btn1_link", "label": "Button 1 – Link" },
+    { "type": "text", "id": "btn2_text", "label": "Button 2 – Text", "default": "Kontakt aufnehmen" },
+    { "type": "url", "id": "btn2_link", "label": "Button 2 – Link" },
 
-    { "type": "header", "content": "Button 2" },
-    { "type": "text", "id": "btn2_text", "label": "Text", "default": "JETZT ANRUFEN" },
-    { "type": "url", "id": "btn2_link", "label": "Link" },
-
-    { "type": "header", "content": "Rechtes Logo (fester Container)" },
+    { "type": "header", "content": "Rechtes Logo (Section-Setting)" },
     { "type": "image_picker", "id": "logo_image", "label": "Logo-Bild" },
     { "type": "text", "id": "logo_alt", "label": "Alt-Text", "default": "Logo" },
     { "type": "range", "id": "logo_max_width", "label": "Max. Logo-Breite (px)", "min": 120, "max": 900, "step": 10, "unit": "px", "default": 420 },
     { "type": "range", "id": "logo_padding", "label": "Innenabstand Container (px)", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 0 },
     { "type": "range", "id": "logo_offset_x", "label": "X-Versatz nach links (+) in %", "min": 0, "max": 20, "step": 1, "unit": "%", "default": 4 },
     { "type": "range", "id": "logo_offset_y", "label": "Y-Versatz nach oben (+) in %", "min": -20, "max": 20, "step": 1, "unit": "%", "default": 0 }
+  ],
+  "blocks": [
+    {
+      "type": "logo_right",
+      "name": "Logo rechts (Block)",
+      "limit": 1,
+      "settings": [
+        { "type": "image_picker", "id": "block_logo_image", "label": "Logo-Bild (Block)" },
+        { "type": "text", "id": "block_logo_alt", "label": "Alt-Text", "default": "Logo" }
+      ]
+    }
   ],
   "presets": [
     { "name": "Hero – Service Overlay (Logo rechts)", "category": "Bild" }
