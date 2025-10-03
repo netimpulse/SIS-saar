@@ -32,6 +32,14 @@
 .hero-overlay__content {
   width: 100%;
   max-width: var(--content-max-width, 900px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.hero-overlay__textblock {
+  flex: 1;
 }
 
 .hero-overlay__heading {
@@ -65,10 +73,29 @@
 
 .hero-overlay__btn:active { transform: translateY(1px); }
 
+/* Logo rechts */
+.hero-overlay__logo {
+  flex: 0 0 auto;
+  max-width: 320px;
+}
+
+.hero-overlay__logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .hero-overlay__inner {
     min-height: var(--hero-height-mobile, 40vh);
     padding: var(--section-padding-mobile, 48px 0);
+  }
+  .hero-overlay__content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-overlay__logo {
+    margin-top: 20px;
   }
 }
