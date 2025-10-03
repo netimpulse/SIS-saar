@@ -1,7 +1,7 @@
 {% comment %}
-  HERO – LOGO DEBUG (Optimiert)
-  • Desktop (>1024px): Logo rechts, absolut
-  • Mobile/Tablet (<=1024px): Desktop-Logo AUS, mobiles Logo VOR der Überschrift AN
+  HERO – LOGO DEBUG (Optimiert & Fix)
+  • Desktop (>1024px): Logo rechts absolut
+  • Mobile/Tablet (<=1024px): Desktop-Logo AUS, mobiles Logo über Überschrift AN
   • Buttons im Container
   • Keine externen Snippets/CSS nötig (alles inline)
 {% endcomment %}
@@ -34,9 +34,9 @@
     <div style="width:100%;max-width: {{ section.settings.content_max_width }}px; margin:0 auto;">
       <div style="width:100%;max-width:900px;text-align:left;">
 
-        {%- comment -%} MOBILES LOGO (steht VOR der Überschrift) {%- endcomment -%}
+        {%- comment -%} MOBILES LOGO über der Überschrift {%- endcomment -%}
         {% if section.settings.logo_image != blank %}
-          <div class="logo-mobile" style="display:none; margin-bottom:24px; text-align:center;">
+          <div class="logo-mobile" style="display:block; margin-bottom:24px; text-align:center;">
             <img
               src="{{ section.settings.logo_image | image_url: width: 800 }}"
               alt="{{ section.settings.logo_alt | escape | default: 'Logo' }}"
@@ -83,10 +83,13 @@
       </div>
     </div>
 
-    {%- comment -%} DESKTOP-LOGO (rechts, absolut) {%- endcomment -%}
+    {%- comment -%} DESKTOP-LOGO (rechts absolut) {%- endcomment -%}
     {% if section.settings.logo_image != blank %}
       <div class="logo-desktop"
-           style="position:absolute;top:50%;right:0;transform:translate(calc(0% - {{ section.settings.logo_offset_x }}%), calc(-50% - {{ section.settings.logo_offset_y }}%));z-index:2;pointer-events:none;background:transparent;max-width: {{ section.settings.logo_max_width }}px; padding: {{ section.settings.logo_padding }}px;">
+           style="display:none; position:absolute; top:50%; right:0;
+                  transform:translate(calc(0% - {{ section.settings.logo_offset_x }}%), calc(-50% - {{ section.settings.logo_offset_y }}%));
+                  z-index:2; pointer-events:none; background:transparent;
+                  max-width: {{ section.settings.logo_max_width }}px; padding: {{ section.settings.logo_padding }}px;">
         <img
           src="{{ section.settings.logo_image | image_url: width: 1600 }}"
           alt="{{ section.settings.logo_alt | escape | default: 'Logo' }}"
@@ -96,17 +99,34 @@
     {% endif %}
   </div>
 
-  <!-- Harte Responsive-Umschaltung (ohne JS, garantiert) -->
+  <!-- Responsive Umschaltung -->
   <style>
-    /* Bis 1024px: mobiles Logo AN (vor der H1), Desktop-Logo AUS */
-    @media (max-width: 1024px){
-      #{{ sid }} .logo-desktop { display:none !important; }
-      #{{ sid }} .logo-mobile  { display:block !important; margin-bottom:24px !important; }
-      #{{ sid }} .btn-row { justify-content:center !important; }
-      #{{ sid }} h1, #{{ sid }} .rte { text-align:center; margin:0 auto; }
+    /* Mobile-First: bis 1024px */
+    #{{ sid }} .logo-desktop { 
+      display:none !important;
+      position: static !important;
+      transform: none !important;
+    }
+    #{{ sid }} .logo-mobile  { 
+      display:block !important; 
+      margin-bottom: 24px !important; 
+    }
+    #{{ sid }} .btn-row { justify-content:center !important; }
+    #{{ sid }} h1, #{{ sid }} .rte { text-align:center; margin:0 auto; }
+    #{{ sid }} .hero-inner {
+      min-height: {{ section.settings.section_height_mobile }}vh !important;
+      padding: 48px 0 !important;
+    }
+
+    /* Ab 1025px: Desktop */
+    @media (min-width: 1025px){
+      #{{ sid }} .logo-desktop { display:block !important; position:absolute !important; }
+      #{{ sid }} .logo-mobile  { display:none !important; }
+      #{{ sid }} .btn-row { justify-content:flex-start !important; }
+      #{{ sid }} h1, #{{ sid }} .rte { text-align:left; margin:0; }
       #{{ sid }} .hero-inner {
-        min-height: {{ section.settings.section_height_mobile }}vh !important;
-        padding: 48px 0 !important;
+        min-height: {{ section.settings.section_height }}vh !important;
+        padding: 80px 0 !important;
       }
     }
   </style>
