@@ -1,10 +1,11 @@
-/* === Hero Overlay === */
+/* === Hero Overlay (vollständig) === */
 .hero-overlay {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
 
+/* Hintergrundbild + Overlay-Farbfläche */
 .hero-overlay__bg {
   position: absolute;
   inset: 0;
@@ -19,6 +20,7 @@
   z-index: 1;
 }
 
+/* Innenbereich */
 .hero-overlay__inner {
   position: relative;
   z-index: 2;
@@ -28,6 +30,7 @@
   padding: var(--section-padding, 80px 0);
 }
 
+/* Inhalt links */
 .hero-overlay__content {
   width: 100%;
   max-width: var(--content-max-width, 900px);
@@ -42,13 +45,11 @@
   max-width: 60ch;
 }
 
-/* === Buttons im Container === */
-.hero-overlay__btn-wrapper {
-  margin-top: 24px;
-}
+/* === Buttons === */
 .hero-overlay__btn-container {
   display: inline-flex;
   gap: 16px;
+  margin-top: 24px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start; /* für mittig -> center */
@@ -66,7 +67,7 @@
 }
 .hero-overlay__btn:active { transform: translateY(1px); }
 
-/* === Logo rechts === */
+/* === Logo rechts: fester, transparenter Container (absolute) === */
 .hero-overlay__logo-abs {
   position: absolute;
   top: 50%;
@@ -74,8 +75,8 @@
   transform: translate(calc(0% - var(--logo-offset-x, 0%)),
                       calc(-50% - var(--logo-offset-y, 0%)));
   z-index: 2;
-  pointer-events: none;
-  background: transparent;
+  pointer-events: none;      /* blockiert keine Klicks links */
+  background: transparent;   /* Container ist durchsichtig */
   max-width: var(--logo-maxw, 420px);
   padding: var(--logo-pad, 0px);
 }
