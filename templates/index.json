@@ -74,7 +74,7 @@
         "left_title": "INDUSTRIE SERVICE",
         "left_description": "Anlagenwartung, Reparatur und Industriedienstleistungen",
         "left_button_text": "Mehr erfahren",
-        "left_button_link": "shopify://pages/industrieservice-startseite",
+        "left_button_link": "shopify://pages/industrieservice",
         "right_image": "shopify://shop_images/ChatGPT_Image_13._Aug._2025_23_28_29_1.png",
         "right_hover_image": "shopify://shop_images/2025-SIS-Gebaeude.png",
         "right_icon": "",
@@ -830,7 +830,7 @@
           "settings": {
             "logo": "shopify://shop_images/2025-SIS.png",
             "alt": "Partner Industrieservice GmbH",
-            "link": "shopify://pages/industrieservice-startseite",
+            "link": "shopify://pages/industrieservice",
             "new_tab": true
           }
         },

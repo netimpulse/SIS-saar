@@ -653,7 +653,7 @@
           "settings": {
             "logo": "shopify://shop_images/2025-SIS.png",
             "alt": "Partner Industrieservice GmbH",
-            "link": "shopify://pages/industrieservice-startseite",
+            "link": "shopify://pages/industrieservice",
             "new_tab": true
           }
         },
