@@ -231,6 +231,7 @@
         "heading": "<em>Wir stellen uns vor: Werfen Sie einen Blick auf unseren Imagefilm.</em>",
         "heading_size": "h2",
         "enable_video_looping": false,
+        "video": "shopify://files/videos/SIS Imagefilm mUT.mp4",
         "video_url": "",
         "cover_image": "shopify://shop_images/Titelbild_Video.png",
         "description": "",
