@@ -1,8 +1,19 @@
 {% comment %}
-  Section: Kontaktinformationen + Nachricht senden
+  Section: Kontaktinformationen + Nachricht senden (mit reCAPTCHA & Honeypot)
 {% endcomment %}
 
 {{ 'contact-info-form.css' | asset_url | stylesheet_tag }}
+
+<style>
+  /* Honeypot unsichtbar machen */
+  .cif__honeypot {
+    position: absolute !important;
+    left: -9999px !important;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+</style>
 
 <section class="cif container">
   <div class="cif__inner">
@@ -98,14 +109,65 @@
                 {{ section.settings.consent_text }}
               </label>
             </div>
+
+            <!-- Honeypot-Feld (unsichtbar) -->
+            <div class="cif__field cif__honeypot" aria-hidden="true">
+              <label for="CIFHP">Bitte dieses Feld leer lassen</label>
+              <input type="text" id="CIFHP" name="cif_hp" tabindex="-1" autocomplete="off">
+            </div>
+
+            <!-- reCAPTCHA-Widget -->
+            {%- if section.settings.enable_recaptcha and section.settings.recaptcha_site_key != blank -%}
+              <div class="cif__field cif__field--full">
+                <div class="g-recaptcha"
+                     data-sitekey="{{ section.settings.recaptcha_site_key }}"
+                     data-callback="onRecaptchaSuccess"
+                     data-expired-callback="onRecaptchaExpired"></div>
+              </div>
+            {%- endif -%}
           </div>
 
-          <button type="submit" class="cif__submit">{{ section.settings.button_label }}</button>
+          <!-- Button standardmäßig deaktiviert -->
+          <button type="submit" id="ContactSubmit" class="cif__submit" disabled>
+            {{ section.settings.button_label }}
+          </button>
+
         {% endif %}
       {% endform %}
     </div>
   </div>
 </section>
+
+{%- if section.settings.enable_recaptcha -%}
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script>
+    (function(){
+      var btn;
+      function disable(){ if(btn){ btn.disabled = true; btn.setAttribute('aria-disabled','true'); } }
+      function enable(){ if(btn){ btn.disabled = false; btn.removeAttribute('aria-disabled'); } }
+
+      window.onRecaptchaSuccess = function(){ enable(); };
+      window.onRecaptchaExpired = function(){ disable(); };
+
+      document.addEventListener('DOMContentLoaded', function(){
+        btn = document.getElementById('ContactSubmit');
+        disable();
+
+        var form = document.getElementById('ContactForm');
+        if(form){
+          form.addEventListener('submit', function(e){
+            var hp = document.getElementById('CIFHP');
+            var solved = typeof grecaptcha !== 'undefined' && grecaptcha.getResponse().length > 0;
+            if ((hp && hp.value.trim() !== '') || !solved){
+              e.preventDefault();
+              disable();
+            }
+          });
+        }
+      });
+    })();
+  </script>
+{%- endif -%}
 
 {% schema %}
 {
@@ -139,6 +201,9 @@
 
     { "type": "richtext", "id": "consent_text", "label": "Datenschutz-Hinweis", "default": "<p>Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zu.</p>" },
     { "type": "text", "id": "consent_label", "label": "Feldname für Zustimmung", "default": "Datenschutz zugestimmt" },
+
+    { "type": "checkbox", "id": "enable_recaptcha", "label": "Google reCAPTCHA aktivieren", "default": true },
+    { "type": "text", "id": "recaptcha_site_key", "label": "reCAPTCHA Site Key", "default": "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" },
 
     { "type": "text", "id": "button_label", "label": "Button-Text", "default": "Nachricht senden" },
     { "type": "text", "id": "success_text", "label": "Text nach erfolgreichem Versand", "default": "Danke für Ihre Nachricht! Wir melden uns bald." }
