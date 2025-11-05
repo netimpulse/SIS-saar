@@ -108,12 +108,23 @@
             "file_url": "https://cdn.shopify.com/s/files/1/0976/1210/4029/files/2024_AMS_BAU_Bescheinigung_bis_28.05.27.pdf?v=1762348994",
             "tags": "Zertifikat, ISO, 9001"
           }
+        },
+        "download_VyWhPQ": {
+          "type": "download",
+          "settings": {
+            "title": "AGB",
+            "date": "11.09.2023",
+            "image": "shopify://shop_images/AGB_Bild.png",
+            "file_url": "https://cdn.shopify.com/s/files/1/0976/1210/4029/files/Allgemeine-Geschaeftsbedingungen-SIS_-Stand-01.10.2013_-03.12.2018.pdf?v=1762348806",
+            "tags": "AGB, Allgemeine Geschäftsbedingungen"
+          }
         }
       },
       "block_order": [
         "download_cVTVn7",
         "download_7Uq3dW",
-        "download_KXFVMF"
+        "download_KXFVMF",
+        "download_VyWhPQ"
       ],
       "name": "Downloads / Zertifikate (DLX)",
       "settings": {
