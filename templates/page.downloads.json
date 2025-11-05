@@ -84,7 +84,8 @@
           "settings": {
             "title": "ISO 9001: 2015",
             "date": "11.09.2023",
-            "file_url": "",
+            "image": "shopify://shop_images/QM_Zertifikat_Bild.png",
+            "file_url": "https://cdn.shopify.com/s/files/1/0976/1210/4029/files/2024_DESTU_bis_09.01.2028.pdf?v=1762348806",
             "tags": "Zertifikat, ISO, 9001"
           }
         },
