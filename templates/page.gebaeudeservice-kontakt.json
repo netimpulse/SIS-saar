@@ -136,7 +136,7 @@
           "type": "info_card",
           "settings": {
             "title": "Telefon",
-            "text": "<p>gebaeudeservice@sissaar.de<br/><br/></p>",
+            "text": "<p><a href=\"mailto:gebaeudeservice@sissaar.de\" title=\"gebaeudeservice@sissaar.de\">gebaeudeservice@sissaar.de</a></p>",
             "icon": "mail"
           }
         },
