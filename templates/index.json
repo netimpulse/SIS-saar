@@ -822,7 +822,7 @@
           "type": "kontakt_link",
           "settings": {
             "text": "Datenschutz",
-            "link": ""
+            "link": "shopify://pages/datenschutz"
           }
         },
         "partner_logo_Pz4m8g": {
