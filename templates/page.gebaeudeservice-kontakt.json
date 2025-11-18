@@ -128,7 +128,7 @@
           "type": "info_card",
           "settings": {
             "title": "Telefon",
-            "text": "<p>+49 (0) 6898 / 16 90 900<br/><br/></p>",
+            "text": "<p><a href=\"tel:+49 (0) 6898 / 16 90 900\" title=\"+49 (0) 6898 / 16 90 900\">+49 (0) 6898 / 16 90 900</a></p>",
             "icon": "phone"
           }
         },
