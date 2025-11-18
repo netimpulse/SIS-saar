@@ -215,7 +215,7 @@
           "type": "info_card",
           "settings": {
             "title": "Telefon",
-            "text": "<p>06898 16 90 900</p>",
+            "text": "<p><a href=\"tel:(+49) (0) 6898 16 90 900\" title=\"tel:(+49) (0) 6898 16 90 900\">(+49) (0) 6898 16 90 900</a></p>",
             "icon": "phone"
           }
         },
