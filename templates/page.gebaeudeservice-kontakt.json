@@ -25,7 +25,7 @@
         "padding_vertical": 16,
         "padding_horizontal": 24,
         "logo_height": 40,
-        "back_link": "shopify://pages/sis-saar",
+        "back_link": "",
         "back_label": "Zur Hauptseite",
         "back_font": "system_ui_n4",
         "back_font_bold": false,
