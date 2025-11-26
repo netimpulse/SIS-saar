@@ -79,6 +79,16 @@
     "dlx_downloads_wKpMwN": {
       "type": "dlx-downloads",
       "blocks": {
+        "download_KDLUmC": {
+          "type": "download",
+          "settings": {
+            "title": "Datenschutzerklärung",
+            "date": "11.09.2023",
+            "image": "shopify://shop_images/Datenschutzerklaerung_SISGS_Bild.png",
+            "file_url": "",
+            "tags": "Zertifikat, ISO, 9001"
+          }
+        },
         "download_cVTVn7": {
           "type": "download",
           "settings": {
@@ -121,6 +131,7 @@
         }
       },
       "block_order": [
+        "download_KDLUmC",
         "download_cVTVn7",
         "download_7Uq3dW",
         "download_KXFVMF",
