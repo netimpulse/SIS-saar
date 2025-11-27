@@ -194,6 +194,21 @@
         "no_image_text_align": "left"
       }
     },
+    "video_MKxFRL": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "Trockeneisstrahlen",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=lA5dpcajHEo",
+        "description": "Ein Video das die Tätigkeit Strahlen mit Trockeneis darstellt",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "about_section_v2_b8VKY4": {
       "type": "about-section-v2",
       "blocks": {
@@ -688,6 +703,7 @@
     "hero_building_section_xFPFdb",
     "leistung_showcase_pDxJq9",
     "about_section_v3_E4EJpt",
+    "video_MKxFRL",
     "about_section_v2_b8VKY4",
     "about_section_v3_EMFjnT",
     "custom_media_richtext_eKaTX3",
