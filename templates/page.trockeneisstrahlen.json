@@ -137,6 +137,22 @@
         "fallback_bullet_color": "#2b6cb0"
       }
     },
+    "video_MKxFRL": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=lA5dpcajHEo",
+        "cover_image": "shopify://shop_images/Thumb_SIS_Social_Clip_Trockeneis-Strahlen.jpg",
+        "description": "Ein Video das die Tätigkeit Strahlen mit Trockeneis darstellt",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "about_section_v3_E4EJpt": {
       "type": "about-section-v3",
       "blocks": {
@@ -192,22 +208,6 @@
         "icon_color": "#34d399",
         "feature_title_color": "#111827",
         "no_image_text_align": "left"
-      }
-    },
-    "video_MKxFRL": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
-      "settings": {
-        "heading": "Trockeneisstrahlen",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=lA5dpcajHEo",
-        "cover_image": "shopify://shop_images/Thumb_SIS_Social_Clip_Trockeneis-Strahlen.jpg",
-        "description": "Ein Video das die Tätigkeit Strahlen mit Trockeneis darstellt",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "about_section_v2_b8VKY4": {
