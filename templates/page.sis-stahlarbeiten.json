@@ -184,6 +184,22 @@
         "no_image_text_align": "left"
       }
     },
+    "video_3HfMiw": {
+      "type": "video",
+      "disabled": true,
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/JhDhI3JFDNo",
+        "description": "Imagefilm der Firma",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "about_section_v2_RbQb9j": {
       "type": "about-section-v2",
       "name": "Warum - vorher nachher bilder",
@@ -606,6 +622,7 @@
     "hero_building_section_xFPFdb",
     "leistung_showcase_wAGpyg",
     "about_section_v3_RGqFVA",
+    "video_3HfMiw",
     "about_section_v2_RbQb9j",
     "custom_media_richtext_HBgGnm",
     "about_section_v3_8XYGe7",
