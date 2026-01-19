@@ -186,13 +186,13 @@
     },
     "video_3HfMiw": {
       "type": "video",
-      "disabled": true,
       "name": "t:sections.video.presets.name",
       "settings": {
         "heading": "",
         "heading_size": "h2",
         "enable_video_looping": false,
-        "video_url": "https://youtu.be/JhDhI3JFDNo",
+        "video_url": "https://www.youtube.com/watch?v=JhDhI3JFDNo",
+        "cover_image": "shopify://shop_images/Thumb_SIS_Social_Clip_Sand_Soda_Glas-Strahlen.jpg",
         "description": "Imagefilm der Firma",
         "full_width": false,
         "color_scheme": "",
