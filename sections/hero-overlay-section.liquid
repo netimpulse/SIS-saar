@@ -25,10 +25,12 @@
   #{{ sid }} .hero-overlay__heading {
     font-size: {{ section.settings.heading_size }}px;
     color: {{ section.settings.heading_color }};
+    font-family: {{ section.settings.font_heading.family }}, {{ section.settings.font_heading.fallback_families }};
   }
   #{{ sid }} .hero-overlay__text {
     font-size: {{ section.settings.text_size }}px;
     color: {{ section.settings.text_color }};
+    font-family: {{ section.settings.font_body.family }}, {{ section.settings.font_body.fallback_families }};
   }
   /* Button Farben live aus Settings */
   #{{ sid }} .hero-overlay__btn--1 { background-color: {{ section.settings.btn1_bg }}; color: {{ section.settings.btn1_text_color }}; }
@@ -135,7 +137,11 @@
     { "type": "range", "id": "logo_max_width", "label": "Max. Logo-Breite (px)", "min": 120, "max": 900, "step": 10, "unit": "px", "default": 420 },
     { "type": "range", "id": "logo_padding", "label": "Innenabstand (px)", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 0 },
     { "type": "range", "id": "logo_offset_x", "label": "X-Versatz nach links (+) in %", "min": 0, "max": 20, "step": 1, "unit": "%", "default": 4 },
-    { "type": "range", "id": "logo_offset_y", "label": "Y-Versatz nach oben (+) in %", "min": -20, "max": 20, "step": 1, "unit": "%", "default": 0 }
+    { "type": "range", "id": "logo_offset_y", "label": "Y-Versatz nach oben (+) in %", "min": -20, "max": 20, "step": 1, "unit": "%", "default": 0 },
+
+    { "type": "header", "content": "Schriftarten" },
+    { "type": "font_picker", "id": "font_heading", "label": "Schriftfamilie – Überschriften", "default": "helvetica_n4" },
+    { "type": "font_picker", "id": "font_body", "label": "Schriftfamilie – Fließtext", "default": "helvetica_n4" }
   ],
   "presets": [
     { "name": "Hero – Overlay mit Logo rechts", "category": "Bild" }

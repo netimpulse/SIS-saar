@@ -16,13 +16,15 @@
     --card-radius: {{ section.settings.card_radius }}px;
     --card-shadow: {% if section.settings.card_shadow %}0 8px 24px rgba(0,0,0,.08){% else %}none{% endif %};
     --gap: {{ section.settings.grid_gap }}px;
+    --sg-font-heading: {{ section.settings.font_heading.family }}, {{ section.settings.font_heading.fallback_families }};
+    --sg-font-body: {{ section.settings.font_body.family }}, {{ section.settings.font_body.fallback_families }};
   ">
 
   <div class="services-grid__inner page-width">
     {% if section.settings.heading != blank or section.settings.subheading != blank %}
       <div class="services-grid__header text-{{ section.settings.text_align }}">
-        {% if section.settings.heading != blank %}<div class="services-grid__title">{{ section.settings.heading }}</div>{% endif %}
-        {% if section.settings.subheading != blank %}<div class="services-grid__subtitle">{{ section.settings.subheading }}</div>{% endif %}
+        {% if section.settings.heading != blank %}<div class="services-grid__title" style="font-family: var(--sg-font-heading);">{{ section.settings.heading }}</div>{% endif %}
+        {% if section.settings.subheading != blank %}<div class="services-grid__subtitle" style="font-family: var(--sg-font-body);">{{ section.settings.subheading }}</div>{% endif %}
       </div>
     {% endif %}
 
@@ -155,7 +157,11 @@
         { "value": "secondary", "label": "Sekundär" },
         { "value": "link", "label": "Link-Style" }
       ]
-    }
+    },
+
+    { "type": "header", "content": "Schriftarten" },
+    { "type": "font_picker", "id": "font_heading", "label": "Schriftfamilie – Überschriften", "default": "helvetica_n4" },
+    { "type": "font_picker", "id": "font_body", "label": "Schriftfamilie – Fließtext", "default": "helvetica_n4" }
   ],
   "blocks": [
     {

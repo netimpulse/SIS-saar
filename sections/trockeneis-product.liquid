@@ -1,0 +1,325 @@
+{% comment %}
+  Section: Trockeneis-Produkt – Komplett
+  =========================================
+  Custom Product-Sektion für Trockeneispellets mit:
+  - Pelletgröße-Auswahl (1,5mm / 3mm)
+  - Mengenauswahl (5–30 kg + „Mehr auf Anfrage")
+  - Automatische Preisberechnung
+  - Lieferoptions-Auswahl (Selbstabholung / Expresslieferung)
+  - Aufklappbare Versanddienstleister (DHL / DPD / Go!)
+
+  Benötigt:
+    - assets/trockeneis-product.css
+    - assets/trockeneis-product.js
+    - snippets/shipping-option-card.liquid
+{% endcomment %}
+
+{{ 'trockeneis-product.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign current_variant = product.selected_or_first_available_variant
+  assign price_per_kg_15 = section.settings.price_per_kg_15mm | default: 8
+  assign price_per_kg_3  = section.settings.price_per_kg_3mm  | default: 7
+-%}
+
+{%- comment -%} Build price map as JSON for JS {%- endcomment -%}
+{%- capture price_map_json -%}
+{
+  "1.5mm_per_kg": {{ price_per_kg_15 }},
+  "3mm_per_kg": {{ price_per_kg_3 }},
+  "1.5mm_5":  {{ price_per_kg_15 | times: 5 }},
+  "1.5mm_10": {{ price_per_kg_15 | times: 10 }},
+  "1.5mm_15": {{ price_per_kg_15 | times: 15 }},
+  "1.5mm_20": {{ price_per_kg_15 | times: 20 }},
+  "1.5mm_25": {{ price_per_kg_15 | times: 25 }},
+  "1.5mm_30": {{ price_per_kg_15 | times: 30 }},
+  "3mm_5":  {{ price_per_kg_3 | times: 5 }},
+  "3mm_10": {{ price_per_kg_3 | times: 10 }},
+  "3mm_15": {{ price_per_kg_3 | times: 15 }},
+  "3mm_20": {{ price_per_kg_3 | times: 20 }},
+  "3mm_25": {{ price_per_kg_3 | times: 25 }},
+  "3mm_30": {{ price_per_kg_3 | times: 30 }}
+}
+{%- endcapture -%}
+
+{%- comment -%} Build variant map for Shopify variant IDs {%- endcomment -%}
+{%- capture variant_map_json -%}
+{
+  {%- for variant in product.variants -%}
+    "{{ variant.title | downcase | strip }}": "{{ variant.id }}"{% unless forloop.last %},{% endunless %}
+  {%- endfor -%}
+}
+{%- endcapture -%}
+
+<div class="te-product"
+     data-trockeneis-section
+     data-price-map='{{ price_map_json | strip_newlines }}'
+     data-variant-map='{{ variant_map_json | strip_newlines }}'>
+
+  <div class="te-product__grid">
+
+    {%- comment -%} ── Linke Spalte: Produktbild ──────────── {%- endcomment -%}
+    <div class="te-product__media">
+      <div class="te-product__image-wrapper">
+        {%- if product.featured_image != blank -%}
+          <img
+            src="{{ product.featured_image | image_url: width: 1200 }}"
+            alt="{{ product.featured_image.alt | default: product.title | escape }}"
+            width="{{ product.featured_image.width }}"
+            height="{{ product.featured_image.height }}"
+            loading="eager">
+        {%- else -%}
+          {{ 'product-1' | placeholder_svg_tag: 'te-product__placeholder' }}
+        {%- endif -%}
+      </div>
+
+      {%- comment -%} USP-Leiste unter dem Bild {%- endcomment -%}
+      <div class="te-features">
+        {% if section.settings.feature_1 != blank %}
+          <div class="te-feature">
+            <svg class="te-feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="te-feature__text">{{ section.settings.feature_1 }}</span>
+          </div>
+        {% endif %}
+        {% if section.settings.feature_2 != blank %}
+          <div class="te-feature">
+            <svg class="te-feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="te-feature__text">{{ section.settings.feature_2 }}</span>
+          </div>
+        {% endif %}
+        {% if section.settings.feature_3 != blank %}
+          <div class="te-feature">
+            <svg class="te-feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="te-feature__text">{{ section.settings.feature_3 }}</span>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    {%- comment -%} ── Rechte Spalte: Produktinfos & Konfiguration ── {%- endcomment -%}
+    <div class="te-product__info">
+
+      {%- comment -%} Titel {%- endcomment -%}
+      <div>
+        <h1 class="te-product__title">{{ product.title | escape }}</h1>
+        {% if section.settings.subtitle != blank %}
+          <p class="te-product__subtitle">{{ section.settings.subtitle }}</p>
+        {% endif %}
+      </div>
+
+      {%- comment -%} Preis-Anzeige {%- endcomment -%}
+      <div class="te-price-display">
+        <span class="te-price-display__amount" data-te-price>
+          {{ price_per_kg_3 | times: 5 | money_with_currency }}
+        </span>
+        <span class="te-price-display__unit" data-te-unit-price>
+          {{ price_per_kg_3 | money_with_currency }} / kg
+        </span>
+        <span class="te-price-display__info">
+          {{ section.settings.price_note | default: 'Preis inkl. MwSt., zzgl. Versandkosten' }}
+        </span>
+      </div>
+
+      {%- comment -%} ── 1. Pelletgröße ───────────────────── {%- endcomment -%}
+      <div class="te-selection" role="radiogroup" aria-label="Pelletgröße auswählen">
+        <span class="te-selection__label">Pelletgröße</span>
+        <div class="te-selection__options">
+          <input class="te-option" type="radio" name="te-size" id="te-size-15" value="1.5mm" {% if section.settings.default_size == '1.5mm' %}checked{% endif %}>
+          <label class="te-option-label" for="te-size-15">1,5 mm</label>
+
+          <input class="te-option" type="radio" name="te-size" id="te-size-3" value="3mm" {% if section.settings.default_size == '3mm' or section.settings.default_size == blank %}checked{% endif %}>
+          <label class="te-option-label" for="te-size-3">3 mm</label>
+        </div>
+      </div>
+
+      {%- comment -%} ── 2. Menge in kg ─────────────────── {%- endcomment -%}
+      <div class="te-selection" role="radiogroup" aria-label="Menge auswählen">
+        <span class="te-selection__label">Menge (kg)</span>
+        <div class="te-selection__options">
+          {%- assign quantities = '5,10,15,20,25,30' | split: ',' -%}
+          {%- for qty in quantities -%}
+            <input class="te-option" type="radio" name="te-qty" id="te-qty-{{ qty }}" value="{{ qty }}" {% if forloop.first %}checked{% endif %}>
+            <label class="te-option-label" for="te-qty-{{ qty }}">{{ qty }} kg</label>
+          {%- endfor -%}
+
+          <input class="te-option" type="radio" name="te-qty" id="te-qty-anfrage" value="anfrage">
+          <label class="te-option-label te-option-label--anfrage" for="te-qty-anfrage">
+            Mehr auf Anfrage
+          </label>
+        </div>
+      </div>
+
+      {%- comment -%} Hinweis bei „Mehr auf Anfrage" {%- endcomment -%}
+      <div class="te-anfrage-hint" data-te-anfrage-hint>
+        <strong>Größere Mengen?</strong> Kein Problem!
+        <a href="{{ section.settings.contact_page | default: '/pages/kontakt' }}">
+          Kontaktieren Sie uns
+        </a>
+        für ein individuelles Angebot ab 30 kg.
+      </div>
+
+      {%- comment -%} ── 3. Lieferoptionen ─────────────── {%- endcomment -%}
+      <div class="te-shipping">
+        <span class="te-shipping__title">Lieferoption</span>
+
+        {%- comment -%} Selbstabholung {%- endcomment -%}
+        <div class="te-ship-method" data-ship-method="pickup">
+          <div class="te-ship-method__header" role="button" tabindex="0" aria-label="Selbstabholung – Kostenlos">
+            <span class="te-ship-method__radio" aria-hidden="true"></span>
+            <div class="te-ship-method__info">
+              <div class="te-ship-method__name">🏭 Selbstabholung</div>
+              <div class="te-ship-method__desc">{{ section.settings.pickup_address | default: 'Abholung an unserem Standort' }}</div>
+            </div>
+            <span class="te-ship-method__price">Kostenlos</span>
+          </div>
+        </div>
+
+        {%- comment -%} Expresslieferung {%- endcomment -%}
+        <div class="te-ship-method" data-ship-method="express">
+          <div class="te-ship-method__header" role="button" tabindex="0" aria-label="Expresslieferung – Lieferant auswählen">
+            <span class="te-ship-method__radio" aria-hidden="true"></span>
+            <div class="te-ship-method__info">
+              <div class="te-ship-method__name">🚚 Expresslieferung</div>
+              <div class="te-ship-method__desc">Lieferung direkt zu Ihnen – Dienstleister wählen</div>
+            </div>
+            <span class="te-ship-method__price" style="color: var(--te-text-muted); font-weight: 500;">auswählen →</span>
+          </div>
+
+          {%- comment -%} Carrier-Accordion {%- endcomment -%}
+          <div class="te-carriers" data-te-carriers>
+            <div class="te-carriers__title">Versanddienstleister wählen</div>
+
+            {% render 'shipping-option-card',
+              carrier_id: 'dhl',
+              carrier_name: 'DHL Express',
+              carrier_price: section.settings.dhl_price | default: 'auf Anfrage',
+              carrier_price_raw: section.settings.dhl_price_raw | default: '0',
+              carrier_details_html: section.settings.dhl_conditions | default: '<ul><li>Express-Lieferung in 1–2 Werktagen</li><li>Sendungsverfolgung inklusive</li><li>Versicherter Versand</li></ul>'
+            %}
+
+            {% render 'shipping-option-card',
+              carrier_id: 'dpd',
+              carrier_name: 'DPD',
+              carrier_price: section.settings.dpd_price | default: 'auf Anfrage',
+              carrier_price_raw: section.settings.dpd_price_raw | default: '0',
+              carrier_details_html: section.settings.dpd_conditions | default: '<ul><li>Lieferung in 1–3 Werktagen</li><li>Predict-Service: Lieferzeitfenster per SMS</li><li>Sendungsverfolgung inklusive</li></ul>'
+            %}
+
+            {% render 'shipping-option-card',
+              carrier_id: 'go',
+              carrier_name: 'GO! Express',
+              carrier_price: section.settings.go_price | default: 'auf Anfrage',
+              carrier_price_raw: section.settings.go_price_raw | default: '0',
+              carrier_details_html: section.settings.go_conditions | default: '<ul><li>Same-Day oder Overnight-Lieferung</li><li>Temperaturgeführter Transport möglich</li><li>Direkte Zustellung</li></ul>'
+            %}
+          </div>
+        </div>
+      </div>
+
+      {%- comment -%} ── Zusammenfassung ────────────────── {%- endcomment -%}
+      <div class="te-summary" data-te-summary>
+        <div class="te-summary__line" data-summary-product>
+          <span class="te-summary__label">–</span>
+          <span class="te-summary__value">–</span>
+        </div>
+        <div class="te-summary__line" data-summary-shipping>
+          <span class="te-summary__label">Versand</span>
+          <span class="te-summary__value">–</span>
+        </div>
+        <div class="te-summary__line te-summary__line--total" data-summary-total>
+          <span class="te-summary__label">Gesamt</span>
+          <span class="te-summary__value">–</span>
+        </div>
+      </div>
+
+      {%- comment -%} ── Warenkorb-Button ──────────────── {%- endcomment -%}
+      {%- form 'product', product, id: 'trockeneis-form', novalidate: 'novalidate' -%}
+        <input type="hidden" name="id" value="{{ current_variant.id }}" data-te-variant-id>
+        <input type="hidden" name="quantity" value="1">
+
+        <div class="te-add-to-cart">
+          <button type="submit"
+                  class="te-add-to-cart__btn"
+                  data-te-add-btn
+                  {% unless current_variant.available %}disabled{% endunless %}>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            {%- if current_variant.available -%}
+              In den Warenkorb
+            {%- else -%}
+              Ausverkauft
+            {%- endif -%}
+          </button>
+          <span class="te-add-to-cart__note">
+            {{ section.settings.cart_note | default: 'Sichere Zahlung über Shopify Payments' }}
+          </span>
+        </div>
+      {%- endform -%}
+    </div>
+  </div>
+</div>
+
+<script src="{{ 'trockeneis-product.js' | asset_url }}" defer></script>
+
+{% schema %}
+{
+  "name": "🧊 Trockeneis-Produkt",
+  "tag": "section",
+  "class": "section--trockeneis",
+  "settings": [
+    { "type": "header", "content": "Allgemein" },
+    { "type": "text", "id": "subtitle", "label": "Untertitel", "default": "Hochwertige Trockeneispellets für Industrie und Gewerbe" },
+    { "type": "text", "id": "price_note", "label": "Preishinweis", "default": "Preis inkl. MwSt., zzgl. Versandkosten" },
+    { "type": "text", "id": "cart_note", "label": "Warenkorb-Hinweis", "default": "Sichere Zahlung über Shopify Payments" },
+
+    { "type": "header", "content": "Preise pro kg (in €, ohne Komma)" },
+    { "type": "number", "id": "price_per_kg_15mm", "label": "Preis pro kg – 1,5mm Pellets", "default": 8 },
+    { "type": "number", "id": "price_per_kg_3mm", "label": "Preis pro kg – 3mm Pellets", "default": 7 },
+
+    { "type": "header", "content": "Standardauswahl" },
+    { "type": "select", "id": "default_size", "label": "Vorauswahl Pelletgröße", "default": "3mm",
+      "options": [
+        { "value": "1.5mm", "label": "1,5 mm" },
+        { "value": "3mm", "label": "3 mm" }
+      ]
+    },
+
+    { "type": "header", "content": "Selbstabholung" },
+    { "type": "text", "id": "pickup_address", "label": "Abholadresse / Standortinfo", "default": "Abholung an unserem Standort im Saarland" },
+    { "type": "url", "id": "contact_page", "label": "Kontaktseite (für 'auf Anfrage')" },
+
+    { "type": "header", "content": "DHL" },
+    { "type": "text", "id": "dhl_price", "label": "DHL – Preis (Anzeige)", "default": "auf Anfrage" },
+    { "type": "text", "id": "dhl_price_raw", "label": "DHL – Preis numerisch (z.B. 29.90)", "default": "0" },
+    { "type": "html", "id": "dhl_conditions", "label": "DHL – Lieferkonditionen (HTML)" },
+
+    { "type": "header", "content": "DPD" },
+    { "type": "text", "id": "dpd_price", "label": "DPD – Preis (Anzeige)", "default": "auf Anfrage" },
+    { "type": "text", "id": "dpd_price_raw", "label": "DPD – Preis numerisch (z.B. 24.90)", "default": "0" },
+    { "type": "html", "id": "dpd_conditions", "label": "DPD – Lieferkonditionen (HTML)" },
+
+    { "type": "header", "content": "GO! Express" },
+    { "type": "text", "id": "go_price", "label": "GO! – Preis (Anzeige)", "default": "auf Anfrage" },
+    { "type": "text", "id": "go_price_raw", "label": "GO! – Preis numerisch (z.B. 39.90)", "default": "0" },
+    { "type": "html", "id": "go_conditions", "label": "GO! – Lieferkonditionen (HTML)" },
+
+    { "type": "header", "content": "USP-Leiste" },
+    { "type": "text", "id": "feature_1", "label": "Feature 1", "default": "Premium-Qualität" },
+    { "type": "text", "id": "feature_2", "label": "Feature 2", "default": "Sofort verfügbar" },
+    { "type": "text", "id": "feature_3", "label": "Feature 3", "default": "Flexible Mengen" }
+  ],
+  "presets": [
+    {
+      "name": "🧊 Trockeneis-Produkt"
+    }
+  ],
+  "templates": ["product"]
+}
+{% endschema %}

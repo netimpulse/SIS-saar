@@ -108,10 +108,12 @@
   #split-showcase-{{ section.id }} .sc-heading {
     color: {{ section.settings.heading_color }};
     font-size: {{ section.settings.heading_font_size }}px;
+    font-family: {{ section.settings.font_heading.family }}, {{ section.settings.font_heading.fallback_families }};
   }
   #split-showcase-{{ section.id }} .sc-subheading {
     color: {{ section.settings.subheading_color }};
     font-size: {{ section.settings.subheading_font_size }}px;
+    font-family: {{ section.settings.font_body.family }}, {{ section.settings.font_body.fallback_families }};
   }
   #split-showcase-{{ section.id }} .sc-box {
     background-color: {{ section.settings.box_bg_color }};
@@ -131,10 +133,12 @@
   #split-showcase-{{ section.id }} .sc-title {
     color: {{ section.settings.text_color }};
     font-size: {{ section.settings.title_size }}px;
+    font-family: {{ section.settings.font_heading.family }}, {{ section.settings.font_heading.fallback_families }};
   }
   #split-showcase-{{ section.id }} .sc-description {
     color: {{ section.settings.text_color }};
     font-size: {{ section.settings.description_size }}px;
+    font-family: {{ section.settings.font_body.family }}, {{ section.settings.font_body.fallback_families }};
     opacity: 0.8;
   }
   #split-showcase-{{ section.id }} .sc-button {
@@ -441,6 +445,23 @@
       "type": "url",
       "id": "right_button_link",
       "label": "Button Link (Rechts)"
+    },
+
+    {
+      "type": "header",
+      "content": "Schriftarten"
+    },
+    {
+      "type": "font_picker",
+      "id": "font_heading",
+      "label": "Schriftfamilie – Überschriften",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "font_picker",
+      "id": "font_body",
+      "label": "Schriftfamilie – Fließtext",
+      "default": "helvetica_n4"
     }
   ],
   "presets": [

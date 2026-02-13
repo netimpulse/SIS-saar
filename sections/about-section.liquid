@@ -15,9 +15,11 @@
 
     --title-color: {{ section.settings.title_color }};
     --title-font-size: {{ section.settings.title_font_size }}px;
+    --title-font-family: {{ section.settings.font_heading.family }}, {{ section.settings.font_heading.fallback_families }};
 
     --text-color: {{ section.settings.text_color }};
     --text-font-size: {{ section.settings.text_font_size }}px;
+    --text-font-family: {{ section.settings.font_body.family }}, {{ section.settings.font_body.fallback_families }};
 
     --image-border-radius: {{ section.settings.image_border_radius }}px;
     --image-max-width: {{ section.settings.image_max_width }}%;
@@ -28,6 +30,10 @@
     --icon-color: {{ section.settings.icon_color }};
     --feature-title-color: {{ section.settings.feature_title_color }};
   }
+  #shopify-section-{{ section.id }} .sis-about__title { font-family: var(--title-font-family); }
+  #shopify-section-{{ section.id }} .sis-about__description { font-family: var(--text-font-family); }
+  #shopify-section-{{ section.id }} .sis-about__feature-title { font-family: var(--title-font-family); }
+  #shopify-section-{{ section.id }} .sis-about__feature-description { font-family: var(--text-font-family); }
 </style>
 
 {%- liquid
@@ -201,7 +207,11 @@
     },
     { "type": "range", "id": "icon_size", "label": "Icon Größe", "min": 24, "max": 48, "step": 2, "unit": "px", "default": 32 },
     { "type": "color", "id": "icon_color", "label": "SVG-Icon Farbe", "default": "#34D399" },
-    { "type": "color", "id": "feature_title_color", "label": "Feature Titel Farbe", "default": "#111827" }
+    { "type": "color", "id": "feature_title_color", "label": "Feature Titel Farbe", "default": "#111827" },
+
+    { "type": "header", "content": "Schriftarten" },
+    { "type": "font_picker", "id": "font_heading", "label": "Schriftfamilie – Überschriften", "default": "helvetica_n4" },
+    { "type": "font_picker", "id": "font_body", "label": "Schriftfamilie – Fließtext", "default": "helvetica_n4" }
   ],
   "blocks": [
     {

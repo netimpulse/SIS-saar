@@ -9,6 +9,8 @@
     --lsc-bullet: {{ section.settings.fallback_bullet_color }};
     --lsc-card-bg: {{ section.settings.points_bg }};
     --lsc-card-bd: {{ section.settings.points_border }};
+    --lsc-font-heading: {{ section.settings.font_heading.family }}, {{ section.settings.font_heading.fallback_families }};
+    --lsc-font-body: {{ section.settings.font_body.family }}, {{ section.settings.font_body.fallback_families }};
   "
 >
   <div class="lsc-inner">
@@ -58,6 +60,7 @@
               style="
                 font-style:{% if section.settings.heading_italic %}italic{% else %}normal{% endif %};
                 font-weight:{{ section.settings.heading_weight }};
+                font-family: var(--lsc-font-heading);
               "
             >
               {{ section.settings.heading_html }}
@@ -65,7 +68,7 @@
           {% endif %}
 
           {% if section.settings.subtext != blank %}
-            <div class="lsc-text rte">{{ section.settings.subtext }}</div>
+            <div class="lsc-text rte" style="font-family: var(--lsc-font-body);">{{ section.settings.subtext }}</div>
           {% endif %}
         </div>
 
@@ -164,7 +167,11 @@
     { "type": "select", "id": "points_btn_align", "label": "Button-Ausrichtung", "default": "left",
       "options": [{"value":"left","label":"Links"},{"value":"center","label":"Zentriert"},{"value":"right","label":"Rechts"}] },
 
-    { "type": "color", "id": "fallback_bullet_color", "label": "Fallback-Bullet-Farbe (wenn kein Icon)", "default": "#2B6CB0" }
+    { "type": "color", "id": "fallback_bullet_color", "label": "Fallback-Bullet-Farbe (wenn kein Icon)", "default": "#2B6CB0" },
+
+    { "type": "header", "content": "Schriftarten" },
+    { "type": "font_picker", "id": "font_heading", "label": "Schriftfamilie – Überschriften", "default": "helvetica_n4" },
+    { "type": "font_picker", "id": "font_body", "label": "Schriftfamilie – Fließtext", "default": "helvetica_n4" }
   ],
   "blocks": [
     {

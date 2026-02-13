@@ -28,7 +28,7 @@
         style="
           font-size: {{ section.settings.heading_size }}px;
           color: {{ section.settings.heading_color }};
-          font-family: {{ section.settings.heading_font | default: 'inherit' }};
+          font-family: {{ section.settings.font_heading.family }}, {{ section.settings.font_heading.fallback_families }};
           font-weight: {% if section.settings.heading_bold %}700{% else %}400{% endif %};
         "
       >
@@ -42,7 +42,7 @@
         style="
           font-size: {{ section.settings.sub_size }}px;
           color: {{ section.settings.sub_color }};
-          font-family: {{ section.settings.sub_font | default: 'inherit' }};
+          font-family: {{ section.settings.font_body.family }}, {{ section.settings.font_body.fallback_families }};
           font-weight: {% if section.settings.sub_bold %}600{% else %}400{% endif %};
         "
       >
@@ -76,13 +76,15 @@
       { "type": "number", "id": "heading_size", "label": "Überschrift – Schriftgröße (px)", "default": 56 },
       { "type": "checkbox", "id": "heading_bold", "default": true, "label": "Überschrift fett" },
       { "type": "color", "id": "heading_color", "default": "#0f172a", "label": "Überschrift – Farbe" },
-      { "type": "text", "id": "heading_font", "default": "inherit", "label": "Überschrift – Schriftart (CSS Font-Stack)" },
 
       { "type": "richtext", "id": "subheading", "label": "Untertitel (Rich Text)", "default": "<p>Kontaktieren Sie uns für ein unverbindliches Beratungsgespräch und ein individuelles Angebot für Ihre Anforderungen.</p>" },
       { "type": "number", "id": "sub_size", "default": 20, "label": "Untertitel – Schriftgröße (px)" },
       { "type": "checkbox", "id": "sub_bold", "default": false, "label": "Untertitel fett" },
       { "type": "color", "id": "sub_color", "default": "#475569", "label": "Untertitel – Farbe" },
-      { "type": "text", "id": "sub_font", "default": "inherit", "label": "Untertitel – Schriftart (CSS Font-Stack)" },
+
+      { "type": "header", "content": "Schriftarten" },
+      { "type": "font_picker", "id": "font_heading", "label": "Schriftfamilie – Überschriften", "default": "helvetica_n4" },
+      { "type": "font_picker", "id": "font_body", "label": "Schriftfamilie – Fließtext", "default": "helvetica_n4" },
 
       { "type": "select", "id": "align", "label": "Ausrichtung", "default": "center",
         "options": [

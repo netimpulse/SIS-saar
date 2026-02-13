@@ -12,14 +12,16 @@
     --hi-gap: {{ section.settings.gap }}px;
     --hi-icon-size: {{ section.settings.icon_size }}px;
     --hi-radius: {{ section.settings.icon_radius }}px;
+    --hi-font-heading: {{ section.settings.font_heading.family }}, {{ section.settings.font_heading.fallback_families }};
+    --hi-font-body: {{ section.settings.font_body.family }}, {{ section.settings.font_body.fallback_families }};
   "
 >
   <div class="hi-inner page-width">
     {% if section.settings.heading != blank %}
-      <h2 class="hi-title">{{ section.settings.heading | escape }}</h2>
+      <h2 class="hi-title" style="font-family: var(--hi-font-heading);">{{ section.settings.heading | escape }}</h2>
     {% endif %}
     {% if section.settings.intro != blank %}
-      <div class="hi-intro rte">{{ section.settings.intro }}</div>
+      <div class="hi-intro rte" style="font-family: var(--hi-font-body);">{{ section.settings.intro }}</div>
     {% endif %}
 
     <div class="hi-grid hi-cols-d-{{ section.settings.cols_desktop }} hi-cols-t-{{ section.settings.cols_tablet }}">
@@ -60,7 +62,11 @@
     { "type": "checkbox", "id": "show_icons", "label": "Icons global anzeigen", "default": true },
     { "type": "range", "id": "icon_size", "min": 56, "max": 140, "step": 4, "unit": "px", "label": "Icon-Größe (Kreis)", "default": 88 },
 
-    { "type": "range", "id": "icon_radius", "min": 0, "max": 1000, "step": 10, "unit": "px", "label": "Icon-Hintergrund: Radius", "default": 1000 }
+    { "type": "range", "id": "icon_radius", "min": 0, "max": 1000, "step": 10, "unit": "px", "label": "Icon-Hintergrund: Radius", "default": 1000 },
+
+    { "type": "header", "content": "Schriftarten" },
+    { "type": "font_picker", "id": "font_heading", "label": "Schriftfamilie – Überschriften", "default": "helvetica_n4" },
+    { "type": "font_picker", "id": "font_body", "label": "Schriftfamilie – Fließtext", "default": "helvetica_n4" }
   ],
   "blocks": [
     {

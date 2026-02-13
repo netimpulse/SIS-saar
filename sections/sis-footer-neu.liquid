@@ -10,15 +10,21 @@
     --sis-separator-color: {{ section.settings.separator_color }};
     --sis-title-color: {{ section.settings.title_color }};
     --sis-title-font-size: {{ section.settings.title_font_size }}px;
+    --sis-title-font-family: {{ section.settings.font_heading.family }}, {{ section.settings.font_heading.fallback_families }};
     --sis-subtitle-color: {{ section.settings.subtitle_color }};
     --sis-subtitle-font-size: {{ section.settings.subtitle_font_size }}px;
     --sis-text-color: {{ section.settings.text_color }};
     --sis-text-font-size: {{ section.settings.text_font_size }}px;
+    --sis-text-font-family: {{ section.settings.font_body.family }}, {{ section.settings.font_body.fallback_families }};
     --sis-link-color: {{ section.settings.link_color }};
     --sis-copyright-margin-top: {{ section.settings.section_padding | divided_by: 2 }}px;
     --sis-copyright-padding-top: {{ section.settings.section_padding | divided_by: 4 }}px;
     --sis-copyright-font-size: {{ section.settings.text_font_size | minus: 2 }}px;
   }
+  #shopify-section-{{ section.id }} .sis-footer-neu__title { font-family: var(--sis-title-font-family); }
+  #shopify-section-{{ section.id }} .sis-footer-neu__text,
+  #shopify-section-{{ section.id }} .sis-footer-neu__link,
+  #shopify-section-{{ section.id }} .sis-footer-neu__copyright-text { font-family: var(--sis-text-font-family); }
 </style>
 
 {{ 'sis-footer-neu.css' | asset_url | stylesheet_tag }}
@@ -159,6 +165,10 @@
     { "type": "color", "id": "text_color", "label": "Text Farbe", "default": "#9ca3af" },
     { "type": "range", "id": "text_font_size", "label": "Text Schriftgröße", "min": 12, "max": 18, "step": 1, "unit": "px", "default": 14 },
     { "type": "color", "id": "link_color", "label": "Link Farbe", "default": "#60a5fa" },
+
+    { "type": "header", "content": "Schriftarten" },
+    { "type": "font_picker", "id": "font_heading", "label": "Schriftfamilie – Titel", "default": "helvetica_n4" },
+    { "type": "font_picker", "id": "font_body", "label": "Schriftfamilie – Text/Links", "default": "helvetica_n4" },
 
     { "type": "header", "content": "Spaltentitel" },
     { "type": "text", "id": "col1_title", "label": "Titel Spalte 1", "default": "Leistungen" },

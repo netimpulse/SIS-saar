@@ -11,6 +11,8 @@
   style="
     --pl-gap: {{ section.settings.gap }}px;
     --pl-logo-h: {{ section.settings.logo_max_height }}px;
+    --pl-font-heading: {{ section.settings.font_heading.family }}, {{ section.settings.font_heading.fallback_families }};
+    --pl-font-body: {{ section.settings.font_body.family }}, {{ section.settings.font_body.fallback_families }};
   "
 >
   <div class="pl-inner page-width">
@@ -22,11 +24,11 @@
     {% endif %}
 
     {% if section.settings.heading != blank %}
-      <h2 class="pl-title">{{ section.settings.heading }}</h2>
+      <h2 class="pl-title" style="font-family: var(--pl-font-heading);">{{ section.settings.heading }}</h2>
     {% endif %}
 
     {% if section.settings.subtext != blank %}
-      <div class="pl-subtext rte">{{ section.settings.subtext }}</div>
+      <div class="pl-subtext rte" style="font-family: var(--pl-font-body);">{{ section.settings.subtext }}</div>
     {% endif %}
 
     <div class="
@@ -77,7 +79,11 @@
     { "type": "range", "id": "logo_max_height", "min": 40, "max": 140, "step": 4, "unit": "px", "label": "Max. Logo-Höhe", "default": 72 },
     { "type": "checkbox", "id": "gray_on", "label": "Logos in Graustufen anzeigen", "default": false },
     { "type": "range", "id": "hover_opacity", "min": 60, "max": 100, "step": 5, "unit": "%", "label": "Logo-Deckkraft (normal)", "default": 100 },
-    { "type": "checkbox", "id": "open_new", "label": "Links in neuem Tab öffnen", "default": true }
+    { "type": "checkbox", "id": "open_new", "label": "Links in neuem Tab öffnen", "default": true },
+
+    { "type": "header", "content": "Schriftarten" },
+    { "type": "font_picker", "id": "font_heading", "label": "Schriftfamilie – Überschriften", "default": "helvetica_n4" },
+    { "type": "font_picker", "id": "font_body", "label": "Schriftfamilie – Fließtext", "default": "helvetica_n4" }
   ],
   "blocks": [
     {
