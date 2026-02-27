@@ -79,6 +79,16 @@
     "dlx_downloads_wKpMwN": {
       "type": "dlx-downloads",
       "blocks": {
+        "download_BDrWd9": {
+          "type": "download",
+          "settings": {
+            "title": "Inklusionspreis 2025",
+            "date": "27.02.2026",
+            "image": "shopify://shop_images/Inklusionspreis_2025_bild.png",
+            "file_url": "https://cdn.shopify.com/s/files/1/0976/1210/4029/files/2025_Inklusionspreis_Saarland_gueltig_bis_2028.pdf?v=1772181287",
+            "tags": "Zertifikat, ISO, 9001"
+          }
+        },
         "download_KDLUmC": {
           "type": "download",
           "settings": {
@@ -109,16 +119,6 @@
             "tags": "Zertifikat, ISO, 9001"
           }
         },
-        "download_DPfXYc": {
-          "type": "download",
-          "settings": {
-            "title": "Inklusionspreis 2025",
-            "date": "27.02.2026",
-            "image": "shopify://shop_images/Inklusionspreis_2025_bild.png",
-            "file_url": "",
-            "tags": "Zertifikat, Inklusion, Saarland"
-          }
-        },
         "download_KXFVMF": {
           "type": "download",
           "settings": {
@@ -141,10 +141,10 @@
         }
       },
       "block_order": [
+        "download_BDrWd9",
         "download_KDLUmC",
         "download_cVTVn7",
         "download_7Uq3dW",
-        "download_DPfXYc",
         "download_KXFVMF",
         "download_VyWhPQ"
       ],
