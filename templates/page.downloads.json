@@ -109,6 +109,16 @@
             "tags": "Zertifikat, ISO, 9001"
           }
         },
+        "download_DPfXYc": {
+          "type": "download",
+          "settings": {
+            "title": "Inklusionspreis 2025",
+            "date": "27.02.2026",
+            "image": "shopify://shop_images/Inklusionspreis_2025_bild.png",
+            "file_url": "",
+            "tags": "Zertifikat, Inklusion, Saarland"
+          }
+        },
         "download_KXFVMF": {
           "type": "download",
           "settings": {
@@ -134,6 +144,7 @@
         "download_KDLUmC",
         "download_cVTVn7",
         "download_7Uq3dW",
+        "download_DPfXYc",
         "download_KXFVMF",
         "download_VyWhPQ"
       ],
