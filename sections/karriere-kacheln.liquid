@@ -45,11 +45,7 @@
           <!-- Kopf: Badge ÜBER dem Titel -->
           <div class="job-head">
             {% if badge_label != blank %}
-              {% render 'karriere-badge',
-                label: badge_label,
-                bg_color: block.settings.badge_bg | default: section.settings.badge_bg,
-                text_color: block.settings.badge_text | default: section.settings.badge_text
-              %}
+              {% render 'karriere-badge', label: badge_label, bg_color: block.settings.badge_bg, default: section.settings.badge_text, text_color: block.settings.badge_text %}
             {% endif %}
 
             {% if block.settings.title_html != blank %}
@@ -209,3 +205,19 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {% render 'karriere-badge',
+                    label: badge_label,
+                    bg_color: block.settings.badge_bg | default: section.settings.badge_bg,
+                    text_color: block.settings.badge_text | default: section.settings.badge_text
+                  %}
+  to: "{% render 'karriere-badge', label: badge_label, bg_color: block.settings.badge_bg,
+    default: section.settings.badge_text, text_color: block.settings.badge_text %}"
+  position: 2018..2179
+{% endcomment %}
